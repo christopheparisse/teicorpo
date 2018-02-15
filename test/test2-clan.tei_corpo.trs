@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="TEST2-CLAN" elapsed_time="127.233" scribe=" Aliyah MORGENSTERN, Christophe PARISSE&#9;Date of transcript: Eté 1995" version="Chat" version_date="14-OCT-1993" xml:lang="fr">
+<Speakers>
+<Speaker id="CHI" name="Léonard" type="unknown"/>
+<Speaker id="MOT" name="MOT"/>
+<Speaker id="FAT" name="FAT"/>
+<Speaker id="OBS" name="Aliyah"/>
+</Speakers>
+<Topics>
+<Topic desc="L est en train de peindre dans le salon." id="d0"/>
+</Topics>
+<Episode air_date="d0" program="Situation">
+<Section endTime="127.233" startTime="0" type="report">
+<Turn endTime="7.168" speaker="OBS" startTime="0">
+<Sync time="0"/>tu vas me faire un tableau pour ma maison après #? </Turn>
+<Turn endTime="8.100" speaker="CHI" startTime="7.168">
+<Sync time="7.168"/>ouais #. <Comment desc="mod:&#9;wɛ"/>
+</Turn>
+<Turn endTime="8.787" speaker="OBS" startTime="8.100">
+<Sync time="8.100"/>super #. <Comment desc="sit:&#9;Ils rient."/>
+</Turn>
+<Turn endTime="16.718" speaker="MOT" startTime="8.787">
+<Sync time="8.787"/>tiens quand tu veux essuyer ton pinceau tu prends du sopalin pour faire une autre couleur #. </Turn>
+<Turn endTime="17.290" speaker="CHI" startTime="16.718">
+<Sync time="16.718"/>oui ça #. <Comment desc="mod:&#9;wi sa"/>
+<Comment desc="sit:&#9;Il prend un morceau de sopalin et tamponne son dessin."/>
+</Turn>
+<Turn endTime="24.462" speaker="MOT" startTime="17.290">
+<Sync time="17.290"/>alors le thé #. <Sync time="18.153"/>le thé le thé #. </Turn>
+<Turn endTime="28.973" speaker="OBS" startTime="24.462">
+<Sync time="24.462"/>tu éponges pour pas que ça fasse trop jaune #. </Turn>
+<Turn endTime="29.973" speaker="MOT" startTime="28.973">
+<Sync time="28.973"/>xx Aliyah #? </Turn>
+<Turn endTime="31.275" speaker="OBS" startTime="29.973">
+<Sync time="29.973"/>je vais me débrouiller après #. </Turn>
+<Turn endTime="40.078" speaker="CHI" startTime="31.275">
+<Sync time="31.275"/>du soleil rouge et du soleil jaune  + et du soleil bleu #. <Comment desc="mod:&#9;dy sɔlɛj ʀuʒ e dy sɔlɛj ʒon e dy sɔlɛj blø"/>
+</Turn>
+<Turn endTime="42.053" speaker="OBS" startTime="40.078">
+<Sync time="40.078"/>et il est quand le soleil bleu #. </Turn>
+<Turn endTime="45.967" speaker="CHI" startTime="42.053">
+<Sync time="42.053"/>il est là #. <Comment desc="mod:&#9;il ɛ la"/>
+</Turn>
+<Turn endTime="47.117" speaker="OBS" startTime="45.967">
+<Sync time="45.967"/>ah oui #. <Comment desc="tim:&#9;1:00"/>
+</Turn>
+<Turn endTime="54.473" speaker="MOT" startTime="47.117">
+<Sync time="47.117"/>il est quand #? <Comment desc="sit:&#9;Elle cherchait la bouiloire et l'a trouvée. Il est quand le fil de la bouilloire."/>
+<Sync time="50.335"/>philosophez #. <Sync time="53.567"/>alors moi ah voilà #. </Turn>
+<Turn endTime="60.693" speaker="OBS" startTime="54.473">
+<Sync time="54.473"/>ah y'a du vert aussi #. <Sync time="55.690"/>qu' est+ce que c'est le vert #? </Turn>
+<Turn endTime="62.882" speaker="CHI" startTime="60.693">
+<Sync time="60.693"/>c'est pour faire un monstre #. <Comment desc="mod:&#9;sɛ puʀ fɛʀ ɛ̃ mɔ̃stʀ"/>
+</Turn>
+<Turn endTime="65.257" speaker="OBS" startTime="62.882">
+<Sync time="62.882"/>oh #! <Sync time="63.823"/>un monstre vert #. </Turn>
+<Turn endTime="74.253" speaker="CHI" startTime="65.257">
+<Sync time="65.257"/>je vais pas lui faire les yeux parce+que c'est des monstres &lt;qui sont qui&gt; [//] qui brûlent #! <Comment desc="mod:&#9;ʒə vɛ pa lɥi fɛʀ le jø paʀsəkə sɛ de mɔ̃stʀ ki sɔ̃ ki ki bʀyl"/>
+<Comment desc="pho:&#9;zə vɛ pa lɥi fɛʀ le jø paʀsəkə sɛ de mɔ̃stʀ ki zɔ̃ ki ki bʀyl"/>
+</Turn>
+<Turn endTime="81.152" speaker="OBS" startTime="74.253">
+<Sync time="74.253"/>hu #! <Sync time="75.107"/>c'est des monstres soleil alors #. <Sync time="76.820"/>comme le soleil ça brûle quand on s' approche #. <Sync time="78.622"/>et alors+qu' est+ce qu' i fait ce monstre #? </Turn>
+<Turn endTime="89.828" speaker="CHI" startTime="81.152">
+<Sync time="81.152"/>c'est un monstre pas gentil avec un pas gentil garçon #. <Comment desc="mod:&#9;sɛ ɛ̃ mɔ̃stʀ pa ʒɑ̃ti avɛk ɛ̃ pa ʒɑ̃ti gaʀsɔ̃"/>
+<Sync time="84.460"/>&lt;et+puiset+puis le&gt; [/] et+puis le garçon i tape le monstre #. <Comment desc="mod:&#9;ɛttpɥizɛttpɥi lə ɛttpɥi lə gaʀsɔ̃ i tap lə mɔ̃stʀ"/>
+</Turn>
+<Turn endTime="95.800" speaker="OBS" startTime="89.828">
+<Sync time="89.828"/>et alors i va #+... <Sync time="93.245"/>qu' est+ce qu' i va arriver #? </Turn>
+<Turn endTime="100.045" speaker="CHI" startTime="95.800">
+<Sync time="95.800"/>i va arriver un autre monstre jaune #. <Comment desc="mod:&#9;i va aʀive ɛ̃ otʀ mɔ̃stʀ ʒon"/>
+</Turn>
+<Turn endTime="103.407" speaker="OBS" startTime="100.045">
+<Sync time="100.045"/>ah #! <Sync time="102.293"/>et qui c'est qui va manger le vert #? </Turn>
+<Turn endTime="103.851" speaker="CHI" startTime="103.407">
+<Sync time="103.407"/>quoi #? <Comment desc="mod:&#9;kwa"/>
+</Turn>
+<Turn endTime="108.603" speaker="OBS" startTime="103.851">
+<Sync time="103.851"/>qu' est+ce qui vont se faire les deux monstres #? <Sync time="105.635"/>i vont se battre #? <Comment desc="tim:&#9;2:00"/>
+</Turn>
+<Turn endTime="109.365" speaker="CHI" startTime="108.603">
+<Sync time="108.603"/>oui #. <Comment desc="mod:&#9;wi"/>
+</Turn>
+<Turn endTime="110.663" speaker="OBS" startTime="109.365">
+<Sync time="109.365"/>et qui c'est qui va gagner #? </Turn>
+<Turn endTime="113.945" speaker="CHI" startTime="110.663">
+<Sync time="110.663"/>&lt;c'est c'est&gt; [/] c'est #+... <Comment desc="mod:&#9;sɛ sɛ sɛ"/>
+<Comment desc="pho:&#9;sɛ sɛ sɛ"/>
+<Sync time="112.415"/>je sais pas #. <Comment desc="mod:&#9;ʒə sɛ pa"/>
+</Turn>
+<Turn endTime="121.678" speaker="OBS" startTime="113.945">
+<Sync time="113.945"/>on verra #. <Sync time="115.292"/>faut qu' y ait la bataille #. <Sync time="116.700"/>c'est neuf hein toutes ces peintures #. </Turn>
+<Turn endTime="127.233" speaker="CHI" startTime="121.678">
+<Sync time="121.678"/>oui #. <Comment desc="mod:&#9;wi"/>
+<Sync time="122.697"/>y'a du jaune et du vert #. <Comment desc="mod:&#9;ia dy ʒon e dy vɛʀ"/>
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,106 @@
+@UTF8
+@Begin
+@Languages:	fra
+@Participants:	CHI Antoine Target_Child, OBS Christophe Observer, MOT Tania Mother,
+	UNI Unidentified
+@ID:	fra|Paris-Corpus_Antoine|CHI|2;03.05|male|||Target_Child||
+@ID:	fra|Paris-Corpus_Antoine|OBS||male|||Observer||
+@ID:	fra|Paris-Corpus_Antoine|MOT||female|||Mother||
+@ID:	fra|Paris-Corpus_Antoine|UNI|||||Unidentified||
+@Birth of CHI:	10-APR-2006
+@Media:	test1-clan-480p, video
+@Date:	15-JUL-2008
+@Location:	Antoine's home
+@Comment:	coder - Gabrielle Miesse (february 2009) Françoise Bourdoux (september
+	2009)
+@Situation:	CHI et OBS sont dans la salon de CHI
+@G:	arrivée au domicile de CHI
+*OBS:	et si j(e) faisais un+peu d(e) lumière ! 0_2350
+%mor:	conj|et conj|si pro:subj|je v:mdl|faire-IMPF adv|un+peu prep:art|de n|lumière
+		!
+%act:	OBS se dirige vers la fenêtre
+%com:	il fait très sombre dans la pièce
+%sit:	CHI est assis à terre
+*CHI:	oui ! 2350_3356
+%mor:	adv:yn|oui !
+%pho:	wi
+%com:	on entend CHI enlever ses chaussures
+*OBS:	ah de la lumière ! 3356_9673
+%mor:	co|ah prep|de det|la&FEM&SING n|lumière !
+%com:	on entend OBS ouvrir les volets et la lumière arrive dans la pièce
+*CHI:	0 .
+%act:	CHI se tourne pour être assis face à la fenêtre
+*CHI:	euh yy [/] yy . 9673_14338
+%mor:	co|euh .
+%pho:	ø ɔʁut ɔʁut
+%act:	CHI lève le bras et regarde dans la direction de la fenêtre
+*OBS:	+< c'est quoi qu(e) j' ouvre là ?
+%mor:	v:exist|c'est pro:rel|quoi conj|que pro:subj|je v|ouvrir adv:place|là
+		?
+*CHI:	yy ! 14338_15441
+%pho:	ɔʁut
+*OBS:	c'est quoi là qu(e) j' ai ouvert ? 15441_16965
+%mor:	v:exist|c'est pro:int|quoi adv:place|là conj|que pro:subj|je v:aux|avoir
+		v|ouvrir-PP ?
+*CHI:	i@fs avions ! 16965_19701
+%mor:	fs|i n|avion !
+%pho:	i ʃavjɔ̃
+%int:	avions/1/
+*OBS:	c'est les volets qu(e) j' ai ouverts . 19701_22486
+%mor:	v:exist|c'est det|les&PL n|volet conj|que pro:subj|je v:aux|avoir v|ouvrir-PP
+		.
+*CHI:	0 .
+%act:	CHI regarde dans la direction de OBS
+*CHI:	li@fs avion ! 22486_23836
+%mor:	fs|li n|avion !
+%pho:	li ʃavjɔ̃
+%int:	avions/1/
+%com:	OBS apparaît dans le champ de la caméra
+*OBS:	t(u) as des avions ? 23836_24575
+%mor:	pro:subj|tu v:poss|avoir det|des&PL n|avion ?
+*CHI:	0 .
+%act:	CHI regarde OBS
+*CHI:	oui . 24575_25685
+%mor:	adv:yn|oui .
+%pho:	wiʃ
+*OBS:	les avions dans l(e) ciel ? 25685_27185
+%mor:	det|les&PL n|avion prep|dans det|le&MASC&SING n|ciel ?
+%act:	OBS déplace un peu la caméra
+*CHI:	<là+haut> [/] <là+haut> [/] <là+haut> [/] <là+haut> [/] <là+haut> [/] <là+haut>
+	[/] là+haut ! 27185_33051
+%mor:	adv:place|là+haut !
+%pho:	lalo lalo lalo lalo lalo lalo lao
+%int:	là haut/2/
+%act:	CHI se lève et court vers la baie vitrée
+%xpnt:	show le ciel de la main ouverte
+*OBS:	ah ben oui là+haut i(l)+y+a des avions ! 33051_34355
+%mor:	co|ah co|ben adv:yn|oui adv:place|là+haut v:exist|il+y+a det|des&PL n|avion
+		!
+%act:	OBS s' approche de CHI
+*CHI:	0 .
+%act:	CHI regarde l' extérieur à travers la baie vitrée
+*OBS:	t(u) as tout+à+fait raison ! 34355_35510
+%mor:	pro:subj|tu v:poss|avoir adv|tout+à+fait n|raison !
+*OBS:	mais j(e) sais pas si i(l)+y+en+a en c(e) moment hein ! 35510_37743
+%mor:	conj|mais pro:subj|je v:mdl|savoir adv:neg|pas conj|si v:exist|il+y+en+a
+		prep|en det:dem|ce&MASC&SING n|moment co|hein !
+*CHI:	dehors ! 37743_39293
+%mor:	adv:place|dehors !
+%pho:	dəlɔʁ
+%act:	CHI se retourne vers OBS
+*OBS:	dehors ! 39293_40521
+%mor:	adv:place|dehors !
+*CHI:	0 [=! petit bruit] <ɛ@fs monsieur> [=! parle fort] ! 40521_42995
+%mor:	fs|ɛ n|monsieur !
+%pho:	ɛ məʃjø
+%act:	CHI se retourne vers la baie vitrée regarde à l' extérieur puis regarde OBS
+*OBS:	i(l)+y+a des messieurs dehors ouais ! 42995_44430
+%mor:	v:exist|il+y+a prep:art|des n|messieurs adv:place|dehors adv:yn|ouais
+		!
+*OBS:	hé t(u) as vu ? 44430_48190
+%mor:	co|hé pro:subj|tu v:aux|avoir v|voir&PP-MASC ?
+%act:	OBS s' approche de CHI
+%com:	OBS n' a plus la caméra en mains
+*CHI:	0 .
+%act:	CHI regarde vers la rue puis OBS puis vers la rue
+@End

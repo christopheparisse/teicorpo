@@ -1,0 +1,2989 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="francais_mp4" version="2.8">
+<Speakers>
+<Speaker id="durée chevauchements entre mots décitiques et anaphoriques et mvt2M" name="durée chevauchements entre mots décitiques et anaphoriques et mvt2M"/>
+<Speaker id="durée entre déictiques et anaphoriques et Mvt MD" name="durée entre déictiques et anaphoriques et Mvt MD"/>
+<Speaker id="mots déictiques locuteur-cp" name="mots déictiques locuteur-cp"/>
+<Speaker id="ortho" name="ortho"/>
+<Speaker id="phase gest MG" name="Homme"/>
+<Speaker id="phase gest MG-Forme pointage MG" name="Homme"/>
+<Speaker id="phase gest MG-Type pointage MG" name="Homme"/>
+<Speaker id="phase gest MG-mvtMG" name="Homme"/>
+<Speaker id="phase geste 2M" name="Homme"/>
+<Speaker id="phase geste 2M-Forme pointage 2M" name="Homme"/>
+<Speaker id="phase geste 2M-Type pointage 2M" name="Homme"/>
+<Speaker id="phase geste 2M-mvt2M" name="Homme"/>
+<Speaker id="phase geste MD" name="Homme"/>
+<Speaker id="phase geste MD-Forme pointage MD" name="Homme"/>
+<Speaker id="phase geste MD-Type pointage MD" name="Homme"/>
+<Speaker id="phase geste MD-mvtMD" name="Homme"/>
+<Speaker id="phones" name="phones"/>
+<Speaker id="phono" name="phono"/>
+<Speaker id="words" name="words"/>
+</Speakers>
+<Episode>
+<Section endTime="43.135" startTime="0" type="report">
+<Turn endTime="0.055" speaker="ortho phones phono words" startTime="0">
+<Sync time="0"/>
+<Who nb="3"/>dizo~ si o~ si o~ n*e t*a lEskal bOReli<Sync time="0"/>
+<Who nb="4"/>disons<Sync time="0"/>
+<Who nb="1"/>disons si on si on est à l'escale Borély<Sync time="0"/>
+<Who nb="2"/>d</Turn>
+<Turn endTime="12.294" speaker="phase geste MD phones words" startTime="31.559">
+<Sync time="31.559"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="12.174"/>
+<Who nb="3"/>quand<Sync time="12.174"/>
+<Who nb="2"/>k</Turn>
+<Turn endTime="14.795" speaker="phones words" startTime="12.374">
+<Sync time="12.374"/>
+<Who nb="2"/>on<Sync time="12.374"/>
+<Who nb="1"/>t<Sync time="12.584"/>
+<Who nb="2"/>descend<Sync time="12.584"/>
+<Who nb="1"/>d<Sync time="14.235"/>
+<Who nb="2"/>David<Sync time="14.235"/>
+<Who nb="1"/>d<Sync time="14.735"/>
+<Who nb="2"/>vois<Sync time="14.735"/>
+<Who nb="1"/>v</Turn>
+<Turn endTime="14.945" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones words" startTime="54.380">
+<Sync time="54.380"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourexten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourexten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="54.380"/>
+<Who nb="1"/>00:00:00.038<Sync time="14.885"/>
+<Who nb="4"/>l'obélisque<Sync time="14.885"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="16.920" speaker="phones words" startTime="15.580">
+<Sync time="15.580"/>
+<Who nb="2"/>vous<Sync time="15.580"/>
+<Who nb="1"/>v<Sync time="15.640"/>
+<Who nb="2"/>voyez<Sync time="15.640"/>
+<Who nb="1"/>v<Sync time="16.890"/>
+<Who nb="2"/>donc<Sync time="16.890"/>
+<Who nb="1"/>d</Turn>
+<Turn endTime="23.976" speaker="words" startTime="23.758">
+<Sync time="23.758"/>si</Turn>
+<Turn endTime="13.831" speaker="phase gest MG phase geste MD phones words" startTime="26.027">
+<Sync time="26.027"/>
+<Who nb="4"/>quand<Sync time="26.027"/>
+<Who nb="3"/>k<Sync time="13.691"/>
+<Who nb="2"/>préparation<Sync time="13.691"/>
+<Who nb="1"/>rétraction</Turn>
+<Turn endTime="14.561" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="14.341">
+<Sync time="14.341"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourexten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="14.341"/>
+<Who nb="1"/>00:00:00.220</Turn>
+<Turn endTime="15.420" speaker="phase geste MD" startTime="14.561">
+<Sync time="14.561"/>tenue<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+</Turn>
+<Turn endTime="30.971" speaker="phase geste MD phones words" startTime="55.540">
+<Sync time="55.540"/>
+<Who nb="1"/>enchaînement<Sync time="30.911"/>
+<Who nb="3"/>de<Sync time="30.911"/>
+<Who nb="2"/>d</Turn>
+<Turn endTime="36.931" speaker="phones words" startTime="31.001">
+<Sync time="31.001"/>
+<Who nb="2"/>restaurants<Sync time="31.001"/>
+<Who nb="1"/>R<Sync time="31.961"/>
+<Who nb="2"/>euh<Sync time="31.961"/>
+<Who nb="1"/>2<Sync time="32.411"/>
+<Who nb="2"/>[ouais]<Sync time="32.411"/>
+<Who nb="1"/>w<Sync time="34.285"/>
+<Who nb="2"/>en<Sync time="34.285"/>
+<Who nb="1"/>a~<Sync time="34.345"/>
+<Who nb="2"/>fait<Sync time="34.345"/>
+<Who nb="1"/>f<Sync time="34.875"/>
+<Who nb="2"/>longé<Sync time="34.875"/>
+<Who nb="1"/>l<Sync time="35.985"/>
+<Who nb="2"/>que<Sync time="35.985"/>
+<Who nb="1"/>s<Sync time="36.505"/>
+<Who nb="2"/>_<Sync time="36.505"/>
+<Who nb="1"/>_<Sync time="36.565"/>
+<Who nb="2"/>euh<Sync time="36.565"/>
+<Who nb="1"/>2</Turn>
+<Turn endTime="38.806" speaker="phase geste MD words" startTime="55.860">
+<Sync time="55.860"/>
+<Who nb="1"/>enchaînement<Sync time="38.700"/>
+<Who nb="2"/>et</Turn>
+<Turn endTime="2.571" speaker="ortho phones phono words" startTime="38.806">
+<Sync time="38.806"/>
+<Who nb="4"/>donc<Sync time="2.441"/>
+<Who nb="3"/>e~ l@ Ro~ pwe~ ki e t*a kote d@ lipOdRom<Sync time="2.441"/>
+<Who nb="4"/>hein<Sync time="2.441"/>
+<Who nb="1"/>hein le rond-point qui est à côté de l'hippodrome<Sync time="2.441"/>
+<Who nb="2"/>9~</Turn>
+<Turn endTime="45.138" speaker="words" startTime="44.832">
+<Sync time="44.832"/>d’art</Turn>
+<Turn endTime="4.864" speaker="ortho phones phono words" startTime="45.138">
+<Sync time="45.138"/>
+<Who nb="4"/>euh<Sync time="4.804"/>
+<Who nb="3"/>wE<Sync time="4.804"/>
+<Who nb="4"/>ouais<Sync time="4.804"/>
+<Who nb="1"/>ouais<Sync time="4.804"/>
+<Who nb="2"/>w</Turn>
+<Turn endTime="48.676" speaker="words" startTime="48.248">
+<Sync time="48.248"/>intéressant</Turn>
+<Turn endTime="5.995" speaker="ortho phones phono words" startTime="48.676">
+<Sync time="48.676"/>
+<Who nb="4"/>à<Sync time="5.945"/>
+<Who nb="3"/>i a 9~ Ro~ pwe~ 2 d@ lipOdRom ki sapEl lEskal bOReli<Sync time="5.945"/>
+<Who nb="4"/>y<Sync time="5.945"/>
+<Who nb="1"/>y a un rond-point euh de l'hippodrome qui s'appelle l'escale Borély<Sync time="5.945"/>
+<Who nb="2"/>i</Turn>
+<Turn endTime="8.805" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp ortho phones phono words" startTime="8.730">
+<Sync time="8.730"/>
+<Who nb="5"/>se t*9~ Ro~ pwe~ u i a tu ple~ d@ REstoRa~<Sync time="8.730"/>
+<Who nb="2"/>c'est<Sync time="8.730"/>
+<Who nb="1"/>00:00:00.125<Sync time="8.730"/>
+<Who nb="6"/>c'est<Sync time="8.730"/>
+<Who nb="3"/>c'est un rond-point où y a tout plein de restaurants<Sync time="8.730"/>
+<Who nb="4"/>s</Turn>
+<Turn endTime="11.984" speaker="ortho phones phono words" startTime="11.949">
+<Sync time="11.949"/>
+<Who nb="3"/>_<Sync time="11.949"/>
+<Who nb="4"/>_<Sync time="11.949"/>
+<Who nb="1"/>_<Sync time="11.949"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="49.117" speaker="words" startTime="48.746">
+<Sync time="48.746"/>voir<Sync time="48.941"/>si</Turn>
+<Turn endTime="12.054" speaker="ortho phones phono words" startTime="49.117">
+<Sync time="49.117"/>
+<Who nb="4"/>on<Sync time="11.984"/>
+<Who nb="3"/>a~ fE ka~ t*o~ dEsa~ l@<Sync time="11.984"/>
+<Who nb="4"/>en<Sync time="11.984"/>
+<Who nb="1"/>en fait quand on descend le<Sync time="11.984"/>
+<Who nb="2"/>a~</Turn>
+<Turn endTime="13.995" speaker="mots déictiques locuteur-cp ortho phones phono words" startTime="49.290">
+<Sync time="49.290"/>
+<Who nb="5"/>s'intéresse<Sync time="13.245"/>
+<Who nb="4"/>i a lObeli<Sync time="13.245"/>
+<Who nb="1"/>y a<Sync time="13.245"/>
+<Who nb="5"/>y a<Sync time="13.245"/>
+<Who nb="2"/>y a l'obélis<Sync time="13.245"/>
+<Who nb="3"/>i<Sync time="49.808"/>
+<Who nb="5"/>à<Sync time="13.940"/>
+<Who nb="4"/>vu vwaje l@ david<Sync time="13.940"/>
+<Who nb="1"/>vous<Sync time="13.940"/>
+<Who nb="5"/>vous<Sync time="13.940"/>
+<Who nb="2"/>vous voyez le david<Sync time="13.940"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="54.052" speaker="phones words" startTime="53.781">
+<Sync time="53.781"/>
+<Who nb="2"/>_<Sync time="53.781"/>
+<Who nb="1"/>_<Sync time="53.821"/>
+<Who nb="2"/>euh<Sync time="53.821"/>
+<Who nb="1"/>2</Turn>
+<Turn endTime="61.187" speaker="words" startTime="61.024">
+<Sync time="61.024"/>tss</Turn>
+<Turn endTime="63.754" speaker="phones words" startTime="63.592">
+<Sync time="63.592"/>
+<Who nb="2"/>_<Sync time="63.592"/>
+<Who nb="1"/>_</Turn>
+<Turn endTime="14.695" speaker="ortho phones phono words" startTime="63.939">
+<Sync time="63.939"/>
+<Who nb="4"/>[mh]<Sync time="63.939"/>
+<Who nb="2"/>E<Sync time="14.650"/>
+<Who nb="3"/>Z@ vwa lObelisk<Sync time="14.650"/>
+<Who nb="4"/>je<Sync time="14.650"/>
+<Who nb="1"/>je vois l'obélisque<Sync time="14.650"/>
+<Who nb="2"/>Z</Turn>
+<Turn endTime="55.102" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="54.886">
+<Sync time="54.886"/>00:00:00.216</Turn>
+<Turn endTime="64.574" speaker="phones words" startTime="64.069">
+<Sync time="64.069"/>
+<Who nb="2"/>_<Sync time="64.069"/>
+<Who nb="1"/>_</Turn>
+<Turn endTime="15.980" speaker="phase geste MD words" startTime="64.686">
+<Sync time="64.686"/>
+<Who nb="2"/>en<Sync time="15.421"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="15.495" speaker="phase geste MD phones phono words" startTime="15.981">
+<Sync time="15.981"/>
+<Who nb="1"/>stroke<Sync time="15.435"/>
+<Who nb="3"/>_<Sync time="15.435"/>
+<Who nb="4"/>est-ce<Sync time="15.435"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="67.219" speaker="words" startTime="64.766">
+<Sync time="64.766"/>continuant<Sync time="67.137"/>et</Turn>
+<Turn endTime="57.340" speaker="phase geste MD words" startTime="73.268">
+<Sync time="73.268"/>
+<Who nb="2"/>Baumettes<Sync time="55.980"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourexten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="15.540" speaker="phones phono words" startTime="73.703">
+<Sync time="73.703"/>
+<Who nb="3"/>ne<Sync time="73.703"/>
+<Who nb="1"/>n<Sync time="15.495"/>
+<Who nb="2"/>k@ vu vwaje la Estea wi ty dy david wi do~k sa se syR la kot<Sync time="15.495"/>
+<Who nb="3"/>que<Sync time="15.495"/>
+<Who nb="1"/>k</Turn>
+<Turn endTime="56.577" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="56.575">
+<Sync time="56.575"/>00:00:00.002</Turn>
+<Turn endTime="74.083" speaker="phones words" startTime="73.773">
+<Sync time="73.773"/>
+<Who nb="2"/>connais<Sync time="73.773"/>
+<Who nb="1"/>k<Sync time="73.993"/>
+<Who nb="2"/>que<Sync time="73.993"/>
+<Who nb="1"/>k</Turn>
+<Turn endTime="18.084" speaker="mots déictiques locuteur-cp ortho phones phono words" startTime="74.153">
+<Sync time="74.153"/>
+<Who nb="5"/>de<Sync time="74.153"/>
+<Who nb="3"/>d<Sync time="18.024"/>
+<Who nb="4"/>vwala do~k se Z@ paRl@* d@ la kot do~k<Sync time="18.024"/>
+<Who nb="1"/>voilà<Sync time="18.024"/>
+<Who nb="5"/>voilà<Sync time="18.024"/>
+<Who nb="2"/>voilà donc c'est je parle de la côte donc<Sync time="18.024"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="19.567" speaker="ortho phones phono words" startTime="74.263">
+<Sync time="74.263"/>
+<Who nb="4"/>nom<Sync time="74.263"/>
+<Who nb="2"/>n<Sync time="19.512"/>
+<Who nb="3"/>wE la vu z*Et z*a Elo vu z*Et z*a la staty dy david vu z*ale vER le gud<Sync time="19.512"/>
+<Who nb="4"/>ouais<Sync time="19.512"/>
+<Who nb="1"/>ouais là vous êtes à lo vous êtes à la statue du David vous allez vers Les Goudes<Sync time="19.512"/>
+<Who nb="2"/>w</Turn>
+<Turn endTime="82.793" speaker="phones words" startTime="74.622">
+<Sync time="74.622"/>
+<Who nb="2"/>et<Sync time="74.622"/>
+<Who nb="1"/>e<Sync time="81.683"/>
+<Who nb="2"/>hiver<Sync time="81.683"/>
+<Who nb="1"/>n<Sync time="82.643"/>
+<Who nb="2"/>en<Sync time="82.643"/>
+<Who nb="1"/>a~<Sync time="82.733"/>
+<Who nb="2"/>voiture<Sync time="82.733"/>
+<Who nb="1"/>v</Turn>
+<Turn endTime="55.458" speaker="durée entre déictiques et anaphoriques et Mvt MD words" startTime="84.264">
+<Sync time="84.264"/>
+<Who nb="2"/>que<Sync time="55.102"/>
+<Who nb="1"/>00:00:00.356</Turn>
+<Turn endTime="22.948" speaker="ortho phase geste MD phones phono words" startTime="55.740">
+<Sync time="55.740"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="22.637"/>
+<Who nb="4"/>_<Sync time="22.637"/>
+<Who nb="5"/>_<Sync time="22.637"/>
+<Who nb="1"/>_<Sync time="22.637"/>
+<Who nb="3"/>_</Turn>
+<Turn endTime="25.197" speaker="ortho phones phono words" startTime="84.280">
+<Sync time="84.280"/>
+<Who nb="4"/>quand<Sync time="23.402"/>
+<Who nb="3"/>wE kOm si vu z*alje paR laba<Sync time="23.402"/>
+<Who nb="4"/>comme<Sync time="23.402"/>
+<Who nb="1"/>ouais comme si vous alliez vers là-bas<Sync time="23.402"/>
+<Who nb="2"/>_<Sync time="25.162"/>
+<Who nb="3"/>_<Sync time="25.162"/>
+<Who nb="4"/>_<Sync time="25.162"/>
+<Who nb="1"/>_<Sync time="25.162"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="57.036" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="56.795">
+<Sync time="56.795"/>00:00:00.241</Turn>
+<Turn endTime="85.794" speaker="words" startTime="85.334">
+<Sync time="85.334"/>payer<Sync time="85.582"/>deux</Turn>
+<Turn endTime="57.200" speaker="durée entre déictiques et anaphoriques et Mvt MD words" startTime="85.794">
+<Sync time="85.794"/>
+<Who nb="2"/>euros<Sync time="57.045"/>
+<Who nb="1"/>00:00:00.155</Turn>
+<Turn endTime="25.227" speaker="ortho phones phono words" startTime="86.024">
+<Sync time="86.024"/>
+<Who nb="4"/>parce<Sync time="25.197"/>
+<Who nb="3"/>do~k vu lo~Ze ka~ vu pase la staty de david apRE vu z*aRive a 9~ Ro~ pwe~<Sync time="25.197"/>
+<Who nb="4"/>donc<Sync time="25.197"/>
+<Who nb="1"/>donc vous longez, quand vous passez la statue d David, après vous arrivez à un rond-point<Sync time="25.197"/>
+<Who nb="2"/>d</Turn>
+<Turn endTime="87.370" speaker="words" startTime="86.184">
+<Sync time="86.184"/>qu'<Sync time="86.408"/>petit<Sync time="86.577"/>parking<Sync time="87.116"/>heu</Turn>
+<Turn endTime="17.850" speaker="ortho words" startTime="87.370">
+<Sync time="87.370"/>
+<Who nb="2"/>bon<Sync time="15.434"/>
+<Who nb="1"/>est-ce que vous voyez la sta oui tue du David oui donc ça c'est sur la côte</Turn>
+<Turn endTime="29.331" speaker="ortho phones phono words" startTime="28.767">
+<Sync time="28.767"/>
+<Who nb="3"/>_<Sync time="28.767"/>
+<Who nb="4"/>_<Sync time="28.767"/>
+<Who nb="1"/>_<Sync time="28.767"/>
+<Who nb="2"/>_<Sync time="73.614"/>
+<Who nb="1"/>je ne connais que de nom<Sync time="28.966"/>
+<Who nb="3"/>_<Sync time="28.966"/>
+<Who nb="4"/>_<Sync time="28.966"/>
+<Who nb="1"/>_<Sync time="28.966"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="1.090" speaker="phase geste 2M phase geste MD" startTime="43.135">
+<Sync time="43.135"/>
+<Who nb="2"/>rétraction<Sync time="0.350"/>
+<Who nb="1"/>préparation</Turn>
+<Turn endTime="6.200" speaker="phase geste 2M" startTime="1.090">
+<Sync time="1.090"/>stroke<Comment desc="phase geste 2M-mvt2M:&#9;aller-retouradd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;aller-retouradd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;aller-retourabd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;aller-retourabd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;aller-retourabd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;aller-retourabd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;aller-retourexten"/>
+<Comment desc="phase geste 2M-Forme pointage 2M:&#9;phalangesdospaume"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;mire"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;tracé"/>
+<Sync time="4.610"/>enchaînement</Turn>
+<Turn endTime="34.285" speaker="ortho phones phono words" startTime="33.897">
+<Sync time="33.897"/>
+<Who nb="3"/>
+<Sync time="33.897"/>
+<Who nb="4"/>_<Sync time="33.897"/>
+<Who nb="1"/>
+<Sync time="33.897"/>
+<Who nb="2"/>_<Sync time="33.900"/>
+<Who nb="3"/>_<Sync time="33.900"/>
+<Who nb="4"/>_<Sync time="33.900"/>
+<Who nb="1"/>_<Sync time="33.900"/>
+<Who nb="2"/>_<Sync time="34.245"/>
+<Who nb="3"/>e a~ fE vu z*ave lo~Ze lipOdRom paR sk@ vu z*Et z*2<Sync time="34.245"/>
+<Who nb="4"/>et<Sync time="34.245"/>
+<Who nb="1"/>et en fait vous avez longé l'hippodrome parce que vous êtes euh<Sync time="34.245"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="37.688" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp ortho phones phono words" startTime="36.931">
+<Sync time="36.931"/>
+<Who nb="5"/>set Rut El lo~Z lipOdRom aSyEm dakOR ZavE ZamE R@maRke e do~ ka s@ Ro~ pwe~ d@ lEskal bOReli vu R@mo~te a goS vu z*ale Zys ka~ o i a 9~ n*igREk a l@ Ro~ pwe~ dy pus avEk l@ myze daR 2 la i a l@ myze daR ko~ta~pORe~<Sync time="36.931"/>
+<Who nb="2"/>cette<Sync time="36.931"/>
+<Who nb="1"/>00:00:00.084<Sync time="36.931"/>
+<Who nb="6"/>cette<Sync time="36.931"/>
+<Who nb="3"/>cette route elle longe l'hippodrome (hum d'accord) j'avais jamais remarqué et donc à ce rond-point de l'escale Borély vous remontez à gauche vous allez jusqu'en haut y a un y a le rond-point du pouce avec le musée d'art euh là y a le musée d'art contemporain<Sync time="36.931"/>
+<Who nb="4"/>_</Turn>
+<Turn endTime="47.993" speaker="ortho phones phono" startTime="47.723">
+<Sync time="47.723"/>
+<Who nb="3"/>EmaSEmaS ki e t*e~teResa~ a vwaR si o~ se~teREs dakO R a laR ko~ta~pORe~<Sync time="47.723"/>
+<Who nb="1"/>mhmh qui est intéressant à voir si on s'intéresse d'accord à l'art contemporain<Sync time="47.723"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="8.480" speaker="ortho phase geste 2M phones phono words" startTime="51.011">
+<Sync time="51.011"/>
+<Who nb="4"/>
+<Sync time="51.011"/>
+<Who nb="5"/>_<Sync time="51.011"/>
+<Who nb="1"/>
+<Sync time="51.011"/>
+<Who nb="3"/>_<Sync time="7.681"/>
+<Who nb="2"/>stroke<Comment desc="phase geste 2M-mvt2M:&#9;abd"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;exten"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;add"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;flex"/>
+<Comment desc="phase geste 2M-Forme pointage 2M:&#9;phalangesdospaume"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;toucher"/>
+</Turn>
+<Turn endTime="51.081" speaker="ortho phones phono words" startTime="51.016">
+<Sync time="51.016"/>
+<Who nb="3"/>vu z*ave la staty dy pus la ki e la staty d@ laRtist 2<Sync time="51.016"/>
+<Who nb="4"/>_<Sync time="51.016"/>
+<Who nb="1"/>vous avez la statue du pouce là qui est la statue de l'artiste euh<Sync time="51.016"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="55.876" speaker="ortho phones phono" startTime="54.052">
+<Sync time="54.052"/>
+<Who nb="3"/>aS9y dy fam2 z*aRtist 2 a wE sa m@ di kElk@* Soz<Sync time="54.052"/>
+<Who nb="1"/>heu du fameux artiste euh ah ouais ça me dit quelque chose<Sync time="54.052"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="62.434" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp ortho phones phono words" startTime="56.254">
+<Sync time="56.254"/>
+<Who nb="5"/>ki a fE ki a mi ki ki ki a fE so~ sa sa sa skyltyR d@ fe~ sa teE sa to so~ mulaZ d@ pus la<Sync time="56.254"/>
+<Who nb="2"/>qui<Sync time="56.254"/>
+<Who nb="1"/>00:00:00.084<Sync time="56.254"/>
+<Who nb="6"/>qui<Sync time="56.254"/>
+<Who nb="3"/>qui a fait qui a mis qui qui qui a fait son sa sa sa sculpture de fin sa ts@o son moulage de pouce là<Sync time="56.254"/>
+<Who nb="4"/>_</Turn>
+<Turn endTime="0.085" speaker="phase geste MD phones" startTime="85.870">
+<Sync time="85.870"/>
+<Who nb="1"/>stroke<Sync time="0.055"/>
+<Who nb="2"/>i</Turn>
+<Turn endTime="0.665" speaker="phones" startTime="0.085">
+<Sync time="0.085"/>z<Sync time="0.145"/>o~<Sync time="0.335"/>i<Sync time="0.625"/>i</Turn>
+<Turn endTime="1.365" speaker="phase geste MD phones" startTime="86.750">
+<Sync time="86.750"/>
+<Who nb="1"/>stroke<Sync time="0.815"/>
+<Who nb="2"/>e<Sync time="87.270"/>
+<Who nb="1"/>stroke<Sync time="1.285"/>
+<Who nb="2"/>s</Turn>
+<Turn endTime="1.615" speaker="phones" startTime="1.365">
+<Sync time="1.365"/>k<Sync time="1.435"/>a<Sync time="1.485"/>l</Turn>
+<Turn endTime="1.735" speaker="phase gest MG phase geste MD phones" startTime="87.700">
+<Sync time="87.700"/>
+<Who nb="2"/>stroke<Sync time="87.700"/>
+<Who nb="1"/>stroke<Sync time="43.335"/>
+<Who nb="2"/>préparation<Sync time="32.368"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="1.645"/>
+<Who nb="3"/>O</Turn>
+<Turn endTime="1.815" speaker="phones" startTime="1.735">
+<Sync time="1.735"/>R</Turn>
+<Turn endTime="1.885" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="43.575">
+<Sync time="43.575"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="43.575"/>
+<Who nb="1"/>00:00:00.224<Sync time="1.815"/>
+<Who nb="3"/>e</Turn>
+<Turn endTime="3.031" speaker="phones" startTime="1.885">
+<Sync time="1.885"/>l<Sync time="1.915"/>i<Sync time="2.611"/>@<Sync time="2.671"/>o~<Sync time="2.851"/>p<Sync time="2.941"/>w</Turn>
+<Turn endTime="3.071" speaker="phase geste MD phones" startTime="44.015">
+<Sync time="44.015"/>
+<Who nb="1"/>enchaînement<Sync time="3.031"/>
+<Who nb="2"/>9~</Turn>
+<Turn endTime="3.221" speaker="phones" startTime="3.171">
+<Sync time="3.171"/>i</Turn>
+<Turn endTime="17.280" speaker="phase geste MD" startTime="16.801">
+<Sync time="16.801"/>tenue</Turn>
+<Turn endTime="3.601" speaker="phase geste MD phones" startTime="17.280">
+<Sync time="17.280"/>
+<Who nb="1"/>enchaînement<Sync time="3.561"/>
+<Who nb="2"/>o</Turn>
+<Turn endTime="3.701" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="18.030">
+<Sync time="18.030"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retouradd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="18.030"/>
+<Who nb="1"/>00:00:00.320<Sync time="3.601"/>
+<Who nb="3"/>t</Turn>
+<Turn endTime="3.901" speaker="phones" startTime="3.701">
+<Sync time="3.701"/>e<Sync time="3.801"/>@<Sync time="3.861"/>i</Turn>
+<Turn endTime="4.131" speaker="phase geste MD phones" startTime="44.175">
+<Sync time="44.175"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="3.901"/>
+<Who nb="2"/>p<Sync time="44.615"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="4.001"/>
+<Who nb="2"/>O<Sync time="18.351"/>
+<Who nb="1"/>enchaînement<Sync time="4.081"/>
+<Who nb="2"/>d</Turn>
+<Turn endTime="4.441" speaker="phones" startTime="4.131">
+<Sync time="4.131"/>R<Sync time="4.211"/>o<Sync time="4.331"/>m</Turn>
+<Turn endTime="5.534" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="18.356">
+<Sync time="18.356"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="18.356"/>
+<Who nb="1"/>00:00:00.048<Sync time="4.864"/>
+<Who nb="3"/>E</Turn>
+<Turn endTime="6.805" speaker="phones" startTime="6.215">
+<Sync time="6.215"/>o~<Sync time="6.335"/>p<Sync time="6.435"/>w<Sync time="6.535"/>9~</Turn>
+<Turn endTime="7.235" speaker="mots déictiques locuteur-cp ortho phones phono words" startTime="62.802">
+<Sync time="62.802"/>
+<Who nb="4"/>se t*9~ pus Zea~<Sync time="62.802"/>
+<Who nb="1"/>c'est<Sync time="62.802"/>
+<Who nb="5"/>c'est<Sync time="62.802"/>
+<Who nb="2"/>c'est un pouce géant<Sync time="62.802"/>
+<Who nb="3"/>s<Sync time="7.145"/>
+<Who nb="3"/>@</Turn>
+<Turn endTime="7.295" speaker="phase geste MD phones" startTime="18.521">
+<Sync time="18.521"/>
+<Who nb="1"/>enchaînement<Sync time="7.235"/>
+<Who nb="2"/>
+</Turn>
+<Turn endTime="8.205" speaker="phones" startTime="7.295">
+<Sync time="7.295"/>i<Sync time="7.395"/>p<Sync time="7.445"/>O<Sync time="7.525"/>d<Sync time="7.575"/>R<Sync time="7.605"/>o<Sync time="7.665"/>m<Sync time="7.845"/>i<Sync time="8.065"/>a<Sync time="8.095"/>p<Sync time="8.135"/>E</Turn>
+<Turn endTime="57.309" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="57.200">
+<Sync time="57.200"/>00:00:00.109</Turn>
+<Turn endTime="8.235" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="57.540">
+<Sync time="57.540"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="57.540"/>
+<Who nb="1"/>00:00:00.042<Sync time="8.205"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="8.625" speaker="phones" startTime="8.265">
+<Sync time="8.265"/>E<Sync time="8.295"/>s<Sync time="8.325"/>k<Sync time="8.375"/>a<Sync time="8.405"/>l<Sync time="8.475"/>O<Sync time="8.505"/>R<Sync time="8.535"/>e<Sync time="8.595"/>l</Turn>
+<Turn endTime="8.730" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="18.558">
+<Sync time="18.558"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourproximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="18.558"/>
+<Who nb="1"/>00:00:00.095<Sync time="8.625"/>
+<Who nb="3"/>i</Turn>
+<Turn endTime="8.855" speaker="phones" startTime="8.805">
+<Sync time="8.805"/>e</Turn>
+<Turn endTime="57.540" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="57.402">
+<Sync time="57.402"/>00:00:00.138</Turn>
+<Turn endTime="9.075" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="57.940">
+<Sync time="57.940"/>
+<Who nb="2"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="57.940"/>
+<Who nb="1"/>00:00:00.158<Sync time="8.915"/>
+<Who nb="3"/>o~</Turn>
+<Turn endTime="9.205" speaker="phones" startTime="9.075">
+<Sync time="9.075"/>p<Sync time="9.155"/>w</Turn>
+<Turn endTime="9.235" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="18.654">
+<Sync time="18.654"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourexten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="18.654"/>
+<Who nb="1"/>00:00:00.040<Sync time="9.205"/>
+<Who nb="3"/>9~</Turn>
+<Turn endTime="10.025" speaker="phones" startTime="9.375">
+<Sync time="9.375"/>a<Sync time="9.535"/>u<Sync time="9.675"/>l<Sync time="9.715"/>9~<Sync time="9.865"/>@<Sync time="9.955"/>E</Turn>
+<Turn endTime="10.125" speaker="phase geste MD phones" startTime="18.983">
+<Sync time="18.983"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="10.025"/>
+<Who nb="2"/>s</Turn>
+<Turn endTime="57.722" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="57.600">
+<Sync time="57.600"/>00:00:00.122</Turn>
+<Turn endTime="10.165" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="57.722">
+<Sync time="57.722"/>
+<Who nb="1"/>00:00:00.093<Sync time="10.125"/>
+<Who nb="2"/>t</Turn>
+<Turn endTime="10.515" speaker="phones" startTime="10.165">
+<Sync time="10.165"/>o<Sync time="10.265"/>R<Sync time="10.295"/>a~</Turn>
+<Turn endTime="12.174" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="19.117">
+<Sync time="19.117"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="19.117"/>
+<Who nb="1"/>00:00:00.087<Sync time="12.104"/>
+<Who nb="3"/>E</Turn>
+<Turn endTime="19.352" speaker="phase geste MD" startTime="19.228">
+<Sync time="19.228"/>enchaînement</Turn>
+<Turn endTime="12.374" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="58.300">
+<Sync time="58.300"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourexten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="58.300"/>
+<Who nb="1"/>00:00:00.081<Sync time="12.294"/>
+<Who nb="3"/>a~</Turn>
+<Turn endTime="12.584" speaker="phones" startTime="12.454">
+<Sync time="12.454"/>o~</Turn>
+<Turn endTime="12.714" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="19.352">
+<Sync time="19.352"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="19.352"/>
+<Who nb="1"/>00:00:00.042<Sync time="12.644"/>
+<Who nb="3"/>E</Turn>
+<Turn endTime="13.094" speaker="phones" startTime="12.714">
+<Sync time="12.714"/>s<Sync time="12.824"/>a~</Turn>
+<Turn endTime="20.032" speaker="phase geste MD" startTime="19.594">
+<Sync time="19.594"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+</Turn>
+<Turn endTime="13.194" speaker="ortho phones phono words" startTime="63.754">
+<Sync time="63.754"/>
+<Who nb="3"/>Ema SEmaS<Sync time="63.754"/>
+<Who nb="4"/>[mh]<Sync time="63.754"/>
+<Who nb="1"/>mh mh<Sync time="63.754"/>
+<Who nb="2"/>E<Sync time="13.124"/>
+<Who nb="2"/>@</Turn>
+<Turn endTime="13.550" speaker="phones" startTime="13.310">
+<Sync time="13.310"/>a<Sync time="13.440"/>O<Sync time="13.490"/>b</Turn>
+<Turn endTime="58.128" speaker="durée entre déictiques et anaphoriques et Mvt MD ortho phones phono words" startTime="64.574">
+<Sync time="64.574"/>
+<Who nb="4"/>e a~ ko~tinya~ tu dRwa 2 vu z*aRive a 9~ n*otR@* Ro~ pwe~ e la se la diREksjo~ d@ sORmju do~k vu z*ale Zys ko bu a~ diREksjo~ de bomEt la pRizo~<Sync time="64.574"/>
+<Who nb="5"/>et<Sync time="64.574"/>
+<Who nb="2"/>et en continuant tout droit euh vous arrivez à un autre rond-point et là c'est la direction de Sormiou donc vous allez jusqu'au bout en direction des Baumettes la prison<Sync time="64.574"/>
+<Who nb="3"/>_<Sync time="58.098"/>
+<Who nb="1"/>00:00:00.030</Turn>
+<Turn endTime="13.670" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp ortho phones phono words" startTime="72.186">
+<Sync time="72.186"/>
+<Who nb="5"/>a dakOR oka la fam2z pRizo~ de bomEt<Sync time="72.186"/>
+<Who nb="2"/>la<Sync time="72.186"/>
+<Who nb="1"/>00:00:00.014<Sync time="72.186"/>
+<Who nb="6"/>la<Sync time="72.186"/>
+<Who nb="3"/>ah d'accord ok la fameuse prison des Baumettes<Sync time="72.186"/>
+<Who nb="4"/>_<Sync time="13.550"/>
+<Who nb="4"/>e</Turn>
+<Turn endTime="13.700" speaker="phones" startTime="13.670">
+<Sync time="13.670"/>l</Turn>
+<Turn endTime="73.663" speaker="phones phono words" startTime="73.613">
+<Sync time="73.613"/>
+<Who nb="2"/>Z@ n@ kOnE k@ d@ no~<Sync time="73.613"/>
+<Who nb="3"/>je<Sync time="73.613"/>
+<Who nb="1"/>Z</Turn>
+<Turn endTime="60.260" speaker="durée entre déictiques et anaphoriques et Mvt MD ortho phase gest MG phase geste MD phones phono words" startTime="74.507">
+<Sync time="74.507"/>
+<Who nb="6"/>e la 2 a 9~ mOma~ dOne 2 i a e la o bu d@ la Rut i a la Rut ki mo~t vER sORmju<Sync time="74.507"/>
+<Who nb="7"/>_<Sync time="74.507"/>
+<Who nb="2"/>et là euh à un moment donné euh y a et là au bout de la route y a la route qui monte vers Sormiou<Sync time="74.507"/>
+<Who nb="5"/>_<Sync time="59.860"/>
+<Who nb="4"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="59.860"/>
+<Who nb="1"/>00:00:00.182<Sync time="59.860"/>
+<Who nb="3"/>préparation</Turn>
+<Turn endTime="81.193" speaker="ortho phones phono words" startTime="80.318">
+<Sync time="80.318"/>
+<Who nb="3"/>
+<Sync time="80.318"/>
+<Who nb="4"/>_<Sync time="80.318"/>
+<Who nb="1"/>
+<Sync time="80.318"/>
+<Who nb="2"/>_<Sync time="13.700"/>
+<Who nb="2"/>i<Sync time="81.076"/>
+<Who nb="3"/>
+<Sync time="81.076"/>
+<Who nb="4"/>_<Sync time="81.076"/>
+<Who nb="1"/>
+<Sync time="81.076"/>
+<Who nb="2"/>_<Sync time="81.078"/>
+<Who nb="3"/>alOR la a~ n*ivER vu puve z*i ale a~ vwatyR se t*uvER<Sync time="81.078"/>
+<Who nb="4"/>_<Sync time="81.078"/>
+<Who nb="1"/>alors là en hiver vous pouvez y aller en voiture c'est ouvert<Sync time="81.078"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="14.025" speaker="phones" startTime="83.758">
+<Sync time="83.758"/>_<Sync time="13.995"/>u</Turn>
+<Turn endTime="10.431" speaker="ortho phase gest MG phono words" startTime="83.940">
+<Sync time="83.940"/>
+<Who nb="3"/>saSa~ k@ ka~ vu z*aRive a sORmju fo pEje d2 z*2Ro paR sk@ i a 9~ p@ti paRkiN 2 bo~<Sync time="83.940"/>
+<Who nb="4"/>sachant<Sync time="83.940"/>
+<Who nb="1"/>sachant que quand vous arrivez à Sormiou faut payer deux euro parce que y a un petit parking euh bon<Sync time="8.481"/>
+<Who nb="2"/>tenue<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesdospaume"/>
+<Comment desc="phase gest MG-mvtMG:&#9;aucun"/>
+</Turn>
+<Turn endTime="14.145" speaker="phones" startTime="14.055">
+<Sync time="14.055"/>w<Sync time="14.085"/>a<Sync time="14.115"/>j</Turn>
+<Turn endTime="58.888" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="58.542">
+<Sync time="58.542"/>00:00:00.158<Sync time="58.712"/>00:00:00.176</Turn>
+<Turn endTime="2.640" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp ortho phase geste 2M phones phono words" startTime="87.500">
+<Sync time="87.500"/>
+<Who nb="6"/>dakOR<Sync time="87.500"/>
+<Who nb="7"/>d'accord<Sync time="87.500"/>
+<Who nb="3"/>d'accord<Sync time="87.500"/>
+<Who nb="4"/>enchaînement<Sync time="87.500"/>
+<Who nb="5"/>d<Sync time="14.145"/>
+<Who nb="5"/>e<Sync time="2.570"/>
+<Who nb="1"/>70<Sync time="2.570"/>
+<Who nb="2"/>le</Turn>
+<Turn endTime="2.671" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="14.205">
+<Sync time="14.205"/>
+<Who nb="3"/>@<Sync time="2.641"/>
+<Who nb="1"/>299<Sync time="2.641"/>
+<Who nb="2"/>rond-point<Sync time="2.641"/>
+<Who nb="4"/>rond-point<Sync time="2.641"/>
+<Who nb="3"/>R</Turn>
+<Turn endTime="3.071" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M" startTime="2.940">
+<Sync time="2.940"/>131</Turn>
+<Turn endTime="3.171" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="14.305">
+<Sync time="14.305"/>
+<Who nb="3"/>a<Sync time="3.071"/>
+<Who nb="1"/>150<Sync time="3.071"/>
+<Who nb="2"/>qui<Sync time="3.071"/>
+<Who nb="4"/>qui<Sync time="3.071"/>
+<Who nb="3"/>k</Turn>
+<Turn endTime="3.251" speaker="phones words" startTime="14.375">
+<Sync time="14.375"/>
+<Who nb="1"/>v<Sync time="3.221"/>
+<Who nb="2"/>est<Sync time="3.221"/>
+<Who nb="1"/>e</Turn>
+<Turn endTime="14.650" speaker="phones" startTime="14.475">
+<Sync time="14.475"/>i<Sync time="14.585"/>d</Turn>
+<Turn endTime="14.735" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="32.059">
+<Sync time="32.059"/>
+<Who nb="1"/>00:00:00.120<Sync time="14.695"/>
+<Who nb="2"/>@</Turn>
+<Turn endTime="58.940" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="58.888">
+<Sync time="58.888"/>00:00:00.052</Turn>
+<Turn endTime="3.461" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="59.056">
+<Sync time="59.056"/>
+<Who nb="2"/>00:00:00.110<Sync time="3.251"/>
+<Who nb="1"/>204<Sync time="3.251"/>
+<Who nb="3"/>à<Sync time="3.251"/>
+<Who nb="5"/>à<Sync time="3.251"/>
+<Who nb="4"/>a</Turn>
+<Turn endTime="3.461" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M phones" startTime="14.795">
+<Sync time="14.795"/>
+<Who nb="2"/>w<Sync time="3.455"/>
+<Who nb="1"/>6</Turn>
+<Turn endTime="3.561" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="14.825">
+<Sync time="14.825"/>
+<Who nb="3"/>a<Sync time="3.461"/>
+<Who nb="1"/>299<Sync time="3.461"/>
+<Who nb="2"/>à côté de<Sync time="3.461"/>
+<Who nb="4"/>côté<Sync time="3.461"/>
+<Who nb="3"/>k</Turn>
+<Turn endTime="15.065" speaker="phones" startTime="14.945">
+<Sync time="14.945"/>O<Sync time="14.995"/>b</Turn>
+<Turn endTime="59.248" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="59.166">
+<Sync time="59.166"/>00:00:00.082</Turn>
+<Turn endTime="3.801" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="59.336">
+<Sync time="59.336"/>
+<Who nb="2"/>00:00:00.132<Sync time="3.761"/>
+<Who nb="1"/>70<Sync time="3.761"/>
+<Who nb="3"/>de<Sync time="3.761"/>
+<Who nb="5"/>de<Sync time="3.761"/>
+<Who nb="4"/>d</Turn>
+<Turn endTime="3.861" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="3.831">
+<Sync time="3.831"/>
+<Who nb="1"/>74<Sync time="3.831"/>
+<Who nb="2"/>l'hippodrome<Sync time="3.831"/>
+<Who nb="4"/>l'hippodrome<Sync time="3.831"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="4.441" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M" startTime="3.905">
+<Sync time="3.905"/>536</Turn>
+<Turn endTime="7.680" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M phase geste 2M" startTime="6.200">
+<Sync time="6.200"/>
+<Who nb="1"/>605<Sync time="6.200"/>
+<Who nb="2"/>stroke<Comment desc="phase geste 2M-mvt2M:&#9;add"/>
+<Comment desc="phase geste 2M-mvt2M:&#9;flex"/>
+<Comment desc="phase geste 2M-Forme pointage 2M:&#9;phalangesdospaume"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;mire"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;tracé"/>
+</Turn>
+<Turn endTime="15.155" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="59.468">
+<Sync time="59.468"/>
+<Who nb="1"/>00:00:00.146<Sync time="19.774"/>00:00:00.023<Sync time="15.065"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="15.185" speaker="phase geste MD phones" startTime="20.033">
+<Sync time="20.033"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="15.155"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="20.667" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="59.614">
+<Sync time="59.614"/>
+<Who nb="1"/>00:00:00.134<Sync time="20.296"/>
+<Who nb="2"/>rétraction</Turn>
+<Turn endTime="15.295" speaker="phase geste MD phones" startTime="20.667">
+<Sync time="20.667"/>
+<Who nb="1"/>préparation<Sync time="15.185"/>
+<Who nb="2"/>i</Turn>
+<Turn endTime="20.875" speaker="phase geste MD" startTime="20.841">
+<Sync time="20.841"/>stroke</Turn>
+<Turn endTime="60.380" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD" startTime="60.260">
+<Sync time="60.260"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="60.260"/>
+<Who nb="1"/>00:00:00.360<Sync time="60.260"/>
+<Who nb="2"/>stroke</Turn>
+<Turn endTime="7.095" speaker="phase geste 2M phones words" startTime="60.620">
+<Sync time="60.620"/>
+<Who nb="1"/>rétraction<Sync time="6.805"/>
+<Who nb="3"/>euh<Sync time="6.805"/>
+<Who nb="2"/>2</Turn>
+<Turn endTime="15.580" speaker="phones" startTime="15.295">
+<Sync time="15.295"/>s<Sync time="15.365"/>k<Sync time="15.540"/>@</Turn>
+<Turn endTime="7.145" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="15.610">
+<Sync time="15.610"/>
+<Who nb="3"/>u<Sync time="7.095"/>
+<Who nb="1"/>248<Sync time="7.095"/>
+<Who nb="2"/>de<Sync time="7.095"/>
+<Who nb="4"/>de<Sync time="7.095"/>
+<Who nb="3"/>d</Turn>
+<Turn endTime="7.426" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp words" startTime="7.343">
+<Sync time="7.343"/>
+<Who nb="1"/>83<Sync time="7.343"/>
+<Who nb="2"/>qui<Sync time="7.343"/>
+<Who nb="3"/>qui</Turn>
+<Turn endTime="7.815" speaker="phones words" startTime="15.670">
+<Sync time="15.670"/>
+<Who nb="1"/>w<Sync time="7.426"/>
+<Who nb="2"/>s'appelle</Turn>
+<Turn endTime="15.740" speaker="phones" startTime="15.710">
+<Sync time="15.710"/>a</Turn>
+<Turn endTime="7.845" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="15.740">
+<Sync time="15.740"/>
+<Who nb="3"/>j<Sync time="7.815"/>
+<Who nb="1"/>120<Sync time="7.815"/>
+<Who nb="2"/>qui<Sync time="7.815"/>
+<Who nb="4"/>qui<Sync time="7.815"/>
+<Who nb="3"/>k</Turn>
+<Turn endTime="7.995" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M" startTime="7.935">
+<Sync time="7.935"/>60</Turn>
+<Turn endTime="15.810" speaker="phones" startTime="15.770">
+<Sync time="15.770"/>e</Turn>
+<Turn endTime="8.065" speaker="phones words" startTime="15.850">
+<Sync time="15.850"/>
+<Who nb="1"/>a<Sync time="7.995"/>
+<Who nb="2"/>s'appelle<Sync time="7.995"/>
+<Who nb="1"/>s</Turn>
+<Turn endTime="8.445" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones" startTime="15.910">
+<Sync time="15.910"/>
+<Who nb="3"/>s<Sync time="8.234"/>
+<Who nb="1"/>211<Sync time="8.234"/>
+<Who nb="2"/>l'escale</Turn>
+<Turn endTime="16.080" speaker="phones" startTime="16.010">
+<Sync time="16.010"/>t<Sync time="16.040"/>e</Turn>
+<Turn endTime="8.475" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M mots déictiques locuteur-cp phones words" startTime="16.080">
+<Sync time="16.080"/>
+<Who nb="3"/>a<Sync time="8.445"/>
+<Who nb="1"/>35<Sync time="8.445"/>
+<Who nb="2"/>Borély<Sync time="8.445"/>
+<Who nb="4"/>Borély<Sync time="8.445"/>
+<Who nb="3"/>b</Turn>
+<Turn endTime="16.330" speaker="phones" startTime="16.150">
+<Sync time="16.150"/>i</Turn>
+<Turn endTime="8.730" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="16.360">
+<Sync time="16.360"/>
+<Who nb="3"/>y<Sync time="8.480"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="8.480"/>
+<Who nb="1"/>00:00:00.250</Turn>
+<Turn endTime="16.470" speaker="phones" startTime="16.440">
+<Sync time="16.440"/>y</Turn>
+<Turn endTime="16.540" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M phase geste 2M phones" startTime="35.249">
+<Sync time="35.249"/>
+<Who nb="1"/>486<Sync time="35.249"/>
+<Who nb="2"/>stroke<Comment desc="phase geste 2M-mvt2M:&#9;flex"/>
+<Comment desc="phase geste 2M-Forme pointage 2M:&#9;phalangesdospaume"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;toucher"/>
+<Comment desc="phase geste 2M-Type pointage 2M:&#9;direction/mouvement"/>
+<Sync time="16.500"/>
+<Who nb="3"/>a</Turn>
+<Turn endTime="16.630" speaker="phones" startTime="16.540">
+<Sync time="16.540"/>v</Turn>
+<Turn endTime="36.055" speaker="durée chevauchements entre mots décitiques et anaphoriques et mvt2M phase geste 2M" startTime="35.735">
+<Sync time="35.735"/>
+<Who nb="1"/>120<Sync time="35.735"/>
+<Who nb="2"/>enchaînement<Comment desc="phase geste 2M-mvt2M:&#9;exten"/>
+<Comment desc="phase geste 2M-Forme pointage 2M:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="16.690" speaker="phase gest MG phase geste MD phones" startTime="61.060">
+<Sync time="61.060"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="61.060"/>
+<Who nb="1"/>préparation<Sync time="16.630"/>
+<Who nb="3"/>i</Turn>
+<Turn endTime="32.191" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD" startTime="62.200">
+<Sync time="62.200"/>
+<Who nb="3"/>rétraction<Sync time="62.200"/>
+<Who nb="2"/>rétraction<Sync time="32.179"/>
+<Who nb="1"/>00:00:00.012</Turn>
+<Turn endTime="61.726" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="61.560">
+<Sync time="61.560"/>00:00:00.166</Turn>
+<Turn endTime="63.640" speaker="phase gest MG phase geste MD" startTime="62.600">
+<Sync time="62.600"/>
+<Who nb="2"/>préparation<Sync time="62.600"/>
+<Who nb="1"/>stroke</Turn>
+<Turn endTime="0.945" speaker="mots déictiques locuteur-cp phones words" startTime="79.582">
+<Sync time="79.582"/>
+<Who nb="2"/>j<Sync time="35.855"/>
+<Who nb="3"/>parce<Sync time="35.855"/>
+<Who nb="2"/>p<Sync time="0.875"/>
+<Who nb="1"/>à<Sync time="0.875"/>
+<Who nb="3"/>à<Sync time="0.875"/>
+<Who nb="2"/>a</Turn>
+<Turn endTime="21.105" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="20.876">
+<Sync time="20.876"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="20.876"/>
+<Who nb="1"/>00:00:00.229</Turn>
+<Turn endTime="0.975" speaker="mots déictiques locuteur-cp phase geste MD phones words" startTime="21.105">
+<Sync time="21.105"/>
+<Who nb="2"/>préparation<Sync time="0.945"/>
+<Who nb="1"/>l'<Sync time="0.945"/>
+<Who nb="4"/>l'escale<Sync time="0.945"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="1.285" speaker="phones" startTime="0.975">
+<Sync time="0.975"/>E</Turn>
+<Turn endTime="6.024" speaker="mots déictiques locuteur-cp" startTime="5.944">
+<Sync time="5.944"/>y a</Turn>
+<Turn endTime="32.981" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD" startTime="63.640">
+<Sync time="63.640"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="63.640"/>
+<Who nb="2"/>tenue<Sync time="32.608"/>
+<Who nb="3"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="32.608"/>
+<Who nb="1"/>00:00:00.373</Turn>
+<Turn endTime="16.720" speaker="phase gest MG phase geste MD phones" startTime="33.904">
+<Sync time="33.904"/>
+<Who nb="2"/>préparation<Sync time="33.904"/>
+<Who nb="1"/>préparation<Sync time="16.690"/>
+<Who nb="3"/>d</Turn>
+<Turn endTime="6.135" speaker="mots déictiques locuteur-cp phase geste MD phones words" startTime="63.880">
+<Sync time="63.880"/>
+<Who nb="2"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="16.780"/>
+<Who nb="3"/>i<Sync time="6.025"/>
+<Who nb="1"/>un<Sync time="6.025"/>
+<Who nb="4"/>un<Sync time="6.025"/>
+<Who nb="3"/>9~</Turn>
+<Turn endTime="6.215" speaker="mots déictiques locuteur-cp phones words" startTime="6.135">
+<Sync time="6.135"/>
+<Who nb="1"/>rond-point<Sync time="6.135"/>
+<Who nb="3"/>rond-point<Sync time="6.135"/>
+<Who nb="2"/>R</Turn>
+<Turn endTime="8.885" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="16.920">
+<Sync time="16.920"/>
+<Who nb="3"/>o~<Sync time="8.855"/>
+<Who nb="2"/>un<Sync time="8.855"/>
+<Who nb="1"/>00:00:00.030<Sync time="8.855"/>
+<Who nb="4"/>un<Sync time="8.855"/>
+<Who nb="3"/>9~</Turn>
+<Turn endTime="17.020" speaker="phones" startTime="16.970">
+<Sync time="16.970"/>k</Turn>
+<Turn endTime="17.130" speaker="phase gest MG phones" startTime="34.969">
+<Sync time="34.969"/>
+<Who nb="1"/>enchaînement<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesalignées"/>
+<Comment desc="phase gest MG-mvtMG:&#9;proximal"/>
+<Sync time="17.060"/>
+<Who nb="2"/>a</Turn>
+<Turn endTime="17.370" speaker="phones" startTime="17.210">
+<Sync time="17.210"/>e<Sync time="17.340"/>y</Turn>
+<Turn endTime="17.400" speaker="phase geste MD phones" startTime="64.160">
+<Sync time="64.160"/>
+<Who nb="1"/>enchaînement<Sync time="17.370"/>
+<Who nb="2"/>R</Turn>
+<Turn endTime="17.490" speaker="phones" startTime="17.430">
+<Sync time="17.430"/>a</Turn>
+<Turn endTime="17.710" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="21.185">
+<Sync time="21.185"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="21.185"/>
+<Who nb="1"/>00:00:00.092<Sync time="17.620"/>
+<Who nb="3"/>o</Turn>
+<Turn endTime="17.850" speaker="phones" startTime="17.710">
+<Sync time="17.710"/>t</Turn>
+<Turn endTime="9.275" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="18.084">
+<Sync time="18.084"/>
+<Who nb="3"/>w<Sync time="8.885"/>
+<Who nb="2"/>rond-point<Sync time="8.885"/>
+<Who nb="1"/>00:00:00.010<Sync time="8.885"/>
+<Who nb="4"/>rond-point<Sync time="8.885"/>
+<Who nb="3"/>R<Sync time="18.114"/>
+<Who nb="3"/>a<Sync time="9.235"/>
+<Who nb="2"/>où<Sync time="9.235"/>
+<Who nb="1"/>00:00:00.039<Sync time="9.235"/>
+<Who nb="4"/>où<Sync time="9.235"/>
+<Who nb="3"/>u</Turn>
+<Turn endTime="9.290" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones" startTime="18.264">
+<Sync time="18.264"/>
+<Who nb="3"/>l<Sync time="9.274"/>
+<Who nb="2"/>y a<Sync time="9.274"/>
+<Who nb="1"/>00:00:00.016</Turn>
+<Turn endTime="18.474" speaker="phones" startTime="18.344">
+<Sync time="18.344"/>a<Sync time="18.444"/>o~</Turn>
+<Turn endTime="9.535" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="18.474">
+<Sync time="18.474"/>
+<Who nb="3"/>k<Sync time="9.415"/>
+<Who nb="2"/>tout<Sync time="9.415"/>
+<Who nb="1"/>00:00:00.180<Sync time="9.415"/>
+<Who nb="4"/>tout<Sync time="9.415"/>
+<Who nb="3"/>t</Turn>
+<Turn endTime="9.675" speaker="phones words" startTime="18.584">
+<Sync time="18.584"/>
+<Who nb="1"/>e<Sync time="9.595"/>
+<Who nb="2"/>plein<Sync time="9.595"/>
+<Who nb="1"/>p</Turn>
+<Turn endTime="18.964" speaker="phones" startTime="18.734">
+<Sync time="18.734"/>@<Sync time="18.884"/>a<Sync time="18.934"/>R</Turn>
+<Turn endTime="13.124" speaker="mots déictiques locuteur-cp phones words" startTime="18.964">
+<Sync time="18.964"/>
+<Who nb="2"/>l<Sync time="13.094"/>
+<Who nb="1"/>le<Sync time="13.094"/>
+<Who nb="3"/>le<Sync time="13.094"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="19.094" speaker="phones" startTime="19.034">
+<Sync time="19.034"/>@</Turn>
+<Turn endTime="13.440" speaker="mots déictiques locuteur-cp phones words" startTime="19.134">
+<Sync time="19.134"/>
+<Who nb="2"/>a<Sync time="13.380"/>
+<Who nb="1"/>l'obélis<Sync time="13.380"/>
+<Who nb="3"/>l'obélis<Sync time="13.380"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="14.055" speaker="phones words" startTime="19.294">
+<Sync time="19.294"/>
+<Who nb="1"/>o<Sync time="14.025"/>
+<Who nb="2"/>voyez<Sync time="14.025"/>
+<Who nb="1"/>v</Turn>
+<Turn endTime="14.205" speaker="mots déictiques locuteur-cp phones words" startTime="19.364">
+<Sync time="19.364"/>
+<Who nb="2"/>t<Sync time="14.175"/>
+<Who nb="1"/>le<Sync time="14.175"/>
+<Who nb="3"/>le<Sync time="14.175"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="14.650" speaker="mots déictiques locuteur-cp" startTime="14.234">
+<Sync time="14.234"/>David</Turn>
+<Turn endTime="15.850" speaker="mots déictiques locuteur-cp phones words" startTime="15.810">
+<Sync time="15.810"/>
+<Who nb="1"/>la<Sync time="15.810"/>
+<Who nb="3"/>la<Sync time="15.810"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="19.667" speaker="phones" startTime="19.424">
+<Sync time="19.424"/>o~<Sync time="19.474"/>k<Sync time="19.567"/>E<Sync time="19.627"/>a</Turn>
+<Turn endTime="15.910" speaker="mots déictiques locuteur-cp phase geste MD phones words" startTime="64.400">
+<Sync time="64.400"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;mire"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;mire"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="19.767"/>
+<Who nb="3"/>u<Sync time="15.880"/>
+<Who nb="1"/>
+<Sync time="15.880"/>
+<Who nb="4"/>sta<Sync time="15.880"/>
+<Who nb="3"/>E</Turn>
+<Turn endTime="16.150" speaker="phones words" startTime="16.120">
+<Sync time="16.120"/>
+<Who nb="2"/>oui<Sync time="16.120"/>
+<Who nb="1"/>w</Turn>
+<Turn endTime="16.360" speaker="mots déictiques locuteur-cp phones words" startTime="16.330">
+<Sync time="16.330"/>
+<Who nb="1"/>tue<Sync time="16.330"/>
+<Who nb="3"/>tue<Sync time="16.330"/>
+<Who nb="2"/>t</Turn>
+<Turn endTime="20.557" speaker="phones" startTime="19.867">
+<Sync time="19.867"/>E<Sync time="19.927"/>t<Sync time="20.527"/>u</Turn>
+<Turn endTime="16.440" speaker="mots déictiques locuteur-cp phones words" startTime="20.607">
+<Sync time="20.607"/>
+<Who nb="2"/>t<Sync time="16.410"/>
+<Who nb="1"/>du<Sync time="16.410"/>
+<Who nb="3"/>du<Sync time="16.410"/>
+<Who nb="2"/>d</Turn>
+<Turn endTime="35.249" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD" startTime="68.240">
+<Sync time="68.240"/>
+<Who nb="3"/>enchaînement<Sync time="34.544"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="34.544"/>
+<Who nb="1"/>00:00:00.071<Sync time="34.544"/>
+<Who nb="2"/>stroke<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesalignées"/>
+<Comment desc="phase gest MG-Type pointage MG:&#9;tracé"/>
+<Comment desc="phase gest MG-mvtMG:&#9;exten"/>
+<Sync time="34.944"/>
+<Who nb="3"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="16.500" speaker="mots déictiques locuteur-cp phase gest MG phones words" startTime="40.480">
+<Sync time="40.480"/>
+<Who nb="2"/>rétraction<Sync time="16.470"/>
+<Who nb="1"/>David<Sync time="16.470"/>
+<Who nb="4"/>David<Sync time="16.470"/>
+<Who nb="3"/>d</Turn>
+<Turn endTime="16.780" speaker="phones words" startTime="20.787">
+<Sync time="20.787"/>
+<Who nb="1"/>a<Sync time="16.720"/>
+<Who nb="2"/>oui<Sync time="16.720"/>
+<Who nb="1"/>w</Turn>
+<Turn endTime="17.620" speaker="mots déictiques locuteur-cp phones words" startTime="17.020">
+<Sync time="17.020"/>
+<Who nb="1"/>ça<Sync time="17.020"/>
+<Who nb="3"/>ça<Sync time="17.020"/>
+<Who nb="2"/>s<Sync time="17.130"/>
+<Who nb="1"/>c'est<Sync time="17.130"/>
+<Who nb="3"/>c'est<Sync time="17.130"/>
+<Who nb="2"/>s<Sync time="20.907"/>
+<Who nb="2"/>t<Sync time="17.250"/>
+<Who nb="1"/>sur<Sync time="17.250"/>
+<Who nb="3"/>sur<Sync time="17.250"/>
+<Who nb="2"/>s<Sync time="17.400"/>
+<Who nb="1"/>la<Sync time="17.400"/>
+<Who nb="3"/>la<Sync time="17.400"/>
+<Who nb="2"/>l<Sync time="17.490"/>
+<Who nb="1"/>côte<Sync time="17.490"/>
+<Who nb="3"/>côte<Sync time="17.490"/>
+<Who nb="2"/>k</Turn>
+<Turn endTime="18.444" speaker="phones words" startTime="20.937">
+<Sync time="20.937"/>
+<Who nb="1"/>a<Sync time="18.404"/>
+<Who nb="2"/>donc<Sync time="18.404"/>
+<Who nb="1"/>d</Turn>
+<Turn endTime="21.077" speaker="phones" startTime="20.967">
+<Sync time="20.967"/>t</Turn>
+<Turn endTime="18.734" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="21.077">
+<Sync time="21.077"/>
+<Who nb="3"/>y<Sync time="18.504"/>
+<Who nb="2"/>c'est<Sync time="18.504"/>
+<Who nb="1"/>00:00:00.016<Sync time="18.504"/>
+<Who nb="4"/>c'est<Sync time="18.504"/>
+<Who nb="3"/>s<Sync time="21.207"/>
+<Who nb="3"/>y<Sync time="18.694"/>
+<Who nb="2"/>je<Sync time="18.694"/>
+<Who nb="1"/>00:00:00.080<Sync time="18.694"/>
+<Who nb="4"/>je<Sync time="18.694"/>
+<Who nb="3"/>Z</Turn>
+<Turn endTime="21.407" speaker="phones" startTime="21.367">
+<Sync time="21.367"/>a</Turn>
+<Turn endTime="18.884" speaker="phones words" startTime="21.407">
+<Sync time="21.407"/>
+<Who nb="1"/>v<Sync time="18.774"/>
+<Who nb="2"/>parle<Sync time="18.774"/>
+<Who nb="1"/>p</Turn>
+<Turn endTime="19.294" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="21.517">
+<Sync time="21.517"/>
+<Who nb="3"/>i<Sync time="18.994"/>
+<Who nb="2"/>de<Sync time="18.994"/>
+<Who nb="1"/>00:00:00.100<Sync time="18.994"/>
+<Who nb="4"/>de<Sync time="18.994"/>
+<Who nb="3"/>d<Sync time="21.617"/>
+<Who nb="3"/>d<Sync time="19.094"/>
+<Who nb="2"/>la<Sync time="19.094"/>
+<Who nb="1"/>00:00:00.022<Sync time="19.094"/>
+<Who nb="4"/>la<Sync time="19.094"/>
+<Who nb="3"/>l<Sync time="21.747"/>
+<Who nb="3"/>u<Sync time="19.204"/>
+<Who nb="2"/>côte<Sync time="19.204"/>
+<Who nb="1"/>00:00:00.024<Sync time="19.204"/>
+<Who nb="4"/>côte<Sync time="19.204"/>
+<Who nb="3"/>k</Turn>
+<Turn endTime="21.927" speaker="phones" startTime="21.857">
+<Sync time="21.857"/>a</Turn>
+<Turn endTime="19.424" speaker="phones words" startTime="21.927">
+<Sync time="21.927"/>
+<Who nb="1"/>l<Sync time="19.394"/>
+<Who nb="2"/>donc<Sync time="19.394"/>
+<Who nb="1"/>d</Turn>
+<Turn endTime="19.767" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="21.977">
+<Sync time="21.977"/>
+<Who nb="3"/>e<Sync time="19.597"/>
+<Who nb="2"/>là<Sync time="19.597"/>
+<Who nb="1"/>00:00:00.070<Sync time="19.597"/>
+<Who nb="4"/>là<Sync time="19.597"/>
+<Who nb="3"/>l<Sync time="19.667"/>
+<Who nb="2"/>vous<Sync time="19.667"/>
+<Who nb="1"/>00:00:00.107<Sync time="19.667"/>
+<Who nb="4"/>vous<Sync time="19.667"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="22.267" speaker="phones" startTime="22.117">
+<Sync time="22.117"/>E<Sync time="22.167"/>R</Turn>
+<Turn endTime="22.437" speaker="phase gest MG phones" startTime="44.019">
+<Sync time="44.019"/>
+<Who nb="1"/>préparation<Sync time="22.317"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="22.637" speaker="phones" startTime="22.467">
+<Sync time="22.467"/>u<Sync time="22.597"/>d</Turn>
+<Turn endTime="25.817" speaker="phase gest MG phones" startTime="44.299">
+<Sync time="44.299"/>
+<Who nb="1"/>stroke<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesalignées"/>
+<Comment desc="phase gest MG-Type pointage MG:&#9;direction"/>
+<Sync time="25.227"/>
+<Who nb="2"/>o~<Sync time="44.619"/>
+<Who nb="1"/>tenue<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesalignées"/>
+<Comment desc="phase gest MG-Type pointage MG:&#9;direction"/>
+<Sync time="25.347"/>
+<Who nb="2"/>k<Sync time="45.459"/>
+<Who nb="1"/>enchaînement<Sync time="25.567"/>
+<Who nb="2"/>u<Sync time="45.619"/>
+<Who nb="1"/>stroke<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesalignées"/>
+<Comment desc="phase gest MG-Type pointage MG:&#9;toucher"/>
+<Sync time="25.697"/>
+<Who nb="2"/>o~</Turn>
+<Turn endTime="25.897" speaker="phones" startTime="25.817">
+<Sync time="25.817"/>Z</Turn>
+<Turn endTime="46.179" speaker="phase gest MG" startTime="45.979">
+<Sync time="45.979"/>rétraction</Turn>
+<Turn endTime="19.867" speaker="phase gest MG phones words" startTime="46.459">
+<Sync time="46.459"/>
+<Who nb="1"/>stroke<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesalignées"/>
+<Comment desc="phase gest MG-Type pointage MG:&#9;toucher"/>
+<Sync time="25.897"/>
+<Who nb="2"/>e<Sync time="19.797"/>
+<Who nb="3"/>êtes<Sync time="19.797"/>
+<Who nb="2"/>z</Turn>
+<Turn endTime="20.077" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="20.037">
+<Sync time="20.037"/>
+<Who nb="2"/>à<Sync time="20.037"/>
+<Who nb="1"/>00:00:00.040<Sync time="20.037"/>
+<Who nb="4"/>à<Sync time="20.037"/>
+<Who nb="3"/>a</Turn>
+<Turn endTime="20.137" speaker="phones words" startTime="26.087">
+<Sync time="26.087"/>
+<Who nb="1"/>a~<Sync time="20.077"/>
+<Who nb="2"/>lo<Sync time="20.077"/>
+<Who nb="1"/>E</Turn>
+<Turn endTime="20.207" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones" startTime="20.137">
+<Sync time="20.137"/>
+<Who nb="2"/>l'<Sync time="20.137"/>
+<Who nb="1"/>00:00:00.070<Sync time="20.137"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="26.667" speaker="phones" startTime="20.207">
+<Sync time="20.207"/>o<Sync time="26.227"/>u<Sync time="26.467"/>a<Sync time="26.517"/>s<Sync time="26.617"/>e</Turn>
+<Turn endTime="20.527" speaker="mots déictiques locuteur-cp phones words" startTime="26.697">
+<Sync time="26.697"/>
+<Who nb="2"/>a<Sync time="20.367"/>
+<Who nb="1"/>vous<Sync time="20.367"/>
+<Who nb="3"/>vous<Sync time="20.367"/>
+<Who nb="2"/>v</Turn>
+<Turn endTime="20.607" speaker="phones words" startTime="20.557">
+<Sync time="20.557"/>
+<Who nb="2"/>êtes<Sync time="20.557"/>
+<Who nb="1"/>E</Turn>
+<Turn endTime="27.057" speaker="phones" startTime="26.817">
+<Sync time="26.817"/>t<Sync time="26.847"/>a<Sync time="26.887"/>t<Sync time="26.977"/>y</Turn>
+<Turn endTime="20.757" speaker="mots déictiques locuteur-cp phones words" startTime="27.107">
+<Sync time="27.107"/>
+<Who nb="2"/>e<Sync time="20.717"/>
+<Who nb="1"/>à<Sync time="20.717"/>
+<Who nb="3"/>à<Sync time="20.717"/>
+<Who nb="2"/>a</Turn>
+<Turn endTime="27.417" speaker="phones" startTime="27.167">
+<Sync time="27.167"/>a<Sync time="27.197"/>v<Sync time="27.277"/>i<Sync time="27.357"/>d</Turn>
+<Turn endTime="20.787" speaker="mots déictiques locuteur-cp phones words" startTime="27.477">
+<Sync time="27.477"/>
+<Who nb="2"/>p<Sync time="20.757"/>
+<Who nb="1"/>la<Sync time="20.757"/>
+<Who nb="3"/>la<Sync time="20.757"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="27.897" speaker="phones" startTime="27.537">
+<Sync time="27.537"/>R<Sync time="27.627"/>E<Sync time="27.767"/>u<Sync time="27.847"/>a</Turn>
+<Turn endTime="27.947" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD phones" startTime="36.055">
+<Sync time="36.055"/>
+<Who nb="3"/>préparation<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="36.055"/>
+<Who nb="2"/>tenue<Comment desc="phase gest MG-Forme pointage MG:&#9;phalangesdospaume"/>
+<Comment desc="phase gest MG-Type pointage MG:&#9;direction"/>
+<Comment desc="phase gest MG-mvtMG:&#9;aucun"/>
+<Sync time="37.015"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="37.015"/>
+<Who nb="1"/>00:00:00.143<Sync time="27.897"/>
+<Who nb="4"/>R</Turn>
+<Turn endTime="27.977" speaker="phones" startTime="27.947">
+<Sync time="27.947"/>i</Turn>
+<Turn endTime="20.907" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD phones words" startTime="27.977">
+<Sync time="27.977"/>
+<Who nb="4"/>v<Sync time="21.508"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="21.508"/>
+<Who nb="1"/>00:00:00.139<Sync time="20.817"/>
+<Who nb="2"/>statue<Sync time="20.817"/>
+<Who nb="5"/>statue<Sync time="20.817"/>
+<Who nb="4"/>s</Turn>
+<Turn endTime="21.207" speaker="mots déictiques locuteur-cp phones words" startTime="28.057">
+<Sync time="28.057"/>
+<Who nb="2"/>e<Sync time="21.167"/>
+<Who nb="1"/>du<Sync time="21.167"/>
+<Who nb="3"/>du<Sync time="21.167"/>
+<Who nb="2"/>d</Turn>
+<Turn endTime="29.541" speaker="phones" startTime="28.177">
+<Sync time="28.177"/>o~<Sync time="28.407"/>p<Sync time="28.537"/>w<Sync time="28.637"/>9~<Sync time="29.461"/>a</Turn>
+<Turn endTime="29.691" speaker="phase geste MD phones" startTime="45.015">
+<Sync time="45.015"/>
+<Who nb="1"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="29.661"/>
+<Who nb="2"/>@</Turn>
+<Turn endTime="29.881" speaker="phones" startTime="29.751">
+<Sync time="29.751"/>o~</Turn>
+<Turn endTime="21.367" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="29.881">
+<Sync time="29.881"/>
+<Who nb="3"/>p<Sync time="21.277"/>
+<Who nb="2"/>David<Sync time="21.277"/>
+<Who nb="1"/>00:00:00.229<Sync time="21.277"/>
+<Who nb="4"/>David<Sync time="21.277"/>
+<Who nb="3"/>d</Turn>
+<Turn endTime="30.051" speaker="phones" startTime="29.971">
+<Sync time="29.971"/>w</Turn>
+<Turn endTime="29.411" speaker="ortho phones phono words" startTime="30.051">
+<Sync time="30.051"/>
+<Who nb="2"/>9~<Sync time="29.331"/>
+<Who nb="3"/>e la a s@ Ro~ pwe~ syR la dRwat se ple~ d@ REstoRa~ 2 sa sapEl wE lEskal bOReli<Sync time="29.331"/>
+<Who nb="4"/>et<Sync time="29.331"/>
+<Who nb="1"/>et là à ce rond-point sur la droite c'est plein de restaurants euh ça s'appelle [ouais] l'escale Borély<Sync time="29.331"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="30.421" speaker="phones" startTime="30.221">
+<Sync time="30.221"/>y<Sync time="30.261"/>R<Sync time="30.351"/>a</Turn>
+<Turn endTime="30.481" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="57.340">
+<Sync time="57.340"/>
+<Who nb="2"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="57.340"/>
+<Who nb="1"/>00:00:00.062<Sync time="30.451"/>
+<Who nb="3"/>R</Turn>
+<Turn endTime="30.571" speaker="phones" startTime="30.481">
+<Sync time="30.481"/>w<Sync time="30.541"/>a</Turn>
+<Turn endTime="30.611" speaker="ortho phones phono words" startTime="33.402">
+<Sync time="33.402"/>
+<Who nb="3"/>dakOR<Sync time="33.402"/>
+<Who nb="4"/>[d'accord]<Sync time="33.402"/>
+<Who nb="1"/>[d'accord]<Sync time="33.402"/>
+<Who nb="2"/>d<Sync time="33.817"/>
+<Who nb="3"/>_<Sync time="33.817"/>
+<Who nb="4"/>_<Sync time="33.817"/>
+<Who nb="1"/>_<Sync time="33.817"/>
+<Who nb="2"/>_<Sync time="30.571"/>
+<Who nb="2"/>t</Turn>
+<Turn endTime="30.851" speaker="phones" startTime="30.691">
+<Sync time="30.691"/>e<Sync time="30.821"/>l</Turn>
+<Turn endTime="30.911" speaker="phase geste MD phones" startTime="45.155">
+<Sync time="45.155"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="30.851"/>
+<Who nb="2"/>9~</Turn>
+<Turn endTime="21.747" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="30.971">
+<Sync time="30.971"/>
+<Who nb="3"/>@<Sync time="21.647"/>
+<Who nb="2"/>vous<Sync time="21.647"/>
+<Who nb="1"/>00:00:00.130<Sync time="21.647"/>
+<Who nb="4"/>vous<Sync time="21.647"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="21.857" speaker="phones words" startTime="31.031">
+<Sync time="31.031"/>
+<Who nb="1"/>E<Sync time="21.777"/>
+<Who nb="2"/>allez<Sync time="21.777"/>
+<Who nb="1"/>z</Turn>
+<Turn endTime="31.171" speaker="phase gest MG phones" startTime="46.939">
+<Sync time="46.939"/>
+<Who nb="1"/>rétraction<Sync time="31.091"/>
+<Who nb="2"/>s</Turn>
+<Turn endTime="31.331" speaker="phones" startTime="31.171">
+<Sync time="31.171"/>t<Sync time="31.241"/>o</Turn>
+<Turn endTime="22.467" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="31.331">
+<Sync time="31.331"/>
+<Who nb="3"/>R<Sync time="22.047"/>
+<Who nb="2"/>vers<Sync time="22.047"/>
+<Who nb="1"/>00:00:00.220<Sync time="22.047"/>
+<Who nb="4"/>vers<Sync time="22.047"/>
+<Who nb="3"/>v<Sync time="22.267"/>
+<Who nb="2"/>Les<Sync time="22.267"/>
+<Who nb="1"/>00:00:00.170<Sync time="22.267"/>
+<Who nb="4"/>Les<Sync time="22.267"/>
+<Who nb="3"/>l<Sync time="22.437"/>
+<Who nb="2"/>Goudes<Sync time="22.437"/>
+<Who nb="1"/>00:00:00.200<Sync time="22.437"/>
+<Who nb="4"/>Goudes<Sync time="22.437"/>
+<Who nb="3"/>g</Turn>
+<Turn endTime="24.116" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="23.976">
+<Sync time="23.976"/>
+<Who nb="2"/>vous<Sync time="23.976"/>
+<Who nb="1"/>00:00:00.093<Sync time="23.976"/>
+<Who nb="3"/>vous</Turn>
+<Turn endTime="24.300" speaker="words" startTime="24.116">
+<Sync time="24.116"/>alliez</Turn>
+<Turn endTime="24.452" speaker="mots déictiques locuteur-cp words" startTime="24.300">
+<Sync time="24.300"/>
+<Who nb="1"/>vers<Sync time="24.300"/>
+<Who nb="2"/>vers</Turn>
+<Turn endTime="32.721" speaker="phones" startTime="31.361">
+<Sync time="31.361"/>a~<Sync time="32.161"/>a<Sync time="32.321"/>p<Sync time="32.351"/>E<Sync time="32.381"/>l<Sync time="32.441"/>E<Sync time="32.611"/>E<Sync time="32.641"/>s</Turn>
+<Turn endTime="24.832" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="32.721">
+<Sync time="32.721"/>
+<Who nb="3"/>k<Sync time="24.452"/>
+<Who nb="2"/>là-bas<Sync time="24.452"/>
+<Who nb="1"/>00:00:00.380<Sync time="24.452"/>
+<Who nb="4"/>là-bas</Turn>
+<Turn endTime="32.981" speaker="phones" startTime="32.811">
+<Sync time="32.811"/>a<Sync time="32.871"/>l</Turn>
+<Turn endTime="65.534" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="65.370">
+<Sync time="65.370"/>00:00:00.164</Turn>
+<Turn endTime="65.600" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="79.702">
+<Sync time="79.702"/>
+<Who nb="2"/>u<Sync time="65.534"/>
+<Who nb="1"/>00:00:00.066</Turn>
+<Turn endTime="33.181" speaker="phones" startTime="81.243">
+<Sync time="81.243"/>l<Sync time="33.011"/>O<Sync time="33.121"/>R</Turn>
+<Turn endTime="33.241" speaker="phase gest MG phones" startTime="48.059">
+<Sync time="48.059"/>
+<Who nb="1"/>préparation<Sync time="33.181"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="25.162" speaker="phones words" startTime="33.241">
+<Sync time="33.241"/>
+<Who nb="1"/>l<Sync time="24.832"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="25.567" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="25.387">
+<Sync time="25.387"/>
+<Who nb="2"/>vous<Sync time="25.387"/>
+<Who nb="1"/>00:00:00.131<Sync time="25.387"/>
+<Who nb="4"/>vous<Sync time="25.387"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="25.697" speaker="phones words" startTime="25.657">
+<Sync time="25.657"/>
+<Who nb="2"/>longez<Sync time="25.657"/>
+<Who nb="1"/>l</Turn>
+<Turn endTime="26.227" speaker="mots déictiques locuteur-cp phones words" startTime="33.271">
+<Sync time="33.271"/>
+<Who nb="2"/>i<Sync time="26.187"/>
+<Who nb="1"/>vous<Sync time="26.187"/>
+<Who nb="3"/>vous<Sync time="26.187"/>
+<Who nb="2"/>v</Turn>
+<Turn endTime="26.467" speaker="phones words" startTime="33.447">
+<Sync time="33.447"/>
+<Who nb="1"/>a<Sync time="26.357"/>
+<Who nb="2"/>passez<Sync time="26.357"/>
+<Who nb="1"/>p</Turn>
+<Turn endTime="26.697" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="26.667">
+<Sync time="26.667"/>
+<Who nb="2"/>la<Sync time="26.667"/>
+<Who nb="1"/>00:00:00.060<Sync time="26.667"/>
+<Who nb="4"/>la<Sync time="26.667"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="33.767" speaker="phones" startTime="33.517">
+<Sync time="33.517"/>k<Sync time="33.647"/>O</Turn>
+<Turn endTime="27.477" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="33.767">
+<Sync time="33.767"/>
+<Who nb="3"/>R<Sync time="26.727"/>
+<Who nb="2"/>statue<Sync time="26.727"/>
+<Who nb="1"/>00:00:00.101<Sync time="26.727"/>
+<Who nb="4"/>statue<Sync time="26.727"/>
+<Who nb="3"/>s<Sync time="27.057"/>
+<Who nb="2"/>de<Sync time="27.057"/>
+<Who nb="1"/>00:00:00.080<Sync time="27.057"/>
+<Who nb="4"/>de<Sync time="27.057"/>
+<Who nb="3"/>d<Sync time="27.137"/>
+<Who nb="2"/>David<Sync time="27.137"/>
+<Who nb="1"/>00:00:00.280<Sync time="27.137"/>
+<Who nb="4"/>David<Sync time="27.137"/>
+<Who nb="3"/>d<Sync time="27.417"/>
+<Who nb="2"/>après<Sync time="27.417"/>
+<Who nb="1"/>00:00:00.128<Sync time="27.417"/>
+<Who nb="4"/>après<Sync time="27.417"/>
+<Who nb="3"/>a</Turn>
+<Turn endTime="34.735" speaker="phones" startTime="34.385">
+<Sync time="34.385"/>E<Sync time="34.575"/>u<Sync time="34.675"/>a</Turn>
+<Turn endTime="27.767" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="34.735">
+<Sync time="34.735"/>
+<Who nb="3"/>v<Sync time="27.667"/>
+<Who nb="2"/>vous<Sync time="27.667"/>
+<Who nb="1"/>00:00:00.117<Sync time="27.667"/>
+<Who nb="4"/>vous<Sync time="27.667"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="27.847" speaker="phones words" startTime="27.797">
+<Sync time="27.797"/>
+<Who nb="2"/>arrivez<Sync time="27.797"/>
+<Who nb="1"/>z</Turn>
+<Turn endTime="28.117" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="28.087">
+<Sync time="28.087"/>
+<Who nb="2"/>à<Sync time="28.087"/>
+<Who nb="1"/>00:00:00.030<Sync time="28.087"/>
+<Who nb="4"/>à<Sync time="28.087"/>
+<Who nb="3"/>a</Turn>
+<Turn endTime="45.520" speaker="phase geste MD" startTime="45.320">
+<Sync time="45.320"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+</Turn>
+<Turn endTime="34.875" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="66.218">
+<Sync time="66.218"/>
+<Who nb="1"/>00:00:00.044<Sync time="34.805"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="35.055" speaker="phones" startTime="34.935">
+<Sync time="34.935"/>o~</Turn>
+<Turn endTime="30.221" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="35.055">
+<Sync time="35.055"/>
+<Who nb="3"/>Z<Sync time="28.117"/>
+<Who nb="2"/>un<Sync time="28.117"/>
+<Who nb="1"/>00:00:00.030<Sync time="28.117"/>
+<Who nb="4"/>un<Sync time="28.117"/>
+<Who nb="3"/>9~<Sync time="35.105"/>
+<Who nb="3"/>e<Sync time="28.147"/>
+<Who nb="2"/>rond-point<Sync time="28.147"/>
+<Who nb="1"/>00:00:00.620<Sync time="28.147"/>
+<Who nb="4"/>rond-point<Sync time="28.147"/>
+<Who nb="3"/>R<Sync time="35.194"/>
+<Who nb="3"/>l<Sync time="29.411"/>
+<Who nb="2"/>là<Sync time="29.411"/>
+<Who nb="1"/>00:00:00.130<Sync time="29.411"/>
+<Who nb="4"/>là<Sync time="29.411"/>
+<Who nb="3"/>l<Sync time="29.541"/>
+<Who nb="2"/>à<Sync time="29.541"/>
+<Who nb="1"/>00:00:00.001<Sync time="29.541"/>
+<Who nb="4"/>à<Sync time="29.541"/>
+<Who nb="3"/>a<Sync time="29.571"/>
+<Who nb="2"/>ce<Sync time="29.571"/>
+<Who nb="1"/>00:00:00.099<Sync time="29.571"/>
+<Who nb="4"/>ce<Sync time="29.571"/>
+<Who nb="3"/>s<Sync time="35.225"/>
+<Who nb="3"/>i<Sync time="29.691"/>
+<Who nb="2"/>rond-point<Sync time="29.691"/>
+<Who nb="1"/>00:00:00.038<Sync time="29.691"/>
+<Who nb="4"/>rond-point<Sync time="29.691"/>
+<Who nb="3"/>R<Sync time="35.325"/>
+<Who nb="3"/>p<Sync time="30.131"/>
+<Who nb="2"/>sur<Sync time="30.131"/>
+<Who nb="1"/>00:00:00.190<Sync time="30.131"/>
+<Who nb="4"/>sur<Sync time="30.131"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="35.485" speaker="phones" startTime="35.405">
+<Sync time="35.405"/>O</Turn>
+<Turn endTime="30.351" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="66.462">
+<Sync time="66.462"/>
+<Who nb="1"/>00:00:00.063<Sync time="35.485"/>
+<Who nb="3"/>d<Sync time="30.321"/>
+<Who nb="2"/>la<Sync time="30.321"/>
+<Who nb="1"/>00:00:00.100<Sync time="30.321"/>
+<Who nb="4"/>la<Sync time="30.321"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="35.595" speaker="phones" startTime="35.535">
+<Sync time="35.535"/>R</Turn>
+<Turn endTime="30.451" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="35.595">
+<Sync time="35.595"/>
+<Who nb="3"/>o<Sync time="30.421"/>
+<Who nb="2"/>droite<Sync time="30.421"/>
+<Who nb="1"/>00:00:00.055<Sync time="30.421"/>
+<Who nb="4"/>droite<Sync time="30.421"/>
+<Who nb="3"/>d</Turn>
+<Turn endTime="36.095" speaker="phones" startTime="35.715">
+<Sync time="35.715"/>m<Sync time="35.925"/>a<Sync time="35.955"/>R<Sync time="36.065"/>k</Turn>
+<Turn endTime="30.691" speaker="mots déictiques locuteur-cp phones words" startTime="36.095">
+<Sync time="36.095"/>
+<Who nb="2"/>@<Sync time="30.611"/>
+<Who nb="1"/>c'est<Sync time="30.611"/>
+<Who nb="3"/>c'est<Sync time="30.611"/>
+<Who nb="2"/>s</Turn>
+<Turn endTime="36.465" speaker="phones" startTime="36.285">
+<Sync time="36.285"/>u<Sync time="36.385"/>E</Turn>
+<Turn endTime="30.821" speaker="phones words" startTime="36.465">
+<Sync time="36.465"/>
+<Who nb="1"/>t<Sync time="30.741"/>
+<Who nb="2"/>plein<Sync time="30.741"/>
+<Who nb="1"/>p</Turn>
+<Turn endTime="38.023" speaker="phones" startTime="37.688">
+<Sync time="37.688"/>_<Sync time="37.813"/>a<Sync time="37.913"/>S</Turn>
+<Turn endTime="32.161" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="38.023">
+<Sync time="38.023"/>
+<Who nb="3"/>y<Sync time="32.051"/>
+<Who nb="2"/>ça<Sync time="32.051"/>
+<Who nb="1"/>00:00:00.008<Sync time="32.051"/>
+<Who nb="4"/>ça<Sync time="32.051"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="38.083" speaker="phones" startTime="38.053">
+<Sync time="38.053"/>E</Turn>
+<Turn endTime="23.372" speaker="phase geste MD phones" startTime="38.083">
+<Sync time="38.083"/>
+<Who nb="2"/>m<Sync time="22.826"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="23.516" speaker="phase geste MD" startTime="23.372">
+<Sync time="23.372"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+</Turn>
+<Turn endTime="32.281" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="32.191">
+<Sync time="32.191"/>
+<Who nb="2"/>s'<Sync time="32.191"/>
+<Who nb="1"/>00:00:00.090<Sync time="32.191"/>
+<Who nb="4"/>s'appelle<Sync time="32.191"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="32.321" speaker="phones" startTime="32.281">
+<Sync time="32.281"/>a</Turn>
+<Turn endTime="23.638" speaker="phase geste MD phones" startTime="38.163">
+<Sync time="38.163"/>
+<Who nb="2"/>a<Sync time="23.516"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="24.069" speaker="phase geste MD" startTime="23.638">
+<Sync time="23.638"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="24.398" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="67.464">
+<Sync time="67.464"/>
+<Who nb="1"/>00:00:00.095<Sync time="24.069"/>
+<Who nb="2"/>enchaînement</Turn>
+<Turn endTime="33.011" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="32.581">
+<Sync time="32.581"/>
+<Who nb="2"/>l'escale<Sync time="32.581"/>
+<Who nb="1"/>00:00:00.027<Sync time="32.581"/>
+<Who nb="4"/>l'escale<Sync time="32.581"/>
+<Who nb="3"/>l<Sync time="38.193"/>
+<Who nb="3"/>S<Sync time="32.981"/>
+<Who nb="2"/>Borély<Sync time="32.981"/>
+<Who nb="1"/>00:00:00.421<Sync time="32.981"/>
+<Who nb="4"/>Borély<Sync time="32.981"/>
+<Who nb="3"/>b</Turn>
+<Turn endTime="34.575" speaker="mots déictiques locuteur-cp phones words" startTime="34.455">
+<Sync time="34.455"/>
+<Who nb="1"/>vous<Sync time="34.455"/>
+<Who nb="3"/>vous<Sync time="34.455"/>
+<Who nb="2"/>v</Turn>
+<Turn endTime="34.675" speaker="phones words" startTime="38.303">
+<Sync time="38.303"/>
+<Who nb="1"/>y<Sync time="34.615"/>
+<Who nb="2"/>avez<Sync time="34.615"/>
+<Who nb="1"/>z</Turn>
+<Turn endTime="38.413" speaker="phase geste MD phones" startTime="45.520">
+<Sync time="45.520"/>
+<Who nb="1"/>enchaînement<Sync time="38.373"/>
+<Who nb="2"/>E</Turn>
+<Turn endTime="46.125" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="67.944">
+<Sync time="67.944"/>
+<Who nb="1"/>00:00:00.203<Sync time="46.085"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="46.085"/>
+<Who nb="1"/>00:00:00.040</Turn>
+<Turn endTime="35.855" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase gest MG words" startTime="48.219">
+<Sync time="48.219"/>
+<Who nb="3"/>stroke<Comment desc="phase gest MG-Forme pointage MG:&#9;canonique"/>
+<Sync time="35.195"/>
+<Who nb="2"/>l'hippodrome<Sync time="35.195"/>
+<Who nb="1"/>00:00:00.054<Sync time="35.195"/>
+<Who nb="4"/>l'hippodrome</Turn>
+<Turn endTime="36.285" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="36.155">
+<Sync time="36.155"/>
+<Who nb="2"/>vous<Sync time="36.155"/>
+<Who nb="1"/>00:00:00.160<Sync time="36.155"/>
+<Who nb="4"/>vous<Sync time="36.155"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="46.374" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="68.640">
+<Sync time="68.640"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;mire"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="46.365"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="46.365"/>
+<Who nb="1"/>00:00:00.009</Turn>
+<Turn endTime="69.693" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="81.273">
+<Sync time="81.273"/>
+<Who nb="3"/>O<Sync time="69.480"/>
+<Who nb="2"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="69.480"/>
+<Who nb="1"/>00:00:00.213</Turn>
+<Turn endTime="70.200" speaker="phase geste MD phones" startTime="81.403">
+<Sync time="81.403"/>
+<Who nb="2"/>R<Sync time="69.800"/>
+<Who nb="1"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="24.452" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="70.200">
+<Sync time="70.200"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retouradd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retouradd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retouradd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="70.200"/>
+<Who nb="1"/>00:00:00.085<Sync time="46.685"/>
+<Who nb="2"/>enchaînement<Sync time="46.965"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="24.398"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="24.398"/>
+<Who nb="1"/>00:00:00.054</Turn>
+<Turn endTime="25.238" speaker="phase geste MD" startTime="47.165">
+<Sync time="47.165"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="24.958"/>enchaînement</Turn>
+<Turn endTime="36.385" speaker="phones words" startTime="36.315">
+<Sync time="36.315"/>
+<Who nb="2"/>êtes<Sync time="36.315"/>
+<Who nb="1"/>z</Turn>
+<Turn endTime="37.368" speaker="words" startTime="37.158">
+<Sync time="37.158"/>route</Turn>
+<Turn endTime="37.478" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="37.368">
+<Sync time="37.368"/>
+<Who nb="2"/>elle<Sync time="37.368"/>
+<Who nb="1"/>00:00:00.110<Sync time="37.368"/>
+<Who nb="3"/>elle</Turn>
+<Turn endTime="37.634" speaker="phase geste MD words" startTime="47.605">
+<Sync time="47.605"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="37.478"/>
+<Who nb="2"/>longe</Turn>
+<Turn endTime="38.318" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="37.634">
+<Sync time="37.634"/>
+<Who nb="2"/>l'hippodrome<Sync time="37.634"/>
+<Who nb="1"/>00:00:00.684<Sync time="37.634"/>
+<Who nb="3"/>l'hippodrome</Turn>
+<Turn endTime="50.139" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD" startTime="72.200">
+<Sync time="72.200"/>
+<Who nb="3"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="72.200"/>
+<Who nb="1"/>00:00:00.098<Sync time="49.619"/>
+<Who nb="2"/>rétraction</Turn>
+<Turn endTime="51.339" speaker="phase gest MG phones" startTime="81.463">
+<Sync time="81.463"/>
+<Who nb="2"/>a<Sync time="50.899"/>
+<Who nb="1"/>stroke</Turn>
+<Turn endTime="38.455" speaker="phase gest MG phase geste MD" startTime="51.339">
+<Sync time="51.339"/>
+<Who nb="1"/>tenue<Sync time="37.575"/>
+<Who nb="2"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+</Turn>
+<Turn endTime="25.518" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="70.698">
+<Sync time="70.698"/>
+<Who nb="1"/>00:00:00.057<Sync time="38.873"/>
+<Who nb="3"/>k<Sync time="25.238"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+</Turn>
+<Turn endTime="38.943" speaker="phones" startTime="38.913">
+<Sync time="38.913"/>i</Turn>
+<Turn endTime="48.205" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="71.012">
+<Sync time="71.012"/>
+<Who nb="1"/>00:00:00.216<Sync time="47.965"/>
+<Who nb="2"/>enchaînement</Turn>
+<Turn endTime="53.059" speaker="phase gest MG phones" startTime="81.803">
+<Sync time="81.803"/>
+<Who nb="2"/>i<Sync time="52.819"/>
+<Who nb="1"/>rétraction</Turn>
+<Turn endTime="71.340" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="81.873">
+<Sync time="81.873"/>
+<Who nb="2"/>v<Sync time="71.228"/>
+<Who nb="1"/>00:00:00.112</Turn>
+<Turn endTime="82.103" speaker="phones" startTime="81.933">
+<Sync time="81.933"/>E<Sync time="82.063"/>R</Turn>
+<Turn endTime="71.766" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="82.163">
+<Sync time="82.163"/>
+<Who nb="2"/>u<Sync time="71.732"/>
+<Who nb="1"/>00:00:00.034</Turn>
+<Turn endTime="82.383" speaker="phones" startTime="82.313">
+<Sync time="82.313"/>u</Turn>
+<Turn endTime="48.685" speaker="phase geste MD phones" startTime="82.383">
+<Sync time="82.383"/>
+<Who nb="2"/>v<Sync time="48.205"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+</Turn>
+<Turn endTime="39.102" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="82.433">
+<Sync time="82.433"/>
+<Who nb="3"/>e<Sync time="39.0"/>
+<Who nb="2"/>à<Sync time="39.0"/>
+<Who nb="1"/>00:00:00.070<Sync time="39.0"/>
+<Who nb="4"/>à</Turn>
+<Turn endTime="39.542" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="39.102">
+<Sync time="39.102"/>
+<Who nb="2"/>ce<Sync time="39.102"/>
+<Who nb="1"/>00:00:00.051<Sync time="39.102"/>
+<Who nb="3"/>ce<Sync time="39.212"/>
+<Who nb="2"/>rond-point<Sync time="39.212"/>
+<Who nb="1"/>00:00:00.084<Sync time="39.212"/>
+<Who nb="3"/>rond-point</Turn>
+<Turn endTime="39.585" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="48.685">
+<Sync time="48.685"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="39.542"/>
+<Who nb="2"/>de<Sync time="39.542"/>
+<Who nb="1"/>00:00:00.033<Sync time="39.542"/>
+<Who nb="4"/>de</Turn>
+<Turn endTime="39.757" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="39.585">
+<Sync time="39.585"/>
+<Who nb="2"/>l'escale<Sync time="39.585"/>
+<Who nb="1"/>00:00:00.172<Sync time="39.585"/>
+<Who nb="3"/>l'escale</Turn>
+<Turn endTime="73.0" speaker="phase geste MD" startTime="72.440">
+<Sync time="72.440"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+</Turn>
+<Turn endTime="38.775" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="73.0">
+<Sync time="73.0"/>
+<Who nb="2"/>rétraction<Sync time="72.726"/>
+<Who nb="1"/>00:00:00.274<Sync time="38.455"/>
+<Who nb="2"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+</Turn>
+<Turn endTime="39.575" speaker="phase geste MD" startTime="38.775">
+<Sync time="38.775"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+</Turn>
+<Turn endTime="39.133" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="39.757">
+<Sync time="39.757"/>
+<Who nb="2"/>Borély<Sync time="39.757"/>
+<Who nb="1"/>00:00:00.406<Sync time="39.757"/>
+<Who nb="4"/>Borély<Sync time="38.943"/>
+<Who nb="3"/>e<Sync time="40.163"/>
+<Who nb="2"/>vous<Sync time="40.163"/>
+<Who nb="1"/>00:00:00.091<Sync time="40.163"/>
+<Who nb="4"/>vous<Sync time="40.163"/>
+<Who nb="3"/>v<Sync time="38.983"/>
+<Who nb="3"/>t</Turn>
+<Turn endTime="39.183" speaker="phones" startTime="39.133">
+<Sync time="39.133"/>9~</Turn>
+<Turn endTime="39.343" speaker="phase geste MD phones words" startTime="49.285">
+<Sync time="49.285"/>
+<Who nb="1"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="40.285"/>
+<Who nb="3"/>remontez<Sync time="39.183"/>
+<Who nb="2"/>t</Turn>
+<Turn endTime="39.423" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="40.744">
+<Sync time="40.744"/>
+<Who nb="2"/>à<Sync time="40.744"/>
+<Who nb="1"/>00:00:00.053<Sync time="40.744"/>
+<Who nb="4"/>à<Sync time="39.343"/>
+<Who nb="3"/>e</Turn>
+<Turn endTime="39.503" speaker="phones" startTime="39.423">
+<Sync time="39.423"/>R</Turn>
+<Turn endTime="39.773" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="40.797">
+<Sync time="40.797"/>
+<Who nb="2"/>gauche<Sync time="40.797"/>
+<Who nb="1"/>00:00:00.165<Sync time="40.797"/>
+<Who nb="4"/>gauche<Sync time="39.503"/>
+<Who nb="3"/>e</Turn>
+<Turn endTime="39.853" speaker="phones" startTime="39.773">
+<Sync time="39.773"/>s<Sync time="39.823"/>a~</Turn>
+<Turn endTime="40.123" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="41.136">
+<Sync time="41.136"/>
+<Who nb="2"/>vous<Sync time="41.136"/>
+<Who nb="1"/>00:00:00.079<Sync time="41.136"/>
+<Who nb="4"/>vous<Sync time="39.853"/>
+<Who nb="3"/>_</Turn>
+<Turn endTime="40.163" speaker="phones words" startTime="41.271">
+<Sync time="41.271"/>
+<Who nb="2"/>allez<Sync time="40.123"/>
+<Who nb="1"/>a</Turn>
+<Turn endTime="40.743" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="41.391">
+<Sync time="41.391"/>
+<Who nb="2"/>jusqu'en<Sync time="41.391"/>
+<Who nb="1"/>00:00:00.184<Sync time="41.391"/>
+<Who nb="4"/>jusqu’en<Sync time="40.623"/>
+<Who nb="3"/>w<Sync time="41.918"/>
+<Who nb="2"/>haut<Sync time="41.918"/>
+<Who nb="1"/>00:00:00.271<Sync time="41.918"/>
+<Who nb="4"/>haut<Sync time="40.713"/>
+<Who nb="3"/>a</Turn>
+<Turn endTime="40.773" speaker="mots déictiques locuteur-cp phones words" startTime="42.582">
+<Sync time="42.582"/>
+<Who nb="1"/>y a<Sync time="42.582"/>
+<Who nb="3"/>y a<Sync time="40.743"/>
+<Who nb="2"/>R</Turn>
+<Turn endTime="40.853" speaker="mots déictiques locuteur-cp phase geste MD phones words" startTime="50.045">
+<Sync time="50.045"/>
+<Who nb="2"/>enchaînement<Sync time="42.918"/>
+<Who nb="1"/>un<Sync time="42.918"/>
+<Who nb="4"/>un<Sync time="40.773"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="41.153" speaker="phones" startTime="40.853">
+<Sync time="40.853"/>i<Sync time="40.933"/>o~</Turn>
+<Turn endTime="25.657" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD phones words" startTime="50.485">
+<Sync time="50.485"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="50.485"/>
+<Who nb="1"/>00:00:00.223<Sync time="43.216"/>
+<Who nb="2"/>y a<Sync time="43.216"/>
+<Who nb="5"/>y a<Sync time="41.153"/>
+<Who nb="4"/>s<Sync time="25.520"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="25.520"/>
+<Who nb="1"/>00:00:00.137</Turn>
+<Turn endTime="26.510" speaker="phase geste MD phones" startTime="41.253">
+<Sync time="41.253"/>
+<Who nb="2"/>9~<Sync time="26.078"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="43.416" speaker="mots déictiques locuteur-cp words" startTime="43.294">
+<Sync time="43.294"/>
+<Who nb="1"/>le<Sync time="43.294"/>
+<Who nb="2"/>le</Turn>
+<Turn endTime="41.383" speaker="mots déictiques locuteur-cp phones words" startTime="43.416">
+<Sync time="43.416"/>
+<Who nb="1"/>rond-point<Sync time="43.416"/>
+<Who nb="3"/>rond-point<Sync time="41.283"/>
+<Who nb="2"/>t</Turn>
+<Turn endTime="41.463" speaker="phase geste MD phones" startTime="73.640">
+<Sync time="73.640"/>
+<Who nb="1"/>préparation<Sync time="41.383"/>
+<Who nb="2"/>e</Turn>
+<Turn endTime="41.493" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="74.800">
+<Sync time="74.800"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;mire"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="74.800"/>
+<Who nb="1"/>00:00:00.140<Sync time="41.463"/>
+<Who nb="3"/>R</Turn>
+<Turn endTime="41.633" speaker="phones" startTime="41.493">
+<Sync time="41.493"/>E<Sync time="41.583"/>s</Turn>
+<Turn endTime="41.693" speaker="phase gest MG phones" startTime="60.380">
+<Sync time="60.380"/>
+<Who nb="1"/>stroke<Sync time="41.633"/>
+<Who nb="2"/>_</Turn>
+<Turn endTime="41.733" speaker="phones" startTime="41.693">
+<Sync time="41.693"/>d</Turn>
+<Turn endTime="39.585" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG phase geste MD" startTime="60.540">
+<Sync time="60.540"/>
+<Who nb="2"/>tenue<Sync time="39.575"/>
+<Who nb="3"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;proximal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="39.575"/>
+<Who nb="1"/>00:00:00.010</Turn>
+<Turn endTime="43.964" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="77.960">
+<Sync time="77.960"/>
+<Who nb="3"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="43.799"/>
+<Who nb="2"/>du<Sync time="43.799"/>
+<Who nb="1"/>00:00:00.165<Sync time="43.799"/>
+<Who nb="4"/>du</Turn>
+<Turn endTime="44.139" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="43.964">
+<Sync time="43.964"/>
+<Who nb="2"/>pouce<Sync time="43.964"/>
+<Who nb="1"/>00:00:00.051<Sync time="43.964"/>
+<Who nb="3"/>pouce</Turn>
+<Turn endTime="44.345" speaker="words" startTime="44.139">
+<Sync time="44.139"/>avec</Turn>
+<Turn endTime="44.429" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="44.345">
+<Sync time="44.345"/>
+<Who nb="2"/>le<Sync time="44.345"/>
+<Who nb="1"/>00:00:00.084<Sync time="44.345"/>
+<Who nb="3"/>le</Turn>
+<Turn endTime="44.832" speaker="words" startTime="44.429">
+<Sync time="44.429"/>musée</Turn>
+<Turn endTime="46.052" speaker="mots déictiques locuteur-cp words" startTime="45.848">
+<Sync time="45.848"/>
+<Who nb="1"/>là<Sync time="45.848"/>
+<Who nb="2"/>là</Turn>
+<Turn endTime="75.222" speaker="durée entre déictiques et anaphoriques et Mvt MD" startTime="74.940">
+<Sync time="74.940"/>00:00:00.282</Turn>
+<Turn endTime="61.420" speaker="durée entre déictiques et anaphoriques et Mvt MD phase gest MG" startTime="75.762">
+<Sync time="75.762"/>
+<Who nb="1"/>00:00:00.020<Sync time="61.300"/>
+<Who nb="2"/>stroke</Turn>
+<Turn endTime="46.125" speaker="mots déictiques locuteur-cp phase gest MG words" startTime="61.420">
+<Sync time="61.420"/>
+<Who nb="2"/>enchaînement<Sync time="46.052"/>
+<Who nb="1"/>y a<Sync time="46.052"/>
+<Who nb="3"/>y a</Turn>
+<Turn endTime="46.570" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="46.125">
+<Sync time="46.125"/>
+<Who nb="2"/>le<Sync time="46.125"/>
+<Who nb="1"/>00:00:00.049<Sync time="46.125"/>
+<Who nb="3"/>le<Sync time="46.174"/>
+<Who nb="2"/>musée<Sync time="46.174"/>
+<Who nb="1"/>00:00:00.191<Sync time="46.174"/>
+<Who nb="3"/>musée<Sync time="46.374"/>
+<Who nb="2"/>d'art<Sync time="46.374"/>
+<Who nb="1"/>00:00:00.196<Sync time="46.374"/>
+<Who nb="3"/>d’art</Turn>
+<Turn endTime="47.410" speaker="words" startTime="46.570">
+<Sync time="46.570"/>contemporain</Turn>
+<Turn endTime="48.170" speaker="mots déictiques locuteur-cp words" startTime="48.100">
+<Sync time="48.100"/>
+<Who nb="1"/>qui<Sync time="48.100"/>
+<Who nb="2"/>qui</Turn>
+<Turn endTime="48.248" speaker="words" startTime="48.170">
+<Sync time="48.170"/>est</Turn>
+<Turn endTime="50.708" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="49.868">
+<Sync time="49.868"/>
+<Who nb="2"/>l'art<Sync time="49.868"/>
+<Who nb="1"/>00:00:00.140<Sync time="49.868"/>
+<Who nb="3"/>l'art<Sync time="50.008"/>
+<Who nb="2"/>contemporain<Sync time="50.008"/>
+<Who nb="1"/>00:00:00.037<Sync time="50.008"/>
+<Who nb="3"/>contemporain</Turn>
+<Turn endTime="51.111" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="51.081">
+<Sync time="51.081"/>
+<Who nb="2"/>vous<Sync time="51.081"/>
+<Who nb="1"/>00:00:00.100<Sync time="51.081"/>
+<Who nb="4"/>vous<Sync time="51.081"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="51.211" speaker="phones words" startTime="51.181">
+<Sync time="51.181"/>
+<Who nb="2"/>avez<Sync time="51.181"/>
+<Who nb="1"/>a</Turn>
+<Turn endTime="52.661" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="51.401">
+<Sync time="51.401"/>
+<Who nb="2"/>la<Sync time="51.401"/>
+<Who nb="1"/>00:00:00.100<Sync time="51.401"/>
+<Who nb="4"/>la<Sync time="51.401"/>
+<Who nb="3"/>l<Sync time="51.501"/>
+<Who nb="2"/>statue<Sync time="51.501"/>
+<Who nb="1"/>00:00:00.159<Sync time="51.501"/>
+<Who nb="4"/>statue<Sync time="51.501"/>
+<Who nb="3"/>s<Sync time="51.841"/>
+<Who nb="2"/>du<Sync time="51.841"/>
+<Who nb="1"/>00:00:00.140<Sync time="51.841"/>
+<Who nb="4"/>du<Sync time="51.841"/>
+<Who nb="3"/>d<Sync time="51.981"/>
+<Who nb="2"/>pouce<Sync time="51.981"/>
+<Who nb="1"/>00:00:00.155<Sync time="51.981"/>
+<Who nb="4"/>pouce<Sync time="51.981"/>
+<Who nb="3"/>p<Sync time="52.411"/>
+<Who nb="2"/>là<Sync time="52.411"/>
+<Who nb="1"/>00:00:00.130<Sync time="52.411"/>
+<Who nb="4"/>là<Sync time="52.411"/>
+<Who nb="3"/>l<Sync time="52.541"/>
+<Who nb="2"/>qui<Sync time="52.541"/>
+<Who nb="1"/>00:00:00.160<Sync time="52.541"/>
+<Who nb="4"/>qui<Sync time="52.541"/>
+<Who nb="3"/>k</Turn>
+<Turn endTime="52.751" speaker="phones words" startTime="52.701">
+<Sync time="52.701"/>
+<Who nb="2"/>est<Sync time="52.701"/>
+<Who nb="1"/>e</Turn>
+<Turn endTime="52.911" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="52.751">
+<Sync time="52.751"/>
+<Who nb="2"/>la<Sync time="52.751"/>
+<Who nb="1"/>00:00:00.090<Sync time="52.751"/>
+<Who nb="4"/>la<Sync time="52.751"/>
+<Who nb="3"/>l<Sync time="52.841"/>
+<Who nb="2"/>statue<Sync time="52.841"/>
+<Who nb="1"/>00:00:00.259<Sync time="52.841"/>
+<Who nb="4"/>statue<Sync time="52.841"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="53.251" speaker="phones words" startTime="53.201">
+<Sync time="53.201"/>
+<Who nb="2"/>de<Sync time="53.201"/>
+<Who nb="1"/>d</Turn>
+<Turn endTime="53.321" speaker="mots déictiques locuteur-cp phones words" startTime="53.281">
+<Sync time="53.281"/>
+<Who nb="1"/>l'<Sync time="53.281"/>
+<Who nb="3"/>l'artiste<Sync time="53.281"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="53.371" speaker="phones" startTime="53.321">
+<Sync time="53.321"/>a</Turn>
+<Turn endTime="54.418" speaker="mots déictiques locuteur-cp words" startTime="54.316">
+<Sync time="54.316"/>
+<Who nb="1"/>du<Sync time="54.316"/>
+<Who nb="2"/>du</Turn>
+<Turn endTime="54.708" speaker="words" startTime="54.418">
+<Sync time="54.418"/>fameux</Turn>
+<Turn endTime="55.458" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="54.708">
+<Sync time="54.708"/>
+<Who nb="2"/>artiste<Sync time="54.708"/>
+<Who nb="1"/>00:00:00.178<Sync time="54.708"/>
+<Who nb="3"/>artiste</Turn>
+<Turn endTime="56.394" speaker="words" startTime="55.458">
+<Sync time="55.458"/>euh<Sync time="56.338"/>a</Turn>
+<Turn endTime="56.679" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="56.394">
+<Sync time="56.394"/>
+<Who nb="2"/>fait<Sync time="56.394"/>
+<Who nb="1"/>00:00:00.181<Sync time="56.394"/>
+<Who nb="3"/>fait<Sync time="56.577"/>
+<Who nb="2"/>qui<Sync time="56.577"/>
+<Who nb="1"/>00:00:00.102<Sync time="56.577"/>
+<Who nb="3"/>qui</Turn>
+<Turn endTime="56.785" speaker="words" startTime="56.679">
+<Sync time="56.679"/>a</Turn>
+<Turn endTime="57.815" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="56.785">
+<Sync time="56.785"/>
+<Who nb="2"/>mis<Sync time="56.785"/>
+<Who nb="1"/>00:00:00.010<Sync time="56.785"/>
+<Who nb="3"/>mis<Sync time="57.036"/>
+<Who nb="2"/>qui<Sync time="57.036"/>
+<Who nb="1"/>00:00:00.009<Sync time="57.036"/>
+<Who nb="3"/>qui<Sync time="57.309"/>
+<Who nb="2"/>qui<Sync time="57.309"/>
+<Who nb="1"/>00:00:00.031<Sync time="57.309"/>
+<Who nb="3"/>qui<Sync time="57.582"/>
+<Who nb="2"/>qui<Sync time="57.582"/>
+<Who nb="1"/>00:00:00.018<Sync time="57.582"/>
+<Who nb="3"/>qui</Turn>
+<Turn endTime="57.923" speaker="words" startTime="57.815">
+<Sync time="57.815"/>a</Turn>
+<Turn endTime="58.700" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="57.923">
+<Sync time="57.923"/>
+<Who nb="2"/>fait<Sync time="57.923"/>
+<Who nb="1"/>00:00:00.017<Sync time="57.923"/>
+<Who nb="3"/>fait<Sync time="58.128"/>
+<Who nb="2"/>son<Sync time="58.128"/>
+<Who nb="1"/>00:00:00.172<Sync time="58.128"/>
+<Who nb="3"/>son<Sync time="58.381"/>
+<Who nb="2"/>sa<Sync time="58.381"/>
+<Who nb="1"/>00:00:00.161<Sync time="58.381"/>
+<Who nb="3"/>sa</Turn>
+<Turn endTime="26.828" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="58.700">
+<Sync time="58.700"/>
+<Who nb="2"/>sa<Sync time="58.700"/>
+<Who nb="1"/>00:00:00.012<Sync time="58.700"/>
+<Who nb="4"/>sa<Sync time="50.755"/>
+<Who nb="3"/>enchaînement<Sync time="58.940"/>
+<Who nb="2"/>sa<Sync time="58.940"/>
+<Who nb="1"/>00:00:00.116<Sync time="58.940"/>
+<Who nb="4"/>sa<Sync time="26.510"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+</Turn>
+<Turn endTime="50.965" speaker="phase geste MD phones" startTime="82.573">
+<Sync time="82.573"/>
+<Who nb="2"/>l<Sync time="50.765"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="51.841" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="59.248">
+<Sync time="59.248"/>
+<Who nb="2"/>sculpture<Sync time="59.248"/>
+<Who nb="1"/>00:00:00.088<Sync time="59.248"/>
+<Who nb="4"/>sculpture<Sync time="50.965"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="59.748"/>
+<Who nb="2"/>de<Sync time="59.748"/>
+<Who nb="1"/>00:00:00.112<Sync time="59.748"/>
+<Who nb="4"/>de<Sync time="53.100"/>
+<Who nb="3"/>enchaînement<Sync time="51.660"/>
+<Who nb="1"/>00:00:00.181</Turn>
+<Turn endTime="60.206" speaker="words" startTime="60.042">
+<Sync time="60.042"/>fin</Turn>
+<Turn endTime="60.726" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="60.206">
+<Sync time="60.206"/>
+<Who nb="2"/>sa<Sync time="60.206"/>
+<Who nb="1"/>00:00:00.054<Sync time="60.206"/>
+<Who nb="3"/>sa</Turn>
+<Turn endTime="26.956" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD words" startTime="60.726">
+<Sync time="60.726"/>
+<Who nb="3"/>_<Sync time="52.136"/>
+<Who nb="1"/>00:00:00.275<Sync time="26.828"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="26.828"/>
+<Who nb="1"/>00:00:00.128</Turn>
+<Turn endTime="27.057" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="26.956">
+<Sync time="26.956"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="26.956"/>
+<Who nb="1"/>00:00:00.101</Turn>
+<Turn endTime="27.667" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="53.302">
+<Sync time="53.302"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="53.302"/>
+<Who nb="1"/>00:00:00.019<Sync time="41.733"/>
+<Who nb="3"/>a<Sync time="27.545"/>
+<Who nb="1"/>00:00:00.122</Turn>
+<Turn endTime="27.797" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="27.785">
+<Sync time="27.785"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retouradd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="27.785"/>
+<Who nb="1"/>00:00:00.012</Turn>
+<Turn endTime="41.823" speaker="phones" startTime="41.763">
+<Sync time="41.763"/>k</Turn>
+<Turn endTime="28.790" speaker="phase geste MD phones" startTime="41.823">
+<Sync time="41.823"/>
+<Who nb="2"/>O<Sync time="28.052"/>
+<Who nb="1"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+</Turn>
+<Turn endTime="42.053" speaker="phones" startTime="41.863">
+<Sync time="41.863"/>R<Sync time="41.913"/>a<Sync time="42.003"/>l</Turn>
+<Turn endTime="39.102" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="53.386">
+<Sync time="53.386"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="39.070"/>
+<Who nb="1"/>00:00:00.032</Turn>
+<Turn endTime="42.083" speaker="phones" startTime="42.053">
+<Sync time="42.053"/>a</Turn>
+<Turn endTime="42.143" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="76.166">
+<Sync time="76.166"/>
+<Who nb="1"/>00:00:00.086<Sync time="42.083"/>
+<Who nb="2"/>R</Turn>
+<Turn endTime="42.503" speaker="phones" startTime="42.143">
+<Sync time="42.143"/>_<Sync time="42.473"/>k</Turn>
+<Turn endTime="43.203" speaker="phase gest MG phones" startTime="61.520">
+<Sync time="61.520"/>
+<Who nb="1"/>stroke<Sync time="42.503"/>
+<Who nb="2"/>o~</Turn>
+<Turn endTime="43.663" speaker="phones" startTime="43.203">
+<Sync time="43.203"/>t</Turn>
+<Turn endTime="39.212" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="76.482">
+<Sync time="76.482"/>
+<Who nb="1"/>00:00:00.190<Sync time="53.560"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="54.180"/>
+<Who nb="2"/>enchaînement<Sync time="39.153"/>
+<Who nb="1"/>00:00:00.059</Turn>
+<Turn endTime="64.400" speaker="phase gest MG phones" startTime="82.613">
+<Sync time="82.613"/>
+<Who nb="2"/>e<Sync time="64.200"/>
+<Who nb="1"/>rétraction</Turn>
+<Turn endTime="82.853" speaker="phones" startTime="82.793">
+<Sync time="82.793"/>w</Turn>
+<Turn endTime="61.351" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase gest MG words" startTime="87.185">
+<Sync time="87.185"/>
+<Who nb="3"/>préparation<Sync time="61.187"/>
+<Who nb="2"/>son<Sync time="61.187"/>
+<Who nb="1"/>00:00:00.164<Sync time="61.187"/>
+<Who nb="4"/>son</Turn>
+<Turn endTime="61.726" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="61.351">
+<Sync time="61.351"/>
+<Who nb="2"/>moulage<Sync time="61.351"/>
+<Who nb="1"/>00:00:00.209<Sync time="61.351"/>
+<Who nb="3"/>moulage</Turn>
+<Turn endTime="61.850" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="84.230">
+<Sync time="84.230"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="61.726"/>
+<Who nb="2"/>de<Sync time="61.726"/>
+<Who nb="1"/>00:00:00.124<Sync time="61.726"/>
+<Who nb="4"/>de</Turn>
+<Turn endTime="62.208" speaker="words" startTime="61.850">
+<Sync time="61.850"/>pouce</Turn>
+<Turn endTime="62.434" speaker="mots déictiques locuteur-cp words" startTime="62.208">
+<Sync time="62.208"/>
+<Who nb="1"/>là<Sync time="62.208"/>
+<Who nb="2"/>là</Turn>
+<Turn endTime="62.972" speaker="mots déictiques locuteur-cp phones words" startTime="62.912">
+<Sync time="62.912"/>
+<Who nb="1"/>un<Sync time="62.912"/>
+<Who nb="3"/>un<Sync time="62.912"/>
+<Who nb="2"/>9~</Turn>
+<Turn endTime="63.092" speaker="mots déictiques locuteur-cp phase geste MD phones words" startTime="84.790">
+<Sync time="84.790"/>
+<Who nb="2"/>enchaînement<Sync time="62.972"/>
+<Who nb="1"/>pouce<Sync time="62.972"/>
+<Who nb="4"/>pouce<Sync time="62.972"/>
+<Who nb="3"/>p</Turn>
+<Turn endTime="63.322" speaker="phones words" startTime="63.192">
+<Sync time="63.192"/>
+<Who nb="2"/>géant<Sync time="63.192"/>
+<Who nb="1"/>Z</Turn>
+<Turn endTime="66.262" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="65.307">
+<Sync time="65.307"/>
+<Who nb="2"/>tout<Sync time="65.307"/>
+<Who nb="1"/>00:00:00.063<Sync time="65.307"/>
+<Who nb="3"/>tout<Sync time="65.600"/>
+<Who nb="2"/>droit<Sync time="65.600"/>
+<Who nb="1"/>00:00:00.512<Sync time="65.600"/>
+<Who nb="3"/>droit<Sync time="66.112"/>
+<Who nb="2"/>vous<Sync time="66.112"/>
+<Who nb="1"/>00:00:00.106<Sync time="66.112"/>
+<Who nb="3"/>vous</Turn>
+<Turn endTime="0.335" speaker="phones words" startTime="66.262">
+<Sync time="66.262"/>
+<Who nb="2"/>arrivez<Sync time="0.225"/>si<Sync time="0.225"/>
+<Who nb="1"/>s</Turn>
+<Turn endTime="66.456" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="82.853">
+<Sync time="82.853"/>
+<Who nb="3"/>a<Sync time="66.395"/>
+<Who nb="2"/>à<Sync time="66.395"/>
+<Who nb="1"/>00:00:00.061<Sync time="66.395"/>
+<Who nb="4"/>à</Turn>
+<Turn endTime="66.525" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="66.456">
+<Sync time="66.456"/>
+<Who nb="2"/>un<Sync time="66.456"/>
+<Who nb="1"/>00:00:00.006<Sync time="66.456"/>
+<Who nb="3"/>un</Turn>
+<Turn endTime="66.692" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="85.030">
+<Sync time="85.030"/>
+<Who nb="3"/>stroke<Sync time="66.525"/>
+<Who nb="2"/>autre<Sync time="66.525"/>
+<Who nb="1"/>00:00:00.167<Sync time="66.525"/>
+<Who nb="4"/>autre</Turn>
+<Turn endTime="67.137" speaker="words" startTime="66.692">
+<Sync time="66.692"/>rond-point</Turn>
+<Turn endTime="67.615" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="67.219">
+<Sync time="67.219"/>
+<Who nb="2"/>là<Sync time="67.219"/>
+<Who nb="1"/>00:00:00.193<Sync time="67.219"/>
+<Who nb="3"/>là<Sync time="67.412"/>
+<Who nb="2"/>c'est<Sync time="67.412"/>
+<Who nb="1"/>00:00:00.052<Sync time="67.412"/>
+<Who nb="3"/>c'est<Sync time="67.559"/>
+<Who nb="2"/>la<Sync time="67.559"/>
+<Who nb="1"/>00:00:00.056<Sync time="67.559"/>
+<Who nb="3"/>la</Turn>
+<Turn endTime="29.284" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="67.615">
+<Sync time="67.615"/>
+<Who nb="2"/>direction<Sync time="67.615"/>
+<Who nb="1"/>00:00:00.329<Sync time="67.615"/>
+<Who nb="4"/>direction<Sync time="28.790"/>
+<Who nb="3"/>préparation</Turn>
+<Turn endTime="29.387" speaker="phase geste MD" startTime="29.284">
+<Sync time="29.284"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="68.277" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="68.147">
+<Sync time="68.147"/>
+<Who nb="2"/>de<Sync time="68.147"/>
+<Who nb="1"/>00:00:00.093<Sync time="68.147"/>
+<Who nb="3"/>de</Turn>
+<Turn endTime="68.585" speaker="mots déictiques locuteur-cp words" startTime="68.277">
+<Sync time="68.277"/>
+<Who nb="1"/>Sormiou<Sync time="68.277"/>
+<Who nb="2"/>Sormiou</Turn>
+<Turn endTime="68.688" speaker="words" startTime="68.585">
+<Sync time="68.585"/>donc</Turn>
+<Turn endTime="68.801" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="68.688">
+<Sync time="68.688"/>
+<Who nb="2"/>vous<Sync time="68.688"/>
+<Who nb="1"/>00:00:00.113<Sync time="68.688"/>
+<Who nb="3"/>vous</Turn>
+<Turn endTime="68.983" speaker="words" startTime="68.801">
+<Sync time="68.801"/>allez</Turn>
+<Turn endTime="69.434" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="68.983">
+<Sync time="68.983"/>
+<Who nb="2"/>jusqu'au<Sync time="68.983"/>
+<Who nb="1"/>00:00:00.451<Sync time="68.983"/>
+<Who nb="3"/>jusqu'au</Turn>
+<Turn endTime="0.515" speaker="durée entre déictiques et anaphoriques et Mvt MD phones words" startTime="77.082">
+<Sync time="77.082"/>
+<Who nb="1"/>00:00:00.094<Sync time="0.365"/>
+<Who nb="3"/>on<Sync time="0.365"/>
+<Who nb="2"/>o~</Turn>
+<Turn endTime="0.625" speaker="phones words" startTime="0.515">
+<Sync time="0.515"/>
+<Who nb="2"/>si<Sync time="0.515"/>
+<Who nb="1"/>s</Turn>
+<Turn endTime="70.653" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="69.434">
+<Sync time="69.434"/>
+<Who nb="2"/>bout<Sync time="69.434"/>
+<Who nb="1"/>00:00:00.046<Sync time="69.434"/>
+<Who nb="3"/>bout<Sync time="70.154"/>
+<Who nb="2"/>en<Sync time="70.154"/>
+<Who nb="1"/>00:00:00.046<Sync time="70.154"/>
+<Who nb="3"/>en<Sync time="70.285"/>
+<Who nb="2"/>direction<Sync time="70.285"/>
+<Who nb="1"/>00:00:00.368<Sync time="70.285"/>
+<Who nb="3"/>direction</Turn>
+<Turn endTime="70.755" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="85.270">
+<Sync time="85.270"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="70.653"/>
+<Who nb="2"/>des<Sync time="70.653"/>
+<Who nb="1"/>00:00:00.045<Sync time="70.653"/>
+<Who nb="4"/>des</Turn>
+<Turn endTime="71.766" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="70.755">
+<Sync time="70.755"/>
+<Who nb="2"/>Baumettes<Sync time="70.755"/>
+<Who nb="1"/>00:00:00.257<Sync time="70.755"/>
+<Who nb="3"/>Baumettes<Sync time="71.604"/>
+<Who nb="2"/>la<Sync time="71.604"/>
+<Who nb="1"/>00:00:00.128<Sync time="71.604"/>
+<Who nb="3"/>la</Turn>
+<Turn endTime="72.186" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD words" startTime="85.590">
+<Sync time="85.590"/>
+<Who nb="3"/>enchaînement<Sync time="71.766"/>
+<Who nb="2"/>prison<Sync time="71.766"/>
+<Who nb="1"/>00:00:00.420<Sync time="71.766"/>
+<Who nb="4"/>prison</Turn>
+<Turn endTime="72.718" speaker="words" startTime="72.298">
+<Sync time="72.298"/>fameuse</Turn>
+<Turn endTime="73.100" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="72.718">
+<Sync time="72.718"/>
+<Who nb="2"/>prison<Sync time="72.718"/>
+<Who nb="1"/>00:00:00.008<Sync time="72.718"/>
+<Who nb="3"/>prison</Turn>
+<Turn endTime="73.268" speaker="words" startTime="73.100">
+<Sync time="73.100"/>des</Turn>
+<Turn endTime="74.882" speaker="mots déictiques locuteur-cp phones words" startTime="74.772">
+<Sync time="74.772"/>
+<Who nb="1"/>là<Sync time="74.772"/>
+<Who nb="3"/>là<Sync time="74.772"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="75.412" speaker="phones words" startTime="75.222">
+<Sync time="75.222"/>
+<Who nb="2"/>euh<Sync time="75.222"/>
+<Who nb="1"/>2</Turn>
+<Turn endTime="75.502" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="75.412">
+<Sync time="75.412"/>
+<Who nb="2"/>à<Sync time="75.412"/>
+<Who nb="1"/>00:00:00.030<Sync time="75.412"/>
+<Who nb="4"/>à<Sync time="75.412"/>
+<Who nb="3"/>a<Sync time="77.176"/>
+<Who nb="1"/>00:00:00.236<Sync time="75.442"/>
+<Who nb="2"/>un<Sync time="75.442"/>
+<Who nb="1"/>00:00:00.030<Sync time="75.442"/>
+<Who nb="4"/>un<Sync time="75.442"/>
+<Who nb="3"/>9~<Sync time="75.472"/>
+<Who nb="2"/>moment<Sync time="75.472"/>
+<Who nb="1"/>00:00:00.290<Sync time="75.472"/>
+<Who nb="4"/>moment<Sync time="75.472"/>
+<Who nb="3"/>m</Turn>
+<Turn endTime="29.797" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD phones words" startTime="75.782">
+<Sync time="75.782"/>
+<Who nb="2"/>donné<Sync time="75.782"/>
+<Who nb="1"/>00:00:00.384<Sync time="75.782"/>
+<Who nb="5"/>donné<Sync time="75.782"/>
+<Who nb="4"/>d<Sync time="29.387"/>
+<Who nb="3"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+</Turn>
+<Turn endTime="39.542" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="82.883">
+<Sync time="82.883"/>
+<Who nb="2"/>t<Sync time="39.296"/>
+<Who nb="1"/>00:00:00.246</Turn>
+<Turn endTime="40.285" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="43.663">
+<Sync time="43.663"/>
+<Who nb="3"/>a~<Sync time="40.254"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="40.254"/>
+<Who nb="1"/>00:00:00.031</Turn>
+<Turn endTime="44.123" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="77.432">
+<Sync time="77.432"/>
+<Who nb="1"/>00:00:00.250<Sync time="44.013"/>
+<Who nb="2"/>p</Turn>
+<Turn endTime="51.801" speaker="phones" startTime="44.123">
+<Sync time="44.123"/>O<Sync time="45.083"/>R<Sync time="47.993"/>9~<Sync time="51.111"/>u<Sync time="51.211"/>v<Sync time="51.281"/>e<Sync time="51.441"/>a<Sync time="51.571"/>t<Sync time="51.631"/>a<Sync time="51.681"/>t</Turn>
+<Turn endTime="40.962" speaker="phase geste MD phones" startTime="51.801">
+<Sync time="51.801"/>
+<Who nb="2"/>y<Sync time="40.614"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="51.981" speaker="phones" startTime="51.891">
+<Sync time="51.891"/>y</Turn>
+<Turn endTime="52.261" speaker="phones words" startTime="76.252">
+<Sync time="76.252"/>
+<Who nb="2"/>euh<Sync time="76.252"/>
+<Who nb="1"/>2<Sync time="52.131"/>
+<Who nb="1"/>u</Turn>
+<Turn endTime="76.582" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="76.412">
+<Sync time="76.412"/>
+<Who nb="2"/>y a<Sync time="76.412"/>
+<Who nb="1"/>00:00:00.070<Sync time="76.412"/>
+<Who nb="4"/>y a<Sync time="76.412"/>
+<Who nb="3"/>i</Turn>
+<Turn endTime="0.735" speaker="phones words" startTime="76.672">
+<Sync time="76.672"/>
+<Who nb="2"/>et<Sync time="76.672"/>
+<Who nb="1"/>e<Sync time="0.665"/>
+<Who nb="2"/>on<Sync time="0.665"/>
+<Who nb="1"/>o~</Turn>
+<Turn endTime="52.411" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="76.862">
+<Sync time="76.862"/>
+<Who nb="2"/>là<Sync time="76.862"/>
+<Who nb="1"/>00:00:00.180<Sync time="76.862"/>
+<Who nb="4"/>là<Sync time="76.862"/>
+<Who nb="3"/>l<Sync time="77.042"/>
+<Who nb="2"/>au<Sync time="77.042"/>
+<Who nb="1"/>00:00:00.040<Sync time="77.042"/>
+<Who nb="4"/>au<Sync time="77.042"/>
+<Who nb="3"/>o<Sync time="77.412"/>
+<Who nb="2"/>bout<Sync time="77.412"/>
+<Who nb="1"/>00:00:00.020<Sync time="77.412"/>
+<Who nb="4"/>bout<Sync time="77.412"/>
+<Who nb="3"/>b<Sync time="52.261"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="52.701" speaker="phones" startTime="52.451">
+<Sync time="52.451"/>a<Sync time="52.661"/>i</Turn>
+<Turn endTime="52.841" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="77.682">
+<Sync time="77.682"/>
+<Who nb="2"/>de<Sync time="77.682"/>
+<Who nb="1"/>00:00:00.048<Sync time="77.682"/>
+<Who nb="4"/>de<Sync time="77.682"/>
+<Who nb="3"/>d<Sync time="77.752"/>
+<Who nb="2"/>la<Sync time="77.752"/>
+<Who nb="1"/>00:00:00.100<Sync time="77.752"/>
+<Who nb="4"/>la<Sync time="77.752"/>
+<Who nb="3"/>l<Sync time="52.791"/>
+<Who nb="3"/>a</Turn>
+<Turn endTime="53.031" speaker="phones" startTime="52.911">
+<Sync time="52.911"/>t<Sync time="52.971"/>a</Turn>
+<Turn endTime="77.882" speaker="phones words" startTime="77.852">
+<Sync time="77.852"/>
+<Who nb="2"/>route<Sync time="77.852"/>
+<Who nb="1"/>R</Turn>
+<Turn endTime="53.141" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="78.142">
+<Sync time="78.142"/>
+<Who nb="2"/>y a<Sync time="78.142"/>
+<Who nb="1"/>00:00:00.018<Sync time="78.142"/>
+<Who nb="4"/>y a<Sync time="78.142"/>
+<Who nb="3"/>i<Sync time="78.232"/>
+<Who nb="2"/>la<Sync time="78.232"/>
+<Who nb="1"/>00:00:00.160<Sync time="78.232"/>
+<Who nb="4"/>la<Sync time="78.232"/>
+<Who nb="3"/>l<Sync time="78.392"/>
+<Who nb="2"/>route<Sync time="78.392"/>
+<Who nb="1"/>00:00:00.008<Sync time="78.392"/>
+<Who nb="4"/>route<Sync time="78.392"/>
+<Who nb="3"/>R<Sync time="53.031"/>
+<Who nb="3"/>t</Turn>
+<Turn endTime="0.815" speaker="phones words" startTime="78.662">
+<Sync time="78.662"/>
+<Who nb="2"/>_<Sync time="78.662"/>
+<Who nb="1"/>_<Sync time="0.735"/>
+<Who nb="2"/>est<Sync time="0.735"/>
+<Who nb="1"/>n</Turn>
+<Turn endTime="53.201" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="78.712">
+<Sync time="78.712"/>
+<Who nb="2"/>qui<Sync time="78.712"/>
+<Who nb="1"/>00:00:00.110<Sync time="78.712"/>
+<Who nb="4"/>qui<Sync time="78.712"/>
+<Who nb="3"/>k<Sync time="53.141"/>
+<Who nb="3"/>y</Turn>
+<Turn endTime="78.912" speaker="phones words" startTime="78.822">
+<Sync time="78.822"/>
+<Who nb="2"/>monte<Sync time="78.822"/>
+<Who nb="1"/>m</Turn>
+<Turn endTime="79.142" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="79.062">
+<Sync time="79.062"/>
+<Who nb="2"/>vers<Sync time="79.062"/>
+<Who nb="1"/>00:00:00.190<Sync time="79.062"/>
+<Who nb="4"/>vers<Sync time="79.062"/>
+<Who nb="3"/>v</Turn>
+<Turn endTime="79.292" speaker="phones words" startTime="79.252">
+<Sync time="79.252"/>
+<Who nb="2"/>_<Sync time="79.252"/>
+<Who nb="1"/>_</Turn>
+<Turn endTime="79.382" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="79.292">
+<Sync time="79.292"/>
+<Who nb="2"/>Sormiou<Sync time="79.292"/>
+<Who nb="1"/>00:00:00.188<Sync time="79.292"/>
+<Who nb="4"/>Sormiou<Sync time="79.292"/>
+<Who nb="3"/>s</Turn>
+<Turn endTime="53.281" speaker="phones words" startTime="79.842">
+<Sync time="79.842"/>
+<Who nb="2"/>_<Sync time="79.842"/>
+<Who nb="1"/>_<Sync time="53.251"/>
+<Who nb="1"/>@</Turn>
+<Turn endTime="81.463" speaker="mots déictiques locuteur-cp phones words" startTime="81.193">
+<Sync time="81.193"/>
+<Who nb="1"/>alors<Sync time="81.193"/>
+<Who nb="3"/>alors<Sync time="81.193"/>
+<Who nb="2"/>a<Sync time="53.371"/>
+<Who nb="2"/>R<Sync time="81.433"/>
+<Who nb="1"/>là<Sync time="81.433"/>
+<Who nb="3"/>là<Sync time="81.433"/>
+<Who nb="2"/>l</Turn>
+<Turn endTime="53.581" speaker="phones words" startTime="81.533">
+<Sync time="81.533"/>
+<Who nb="2"/>en<Sync time="81.533"/>
+<Who nb="1"/>a~<Sync time="53.451"/>
+<Who nb="1"/>t</Turn>
+<Turn endTime="53.631" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="82.103">
+<Sync time="82.103"/>
+<Who nb="2"/>vous<Sync time="82.103"/>
+<Who nb="1"/>00:00:00.140<Sync time="82.103"/>
+<Who nb="4"/>vous<Sync time="82.103"/>
+<Who nb="3"/>v<Sync time="53.581"/>
+<Who nb="3"/>i</Turn>
+<Turn endTime="53.751" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="77.730">
+<Sync time="77.730"/>
+<Who nb="1"/>00:00:00.022<Sync time="53.631"/>
+<Who nb="2"/>s</Turn>
+<Turn endTime="82.313" speaker="phones words" startTime="82.243">
+<Sync time="82.243"/>
+<Who nb="2"/>pouvez<Sync time="82.243"/>
+<Who nb="1"/>p</Turn>
+<Turn endTime="53.781" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phones words" startTime="82.473">
+<Sync time="82.473"/>
+<Who nb="2"/>y<Sync time="82.473"/>
+<Who nb="1"/>00:00:00.050<Sync time="82.473"/>
+<Who nb="4"/>y<Sync time="82.473"/>
+<Who nb="3"/>i<Sync time="53.751"/>
+<Who nb="3"/>t</Turn>
+<Turn endTime="62.912" speaker="phones words" startTime="82.523">
+<Sync time="82.523"/>
+<Who nb="2"/>aller<Sync time="82.523"/>
+<Who nb="1"/>a<Sync time="62.872"/>
+<Who nb="1"/>e</Turn>
+<Turn endTime="83.333" speaker="mots déictiques locuteur-cp phones words" startTime="83.223">
+<Sync time="83.223"/>
+<Who nb="1"/>c'est<Sync time="83.223"/>
+<Who nb="3"/>c'est<Sync time="83.223"/>
+<Who nb="2"/>s</Turn>
+<Turn endTime="63.162" speaker="phones words" startTime="83.373">
+<Sync time="83.373"/>
+<Who nb="2"/>ouvert<Sync time="83.373"/>
+<Who nb="1"/>u<Sync time="63.092"/>
+<Who nb="1"/>u</Turn>
+<Turn endTime="63.192" speaker="phones" startTime="63.162">
+<Sync time="63.162"/>s</Turn>
+<Turn endTime="84.524" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp words" startTime="84.418">
+<Sync time="84.418"/>
+<Who nb="2"/>vous<Sync time="84.418"/>
+<Who nb="1"/>00:00:00.106<Sync time="84.418"/>
+<Who nb="3"/>vous</Turn>
+<Turn endTime="63.432" speaker="phones words" startTime="84.524">
+<Sync time="84.524"/>
+<Who nb="2"/>arrivez<Sync time="63.322"/>
+<Who nb="1"/>e</Turn>
+<Turn endTime="63.592" speaker="durée entre déictiques et anaphoriques et Mvt MD mots déictiques locuteur-cp phase geste MD phones words" startTime="85.670">
+<Sync time="85.670"/>
+<Who nb="3"/>stroke<Sync time="84.690"/>
+<Who nb="2"/>à<Sync time="84.690"/>
+<Who nb="1"/>00:00:00.100<Sync time="84.690"/>
+<Who nb="5"/>à<Sync time="63.432"/>
+<Who nb="4"/>a~</Turn>
+<Turn endTime="63.909" speaker="phones" startTime="63.819">
+<Sync time="63.819"/>m</Turn>
+<Turn endTime="63.939" speaker="mots déictiques locuteur-cp phones words" startTime="84.798">
+<Sync time="84.798"/>
+<Who nb="1"/>Sormiou<Sync time="84.798"/>
+<Who nb="3"/>Sormiou<Sync time="63.909"/>
+<Who nb="2"/>a</Turn>
+<Turn endTime="64.039" speaker="phones" startTime="63.979">
+<Sync time="63.979"/>m</Turn>
+<Turn endTime="85.334" speaker="words" startTime="85.160">
+<Sync time="85.160"/>faut</Turn>
+<Turn endTime="64.069" speaker="mots déictiques locuteur-cp phones words" startTime="86.254">
+<Sync time="86.254"/>
+<Who nb="1"/>y a<Sync time="86.254"/>
+<Who nb="3"/>y a<Sync time="64.039"/>
+<Who nb="2"/>a</Turn>
+<Turn endTime="73.703" speaker="phones" startTime="73.663">
+<Sync time="73.663"/>@</Turn>
+<Turn endTime="73.773" speaker="phones words" startTime="86.331">
+<Sync time="86.331"/>
+<Who nb="2"/>un<Sync time="73.743"/>
+<Who nb="1"/>@</Turn>
+<Turn endTime="73.883" speaker="phones" startTime="73.843">
+<Sync time="73.843"/>O</Turn>
+<Turn endTime="12.111" speaker="phase geste 2M phones" startTime="73.883">
+<Sync time="73.883"/>
+<Who nb="2"/>n<Sync time="10.431"/>
+<Who nb="1"/>tenue<Comment desc="phase geste 2M-Forme pointage 2M:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="41.271" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="40.962">
+<Sync time="40.962"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="40.962"/>
+<Who nb="1"/>00:00:00.054<Sync time="78.160"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;mire"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="78.160"/>
+<Who nb="1"/>00:00:00.072<Sync time="78.400"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;mire"/>
+<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="78.400"/>
+<Who nb="1"/>00:00:00.262<Sync time="41.215"/>
+<Who nb="2"/>enchaînement<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="41.215"/>
+<Who nb="1"/>00:00:00.056</Turn>
+<Turn endTime="29.997" speaker="phase geste MD" startTime="41.295">
+<Sync time="41.295"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="29.797"/>enchaînement</Turn>
+<Turn endTime="74.153" speaker="phones" startTime="73.953">
+<Sync time="73.953"/>E<Sync time="74.083"/>@</Turn>
+<Turn endTime="29.691" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="74.213">
+<Sync time="74.213"/>
+<Who nb="2"/>@<Sync time="29.542"/>
+<Who nb="1"/>00:00:00.029<Sync time="74.363"/>
+<Who nb="2"/>o~<Sync time="29.670"/>
+<Who nb="1"/>00:00:00.021</Turn>
+<Turn endTime="75.222" speaker="phones" startTime="74.882">
+<Sync time="74.882"/>a</Turn>
+<Turn endTime="75.632" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="79.480">
+<Sync time="79.480"/>
+<Who nb="2"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="79.480"/>
+<Who nb="1"/>00:00:00.362<Sync time="75.502"/>
+<Who nb="3"/>O</Turn>
+<Turn endTime="75.692" speaker="phones" startTime="75.632">
+<Sync time="75.632"/>m</Turn>
+<Turn endTime="1.645" speaker="phones words" startTime="75.692">
+<Sync time="75.692"/>
+<Who nb="1"/>a~<Sync time="1.615"/>
+<Who nb="2"/>Borély<Sync time="1.615"/>
+<Who nb="1"/>b</Turn>
+<Turn endTime="9.414" speaker="durée entre déictiques et anaphoriques et Mvt MD phones" startTime="75.852">
+<Sync time="75.852"/>
+<Who nb="2"/>O<Sync time="8.895"/>
+<Who nb="1"/>00:00:00.340<Sync time="75.952"/>
+<Who nb="2"/>n<Sync time="9.290"/>
+<Who nb="1"/>00:00:00.124</Turn>
+<Turn endTime="76.252" speaker="phones" startTime="76.052">
+<Sync time="76.052"/>e</Turn>
+<Turn endTime="2.611" speaker="phones words" startTime="76.582">
+<Sync time="76.582"/>
+<Who nb="1"/>a<Sync time="2.571"/>
+<Who nb="2"/>le<Sync time="2.571"/>
+<Who nb="1"/>l</Turn>
+<Turn endTime="78.392" speaker="phones" startTime="76.922">
+<Sync time="76.922"/>a<Sync time="77.532"/>u<Sync time="77.722"/>@<Sync time="77.792"/>a<Sync time="77.882"/>u<Sync time="78.032"/>t<Sync time="78.182"/>a<Sync time="78.292"/>a</Turn>
+<Turn endTime="78.592" speaker="phase geste MD phones" startTime="80.430">
+<Sync time="80.430"/>
+<Who nb="1"/>enchaînement<Sync time="78.492"/>
+<Who nb="2"/>u</Turn>
+<Turn endTime="78.662" speaker="phones" startTime="78.592">
+<Sync time="78.592"/>t</Turn>
+<Turn endTime="29.797" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="80.710">
+<Sync time="80.710"/>
+<Who nb="2"/>stroke<Sync time="29.729"/>
+<Who nb="1"/>00:00:00.068</Turn>
+<Turn endTime="30.131" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="78.762">
+<Sync time="78.762"/>
+<Who nb="3"/>i<Sync time="29.997"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourflex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="29.997"/>
+<Who nb="1"/>00:00:00.134</Turn>
+<Turn endTime="79.032" speaker="phones" startTime="78.912">
+<Sync time="78.912"/>o~</Turn>
+<Turn endTime="6.025" speaker="phase geste MD phones words" startTime="81.190">
+<Sync time="81.190"/>
+<Who nb="1"/>enchaînement<Sync time="5.995"/>
+<Who nb="3"/>a<Sync time="5.995"/>
+<Who nb="2"/>a</Turn>
+<Turn endTime="79.062" speaker="phones" startTime="79.032">
+<Sync time="79.032"/>t</Turn>
+<Turn endTime="8.265" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones words" startTime="79.142">
+<Sync time="79.142"/>
+<Who nb="3"/>E<Sync time="41.575"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="41.575"/>
+<Who nb="1"/>00:00:00.200<Sync time="8.235"/>
+<Who nb="4"/>l'escale<Sync time="8.235"/>
+<Who nb="3"/>l</Turn>
+<Turn endTime="9.375" speaker="phones words" startTime="9.275">
+<Sync time="9.275"/>
+<Who nb="2"/>y a<Sync time="9.275"/>
+<Who nb="1"/>i</Turn>
+<Turn endTime="41.918" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="41.775">
+<Sync time="41.775"/>
+<Who nb="2"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aucun"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="41.775"/>
+<Who nb="1"/>00:00:00.143</Turn>
+<Turn endTime="82.950" speaker="phase geste MD" startTime="81.710">
+<Sync time="81.710"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourdistal"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesalignées"/>
+<Sync time="82.310"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="83.113" speaker="phones" startTime="83.033">
+<Sync time="83.033"/>y</Turn>
+<Turn endTime="9.865" speaker="phones words" startTime="83.113">
+<Sync time="83.113"/>
+<Who nb="1"/>R<Sync time="9.795"/>
+<Who nb="2"/>de<Sync time="9.795"/>
+<Who nb="1"/>d</Turn>
+<Turn endTime="12.751" speaker="phase gest MG phase geste MD" startTime="12.111">
+<Sync time="12.111"/>
+<Who nb="2"/>préparation<Sync time="12.111"/>
+<Who nb="1"/>stroke</Turn>
+<Turn endTime="13.691" speaker="phase geste 2M" startTime="12.751">
+<Sync time="12.751"/>stroke</Turn>
+<Turn endTime="30.488" speaker="phase geste MD" startTime="30.476">
+<Sync time="30.476"/>enchaînement</Turn>
+<Turn endTime="30.608" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="30.488">
+<Sync time="30.488"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retouradd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="30.488"/>
+<Who nb="1"/>00:00:00.120</Turn>
+<Turn endTime="83.190" speaker="phase geste MD" startTime="82.950">
+<Sync time="82.950"/>tenue<Comment desc="phase geste MD-Type pointage MD:&#9;direction"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+</Turn>
+<Turn endTime="12.104" speaker="phones words" startTime="83.333">
+<Sync time="83.333"/>
+<Who nb="1"/>e<Sync time="9.905"/>
+<Who nb="2"/>restaurants<Sync time="9.905"/>
+<Who nb="1"/>R<Sync time="12.054"/>
+<Who nb="2"/>fait<Sync time="12.054"/>
+<Who nb="1"/>f</Turn>
+<Turn endTime="30.728" speaker="phase geste MD phones" startTime="83.403">
+<Sync time="83.403"/>
+<Who nb="2"/>v<Sync time="83.190"/>
+<Who nb="1"/>enchaînement<Sync time="83.533"/>
+<Who nb="2"/>E<Sync time="83.470"/>
+<Who nb="1"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;distal"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="83.683"/>
+<Who nb="2"/>R<Sync time="87.545"/>
+<Who nb="2"/>a<Sync time="30.608"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="30.741" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD" startTime="30.728">
+<Sync time="30.728"/>
+<Who nb="2"/>préparation<Comment desc="phase geste MD-Type pointage MD:&#9;tracé"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-mvtMD:&#9;add"/>
+<Comment desc="phase geste MD-mvtMD:&#9;flex"/>
+<Comment desc="phase geste MD-mvtMD:&#9;abd"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangesdospaume"/>
+<Sync time="30.728"/>
+<Who nb="1"/>00:00:00.013</Turn>
+<Turn endTime="87.725" speaker="phones" startTime="87.605">
+<Sync time="87.605"/>k</Turn>
+<Turn endTime="42.940" speaker="phase geste MD phones" startTime="87.725">
+<Sync time="87.725"/>
+<Who nb="2"/>O<Sync time="83.990"/>
+<Who nb="1"/>enchaînement<Comment desc="phase geste MD-Type pointage MD:&#9;direction/mouvement"/>
+<Comment desc="phase geste MD-mvtMD:&#9;exten"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;canonique"/>
+<Sync time="87.885"/>
+<Who nb="2"/>R<Sync time="42.215"/>
+<Who nb="1"/>enchaînement</Turn>
+<Turn endTime="79.512" speaker="phones" startTime="79.182">
+<Sync time="79.182"/>R<Sync time="79.382"/>O<Sync time="79.462"/>R</Turn>
+<Turn endTime="43.135" speaker="durée entre déictiques et anaphoriques et Mvt MD phase geste MD phones" startTime="79.512">
+<Sync time="79.512"/>
+<Who nb="3"/>m<Sync time="42.940"/>
+<Who nb="2"/>stroke<Comment desc="phase geste MD-Type pointage MD:&#9;toucher"/>
+<Comment desc="phase geste MD-mvtMD:&#9;aller-retourabd"/>
+<Comment desc="phase geste MD-Forme pointage MD:&#9;phalangedospaumeavant-bras"/>
+<Sync time="42.940"/>
+<Who nb="1"/>00:00:00.195</Turn>
+</Section>
+</Episode>
+</Trans>

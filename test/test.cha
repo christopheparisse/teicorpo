@@ -1,0 +1,60 @@
+@UTF8
+@Begin
+@Languages:	fra
+@Participants:	CHI Antoine Target_Child, OBS Christophe Observer, MOT Tania Mother,
+	UNI Unidentified
+@ID:	fra|Paris-Corpus_Antoine|CHI|2;03.05|male|||Target_Child||
+@ID:	fra|Paris-Corpus_Antoine|OBS||male|||Observer||
+@ID:	fra|Paris-Corpus_Antoine|MOT||female|||Mother||
+@ID:	fra|Paris-Corpus_Antoine|UNI|||||Unidentified||
+@Birth of CHI:	10-APR-2006
+@Media:	antoine-34-2_03_05-480p, video
+@Date:	15-JUL-2008
+@Location:	Antoine's home
+@Comment:	coder - Gabrielle Miesse (february 2009) Françoise Bourdoux (september
+	2009)
+@Situation:	CHI et OBS sont dans la salon de CHI
+@G:	arrivée au domicile de CHI
+*OBS:	et si j(e) faisais un+peu d(e) lumière ! 0_2350
+%mor:	conj|et conj|si pro:subj|je v:mdl|faire-IMPF adv|un+peu prep:art|de n|lumière
+		!
+%act:	OBS se dirige vers la fenêtre
+%com:	il fait très sombre dans la pièce
+%sit:	CHI est assis à terre
+*CHI:	oui ! 2350_3456
+%mor:	adv:yn|oui !
+%pho:	wi
+%com:	on entend CHI enlever ses chaussures
+*OBS:	ah de la lumière ! 3356_9673
+%mor:	co|ah prep|de det|la&FEM&SING n|lumière !
+%com:	on entend OBS ouvrir les volets et la lumière arrive dans la pièce
+*CHI:	0 . 9673_10338
+%act:	CHI se tourne pour être assis face à la fenêtre
+*CHI:	euh yy [/] yy . 10273_14338
+%mor:	co|euh .
+%pho:	ø ɔʁut ɔʁut
+%act:	CHI lève le bras et regarde dans la direction de la fenêtre
+*OBS:	+< c'est quoi qu(e) j' ouvre là ?
+%mor:	v:exist|c'est pro:rel|quoi conj|que pro:subj|je v|ouvrir adv:place|là
+		?
+*OBS:	yy ! 14338_15841
+%pho:	ɔʁut
+*CHI:	c'est quoi là qu(e) j' ai ouvert ? 15441_16965
+%mor:	v:exist|c'est pro:int|quoi adv:place|là conj|que pro:subj|je v:aux|avoir
+		v|ouvrir-PP ?
+*CHI:	i@fs avions ! 16965_20701
+%mor:	fs|i n|avion !
+%pho:	i ʃavjɔ̃
+%int:	avions/1/
+*OBS:	c'est les volets qu(e) j' ai ouverts . 19701_21486
+%mor:	v:exist|c'est det|les&PL n|volet conj|que pro:subj|je v:aux|avoir v|ouvrir-PP
+		.
+*CHI:	0 . 20701_24019
+%act:	CHI regarde dans la direction de OBS
+*OBS:	1 24019_26756
+*OBS:	2 26756_29284
+*CHI:	 3 29284_32404
+*CHI:	4 32404_32536
+*CHI:	5 32536_34970
+*OBS:	666 34970_36770
+@End

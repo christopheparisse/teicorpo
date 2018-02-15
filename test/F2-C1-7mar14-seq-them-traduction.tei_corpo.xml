@@ -1,0 +1,5029 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier Transcriber F2-C1-7mar14-seq-them-traduction.eaf</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC">
+<note type="URN">urn:nl-mpi-tools-elan-eaf:d2724f8c-bf3a-4c8b-a1c0-2aea3c346fa3</note>
+<note type="lastUsedAnnotationId">731</note>
+</note>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">Trad Mot LSF</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Thèmes Mot</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Trad Charlotte LSF</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Thèmes Charlotte</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Séquences</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Thèmes Marine</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Montages</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Trad Marine LSF</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Trad Obs Stéphanie</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Séquences autre cam</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Montages 2</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Commentaires</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Trad Fat LSF</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Thèmes Fat</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="video/quicktime" url="file:///Users/LISETTE/Desktop/Signes en famille corpus/Famille2/F2-C1-7mar14.mov"/>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<particDesc>
+<listPerson>
+<person>
+<altGrp>
+<alt type="Commentaires"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Montages"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Montages 2"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Séquences"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Séquences autre cam"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Thèmes Charlotte"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Thèmes Fat"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Thèmes Marine"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Thèmes Mot"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Trad Charlotte LSF"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Trad Fat LSF"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Trad Marine LSF"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Trad Mot LSF"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Trad Obs Stéphanie"/>
+</altGrp>
+</person>
+</listPerson>
+</particDesc>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Elan" version="2.8">
+<desc>Transcription created with Elan and converted to TEI_CORPO</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/F2-C1-7mar14-seq-them-traduction.eaf</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/F2-C1-7mar14-seq-them-traduction.tei_corpo.xml</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="ms">
+<when absolute="0" xml:id="T0"/>
+<when interval="40000" since="#T0" xml:id="T850"/>
+<when interval="450100" since="#T0" xml:id="T851"/>
+<when interval="477500" since="#T0" xml:id="T1"/>
+<when interval="480050" since="#T0" xml:id="T2"/>
+<when interval="483100" since="#T0" xml:id="T3"/>
+<when interval="487000" since="#T0" xml:id="T4"/>
+<when interval="497500" since="#T0" xml:id="T5"/>
+<when interval="500000" since="#T0" xml:id="T6"/>
+<when interval="508650" since="#T0" xml:id="T7"/>
+<when interval="510150" since="#T0" xml:id="T8"/>
+<when interval="512000" since="#T0" xml:id="T9"/>
+<when interval="514900" since="#T0" xml:id="T574"/>
+<when interval="515000" since="#T0" xml:id="T10"/>
+<when interval="515800" since="#T0" xml:id="T575"/>
+<when interval="519350" since="#T0" xml:id="T11"/>
+<when interval="523650" since="#T0" xml:id="T576"/>
+<when interval="524750" since="#T0" xml:id="T577"/>
+<when interval="525550" since="#T0" xml:id="T12"/>
+<when interval="526450" since="#T0" xml:id="T13"/>
+<when interval="527750" since="#T0" xml:id="T14"/>
+<when interval="529100" since="#T0" xml:id="T15"/>
+<when interval="533100" since="#T0" xml:id="T16"/>
+<when interval="535200" since="#T0" xml:id="T17"/>
+<when interval="536100" since="#T0" xml:id="T18"/>
+<when interval="536150" since="#T0" xml:id="T578"/>
+<when interval="536950" since="#T0" xml:id="T579"/>
+<when interval="542550" since="#T0" xml:id="T19"/>
+<when interval="545450" since="#T0" xml:id="T20"/>
+<when interval="549000" since="#T0" xml:id="T21"/>
+<when interval="550000" since="#T0" xml:id="T22"/>
+<when interval="552400" since="#T0" xml:id="T23"/>
+<when interval="554400" since="#T0" xml:id="T580"/>
+<when interval="555300" since="#T0" xml:id="T581"/>
+<when interval="556000" since="#T0" xml:id="T24"/>
+<when interval="557750" since="#T0" xml:id="T25"/>
+<when interval="558550" since="#T0" xml:id="T26"/>
+<when interval="561350" since="#T0" xml:id="T27"/>
+<when interval="562650" since="#T0" xml:id="T28"/>
+<when interval="563600" since="#T0" xml:id="T582"/>
+<when interval="564300" since="#T0" xml:id="T29"/>
+<when interval="565000" since="#T0" xml:id="T583"/>
+<when interval="566000" since="#T0" xml:id="T30"/>
+<when interval="567850" since="#T0" xml:id="T31"/>
+<when interval="571950" since="#T0" xml:id="T32"/>
+<when interval="573950" since="#T0" xml:id="T33"/>
+<when interval="578550" since="#T0" xml:id="T34"/>
+<when interval="585550" since="#T0" xml:id="T35"/>
+<when interval="590050" since="#T0" xml:id="T36"/>
+<when interval="591125" since="#T0" xml:id="T584"/>
+<when interval="592725" since="#T0" xml:id="T585"/>
+<when interval="594825" since="#T0" xml:id="T37"/>
+<when interval="599625" since="#T0" xml:id="T38"/>
+<when interval="605025" since="#T0" xml:id="T39"/>
+<when interval="606825" since="#T0" xml:id="T40"/>
+<when interval="613025" since="#T0" xml:id="T41"/>
+<when interval="615825" since="#T0" xml:id="T42"/>
+<when interval="623000" since="#T0" xml:id="T852"/>
+<when interval="669900" since="#T0" xml:id="T853"/>
+<when interval="672000" since="#T0" xml:id="T43"/>
+<when interval="675700" since="#T0" xml:id="T44"/>
+<when interval="677000" since="#T0" xml:id="T586"/>
+<when interval="681300" since="#T0" xml:id="T587"/>
+<when interval="681950" since="#T0" xml:id="T45"/>
+<when interval="686050" since="#T0" xml:id="T46"/>
+<when interval="693400" since="#T0" xml:id="T47"/>
+<when interval="701000" since="#T0" xml:id="T48"/>
+<when interval="708300" since="#T0" xml:id="T49"/>
+<when interval="712400" since="#T0" xml:id="T50"/>
+<when interval="720850" since="#T0" xml:id="T588"/>
+<when interval="722050" since="#T0" xml:id="T51"/>
+<when interval="722850" since="#T0" xml:id="T52"/>
+<when interval="723550" since="#T0" xml:id="T589"/>
+<when interval="728350" since="#T0" xml:id="T53"/>
+<when interval="730850" since="#T0" xml:id="T54"/>
+<when interval="736300" since="#T0" xml:id="T55"/>
+<when interval="737700" since="#T0" xml:id="T56"/>
+<when interval="738550" since="#T0" xml:id="T590"/>
+<when interval="742200" since="#T0" xml:id="T57"/>
+<when interval="742250" since="#T0" xml:id="T591"/>
+<when interval="743700" since="#T0" xml:id="T58"/>
+<when interval="755150" since="#T0" xml:id="T59"/>
+<when interval="755500" since="#T0" xml:id="T592"/>
+<when interval="757050" since="#T0" xml:id="T60"/>
+<when interval="757200" since="#T0" xml:id="T593"/>
+<when interval="757350" since="#T0" xml:id="T61"/>
+<when interval="759250" since="#T0" xml:id="T62"/>
+<when interval="762650" since="#T0" xml:id="T594"/>
+<when interval="763950" since="#T0" xml:id="T63"/>
+<when interval="768200" since="#T0" xml:id="T64"/>
+<when interval="769675" since="#T0" xml:id="T595"/>
+<when interval="772275" since="#T0" xml:id="T596"/>
+<when interval="773325" since="#T0" xml:id="T65"/>
+<when interval="774925" since="#T0" xml:id="T66"/>
+<when interval="776225" since="#T0" xml:id="T597"/>
+<when interval="776625" since="#T0" xml:id="T67"/>
+<when interval="778025" since="#T0" xml:id="T68"/>
+<when interval="780750" since="#T0" xml:id="T69"/>
+<when interval="781650" since="#T0" xml:id="T598"/>
+<when interval="782050" since="#T0" xml:id="T70"/>
+<when interval="784050" since="#T0" xml:id="T599"/>
+<when interval="784450" since="#T0" xml:id="T71"/>
+<when interval="785450" since="#T0" xml:id="T72"/>
+<when interval="786050" since="#T0" xml:id="T600"/>
+<when interval="787850" since="#T0" xml:id="T73"/>
+<when interval="788450" since="#T0" xml:id="T601"/>
+<when interval="790000" since="#T0" xml:id="T74"/>
+<when interval="790025" since="#T0" xml:id="T602"/>
+<when interval="794025" since="#T0" xml:id="T75"/>
+<when interval="810625" since="#T0" xml:id="T882"/>
+<when interval="815100" since="#T0" xml:id="T76"/>
+<when interval="816700" since="#T0" xml:id="T77"/>
+<when interval="818000" since="#T0" xml:id="T78"/>
+<when interval="820050" since="#T0" xml:id="T79"/>
+<when interval="825050" since="#T0" xml:id="T80"/>
+<when interval="1114800" since="#T0" xml:id="T854"/>
+<when interval="1114900" since="#T0" xml:id="T492"/>
+<when interval="1207000" since="#T0" xml:id="T493"/>
+<when interval="1292050" since="#T0" xml:id="T494"/>
+<when interval="1345150" since="#T0" xml:id="T495"/>
+<when interval="1500000" since="#T0" xml:id="T855"/>
+<when interval="1603900" since="#T0" xml:id="T856"/>
+<when interval="1697000" since="#T0" xml:id="T81"/>
+<when interval="1705750" since="#T0" xml:id="T603"/>
+<when interval="1705900" since="#T0" xml:id="T82"/>
+<when interval="1707150" since="#T0" xml:id="T604"/>
+<when interval="1708200" since="#T0" xml:id="T83"/>
+<when interval="1710400" since="#T0" xml:id="T84"/>
+<when interval="1714300" since="#T0" xml:id="T85"/>
+<when interval="1716050" since="#T0" xml:id="T605"/>
+<when interval="1716100" since="#T0" xml:id="T86"/>
+<when interval="1717550" since="#T0" xml:id="T606"/>
+<when interval="1723750" since="#T0" xml:id="T87"/>
+<when interval="1724750" since="#T0" xml:id="T88"/>
+<when interval="1729600" since="#T0" xml:id="T89"/>
+<when interval="1731000" since="#T0" xml:id="T90"/>
+<when interval="1744050" since="#T0" xml:id="T91"/>
+<when interval="1755100" since="#T0" xml:id="T92"/>
+<when interval="1755225" since="#T0" xml:id="T607"/>
+<when interval="1757025" since="#T0" xml:id="T608"/>
+<when interval="1757075" since="#T0" xml:id="T93"/>
+<when interval="1761025" since="#T0" xml:id="T609"/>
+<when interval="1761075" since="#T0" xml:id="T94"/>
+<when interval="1762025" since="#T0" xml:id="T610"/>
+<when interval="1822000" since="#T0" xml:id="T95"/>
+<when interval="1824000" since="#T0" xml:id="T96"/>
+<when interval="1835000" since="#T0" xml:id="T97"/>
+<when interval="1837000" since="#T0" xml:id="T611"/>
+<when interval="1837600" since="#T0" xml:id="T98"/>
+<when interval="1839150" since="#T0" xml:id="T99"/>
+<when interval="1840000" since="#T0" xml:id="T612"/>
+<when interval="1841150" since="#T0" xml:id="T883"/>
+<when interval="1842925" since="#T0" xml:id="T100"/>
+<when interval="1844075" since="#T0" xml:id="T101"/>
+<when interval="1846025" since="#T0" xml:id="T102"/>
+<when interval="1854175" since="#T0" xml:id="T613"/>
+<when interval="1856025" since="#T0" xml:id="T103"/>
+<when interval="1856075" since="#T0" xml:id="T104"/>
+<when interval="1857075" since="#T0" xml:id="T614"/>
+<when interval="1858425" since="#T0" xml:id="T105"/>
+<when interval="1859025" since="#T0" xml:id="T615"/>
+<when interval="1861900" since="#T0" xml:id="T106"/>
+<when interval="1866025" since="#T0" xml:id="T616"/>
+<when interval="1875000" since="#T0" xml:id="T107"/>
+<when interval="1893300" since="#T0" xml:id="T108"/>
+<when interval="1895600" since="#T0" xml:id="T109"/>
+<when interval="1896950" since="#T0" xml:id="T110"/>
+<when interval="1897000" since="#T0" xml:id="T617"/>
+<when interval="1898000" since="#T0" xml:id="T618"/>
+<when interval="1899650" since="#T0" xml:id="T111"/>
+<when interval="1904050" since="#T0" xml:id="T112"/>
+<when interval="1907050" since="#T0" xml:id="T113"/>
+<when interval="1936000" since="#T0" xml:id="T619"/>
+<when interval="1944050" since="#T0" xml:id="T114"/>
+<when interval="1946000" since="#T0" xml:id="T620"/>
+<when interval="1948500" since="#T0" xml:id="T896"/>
+<when interval="1949500" since="#T0" xml:id="T897"/>
+<when interval="1949950" since="#T0" xml:id="T115"/>
+<when interval="1951800" since="#T0" xml:id="T116"/>
+<when interval="1953075" since="#T0" xml:id="T884"/>
+<when interval="1962075" since="#T0" xml:id="T117"/>
+<when interval="1970975" since="#T0" xml:id="T621"/>
+<when interval="1974075" since="#T0" xml:id="T622"/>
+<when interval="1975075" since="#T0" xml:id="T118"/>
+<when interval="1975175" since="#T0" xml:id="T119"/>
+<when interval="1976375" since="#T0" xml:id="T120"/>
+<when interval="1977075" since="#T0" xml:id="T623"/>
+<when interval="1978025" since="#T0" xml:id="T121"/>
+<when interval="1978100" since="#T0" xml:id="T496"/>
+<when interval="1978175" since="#T0" xml:id="T624"/>
+<when interval="1979025" since="#T0" xml:id="T625"/>
+<when interval="1983025" since="#T0" xml:id="T122"/>
+<when interval="1986225" since="#T0" xml:id="T626"/>
+<when interval="1987025" since="#T0" xml:id="T123"/>
+<when interval="1988325" since="#T0" xml:id="T124"/>
+<when interval="1988675" since="#T0" xml:id="T627"/>
+<when interval="1991075" since="#T0" xml:id="T125"/>
+<when interval="1993075" since="#T0" xml:id="T126"/>
+<when interval="1994025" since="#T0" xml:id="T127"/>
+<when interval="1994975" since="#T0" xml:id="T628"/>
+<when interval="1999025" since="#T0" xml:id="T629"/>
+<when interval="2000525" since="#T0" xml:id="T630"/>
+<when interval="2002000" since="#T0" xml:id="T497"/>
+<when interval="2002025" since="#T0" xml:id="T128"/>
+<when interval="2004000" since="#T0" xml:id="T631"/>
+<when interval="2005100" since="#T0" xml:id="T129"/>
+<when interval="2007000" since="#T0" xml:id="T130"/>
+<when interval="2021700" since="#T0" xml:id="T131"/>
+<when interval="2024900" since="#T0" xml:id="T132"/>
+<when interval="2024950" since="#T0" xml:id="T133"/>
+<when interval="2056600" since="#T0" xml:id="T632"/>
+<when interval="2060900" since="#T0" xml:id="T633"/>
+<when interval="2062000" since="#T0" xml:id="T134"/>
+<when interval="2068700" since="#T0" xml:id="T135"/>
+<when interval="2070000" since="#T0" xml:id="T634"/>
+<when interval="2070100" since="#T0" xml:id="T136"/>
+<when interval="2084050" since="#T0" xml:id="T137"/>
+<when interval="2086350" since="#T0" xml:id="T138"/>
+<when interval="2086400" since="#T0" xml:id="T635"/>
+<when interval="2086450" since="#T0" xml:id="T636"/>
+<when interval="2089150" since="#T0" xml:id="T637"/>
+<when interval="2089300" since="#T0" xml:id="T139"/>
+<when interval="2094500" since="#T0" xml:id="T638"/>
+<when interval="2096000" since="#T0" xml:id="T140"/>
+<when interval="2099050" since="#T0" xml:id="T141"/>
+<when interval="2099700" since="#T0" xml:id="T639"/>
+<when interval="2103550" since="#T0" xml:id="T640"/>
+<when interval="2106050" since="#T0" xml:id="T641"/>
+<when interval="2109750" since="#T0" xml:id="T142"/>
+<when interval="2112950" since="#T0" xml:id="T143"/>
+<when interval="2116050" since="#T0" xml:id="T144"/>
+<when interval="2119050" since="#T0" xml:id="T145"/>
+<when interval="2120950" since="#T0" xml:id="T146"/>
+<when interval="2150350" since="#T0" xml:id="T642"/>
+<when interval="2167400" since="#T0" xml:id="T147"/>
+<when interval="2169000" since="#T0" xml:id="T643"/>
+<when interval="2172400" since="#T0" xml:id="T148"/>
+<when interval="2175800" since="#T0" xml:id="T149"/>
+<when interval="2183400" since="#T0" xml:id="T150"/>
+<when interval="2183500" since="#T0" xml:id="T151"/>
+<when interval="2200250" since="#T0" xml:id="T644"/>
+<when interval="2202900" since="#T0" xml:id="T152"/>
+<when interval="2203950" since="#T0" xml:id="T645"/>
+<when interval="2205000" since="#T0" xml:id="T153"/>
+<when interval="2211125" since="#T0" xml:id="T154"/>
+<when interval="2217825" since="#T0" xml:id="T155"/>
+<when interval="2218975" since="#T0" xml:id="T156"/>
+<when interval="2219025" since="#T0" xml:id="T646"/>
+<when interval="2229825" since="#T0" xml:id="T647"/>
+<when interval="2231125" since="#T0" xml:id="T648"/>
+<when interval="2231175" since="#T0" xml:id="T157"/>
+<when interval="2630000" since="#T0" xml:id="T857"/>
+<when interval="2765000" since="#T0" xml:id="T858"/>
+<when interval="2765100" since="#T0" xml:id="T987"/>
+<when interval="2802000" since="#T0" xml:id="T498"/>
+<when interval="2807000" since="#T0" xml:id="T499"/>
+<when interval="2951000" since="#T0" xml:id="T500"/>
+<when interval="2996100" since="#T0" xml:id="T501"/>
+<when interval="3062050" since="#T0" xml:id="T502"/>
+<when interval="3098050" since="#T0" xml:id="T503"/>
+<when interval="3110050" since="#T0" xml:id="T504"/>
+<when interval="3163050" since="#T0" xml:id="T505"/>
+<when interval="3168050" since="#T0" xml:id="T506"/>
+<when interval="3263000" since="#T0" xml:id="T507"/>
+<when interval="3280125" since="#T0" xml:id="T508"/>
+<when interval="3360025" since="#T0" xml:id="T509"/>
+<when interval="3405000" since="#T0" xml:id="T510"/>
+<when interval="3472000" since="#T0" xml:id="T511"/>
+<when interval="3486000" since="#T0" xml:id="T512"/>
+<when interval="3501000" since="#T0" xml:id="T513"/>
+<when interval="3541000" since="#T0" xml:id="T859"/>
+<when interval="3542850" since="#T0" xml:id="T158"/>
+<when interval="3546650" since="#T0" xml:id="T159"/>
+<when interval="3549100" since="#T0" xml:id="T160"/>
+<when interval="3557300" since="#T0" xml:id="T161"/>
+<when interval="3560350" since="#T0" xml:id="T992"/>
+<when interval="3562350" since="#T0" xml:id="T993"/>
+<when interval="3564600" since="#T0" xml:id="T162"/>
+<when interval="3581200" since="#T0" xml:id="T163"/>
+<when interval="3583000" since="#T0" xml:id="T860"/>
+<when interval="3786100" since="#T0" xml:id="T514"/>
+<when interval="4028250" since="#T0" xml:id="T515"/>
+<when interval="4075100" since="#T0" xml:id="T861"/>
+<when interval="4090200" since="#T0" xml:id="T862"/>
+<when interval="4190000" since="#T0" xml:id="T863"/>
+<when interval="4196075" since="#T0" xml:id="T164"/>
+<when interval="4197000" since="#T0" xml:id="T516"/>
+<when interval="4198975" since="#T0" xml:id="T898"/>
+<when interval="4199875" since="#T0" xml:id="T165"/>
+<when interval="4201725" since="#T0" xml:id="T994"/>
+<when interval="4202050" since="#T0" xml:id="T817"/>
+<when interval="4203125" since="#T0" xml:id="T995"/>
+<when interval="4204575" since="#T0" xml:id="T996"/>
+<when interval="4204625" since="#T0" xml:id="T166"/>
+<when interval="4207025" since="#T0" xml:id="T167"/>
+<when interval="4208075" since="#T0" xml:id="T649"/>
+<when interval="4208375" since="#T0" xml:id="T997"/>
+<when interval="4209075" since="#T0" xml:id="T650"/>
+<when interval="4209325" since="#T0" xml:id="T998"/>
+<when interval="4210025" since="#T0" xml:id="T168"/>
+<when interval="4210625" since="#T0" xml:id="T999"/>
+<when interval="4212525" since="#T0" xml:id="T169"/>
+<when interval="4213425" since="#T0" xml:id="T899"/>
+<when interval="4213500" since="#T0" xml:id="T885"/>
+<when interval="4214050" since="#T0" xml:id="T818"/>
+<when interval="4214325" since="#T0" xml:id="T170"/>
+<when interval="4215525" since="#T0" xml:id="T1000"/>
+<when interval="4216000" since="#T0" xml:id="T1177"/>
+<when interval="4216025" since="#T0" xml:id="T171"/>
+<when interval="4216050" since="#T0" xml:id="T878"/>
+<when interval="4224912" since="#T0" xml:id="T172"/>
+<when interval="4225400" since="#T0" xml:id="T1001"/>
+<when interval="4227012" since="#T0" xml:id="T1002"/>
+<when interval="4227912" since="#T0" xml:id="T173"/>
+<when interval="4228012" since="#T0" xml:id="T1003"/>
+<when interval="4250100" since="#T0" xml:id="T517"/>
+<when interval="4250150" since="#T0" xml:id="T518"/>
+<when interval="4258750" since="#T0" xml:id="T519"/>
+<when interval="4270000" since="#T0" xml:id="T864"/>
+<when interval="4283600" since="#T0" xml:id="T174"/>
+<when interval="4286550" since="#T0" xml:id="T900"/>
+<when interval="4287650" since="#T0" xml:id="T901"/>
+<when interval="4291400" since="#T0" xml:id="T175"/>
+<when interval="4292000" since="#T0" xml:id="T520"/>
+<when interval="4322050" since="#T0" xml:id="T1004"/>
+<when interval="4327950" since="#T0" xml:id="T1005"/>
+<when interval="4336550" since="#T0" xml:id="T1006"/>
+<when interval="4340500" since="#T0" xml:id="T176"/>
+<when interval="4340550" since="#T0" xml:id="T1007"/>
+<when interval="4341700" since="#T0" xml:id="T177"/>
+<when interval="4348350" since="#T0" xml:id="T178"/>
+<when interval="4351550" since="#T0" xml:id="T179"/>
+<when interval="4351700" since="#T0" xml:id="T651"/>
+<when interval="4354000" since="#T0" xml:id="T652"/>
+<when interval="4356500" since="#T0" xml:id="T1008"/>
+<when interval="4358550" since="#T0" xml:id="T653"/>
+<when interval="4363550" since="#T0" xml:id="T654"/>
+<when interval="4364000" since="#T0" xml:id="T1009"/>
+<when interval="4367500" since="#T0" xml:id="T180"/>
+<when interval="4368300" since="#T0" xml:id="T1010"/>
+<when interval="4369100" since="#T0" xml:id="T1011"/>
+<when interval="4370850" since="#T0" xml:id="T1012"/>
+<when interval="4373150" since="#T0" xml:id="T1013"/>
+<when interval="4375000" since="#T0" xml:id="T181"/>
+<when interval="4375450" since="#T0" xml:id="T1014"/>
+<when interval="4379050" since="#T0" xml:id="T1015"/>
+<when interval="4380750" since="#T0" xml:id="T1016"/>
+<when interval="4381550" since="#T0" xml:id="T902"/>
+<when interval="4382450" since="#T0" xml:id="T903"/>
+<when interval="4384050" since="#T0" xml:id="T1017"/>
+<when interval="4385050" since="#T0" xml:id="T1018"/>
+<when interval="4385400" since="#T0" xml:id="T655"/>
+<when interval="4391100" since="#T0" xml:id="T656"/>
+<when interval="4394000" since="#T0" xml:id="T182"/>
+<when interval="4395500" since="#T0" xml:id="T183"/>
+<when interval="4401500" since="#T0" xml:id="T184"/>
+<when interval="4404100" since="#T0" xml:id="T185"/>
+<when interval="4409550" since="#T0" xml:id="T657"/>
+<when interval="4413150" since="#T0" xml:id="T658"/>
+<when interval="4438700" since="#T0" xml:id="T1019"/>
+<when interval="4440500" since="#T0" xml:id="T1020"/>
+<when interval="4443050" since="#T0" xml:id="T659"/>
+<when interval="4444450" since="#T0" xml:id="T660"/>
+<when interval="4446400" since="#T0" xml:id="T1021"/>
+<when interval="4447100" since="#T0" xml:id="T1022"/>
+<when interval="4453000" since="#T0" xml:id="T886"/>
+<when interval="4454200" since="#T0" xml:id="T661"/>
+<when interval="4458000" since="#T0" xml:id="T662"/>
+<when interval="4460650" since="#T0" xml:id="T663"/>
+<when interval="4462350" since="#T0" xml:id="T664"/>
+<when interval="4465150" since="#T0" xml:id="T887"/>
+<when interval="4472000" since="#T0" xml:id="T186"/>
+<when interval="4490500" since="#T0" xml:id="T187"/>
+<when interval="4502300" since="#T0" xml:id="T665"/>
+<when interval="4506000" since="#T0" xml:id="T666"/>
+<when interval="4506500" since="#T0" xml:id="T521"/>
+<when interval="4506550" since="#T0" xml:id="T188"/>
+<when interval="4507550" since="#T0" xml:id="T189"/>
+<when interval="4507700" since="#T0" xml:id="T1023"/>
+<when interval="4509000" since="#T0" xml:id="T904"/>
+<when interval="4511000" since="#T0" xml:id="T905"/>
+<when interval="4514950" since="#T0" xml:id="T906"/>
+<when interval="4515950" since="#T0" xml:id="T907"/>
+<when interval="4518050" since="#T0" xml:id="T190"/>
+<when interval="4527450" since="#T0" xml:id="T191"/>
+<when interval="4529400" since="#T0" xml:id="T908"/>
+<when interval="4532600" since="#T0" xml:id="T909"/>
+<when interval="4534050" since="#T0" xml:id="T192"/>
+<when interval="4537350" since="#T0" xml:id="T193"/>
+<when interval="4537450" since="#T0" xml:id="T667"/>
+<when interval="4541000" since="#T0" xml:id="T522"/>
+<when interval="4543400" since="#T0" xml:id="T194"/>
+<when interval="4543450" since="#T0" xml:id="T668"/>
+<when interval="4547000" since="#T0" xml:id="T195"/>
+<when interval="4547050" since="#T0" xml:id="T669"/>
+<when interval="4557900" since="#T0" xml:id="T1024"/>
+<when interval="4558050" since="#T0" xml:id="T670"/>
+<when interval="4559900" since="#T0" xml:id="T1025"/>
+<when interval="4564650" since="#T0" xml:id="T196"/>
+<when interval="4565550" since="#T0" xml:id="T197"/>
+<when interval="4592050" since="#T0" xml:id="T523"/>
+<when interval="4592500" since="#T0" xml:id="T198"/>
+<when interval="4604050" since="#T0" xml:id="T671"/>
+<when interval="4605200" since="#T0" xml:id="T672"/>
+<when interval="4605800" since="#T0" xml:id="T199"/>
+<when interval="4606400" since="#T0" xml:id="T524"/>
+<when interval="4608200" since="#T0" xml:id="T200"/>
+<when interval="4610000" since="#T0" xml:id="T201"/>
+<when interval="4612050" since="#T0" xml:id="T202"/>
+<when interval="4615550" since="#T0" xml:id="T203"/>
+<when interval="4617650" since="#T0" xml:id="T1026"/>
+<when interval="4618400" since="#T0" xml:id="T204"/>
+<when interval="4618850" since="#T0" xml:id="T1027"/>
+<when interval="4619800" since="#T0" xml:id="T205"/>
+<when interval="4620550" since="#T0" xml:id="T673"/>
+<when interval="4621500" since="#T0" xml:id="T1028"/>
+<when interval="4621700" since="#T0" xml:id="T206"/>
+<when interval="4621750" since="#T0" xml:id="T674"/>
+<when interval="4623450" since="#T0" xml:id="T1029"/>
+<when interval="4624500" since="#T0" xml:id="T207"/>
+<when interval="4624750" since="#T0" xml:id="T675"/>
+<when interval="4625150" since="#T0" xml:id="T1030"/>
+<when interval="4625350" since="#T0" xml:id="T676"/>
+<when interval="4632700" since="#T0" xml:id="T981"/>
+<when interval="4633450" since="#T0" xml:id="T208"/>
+<when interval="4633500" since="#T0" xml:id="T982"/>
+<when interval="4634050" since="#T0" xml:id="T209"/>
+<when interval="4634100" since="#T0" xml:id="T525"/>
+<when interval="4634650" since="#T0" xml:id="T210"/>
+<when interval="4635650" since="#T0" xml:id="T211"/>
+<when interval="4636500" since="#T0" xml:id="T910"/>
+<when interval="4637450" since="#T0" xml:id="T212"/>
+<when interval="4638650" since="#T0" xml:id="T911"/>
+<when interval="4642300" since="#T0" xml:id="T1031"/>
+<when interval="4643050" since="#T0" xml:id="T213"/>
+<when interval="4644000" since="#T0" xml:id="T1032"/>
+<when interval="4644050" since="#T0" xml:id="T912"/>
+<when interval="4644100" since="#T0" xml:id="T214"/>
+<when interval="4647000" since="#T0" xml:id="T913"/>
+<when interval="4648000" since="#T0" xml:id="T215"/>
+<when interval="4649050" since="#T0" xml:id="T216"/>
+<when interval="4651000" since="#T0" xml:id="T914"/>
+<when interval="4652650" since="#T0" xml:id="T217"/>
+<when interval="4656000" since="#T0" xml:id="T526"/>
+<when interval="4657650" since="#T0" xml:id="T677"/>
+<when interval="4667650" since="#T0" xml:id="T678"/>
+<when interval="4673000" since="#T0" xml:id="T819"/>
+<when interval="4676000" since="#T0" xml:id="T1033"/>
+<when interval="4676050" since="#T0" xml:id="T679"/>
+<when interval="4680600" since="#T0" xml:id="T218"/>
+<when interval="4681950" since="#T0" xml:id="T915"/>
+<when interval="4682000" since="#T0" xml:id="T219"/>
+<when interval="4684050" since="#T0" xml:id="T680"/>
+<when interval="4685050" since="#T0" xml:id="T888"/>
+<when interval="4686450" since="#T0" xml:id="T1034"/>
+<when interval="4686500" since="#T0" xml:id="T681"/>
+<when interval="4688000" since="#T0" xml:id="T682"/>
+<when interval="4689300" since="#T0" xml:id="T683"/>
+<when interval="4696000" since="#T0" xml:id="T684"/>
+<when interval="4697050" since="#T0" xml:id="T220"/>
+<when interval="4698600" since="#T0" xml:id="T685"/>
+<when interval="4699050" since="#T0" xml:id="T916"/>
+<when interval="4701100" since="#T0" xml:id="T221"/>
+<when interval="4704600" since="#T0" xml:id="T686"/>
+<when interval="4709750" since="#T0" xml:id="T687"/>
+<when interval="4721000" since="#T0" xml:id="T1035"/>
+<when interval="4721950" since="#T0" xml:id="T688"/>
+<when interval="4724400" since="#T0" xml:id="T1036"/>
+<when interval="4726750" since="#T0" xml:id="T689"/>
+<when interval="4727550" since="#T0" xml:id="T690"/>
+<when interval="4727600" since="#T0" xml:id="T1037"/>
+<when interval="4729000" since="#T0" xml:id="T691"/>
+<when interval="4729600" since="#T0" xml:id="T692"/>
+<when interval="4731500" since="#T0" xml:id="T693"/>
+<when interval="4731700" since="#T0" xml:id="T1038"/>
+<when interval="4732300" since="#T0" xml:id="T694"/>
+<when interval="4733000" since="#T0" xml:id="T820"/>
+<when interval="4734650" since="#T0" xml:id="T222"/>
+<when interval="4736150" since="#T0" xml:id="T223"/>
+<when interval="4738050" since="#T0" xml:id="T917"/>
+<when interval="4739150" since="#T0" xml:id="T918"/>
+<when interval="4740050" since="#T0" xml:id="T1039"/>
+<when interval="4742000" since="#T0" xml:id="T224"/>
+<when interval="4742700" since="#T0" xml:id="T695"/>
+<when interval="4743300" since="#T0" xml:id="T1040"/>
+<when interval="4744000" since="#T0" xml:id="T225"/>
+<when interval="4746050" since="#T0" xml:id="T919"/>
+<when interval="4748450" since="#T0" xml:id="T920"/>
+<when interval="4752600" since="#T0" xml:id="T226"/>
+<when interval="4756000" since="#T0" xml:id="T227"/>
+<when interval="4757550" since="#T0" xml:id="T228"/>
+<when interval="4761450" since="#T0" xml:id="T229"/>
+<when interval="4765650" since="#T0" xml:id="T1041"/>
+<when interval="4766700" since="#T0" xml:id="T921"/>
+<when interval="4768050" since="#T0" xml:id="T1042"/>
+<when interval="4770000" since="#T0" xml:id="T922"/>
+<when interval="4771400" since="#T0" xml:id="T696"/>
+<when interval="4771500" since="#T0" xml:id="T230"/>
+<when interval="4773000" since="#T0" xml:id="T231"/>
+<when interval="4775000" since="#T0" xml:id="T697"/>
+<when interval="4782150" since="#T0" xml:id="T232"/>
+<when interval="4788550" since="#T0" xml:id="T233"/>
+<when interval="4795600" since="#T0" xml:id="T234"/>
+<when interval="4800600" since="#T0" xml:id="T235"/>
+<when interval="4801850" since="#T0" xml:id="T1043"/>
+<when interval="4809450" since="#T0" xml:id="T1044"/>
+<when interval="4811000" since="#T0" xml:id="T236"/>
+<when interval="4811100" since="#T0" xml:id="T923"/>
+<when interval="4822800" since="#T0" xml:id="T237"/>
+<when interval="4822850" since="#T0" xml:id="T924"/>
+<when interval="4823000" since="#T0" xml:id="T238"/>
+<when interval="4828000" since="#T0" xml:id="T239"/>
+<when interval="4828450" since="#T0" xml:id="T1045"/>
+<when interval="4830050" since="#T0" xml:id="T1046"/>
+<when interval="4832900" since="#T0" xml:id="T698"/>
+<when interval="4837000" since="#T0" xml:id="T925"/>
+<when interval="4837200" since="#T0" xml:id="T240"/>
+<when interval="4837500" since="#T0" xml:id="T699"/>
+<when interval="4839500" since="#T0" xml:id="T527"/>
+<when interval="4839600" since="#T0" xml:id="T241"/>
+<when interval="4841000" since="#T0" xml:id="T926"/>
+<when interval="4845050" since="#T0" xml:id="T700"/>
+<when interval="4848700" since="#T0" xml:id="T242"/>
+<when interval="4848850" since="#T0" xml:id="T701"/>
+<when interval="4850000" since="#T0" xml:id="T243"/>
+<when interval="4851700" since="#T0" xml:id="T244"/>
+<when interval="4853250" since="#T0" xml:id="T1047"/>
+<when interval="4855050" since="#T0" xml:id="T1048"/>
+<when interval="4855100" since="#T0" xml:id="T245"/>
+<when interval="4855700" since="#T0" xml:id="T246"/>
+<when interval="4857600" since="#T0" xml:id="T247"/>
+<when interval="4858000" since="#T0" xml:id="T927"/>
+<when interval="4859050" since="#T0" xml:id="T248"/>
+<when interval="4860000" since="#T0" xml:id="T928"/>
+<when interval="4860750" since="#T0" xml:id="T249"/>
+<when interval="4862750" since="#T0" xml:id="T702"/>
+<when interval="4864550" since="#T0" xml:id="T703"/>
+<when interval="4865850" since="#T0" xml:id="T704"/>
+<when interval="4870050" since="#T0" xml:id="T821"/>
+<when interval="4871350" since="#T0" xml:id="T1049"/>
+<when interval="4875100" since="#T0" xml:id="T1050"/>
+<when interval="4876000" since="#T0" xml:id="T1051"/>
+<when interval="4876050" since="#T0" xml:id="T822"/>
+<when interval="4877300" since="#T0" xml:id="T705"/>
+<when interval="4878300" since="#T0" xml:id="T1052"/>
+<when interval="4878500" since="#T0" xml:id="T706"/>
+<when interval="4881550" since="#T0" xml:id="T250"/>
+<when interval="4885050" since="#T0" xml:id="T251"/>
+<when interval="4886050" since="#T0" xml:id="T1053"/>
+<when interval="4888150" since="#T0" xml:id="T252"/>
+<when interval="4890050" since="#T0" xml:id="T253"/>
+<when interval="4898550" since="#T0" xml:id="T707"/>
+<when interval="4900050" since="#T0" xml:id="T708"/>
+<when interval="4913000" since="#T0" xml:id="T254"/>
+<when interval="4913050" since="#T0" xml:id="T528"/>
+<when interval="4916150" since="#T0" xml:id="T1054"/>
+<when interval="4917450" since="#T0" xml:id="T1055"/>
+<when interval="4918000" since="#T0" xml:id="T255"/>
+<when interval="4918050" since="#T0" xml:id="T1056"/>
+<when interval="4925050" since="#T0" xml:id="T1057"/>
+<when interval="4930775" since="#T0" xml:id="T929"/>
+<when interval="4934000" since="#T0" xml:id="T256"/>
+<when interval="4936000" since="#T0" xml:id="T257"/>
+<when interval="4936225" since="#T0" xml:id="T1058"/>
+<when interval="4936375" since="#T0" xml:id="T930"/>
+<when interval="4940425" since="#T0" xml:id="T1059"/>
+<when interval="4940500" since="#T0" xml:id="T931"/>
+<when interval="4941050" since="#T0" xml:id="T889"/>
+<when interval="4947150" since="#T0" xml:id="T1060"/>
+<when interval="4949000" since="#T0" xml:id="T932"/>
+<when interval="4949050" since="#T0" xml:id="T1061"/>
+<when interval="4950400" since="#T0" xml:id="T933"/>
+<when interval="4950600" since="#T0" xml:id="T258"/>
+<when interval="4951700" since="#T0" xml:id="T259"/>
+<when interval="4952400" since="#T0" xml:id="T1062"/>
+<when interval="4955050" since="#T0" xml:id="T709"/>
+<when interval="4957012" since="#T0" xml:id="T260"/>
+<when interval="4957325" since="#T0" xml:id="T1063"/>
+<when interval="4958612" since="#T0" xml:id="T1064"/>
+<when interval="4959712" since="#T0" xml:id="T261"/>
+<when interval="4960050" since="#T0" xml:id="T529"/>
+<when interval="4960812" since="#T0" xml:id="T1065"/>
+<when interval="4962000" since="#T0" xml:id="T934"/>
+<when interval="4967050" since="#T0" xml:id="T262"/>
+<when interval="4968950" since="#T0" xml:id="T263"/>
+<when interval="4973600" since="#T0" xml:id="T935"/>
+<when interval="4975050" since="#T0" xml:id="T823"/>
+<when interval="4978050" since="#T0" xml:id="T264"/>
+<when interval="4980050" since="#T0" xml:id="T265"/>
+<when interval="4981400" since="#T0" xml:id="T710"/>
+<when interval="4986150" since="#T0" xml:id="T266"/>
+<when interval="4991000" since="#T0" xml:id="T711"/>
+<when interval="4992650" since="#T0" xml:id="T267"/>
+<when interval="4994050" since="#T0" xml:id="T530"/>
+<when interval="5001200" since="#T0" xml:id="T936"/>
+<when interval="5004050" since="#T0" xml:id="T268"/>
+<when interval="5008050" since="#T0" xml:id="T269"/>
+<when interval="5011000" since="#T0" xml:id="T270"/>
+<when interval="5015000" since="#T0" xml:id="T271"/>
+<when interval="5018050" since="#T0" xml:id="T531"/>
+<when interval="5021650" since="#T0" xml:id="T272"/>
+<when interval="5022550" since="#T0" xml:id="T1066"/>
+<when interval="5023050" since="#T0" xml:id="T532"/>
+<when interval="5023450" since="#T0" xml:id="T273"/>
+<when interval="5023500" since="#T0" xml:id="T937"/>
+<when interval="5032850" since="#T0" xml:id="T274"/>
+<when interval="5034850" since="#T0" xml:id="T275"/>
+<when interval="5035600" since="#T0" xml:id="T1067"/>
+<when interval="5036000" since="#T0" xml:id="T938"/>
+<when interval="5037000" since="#T0" xml:id="T939"/>
+<when interval="5041300" since="#T0" xml:id="T1068"/>
+<when interval="5045150" since="#T0" xml:id="T940"/>
+<when interval="5049300" since="#T0" xml:id="T941"/>
+<when interval="5049700" since="#T0" xml:id="T1069"/>
+<when interval="5055200" since="#T0" xml:id="T276"/>
+<when interval="5056600" since="#T0" xml:id="T942"/>
+<when interval="5057000" since="#T0" xml:id="T277"/>
+<when interval="5060050" since="#T0" xml:id="T278"/>
+<when interval="5062550" since="#T0" xml:id="T279"/>
+<when interval="5066650" since="#T0" xml:id="T280"/>
+<when interval="5068050" since="#T0" xml:id="T281"/>
+<when interval="5077000" since="#T0" xml:id="T282"/>
+<when interval="5080050" since="#T0" xml:id="T824"/>
+<when interval="5082000" since="#T0" xml:id="T283"/>
+<when interval="5084600" since="#T0" xml:id="T712"/>
+<when interval="5084650" since="#T0" xml:id="T1070"/>
+<when interval="5087400" since="#T0" xml:id="T284"/>
+<when interval="5088600" since="#T0" xml:id="T285"/>
+<when interval="5089650" since="#T0" xml:id="T286"/>
+<when interval="5091050" since="#T0" xml:id="T287"/>
+<when interval="5112500" since="#T0" xml:id="T288"/>
+<when interval="5113450" since="#T0" xml:id="T943"/>
+<when interval="5114300" since="#T0" xml:id="T289"/>
+<when interval="5116350" since="#T0" xml:id="T290"/>
+<when interval="5119050" since="#T0" xml:id="T291"/>
+<when interval="5120750" since="#T0" xml:id="T944"/>
+<when interval="5122550" since="#T0" xml:id="T945"/>
+<when interval="5123550" since="#T0" xml:id="T946"/>
+<when interval="5125500" since="#T0" xml:id="T292"/>
+<when interval="5128500" since="#T0" xml:id="T293"/>
+<when interval="5133100" since="#T0" xml:id="T713"/>
+<when interval="5138400" since="#T0" xml:id="T714"/>
+<when interval="5138550" since="#T0" xml:id="T947"/>
+<when interval="5139450" since="#T0" xml:id="T294"/>
+<when interval="5139500" since="#T0" xml:id="T1071"/>
+<when interval="5141250" since="#T0" xml:id="T295"/>
+<when interval="5142650" since="#T0" xml:id="T296"/>
+<when interval="5144150" since="#T0" xml:id="T297"/>
+<when interval="5149450" since="#T0" xml:id="T298"/>
+<when interval="5150450" since="#T0" xml:id="T299"/>
+<when interval="5151000" since="#T0" xml:id="T715"/>
+<when interval="5157500" since="#T0" xml:id="T716"/>
+<when interval="5157550" since="#T0" xml:id="T300"/>
+<when interval="5160650" since="#T0" xml:id="T301"/>
+<when interval="5167450" since="#T0" xml:id="T302"/>
+<when interval="5168550" since="#T0" xml:id="T303"/>
+<when interval="5177000" since="#T0" xml:id="T717"/>
+<when interval="5183550" since="#T0" xml:id="T533"/>
+<when interval="5197500" since="#T0" xml:id="T718"/>
+<when interval="5200100" since="#T0" xml:id="T1072"/>
+<when interval="5204550" since="#T0" xml:id="T719"/>
+<when interval="5205500" since="#T0" xml:id="T1073"/>
+<when interval="5206050" since="#T0" xml:id="T948"/>
+<when interval="5207050" since="#T0" xml:id="T949"/>
+<when interval="5207500" since="#T0" xml:id="T304"/>
+<when interval="5217950" since="#T0" xml:id="T1074"/>
+<when interval="5218000" since="#T0" xml:id="T305"/>
+<when interval="5218600" since="#T0" xml:id="T720"/>
+<when interval="5219150" since="#T0" xml:id="T1075"/>
+<when interval="5222050" since="#T0" xml:id="T950"/>
+<when interval="5224050" since="#T0" xml:id="T951"/>
+<when interval="5230050" since="#T0" xml:id="T306"/>
+<when interval="5230100" since="#T0" xml:id="T1076"/>
+<when interval="5231400" since="#T0" xml:id="T952"/>
+<when interval="5232100" since="#T0" xml:id="T953"/>
+<when interval="5233000" since="#T0" xml:id="T1077"/>
+<when interval="5233800" since="#T0" xml:id="T1078"/>
+<when interval="5236450" since="#T0" xml:id="T307"/>
+<when interval="5240600" since="#T0" xml:id="T1079"/>
+<when interval="5241050" since="#T0" xml:id="T721"/>
+<when interval="5242500" since="#T0" xml:id="T1080"/>
+<when interval="5245500" since="#T0" xml:id="T1081"/>
+<when interval="5256700" since="#T0" xml:id="T1082"/>
+<when interval="5257050" since="#T0" xml:id="T954"/>
+<when interval="5258000" since="#T0" xml:id="T308"/>
+<when interval="5258050" since="#T0" xml:id="T955"/>
+<when interval="5258900" since="#T0" xml:id="T956"/>
+<when interval="5259050" since="#T0" xml:id="T722"/>
+<when interval="5260050" since="#T0" xml:id="T723"/>
+<when interval="5260100" since="#T0" xml:id="T957"/>
+<when interval="5261050" since="#T0" xml:id="T309"/>
+<when interval="5265000" since="#T0" xml:id="T1083"/>
+<when interval="5285550" since="#T0" xml:id="T1084"/>
+<when interval="5286400" since="#T0" xml:id="T724"/>
+<when interval="5289700" since="#T0" xml:id="T725"/>
+<when interval="5290600" since="#T0" xml:id="T726"/>
+<when interval="5291000" since="#T0" xml:id="T310"/>
+<when interval="5291500" since="#T0" xml:id="T958"/>
+<when interval="5291700" since="#T0" xml:id="T311"/>
+<when interval="5292850" since="#T0" xml:id="T727"/>
+<when interval="5292950" since="#T0" xml:id="T1085"/>
+<when interval="5293500" since="#T0" xml:id="T959"/>
+<when interval="5293850" since="#T0" xml:id="T728"/>
+<when interval="5295000" since="#T0" xml:id="T729"/>
+<when interval="5295100" since="#T0" xml:id="T1178"/>
+<when interval="5306350" since="#T0" xml:id="T1086"/>
+<when interval="5308650" since="#T0" xml:id="T1087"/>
+<when interval="5317350" since="#T0" xml:id="T312"/>
+<when interval="5319050" since="#T0" xml:id="T313"/>
+<when interval="5321000" since="#T0" xml:id="T730"/>
+<when interval="5327450" since="#T0" xml:id="T1088"/>
+<when interval="5328950" since="#T0" xml:id="T1089"/>
+<when interval="5344075" since="#T0" xml:id="T314"/>
+<when interval="5346775" since="#T0" xml:id="T315"/>
+<when interval="5348075" since="#T0" xml:id="T1090"/>
+<when interval="5349450" since="#T0" xml:id="T731"/>
+<when interval="5353675" since="#T0" xml:id="T732"/>
+<when interval="5354175" since="#T0" xml:id="T1091"/>
+<when interval="5356700" since="#T0" xml:id="T960"/>
+<when interval="5356775" since="#T0" xml:id="T316"/>
+<when interval="5357775" since="#T0" xml:id="T317"/>
+<when interval="5360625" since="#T0" xml:id="T961"/>
+<when interval="5377775" since="#T0" xml:id="T318"/>
+<when interval="5379725" since="#T0" xml:id="T733"/>
+<when interval="5383175" since="#T0" xml:id="T319"/>
+<when interval="5389275" since="#T0" xml:id="T734"/>
+<when interval="5391175" since="#T0" xml:id="T735"/>
+<when interval="5392475" since="#T0" xml:id="T736"/>
+<when interval="5410175" since="#T0" xml:id="T320"/>
+<when interval="5410575" since="#T0" xml:id="T737"/>
+<when interval="5410625" since="#T0" xml:id="T1092"/>
+<when interval="5411575" since="#T0" xml:id="T321"/>
+<when interval="5413025" since="#T0" xml:id="T1093"/>
+<when interval="5413075" since="#T0" xml:id="T738"/>
+<when interval="5413525" since="#T0" xml:id="T1094"/>
+<when interval="5417125" since="#T0" xml:id="T1095"/>
+<when interval="5420475" since="#T0" xml:id="T322"/>
+<when interval="5422475" since="#T0" xml:id="T323"/>
+<when interval="5431225" since="#T0" xml:id="T324"/>
+<when interval="5434025" since="#T0" xml:id="T325"/>
+<when interval="5439075" since="#T0" xml:id="T1096"/>
+<when interval="5441375" since="#T0" xml:id="T739"/>
+<when interval="5443475" since="#T0" xml:id="T326"/>
+<when interval="5451075" since="#T0" xml:id="T327"/>
+<when interval="5462025" since="#T0" xml:id="T1097"/>
+<when interval="5463025" since="#T0" xml:id="T740"/>
+<when interval="5465475" since="#T0" xml:id="T328"/>
+<when interval="5466875" since="#T0" xml:id="T329"/>
+<when interval="5472125" since="#T0" xml:id="T962"/>
+<when interval="5475625" since="#T0" xml:id="T963"/>
+<when interval="5482125" since="#T0" xml:id="T741"/>
+<when interval="5487475" since="#T0" xml:id="T1098"/>
+<when interval="5488625" since="#T0" xml:id="T742"/>
+<when interval="5490075" since="#T0" xml:id="T1099"/>
+<when interval="5491275" since="#T0" xml:id="T1100"/>
+<when interval="5492025" since="#T0" xml:id="T743"/>
+<when interval="5493025" since="#T0" xml:id="T744"/>
+<when interval="5495075" since="#T0" xml:id="T1101"/>
+<when interval="5503075" since="#T0" xml:id="T745"/>
+<when interval="5505075" since="#T0" xml:id="T746"/>
+<when interval="5517125" since="#T0" xml:id="T330"/>
+<when interval="5518175" since="#T0" xml:id="T964"/>
+<when interval="5518225" since="#T0" xml:id="T331"/>
+<when interval="5519075" since="#T0" xml:id="T747"/>
+<when interval="5519725" since="#T0" xml:id="T332"/>
+<when interval="5519975" since="#T0" xml:id="T965"/>
+<when interval="5522025" since="#T0" xml:id="T1102"/>
+<when interval="5523525" since="#T0" xml:id="T333"/>
+<when interval="5524325" since="#T0" xml:id="T1103"/>
+<when interval="5525225" since="#T0" xml:id="T748"/>
+<when interval="5526325" since="#T0" xml:id="T749"/>
+<when interval="5527700" since="#T0" xml:id="T750"/>
+<when interval="5531412" since="#T0" xml:id="T334"/>
+<when interval="5533912" since="#T0" xml:id="T335"/>
+<when interval="5539025" since="#T0" xml:id="T751"/>
+<when interval="5539612" since="#T0" xml:id="T1104"/>
+<when interval="5543512" since="#T0" xml:id="T1105"/>
+<when interval="5547412" since="#T0" xml:id="T336"/>
+<when interval="5554012" since="#T0" xml:id="T337"/>
+<when interval="5557012" since="#T0" xml:id="T752"/>
+<when interval="5559012" since="#T0" xml:id="T338"/>
+<when interval="5560812" since="#T0" xml:id="T339"/>
+<when interval="5564662" since="#T0" xml:id="T966"/>
+<when interval="5566562" since="#T0" xml:id="T967"/>
+<when interval="5586162" since="#T0" xml:id="T1106"/>
+<when interval="5588562" since="#T0" xml:id="T1107"/>
+<when interval="5591112" since="#T0" xml:id="T753"/>
+<when interval="5595112" since="#T0" xml:id="T1108"/>
+<when interval="5597412" since="#T0" xml:id="T754"/>
+<when interval="5599612" since="#T0" xml:id="T755"/>
+<when interval="5600012" since="#T0" xml:id="T340"/>
+<when interval="5608012" since="#T0" xml:id="T341"/>
+<when interval="5628050" since="#T0" xml:id="T534"/>
+<when interval="5628062" since="#T0" xml:id="T342"/>
+<when interval="5634162" since="#T0" xml:id="T756"/>
+<when interval="5635962" since="#T0" xml:id="T343"/>
+<when interval="5636012" since="#T0" xml:id="T1109"/>
+<when interval="5646962" since="#T0" xml:id="T757"/>
+<when interval="5647012" since="#T0" xml:id="T1110"/>
+<when interval="5647612" since="#T0" xml:id="T344"/>
+<when interval="5649612" since="#T0" xml:id="T345"/>
+<when interval="5656062" since="#T0" xml:id="T758"/>
+<when interval="5657162" since="#T0" xml:id="T1111"/>
+<when interval="5658512" since="#T0" xml:id="T346"/>
+<when interval="5658562" since="#T0" xml:id="T1112"/>
+<when interval="5666412" since="#T0" xml:id="T759"/>
+<when interval="5667812" since="#T0" xml:id="T760"/>
+<when interval="5668037" since="#T0" xml:id="T1113"/>
+<when interval="5668062" since="#T0" xml:id="T347"/>
+<when interval="5673737" since="#T0" xml:id="T1114"/>
+<when interval="5675437" since="#T0" xml:id="T761"/>
+<when interval="5677637" since="#T0" xml:id="T1115"/>
+<when interval="5678487" since="#T0" xml:id="T968"/>
+<when interval="5679937" since="#T0" xml:id="T348"/>
+<when interval="5680037" since="#T0" xml:id="T1116"/>
+<when interval="5687937" since="#T0" xml:id="T1117"/>
+<when interval="5688037" since="#T0" xml:id="T762"/>
+<when interval="5690137" since="#T0" xml:id="T1118"/>
+<when interval="5692487" since="#T0" xml:id="T1119"/>
+<when interval="5693087" since="#T0" xml:id="T969"/>
+<when interval="5694037" since="#T0" xml:id="T349"/>
+<when interval="5695837" since="#T0" xml:id="T350"/>
+<when interval="5696200" since="#T0" xml:id="T1120"/>
+<when interval="5696837" since="#T0" xml:id="T351"/>
+<when interval="5697050" since="#T0" xml:id="T825"/>
+<when interval="5703787" since="#T0" xml:id="T352"/>
+<when interval="5704337" since="#T0" xml:id="T1121"/>
+<when interval="5705587" since="#T0" xml:id="T353"/>
+<when interval="5706637" since="#T0" xml:id="T1122"/>
+<when interval="5708337" since="#T0" xml:id="T354"/>
+<when interval="5712137" since="#T0" xml:id="T355"/>
+<when interval="5737187" since="#T0" xml:id="T356"/>
+<when interval="5740087" since="#T0" xml:id="T357"/>
+<when interval="5743287" since="#T0" xml:id="T983"/>
+<when interval="5744737" since="#T0" xml:id="T358"/>
+<when interval="5744812" since="#T0" xml:id="T1123"/>
+<when interval="5744887" since="#T0" xml:id="T984"/>
+<when interval="5748012" since="#T0" xml:id="T1124"/>
+<when interval="5750962" since="#T0" xml:id="T359"/>
+<when interval="5757762" since="#T0" xml:id="T360"/>
+<when interval="5761062" since="#T0" xml:id="T361"/>
+<when interval="5761862" since="#T0" xml:id="T362"/>
+<when interval="5763962" since="#T0" xml:id="T363"/>
+<when interval="5765162" since="#T0" xml:id="T364"/>
+<when interval="5767562" since="#T0" xml:id="T365"/>
+<when interval="5768312" since="#T0" xml:id="T1125"/>
+<when interval="5771012" since="#T0" xml:id="T1126"/>
+<when interval="5771512" since="#T0" xml:id="T366"/>
+<when interval="5773662" since="#T0" xml:id="T1127"/>
+<when interval="5773712" since="#T0" xml:id="T367"/>
+<when interval="5774912" since="#T0" xml:id="T368"/>
+<when interval="5778012" since="#T0" xml:id="T369"/>
+<when interval="5778662" since="#T0" xml:id="T1128"/>
+<when interval="5782512" since="#T0" xml:id="T370"/>
+<when interval="5785212" since="#T0" xml:id="T371"/>
+<when interval="5789012" since="#T0" xml:id="T763"/>
+<when interval="5790012" since="#T0" xml:id="T764"/>
+<when interval="5795462" since="#T0" xml:id="T372"/>
+<when interval="5795662" since="#T0" xml:id="T765"/>
+<when interval="5796462" since="#T0" xml:id="T373"/>
+<when interval="5801312" since="#T0" xml:id="T374"/>
+<when interval="5802712" since="#T0" xml:id="T375"/>
+<when interval="5804662" since="#T0" xml:id="T1129"/>
+<when interval="5808162" since="#T0" xml:id="T766"/>
+<when interval="5808312" since="#T0" xml:id="T376"/>
+<when interval="5808462" since="#T0" xml:id="T1130"/>
+<when interval="5810012" since="#T0" xml:id="T377"/>
+<when interval="5811212" since="#T0" xml:id="T1131"/>
+<when interval="5814912" since="#T0" xml:id="T1132"/>
+<when interval="5815612" since="#T0" xml:id="T1133"/>
+<when interval="5815812" since="#T0" xml:id="T767"/>
+<when interval="5816562" since="#T0" xml:id="T378"/>
+<when interval="5816612" since="#T0" xml:id="T768"/>
+<when interval="5819162" since="#T0" xml:id="T379"/>
+<when interval="5819212" since="#T0" xml:id="T1134"/>
+<when interval="5821012" since="#T0" xml:id="T1135"/>
+<when interval="5835562" since="#T0" xml:id="T769"/>
+<when interval="5836562" since="#T0" xml:id="T770"/>
+<when interval="5846012" since="#T0" xml:id="T380"/>
+<when interval="5849062" since="#T0" xml:id="T381"/>
+<when interval="5851012" since="#T0" xml:id="T382"/>
+<when interval="5856712" since="#T0" xml:id="T383"/>
+<when interval="5859712" since="#T0" xml:id="T384"/>
+<when interval="5862012" since="#T0" xml:id="T385"/>
+<when interval="5864412" since="#T0" xml:id="T386"/>
+<when interval="5876312" since="#T0" xml:id="T1136"/>
+<when interval="5878412" since="#T0" xml:id="T387"/>
+<when interval="5878462" since="#T0" xml:id="T388"/>
+<when interval="5878512" since="#T0" xml:id="T1137"/>
+<when interval="5892012" since="#T0" xml:id="T389"/>
+<when interval="5892062" since="#T0" xml:id="T390"/>
+<when interval="5909012" since="#T0" xml:id="T391"/>
+<when interval="5910512" since="#T0" xml:id="T771"/>
+<when interval="5920012" since="#T0" xml:id="T392"/>
+<when interval="5920062" since="#T0" xml:id="T393"/>
+<when interval="5932512" since="#T0" xml:id="T394"/>
+<when interval="5932562" since="#T0" xml:id="T1138"/>
+<when interval="5933762" since="#T0" xml:id="T395"/>
+<when interval="5940937" since="#T0" xml:id="T1139"/>
+<when interval="5942637" since="#T0" xml:id="T1140"/>
+<when interval="5950012" since="#T0" xml:id="T396"/>
+<when interval="5950037" since="#T0" xml:id="T397"/>
+<when interval="5974337" since="#T0" xml:id="T1141"/>
+<when interval="5976087" since="#T0" xml:id="T398"/>
+<when interval="5979437" since="#T0" xml:id="T399"/>
+<when interval="5979637" since="#T0" xml:id="T1142"/>
+<when interval="5980537" since="#T0" xml:id="T400"/>
+<when interval="5985287" since="#T0" xml:id="T401"/>
+<when interval="5986337" since="#T0" xml:id="T1143"/>
+<when interval="5991137" since="#T0" xml:id="T402"/>
+<when interval="5991637" since="#T0" xml:id="T772"/>
+<when interval="5993537" since="#T0" xml:id="T773"/>
+<when interval="6000737" since="#T0" xml:id="T403"/>
+<when interval="6001150" since="#T0" xml:id="T826"/>
+<when interval="6003237" since="#T0" xml:id="T774"/>
+<when interval="6005487" since="#T0" xml:id="T1144"/>
+<when interval="6006037" since="#T0" xml:id="T404"/>
+<when interval="6006200" since="#T0" xml:id="T535"/>
+<when interval="6006287" since="#T0" xml:id="T1145"/>
+<when interval="6008237" since="#T0" xml:id="T1146"/>
+<when interval="6009437" since="#T0" xml:id="T405"/>
+<when interval="6013137" since="#T0" xml:id="T1147"/>
+<when interval="6014037" since="#T0" xml:id="T775"/>
+<when interval="6015037" since="#T0" xml:id="T406"/>
+<when interval="6018437" since="#T0" xml:id="T776"/>
+<when interval="6018587" since="#T0" xml:id="T1148"/>
+<when interval="6021787" since="#T0" xml:id="T1149"/>
+<when interval="6023037" since="#T0" xml:id="T777"/>
+<when interval="6023087" since="#T0" xml:id="T1150"/>
+<when interval="6030537" since="#T0" xml:id="T778"/>
+<when interval="6032687" since="#T0" xml:id="T1151"/>
+<when interval="6032762" since="#T0" xml:id="T407"/>
+<when interval="6037512" since="#T0" xml:id="T408"/>
+<when interval="6048862" since="#T0" xml:id="T1152"/>
+<when interval="6050012" since="#T0" xml:id="T409"/>
+<when interval="6050487" since="#T0" xml:id="T779"/>
+<when interval="6053500" since="#T0" xml:id="T827"/>
+<when interval="6053512" since="#T0" xml:id="T410"/>
+<when interval="6054512" since="#T0" xml:id="T411"/>
+<when interval="6054612" since="#T0" xml:id="T970"/>
+<when interval="6061012" since="#T0" xml:id="T412"/>
+<when interval="6069412" since="#T0" xml:id="T780"/>
+<when interval="6070012" since="#T0" xml:id="T1153"/>
+<when interval="6074612" since="#T0" xml:id="T1154"/>
+<when interval="6075962" since="#T0" xml:id="T413"/>
+<when interval="6078162" since="#T0" xml:id="T414"/>
+<when interval="6079112" since="#T0" xml:id="T1155"/>
+<when interval="6080612" since="#T0" xml:id="T1156"/>
+<when interval="6080712" since="#T0" xml:id="T415"/>
+<when interval="6082812" since="#T0" xml:id="T416"/>
+<when interval="6085012" since="#T0" xml:id="T1157"/>
+<when interval="6093912" since="#T0" xml:id="T781"/>
+<when interval="6095112" since="#T0" xml:id="T782"/>
+<when interval="6096162" since="#T0" xml:id="T1158"/>
+<when interval="6097912" since="#T0" xml:id="T417"/>
+<when interval="6097962" since="#T0" xml:id="T1159"/>
+<when interval="6099412" since="#T0" xml:id="T418"/>
+<when interval="6100000" since="#T0" xml:id="T1160"/>
+<when interval="6116506" since="#T0" xml:id="T419"/>
+<when interval="6116512" since="#T0" xml:id="T536"/>
+<when interval="6124731" since="#T0" xml:id="T783"/>
+<when interval="6125131" since="#T0" xml:id="T420"/>
+<when interval="6127431" since="#T0" xml:id="T421"/>
+<when interval="6130431" since="#T0" xml:id="T784"/>
+<when interval="6139531" since="#T0" xml:id="T422"/>
+<when interval="6140531" since="#T0" xml:id="T785"/>
+<when interval="6141731" since="#T0" xml:id="T786"/>
+<when interval="6141781" since="#T0" xml:id="T423"/>
+<when interval="6144581" since="#T0" xml:id="T424"/>
+<when interval="6145131" since="#T0" xml:id="T971"/>
+<when interval="6146481" since="#T0" xml:id="T1161"/>
+<when interval="6147681" since="#T0" xml:id="T1162"/>
+<when interval="6148731" since="#T0" xml:id="T1163"/>
+<when interval="6150931" since="#T0" xml:id="T1164"/>
+<when interval="6152081" since="#T0" xml:id="T425"/>
+<when interval="6153331" since="#T0" xml:id="T972"/>
+<when interval="6157331" since="#T0" xml:id="T426"/>
+<when interval="6158381" since="#T0" xml:id="T1165"/>
+<when interval="6159381" since="#T0" xml:id="T1166"/>
+<when interval="6159831" since="#T0" xml:id="T787"/>
+<when interval="6160081" since="#T0" xml:id="T427"/>
+<when interval="6160831" since="#T0" xml:id="T788"/>
+<when interval="6160981" since="#T0" xml:id="T1167"/>
+<when interval="6161981" since="#T0" xml:id="T428"/>
+<when interval="6163081" since="#T0" xml:id="T1168"/>
+<when interval="6193531" since="#T0" xml:id="T429"/>
+<when interval="6197031" since="#T0" xml:id="T430"/>
+<when interval="6223031" since="#T0" xml:id="T1169"/>
+<when interval="6225531" since="#T0" xml:id="T789"/>
+<when interval="6227831" since="#T0" xml:id="T790"/>
+<when interval="6228631" since="#T0" xml:id="T431"/>
+<when interval="6230331" since="#T0" xml:id="T1170"/>
+<when interval="6238531" since="#T0" xml:id="T791"/>
+<when interval="6248081" since="#T0" xml:id="T973"/>
+<when interval="6248131" since="#T0" xml:id="T432"/>
+<when interval="6252081" since="#T0" xml:id="T433"/>
+<when interval="6253131" since="#T0" xml:id="T792"/>
+<when interval="6258781" since="#T0" xml:id="T974"/>
+<when interval="6264681" since="#T0" xml:id="T793"/>
+<when interval="6264781" since="#T0" xml:id="T434"/>
+<when interval="6267081" since="#T0" xml:id="T435"/>
+<when interval="6269781" since="#T0" xml:id="T794"/>
+<when interval="6273581" since="#T0" xml:id="T795"/>
+<when interval="6274181" since="#T0" xml:id="T436"/>
+<when interval="6276081" since="#T0" xml:id="T796"/>
+<when interval="6276381" since="#T0" xml:id="T1171"/>
+<when interval="6278281" since="#T0" xml:id="T1172"/>
+<when interval="6282281" since="#T0" xml:id="T437"/>
+<when interval="6285081" since="#T0" xml:id="T438"/>
+<when interval="6286331" since="#T0" xml:id="T439"/>
+<when interval="6287031" since="#T0" xml:id="T440"/>
+<when interval="6287231" since="#T0" xml:id="T797"/>
+<when interval="6290881" since="#T0" xml:id="T441"/>
+<when interval="6291031" since="#T0" xml:id="T798"/>
+<when interval="6293581" since="#T0" xml:id="T442"/>
+<when interval="6296000" since="#T0" xml:id="T799"/>
+<when interval="6305681" since="#T0" xml:id="T800"/>
+<when interval="6306081" since="#T0" xml:id="T443"/>
+<when interval="6321381" since="#T0" xml:id="T444"/>
+<when interval="6323181" since="#T0" xml:id="T801"/>
+<when interval="6324831" since="#T0" xml:id="T445"/>
+<when interval="6326981" since="#T0" xml:id="T802"/>
+<when interval="6329031" since="#T0" xml:id="T1173"/>
+<when interval="6329131" since="#T0" xml:id="T446"/>
+<when interval="6330831" since="#T0" xml:id="T1174"/>
+<when interval="6334081" since="#T0" xml:id="T447"/>
+<when interval="6334831" since="#T0" xml:id="T975"/>
+<when interval="6334881" since="#T0" xml:id="T448"/>
+<when interval="6335731" since="#T0" xml:id="T449"/>
+<when interval="6343331" since="#T0" xml:id="T450"/>
+<when interval="6346781" since="#T0" xml:id="T451"/>
+<when interval="6348881" since="#T0" xml:id="T452"/>
+<when interval="6365081" since="#T0" xml:id="T453"/>
+<when interval="6368181" since="#T0" xml:id="T454"/>
+<when interval="6371881" since="#T0" xml:id="T455"/>
+<when interval="6373081" since="#T0" xml:id="T456"/>
+<when interval="6396031" since="#T0" xml:id="T985"/>
+<when interval="6397031" since="#T0" xml:id="T986"/>
+<when interval="6409900" since="#T0" xml:id="T865"/>
+<when interval="6669900" since="#T0" xml:id="T890"/>
+<when interval="6680000" since="#T0" xml:id="T891"/>
+<when interval="6704000" since="#T0" xml:id="T866"/>
+<when interval="6709037" since="#T0" xml:id="T457"/>
+<when interval="6712437" since="#T0" xml:id="T458"/>
+<when interval="6720175" since="#T0" xml:id="T459"/>
+<when interval="6725425" since="#T0" xml:id="T460"/>
+<when interval="6733025" since="#T0" xml:id="T461"/>
+<when interval="6733725" since="#T0" xml:id="T462"/>
+<when interval="6736275" since="#T0" xml:id="T991"/>
+<when interval="6753925" since="#T0" xml:id="T463"/>
+<when interval="6756125" since="#T0" xml:id="T464"/>
+<when interval="6758525" since="#T0" xml:id="T976"/>
+<when interval="6760475" since="#T0" xml:id="T465"/>
+<when interval="6760800" since="#T0" xml:id="T466"/>
+<when interval="6760825" since="#T0" xml:id="T977"/>
+<when interval="6766000" since="#T0" xml:id="T467"/>
+<when interval="6767037" since="#T0" xml:id="T468"/>
+<when interval="6771037" since="#T0" xml:id="T469"/>
+<when interval="6774700" since="#T0" xml:id="T470"/>
+<when interval="6782500" since="#T0" xml:id="T471"/>
+<when interval="6782550" since="#T0" xml:id="T867"/>
+<when interval="6973100" since="#T0" xml:id="T868"/>
+<when interval="7055700" since="#T0" xml:id="T869"/>
+<when interval="7171100" since="#T0" xml:id="T537"/>
+<when interval="7173150" since="#T0" xml:id="T803"/>
+<when interval="7176050" since="#T0" xml:id="T472"/>
+<when interval="7179000" since="#T0" xml:id="T804"/>
+<when interval="7183350" since="#T0" xml:id="T473"/>
+<when interval="7185550" since="#T0" xml:id="T805"/>
+<when interval="7195025" since="#T0" xml:id="T474"/>
+<when interval="7197050" since="#T0" xml:id="T806"/>
+<when interval="7199025" since="#T0" xml:id="T475"/>
+<when interval="7199975" since="#T0" xml:id="T807"/>
+<when interval="7201425" since="#T0" xml:id="T892"/>
+<when interval="7204600" since="#T0" xml:id="T476"/>
+<when interval="7206600" since="#T0" xml:id="T477"/>
+<when interval="7208200" since="#T0" xml:id="T808"/>
+<when interval="7215325" since="#T0" xml:id="T893"/>
+<when interval="7231000" since="#T0" xml:id="T538"/>
+<when interval="7240050" since="#T0" xml:id="T870"/>
+<when interval="7271050" since="#T0" xml:id="T879"/>
+<when interval="7279250" since="#T0" xml:id="T880"/>
+<when interval="7427600" since="#T0" xml:id="T871"/>
+<when interval="7462000" since="#T0" xml:id="T539"/>
+<when interval="7471000" since="#T0" xml:id="T540"/>
+<when interval="7483000" since="#T0" xml:id="T988"/>
+<when interval="7546000" since="#T0" xml:id="T541"/>
+<when interval="7592000" since="#T0" xml:id="T542"/>
+<when interval="7689100" since="#T0" xml:id="T543"/>
+<when interval="7714000" since="#T0" xml:id="T544"/>
+<when interval="7731050" since="#T0" xml:id="T545"/>
+<when interval="7787050" since="#T0" xml:id="T546"/>
+<when interval="8005050" since="#T0" xml:id="T547"/>
+<when interval="8017150" since="#T0" xml:id="T548"/>
+<when interval="8040000" since="#T0" xml:id="T549"/>
+<when interval="8053000" since="#T0" xml:id="T550"/>
+<when interval="8065000" since="#T0" xml:id="T551"/>
+<when interval="8065050" since="#T0" xml:id="T978"/>
+<when interval="8068550" since="#T0" xml:id="T979"/>
+<when interval="8071050" since="#T0" xml:id="T478"/>
+<when interval="8073150" since="#T0" xml:id="T479"/>
+<when interval="8079050" since="#T0" xml:id="T480"/>
+<when interval="8082550" since="#T0" xml:id="T481"/>
+<when interval="8090000" since="#T0" xml:id="T989"/>
+<when interval="8128650" since="#T0" xml:id="T1175"/>
+<when interval="8130350" since="#T0" xml:id="T1176"/>
+<when interval="8130750" since="#T0" xml:id="T809"/>
+<when interval="8132050" since="#T0" xml:id="T810"/>
+<when interval="8136050" since="#T0" xml:id="T482"/>
+<when interval="8139250" since="#T0" xml:id="T483"/>
+<when interval="8141000" since="#T0" xml:id="T811"/>
+<when interval="8142000" since="#T0" xml:id="T812"/>
+<when interval="8143750" since="#T0" xml:id="T894"/>
+<when interval="8144600" since="#T0" xml:id="T484"/>
+<when interval="8146400" since="#T0" xml:id="T485"/>
+<when interval="8147000" since="#T0" xml:id="T828"/>
+<when interval="8148650" since="#T0" xml:id="T813"/>
+<when interval="8148900" since="#T0" xml:id="T486"/>
+<when interval="8149500" since="#T0" xml:id="T487"/>
+<when interval="8151600" since="#T0" xml:id="T488"/>
+<when interval="8152150" since="#T0" xml:id="T814"/>
+<when interval="8153400" since="#T0" xml:id="T489"/>
+<when interval="8153850" since="#T0" xml:id="T815"/>
+<when interval="8156000" since="#T0" xml:id="T490"/>
+<when interval="8158250" since="#T0" xml:id="T816"/>
+<when interval="8163050" since="#T0" xml:id="T980"/>
+<when interval="8165400" since="#T0" xml:id="T491"/>
+<when interval="8166150" since="#T0" xml:id="T895"/>
+<when interval="8167000" since="#T0" xml:id="T881"/>
+<when interval="8170000" since="#T0" xml:id="T552"/>
+<when interval="8260000" since="#T0" xml:id="T829"/>
+<when interval="8296100" since="#T0" xml:id="T830"/>
+<when interval="8296150" since="#T0" xml:id="T831"/>
+<when interval="8348050" since="#T0" xml:id="T832"/>
+<when interval="8349950" since="#T0" xml:id="T872"/>
+<when interval="8380000" since="#T0" xml:id="T873"/>
+<when interval="8390000" since="#T0" xml:id="T833"/>
+<when interval="8437000" since="#T0" xml:id="T834"/>
+<when interval="8559000" since="#T0" xml:id="T874"/>
+<when interval="8620100" since="#T0" xml:id="T1179"/>
+<when interval="8661050" since="#T0" xml:id="T835"/>
+<when interval="8728050" since="#T0" xml:id="T836"/>
+<when interval="8804000" since="#T0" xml:id="T875"/>
+<when interval="8932000" since="#T0" xml:id="T837"/>
+<when interval="9001000" since="#T0" xml:id="T838"/>
+<when interval="9001050" since="#T0" xml:id="T839"/>
+<when interval="9235100" since="#T0" xml:id="T840"/>
+<when interval="9733100" since="#T0" xml:id="T841"/>
+<when interval="9894900" since="#T0" xml:id="T842"/>
+<when interval="10225000" since="#T0" xml:id="T843"/>
+<when interval="10379000" since="#T0" xml:id="T844"/>
+<when interval="10379050" since="#T0" xml:id="T845"/>
+<when interval="10601000" since="#T0" xml:id="T846"/>
+<when interval="10809000" since="#T0" xml:id="T847"/>
+<when interval="11154000" since="#T0" xml:id="T848"/>
+<when interval="11439900" since="#T0" xml:id="T849"/>
+<when interval="11470000" since="#T0" xml:id="T876"/>
+<when interval="11665100" since="#T0" xml:id="T553"/>
+<when interval="11876000" since="#T0" xml:id="T554"/>
+<when interval="11960050" since="#T0" xml:id="T555"/>
+<when interval="11960075" since="#T0" xml:id="T556"/>
+<when interval="12011975" since="#T0" xml:id="T557"/>
+<when interval="12055000" since="#T0" xml:id="T1180"/>
+<when interval="12101100" since="#T0" xml:id="T1181"/>
+<when interval="12123000" since="#T0" xml:id="T558"/>
+<when interval="12205550" since="#T0" xml:id="T559"/>
+<when interval="12284000" since="#T0" xml:id="T560"/>
+<when interval="12620100" since="#T0" xml:id="T561"/>
+<when interval="12620150" since="#T0" xml:id="T562"/>
+<when interval="12692000" since="#T0" xml:id="T563"/>
+<when interval="12850000" since="#T0" xml:id="T564"/>
+<when interval="12900000" since="#T0" xml:id="T565"/>
+<when interval="13051000" since="#T0" xml:id="T566"/>
+<when interval="13185100" since="#T0" xml:id="T567"/>
+<when interval="13460000" since="#T0" xml:id="T568"/>
+<when interval="13503000" since="#T0" xml:id="T569"/>
+<when interval="13595000" since="#T0" xml:id="T570"/>
+<when interval="13821100" since="#T0" xml:id="T571"/>
+<when interval="14106000" since="#T0" xml:id="T572"/>
+<when interval="14304100" since="#T0" xml:id="T573"/>
+<when interval="14804100" since="#T0" xml:id="T990"/>
+<when interval="15352801" since="#T0" xml:id="T877"/>
+</timeline>
+<body>
+<div>
+<head>
+<note type="start">#T0</note>
+<note type="end">#T877</note>
+</head>
+<annotationBloc end="#T850" start="#T0" who="Séquences" xml:id="a1">
+<u>
+<seg>Dans l'ascenseur</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T36" start="#T35" who="Trad Mot LSF" xml:id="a198">
+<u>
+<seg>Bravo ! Dix sur dix, c'est parfait !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T38" start="#T37" who="Trad Mot LSF" xml:id="a266">
+<u>
+<seg>C'est difficile parce que les couleurs sont proches. C'est un pays d'Afrique.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T743" start="#T742" who="Trad Charlotte LSF" xml:id="a521">
+<u>
+<seg>Une question... Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T745" start="#T744" who="Trad Charlotte LSF" xml:id="a522">
+<u>
+<seg>Non, non. Parce qu'il faut faire vite pour y aller, sinon c'est occupé.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T747" start="#T746" who="Trad Charlotte LSF" xml:id="a523">
+<u>
+<seg>Une question, une question, une question ! Le médecin, lui il travaille lentemen, tout le temps lentement, parce qu'il réfléchit ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T203" start="#T202" who="Trad Mot LSF" xml:id="a447">
+<u>
+<seg>(Appel) Du fromage ? (Appel)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T749" start="#T748" who="Trad Charlotte LSF" xml:id="a524">
+<u>
+<seg>Non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T205" start="#T204" who="Trad Mot LSF" xml:id="a448">
+<u>
+<seg>Bon appétit !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1028" start="#T205" who="Trad Fat LSF" xml:id="a469">
+<u>
+<seg>C'est bon ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T751" start="#T750" who="Trad Charlotte LSF" xml:id="a525">
+<u>
+<seg>Parce que... le docteur nous a examiné, il travaillait lentement... Il nous a examiné et son travail était long, je sais pas pourqoi...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T753" start="#T752" who="Trad Charlotte LSF" xml:id="a526">
+<u>
+<seg>Oui... À la récréation, j'ai vu le docteur encore... Il me dit : toi tu dois voir le directeur ! Mais à la récréation, il est occupé donc il peut pas m'accompagner. Je vais voir le directeur. Je lui demande pour aller après à la maternelle. C'est à coté, faut entrer aller à droite, tout en haut. Tout en haut.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T754" start="#T753" who="Trad Charlotte LSF" xml:id="a527">
+<u>
+<seg>Aussi, on entre à la bibliothèque...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T3" who="Trad Mot LSF" xml:id="a259">
+<u>
+<seg>Je pense ça va être difficile. Parti !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T756" start="#T755" who="Trad Charlotte LSF" xml:id="a528">
+<u>
+<seg>Encore je monte à la bibliothèque, à l'étage, je monte là-bas, y a le docteur. Il me laisse, se déplace. Moi, j'observe. Je rentre pour... Euh... l'oscultation, et je la (prénom signe) trouve ! Elle s'est différent c'est les dents, elle a un problème, elle crie ! Moi, je sais pas... Elle me dit le dentiste c'est là-bas, moi, j'en sais rien.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T207" start="#T206" who="Trad Mot LSF" xml:id="a449">
+<u>
+<seg>(Appel)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T758" start="#T757" who="Trad Charlotte LSF" xml:id="a529">
+<u>
+<seg>Par exemple quand ils parlent c'est compliqué ! En premier, je vais voir le médecin, on discute. Mais je veux pas aller me faire osculter par le dentiste.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T760" start="#T759" who="Trad Charlotte LSF" xml:id="a530">
+<u>
+<seg>Les petits.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T209" start="#T208" who="Trad Mot LSF" xml:id="a450">
+<u>
+<seg>Merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T762" start="#T761" who="Trad Charlotte LSF" xml:id="a531">
+<u>
+<seg>Moi, j'ai pas le temps à midi ! À midi... Non, à midi, on doit aller voir les orthophonistes, tous on les voit, ils nous disent c'est bon, et des fois on voit le médecin.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T764" start="#T763" who="Trad Charlotte LSF" xml:id="a632">
+<u>
+<seg>La dame me parlait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T766" start="#T765" who="Trad Charlotte LSF" xml:id="a633">
+<u>
+<seg>J'ai rien ! Le fromage est passé où ? Le fromage... Où est le mien ? Où est mon fromage ? Mon fromage est où ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T211" start="#T210" who="Trad Mot LSF" xml:id="a451">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T768" start="#T767" who="Trad Charlotte LSF" xml:id="a634">
+<u>
+<seg>Pourquoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T770" start="#T769" who="Trad Charlotte LSF" xml:id="a635">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T773" start="#T772" who="Trad Charlotte LSF" xml:id="a637">
+<u>
+<seg>S'il te plait, encore.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T213" start="#T212" who="Trad Mot LSF" xml:id="a452">
+<u>
+<seg>S'il te plait, quoi ? Comme ça ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T775" start="#T774" who="Trad Charlotte LSF" xml:id="a638">
+<u>
+<seg>Han ! Là ! Elle s'en ai mis là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T777" start="#T776" who="Trad Charlotte LSF" xml:id="a639">
+<u>
+<seg>Je peux dessiner les drapeaux, je sais.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T779" start="#T778" who="Trad Charlotte LSF" xml:id="a640">
+<u>
+<seg>Non, le drapeau tu suis c'est obligé. Oui... Le drapeau de la France, interdit l'amour de deux femmes, interdit l'amour de deux hommes... Y a l'Etat... Y a l'Eglise...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T40" start="#T39" who="Trad Mot LSF" xml:id="a267">
+<u>
+<seg>C'est bon. Ah, bon !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T215" start="#T214" who="Trad Mot LSF" xml:id="a453">
+<u>
+<seg>Du fromage ? Tu en as déjà là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T782" start="#T781" who="Trad Charlotte LSF" xml:id="a642">
+<u>
+<seg>Deux hommes, deux femmes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T784" start="#T783" who="Trad Charlotte LSF" xml:id="a643">
+<u>
+<seg>J'ai envie de ça, j'adore ça !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T786" start="#T785" who="Trad Charlotte LSF" xml:id="a644">
+<u>
+<seg>Merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T217" start="#T216" who="Trad Mot LSF" xml:id="a454">
+<u>
+<seg>Tu en as déjà. C'est moi qui fait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T788" start="#T787" who="Trad Charlotte LSF" xml:id="a645">
+<u>
+<seg>Beurre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T790" start="#T789" who="Trad Charlotte LSF" xml:id="a646">
+<u>
+<seg>Je peux partir.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T792" start="#T791" who="Trad Charlotte LSF" xml:id="a647">
+<u>
+<seg>Qui ? C'est qui ? J... Non, c'est toi, c'est le tien, J comme ça...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T219" start="#T218" who="Trad Mot LSF" xml:id="a455">
+<u>
+<seg>Ah, oui j'avais oublié.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T794" start="#T793" who="Trad Charlotte LSF" xml:id="a648">
+<u>
+<seg>Moi, je sais pas si c'est comme ça, ou comme ça...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T796" start="#T795" who="Trad Charlotte LSF" xml:id="a649">
+<u>
+<seg>Pourquoi ? J'ai envie de partir.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T221" start="#T220" who="Trad Mot LSF" xml:id="a456">
+<u>
+<seg>Quoi ? Non, non, j'ai pas oublié... Y a rien.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T798" start="#T797" who="Trad Charlotte LSF" xml:id="a650">
+<u>
+<seg>(?)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T223" start="#T222" who="Trad Mot LSF" xml:id="a457">
+<u>
+<seg>C'est bon !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T800" start="#T799" who="Trad Charlotte LSF" xml:id="a651">
+<u>
+<seg>Lui (prénom signe), comme ça... Il a un tuyau mais veut pas entendre, c'est quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T225" start="#T224" who="Trad Mot LSF" xml:id="a458">
+<u>
+<seg>(Appel) Ça va ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T695" start="#T224" who="Trad Charlotte LSF" xml:id="a429">
+<u>
+<seg>Non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T227" start="#T226" who="Trad Mot LSF" xml:id="a459">
+<u>
+<seg>C'est le théatre chinois. Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T802" start="#T801" who="Trad Charlotte LSF" xml:id="a652">
+<u>
+<seg>Je veux partir, je peux partir.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="Trad Mot LSF" xml:id="a260">
+<u>
+<seg>Oula ! Attention ils sont proches !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T229" start="#T228" who="Trad Mot LSF" xml:id="a460">
+<u>
+<seg>(Appel) C'est du théatre typiquement chinois, c'est pour ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T804" start="#T803" who="Trad Charlotte LSF" xml:id="a253">
+<u>
+<seg>Toutes les deux vous êtes dans le master.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T806" start="#T805" who="Trad Charlotte LSF" xml:id="a254">
+<u>
+<seg>Tous les soirs elle se trompe quand elle signe. Il faut quoi... c'est important... ton cerveau il signe...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T231" start="#T230" who="Trad Mot LSF" xml:id="a461">
+<u>
+<seg>Japon, oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T808" start="#T807" who="Trad Charlotte LSF" xml:id="a255">
+<u>
+<seg>Ah bon, ok. Assieds-toi, s'il te plaît. Assieds-toi, s'il te plaît. Tu t'accroupis, s'il te plait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T233" start="#T232" who="Trad Mot LSF" xml:id="a462">
+<u>
+<seg>(Appel) Doucement... (Appel) Tu es énervée, calme-toi ! Mange doucement, c'est pour ça que tu as plus faim.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T810" start="#T809" who="Trad Charlotte LSF" xml:id="a341">
+<u>
+<seg>Merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T812" start="#T811" who="Trad Charlotte LSF" xml:id="a342">
+<u>
+<seg>Merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T177" start="#T176" who="Trad Mot LSF" xml:id="a398">
+<u>
+<seg>Une oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T179" start="#T178" who="Trad Mot LSF" xml:id="a399">
+<u>
+<seg>Qu'est-ce que tu veux ? (Appel) Tu veux quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T42" start="#T41" who="Trad Mot LSF" xml:id="a268">
+<u>
+<seg>C'est peut être un pays d'Afrique, le Nigéria ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T814" start="#T813" who="Trad Charlotte LSF" xml:id="a343">
+<u>
+<seg>Moi ! Moi ! Je veux l'appareil.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T235" start="#T234" who="Trad Mot LSF" xml:id="a463">
+<u>
+<seg>(Appel) Quand je suis allée la chercher au chant-signe, on m'a dit que ça passe bien pour elle.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T816" start="#T815" who="Trad Charlotte LSF" xml:id="a344">
+<u>
+<seg>L'appareil, l'appareil.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T818" start="#T817" who="Thèmes Charlotte" xml:id="a33">
+<u>
+<seg>L'orthoponiste</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T818" start="#T817" who="Thèmes Fat" xml:id="a122">
+<u>
+<seg>L'orthoponiste</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T237" start="#T236" who="Trad Mot LSF" xml:id="a380">
+<u>
+<seg>J'ai oublié de te demander : dimanche prochain, tu sais, on va à l'association. Mais si, tu sais, l'association qui s'appelle DLS. Attends !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T527" start="#T236" who="Thèmes Mot" xml:id="a94">
+<u>
+<seg>Carnaval à l'association (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T527" start="#T236" who="Thèmes Charlotte" xml:id="a35">
+<u>
+<seg>Carnaval à l'association (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T239" start="#T236" who="Montages" xml:id="a377">
+<u>
+<seg>Peut-on tout exprimer en LSF ? Evoquer ce qui n'est pas présent.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T527" start="#T236" who="Thèmes Fat" xml:id="a126">
+<u>
+<seg>Carnaval à l'association (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T820" start="#T819" who="Thèmes Charlotte" xml:id="a34">
+<u>
+<seg>À l'école : cours de maths (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1033" start="#T819" who="Trad Fat LSF" xml:id="a370">
+<u>
+<seg>(Appel) Tu as fais quoi toute la journée à l'école ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T820" start="#T819" who="Thèmes Fat" xml:id="a125">
+<u>
+<seg>À l'école : cours de maths (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T822" start="#T821" who="Thèmes Charlotte" xml:id="a36">
+<u>
+<seg>Carnaval à l'association (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T822" start="#T821" who="Thèmes Fat" xml:id="a127">
+<u>
+<seg>Carnaval à l'association (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T729" start="#T824" who="Thèmes Charlotte" xml:id="a39">
+<u>
+<seg>À l'école : cours de maths (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1070" start="#T824" who="Trad Fat LSF" xml:id="a595">
+<u>
+<seg>(Appel) Tu m'as dit qu'en maths vous avez fait les paires, 2 + 2, 5 + 5... Et après ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1178" start="#T824" who="Thèmes Fat" xml:id="a130">
+<u>
+<seg>À l'école : cours de maths (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T239" start="#T238" who="Trad Mot LSF" xml:id="a381">
+<u>
+<seg>Pour le carnaval. Tu es prête ? Tu as réfléchi à ton costume ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T241" start="#T240" who="Trad Mot LSF" xml:id="a382">
+<u>
+<seg>Le brésil, c'est sure !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T827" start="#T826" who="Thèmes Charlotte" xml:id="a41">
+<u>
+<seg>Les drapeaux</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="Trad Mot LSF" xml:id="a261">
+<u>
+<seg>Pourquoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T243" start="#T242" who="Trad Mot LSF" xml:id="a464">
+<u>
+<seg>S'il te plait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T702" start="#T243" who="Trad Charlotte LSF" xml:id="a432">
+<u>
+<seg>Du beurre. Du beurre... Du beurre (Appel) Du beurre (Appel) Je veux du beurre s'il te plait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T552" start="#T828" who="Thèmes Charlotte" xml:id="a44">
+<u>
+<seg>Appareil photo</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T830" start="#T829" who="Thèmes Charlotte" xml:id="a45">
+<u>
+<seg>Bougie senteur</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T830" start="#T829" who="Thèmes Fat" xml:id="a135">
+<u>
+<seg>Bougie senteur</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T245" start="#T244" who="Trad Mot LSF" xml:id="a465">
+<u>
+<seg>Pourquoi ? Qu'est-ce que tu fais ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T832" start="#T831" who="Thèmes Charlotte" xml:id="a46">
+<u>
+<seg>Livre de Némo (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T834" start="#T831" who="Séquences autre cam" xml:id="a157">
+<u>
+<seg>Timer : 1h45'10 / Livre de Némo</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T832" start="#T831" who="Thèmes Fat" xml:id="a136">
+<u>
+<seg>Livre de Némo (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T834" start="#T833" who="Thèmes Charlotte" xml:id="a47">
+<u>
+<seg>Livre de Némo (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T834" start="#T833" who="Thèmes Fat" xml:id="a137">
+<u>
+<seg>Livre de Némo (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T247" start="#T246" who="Trad Mot LSF" xml:id="a466">
+<u>
+<seg>Papa t'a dit : non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T836" start="#T835" who="Thèmes Charlotte" xml:id="a48">
+<u>
+<seg>Positionnement des caméras</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T836" start="#T835" who="Thèmes Fat" xml:id="a139">
+<u>
+<seg>Positionnement des caméras</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T249" start="#T248" who="Trad Mot LSF" xml:id="a467">
+<u>
+<seg>Tant pis !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T838" start="#T837" who="Thèmes Charlotte" xml:id="a49">
+<u>
+<seg>MT : Où as-tu appris la LSF ? (Timer cam2 : 1h53'30)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T840" start="#T839" who="Thèmes Charlotte" xml:id="a50">
+<u>
+<seg>MT : À l'école tu signes ? il y a de la LSF ? (Timer cam2 : 1h54'40)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T841" start="#T840" who="Thèmes Charlotte" xml:id="a51">
+<u>
+<seg>MT : Ta maîtresse signe ? Tu as de personnes pour t'aider (interprètes, interfaces) ? (Timer cam2 : 1h58'30)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T251" start="#T250" who="Trad Mot LSF" xml:id="a487">
+<u>
+<seg>(Appel) Regarde là. T'as pas encore fini tout ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T842" start="#T841" who="Thèmes Charlotte" xml:id="a52">
+<u>
+<seg>MT : Il y a des personnes pour t'expliquer les contes ? les hitstoires ? (Timer cam2 : 2h06'55)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T843" start="#T842" who="Thèmes Charlotte" xml:id="a53">
+<u>
+<seg>MT : Quelle est ton histoire préférée ? (Timer cam2 : 2h09'35)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T844" start="#T843" who="Thèmes Charlotte" xml:id="a54">
+<u>
+<seg>MT : Quel est ton livre préféré à la maison ? (Timer cam2 : 2h15'05)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T253" start="#T252" who="Trad Mot LSF" xml:id="a488">
+<u>
+<seg>Papa t'appelle.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T652" start="#T651" who="Trad Charlotte LSF" xml:id="a384">
+<u>
+<seg>C'est quoi le point rouge ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T846" start="#T845" who="Thèmes Charlotte" xml:id="a55">
+<u>
+<seg>MT : Quel est ton film préféré ? (Timer cam2 : 2h17'40)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T847" start="#T846" who="Thèmes Charlotte" xml:id="a56">
+<u>
+<seg>MT : Ce sont les mêmes langues de signes ? (Timer cam2 : 2h21'20)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="Trad Mot LSF" xml:id="a262">
+<u>
+<seg>C'est facile. C'est quoi ? Oui, c'est facile.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T848" start="#T847" who="Thèmes Charlotte" xml:id="a57">
+<u>
+<seg>MT : Tu as joué au jeu des mimes, c'est dur ? (Timer cam2 : 2h24'50)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T255" start="#T254" who="Trad Mot LSF" xml:id="a311">
+<u>
+<seg>Papa... Papa t'appelle.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T849" start="#T848" who="Thèmes Charlotte" xml:id="a58">
+<u>
+<seg>MT : Tu sais cuisiner ? (Timer cam2 : 2h30'30)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T851" start="#T850" who="Séquences" xml:id="a2">
+<u>
+<seg>Arrivée - Présentation</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T852" start="#T851" who="Séquences" xml:id="a3">
+<u>
+<seg>Jeu des drapeaux sur la tablette (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T72" start="#T71" who="Trad Mot LSF" xml:id="a200">
+<u>
+<seg>Portugal</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T257" start="#T256" who="Trad Mot LSF" xml:id="a312">
+<u>
+<seg>Ils ont allumé les bougies.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T853" start="#T852" who="Séquences" xml:id="a4">
+<u>
+<seg>Installation des pieds de caméra par MT</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T259" start="#T258" who="Trad Mot LSF" xml:id="a217">
+<u>
+<seg>Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T259" start="#T258" who="Trad Fat LSF" xml:id="a225">
+<u>
+<seg>Oui !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T854" start="#T853" who="Séquences" xml:id="a5">
+<u>
+<seg>Jeu des drapeaux sur la tablette (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T855" start="#T854" who="Séquences" xml:id="a6">
+<u>
+<seg>Discussion entre MT et la mère (Charlotte est au bain)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T856" start="#T855" who="Séquences" xml:id="a7">
+<u>
+<seg>Préparation du thé pour la mère - découverte de la cuisine</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T857" start="#T856" who="Séquences" xml:id="a8">
+<u>
+<seg>Jeu des mimes</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T858" start="#T857" who="Séquences" xml:id="a9">
+<u>
+<seg>Télévision : la mère allume la télé pour Charlotte</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T261" start="#T260" who="Trad Mot LSF" xml:id="a313">
+<u>
+<seg>Et y a pas de cadeaux !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T263" start="#T262" who="Trad Mot LSF" xml:id="a489">
+<u>
+<seg>(Appel) Les cadeaux, les cadeaux.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T265" start="#T264" who="Trad Mot LSF" xml:id="a490">
+<u>
+<seg>T'as compris ? Ellle te donne des cadeaux.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T859" start="#T858" who="Séquences" xml:id="a10">
+<u>
+<seg>Préparation du repas (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T860" start="#T859" who="Séquences" xml:id="a28">
+<u>
+<seg>Appel vidéo de Marine et du père</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T861" start="#T860" who="Séquences" xml:id="a29">
+<u>
+<seg>Préparation du repas (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T862" start="#T861" who="Séquences" xml:id="a11">
+<u>
+<seg>Arrivée de Marine et son père</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T267" start="#T266" who="Trad Mot LSF" xml:id="a491">
+<u>
+<seg>Quoi ? Ici ? Je crois pas que ça soit de la lumière, je crois que c'est le micro.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T863" start="#T862" who="Séquences" xml:id="a12">
+<u>
+<seg>Préparation du repas (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T864" start="#T863" who="Séquences" xml:id="a13">
+<u>
+<seg>Discussion dans le salon</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T865" start="#T864" who="Séquences" xml:id="a14">
+<u>
+<seg>Repas</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T866" start="#T865" who="Séquences" xml:id="a15">
+<u>
+<seg>Marine : dinette (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T867" start="#T866" who="Séquences" xml:id="a30">
+<u>
+<seg>Marine : lecture</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T269" start="#T268" who="Trad Mot LSF" xml:id="a492">
+<u>
+<seg>Encore, merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T271" start="#T270" who="Trad Mot LSF" xml:id="a493">
+<u>
+<seg>(Appel) Miam, miam, je le mange. C'est bon !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T868" start="#T867" who="Séquences" xml:id="a31">
+<u>
+<seg>Marine : dinette (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T869" start="#T868" who="Séquences" xml:id="a16">
+<u>
+<seg>Visite appartement (pas de membre de la famille)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T870" start="#T869" who="Séquences" xml:id="a17">
+<u>
+<seg>Intéractions familiales : salon - couloir</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T273" start="#T272" who="Trad Mot LSF" xml:id="a494">
+<u>
+<seg>Là, là !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T275" start="#T274" who="Trad Mot LSF" xml:id="a495">
+<u>
+<seg>(Appel) Vas-y !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T871" start="#T870" who="Séquences" xml:id="a18">
+<u>
+<seg>Marine dans sa chambre : jeu</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T872" start="#T871" who="Séquences" xml:id="a19">
+<u>
+<seg>Famille dans le salon : discussion, jeu, cadeau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T873" start="#T872" who="Séquences" xml:id="a20">
+<u>
+<seg>Préparation du coucher de Marine</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T874" start="#T873" who="Séquences" xml:id="a21">
+<u>
+<seg>Discussion familiale - choix des livres</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T875" start="#T874" who="Séquences" xml:id="a22">
+<u>
+<seg>Discussion MT et le père</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1179" start="#T874" who="Thèmes Fat" xml:id="a138">
+<u>
+<seg>Explication du projet par l'observatrice</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="Trad Mot LSF" xml:id="a263">
+<u>
+<seg>Ça c'est le drapeau d'un pays où la vie est (?). Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T876" start="#T875" who="Séquences" xml:id="a23">
+<u>
+<seg>MT : entretien de Charlotte</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T876" start="#T875" who="Séquences autre cam" xml:id="a158">
+<u>
+<seg>Timer : 1h51'25 / MT : entretien de Charlotte (meilleur angle de la cam2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T277" start="#T276" who="Trad Mot LSF" xml:id="a549">
+<u>
+<seg>Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T877" start="#T876" who="Séquences" xml:id="a24">
+<u>
+<seg>MT : entretien des parents</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T880" start="#T879" who="Thèmes Marine" xml:id="a69">
+<u>
+<seg>Princesse</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T880" start="#T879" who="Thèmes Fat" xml:id="a133">
+<u>
+<seg>Princesse</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T279" start="#T278" who="Trad Mot LSF" xml:id="a550">
+<u>
+<seg>(1) (Appel) Mange ! (2) (Appel) Ça se passe ici. (3) (Appel) Ici !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T281" start="#T280" who="Trad Mot LSF" xml:id="a551">
+<u>
+<seg>Mange !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T283" start="#T282" who="Trad Mot LSF" xml:id="a552">
+<u>
+<seg>Non, non, avec la fourchette. (Appel) Tu veux de l'aide ? Tu veux que maman t'aide ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T44" start="#T43" who="Trad Mot LSF" xml:id="a269">
+<u>
+<seg>C'est moyen, 4 sur 10. Y a beaucoup de fautes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T181" start="#T180" who="Trad Mot LSF" xml:id="a400">
+<u>
+<seg>Où ? Non, non. C'est pour le son... Le flash, ah bon ! (? mère dos cam)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T183" start="#T182" who="Trad Mot LSF" xml:id="a401">
+<u>
+<seg>Reste assise !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T185" start="#T184" who="Trad Mot LSF" xml:id="a402">
+<u>
+<seg>(Appel) Les pâtes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T187" start="#T186" who="Trad Mot LSF" xml:id="a403">
+<u>
+<seg>(Appel) Tu veux de la tomate ? (Appel) Y a les caméras ! (Appel) Tu veux de la tomate. Non ! Du parmesan, tu veux aussi du parmesan ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T189" start="#T188" who="Trad Mot LSF" xml:id="a404">
+<u>
+<seg>C'est à moi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T191" start="#T190" who="Trad Mot LSF" xml:id="a405">
+<u>
+<seg>Non, pas celui-là, j'ai choisi celui-là. C'est de la moutarde, j'en veux pas. Non, celui-là, oui..</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T193" start="#T192" who="Trad Mot LSF" xml:id="a406">
+<u>
+<seg>Oh, là, là. C'est dur ! Ah, voilà.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T195" start="#T194" who="Trad Mot LSF" xml:id="a407">
+<u>
+<seg>Aujourd'hui... Je sais pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T46" start="#T45" who="Trad Mot LSF" xml:id="a270">
+<u>
+<seg>Y a des images là. Y a des images.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="Trad Mot LSF" xml:id="a264">
+<u>
+<seg>Bien.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T128" start="#T884" who="Montages" xml:id="a163">
+<u>
+<seg>Jeu de devinette : entre mime et signe</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T456" start="#T455" who="Trad Mot LSF" xml:id="a702">
+<u>
+<seg>Tu jettes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T887" start="#T886" who="Montages" xml:id="a326">
+<u>
+<seg>Entre frères et soeurs.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T197" start="#T196" who="Trad Mot LSF" xml:id="a444">
+<u>
+<seg>Non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T48" start="#T47" who="Trad Mot LSF" xml:id="a271">
+<u>
+<seg>(Appel) Tu suis les mots par rapport aux images qui sont proches. Ça veut dire (?).</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T50" start="#T49" who="Trad Mot LSF" xml:id="a272">
+<u>
+<seg>(Appel) Tu as oublié ? Dans les dictionnaires, y a une longue liste de mots, tous les réviser c'est pas possible !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="Trad Mot LSF" xml:id="a265">
+<u>
+<seg>Le Japon. C'est facile, oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T148" start="#T147" who="Trad Mot LSF" xml:id="a213">
+<u>
+<seg>Faire le ménage ? C'est tout ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1008" start="#T652" who="Trad Fat LSF" xml:id="a410">
+<u>
+<seg>Ça enregistre. C'est pour dire que ça enregistre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T654" start="#T653" who="Trad Charlotte LSF" xml:id="a385">
+<u>
+<seg>C'est drôle. C'est pourquoi ça et ça ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T458" start="#T457" who="Trad Mot LSF" xml:id="a314">
+<u>
+<seg>Là, c'est l'ours, et là, le ballon rouge.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T74" start="#T73" who="Trad Mot LSF" xml:id="a201">
+<u>
+<seg>Oui. La Belgique.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T460" start="#T459" who="Trad Mot LSF" xml:id="a218">
+<u>
+<seg>Y a des arbres partout, c'est une forêt. Là, y a un petit...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T467" start="#T459" who="Montages" xml:id="a166">
+<u>
+<seg>Lecture : Petit ours mal peigné et le ballon rouge</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T694" start="#T888" who="Montages" xml:id="a327">
+<u>
+<seg>Comment s'est passée ta journée ? Discussions familiales autour de la journée, de l'école.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1034" start="#T888" who="Trad Fat LSF" xml:id="a371">
+<u>
+<seg>Oui, mais à l'école, tu as travaillé quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T461" start="#T460" who="Trad Mot LSF" xml:id="a219">
+<u>
+<seg>Oui, qu'est-ce que c'est ? Un ballon rouge. Oui, l'ours le veut.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T461" start="#T460" who="Trad Marine LSF" xml:id="a187">
+<u>
+<seg>Ah ! Veut, veut.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T991" start="#T460" who="Montages 2" xml:id="a376">
+<u>
+<seg>Présentation + Medley Accueil</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T285" start="#T284" who="Trad Mot LSF" xml:id="a553">
+<u>
+<seg>(Appel) Arrête !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T259" start="#T889" who="Montages" xml:id="a165">
+<u>
+<seg>Présentation</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T463" start="#T462" who="Trad Mot LSF" xml:id="a220">
+<u>
+<seg>Le ballon vole. Regarde, il arrive. L'ours tape dans le ballon qui s'envole. Oh ! Il est où ? Le ballon rouge, il est où ? Il a disparu ! L'ours le cherche derrière l'arbre. Comment il va faire ? On va voir.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T656" start="#T655" who="Trad Charlotte LSF" xml:id="a386">
+<u>
+<seg>Les pâtes ? Les pâtes ont fini de cuire ? Les pâtes ont fini de cuire ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T891" start="#T890" who="Montages" xml:id="a328">
+<u>
+<seg>Cam2 F2  : Présentation - séquence jeu avec les lunettes</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T869" start="#T890" who="Séquences autre cam" xml:id="a155">
+<u>
+<seg>Timer : 1h18'00 / Charlotte et son père jouent dans la chambre de cette dernière</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T891" start="#T890" who="Montages 2" xml:id="a375">
+<u>
+<seg>Cam2 F2  : Medely Accueil - séquence jeu avec les lunettes</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T118" start="#T117" who="Trad Mot LSF" xml:id="a207">
+<u>
+<seg>(mime)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T893" start="#T892" who="Montages" xml:id="a167">
+<u>
+<seg>Présentation</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T465" start="#T464" who="Trad Mot LSF" xml:id="a221">
+<u>
+<seg>Ça c'est qui ? Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T467" start="#T466" who="Trad Mot LSF" xml:id="a222">
+<u>
+<seg>Y en a 1, 2, 3, 4 ! 4. 1, 2, 3, 4 !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T150" start="#T149" who="Trad Mot LSF" xml:id="a214">
+<u>
+<seg>Oui. C'est plus précis, c'est nettoyer les fenêtres, les biters avec du spray. C'est pas grave. La tienne...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T152" start="#T151" who="Trad Mot LSF" xml:id="a215">
+<u>
+<seg>(mime)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T658" start="#T657" who="Trad Charlotte LSF" xml:id="a387">
+<u>
+<seg>(Appel) Non, le beurre avant.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T895" start="#T894" who="Montages" xml:id="a329">
+<u>
+<seg>Echange en LSF</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T153" start="#T152" who="Trad Mot LSF" xml:id="a216">
+<u>
+<seg>Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T469" start="#T468" who="Trad Mot LSF" xml:id="a315">
+<u>
+<seg>L'ours, il leurs demande "il est où le ballon?"</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T471" start="#T470" who="Trad Mot LSF" xml:id="a316">
+<u>
+<seg>Tu as faim ? Tu veux manger ? Tu veux manger des crêpes ? T'aimes pas !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T897" start="#T896" who="Trad Marine LSF" xml:id="a256">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T165" start="#T898" who="Trad Marine LSF" xml:id="a345">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T287" start="#T286" who="Trad Mot LSF" xml:id="a554">
+<u>
+<seg>(Appel) Frotte tes mains.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T289" start="#T288" who="Trad Mot LSF" xml:id="a555">
+<u>
+<seg>T'es fatiguée ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T295" start="#T288" who="Thèmes Mot" xml:id="a501">
+<u>
+<seg>Jeu avec les bouchées (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T295" start="#T288" who="Thèmes Marine" xml:id="a499">
+<u>
+<seg>Jeu avec les bouchées (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T473" start="#T472" who="Trad Mot LSF" xml:id="a317">
+<u>
+<seg>Non, C'est pas ça. Marie-Thérèse est sourde, Stéphanie est sourde... euh, entendante !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T475" start="#T474" who="Trad Mot LSF" xml:id="a318">
+<u>
+<seg>Oui, mon cerveau il marche mal, il y a des problèmes de réglages.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T477" start="#T476" who="Trad Mot LSF" xml:id="a223">
+<u>
+<seg>Pourquoi je m'assieds ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T479" start="#T478" who="Trad Mot LSF" xml:id="a357">
+<u>
+<seg>(Appel) Il prend pas de photo.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T481" start="#T480" who="Trad Mot LSF" xml:id="a358">
+<u>
+<seg>Coucou, tu me vois ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T483" start="#T482" who="Trad Mot LSF" xml:id="a359">
+<u>
+<seg>(Appel) Aux deux !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T291" start="#T290" who="Trad Mot LSF" xml:id="a556">
+<u>
+<seg>Quoi ? En premier, quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T901" start="#T900" who="Trad Marine LSF" xml:id="a392">
+<u>
+<seg>Ça !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T903" start="#T902" who="Trad Marine LSF" xml:id="a393">
+<u>
+<seg>Moi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T944" start="#T291" who="Trad Marine LSF" xml:id="a535">
+<u>
+<seg>Le bateau.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T293" start="#T292" who="Trad Mot LSF" xml:id="a557">
+<u>
+<seg>Mince ! C'est tombé.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T485" start="#T484" who="Trad Mot LSF" xml:id="a360">
+<u>
+<seg>Allez, on va au lit !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T295" start="#T294" who="Trad Mot LSF" xml:id="a558">
+<u>
+<seg>Non, non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T487" start="#T486" who="Trad Mot LSF" xml:id="a361">
+<u>
+<seg>Ecoute...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="Trad Mot LSF" xml:id="a189">
+<u>
+<seg>Espagne</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T36" start="#T17" who="Montages" xml:id="a160">
+<u>
+<seg>A quoi joue-t-on ? Retrouver le drapeau du pays</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T297" start="#T296" who="Trad Mot LSF" xml:id="a559">
+<u>
+<seg>Mange, s'il te plait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T299" start="#T298" who="Trad Mot LSF" xml:id="a560">
+<u>
+<seg>Stop !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T905" start="#T904" who="Trad Marine LSF" xml:id="a394">
+<u>
+<seg>Je veux voir ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T301" start="#T300" who="Trad Mot LSF" xml:id="a561">
+<u>
+<seg>(Appel) Non. Mange !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T907" start="#T906" who="Trad Marine LSF" xml:id="a395">
+<u>
+<seg>Regarde.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T489" start="#T488" who="Trad Mot LSF" xml:id="a362">
+<u>
+<seg>Il marche pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T660" start="#T659" who="Trad Charlotte LSF" xml:id="a388">
+<u>
+<seg>(1)Y a pas. (2)Y en a pas. (3) J'en ai pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T662" start="#T661" who="Trad Charlotte LSF" xml:id="a331">
+<u>
+<seg>Non ! Faut pas manger ça !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T909" start="#T908" who="Trad Marine LSF" xml:id="a396">
+<u>
+<seg>(1) C'est dur ! C'est dur !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T664" start="#T663" who="Trad Charlotte LSF" xml:id="a332">
+<u>
+<seg>Tu as vu, y a les deux caméras qui nous filment !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T912" start="#T911" who="Trad Marine LSF" xml:id="a435">
+<u>
+<seg>S'il te plat, de ça, ça. S'il te plait de ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T155" start="#T154" who="Trad Mot LSF" xml:id="a309">
+<u>
+<seg>Encore (Appel) Encore 1 ou 2 après je vais cuisiner, parce qu'il sera l'heure de manger.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T303" start="#T302" who="Trad Mot LSF" xml:id="a562">
+<u>
+<seg>Une moto ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T533" start="#T302" who="Thèmes Mot" xml:id="a502">
+<u>
+<seg>Jeu avec les bouchées (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T533" start="#T302" who="Thèmes Marine" xml:id="a500">
+<u>
+<seg>Jeu avec les bouchées (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T914" start="#T913" who="Trad Marine LSF" xml:id="a436">
+<u>
+<seg>De ça, encore ! De ça, on verse.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T491" start="#T490" who="Trad Mot LSF" xml:id="a363">
+<u>
+<seg>(Appel) Ecoute, je te prends en photo, après tu vas te brosser les dents. D'accord ? Pipi ? Tu veux faire pipi ? Vas-y !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T305" start="#T304" who="Trad Mot LSF" xml:id="a563">
+<u>
+<seg>Encore ? Je l'ai allume... 1... (Appel) Attends ! 1, 2, 3 ! Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T916" start="#T915" who="Trad Marine LSF" xml:id="a437">
+<u>
+<seg>Là... (Appel) Ça cherche... trouvé... Cherche là. Tu l'a cherché là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T76" start="#T75" who="Trad Mot LSF" xml:id="a202">
+<u>
+<seg>Non, l'Allemagne les bande sont horizontale. Là, elles sont verticales, c'est différent. Là, tu vois c'est la Suède. Comme tout à l'heure : le jaune et bleu, c'est la Suède. Voilà, là c'est l'Allemagne. C'est différent si les bandes sont horizontales ou verticales. Tu as le temps, le temps. Ça c'est un pays d'Afrique.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T307" start="#T306" who="Trad Mot LSF" xml:id="a564">
+<u>
+<seg>H-U-R. Arthur. Peut-être ? Voilà.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T918" start="#T917" who="Trad Marine LSF" xml:id="a438">
+<u>
+<seg>Ça...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T920" start="#T919" who="Trad Marine LSF" xml:id="a439">
+<u>
+<seg>Ça...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T922" start="#T921" who="Trad Marine LSF" xml:id="a440">
+<u>
+<seg>Ça, (J)apon ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T493" start="#T492" who="Thèmes Mot" xml:id="a77">
+<u>
+<seg>Jeu des drapeaux sur la tablette (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T495" start="#T494" who="Thèmes Mot" xml:id="a78">
+<u>
+<seg>Déroulement de la soirée (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T924" start="#T923" who="Trad Marine LSF" xml:id="a441">
+<u>
+<seg>De ça... (Appel) De la menthe... De la menthe (Appel) Veux de la menthe, de l'eau.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T309" start="#T308" who="Trad Mot LSF" xml:id="a565">
+<u>
+<seg>Quoi ? De la tomate ? T-O-M-A-T-E.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T497" start="#T496" who="Thèmes Mot" xml:id="a79">
+<u>
+<seg>Le mot ROSE : fleur et couleur</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T497" start="#T496" who="Thèmes Charlotte" xml:id="a32">
+<u>
+<seg>Le mot ROSE : fleur et couleur</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T311" start="#T310" who="Trad Mot LSF" xml:id="a566">
+<u>
+<seg>C'est bon.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T517" start="#T1177" who="Thèmes Fat" xml:id="a123">
+<u>
+<seg>La piscine</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T926" start="#T925" who="Trad Marine LSF" xml:id="a442">
+<u>
+<seg>(Appel) S'il te plait de l'eau.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T825" start="#T1178" who="Thèmes Fat" xml:id="a131">
+<u>
+<seg>À l'école : après midi</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T120" start="#T119" who="Trad Mot LSF" xml:id="a208">
+<u>
+<seg>Oui, tu connais le nom ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T928" start="#T927" who="Trad Marine LSF" xml:id="a443">
+<u>
+<seg>Veux pas ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T930" start="#T929" who="Trad Marine LSF" xml:id="a257">
+<u>
+<seg>La bougie, là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T666" start="#T665" who="Trad Charlotte LSF" xml:id="a389">
+<u>
+<seg>Mince ! (Appel) Regarde.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T499" start="#T498" who="Thèmes Mot" xml:id="a80">
+<u>
+<seg>Repas du soir avec l'observatrice</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T932" start="#T931" who="Trad Marine LSF" xml:id="a185">
+<u>
+<seg>(Appel) Tu souffles les bougies à 3. 1, attends... 1, 2, 3, vas-y !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T668" start="#T667" who="Trad Charlotte LSF" xml:id="a390">
+<u>
+<seg>3... Qu'est-ce qui se passe... On est le 7 mars, le 7 mars !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T933" start="#T932" who="Trad Marine LSF" xml:id="a186">
+<u>
+<seg>Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T935" start="#T934" who="Trad Marine LSF" xml:id="a484">
+<u>
+<seg>On découpe... Une part... Une autre part pour toi...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T313" start="#T312" who="Trad Mot LSF" xml:id="a567">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T78" start="#T77" who="Trad Mot LSF" xml:id="a282">
+<u>
+<seg>L'Australie.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T501" start="#T500" who="Thèmes Mot" xml:id="a81">
+<u>
+<seg>Ce que ses filles aiment manger (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T670" start="#T669" who="Trad Charlotte LSF" xml:id="a391">
+<u>
+<seg>Aujourd'hui c'est le 7 mars. Avant demain, pourquoi là, y a le 8 mars, on est le 7 mars, pourquoi on a changé en avance le 8 mars ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T315" start="#T314" who="Trad Mot LSF" xml:id="a568">
+<u>
+<seg>(Appel) Assieds-toi, ou tu as fini de manger !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T20" start="#T19" who="Trad Mot LSF" xml:id="a190">
+<u>
+<seg>Ça c'est Israël. Non, Israël, comme ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T317" start="#T316" who="Trad Mot LSF" xml:id="a569">
+<u>
+<seg>(Appel) De l'eau ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T319" start="#T318" who="Trad Mot LSF" xml:id="a570">
+<u>
+<seg>Oui, c'est à toi. (Appel) c'est à toi. Pour les filles, c'est rose.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T938" start="#T937" who="Trad Marine LSF" xml:id="a486">
+<u>
+<seg>(Appel) Maman a soufflé. Regarde là, 1, 2, 3, vas-y !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T321" start="#T320" who="Trad Mot LSF" xml:id="a571">
+<u>
+<seg>Non, avale.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T503" start="#T502" who="Thèmes Mot" xml:id="a82">
+<u>
+<seg>Marine ne sait pas pour les caméras (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T323" start="#T322" who="Trad Mot LSF" xml:id="a572">
+<u>
+<seg>(Appel) T'es fatiguée !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T325" start="#T324" who="Trad Mot LSF" xml:id="a573">
+<u>
+<seg>C'est la troisième bêtise. La troisième fois que je fais des bêtises !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T505" start="#T504" who="Thèmes Mot" xml:id="a83">
+<u>
+<seg>Qui prépare à manger généralement ? (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T327" start="#T326" who="Trad Mot LSF" xml:id="a574">
+<u>
+<seg>(Appel) Arrête de manger, et pars. Si tu as fini de manger, tu arrêtes. Ou alors tu t'assieds.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T740" start="#T326" who="Trad Charlotte LSF" xml:id="a519">
+<u>
+<seg>Euh... Je crois... J'étais perdue, bloquée. Je réfléchie et pense à la bibliothèque, j'ouvre la porte et personne ! Je réflechie, et oui ! La récréation.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T940" start="#T939" who="Trad Marine LSF" xml:id="a532">
+<u>
+<seg>1, 2... Souffle ! Là, souffle !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T524" start="#T672" who="Trad Charlotte LSF" xml:id="a425">
+<u>
+<seg>(? cam2 : 44'03)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T507" start="#T506" who="Thèmes Mot" xml:id="a84">
+<u>
+<seg>Métiers des parents (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T329" start="#T328" who="Trad Mot LSF" xml:id="a575">
+<u>
+<seg>Assieds-toi bien !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T741" start="#T328" who="Trad Charlotte LSF" xml:id="a520">
+<u>
+<seg>Parce qu'il étais 3 heures, et ils jouent... Là, y avait un groupe, ils discutaient...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T942" start="#T941" who="Trad Marine LSF" xml:id="a533">
+<u>
+<seg>Là, souffle ! 1, 2, 3, vas-y. Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T674" start="#T673" who="Trad Charlotte LSF" xml:id="a426">
+<u>
+<seg>Bon appétit !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T290" start="#T943" who="Trad Marine LSF" xml:id="a534">
+<u>
+<seg>(Appel) Tu fais le bateau et l'avion ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T946" start="#T945" who="Trad Marine LSF" xml:id="a536">
+<u>
+<seg>L'avion.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T509" start="#T508" who="Thèmes Mot" xml:id="a85">
+<u>
+<seg>Charlotte oralise ? (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T676" start="#T675" who="Trad Charlotte LSF" xml:id="a427">
+<u>
+<seg>Non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T331" start="#T330" who="Trad Mot LSF" xml:id="a576">
+<u>
+<seg>Arrête.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T294" start="#T947" who="Trad Marine LSF" xml:id="a537">
+<u>
+<seg>Encore.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T949" start="#T948" who="Trad Marine LSF" xml:id="a538">
+<u>
+<seg>Ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T951" start="#T950" who="Trad Marine LSF" xml:id="a539">
+<u>
+<seg>S'il te plait, ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T511" start="#T510" who="Thèmes Mot" xml:id="a86">
+<u>
+<seg>Ils (les paretns) proposent tous aux filles pour qu'elles puissent choisir plus tard (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T22" start="#T21" who="Trad Mot LSF" xml:id="a191">
+<u>
+<seg>Maroc</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T678" start="#T677" who="Trad Charlotte LSF" xml:id="a428">
+<u>
+<seg>(Appel)  S'il te plait du jus de pame. Non, je suis bête ! S'il te plait du jus de poume... C'est pas vrai ! S'il te plait, du jus de pomme !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T953" start="#T952" who="Trad Marine LSF" xml:id="a540">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T513" start="#T512" who="Thèmes Mot" xml:id="a87">
+<u>
+<seg>L'âge des filles (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T333" start="#T332" who="Trad Mot LSF" xml:id="a577">
+<u>
+<seg>Attends papa n'a pas fini de manger, regarde.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T680" start="#T679" who="Trad Charlotte LSF" xml:id="a333">
+<u>
+<seg>J'ai bien mangé ce midi, et après c'était bien mais je sais plus sur quoi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T955" start="#T954" who="Trad Marine LSF" xml:id="a541">
+<u>
+<seg>(Appel)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T80" start="#T79" who="Trad Mot LSF" xml:id="a283">
+<u>
+<seg>(Appel) Tout à l'heure, y avait des question sur l'Australie, tu te rappelles. Non, tu t'es trompée.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T1" who="Trad Mot LSF" xml:id="a258">
+<u>
+<seg>Les drapeaux ? Là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T957" start="#T956" who="Trad Marine LSF" xml:id="a542">
+<u>
+<seg>S'il te plait (to)mate.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T335" start="#T334" who="Trad Mot LSF" xml:id="a578">
+<u>
+<seg>(Appel) Tu veux de ça ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T515" start="#T514" who="Thèmes Mot" xml:id="a88">
+<u>
+<seg>Son mémoire et ses études (avec l'observatrice)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T959" start="#T958" who="Trad Marine LSF" xml:id="a543">
+<u>
+<seg>Ça, s'il te plait, de la (to)mate.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T961" start="#T960" who="Trad Marine LSF" xml:id="a544">
+<u>
+<seg>(Appel) Ça, ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T682" start="#T681" who="Trad Charlotte LSF" xml:id="a334">
+<u>
+<seg>Attends.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T963" start="#T962" who="Trad Marine LSF" xml:id="a545">
+<u>
+<seg>Ça. (Appel) Ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T337" start="#T336" who="Trad Mot LSF" xml:id="a579">
+<u>
+<seg>(Appel) Non, bois comme ça. Aspire. Toi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T517" start="#T516" who="Thèmes Mot" xml:id="a89">
+<u>
+<seg>La piscine</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T878" start="#T516" who="Thèmes Marine" xml:id="a59">
+<u>
+<seg>La piscine</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T519" start="#T518" who="Thèmes Mot" xml:id="a90">
+<u>
+<seg>Présence des caméras</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T519" start="#T518" who="Thèmes Marine" xml:id="a60">
+<u>
+<seg>Présence des caméras</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T82" start="#T81" who="Trad Mot LSF" xml:id="a284">
+<u>
+<seg>C'est bon cette image, tu as compris ? Si tu connais pas tu changes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T339" start="#T338" who="Trad Mot LSF" xml:id="a580">
+<u>
+<seg>Attends, je vais nettoyer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T965" start="#T964" who="Trad Marine LSF" xml:id="a546">
+<u>
+<seg>Vais chercher, vais chercher.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T522" start="#T521" who="Thèmes Mot" xml:id="a92">
+<u>
+<seg>Pot de sauce</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T522" start="#T521" who="Thèmes Marine" xml:id="a62">
+<u>
+<seg>Pot de sauce</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T341" start="#T340" who="Trad Mot LSF" xml:id="a581">
+<u>
+<seg>Tu veux du fromage ? C'est qui là ? Une vache qui rit.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T967" start="#T966" who="Trad Marine LSF" xml:id="a547">
+<u>
+<seg>Nettoie, nettoie.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T524" start="#T523" who="Thèmes Mot" xml:id="a422">
+<u>
+<seg>Les pieds de caméra / Timer Cam1 : 43'50</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T671" start="#T523" who="Trad Charlotte LSF" xml:id="a424">
+<u>
+<seg>Ils sont différents les deux. Lui, il est comme ça, non, lui il est plus bas. Ils sont différents les deux.Lui il est bas, lui il est haut, comme ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T524" start="#T523" who="Thèmes Charlotte" xml:id="a421">
+<u>
+<seg>Les pieds de caméra / Timer Cam1 : 43'50</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T526" start="#T525" who="Thèmes Mot" xml:id="a93">
+<u>
+<seg>Du fromage</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T526" start="#T525" who="Thèmes Marine" xml:id="a63">
+<u>
+<seg>Du fromage</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T910" start="#T525" who="Trad Marine LSF" xml:id="a434">
+<u>
+<seg>(Appel) S'il te plait, de ça...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T526" start="#T525" who="Thèmes Fat" xml:id="a124">
+<u>
+<seg>Du fromage</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T684" start="#T683" who="Trad Charlotte LSF" xml:id="a335">
+<u>
+<seg>J'ai travaillé sur... Tu sais... 3, après je bois.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T969" start="#T968" who="Trad Marine LSF" xml:id="a548">
+<u>
+<seg>(Appel) Nages bien. Moi je nage pas, toi bien, tu nages bien.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T686" start="#T685" who="Trad Charlotte LSF" xml:id="a336">
+<u>
+<seg>Euh... par exemple, 3 + 2.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T24" start="#T23" who="Trad Mot LSF" xml:id="a192">
+<u>
+<seg>Ça, tu le sais ou tu le fais au hasard ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T529" start="#T528" who="Thèmes Mot" xml:id="a95">
+<u>
+<seg>Bougies du gâteau d'anniversaire (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T529" start="#T528" who="Thèmes Charlotte" xml:id="a37">
+<u>
+<seg>Bougies du gâteau d'anniversaire (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T529" start="#T528" who="Thèmes Marine" xml:id="a64">
+<u>
+<seg>Bougies du gâteau d'anniversaire (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T529" start="#T528" who="Thèmes Fat" xml:id="a128">
+<u>
+<seg>Bougies du gâteau d'anniversaire (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T823" start="#T529" who="Thèmes Charlotte" xml:id="a38">
+<u>
+<seg>Une part du gâteau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T823" start="#T529" who="Thèmes Marine" xml:id="a65">
+<u>
+<seg>Une part du gâteau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T688" start="#T687" who="Trad Charlotte LSF" xml:id="a337">
+<u>
+<seg>Attends, non. Il fallait essayer de calculer des sommes. Ça veut dire par exemple 6 + 6, 4 + 4... 2 + 2, les sommes des deux mêmes chiffres.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T531" start="#T530" who="Thèmes Mot" xml:id="a96">
+<u>
+<seg>Bougies  et part du gâteau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T531" start="#T530" who="Thèmes Marine" xml:id="a66">
+<u>
+<seg>Bougies  et part du gâteau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T936" start="#T530" who="Trad Marine LSF" xml:id="a485">
+<u>
+<seg>(Appel) Là, souffle. 1, 2, 3, vas-y ! Bravo !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1066" start="#T531" who="Trad Fat LSF" xml:id="a497">
+<u>
+<seg>(Appel) Je me suis dit que cet après midi, elle a mangé du gâteau au chocolat, mais ce matin aussi, c'était au chocolat.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T343" start="#T342" who="Trad Mot LSF" xml:id="a582">
+<u>
+<seg>(Appel) Dans l'eau, tu plonges et tu nages comme un poisson ? Non ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T278" start="#T532" who="Thèmes Mot" xml:id="a97">
+<u>
+<seg>Bougies du gâteau d'anniversaire (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T278" start="#T532" who="Thèmes Marine" xml:id="a67">
+<u>
+<seg>Bougies du gâteau d'anniversaire (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T278" start="#T532" who="Thèmes Fat" xml:id="a129">
+<u>
+<seg>Bougies du gâteau d'anniversaire (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T972" start="#T971" who="Trad Marine LSF" xml:id="a654">
+<u>
+<seg>Beurre, s'il te pliat du beurre. Beurre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T84" start="#T83" who="Trad Mot LSF" xml:id="a285">
+<u>
+<seg>Je peux pas te poser des questions.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T349" start="#T534" who="Thèmes Mot" xml:id="a98">
+<u>
+<seg>Natation</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T349" start="#T534" who="Thèmes Marine" xml:id="a68">
+<u>
+<seg>Natation</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T690" start="#T689" who="Trad Charlotte LSF" xml:id="a338">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T974" start="#T973" who="Trad Marine LSF" xml:id="a655">
+<u>
+<seg>(Appel) Toi non, moi. Moi. Toutes les trois, toi, moi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T345" start="#T344" who="Trad Mot LSF" xml:id="a583">
+<u>
+<seg>(Appel)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T449" start="#T975" who="Trad Marine LSF" xml:id="a656">
+<u>
+<seg>Elle.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T977" start="#T976" who="Trad Marine LSF" xml:id="a188">
+<u>
+<seg>Lap... Lapin.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T646" start="#T155" who="Trad Charlotte LSF" xml:id="a251">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T979" start="#T978" who="Trad Marine LSF" xml:id="a347">
+<u>
+<seg>Photo, s'il te plait. Photo, ici.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T895" start="#T980" who="Trad Marine LSF" xml:id="a348">
+<u>
+<seg>Pipi... Fais la photo.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T157" start="#T156" who="Trad Mot LSF" xml:id="a310">
+<u>
+<seg>De la viande avec des choux... non du brocolis, et du riz ou des pates, tu veux quoi ? Tu veux des pâtes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T982" start="#T981" who="Trad Obs Stéphanie" xml:id="a478">
+<u>
+<seg>Bon appétit.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T122" start="#T121" who="Trad Mot LSF" xml:id="a209">
+<u>
+<seg>C'est comme... C'est comme...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T692" start="#T691" who="Trad Charlotte LSF" xml:id="a339">
+<u>
+<seg>10.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T984" start="#T983" who="Trad Obs Stéphanie" xml:id="a626">
+<u>
+<seg>C'est fini ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T538" start="#T537" who="Thèmes Mot" xml:id="a100">
+<u>
+<seg>Réglage de cerveau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T538" start="#T537" who="Thèmes Charlotte" xml:id="a42">
+<u>
+<seg>Réglage de cerveau</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T694" start="#T693" who="Trad Charlotte LSF" xml:id="a340">
+<u>
+<seg>Si c'est ça !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T540" start="#T539" who="Thèmes Mot" xml:id="a101">
+<u>
+<seg>Des crêpes</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T540" start="#T539" who="Thèmes Marine" xml:id="a70">
+<u>
+<seg>Des crêpes</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T986" start="#T985" who="Trad Obs Stéphanie" xml:id="a731">
+<u>
+<seg>Pardon.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T861" start="#T987" who="Séquences autre cam" xml:id="a154">
+<u>
+<seg>Timer : 16'20 / Charlotte regarde une série télévisée : Switched at birth</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T989" start="#T988" who="Séquences autre cam" xml:id="a156">
+<u>
+<seg>Timer : 1h31'35 / Charlotte et son père jouent au jeu des drapeaux sur la tablette</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T86" start="#T85" who="Trad Mot LSF" xml:id="a286">
+<u>
+<seg>C'est bronzer à la plage.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T347" start="#T346" who="Trad Mot LSF" xml:id="a584">
+<u>
+<seg>Ça y est, tu as été examiné par le médecin de l'école ? Non... Y a pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T993" start="#T992" who="Trad Fat LSF" xml:id="a364">
+<u>
+<seg>Coucou. Bonjour.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T995" start="#T994" who="Trad Fat LSF" xml:id="a365">
+<u>
+<seg>Ça va ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T697" start="#T696" who="Trad Charlotte LSF" xml:id="a430">
+<u>
+<seg>La seconde moitié je la laisse, je vais pas finir.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T997" start="#T996" who="Trad Fat LSF" xml:id="a366">
+<u>
+<seg>Ça va ? Ça a été chez l'orthophoniste ? Tu as été sage ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T699" start="#T698" who="Trad Charlotte LSF" xml:id="a378">
+<u>
+<seg>Oui, le brésil. Le brésil.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T701" start="#T700" who="Trad Charlotte LSF" xml:id="a431">
+<u>
+<seg>Du beurre. Du beurre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T702" start="#T700" who="Commentaires" xml:id="a479">
+<u>
+<seg>Anaïs : Jeu de signe avec le signe "beurre"</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T999" start="#T998" who="Trad Fat LSF" xml:id="a367">
+<u>
+<seg>Tu as travaillé quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T349" start="#T348" who="Trad Mot LSF" xml:id="a585">
+<u>
+<seg>Tu nages bien. Non ? Toi, tu nages pas ? Moi, non, toi, tu nages. Moi je nage un petit peu, toi, tu nages avec papa, tous les deux.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T704" start="#T703" who="Trad Charlotte LSF" xml:id="a433">
+<u>
+<seg>J'en ai envie.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T542" start="#T541" who="Thèmes Mot" xml:id="a102">
+<u>
+<seg>Je te sers quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T542" start="#T541" who="Thèmes Charlotte" xml:id="a43">
+<u>
+<seg>Je te sers quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T542" start="#T541" who="Thèmes Marine" xml:id="a71">
+<u>
+<seg>Je te sers quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T542" start="#T541" who="Thèmes Fat" xml:id="a134">
+<u>
+<seg>Je te sers quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T159" start="#T158" who="Trad Mot LSF" xml:id="a349">
+<u>
+<seg>Coucou, ça va ? Tu arrives bientôt ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T161" start="#T158" who="Montages" xml:id="a324">
+<u>
+<seg>Echange en LSF</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1001" start="#T1000" who="Trad Fat LSF" xml:id="a368">
+<u>
+<seg>Elle nage bien. Elle poussait tout le monde, comme si elle était seule, pour plonger, encore et encore. Elle s'est bien amusée !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1003" start="#T1002" who="Trad Fat LSF" xml:id="a369">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T351" start="#T350" who="Trad Mot LSF" xml:id="a586">
+<u>
+<seg>Voilà.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1005" start="#T1004" who="Trad Fat LSF" xml:id="a408">
+<u>
+<seg>Le porc, c'est blanc. Tu passes son assiette.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T161" start="#T160" who="Trad Mot LSF" xml:id="a350">
+<u>
+<seg>Je prépare, je fais cuire la viande. D'accord, à tout à l'heure. Oui, y a les caméras. Tu veux que je te montre ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T353" start="#T352" who="Trad Mot LSF" xml:id="a587">
+<u>
+<seg>Elle a faim !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T544" start="#T543" who="Thèmes Mot" xml:id="a103">
+<u>
+<seg>Une cuillère ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T544" start="#T543" who="Thèmes Marine" xml:id="a72">
+<u>
+<seg>Une cuillère ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T706" start="#T705" who="Trad Charlotte LSF" xml:id="a480">
+<u>
+<seg>Non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1007" start="#T1006" who="Trad Fat LSF" xml:id="a409">
+<u>
+<seg>(Appel) Une moitié, ou deux ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T355" start="#T354" who="Trad Mot LSF" xml:id="a588">
+<u>
+<seg>Attention aux caméras. C'est fini.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T546" start="#T545" who="Thèmes Mot" xml:id="a104">
+<u>
+<seg>C'est l'heure d'aller au lit</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T546" start="#T545" who="Thèmes Marine" xml:id="a73">
+<u>
+<seg>C'est l'heure d'aller au lit</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T708" start="#T707" who="Trad Charlotte LSF" xml:id="a481">
+<u>
+<seg>Des pâtes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T262" start="#T709" who="Trad Charlotte LSF" xml:id="a482">
+<u>
+<seg>(Début ?) (Appel) S'il te plait, tu peux découper le morceau.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T548" start="#T547" who="Thèmes Mot" xml:id="a105">
+<u>
+<seg>Se brosser les dents (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T548" start="#T547" who="Thèmes Marine" xml:id="a74">
+<u>
+<seg>Se brosser les dents (1)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T357" start="#T356" who="Trad Mot LSF" xml:id="a589">
+<u>
+<seg>Tu veux un yaourt au chocolat ? Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T550" start="#T549" who="Thèmes Mot" xml:id="a106">
+<u>
+<seg>Se brosser les dents (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T550" start="#T549" who="Thèmes Marine" xml:id="a75">
+<u>
+<seg>Se brosser les dents (2)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T552" start="#T551" who="Thèmes Mot" xml:id="a107">
+<u>
+<seg>Appareil photo</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T881" start="#T551" who="Thèmes Marine" xml:id="a76">
+<u>
+<seg>Appareil photo</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T711" start="#T710" who="Trad Charlotte LSF" xml:id="a483">
+<u>
+<seg>Pourquoi je vois la lumière, c'est bizarre. Je savais pas qu'il y avait de la lumière. La lumière là, vers là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T713" start="#T712" who="Trad Charlotte LSF" xml:id="a503">
+<u>
+<seg>Après... Euh... Après, attends... Alors, moi... Je sais plus... Ah oui ! Euh... On a travaillé, c'est-à-dire, ça fait combien 1, 2, 3... J'ai besoin de combien... Par exemple, je regarde là, et j'ai besoin de combien pour payer ? 8... Je te demande 8€, je te donne un billet, et je l'achète. Voilà.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T359" start="#T358" who="Trad Mot LSF" xml:id="a590">
+<u>
+<seg>Non, elle est partie, mais on a pas fini. Elle est aux toilettes. Je savais pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T180" start="#T1009" who="Trad Fat LSF" xml:id="a411">
+<u>
+<seg>Oui, le soir, ça fait de la lumière.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T554" start="#T553" who="Thèmes Mot" xml:id="a108">
+<u>
+<seg>MT : Comment se déroule le quotidien ? (Timer cam2 : 2h35'09)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T990" start="#T553" who="Séquences autre cam" xml:id="a159">
+<u>
+<seg>Timer : 2h35'09 / MT : entretien des parents</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T554" start="#T553" who="Thèmes Fat" xml:id="a140">
+<u>
+<seg>MT : Comment se déroule le quotidien ? (Timer cam2 : 2h35'09)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T555" start="#T554" who="Thèmes Mot" xml:id="a109">
+<u>
+<seg>MT : L'éducation des enfants (Timer cam2 : 2h42'35)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T555" start="#T554" who="Thèmes Fat" xml:id="a141">
+<u>
+<seg>MT : L'éducation des enfants (Timer cam2 : 2h42'35)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T361" start="#T360" who="Trad Mot LSF" xml:id="a591">
+<u>
+<seg>C'est drôle, elles pensaient qu'on avait fini, C'est pour ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T363" start="#T362" who="Trad Mot LSF" xml:id="a592">
+<u>
+<seg>(Appel) Assieds-toi, s'il te plait !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1011" start="#T1010" who="Trad Fat LSF" xml:id="a412">
+<u>
+<seg>Le flash.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T715" start="#T714" who="Trad Charlotte LSF" xml:id="a504">
+<u>
+<seg>À midi... À midi, c'était la pause après... je mange... J'ai travaillé avec (?), puis...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1071" start="#T714" who="Trad Fat LSF" xml:id="a596">
+<u>
+<seg>C'est facile.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T365" start="#T364" who="Trad Mot LSF" xml:id="a593">
+<u>
+<seg>Elle fait n'importe quoi ! Elle est fatiguée !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T124" start="#T123" who="Trad Mot LSF" xml:id="a210">
+<u>
+<seg>Regarde le mot.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T557" start="#T556" who="Thèmes Mot" xml:id="a110">
+<u>
+<seg>MT : Vos familes sont sourdes ou entendantes ? (Timer cam2 : 2h43'10)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1180" start="#T556" who="Thèmes Fat" xml:id="a142">
+<u>
+<seg>MT : Vos familes sont sourdes ou entendantes ? (Timer cam2 : 2h43'10)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1013" start="#T1012" who="Trad Fat LSF" xml:id="a413">
+<u>
+<seg>Le flash, c'est pour la nuit. C'est ça ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T559" start="#T558" who="Thèmes Mot" xml:id="a111">
+<u>
+<seg>MT : Votre vécu comment vous le transmettait à vos enfants ? (Timer cam2 : 2h46'45)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T560" start="#T559" who="Thèmes Fat" xml:id="a144">
+<u>
+<seg>MT : Vos frères et soeurs connaissent la LSF ? (Timer cam2 : 2h48'05)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1015" start="#T1014" who="Trad Fat LSF" xml:id="a414">
+<u>
+<seg>(1)Ma Mère et mon Père, je les ai vu enregistrés, mais ça c'est un autre modèle. (2)Ma mère et mon père enregistraient avec un autre, celui là est supérieur. (3)Ma mère et mon père, je les ai vu enregistré, mais là, c'est un modèle supérieur.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T561" start="#T560" who="Thèmes Mot" xml:id="a112">
+<u>
+<seg>MT : Quel moyen d'échange choisissez-vous avec les personnes ? (Timer cam2 : 2h49'25)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T561" start="#T560" who="Thèmes Fat" xml:id="a145">
+<u>
+<seg>MT : Quel moyen d'échange choisissez-vous avec les personnes ? (Timer cam2 : 2h49'25)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T367" start="#T366" who="Trad Mot LSF" xml:id="a657">
+<u>
+<seg>T'as raison, elle est épuisée.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T717" start="#T716" who="Trad Charlotte LSF" xml:id="a505">
+<u>
+<seg>Je sais ! On a travaillé... Y avait des boîtes avec plein de petites histoires, où il faut réflechir sur combien... Combien ajouter... On réfléchit pour trouver précisément. Moi, j'ai trouvé !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T903" start="#T1016" who="Trad Fat LSF" xml:id="a415">
+<u>
+<seg>Tu veux tomber !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1018" start="#T1017" who="Trad Fat LSF" xml:id="a416">
+<u>
+<seg>Je la pose ici.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T718" start="#T717" who="Trad Charlotte LSF" xml:id="a506">
+<u>
+<seg>C'est-à-dire, j'a trouvé... Trouvé... J'ai oublié. Ah oui... La maîtresse a dit quoi ? Là, y a une femme, Zoé. Elle va à la bibliothèque, une grande bibliothèqye ! Avec 100 livres, 100...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T369" start="#T368" who="Trad Mot LSF" xml:id="a658">
+<u>
+<seg>S'il te plait, avec la caméra je peux pas passer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1020" start="#T1019" who="Trad Fat LSF" xml:id="a417">
+<u>
+<seg>(Appel) Des pâtes ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T371" start="#T370" who="Trad Mot LSF" xml:id="a659">
+<u>
+<seg>Oh, là, là ! T'as du chocolat !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T373" start="#T372" who="Trad Mot LSF" xml:id="a660">
+<u>
+<seg>Super.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T563" start="#T562" who="Thèmes Mot" xml:id="a113">
+<u>
+<seg>MT : Vos parents parlent ou signent avec les petites ? (Timer cam2 : 2h55'00)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T563" start="#T562" who="Thèmes Fat" xml:id="a146">
+<u>
+<seg>MT : Vos parents parlent ou signent avec les petites ? (Timer cam2 : 2h55'00)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1022" start="#T1021" who="Trad Fat LSF" xml:id="a418">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T564" start="#T563" who="Thèmes Mot" xml:id="a114">
+<u>
+<seg>MT : Vous êtes appareillés ? Vous l'avez choisi ? (Timer cam2 : 2h56'12)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T564" start="#T563" who="Thèmes Fat" xml:id="a147">
+<u>
+<seg>MT : Vous êtes appareillés ? Vous l'avez choisi ? (Timer cam2 : 2h56'12)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T566" start="#T565" who="Thèmes Mot" xml:id="a115">
+<u>
+<seg>MT : Qu'en est-il des interprêtes ou autres ? (Timer cam2 : 2h59'40)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T566" start="#T565" who="Thèmes Fat" xml:id="a148">
+<u>
+<seg>MT : Qu'en est-il des interprêtes ou autres ? (Timer cam2 : 2h59'40)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T904" start="#T1023" who="Trad Fat LSF" xml:id="a419">
+<u>
+<seg>(Appel) Fais attention !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1025" start="#T1024" who="Trad Fat LSF" xml:id="a420">
+<u>
+<seg>Elle l'ignorait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T567" start="#T566" who="Thèmes Mot" xml:id="a116">
+<u>
+<seg>MT : Vos parents ont donc appris la LSF ? (Timer cam2 : 3h02'10)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T567" start="#T566" who="Thèmes Fat" xml:id="a149">
+<u>
+<seg>MT : Vos parents ont donc appris la LSF ? (Timer cam2 : 3h02'10)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T375" start="#T374" who="Trad Mot LSF" xml:id="a661">
+<u>
+<seg>Tu as une cuillère, là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1027" start="#T1026" who="Trad Fat LSF" xml:id="a468">
+<u>
+<seg>Bon appétit !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T568" start="#T567" who="Thèmes Mot" xml:id="a117">
+<u>
+<seg>MT : Vous exprimez comment ? à travers quoi ? (Timer cam2 : 3h04'25)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T568" start="#T567" who="Thèmes Fat" xml:id="a150">
+<u>
+<seg>MT : Vous exprimez comment ? à travers quoi ? (Timer cam2 : 3h04'25)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T377" start="#T376" who="Trad Mot LSF" xml:id="a662">
+<u>
+<seg>Je croyais que vous aviez fini.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1131" start="#T377" who="Trad Fat LSF" xml:id="a706">
+<u>
+<seg>Pas encore.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T305" start="#T719" who="Trad Charlotte LSF" xml:id="a507">
+<u>
+<seg>100 livres. Ç veut dire qu'elle va à la bibliothèque marche... Elle voit et prend 2 livres. Ça veut dire -2, il reste combien... Je réfléchis, et trouve...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T379" start="#T378" who="Trad Mot LSF" xml:id="a663">
+<u>
+<seg>Vous finissez ça ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T570" start="#T569" who="Thèmes Mot" xml:id="a118">
+<u>
+<seg>MT : Vous avez joué au jeu de mimes, il y un but éducatif ? (Timer cam2 : 3h09'42)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T571" start="#T570" who="Thèmes Mot" xml:id="a119">
+<u>
+<seg>MT : Vous allez à des rencontres LSF ? Vous faîtes du sport ? (Timer cam2 : 3h11'15)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T571" start="#T570" who="Thèmes Fat" xml:id="a151">
+<u>
+<seg>MT : Vous allez à des rencontres LSF ? Vous faîtes du sport ? (Timer cam2 : 3h11'15)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T381" start="#T380" who="Trad Mot LSF" xml:id="a664">
+<u>
+<seg>Quoi ? Normandie.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T572" start="#T571" who="Thèmes Mot" xml:id="a120">
+<u>
+<seg>MT : Vous avez l'habitude de filmer vos filles ? (Timer cam2 : 3h15'00)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T572" start="#T571" who="Thèmes Fat" xml:id="a152">
+<u>
+<seg>MT : Vous avez l'habitude de filmer vos filles ? (Timer cam2 : 3h15'00)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T383" start="#T382" who="Trad Mot LSF" xml:id="a665">
+<u>
+<seg>Un taxis. C'est une voiture qui roule et que tu appelles comme ça, tu montes dedans, et tu pars.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T307" start="#T720" who="Trad Charlotte LSF" xml:id="a508">
+<u>
+<seg>9... 98 ! Après, c'est pareil... Un garçon, Artne, je crois. H-U-R, tu connais ? Oui, c'est vrai !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1030" start="#T1029" who="Trad Fat LSF" xml:id="a470">
+<u>
+<seg>T'as besoin d'aide ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T385" start="#T384" who="Trad Mot LSF" xml:id="a666">
+<u>
+<seg>Normandie. La région de Normandie.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T722" start="#T721" who="Trad Charlotte LSF" xml:id="a509">
+<u>
+<seg>Après, oui... Lui, il a 1000 livres, le chien en prend. Ça fait -3, je réfléchis... 1000...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T573" start="#T572" who="Thèmes Mot" xml:id="a121">
+<u>
+<seg>MT : Les filles mangent de tout ? Les filles cuisinent ? (Timer cam2 : 3h419'45)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T573" start="#T572" who="Thèmes Fat" xml:id="a153">
+<u>
+<seg>MT : Les filles mangent de tout ? Les filles cuisinent ? (Timer cam2 : 3h419'45)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1032" start="#T1031" who="Trad Fat LSF" xml:id="a471">
+<u>
+<seg>Ketchup ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T387" start="#T386" who="Trad Mot LSF" xml:id="a667">
+<u>
+<seg>Oui. Tout à l'heure, avant que les deux personnes n'arrivent, une collègue m'a envoyé un lien "livre LAROUSSE", c'est un jeu, mais c'est cher, 5€, mais en ce moment c'est gratuit, voilà.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T535" start="#T386" who="Thèmes Mot" xml:id="a628">
+<u>
+<seg>Les drapeaux</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T827" start="#T386" who="Thèmes Fat" xml:id="a630">
+<u>
+<seg>Les drapeaux</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T389" start="#T388" who="Trad Mot LSF" xml:id="a668">
+<u>
+<seg>J'ai pensé on peut le télécharger quand même comme c'est gratuit. Biensur dedans, y a tous les mots, mais y a aussi pas mal de jeu, dont un le thème sont les drapeaux, au début c'est facile, euh, non... Je mélange...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T575" start="#T574" who="Trad Charlotte LSF" xml:id="a226">
+<u>
+<seg>Facile !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1036" start="#T1035" who="Trad Fat LSF" xml:id="a372">
+<u>
+<seg>Oui. Et 5 + 5, ça fait combien ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1038" start="#T1037" who="Trad Fat LSF" xml:id="a373">
+<u>
+<seg>Et 5 + 5, ça fait combien ? 10 ! Non, tu t'es trompée.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T724" start="#T723" who="Trad Charlotte LSF" xml:id="a510">
+<u>
+<seg>Non... Non... Y a 1000 livres, le chien prend pour lire 3 livres, il lit. Moi, je réfléchis... 3, ça veut dire... Je réfléchis, non, -2, ça veut dire 1000... Euh, là... 990... 980... 980... 900.. Euh, 907.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T577" start="#T576" who="Trad Charlotte LSF" xml:id="a227">
+<u>
+<seg>(?)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T391" start="#T390" who="Trad Mot LSF" xml:id="a669">
+<u>
+<seg>Au début c'est difficile, on commence au début, y a beaucoup de pays dont on connait le drapeau, y en a pas mal qu'on sait. Après c'est au hasard, on met, on met... Aussi faut être malin, par exemple, lui je connais pas, mais lui je connais, lui je connais, et ça correspond pas, donc c'est le celui-là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T579" start="#T578" who="Trad Charlotte LSF" xml:id="a168">
+<u>
+<seg>Facile !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T392" start="#T391" who="Trad Mot LSF" xml:id="a670">
+<u>
+<seg>On a été coupée quand elles ont sonné, on avait pas fini. Elles arrivent en nous filmant, j'ouvre la porte et j'ai été surprise elles filmaient déjà. Je pensais après, mais non, elles me disent tout de suite. Bon d'accord, elles m'expliquent, y a pas de problème..</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T771" start="#T391" who="Trad Charlotte LSF" xml:id="a636">
+<u>
+<seg>Pourquoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1040" start="#T1039" who="Trad Fat LSF" xml:id="a472">
+<u>
+<seg>(Appel) Tu veux que je t'aide ? Je te laisse.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T394" start="#T393" who="Trad Mot LSF" xml:id="a671">
+<u>
+<seg>Euh... Elles m'expliquent qu'elles nous laissent faire comme d'habitude, donc je leur dis qu'on est sur la tablette. C'est à mon tour, et je vois que c'est difficile même pour moi, parce que par exemple...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1042" start="#T1041" who="Trad Fat LSF" xml:id="a473">
+<u>
+<seg>(Appel) Tu veux ça ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T581" start="#T580" who="Trad Charlotte LSF" xml:id="a169">
+<u>
+<seg>Je sais pas, c'est au hasard.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1044" start="#T1043" who="Trad Fat LSF" xml:id="a474">
+<u>
+<seg>Je te l'ai dit que ça se passait bien, c'est pour ça que je t'ai prévenu quand tu vas la chercher... (?)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T396" start="#T395" who="Trad Mot LSF" xml:id="a672">
+<u>
+<seg>Non ! Je croyais que c'était ça, mais non. C'est sur des drapeaux qui sont vraiment proches ! Par exemple, la France et les Pays... Voilà ! Les Pays-Bas et la France, y en a un avec les bandes horizontales, et l'autres verticales, et faut choisir. Aussi un autre...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T583" start="#T582" who="Trad Charlotte LSF" xml:id="a170">
+<u>
+<seg>Facile, on signe la croix du drapeau.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T398" start="#T397" who="Trad Mot LSF" xml:id="a673">
+<u>
+<seg>Euh... Par exemple, elle a dit directement ça, mais non. Y avait 3 drapeaux, la Belgique, le second j'ai oublié, et le troisième aussi, mais elle le connaissait. Euh, non... Lui, elle le connait, celui du milieu elle le connait pas, et le premier elle le connait pas. On lui demande celui de la Belgique, directement elle va sur celui du milieu. Je lui demande pourquoi ? Bah, le premier c'est l'Allemagne. Je lui dis : Ah non, les bandes de l'Allemagne sont verticales ! Et celles de la Belgique horizontales.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1046" start="#T1045" who="Trad Fat LSF" xml:id="a383">
+<u>
+<seg>(Appel) Le brésil !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T585" start="#T584" who="Trad Charlotte LSF" xml:id="a228">
+<u>
+<seg>C'est difficile pour moi !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T587" start="#T586" who="Trad Charlotte LSF" xml:id="a229">
+<u>
+<seg>C'est comment ? Je vais voir, je suis curieuse.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T400" start="#T399" who="Trad Mot LSF" xml:id="a674">
+<u>
+<seg>C'est ce que je dis.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T589" start="#T588" who="Trad Charlotte LSF" xml:id="a230">
+<u>
+<seg>Ce sont des écouteurs ! C'est bête.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T726" start="#T725" who="Trad Charlotte LSF" xml:id="a511">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T163" start="#T162" who="Trad Mot LSF" xml:id="a351">
+<u>
+<seg>(Appel) Profite... (Appel) Papa ? Profites-en pour expliquer à Marine les caméras. Profite pour lui expliquer un peu. Ah, c'est fait, tu lui as expliqué ! Bon, Papa a fini de lui expliquer, c'est bon. Quoi ? Non... Ok, à tout à l'heure. Ok.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1048" start="#T1047" who="Trad Fat LSF" xml:id="a475">
+<u>
+<seg>Elle veut de la menthe.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T591" start="#T590" who="Trad Charlotte LSF" xml:id="a231">
+<u>
+<seg>C'est (?), j'adore moi !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T88" start="#T87" who="Trad Mot LSF" xml:id="a287">
+<u>
+<seg>Pour toi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1050" start="#T1049" who="Trad Fat LSF" xml:id="a476">
+<u>
+<seg>(Appel) T'as une idée de déguisement. Le Brésil ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T593" start="#T592" who="Trad Charlotte LSF" xml:id="a232">
+<u>
+<seg>Ça me gêne qu'on me filme..</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1052" start="#T1051" who="Trad Fat LSF" xml:id="a477">
+<u>
+<seg>Non, non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T252" start="#T1053" who="Trad Fat LSF" xml:id="a496">
+<u>
+<seg>Appelle Marine.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1055" start="#T1054" who="Trad Fat LSF" xml:id="a319">
+<u>
+<seg>Pardon.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1181" start="#T1180" who="Thèmes Fat" xml:id="a143">
+<u>
+<seg>MT : Votre vécu et l'éducation de vos enfants ? (Timer cam2 : 2h45'35)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T63" start="#T594" who="Trad Charlotte LSF" xml:id="a233">
+<u>
+<seg>Ah, je suis sourde moi !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1057" start="#T1056" who="Trad Fat LSF" xml:id="a320">
+<u>
+<seg>Ce matin tu as fait l'anniversaire, tu as mangé du gâteau. Tu te rappelles ce matin ? Et l'après-midi tu as fait quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1059" start="#T1058" who="Trad Fat LSF" xml:id="a321">
+<u>
+<seg>Tu as encore oublié de signer "Joyeux Anniversaire" mais tu as mangé du gâteau !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1061" start="#T1060" who="Trad Fat LSF" xml:id="a224">
+<u>
+<seg>Souffle, oui !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1063" start="#T1062" who="Trad Fat LSF" xml:id="a322">
+<u>
+<seg>Ce matin ils ont mangé la moitié du gâteau, puis à midi, et encore l'après-midi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T596" start="#T595" who="Trad Charlotte LSF" xml:id="a234">
+<u>
+<seg>J'adore. C'est facile.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1065" start="#T1064" who="Trad Fat LSF" xml:id="a323">
+<u>
+<seg>Ils leurs font pas signer "Joyeaux Anniversaire" !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T599" start="#T598" who="Trad Charlotte LSF" xml:id="a171">
+<u>
+<seg>Alors, là c'est au hasard ! Je sais pas moi !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T939" start="#T1067" who="Trad Fat LSF" xml:id="a498">
+<u>
+<seg>Marine t'appelle.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1069" start="#T1068" who="Trad Fat LSF" xml:id="a594">
+<u>
+<seg>Oui... Ce matin, ils préparaient les bougies, et ils se sont aperçus qu'ils n'avaient pas de briquet ! Mais moi, j'en avais un ! Je l'ai sorti, et je les ai allumées.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1143" start="#T400" who="Trad Fat LSF" xml:id="a713">
+<u>
+<seg>Non, tu as inversé. Tu as dit la Belgique c'est horizontale et l'Allemagne verticale.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T402" start="#T401" who="Trad Mot LSF" xml:id="a675">
+<u>
+<seg>Pff, j'ai mélangé... Mais voilà, elles a confondu les bandes horizontales et verticales, c'est pour ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1073" start="#T1072" who="Trad Fat LSF" xml:id="a597">
+<u>
+<seg>(Appel) Pardon, tu parlais de Zoé ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T404" start="#T403" who="Trad Mot LSF" xml:id="a676">
+<u>
+<seg>Tu connais... (Appel) Tu connais le drapeau du brésil ? Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T601" start="#T600" who="Trad Charlotte LSF" xml:id="a172">
+<u>
+<seg>Facile, celui-là c'est l'Italie et celui-là l'Espagne.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T75" start="#T602" who="Trad Charlotte LSF" xml:id="a173">
+<u>
+<seg>Belgique. Non, c'est l'Allemagne celui-là !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T604" start="#T603" who="Trad Charlotte LSF" xml:id="a236">
+<u>
+<seg>Je connais pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1075" start="#T1074" who="Trad Fat LSF" xml:id="a598">
+<u>
+<seg>Combien ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T406" start="#T405" who="Trad Mot LSF" xml:id="a677">
+<u>
+<seg>(Appel) Tu t'en ai mis partout ! C'est sale !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T606" start="#T605" who="Trad Charlotte LSF" xml:id="a237">
+<u>
+<seg>Je savais pas</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T408" start="#T407" who="Trad Mot LSF" xml:id="a678">
+<u>
+<seg>Regarde tes mains ! Tes mains... Tu vois tes mains sont sales.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1077" start="#T1076" who="Trad Fat LSF" xml:id="a599">
+<u>
+<seg>Tu veux de la tomate ? Ça t'en veux pas ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1079" start="#T1078" who="Trad Fat LSF" xml:id="a600">
+<u>
+<seg>(Appel) Assieds-toi ! C'est pas possible, assieds-toi ! (Appel) C'est fini, tu as fini de manger.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1081" start="#T1080" who="Trad Fat LSF" xml:id="a601">
+<u>
+<seg>Assieds-toi bien ! Comme ça, tourne-toi !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T608" start="#T607" who="Trad Charlotte LSF" xml:id="a238">
+<u>
+<seg>Je comprends pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1083" start="#T1082" who="Trad Fat LSF" xml:id="a602">
+<u>
+<seg>Le chien ? (Appel) Le chien, il fait quoi ? Tu as dit, y avait 1000 livres et le chien... 1000 livres, oui. Il aperçoit...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1085" start="#T1084" who="Trad Fat LSF" xml:id="a603">
+<u>
+<seg>Non, 998. Tu as dit 1000 - 2, c'est ça ? Ça fait 998.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T410" start="#T409" who="Trad Mot LSF" xml:id="a679">
+<u>
+<seg>C'est où ? Ça a disparu... C'est où ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1087" start="#T1086" who="Trad Fat LSF" xml:id="a604">
+<u>
+<seg>Avec elle ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1089" start="#T1088" who="Trad Fat LSF" xml:id="a605">
+<u>
+<seg>Elles (prénoms signes), oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T610" start="#T609" who="Trad Charlotte LSF" xml:id="a239">
+<u>
+<seg>C'est facile.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T612" start="#T611" who="Trad Charlotte LSF" xml:id="a175">
+<u>
+<seg>C'était facile ! C'est ça, t'as trouvé.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1091" start="#T1090" who="Trad Fat LSF" xml:id="a606">
+<u>
+<seg>Pourquoi la maternelle ? Il y a des jeux en LSF là-bas ? Ou tu vas regarder ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T614" start="#T613" who="Trad Charlotte LSF" xml:id="a240">
+<u>
+<seg>Réparer le robinet. Réparer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1093" start="#T1092" who="Trad Fat LSF" xml:id="a607">
+<u>
+<seg>Toi, tu es allée chez le directeur ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T616" start="#T615" who="Trad Charlotte LSF" xml:id="a241">
+<u>
+<seg>C'est pas ça qui est dit, c'est qu'il y a de l'eau qui coule. Je vois pas réparer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1095" start="#T1094" who="Trad Fat LSF" xml:id="a608">
+<u>
+<seg>Ah bon, c'est toi qui va les chercher.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T780" start="#T410" who="Trad Charlotte LSF" xml:id="a641">
+<u>
+<seg>Pourquoi dans le film... Pourquoi ils refusent deux femmes ensemble, ils manifestennt et refusent deux femmes et deux hommes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T536" start="#T410" who="Thèmes Charlotte" xml:id="a627">
+<u>
+<seg>Mariage pour tous</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T970" start="#T410" who="Trad Marine LSF" xml:id="a653">
+<u>
+<seg>Là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T536" start="#T410" who="Thèmes Fat" xml:id="a631">
+<u>
+<seg>Mariage pour tous</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T412" start="#T411" who="Trad Mot LSF" xml:id="a680">
+<u>
+<seg>Ah bon, encore ! Ça fait 4 fois que je fais tombé ! (Appel) Je vais le chercher.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T618" start="#T617" who="Trad Charlotte LSF" xml:id="a242">
+<u>
+<seg>Où ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T739" start="#T1096" who="Trad Fat LSF" xml:id="a609">
+<u>
+<seg>Ta maîtresse te laisse toute seule monter, descendre, c'est pas possible.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T620" start="#T619" who="Trad Charlotte LSF" xml:id="a243">
+<u>
+<seg>(mimes)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T740" start="#T1097" who="Trad Fat LSF" xml:id="a703">
+<u>
+<seg>La récréation.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T414" start="#T413" who="Trad Mot LSF" xml:id="a681">
+<u>
+<seg>Sa biscotte.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1099" start="#T1098" who="Trad Fat LSF" xml:id="a611">
+<u>
+<seg>(Appel) C'est bizarre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T622" start="#T621" who="Trad Charlotte LSF" xml:id="a176">
+<u>
+<seg>Ah oui ! Et osus les pétales, ça pique ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T416" start="#T415" who="Trad Mot LSF" xml:id="a682">
+<u>
+<seg>(Appel) La mienne.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T624" start="#T623" who="Trad Charlotte LSF" xml:id="a177">
+<u>
+<seg>Je connais pas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1101" start="#T1100" who="Trad Fat LSF" xml:id="a612">
+<u>
+<seg>C'est bizarre que tu puisses faire des allers-retours comme ça, sans que personne ne t'accompagne.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T626" start="#T625" who="Trad Charlotte LSF" xml:id="a178">
+<u>
+<seg>C-U-E-I-L-LE U-N-E R-O-S-E.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T418" start="#T417" who="Trad Mot LSF" xml:id="a683">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T536" start="#T417" who="Thèmes Mot" xml:id="a629">
+<u>
+<seg>Mariage pour tous</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T90" start="#T89" who="Trad Mot LSF" xml:id="a288">
+<u>
+<seg>J'ai oublié les règles.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1103" start="#T1102" who="Trad Fat LSF" xml:id="a613">
+<u>
+<seg>(Appel) Tu as eu un vaccin ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T628" start="#T627" who="Trad Charlotte LSF" xml:id="a179">
+<u>
+<seg>C'est chou-fleur rose !  Mince ! Comme si je mangeais une rose !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1105" start="#T1104" who="Trad Fat LSF" xml:id="a614">
+<u>
+<seg>C'est drôle... Elle dit que personne vient...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T630" start="#T629" who="Trad Charlotte LSF" xml:id="a180">
+<u>
+<seg>Ah, d'accord.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1107" start="#T1106" who="Trad Fat LSF" xml:id="a615">
+<u>
+<seg>Y a deux chemins comme ça, oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T420" start="#T419" who="Trad Mot LSF" xml:id="a684">
+<u>
+<seg>(Appel) Assieds-toi. Non, tu attends qu'on est tous fini. Tu ne veux pas de yaourt ? Tu veux un yaourt.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T129" start="#T631" who="Trad Charlotte LSF" xml:id="a244">
+<u>
+<seg>Pou toi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T199" start="#T198" who="Trad Mot LSF" xml:id="a445">
+<u>
+<seg>C'est parce que tu es célèbre ! Oui, y a plusieurs places. Et moi ! S'il te plait... Oui, il y a deux places, et pourquoi... parce que tu es grande.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T633" start="#T632" who="Trad Charlotte LSF" xml:id="a245">
+<u>
+<seg>Bronzer ? Bronzer ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T754" start="#T1108" who="Trad Fat LSF" xml:id="a616">
+<u>
+<seg>Oui, à gauche quand tu rentres.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1110" start="#T1109" who="Trad Fat LSF" xml:id="a617">
+<u>
+<seg>Je pense plus qu'en général les médécins oscultent, y a pas de dentiste là. Il regarde et note si tu as besoin de prendre rendez-vosu pour aller chez le dentiste.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T92" start="#T91" who="Trad Mot LSF" xml:id="a289">
+<u>
+<seg>(Appel) Non, c'est pas ce que je t'ai dit. Moi je mimes et toi tu dois deviner. D'accord ? C'est pour ça qu'il faut que tu comprennes ce qui est écrit.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T422" start="#T421" who="Trad Mot LSF" xml:id="a685">
+<u>
+<seg>Oui, elle est fatigué, et exceptionnellement. (Appel) Tu le veux ? Donne le à Charlotte, donne lui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1112" start="#T1111" who="Trad Fat LSF" xml:id="a618">
+<u>
+<seg>On t'appelle.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T424" start="#T423" who="Trad Mot LSF" xml:id="a686">
+<u>
+<seg>Demande gentillement à papa.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1114" start="#T1113" who="Trad Fat LSF" xml:id="a619">
+<u>
+<seg>Ton carnet de santé, tu l'as rapporté, y a rien.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T728" start="#T727" who="Trad Charlotte LSF" xml:id="a512">
+<u>
+<seg>Je me suis trompée.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T635" start="#T634" who="Trad Charlotte LSF" xml:id="a246">
+<u>
+<seg>(mimes)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T637" start="#T636" who="Trad Charlotte LSF" xml:id="a247">
+<u>
+<seg>Ecrire oui, mais comme autrefois !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T638" start="#T637" who="Trad Charlotte LSF" xml:id="a248">
+<u>
+<seg>(mimes)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1116" start="#T1115" who="Trad Fat LSF" xml:id="a620">
+<u>
+<seg>Tu es en retard ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T639" start="#T638" who="Trad Charlotte LSF" xml:id="a249">
+<u>
+<seg>Oui, parfait ! Parfait !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T426" start="#T425" who="Trad Mot LSF" xml:id="a687">
+<u>
+<seg>(Appel) Du pain grillé. Avec du beurre, je pense.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1118" start="#T1117" who="Trad Fat LSF" xml:id="a621">
+<u>
+<seg>À mon avis, tu l'as fait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T641" start="#T640" who="Trad Charlotte LSF" xml:id="a250">
+<u>
+<seg>Je connais pas le mot moi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1120" start="#T1119" who="Trad Fat LSF" xml:id="a622">
+<u>
+<seg>(Appel) Elle a du le montrer, et c'est bon.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T643" start="#T642" who="Trad Charlotte LSF" xml:id="a181">
+<u>
+<seg>(mime)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T153" start="#T642" who="Montages" xml:id="a164">
+<u>
+<seg>Jeu de devinette : entre mime et signe</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T428" start="#T427" who="Trad Mot LSF" xml:id="a688">
+<u>
+<seg>Elle veut du beurre. C'est vrai !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1122" start="#T1121" who="Trad Fat LSF" xml:id="a623">
+<u>
+<seg>(Appel) Du fromage ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T148" start="#T643" who="Trad Charlotte LSF" xml:id="a182">
+<u>
+<seg>Oui. Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T430" start="#T429" who="Trad Mot LSF" xml:id="a689">
+<u>
+<seg>Non, tu manges comme ça, tu lèches pas. C'est mieux comme ça.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T730" start="#T729" who="Trad Charlotte LSF" xml:id="a513">
+<u>
+<seg>Après, moi, je sors... Je marche, 3 heures pile. Je marche... Je vais à la LSF, je travaille, quand c'est fini je change, pour faire quoi ? Je vais au jeu libre, on travaille seul, c'est libre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T825" start="#T729" who="Thèmes Charlotte" xml:id="a40">
+<u>
+<seg>À l'école : après midi</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1124" start="#T1123" who="Trad Fat LSF" xml:id="a624">
+<u>
+<seg>Aux toilettes. (Appel) Aux toilettes.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T731" start="#T730" who="Trad Charlotte LSF" xml:id="a514">
+<u>
+<seg>J'y vais et je vois, Mme X et Mme Y (prénoms signes) travailler dans le bureau du directeur, depuis hier jusqu'au aujourd'hui à midi. Le soir, non... L'après-midi, elle me dit : je vais venir te chercher à 2heures et demi, et on va à la maternelle. Parce qu'il y a du théatre à midi. Elle m'a dit qu'elle sait signer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T432" start="#T431" who="Trad Mot LSF" xml:id="a690">
+<u>
+<seg>(Appel) Y a des étudiants qui ont fait des observations et ils ont trouvé qu'un papa et une maman c'est mieux. Leur couple à eux (deux prenoms signes ) c'est mieux. Oui, elle (prénom signe) m'a dit c'est comme ça... comme ça...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1126" start="#T1125" who="Trad Fat LSF" xml:id="a625">
+<u>
+<seg>Souvent après la natation, elle est cassée.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T434" start="#T433" who="Trad Mot LSF" xml:id="a691">
+<u>
+<seg>Non, j'aime pas, je laisse de côté, je laisse... Non, c'est pareil, on respecte, son signe c'est celui-là, comme ça... Pas comme ça, non c'est son signe. Tu as compris.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T645" start="#T644" who="Trad Charlotte LSF" xml:id="a183">
+<u>
+<seg>Chocolat ! Préparer, cuisiner un gâteau au chocolat !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1128" start="#T1127" who="Trad Fat LSF" xml:id="a704">
+<u>
+<seg>(Appel) Du fromage avec le pain... C'est juste.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1130" start="#T1129" who="Trad Fat LSF" xml:id="a705">
+<u>
+<seg>(Appel) Le fromage ? Le fromage.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T436" start="#T435" who="Trad Mot LSF" xml:id="a692">
+<u>
+<seg>Je suis sure l'emplacement c'est vers là, sure, comme ça ou comme ça... Moi, je crois que c'est comme ça. Assieds-toi, s'il te plait.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1133" start="#T1132" who="Trad Fat LSF" xml:id="a707">
+<u>
+<seg>Non.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T438" start="#T437" who="Trad Mot LSF" xml:id="a693">
+<u>
+<seg>On l'a pris pour dessiner un jeune couple.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1135" start="#T1134" who="Trad Fat LSF" xml:id="a708">
+<u>
+<seg>Oui, et celui rectangulaire.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T440" start="#T439" who="Trad Mot LSF" xml:id="a694">
+<u>
+<seg>C'est mieux.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1137" start="#T1136" who="Trad Fat LSF" xml:id="a709">
+<u>
+<seg>On paye pas. Oui, j'ai vu ça passer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T648" start="#T647" who="Trad Charlotte LSF" xml:id="a252">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T395" start="#T1138" who="Trad Fat LSF" xml:id="a710">
+<u>
+<seg>Oui, ce sont des pays d'Afrique, ou...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T733" start="#T732" who="Trad Charlotte LSF" xml:id="a515">
+<u>
+<seg>Non, je reste. Je marchais, cherchais, mais j'hésitais, parce qu'il y a de porte qui sont proches, la première... Je crois, oui, la première porte, c'est pour le chant signe, tout en bas y a le directeur. Et... Moi je devais la (prénom signe) rejoindre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1140" start="#T1139" who="Trad Fat LSF" xml:id="a711">
+<u>
+<seg>Par exemple, les Pays-Bas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1142" start="#T1141" who="Trad Fat LSF" xml:id="a712">
+<u>
+<seg>Non, l'Allemagne c'est horizontale et la Belgique verticale.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1145" start="#T1144" who="Trad Fat LSF" xml:id="a714">
+<u>
+<seg>Super !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T52" start="#T51" who="Trad Mot LSF" xml:id="a273">
+<u>
+<seg>Oui</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T26" start="#T25" who="Trad Mot LSF" xml:id="a193">
+<u>
+<seg>Canada</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1147" start="#T1146" who="Trad Fat LSF" xml:id="a715">
+<u>
+<seg>Quand j'étais petit j'adorais dessiner les drapeaux.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T28" start="#T27" who="Trad Mot LSF" xml:id="a194">
+<u>
+<seg>Suisse</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T34" start="#T33" who="Trad Mot LSF" xml:id="a197">
+<u>
+<seg>C'est la Nouvelle-Zélande.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1149" start="#T1148" who="Trad Fat LSF" xml:id="a716">
+<u>
+<seg>Je te disais pareil, que je dessinais les drapeaux.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1151" start="#T1150" who="Trad Fat LSF" xml:id="a717">
+<u>
+<seg>Non, je prenais comme modèle les drapeaux. Je prenais les mesures, c'était précis, dans le détail, et après j'avais un drapeau.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T735" start="#T734" who="Trad Charlotte LSF" xml:id="a516">
+<u>
+<seg>Euh... Stop !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T410" start="#T1152" who="Trad Fat LSF" xml:id="a718">
+<u>
+<seg>Tu connais ? Tu connais ? Tu te rappelles, c'est bien.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1154" start="#T1153" who="Trad Fat LSF" xml:id="a719">
+<u>
+<seg>Bah, j'étais le premier contre, mais je pense que ça dépend...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1156" start="#T1155" who="Trad Fat LSF" xml:id="a720">
+<u>
+<seg>Nno, vas là-bas.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T54" start="#T53" who="Trad Mot LSF" xml:id="a274">
+<u>
+<seg>Ça c'est (?)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T56" start="#T55" who="Trad Mot LSF" xml:id="a275">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T442" start="#T441" who="Trad Mot LSF" xml:id="a695">
+<u>
+<seg>A la fin, il va danser.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T781" start="#T1157" who="Trad Fat LSF" xml:id="a721">
+<u>
+<seg>Maintenant le gouvernement a adopté une loi, deux hommes peuvent s'aimer, deux femmes peuvent s'aimer ou un homme et une femme peuvent s'aimer, c'est libre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1159" start="#T1158" who="Trad Fat LSF" xml:id="a722">
+<u>
+<seg>Bah, tu sais tout le monde est libre.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T444" start="#T443" who="Trad Mot LSF" xml:id="a696">
+<u>
+<seg>Un bracelet. Je vous en ai déjà apporter y a 3, 4 ans, c'est encore les mêmes. Il en a plein et adore changer, pour être différent encore et encore. C'est pour ça qu'à la fin on va lui offrir comme cadeau de la danse pour changer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T536" start="#T1160" who="Trad Fat LSF" xml:id="a723">
+<u>
+<seg>Elle disait deux femmes qui s'aiment, deux hommes qui s'aiment, y a des drapeaux contre, elle a vu à la télévision les manifestations avec le drapeau français, sur le thème de l'amour entre deux hommes, deux femmes qu est interdit, ils sont pas d'accord. Moi, je lui dis tout le monde est libre de son choix, on a le droit.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T446" start="#T445" who="Trad Mot LSF" xml:id="a697">
+<u>
+<seg>T'es mal assise, tu vas tomber.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T30" start="#T29" who="Trad Mot LSF" xml:id="a195">
+<u>
+<seg>Oui, oui, c'est la croix, la Suisse. Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1162" start="#T1161" who="Trad Fat LSF" xml:id="a724">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T94" start="#T93" who="Trad Mot LSF" xml:id="a290">
+<u>
+<seg>Si tu comprends pas c'est mieux d'arrêter.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T126" start="#T125" who="Trad Mot LSF" xml:id="a211">
+<u>
+<seg>Mais non c'est pas un chou !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T58" start="#T57" who="Trad Mot LSF" xml:id="a276">
+<u>
+<seg>Oui. C'est (?)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T165" start="#T164" who="Trad Mot LSF" xml:id="a352">
+<u>
+<seg>C'était bien à la piscine ? Tu as plongé ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T885" start="#T164" who="Montages" xml:id="a325">
+<u>
+<seg>Comment s'est passée ta journée ? Discussions familiales autour de la journée, de l'école - angle cam2-</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T66" start="#T65" who="Trad Mot LSF" xml:id="a280">
+<u>
+<seg>Le Japon.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T96" start="#T95" who="Trad Mot LSF" xml:id="a203">
+<u>
+<seg>Tu dois mimer en suivant l'image qui est là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T883" start="#T95" who="Montages" xml:id="a162">
+<u>
+<seg>Jeu de devinette : entre mime et signe</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T167" start="#T166" who="Trad Mot LSF" xml:id="a353">
+<u>
+<seg>(Appel) La piscine alors ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T169" start="#T168" who="Trad Mot LSF" xml:id="a354">
+<u>
+<seg>Tu as plongé ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T899" start="#T169" who="Trad Marine LSF" xml:id="a346">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T171" start="#T170" who="Trad Mot LSF" xml:id="a355">
+<u>
+<seg>Alors ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T173" start="#T172" who="Trad Mot LSF" xml:id="a356">
+<u>
+<seg>Voilà, c'est ça qu'elle veut faire.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T737" start="#T736" who="Trad Charlotte LSF" xml:id="a517">
+<u>
+<seg>Oui, moi... J'y vais, je frappe au bureau du directeur, j'attends, j'attends... Oui, encore... Je viens pour travailler, il me dit : Ah bon ! Jamais le soir !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1164" start="#T1163" who="Trad Fat LSF" xml:id="a725">
+<u>
+<seg>Pour où le beurre ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1166" start="#T1165" who="Trad Fat LSF" xml:id="a726">
+<u>
+<seg>C'est bon ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T597" start="#T66" who="Trad Charlotte LSF" xml:id="a235">
+<u>
+<seg>Je sais pas moi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T650" start="#T649" who="Trad Charlotte LSF" xml:id="a330">
+<u>
+<seg>Oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T448" start="#T447" who="Trad Mot LSF" xml:id="a698">
+<u>
+<seg>Moi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1168" start="#T1167" who="Trad Fat LSF" xml:id="a727">
+<u>
+<seg>Là. Là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T450" start="#T449" who="Trad Mot LSF" xml:id="a699">
+<u>
+<seg>Tu as fini de manger ? Tu as fini ? Tu peux sortir, mais essuie toi la bouche, tu as du chocolat, c'est sale. Essuie-toi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T32" start="#T31" who="Trad Mot LSF" xml:id="a196">
+<u>
+<seg>Je connais pas. Je crois pas que ça soit celui-là, à mon avis.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1170" start="#T1169" who="Trad Fat LSF" xml:id="a728">
+<u>
+<seg>(Appel) Ça va ? T'as fini ? Non, c'est pas l'heure, on finit tous les quatre ensemble. Bientôt.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T611" start="#T96" who="Trad Charlotte LSF" xml:id="a174">
+<u>
+<seg>(mime)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T452" start="#T451" who="Trad Mot LSF" xml:id="a700">
+<u>
+<seg>Mouais... Tu l'essuies ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1172" start="#T1171" who="Trad Fat LSF" xml:id="a729">
+<u>
+<seg>On est ensemble !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1174" start="#T1173" who="Trad Fat LSF" xml:id="a730">
+<u>
+<seg>(Appel) Elle va pas finir.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T454" start="#T453" who="Trad Mot LSF" xml:id="a701">
+<u>
+<seg>On a fini. C'est bon, on a fini.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1176" start="#T1175" who="Trad Fat LSF" xml:id="a374">
+<u>
+<seg>(Appel) Tu dis merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T739" start="#T738" who="Trad Charlotte LSF" xml:id="a518">
+<u>
+<seg>Oui pour les (prénoms signes) chercher.  Parce qu'elles travaillent en haut et préparent. Et, elle (prénom signe) est à la maternelle. C'est pour ça moi je suis toute seule. Je cherche mais j'étais perdue, c'était vide, j'étais perdue. Je regarde, je cherche, tout en bas y a personne, j'étais perdue. J'ai une idée : la bibliothèque...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T175" start="#T174" who="Trad Mot LSF" xml:id="a397">
+<u>
+<seg>(Appel) On va manger. Arpès, d'abord on mange de la viande avec des pâtes, après la compote, oui.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T520" start="#T174" who="Thèmes Mot" xml:id="a91">
+<u>
+<seg>Compote</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T520" start="#T174" who="Thèmes Marine" xml:id="a61">
+<u>
+<seg>Compote</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T98" start="#T97" who="Trad Mot LSF" xml:id="a204">
+<u>
+<seg>Arroser les fleurs ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T100" start="#T99" who="Trad Mot LSF" xml:id="a205">
+<u>
+<seg>Tu mimes bien, donc j'ai compris !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T68" start="#T67" who="Trad Mot LSF" xml:id="a281">
+<u>
+<seg>L'Italie.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T60" start="#T59" who="Trad Mot LSF" xml:id="a277">
+<u>
+<seg>La danse ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T102" start="#T101" who="Trad Mot LSF" xml:id="a291">
+<u>
+<seg>Oui, parfait. Mon tour.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T128" start="#T127" who="Trad Mot LSF" xml:id="a212">
+<u>
+<seg>Je cueille une rose. C'est le m^e mot pour la couleur rose et pour la fleur, qui a des pétales roses.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T103" start="#T102" who="Trad Mot LSF" xml:id="a292">
+<u>
+<seg>(mimes)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T62" start="#T61" who="Trad Mot LSF" xml:id="a278">
+<u>
+<seg>(Appel) Oublie !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T105" start="#T104" who="Trad Mot LSF" xml:id="a293">
+<u>
+<seg>Oui ! Bien !</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T107" start="#T106" who="Trad Mot LSF" xml:id="a294">
+<u>
+<seg>Quoi ? Si la phrase c'est "je répare le robinet" c'est ce qui est écrit. Regarde là, le mot s'est "répare".</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T109" start="#T108" who="Trad Mot LSF" xml:id="a295">
+<u>
+<seg>Tu me donnes. Merci.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T111" start="#T110" who="Trad Mot LSF" xml:id="a296">
+<u>
+<seg>Non, tu regardes pas. Tu la mets là.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T113" start="#T112" who="Trad Mot LSF" xml:id="a297">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T115" start="#T114" who="Trad Mot LSF" xml:id="a298">
+<u>
+<seg>(Appel) Ah, oui. Une tapette à mouche, c'est ça ? Non, c'est moi.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T117" start="#T116" who="Trad Mot LSF" xml:id="a299">
+<u>
+<seg>Oui. La tienne... Tu connais le nom des fleurs ? On va essayer.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T70" start="#T69" who="Trad Mot LSF" xml:id="a199">
+<u>
+<seg>Le Japon</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T882" start="#T69" who="Montages" xml:id="a161">
+<u>
+<seg>A quoi joue-t-on ? Retrouver le drapeau du pays</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T130" start="#T129" who="Trad Mot LSF" xml:id="a300">
+<u>
+<seg>Tu connais ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T132" start="#T131" who="Trad Mot LSF" xml:id="a301">
+<u>
+<seg>Donc je signe pas, je mime...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T201" start="#T200" who="Trad Mot LSF" xml:id="a446">
+<u>
+<seg>C'est bon. Super.</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T134" start="#T133" who="Trad Mot LSF" xml:id="a302">
+<u>
+<seg>(mimes)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T136" start="#T135" who="Trad Mot LSF" xml:id="a303">
+<u>
+<seg>(?)</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T138" start="#T137" who="Trad Mot LSF" xml:id="a304">
+<u>
+<seg>(Appel) Ecrire ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T140" start="#T139" who="Trad Mot LSF" xml:id="a305">
+<u>
+<seg>Ecrire avec... Un stylo qui a une plume au bout que l'on trempe</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T142" start="#T141" who="Trad Mot LSF" xml:id="a306">
+<u>
+<seg>Ah oui, c'est écrire un poème. C'est pour ça que je t'explique, c'est écrire un poème, comme...</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T144" start="#T143" who="Trad Mot LSF" xml:id="a307">
+<u>
+<seg>(Appel) Tu as pas déjà appris des poèmes à l'école ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T146" start="#T145" who="Trad Mot LSF" xml:id="a308">
+<u>
+<seg>Quoi ?</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T64" start="#T63" who="Trad Mot LSF" xml:id="a279">
+<u>
+<seg>Oui,mais le niveau au-dessus. C'est mieux, là.</seg>
+</u>
+</annotationBloc>
+</div>
+</body>
+</text>
+</TEI>

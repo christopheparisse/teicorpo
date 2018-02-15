@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="Automobile_GUE_08" elapsed_time="242.359" scribe="Lucile" version="9" version_date="101221">
+<Speakers>
+<Speaker check="no" dialect="native" id="spk1" name="L1" scope="local"/>
+<Speaker check="no" dialect="native" id="spk2" name="L2" scope="local"/>
+</Speakers>
+<Topics>
+<Topic desc="no setting information" id=""/>
+</Topics>
+<Episode>
+<Section endTime="242.359" startTime="0" type="report">
+<Turn endTime="8.655" speaker="spk1" startTime="0">
+<Sync time="0"/>oh je suis arrivée euh c'était un truc de fou <Event desc="rire" extent="previous" type="noise"/>je suis allée à un partiel un matin et j'arrive au stop à ¤T1¤ </Turn>
+<Turn endTime="8.973" speaker="spk2" startTime="8.655">
+<Sync time="8.655"/>hum </Turn>
+<Turn endTime="11.337" speaker="spk1" startTime="8.973">
+<Sync time="8.973"/>tu vois et juste avant &lt; euh </Turn>
+<Turn endTime="12.559" speaker="spk2" startTime="11.337">
+<Sync time="11.337"/>au stop à ¤T1¤ &gt; ouais </Turn>
+<Turn endTime="14.760" speaker="spk1" startTime="12.559">
+<Sync time="12.559"/>au stop avant euh soit tu vas vers l'autoroute </Turn>
+<Turn endTime="14.936" speaker="spk2" startTime="14.760">
+<Sync time="14.760"/>&lt; ouais je vois </Turn>
+<Turn endTime="27.154" speaker="spk1" startTime="14.936">
+<Sync time="14.936"/>soit tu vas vers &gt; euh ¤T1¤  + et euh avant juste avant dans le village il y avait euh  + il y avait une caisse devant moi et une autre derrière et celle de derrière lui collait au cul genre vas-y avance et tout </Turn>
+<Turn endTime="27.330" speaker="spk2" startTime="27.154">
+<Sync time="27.154"/>&lt; ouais </Turn>
+<Turn endTime="35.448" speaker="spk1" startTime="27.330">
+<Sync time="27.330"/>mais &gt; super nerveusement quoi et puis on arrive juste avant le stop hop elle double elle se rabat et puis euh ben quand on arrive au stop le matin tu sais il y a une queue </Turn>
+<Turn endTime="35.873" speaker="spk2" startTime="35.448">
+<Sync time="35.448"/>ouais </Turn>
+<Turn endTime="60.056" speaker="spk1" startTime="35.873">
+<Sync time="35.873"/>mais laisse tomber  + elle s'arrête et euh là le mec je je commence il sort de la caisse et il va voir celui qui l'a doublé et tu sais genre trop vénère il commence à faire des gestes dans tous les sens tu vois qu'il crie tu vois qu'il est pas content tu ne sais pas pourquoi mais euh  + voilà et la file de voitures qui avance qui avance et tout d'un coup tu vois il faut il faut quand même qu'il avance donc je fais des appels de phare je klaxonne un petit coup <Event desc="rire" extent="next" type="noise"/>mais gentil tu vois <Event desc="rire" extent="instantaneous" type="noise"/>hop </Turn>
+<Turn endTime="61.893" speaker="spk2" startTime="60.056">
+<Sync time="60.056"/>tu te dis il a l'air énervé alors je vais peut-être pas trop forcer </Turn>
+<Turn endTime="68.424" speaker="spk1" startTime="61.893">
+<Sync time="61.893"/> <Event desc="rire" extent="instantaneous" type="noise"/>voilà  + et puis euh et puis le stress des partiels qui monte oh la la il faut quand même que &lt; ça </Turn>
+<Turn endTime="69.300" speaker="spk2" startTime="68.424">
+<Sync time="68.424"/>je vais &gt; être en retard </Turn>
+<Turn endTime="81.512" speaker="spk1" startTime="69.300">
+<Sync time="69.300"/>ça avance et là je vois le type qui retourne pour aller dans sa caisse donc je me dis bon c'est cool voilà  +  ça c'est fait et euh à mon avis le mec qui était dans la caisse de derrière a dû faire ouais /c'est ça, sale/ connard tu vois </Turn>
+<Turn endTime="82.707" speaker="spk2" startTime="81.512">
+<Sync time="81.512"/>ouais &lt; une fois qu'il était parti </Turn>
+<Turn endTime="115.776" speaker="spk1" startTime="82.707">
+<Sync time="82.707"/>ouais voilà &gt; <Event desc="rire" extent="instantaneous" type="noise"/>le truc bien de provoc <Event desc="apocope de provocation" extent="previous" type="lexical"/> donc je vois le mec qui commence à se retourner à faire quoi *** <Event desc="imite les cris du conducteur énervé" extent="instantaneous" type="noise"/>et il repart avec ses grands gestes et <Event desc="inspiration forte" extent="instantaneous" type="noise"/>genre énervé et donc là je fais aller c'est bon on va faire comme à Marseille de toute façon c'est la seule solution dans ces cas-là et là je mets le <Event desc="rire" extent="instantaneous" type="noise"/>ma main sur euh sur le frein et  + * et je tiens comme ça jusqu'a ce que le mec rentre dans sa caisse tu sais pour être bien sûre <Event desc="rire" extent="next" type="noise"/>que  + si tu veux du coup il y a plus de voitures devant tu vois <Comment desc="com:&#9;imite le bruit d'un klaxon"/>
+</Turn>
+<Turn endTime="117.650" speaker="spk2" startTime="115.776">
+<Sync time="115.776"/>ouais le vieux klaxon de la punto </Turn>
+<Turn endTime="131.933" speaker="spk1" startTime="117.650">
+<Sync time="117.650"/>ah ouais ouais ouais <Event desc="rires" extent="instantaneous" type="noise"/>* trop longtemps quoi je fais et c'est bon tu vois j'ai pas que ça à faire dans la vie <Event desc="rire" extent="instantaneous" type="noise"/>  +  ça m'énerve les gens qui agressent là tu comprends pas pourquoi euh il faut être cool au volant <Comment desc="com:&#9;imite le bruit du klaxon"/>
+</Turn>
+<Turn endTime="133.416" speaker="spk2" startTime="131.933">
+<Sync time="131.933"/>ouais </Turn>
+<Turn endTime="145.204" speaker="spk1" startTime="133.416">
+<Sync time="133.416"/>ça va  + même si tu es enervé <Event desc="bruit indéterminé" extent="begin" type="noise"/>bon ben il faut prendre ton mal en patience même si tu es  +  de toute façon c'est ça le volant  + c'est euh ouh </Turn>
+<Turn endTime="145.804" speaker="spk2" startTime="145.204">
+<Sync time="145.204"/>&lt; O.K. <Event desc="bruit indéterminé" extent="instantaneous" type="noise"/> </Turn>
+<Turn endTime="152.591" speaker="spk1" startTime="145.804">
+<Sync time="145.804"/>patience &gt; j'y vais j'y vais à mon rythme écoute  +  si tu as envie de mettre un petit coup de booste tu mets un petit coup de booste </Turn>
+<Turn endTime="152.903" speaker="spk2" startTime="152.591">
+<Sync time="152.591"/> <Event desc="rire" extent="instantaneous" type="noise"/> </Turn>
+<Turn endTime="155.957" speaker="spk1" startTime="152.903">
+<Sync time="152.903"/>moi je sais que si j'ai envie de rouler tranquille je roule <Event desc="bruit indéterminé" extent="begin" type="noise"/>tranquille quoi </Turn>
+<Turn endTime="171.506" speaker="spk2" startTime="155.957">
+<Sync time="155.957"/>ouais  + putain <Event desc="tE~" extent="previous" type="pronounce"/>mais ce serait trop bien que j'aie le permis tu sais genre les week-ends je prendrais ma voiture  + je pourrai rentrer quand je voudrai </Turn>
+<Turn endTime="175.099" speaker="spk1" startTime="171.506">
+<Sync time="171.506"/>ouais mais en même temps tu es avec ¤P1¤ pas mal donc euh </Turn>
+<Turn endTime="181.789" speaker="spk2" startTime="175.099">
+<Sync time="175.099"/>ouais mais tu vois ça enfin  + ça dispenserait un peu sa voiture quoi parce qu'elle est bien vieille donc euh  +  </Turn>
+<Turn endTime="182.931" speaker="spk1" startTime="181.789">
+<Sync time="181.789"/>c'est clair </Turn>
+<Turn endTime="189.087" speaker="spk2" startTime="182.931">
+<Sync time="182.931"/>je vois là c'est un peu une savonnette <Event desc="rire" extent="previous" type="noise"/>dès qu'il pleut dès qu'il neige voilà euh  + tu serres les fesses quoi </Turn>
+<Turn endTime="189.542" speaker="spk1" startTime="189.087">
+<Sync time="189.087"/>ouais </Turn>
+<Turn endTime="193.285" speaker="spk2" startTime="189.542">
+<Sync time="189.542"/>hum  +  </Turn>
+<Turn endTime="197.135" speaker="spk1" startTime="193.285">
+<Sync time="193.285"/>non ça avait été le voyage jusqu'a ¤T2¤ je trouvais  +  </Turn>
+<Turn endTime="199.605" speaker="spk2" startTime="197.135">
+<Sync time="197.135"/>ouais  + mais elle châble hein </Turn>
+<Turn endTime="200.058" speaker="spk1" startTime="199.605">
+<Sync time="199.605"/>hein </Turn>
+<Turn endTime="201.386" speaker="spk2" startTime="200.058">
+<Sync time="200.058"/>&lt; elle châble </Turn>
+<Turn endTime="207.403" speaker="spk1" startTime="201.386">
+<Sync time="201.386"/>ouais ouais ouais ouais &gt; elle châble bien <Event desc="bruit de microphone" extent="instantaneous" type="noise"/>  + c'était marrant quand ¤P1¤ il avait conduit à ma place là euh </Turn>
+<Turn endTime="209.043" speaker="spk2" startTime="207.403">
+<Sync time="207.403"/> <Event desc="rire" extent="instantaneous" type="noise"/> </Turn>
+<Turn endTime="228.802" speaker="spk1" startTime="209.043">
+<Sync time="209.043"/>pour revenir de chez ¤P2¤ tu sais et /j'étais,¤P2¤ était/ tout content parce que wouah <Event desc="rire" extent="instantaneous" type="noise"/> <Event desc="bruit indéterminé" extent="end" type="noise"/>  +  trop bien tu as tu as une cinquième vitesse et tout donc tu passes un peu la cinquième vitesse hop et en fait euh dès qu'on est arrivé sur la route euh d' ¤T3¤  + et ben euh il s'est mis en quatrième et puis tu sais il avait pas le réflexe </Turn>
+<Turn endTime="228.842" speaker="spk2" startTime="228.802">
+<Sync time="228.802"/>&lt; ouais </Turn>
+<Turn endTime="242.359" speaker="spk1" startTime="228.842">
+<Sync time="228.842"/>de se mettre &gt; en cinquième donc il est resté en quatrième quoi  + c'était trop marrant  + parce que l'habitude de * dans la voiture fait que ben  + il utilise pas la cinquième vitesse </Turn>
+</Section>
+</Episode>
+</Trans>

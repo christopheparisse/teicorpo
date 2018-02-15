@@ -1,0 +1,2076 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier Transcriber INFOR-ITI.TextGrid</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC"/>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">syll</note>
+<note type="parent">ortho</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">syll</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">prom</note>
+<note type="parent">syll</note>
+<note type="type">Symbolic_Association</note>
+<note type="subtype">prom</note>
+<note type="graphicref">false</note>
+<note type="timealign">false</note>
+</note>
+<note>
+<note type="code">words</note>
+<note type="parent">ortho</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">words</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">phones</note>
+<note type="parent">syll</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">phones</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">ortho</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="audio/x-wav" url="/Users/cp/OneDrive/christopheparisse/tei-corpo/test/INFOR-ITI.wav"/>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<particDesc>
+<listPerson>
+<person>
+<altGrp>
+<alt type="syll"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="prom"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="words"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="phones"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="ortho"/>
+</altGrp>
+</person>
+</listPerson>
+</particDesc>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Praat" version="1.01">
+<desc>Transcription created with Elan and converted to TEI_CORPO</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/./INFOR-ITI.TextGrid</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/.tei_corpo.xml</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="0.3387170663532136" since="#T0" xml:id="T1"/>
+<when interval="0.4799767921551373" since="#T0" xml:id="T3"/>
+<when interval="0.5387170663532136" since="#T0" xml:id="T5"/>
+<when interval="0.7223246751680161" since="#T0" xml:id="T4"/>
+<when interval="1.562324675168016" since="#T0" xml:id="T2"/>
+<when interval="1.7112606284421368" since="#T0" xml:id="T6"/>
+<when interval="1.8100186981553819" since="#T0" xml:id="T9"/>
+<when interval="1.9421263477459492" since="#T0" xml:id="T8"/>
+<when interval="2.010018698155382" since="#T0" xml:id="T11"/>
+<when interval="2.080018698155382" since="#T0" xml:id="T12"/>
+<when interval="2.239645610526801" since="#T0" xml:id="T13"/>
+<when interval="2.3057909756900896" since="#T0" xml:id="T10"/>
+<when interval="2.359216078321977" since="#T0" xml:id="T15"/>
+<when interval="2.4245134259831724" since="#T0" xml:id="T16"/>
+<when interval="2.5016830186736763" since="#T0" xml:id="T14"/>
+<when interval="2.560018698155382" since="#T0" xml:id="T18"/>
+<when interval="2.835377905747449" since="#T0" xml:id="T17"/>
+<when interval="2.9967588796682088" since="#T0" xml:id="T19"/>
+<when interval="3.436724698410472" since="#T0" xml:id="T7"/>
+<when interval="4.4811632836972874" since="#T0" xml:id="T20"/>
+<when interval="4.581163283697287" since="#T0" xml:id="T23"/>
+<when interval="4.729760785278365" since="#T0" xml:id="T22"/>
+<when interval="4.797886854785451" since="#T0" xml:id="T25"/>
+<when interval="4.895972215688681" since="#T0" xml:id="T24"/>
+<when interval="4.973989825881278" since="#T0" xml:id="T27"/>
+<when interval="5.146180018961317" since="#T0" xml:id="T26"/>
+<when interval="5.2246014970012675" since="#T0" xml:id="T29"/>
+<when interval="5.461163283697287" since="#T0" xml:id="T28"/>
+<when interval="5.541163283697287" since="#T0" xml:id="T31"/>
+<when interval="5.62865933749742" since="#T0" xml:id="T30"/>
+<when interval="5.671163283697287" since="#T0" xml:id="T33"/>
+<when interval="5.7311632836972874" since="#T0" xml:id="T34"/>
+<when interval="5.781105637476693" since="#T0" xml:id="T32"/>
+<when interval="5.901163283697287" since="#T0" xml:id="T36"/>
+<when interval="5.992720395478536" since="#T0" xml:id="T35"/>
+<when interval="6.031163283697287" since="#T0" xml:id="T38"/>
+<when interval="6.248814688601787" since="#T0" xml:id="T37"/>
+<when interval="6.28655490021995" since="#T0" xml:id="T40"/>
+<when interval="6.36458757586067" since="#T0" xml:id="T41"/>
+<when interval="6.463125176004928" since="#T0" xml:id="T39"/>
+<when interval="6.503561117024388" since="#T0" xml:id="T43"/>
+<when interval="6.584432999063309" since="#T0" xml:id="T44"/>
+<when interval="6.61408602247758" since="#T0" xml:id="T42"/>
+<when interval="6.647782639993798" since="#T0" xml:id="T46"/>
+<when interval="6.752916086644395" since="#T0" xml:id="T47"/>
+<when interval="6.8103190084191905" since="#T0" xml:id="T45"/>
+<when interval="6.874401915920956" since="#T0" xml:id="T49"/>
+<when interval="6.933051359943768" since="#T0" xml:id="T48"/>
+<when interval="6.971405219795199" since="#T0" xml:id="T51"/>
+<when interval="7.072631931533687" since="#T0" xml:id="T50"/>
+<when interval="7.122631931533687" since="#T0" xml:id="T53"/>
+<when interval="7.205399090008387" since="#T0" xml:id="T52"/>
+<when interval="7.252631931533687" since="#T0" xml:id="T55"/>
+<when interval="7.3214485958673166" since="#T0" xml:id="T54"/>
+<when interval="7.380568155455828" since="#T0" xml:id="T57"/>
+<when interval="7.448446168316711" since="#T0" xml:id="T56"/>
+<when interval="7.492631931533687" since="#T0" xml:id="T59"/>
+<when interval="7.5644956741756415" since="#T0" xml:id="T58"/>
+<when interval="7.6039087139013155" since="#T0" xml:id="T61"/>
+<when interval="7.68711401998885" since="#T0" xml:id="T60"/>
+<when interval="7.7528024195316405" since="#T0" xml:id="T62"/>
+<when interval="8.092192483836058" since="#T0" xml:id="T21"/>
+<when interval="8.721458255199312" since="#T0" xml:id="T63"/>
+<when interval="8.782250786529298" since="#T0" xml:id="T66"/>
+<when interval="8.853844658251967" since="#T0" xml:id="T65"/>
+<when interval="8.910096986034066" since="#T0" xml:id="T68"/>
+<when interval="9.041458255199313" since="#T0" xml:id="T67"/>
+<when interval="9.094195513320932" since="#T0" xml:id="T70"/>
+<when interval="9.168346309033698" since="#T0" xml:id="T69"/>
+<when interval="9.239940180756369" since="#T0" xml:id="T72"/>
+<when interval="9.447095973277175" since="#T0" xml:id="T71"/>
+<when interval="9.494063590875166" since="#T0" xml:id="T74"/>
+<when interval="9.585041612317035" since="#T0" xml:id="T73"/>
+<when interval="9.620075425406522" since="#T0" xml:id="T76"/>
+<when interval="9.722493721523099" since="#T0" xml:id="T75"/>
+<when interval="9.7524937215231" since="#T0" xml:id="T77"/>
+<when interval="9.7824937215231" since="#T0" xml:id="T79"/>
+<when interval="9.825899077307266" since="#T0" xml:id="T78"/>
+<when interval="9.880639410259592" since="#T0" xml:id="T81"/>
+<when interval="9.95946548971094" since="#T0" xml:id="T80"/>
+<when interval="10.060352325215756" since="#T0" xml:id="T83"/>
+<when interval="10.14120339511266" since="#T0" xml:id="T84"/>
+<when interval="10.200322954701171" since="#T0" xml:id="T82"/>
+<when interval="10.230727727409471" since="#T0" xml:id="T86"/>
+<when interval="10.36299543432273" since="#T0" xml:id="T85"/>
+<when interval="10.420654405264761" since="#T0" xml:id="T88"/>
+<when interval="10.4624937215231" since="#T0" xml:id="T89"/>
+<when interval="10.6224937215231" since="#T0" xml:id="T90"/>
+<when interval="10.772577367173092" since="#T0" xml:id="T87"/>
+<when interval="11.232354548001378" since="#T0" xml:id="T91"/>
+<when interval="11.322354548001378" since="#T0" xml:id="T93"/>
+<when interval="11.42235454800138" since="#T0" xml:id="T94"/>
+<when interval="11.489139152827548" since="#T0" xml:id="T92"/>
+<when interval="11.534189549911126" since="#T0" xml:id="T96"/>
+<when interval="11.622354548001379" since="#T0" xml:id="T95"/>
+<when interval="11.66235454800138" since="#T0" xml:id="T98"/>
+<when interval="11.722354548001379" since="#T0" xml:id="T97"/>
+<when interval="11.798642534104506" since="#T0" xml:id="T99"/>
+<when interval="12.049590405872525" since="#T0" xml:id="T64"/>
+<when interval="13.599994038951058" since="#T0" xml:id="T100"/>
+<when interval="13.72902708496906" since="#T0" xml:id="T102"/>
+<when interval="13.752707679127374" since="#T0" xml:id="T104"/>
+<when interval="13.831110446506427" since="#T0" xml:id="T103"/>
+<when interval="13.9034054803969" since="#T0" xml:id="T106"/>
+<when interval="13.920483047457642" since="#T0" xml:id="T107"/>
+<when interval="14.003593873819918" since="#T0" xml:id="T108"/>
+<when interval="14.04116452135355" since="#T0" xml:id="T105"/>
+<when interval="14.076342465957671" since="#T0" xml:id="T110"/>
+<when interval="14.172184852683753" since="#T0" xml:id="T111"/>
+<when interval="14.229591803129358" since="#T0" xml:id="T109"/>
+<when interval="14.270523338055849" since="#T0" xml:id="T113"/>
+<when interval="14.36840312724355" since="#T0" xml:id="T112"/>
+<when interval="14.398843329443123" since="#T0" xml:id="T115"/>
+<when interval="14.480004880073116" since="#T0" xml:id="T114"/>
+<when interval="14.525534530426526" since="#T0" xml:id="T117"/>
+<when interval="14.661133706479076" since="#T0" xml:id="T116"/>
+<when interval="14.716561106909314" since="#T0" xml:id="T118"/>
+<when interval="14.734377057047604" since="#T0" xml:id="T120"/>
+<when interval="14.83335455781589" since="#T0" xml:id="T119"/>
+<when interval="14.919371617993665" since="#T0" xml:id="T122"/>
+<when interval="15.175911388042069" since="#T0" xml:id="T123"/>
+<when interval="15.324810439880615" since="#T0" xml:id="T121"/>
+<when interval="15.914810439880615" since="#T0" xml:id="T101"/>
+<when interval="16.419741367228898" since="#T0" xml:id="T124"/>
+<when interval="16.494458597997657" since="#T0" xml:id="T127"/>
+<when interval="16.59739519879667" since="#T0" xml:id="T126"/>
+<when interval="16.676577199411298" since="#T0" xml:id="T129"/>
+<when interval="16.77555470017958" since="#T0" xml:id="T128"/>
+<when interval="16.849741367228898" since="#T0" xml:id="T131"/>
+<when interval="17.052691702330776" since="#T0" xml:id="T130"/>
+<when interval="17.10218045271492" since="#T0" xml:id="T133"/>
+<when interval="17.14177145302223" since="#T0" xml:id="T134"/>
+<when interval="17.272144546217874" since="#T0" xml:id="T132"/>
+<when interval="17.312339536143266" since="#T0" xml:id="T136"/>
+<when interval="17.375685136634967" since="#T0" xml:id="T135"/>
+<when interval="17.42913298704984" since="#T0" xml:id="T138"/>
+<when interval="17.48456038748008" since="#T0" xml:id="T139"/>
+<when interval="17.55384463801788" since="#T0" xml:id="T137"/>
+<when interval="17.619169788524946" since="#T0" xml:id="T140"/>
+<when interval="17.658760788832257" since="#T0" xml:id="T141"/>
+<when interval="17.702144546217873" since="#T0" xml:id="T142"/>
+<when interval="17.757738289600542" since="#T0" xml:id="T143"/>
+<when interval="17.94183644102955" since="#T0" xml:id="T144"/>
+<when interval="18.102390318493264" since="#T0" xml:id="T125"/>
+<when interval="19.333358600239944" since="#T0" xml:id="T145"/>
+<when interval="19.373358600239943" since="#T0" xml:id="T148"/>
+<when interval="19.433358600239945" since="#T0" xml:id="T147"/>
+<when interval="19.483358600239942" since="#T0" xml:id="T150"/>
+<when interval="19.636791108314185" since="#T0" xml:id="T151"/>
+<when interval="19.703358600239945" since="#T0" xml:id="T149"/>
+<when interval="19.743358600239944" since="#T0" xml:id="T153"/>
+<when interval="20.043358600239944" since="#T0" xml:id="T152"/>
+<when interval="20.103358600239943" since="#T0" xml:id="T155"/>
+<when interval="20.133358600239944" since="#T0" xml:id="T154"/>
+<when interval="20.193358600239943" since="#T0" xml:id="T157"/>
+<when interval="20.283358600239943" since="#T0" xml:id="T158"/>
+<when interval="20.343358600239945" since="#T0" xml:id="T156"/>
+<when interval="20.373358600239943" since="#T0" xml:id="T160"/>
+<when interval="20.454852100460336" since="#T0" xml:id="T159"/>
+<when interval="20.49840220079838" since="#T0" xml:id="T162"/>
+<when interval="20.575335397619927" since="#T0" xml:id="T163"/>
+<when interval="20.717862998726258" since="#T0" xml:id="T161"/>
+<when interval="20.838524209031437" since="#T0" xml:id="T164"/>
+<when interval="20.963358600239943" since="#T0" xml:id="T146"/>
+<when interval="21.132423218529578" since="#T0" xml:id="T165"/>
+<when interval="21.27242321852958" since="#T0" xml:id="T168"/>
+<when interval="21.351319003643272" since="#T0" xml:id="T169"/>
+<when interval="21.418623704165704" since="#T0" xml:id="T167"/>
+<when interval="21.472423218529578" since="#T0" xml:id="T171"/>
+<when interval="21.525519404995453" since="#T0" xml:id="T170"/>
+<when interval="21.54531490514911" since="#T0" xml:id="T173"/>
+<when interval="21.632423218529578" since="#T0" xml:id="T172"/>
+<when interval="21.673985656147877" since="#T0" xml:id="T175"/>
+<when interval="21.701699356362997" since="#T0" xml:id="T176"/>
+<when interval="21.78242321852958" since="#T0" xml:id="T177"/>
+<when interval="21.812554157223474" since="#T0" xml:id="T174"/>
+<when interval="21.85214515753079" since="#T0" xml:id="T179"/>
+<when interval="21.902423218529577" since="#T0" xml:id="T180"/>
+<when interval="21.99863185866785" since="#T0" xml:id="T178"/>
+<when interval="22.050100159067355" since="#T0" xml:id="T181"/>
+<when interval="22.18075046008149" since="#T0" xml:id="T182"/>
+<when interval="22.228259660450266" since="#T0" xml:id="T166"/>
+<when interval="23.306739430166676" since="#T0" xml:id="T183"/>
+<when interval="23.34719322493174" since="#T0" xml:id="T186"/>
+<when interval="23.42901479261479" since="#T0" xml:id="T185"/>
+<when interval="23.476739430166678" since="#T0" xml:id="T188"/>
+<when interval="23.559417916109656" since="#T0" xml:id="T187"/>
+<when interval="23.613113319901657" since="#T0" xml:id="T190"/>
+<when interval="23.67192257167385" since="#T0" xml:id="T189"/>
+<when interval="23.71283335551538" since="#T0" xml:id="T192"/>
+<when interval="23.79373602550078" since="#T0" xml:id="T191"/>
+<when interval="23.836739430166677" since="#T0" xml:id="T194"/>
+<when interval="23.924386326514917" since="#T0" xml:id="T193"/>
+<when interval="23.9540795767454" since="#T0" xml:id="T196"/>
+<when interval="24.011486527191007" since="#T0" xml:id="T195"/>
+<when interval="24.053057077513685" since="#T0" xml:id="T198"/>
+<when interval="24.094627627836363" since="#T0" xml:id="T199"/>
+<when interval="24.207461978712207" since="#T0" xml:id="T200"/>
+<when interval="24.258930279111716" since="#T0" xml:id="T197"/>
+<when interval="24.31633722955732" since="#T0" xml:id="T202"/>
+<when interval="24.450946630602186" since="#T0" xml:id="T203"/>
+<when interval="24.52204673223819" since="#T0" xml:id="T201"/>
+<when interval="24.5825484719331" since="#T0" xml:id="T205"/>
+<when interval="24.66436683182338" since="#T0" xml:id="T204"/>
+<when interval="24.717157872977968" since="#T0" xml:id="T207"/>
+<when interval="24.79204673223819" since="#T0" xml:id="T208"/>
+<when interval="24.822046732238192" since="#T0" xml:id="T206"/>
+<when interval="24.85204673223819" since="#T0" xml:id="T210"/>
+<when interval="24.925010624591362" since="#T0" xml:id="T209"/>
+<when interval="24.954703874821846" since="#T0" xml:id="T212"/>
+<when interval="25.006172175221355" since="#T0" xml:id="T213"/>
+<when interval="25.148699776327682" since="#T0" xml:id="T211"/>
+<when interval="25.208086276788652" since="#T0" xml:id="T214"/>
+<when interval="25.289247827418645" since="#T0" xml:id="T215"/>
+<when interval="25.491161928985946" since="#T0" xml:id="T184"/>
+<when interval="26.456605961092645" since="#T0" xml:id="T216"/>
+<when interval="26.6478130671107" since="#T0" xml:id="T218"/>
+<when interval="27.11149491421672" since="#T0" xml:id="T217"/>
+<when interval="27.50310323830251" since="#T0" xml:id="T219"/>
+<when interval="27.58310323830251" since="#T0" xml:id="T221"/>
+<when interval="27.635083524632336" since="#T0" xml:id="T223"/>
+<when interval="27.693103238302513" since="#T0" xml:id="T224"/>
+<when interval="27.803345275938415" since="#T0" xml:id="T222"/>
+<when interval="27.878568176522315" since="#T0" xml:id="T226"/>
+<when interval="28.019116227613274" since="#T0" xml:id="T225"/>
+<when interval="28.10819597830473" since="#T0" xml:id="T228"/>
+<when interval="28.199255279011552" since="#T0" xml:id="T227"/>
+<when interval="28.373103238302512" since="#T0" xml:id="T230"/>
+<when interval="28.535778781623716" since="#T0" xml:id="T231"/>
+<when interval="28.69018512040338" since="#T0" xml:id="T229"/>
+<when interval="28.733103238302512" since="#T0" xml:id="T232"/>
+<when interval="29.195680212448902" since="#T0" xml:id="T220"/>
+<when interval="30.889768741889902" since="#T0" xml:id="T233"/>
+<when interval="30.930354087629652" since="#T0" xml:id="T236"/>
+<when interval="30.987583133813242" since="#T0" xml:id="T235"/>
+<when interval="31.07499930624577" since="#T0" xml:id="T238"/>
+<when interval="31.11758313381324" since="#T0" xml:id="T237"/>
+<when interval="31.14086453972275" since="#T0" xml:id="T240"/>
+<when interval="31.16023666721598" since="#T0" xml:id="T241"/>
+<when interval="31.227393375859176" since="#T0" xml:id="T242"/>
+<when interval="31.27758313381324" since="#T0" xml:id="T239"/>
+<when interval="31.3139222119956" since="#T0" xml:id="T244"/>
+<when interval="31.378495970306368" since="#T0" xml:id="T243"/>
+<when interval="31.467583133813243" since="#T0" xml:id="T246"/>
+<when interval="31.51797528825762" since="#T0" xml:id="T247"/>
+<when interval="31.601921174061616" since="#T0" xml:id="T245"/>
+<when interval="31.647583133813242" since="#T0" xml:id="T249"/>
+<when interval="31.71944541418721" since="#T0" xml:id="T248"/>
+<when interval="31.858924732138465" since="#T0" xml:id="T251"/>
+<when interval="31.884754235462772" since="#T0" xml:id="T252"/>
+<when interval="32.02743686856351" since="#T0" xml:id="T250"/>
+<when interval="32.16583558031255" since="#T0" xml:id="T253"/>
+<when interval="32.21583558031255" since="#T0" xml:id="T255"/>
+<when interval="32.265835580312554" since="#T0" xml:id="T256"/>
+<when interval="32.348710423948816" since="#T0" xml:id="T254"/>
+<when interval="32.432656309752815" since="#T0" xml:id="T258"/>
+<when interval="32.52583558031255" since="#T0" xml:id="T257"/>
+<when interval="32.56583558031255" since="#T0" xml:id="T260"/>
+<when interval="32.66583558031255" since="#T0" xml:id="T259"/>
+<when interval="32.695835580312554" since="#T0" xml:id="T262"/>
+<when interval="32.81364148378633" since="#T0" xml:id="T261"/>
+<when interval="32.861426064936296" since="#T0" xml:id="T264"/>
+<when interval="32.88583558031255" since="#T0" xml:id="T265"/>
+<when interval="32.96583558031255" since="#T0" xml:id="T266"/>
+<when interval="33.026734886211855" since="#T0" xml:id="T263"/>
+<when interval="33.06935356669696" since="#T0" xml:id="T268"/>
+<when interval="33.125835580312554" since="#T0" xml:id="T267"/>
+<when interval="33.16583558031255" since="#T0" xml:id="T270"/>
+<when interval="33.21270731014686" since="#T0" xml:id="T271"/>
+<when interval="33.295835580312556" since="#T0" xml:id="T269"/>
+<when interval="33.335835580312555" since="#T0" xml:id="T273"/>
+<when interval="33.4049691662789" since="#T0" xml:id="T272"/>
+<when interval="33.45583558031255" since="#T0" xml:id="T274"/>
+<when interval="33.61013575372914" since="#T0" xml:id="T275"/>
+<when interval="33.66820472414135" since="#T0" xml:id="T234"/>
+<when interval="34.38987435958117" since="#T0" xml:id="T276"/>
+<when interval="34.41987435958117" since="#T0" xml:id="T279"/>
+<when interval="34.48884262944745" since="#T0" xml:id="T278"/>
+<when interval="34.53755798354522" since="#T0" xml:id="T281"/>
+<when interval="34.610631014691876" since="#T0" xml:id="T280"/>
+<when interval="34.698115770005664" since="#T0" xml:id="T283"/>
+<when interval="34.77082958297494" since="#T0" xml:id="T282"/>
+<when interval="34.82422910573596" since="#T0" xml:id="T285"/>
+<when interval="34.88565839815907" since="#T0" xml:id="T284"/>
+<when interval="34.952575327108946" since="#T0" xml:id="T287"/>
+<when interval="35.038559394360576" since="#T0" xml:id="T286"/>
+<when interval="35.084429693221026" since="#T0" xml:id="T289"/>
+<when interval="35.22755348416365" since="#T0" xml:id="T290"/>
+<when interval="35.27814250572673" since="#T0" xml:id="T288"/>
+<when interval="35.3287315272898" since="#T0" xml:id="T292"/>
+<when interval="35.405551893367054" since="#T0" xml:id="T291"/>
+<when interval="35.44864624506893" since="#T0" xml:id="T294"/>
+<when interval="35.55076112192773" since="#T0" xml:id="T295"/>
+<when interval="35.60987435958117" since="#T0" xml:id="T293"/>
+<when interval="35.67987435958117" since="#T0" xml:id="T297"/>
+<when interval="35.79987435958117" since="#T0" xml:id="T296"/>
+<when interval="35.85051977078499" since="#T0" xml:id="T299"/>
+<when interval="36.05193902330463" since="#T0" xml:id="T298"/>
+<when interval="36.1006543774024" since="#T0" xml:id="T300"/>
+<when interval="36.21775859398359" since="#T0" xml:id="T277"/>
+<when interval="36.693202874406985" since="#T0" xml:id="T301"/>
+<when interval="36.73112924500218" since="#T0" xml:id="T304"/>
+<when interval="36.82436652503463" since="#T0" xml:id="T303"/>
+<when interval="36.91112924500218" since="#T0" xml:id="T306"/>
+<when interval="36.970276789341" since="#T0" xml:id="T305"/>
+<when interval="37.04112924500218" since="#T0" xml:id="T308"/>
+<when interval="37.23112924500218" since="#T0" xml:id="T307"/>
+<when interval="37.3473379491062" since="#T0" xml:id="T310"/>
+<when interval="37.39112924500218" since="#T0" xml:id="T311"/>
+<when interval="37.45112924500218" since="#T0" xml:id="T309"/>
+<when interval="37.59653572199096" since="#T0" xml:id="T313"/>
+<when interval="37.68520502292856" since="#T0" xml:id="T312"/>
+<when interval="37.770104972696146" since="#T0" xml:id="T315"/>
+<when interval="37.89112924500218" since="#T0" xml:id="T316"/>
+<when interval="37.96112924500218" since="#T0" xml:id="T314"/>
+<when interval="38.02112924500218" since="#T0" xml:id="T318"/>
+<when interval="38.094931267760494" since="#T0" xml:id="T317"/>
+<when interval="38.145079750836324" since="#T0" xml:id="T320"/>
+<when interval="38.26063801579776" since="#T0" xml:id="T319"/>
+<when interval="38.33112924500218" since="#T0" xml:id="T321"/>
+<when interval="38.44149220707748" since="#T0" xml:id="T322"/>
+<when interval="38.63943099943036" since="#T0" xml:id="T302"/>
+<when interval="38.66943099943036" since="#T0" xml:id="T325"/>
+<when interval="38.7689816075736" since="#T0" xml:id="T324"/>
+<when interval="38.829430999430365" since="#T0" xml:id="T327"/>
+<when interval="38.92355917346077" since="#T0" xml:id="T328"/>
+<when interval="38.953537852905555" since="#T0" xml:id="T329"/>
+<when interval="39.00037953953803" since="#T0" xml:id="T326"/>
+<when interval="39.0453475587052" since="#T0" xml:id="T331"/>
+<when interval="39.189430999430364" since="#T0" xml:id="T330"/>
+<when interval="39.38943099943036" since="#T0" xml:id="T332"/>
+<when interval="39.49049882845485" since="#T0" xml:id="T323"/>
+<when interval="40.03821584065067" since="#T0" xml:id="T333"/>
+<when interval="40.061087677558" since="#T0" xml:id="T336"/>
+<when interval="40.08544535460689" since="#T0" xml:id="T337"/>
+<when interval="40.15102371589236" since="#T0" xml:id="T335"/>
+<when interval="40.18821584065067" since="#T0" xml:id="T338"/>
+<when interval="40.61675586930118" since="#T0" xml:id="T334"/>
+<when interval="41.21821584065067" since="#T0" xml:id="T339"/>
+<when interval="41.281461282192616" since="#T0" xml:id="T341"/>
+<when interval="41.516364539837994" since="#T0" xml:id="T340"/>
+<when interval="41.67821584065067" since="#T0" xml:id="T342"/>
+<when interval="41.699047117704644" since="#T0" xml:id="T345"/>
+<when interval="41.76368864525746" since="#T0" xml:id="T344"/>
+<when interval="41.79821584065067" since="#T0" xml:id="T347"/>
+<when interval="41.848215840650674" since="#T0" xml:id="T348"/>
+<when interval="41.88821584065067" since="#T0" xml:id="T349"/>
+<when interval="41.94821584065067" since="#T0" xml:id="T350"/>
+<when interval="41.993212909756586" since="#T0" xml:id="T346"/>
+<when interval="42.07821584065067" since="#T0" xml:id="T352"/>
+<when interval="42.12821584065067" since="#T0" xml:id="T353"/>
+<when interval="42.18339015748443" since="#T0" xml:id="T351"/>
+<when interval="42.238215840650675" since="#T0" xml:id="T355"/>
+<when interval="42.31821584065067" since="#T0" xml:id="T354"/>
+<when interval="42.36821584065067" since="#T0" xml:id="T357"/>
+<when interval="42.458110283971976" since="#T0" xml:id="T356"/>
+<when interval="42.51821584065067" since="#T0" xml:id="T358"/>
+<when interval="42.64056203042403" since="#T0" xml:id="T359"/>
+<when interval="42.786612948786384" since="#T0" xml:id="T343"/>
+<when interval="43.299556891278236" since="#T0" xml:id="T360"/>
+<when interval="43.339556891278235" since="#T0" xml:id="T363"/>
+<when interval="43.42119444297647" since="#T0" xml:id="T362"/>
+<when interval="43.470807260801976" since="#T0" xml:id="T365"/>
+<when interval="43.619556891278236" since="#T0" xml:id="T364"/>
+<when interval="43.66955689127823" since="#T0" xml:id="T367"/>
+<when interval="43.70955689127823" since="#T0" xml:id="T366"/>
+<when interval="43.77955689127823" since="#T0" xml:id="T369"/>
+<when interval="43.809556891278234" since="#T0" xml:id="T368"/>
+<when interval="43.85955689127824" since="#T0" xml:id="T371"/>
+<when interval="43.99730781855099" since="#T0" xml:id="T370"/>
+<when interval="44.062886179836454" since="#T0" xml:id="T372"/>
+<when interval="44.326748886505904" since="#T0" xml:id="T361"/>
+<when interval="45.51837897282253" since="#T0" xml:id="T373"/>
+<when interval="45.55837897282253" since="#T0" xml:id="T376"/>
+<when interval="45.63510548859612" since="#T0" xml:id="T375"/>
+<when interval="45.696936514950984" since="#T0" xml:id="T378"/>
+<when interval="45.73837897282253" since="#T0" xml:id="T379"/>
+<when interval="45.83558790738311" since="#T0" xml:id="T377"/>
+<when interval="45.88055592655028" since="#T0" xml:id="T381"/>
+<when interval="45.987354972072325" since="#T0" xml:id="T382"/>
+<when interval="46.15973237887983" since="#T0" xml:id="T380"/>
+<when interval="46.34147812301383" since="#T0" xml:id="T383"/>
+<when interval="46.39765544485224" since="#T0" xml:id="T385"/>
+<when interval="46.46765544485224" since="#T0" xml:id="T384"/>
+<when interval="46.51385552982134" since="#T0" xml:id="T387"/>
+<when interval="46.587655444852246" since="#T0" xml:id="T386"/>
+<when interval="46.627655444852245" since="#T0" xml:id="T389"/>
+<when interval="46.69372760649004" since="#T0" xml:id="T388"/>
+<when interval="46.718085283538926" since="#T0" xml:id="T391"/>
+<when interval="46.77991630989379" since="#T0" xml:id="T390"/>
+<when interval="46.871624335362384" since="#T0" xml:id="T393"/>
+<when interval="46.987655444852244" since="#T0" xml:id="T392"/>
+<when interval="47.047655444852246" since="#T0" xml:id="T395"/>
+<when interval="47.1590999986199" since="#T0" xml:id="T396"/>
+<when interval="47.241541367093056" since="#T0" xml:id="T394"/>
+<when interval="47.68765544485224" since="#T0" xml:id="T397"/>
+<when interval="47.78677859949506" since="#T0" xml:id="T399"/>
+<when interval="47.82987295119693" since="#T0" xml:id="T400"/>
+<when interval="47.89765544485224" since="#T0" xml:id="T401"/>
+<when interval="47.99765544485224" since="#T0" xml:id="T398"/>
+<when interval="48.037850039845125" since="#T0" xml:id="T403"/>
+<when interval="48.10717573606119" since="#T0" xml:id="T402"/>
+<when interval="48.14090175043657" since="#T0" xml:id="T405"/>
+<when interval="48.215297730193186" since="#T0" xml:id="T406"/>
+<when interval="48.268311138076896" since="#T0" xml:id="T404"/>
+<when interval="48.307655444852244" since="#T0" xml:id="T407"/>
+<when interval="48.417655444852244" since="#T0" xml:id="T408"/>
+<when interval="48.492549958152104" since="#T0" xml:id="T374"/>
+<when interval="49.30761937447262" since="#T0" xml:id="T409"/>
+<when interval="49.727619374472624" since="#T0" xml:id="T411"/>
+<when interval="49.81761937447262" since="#T0" xml:id="T413"/>
+<when interval="49.87761937447262" since="#T0" xml:id="T412"/>
+<when interval="49.92761937447262" since="#T0" xml:id="T415"/>
+<when interval="49.96761937447262" since="#T0" xml:id="T416"/>
+<when interval="49.99761937447262" since="#T0" xml:id="T414"/>
+<when interval="50.02761937447262" since="#T0" xml:id="T417"/>
+<when interval="50.09190493194318" since="#T0" xml:id="T410"/>
+<when interval="50.430295" since="#T0" xml:id="T418"/>
+</timeline>
+<body>
+<div>
+<head>
+<note type="start">#T0</note>
+<note type="end">#T418</note>
+</head>
+<annotationBloc end="#T1" start="#T0" who="ortho" xml:id="au2762">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T0" to="#T1" xml:id="s48">_<spanGrp type="phones">
+<span from="#T0" to="#T1" xml:id="s49">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T0" to="#T1" xml:id="s50">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T1" who="ortho" xml:id="au2763">
+<u>
+<seg>et ben euh</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T1" to="#T3" xml:id="s51">e<spanGrp type="phones">
+<span from="#T1" to="#T3" xml:id="s52">e</span>
+</spanGrp>
+</span>
+<span from="#T3" to="#T4" xml:id="s53">be~<spanGrp type="phones">
+<span from="#T3" to="#T5" xml:id="s54">b</span>
+<span from="#T5" to="#T4" xml:id="s55">e~</span>
+</spanGrp>
+</span>
+<span from="#T4" to="#T2" xml:id="s56">2<spanGrp type="phones">
+<span from="#T4" to="#T2" xml:id="s57">2</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T1" to="#T3" xml:id="s58">et</span>
+<span from="#T3" to="#T4" xml:id="s59">ben</span>
+<span from="#T4" to="#T2" xml:id="s60">euh</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T2" who="ortho" xml:id="au2764">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T2" to="#T6" xml:id="s61">_<spanGrp type="phones">
+<span from="#T2" to="#T6" xml:id="s62">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T2" to="#T6" xml:id="s63">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="ortho" xml:id="au2765">
+<u>
+<seg>tu prends le boulevard euh</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T6" to="#T8" xml:id="s64">ty<spanGrp type="phones">
+<span from="#T6" to="#T9" xml:id="s65">t</span>
+<span from="#T9" to="#T8" xml:id="s66">y</span>
+</spanGrp>
+</span>
+<span from="#T8" to="#T10" xml:id="s67">pRa~l<spanGrp type="phones">
+<span from="#T8" to="#T11" xml:id="s68">p</span>
+<span from="#T11" to="#T12" xml:id="s69">R</span>
+<span from="#T12" to="#T13" xml:id="s70">a~</span>
+<span from="#T13" to="#T10" xml:id="s71">l</span>
+</spanGrp>
+</span>
+<span from="#T10" to="#T14" xml:id="s72">bul<spanGrp type="phones">
+<span from="#T10" to="#T15" xml:id="s73">b</span>
+<span from="#T15" to="#T16" xml:id="s74">u</span>
+<span from="#T16" to="#T14" xml:id="s75">l</span>
+</spanGrp>
+</span>
+<span from="#T14" to="#T17" xml:id="s76">va<spanGrp type="phones">
+<span from="#T14" to="#T18" xml:id="s77">v</span>
+<span from="#T18" to="#T17" xml:id="s78">a</span>
+</spanGrp>
+</span>
+<span from="#T17" to="#T7" xml:id="s79">R2<spanGrp type="phones">
+<span from="#T17" to="#T19" xml:id="s80">R</span>
+<span from="#T19" to="#T7" xml:id="s81">2</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T6" to="#T8" xml:id="s82">tu</span>
+<span from="#T8" to="#T13" xml:id="s83">prends</span>
+<span from="#T13" to="#T10" xml:id="s84">le</span>
+<span from="#T10" to="#T17" xml:id="s85">boulevard</span>
+<span from="#T17" to="#T7" xml:id="s86">euh</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T20" start="#T7" who="ortho" xml:id="au2766">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T7" to="#T20" xml:id="s87">_<spanGrp type="phones">
+<span from="#T7" to="#T20" xml:id="s88">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T7" to="#T20" xml:id="s89">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T21" start="#T20" who="ortho" xml:id="au2767">
+<u>
+<seg>là qui part de Nef Chavant là le boulevard qui passe à côté d'Habitat</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T20" to="#T22" xml:id="s90">la<spanGrp type="phones">
+<span from="#T20" to="#T23" xml:id="s91">l</span>
+<span from="#T23" to="#T22" xml:id="s92">a</span>
+</spanGrp>
+</span>
+<span from="#T22" to="#T24" xml:id="s93">ki<spanGrp type="phones">
+<span from="#T22" to="#T25" xml:id="s94">k</span>
+<span from="#T25" to="#T24" xml:id="s95">i</span>
+</spanGrp>
+</span>
+<span from="#T24" to="#T26" xml:id="s96">pa<spanGrp type="phones">
+<span from="#T24" to="#T27" xml:id="s97">p</span>
+<span from="#T27" to="#T26" xml:id="s98">a</span>
+</spanGrp>
+</span>
+<span from="#T26" to="#T28" xml:id="s99">R2<spanGrp type="phones">
+<span from="#T26" to="#T29" xml:id="s100">R</span>
+<span from="#T29" to="#T28" xml:id="s101">2</span>
+</spanGrp>
+</span>
+<span from="#T28" to="#T30" xml:id="s102">d@<spanGrp type="phones">
+<span from="#T28" to="#T31" xml:id="s103">d</span>
+<span from="#T31" to="#T30" xml:id="s104">@</span>
+</spanGrp>
+</span>
+<span from="#T30" to="#T32" xml:id="s105">nEf<spanGrp type="phones">
+<span from="#T30" to="#T33" xml:id="s106">n</span>
+<span from="#T33" to="#T34" xml:id="s107">E</span>
+<span from="#T34" to="#T32" xml:id="s108">f</span>
+</spanGrp>
+</span>
+<span from="#T32" to="#T35" xml:id="s109">Sa<spanGrp type="phones">
+<span from="#T32" to="#T36" xml:id="s110">S</span>
+<span from="#T36" to="#T35" xml:id="s111">a</span>
+</spanGrp>
+</span>
+<span from="#T35" to="#T37" xml:id="s112">va~<spanGrp type="phones">
+<span from="#T35" to="#T38" xml:id="s113">v</span>
+<span from="#T38" to="#T37" xml:id="s114">a~</span>
+</spanGrp>
+</span>
+<span from="#T37" to="#T39" xml:id="s115">lal<spanGrp type="phones">
+<span from="#T37" to="#T40" xml:id="s116">l</span>
+<span from="#T40" to="#T41" xml:id="s117">a</span>
+<span from="#T41" to="#T39" xml:id="s118">l</span>
+</spanGrp>
+</span>
+<span from="#T39" to="#T42" xml:id="s119">bul<spanGrp type="phones">
+<span from="#T39" to="#T43" xml:id="s120">b</span>
+<span from="#T43" to="#T44" xml:id="s121">u</span>
+<span from="#T44" to="#T42" xml:id="s122">l</span>
+</spanGrp>
+</span>
+<span from="#T42" to="#T45" xml:id="s123">vaR<spanGrp type="phones">
+<span from="#T42" to="#T46" xml:id="s124">v</span>
+<span from="#T46" to="#T47" xml:id="s125">a</span>
+<span from="#T47" to="#T45" xml:id="s126">R</span>
+</spanGrp>
+</span>
+<span from="#T45" to="#T48" xml:id="s127">ki<spanGrp type="phones">
+<span from="#T45" to="#T49" xml:id="s128">k</span>
+<span from="#T49" to="#T48" xml:id="s129">i</span>
+</spanGrp>
+</span>
+<span from="#T48" to="#T50" xml:id="s130">pa<spanGrp type="phones">
+<span from="#T48" to="#T51" xml:id="s131">p</span>
+<span from="#T51" to="#T50" xml:id="s132">a</span>
+</spanGrp>
+</span>
+<span from="#T50" to="#T52" xml:id="s133">sa<spanGrp type="phones">
+<span from="#T50" to="#T53" xml:id="s134">s</span>
+<span from="#T53" to="#T52" xml:id="s135">a</span>
+</spanGrp>
+</span>
+<span from="#T52" to="#T54" xml:id="s136">ko<spanGrp type="phones">
+<span from="#T52" to="#T55" xml:id="s137">k</span>
+<span from="#T55" to="#T54" xml:id="s138">o</span>
+</spanGrp>
+</span>
+<span from="#T54" to="#T56" xml:id="s139">te<spanGrp type="phones">
+<span from="#T54" to="#T57" xml:id="s140">t</span>
+<span from="#T57" to="#T56" xml:id="s141">e</span>
+</spanGrp>
+</span>
+<span from="#T56" to="#T58" xml:id="s142">da<spanGrp type="phones">
+<span from="#T56" to="#T59" xml:id="s143">d</span>
+<span from="#T59" to="#T58" xml:id="s144">a</span>
+</spanGrp>
+</span>
+<span from="#T58" to="#T60" xml:id="s145">bi<spanGrp type="phones">
+<span from="#T58" to="#T61" xml:id="s146">b</span>
+<span from="#T61" to="#T60" xml:id="s147">i</span>
+</spanGrp>
+</span>
+<span from="#T60" to="#T21" xml:id="s148">ta<spanGrp type="phones">
+<span from="#T60" to="#T62" xml:id="s149">t</span>
+<span from="#T62" to="#T21" xml:id="s150">a</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T20" to="#T22" xml:id="s151">là</span>
+<span from="#T22" to="#T24" xml:id="s152">qui</span>
+<span from="#T24" to="#T28" xml:id="s153">part</span>
+<span from="#T28" to="#T30" xml:id="s154">de</span>
+<span from="#T30" to="#T32" xml:id="s155">Nef</span>
+<span from="#T32" to="#T37" xml:id="s156">Chavant</span>
+<span from="#T37" to="#T41" xml:id="s157">là</span>
+<span from="#T41" to="#T39" xml:id="s158">le</span>
+<span from="#T39" to="#T45" xml:id="s159">boulevard</span>
+<span from="#T45" to="#T48" xml:id="s160">qui</span>
+<span from="#T48" to="#T53" xml:id="s161">passe</span>
+<span from="#T53" to="#T52" xml:id="s162">à</span>
+<span from="#T52" to="#T56" xml:id="s163">côté</span>
+<span from="#T56" to="#T59" xml:id="s164">d'</span>
+<span from="#T59" to="#T21" xml:id="s165">Habitat</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T63" start="#T21" who="ortho" xml:id="au2768">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T21" to="#T63" xml:id="s166">_<spanGrp type="phones">
+<span from="#T21" to="#T63" xml:id="s167">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T21" to="#T63" xml:id="s168">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T64" start="#T63" who="ortho" xml:id="au2769">
+<u>
+<seg>tu continues tu vas arriver sur la place euh Victor Hugo</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T63" to="#T65" xml:id="s169">ty<spanGrp type="phones">
+<span from="#T63" to="#T66" xml:id="s170">t</span>
+<span from="#T66" to="#T65" xml:id="s171">y</span>
+</spanGrp>
+</span>
+<span from="#T65" to="#T67" xml:id="s172">ko~<spanGrp type="phones">
+<span from="#T65" to="#T68" xml:id="s173">k</span>
+<span from="#T68" to="#T67" xml:id="s174">o~</span>
+</spanGrp>
+</span>
+<span from="#T67" to="#T69" xml:id="s175">ti<spanGrp type="phones">
+<span from="#T67" to="#T70" xml:id="s176">t</span>
+<span from="#T70" to="#T69" xml:id="s177">i</span>
+</spanGrp>
+</span>
+<span from="#T69" to="#T71" xml:id="s178">ny<spanGrp type="phones">
+<span from="#T69" to="#T72" xml:id="s179">n</span>
+<span from="#T72" to="#T71" xml:id="s180">y</span>
+</spanGrp>
+</span>
+<span from="#T71" to="#T73" xml:id="s181">ty<spanGrp type="phones">
+<span from="#T71" to="#T74" xml:id="s182">t</span>
+<span from="#T74" to="#T73" xml:id="s183">y</span>
+</spanGrp>
+</span>
+<span from="#T73" to="#T75" xml:id="s184">va<spanGrp type="phones">
+<span from="#T73" to="#T76" xml:id="s185">v</span>
+<span from="#T76" to="#T75" xml:id="s186">a</span>
+</spanGrp>
+</span>
+<span from="#T75" to="#T77" xml:id="s187">a<spanGrp type="phones">
+<span from="#T75" to="#T77" xml:id="s188">a</span>
+</spanGrp>
+</span>
+<span from="#T77" to="#T78" xml:id="s189">Ri<spanGrp type="phones">
+<span from="#T77" to="#T79" xml:id="s190">R</span>
+<span from="#T79" to="#T78" xml:id="s191">i</span>
+</spanGrp>
+</span>
+<span from="#T78" to="#T80" xml:id="s192">ve<spanGrp type="phones">
+<span from="#T78" to="#T81" xml:id="s193">v</span>
+<span from="#T81" to="#T80" xml:id="s194">e</span>
+</spanGrp>
+</span>
+<span from="#T80" to="#T82" xml:id="s195">syR<spanGrp type="phones">
+<span from="#T80" to="#T83" xml:id="s196">s</span>
+<span from="#T83" to="#T84" xml:id="s197">y</span>
+<span from="#T84" to="#T82" xml:id="s198">R</span>
+</spanGrp>
+</span>
+<span from="#T82" to="#T85" xml:id="s199">la<spanGrp type="phones">
+<span from="#T82" to="#T86" xml:id="s200">l</span>
+<span from="#T86" to="#T85" xml:id="s201">a</span>
+</spanGrp>
+</span>
+<span from="#T85" to="#T87" xml:id="s202">plas<spanGrp type="phones">
+<span from="#T85" to="#T88" xml:id="s203">p</span>
+<span from="#T88" to="#T89" xml:id="s204">l</span>
+<span from="#T89" to="#T90" xml:id="s205">a</span>
+<span from="#T90" to="#T87" xml:id="s206">s</span>
+</spanGrp>
+</span>
+<span from="#T87" to="#T91" xml:id="s207">2<spanGrp type="phones">
+<span from="#T87" to="#T91" xml:id="s208">2</span>
+</spanGrp>
+</span>
+<span from="#T91" to="#T92" xml:id="s209">vik<spanGrp type="phones">
+<span from="#T91" to="#T93" xml:id="s210">v</span>
+<span from="#T93" to="#T94" xml:id="s211">i</span>
+<span from="#T94" to="#T92" xml:id="s212">k</span>
+</spanGrp>
+</span>
+<span from="#T92" to="#T95" xml:id="s213">tO<spanGrp type="phones">
+<span from="#T92" to="#T96" xml:id="s214">t</span>
+<span from="#T96" to="#T95" xml:id="s215">O</span>
+</spanGrp>
+</span>
+<span from="#T95" to="#T97" xml:id="s216">Ry<spanGrp type="phones">
+<span from="#T95" to="#T98" xml:id="s217">R</span>
+<span from="#T98" to="#T97" xml:id="s218">y</span>
+</spanGrp>
+</span>
+<span from="#T97" to="#T64" xml:id="s219">go<spanGrp type="phones">
+<span from="#T97" to="#T99" xml:id="s220">g</span>
+<span from="#T99" to="#T64" xml:id="s221">o</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T63" to="#T65" xml:id="s222">tu</span>
+<span from="#T65" to="#T71" xml:id="s223">continues</span>
+<span from="#T71" to="#T73" xml:id="s224">tu</span>
+<span from="#T73" to="#T75" xml:id="s225">vas</span>
+<span from="#T75" to="#T80" xml:id="s226">arriver</span>
+<span from="#T80" to="#T82" xml:id="s227">sur</span>
+<span from="#T82" to="#T85" xml:id="s228">la</span>
+<span from="#T85" to="#T87" xml:id="s229">place</span>
+<span from="#T87" to="#T91" xml:id="s230">euh</span>
+<span from="#T91" to="#T98" xml:id="s231">Victor</span>
+<span from="#T98" to="#T64" xml:id="s232">Hugo</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T100" start="#T64" who="ortho" xml:id="au2770">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T64" to="#T100" xml:id="s233">_<spanGrp type="phones">
+<span from="#T64" to="#T100" xml:id="s234">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T64" to="#T100" xml:id="s235">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T101" start="#T100" who="ortho" xml:id="au2771">
+<u>
+<seg>euh la place Victor Hugo à la banque euh</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T100" to="#T102" xml:id="s236">2<spanGrp type="phones">
+<span from="#T100" to="#T102" xml:id="s237">2</span>
+</spanGrp>
+</span>
+<span from="#T102" to="#T103" xml:id="s238">la<spanGrp type="phones">
+<span from="#T102" to="#T104" xml:id="s239">l</span>
+<span from="#T104" to="#T103" xml:id="s240">a</span>
+</spanGrp>
+</span>
+<span from="#T103" to="#T105" xml:id="s241">plas<spanGrp type="phones">
+<span from="#T103" to="#T106" xml:id="s242">p</span>
+<span from="#T106" to="#T107" xml:id="s243">l</span>
+<span from="#T107" to="#T108" xml:id="s244">a</span>
+<span from="#T108" to="#T105" xml:id="s245">s</span>
+</spanGrp>
+</span>
+<span from="#T105" to="#T109" xml:id="s246">vik<spanGrp type="phones">
+<span from="#T105" to="#T110" xml:id="s247">v</span>
+<span from="#T110" to="#T111" xml:id="s248">i</span>
+<span from="#T111" to="#T109" xml:id="s249">k</span>
+</spanGrp>
+</span>
+<span from="#T109" to="#T112" xml:id="s250">tO<spanGrp type="phones">
+<span from="#T109" to="#T113" xml:id="s251">t</span>
+<span from="#T113" to="#T112" xml:id="s252">O</span>
+</spanGrp>
+</span>
+<span from="#T112" to="#T114" xml:id="s253">Ry<spanGrp type="phones">
+<span from="#T112" to="#T115" xml:id="s254">R</span>
+<span from="#T115" to="#T114" xml:id="s255">y</span>
+</spanGrp>
+</span>
+<span from="#T114" to="#T116" xml:id="s256">go<spanGrp type="phones">
+<span from="#T114" to="#T117" xml:id="s257">g</span>
+<span from="#T117" to="#T116" xml:id="s258">o</span>
+</spanGrp>
+</span>
+<span from="#T116" to="#T118" xml:id="s259">a<spanGrp type="phones">
+<span from="#T116" to="#T118" xml:id="s260">a</span>
+</spanGrp>
+</span>
+<span from="#T118" to="#T119" xml:id="s261">la<spanGrp type="phones">
+<span from="#T118" to="#T120" xml:id="s262">l</span>
+<span from="#T120" to="#T119" xml:id="s263">a</span>
+</spanGrp>
+</span>
+<span from="#T119" to="#T121" xml:id="s264">ba~k<spanGrp type="phones">
+<span from="#T119" to="#T122" xml:id="s265">b</span>
+<span from="#T122" to="#T123" xml:id="s266">a~</span>
+<span from="#T123" to="#T121" xml:id="s267">k</span>
+</spanGrp>
+</span>
+<span from="#T121" to="#T101" xml:id="s268">2<spanGrp type="phones">
+<span from="#T121" to="#T101" xml:id="s269">2</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T100" to="#T102" xml:id="s270">euh</span>
+<span from="#T102" to="#T103" xml:id="s271">la</span>
+<span from="#T103" to="#T105" xml:id="s272">place</span>
+<span from="#T105" to="#T115" xml:id="s273">Victor</span>
+<span from="#T115" to="#T116" xml:id="s274">Hugo</span>
+<span from="#T116" to="#T118" xml:id="s275">à</span>
+<span from="#T118" to="#T119" xml:id="s276">la</span>
+<span from="#T119" to="#T121" xml:id="s277">banque</span>
+<span from="#T121" to="#T101" xml:id="s278">euh</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T124" start="#T101" who="ortho" xml:id="au2772">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T101" to="#T124" xml:id="s279">_<spanGrp type="phones">
+<span from="#T101" to="#T124" xml:id="s280">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T101" to="#T124" xml:id="s281">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T125" start="#T124" who="ortho" xml:id="au2773">
+<u>
+<seg>qui fait l'angle tu prends à droite</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T124" to="#T126" xml:id="s282">ki<spanGrp type="phones">
+<span from="#T124" to="#T127" xml:id="s283">k</span>
+<span from="#T127" to="#T126" xml:id="s284">i</span>
+</spanGrp>
+</span>
+<span from="#T126" to="#T128" xml:id="s285">fE<spanGrp type="phones">
+<span from="#T126" to="#T129" xml:id="s286">f</span>
+<span from="#T129" to="#T128" xml:id="s287">E</span>
+</spanGrp>
+</span>
+<span from="#T128" to="#T130" xml:id="s288">la~<spanGrp type="phones">
+<span from="#T128" to="#T131" xml:id="s289">l</span>
+<span from="#T131" to="#T130" xml:id="s290">a~</span>
+</spanGrp>
+</span>
+<span from="#T130" to="#T132" xml:id="s291">gl@<spanGrp type="phones">
+<span from="#T130" to="#T133" xml:id="s292">g</span>
+<span from="#T133" to="#T134" xml:id="s293">l</span>
+<span from="#T134" to="#T132" xml:id="s294">@</span>
+</spanGrp>
+</span>
+<span from="#T132" to="#T135" xml:id="s295">ty<spanGrp type="phones">
+<span from="#T132" to="#T136" xml:id="s296">t</span>
+<span from="#T136" to="#T135" xml:id="s297">y</span>
+</spanGrp>
+</span>
+<span from="#T135" to="#T137" xml:id="s298">pRa~<spanGrp type="phones">
+<span from="#T135" to="#T138" xml:id="s299">p</span>
+<span from="#T138" to="#T139" xml:id="s300">R</span>
+<span from="#T139" to="#T137" xml:id="s301">a~</span>
+</spanGrp>
+</span>
+<span from="#T137" to="#T140" xml:id="s302">a<spanGrp type="phones">
+<span from="#T137" to="#T140" xml:id="s303">a</span>
+</spanGrp>
+</span>
+<span from="#T140" to="#T125" xml:id="s304">dRwat<spanGrp type="phones">
+<span from="#T140" to="#T141" xml:id="s305">d</span>
+<span from="#T141" to="#T142" xml:id="s306">R</span>
+<span from="#T142" to="#T143" xml:id="s307">w</span>
+<span from="#T143" to="#T144" xml:id="s308">a</span>
+<span from="#T144" to="#T125" xml:id="s309">t</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T124" to="#T126" xml:id="s310">qui</span>
+<span from="#T126" to="#T128" xml:id="s311">fait</span>
+<span from="#T128" to="#T131" xml:id="s312">l'</span>
+<span from="#T131" to="#T132" xml:id="s313">angle</span>
+<span from="#T132" to="#T135" xml:id="s314">tu</span>
+<span from="#T135" to="#T137" xml:id="s315">prends</span>
+<span from="#T137" to="#T140" xml:id="s316">à</span>
+<span from="#T140" to="#T125" xml:id="s317">droite</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T145" start="#T125" who="ortho" xml:id="au2774">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T125" to="#T145" xml:id="s318">_<spanGrp type="phones">
+<span from="#T125" to="#T145" xml:id="s319">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T125" to="#T145" xml:id="s320">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T146" start="#T145" who="ortho" xml:id="au2775">
+<u>
+<seg>tu longes les les rails du tram</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T145" to="#T147" xml:id="s321">ty<spanGrp type="phones">
+<span from="#T145" to="#T148" xml:id="s322">t</span>
+<span from="#T148" to="#T147" xml:id="s323">y</span>
+</spanGrp>
+</span>
+<span from="#T147" to="#T149" xml:id="s324">lo~Z<spanGrp type="phones">
+<span from="#T147" to="#T150" xml:id="s325">l</span>
+<span from="#T150" to="#T151" xml:id="s326">o~</span>
+<span from="#T151" to="#T149" xml:id="s327">Z</span>
+</spanGrp>
+</span>
+<span from="#T149" to="#T152" xml:id="s328">le<spanGrp type="phones">
+<span from="#T149" to="#T153" xml:id="s329">l</span>
+<span from="#T153" to="#T152" xml:id="s330">e</span>
+</spanGrp>
+</span>
+<span from="#T152" to="#T154" xml:id="s331">le<spanGrp type="phones">
+<span from="#T152" to="#T155" xml:id="s332">l</span>
+<span from="#T155" to="#T154" xml:id="s333">e</span>
+</spanGrp>
+</span>
+<span from="#T154" to="#T156" xml:id="s334">Raj<spanGrp type="phones">
+<span from="#T154" to="#T157" xml:id="s335">R</span>
+<span from="#T157" to="#T158" xml:id="s336">a</span>
+<span from="#T158" to="#T156" xml:id="s337">j</span>
+</spanGrp>
+</span>
+<span from="#T156" to="#T159" xml:id="s338">dy<spanGrp type="phones">
+<span from="#T156" to="#T160" xml:id="s339">d</span>
+<span from="#T160" to="#T159" xml:id="s340">y</span>
+</spanGrp>
+</span>
+<span from="#T159" to="#T161" xml:id="s341">tRa<spanGrp type="phones">
+<span from="#T159" to="#T162" xml:id="s342">t</span>
+<span from="#T162" to="#T163" xml:id="s343">R</span>
+<span from="#T163" to="#T161" xml:id="s344">a</span>
+</spanGrp>
+</span>
+<span from="#T161" to="#T146" xml:id="s345">m@<spanGrp type="phones">
+<span from="#T161" to="#T164" xml:id="s346">m</span>
+<span from="#T164" to="#T146" xml:id="s347">@</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T145" to="#T147" xml:id="s348">tu</span>
+<span from="#T147" to="#T149" xml:id="s349">longes</span>
+<span from="#T149" to="#T152" xml:id="s350">les</span>
+<span from="#T152" to="#T154" xml:id="s351">les</span>
+<span from="#T154" to="#T156" xml:id="s352">rails</span>
+<span from="#T156" to="#T159" xml:id="s353">du</span>
+<span from="#T159" to="#T146" xml:id="s354">tram</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T165" start="#T146" who="ortho" xml:id="au2776">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T146" to="#T165" xml:id="s355">_<spanGrp type="phones">
+<span from="#T146" to="#T165" xml:id="s356">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T146" to="#T165" xml:id="s357">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T166" start="#T165" who="ortho" xml:id="au2777">
+<u>
+<seg>jusqu'à la place Grenette </seg>
+</u>
+<spanGrp type="syll">
+<span from="#T165" to="#T167" xml:id="s358">Zys<spanGrp type="phones">
+<span from="#T165" to="#T168" xml:id="s359">Z</span>
+<span from="#T168" to="#T169" xml:id="s360">y</span>
+<span from="#T169" to="#T167" xml:id="s361">s</span>
+</spanGrp>
+</span>
+<span from="#T167" to="#T170" xml:id="s362">ka<spanGrp type="phones">
+<span from="#T167" to="#T171" xml:id="s363">k</span>
+<span from="#T171" to="#T170" xml:id="s364">a</span>
+</spanGrp>
+</span>
+<span from="#T170" to="#T172" xml:id="s365">la<spanGrp type="phones">
+<span from="#T170" to="#T173" xml:id="s366">l</span>
+<span from="#T173" to="#T172" xml:id="s367">a</span>
+</spanGrp>
+</span>
+<span from="#T172" to="#T174" xml:id="s368">plas<spanGrp type="phones">
+<span from="#T172" to="#T175" xml:id="s369">p</span>
+<span from="#T175" to="#T176" xml:id="s370">l</span>
+<span from="#T176" to="#T177" xml:id="s371">a</span>
+<span from="#T177" to="#T174" xml:id="s372">s</span>
+</spanGrp>
+</span>
+<span from="#T174" to="#T178" xml:id="s373">gR2<spanGrp type="phones">
+<span from="#T174" to="#T179" xml:id="s374">g</span>
+<span from="#T179" to="#T180" xml:id="s375">R</span>
+<span from="#T180" to="#T178" xml:id="s376">2</span>
+</spanGrp>
+</span>
+<span from="#T178" to="#T166" xml:id="s377">nEt<spanGrp type="phones">
+<span from="#T178" to="#T181" xml:id="s378">n</span>
+<span from="#T181" to="#T182" xml:id="s379">E</span>
+<span from="#T182" to="#T166" xml:id="s380">t</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T165" to="#T171" xml:id="s381">jusqu'</span>
+<span from="#T171" to="#T170" xml:id="s382">à</span>
+<span from="#T170" to="#T172" xml:id="s383">la</span>
+<span from="#T172" to="#T174" xml:id="s384">place</span>
+<span from="#T174" to="#T166" xml:id="s385">Grenette</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T183" start="#T166" who="ortho" xml:id="au2778">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T166" to="#T183" xml:id="s386">_<spanGrp type="phones">
+<span from="#T166" to="#T183" xml:id="s387">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T166" to="#T183" xml:id="s388">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T184" start="#T183" who="ortho" xml:id="au2779">
+<u>
+<seg>tu continues dans la vieille ville tu prends la grande rue</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T183" to="#T185" xml:id="s389">ty<spanGrp type="phones">
+<span from="#T183" to="#T186" xml:id="s390">t</span>
+<span from="#T186" to="#T185" xml:id="s391">y</span>
+</spanGrp>
+</span>
+<span from="#T185" to="#T187" xml:id="s392">ko~<spanGrp type="phones">
+<span from="#T185" to="#T188" xml:id="s393">k</span>
+<span from="#T188" to="#T187" xml:id="s394">o~</span>
+</spanGrp>
+</span>
+<span from="#T187" to="#T189" xml:id="s395">ti<spanGrp type="phones">
+<span from="#T187" to="#T190" xml:id="s396">t</span>
+<span from="#T190" to="#T189" xml:id="s397">i</span>
+</spanGrp>
+</span>
+<span from="#T189" to="#T191" xml:id="s398">ny<spanGrp type="phones">
+<span from="#T189" to="#T192" xml:id="s399">n</span>
+<span from="#T192" to="#T191" xml:id="s400">y</span>
+</spanGrp>
+</span>
+<span from="#T191" to="#T193" xml:id="s401">da~<spanGrp type="phones">
+<span from="#T191" to="#T194" xml:id="s402">d</span>
+<span from="#T194" to="#T193" xml:id="s403">a~</span>
+</spanGrp>
+</span>
+<span from="#T193" to="#T195" xml:id="s404">la<spanGrp type="phones">
+<span from="#T193" to="#T196" xml:id="s405">l</span>
+<span from="#T196" to="#T195" xml:id="s406">a</span>
+</spanGrp>
+</span>
+<span from="#T195" to="#T197" xml:id="s407">vjEj<spanGrp type="phones">
+<span from="#T195" to="#T198" xml:id="s408">v</span>
+<span from="#T198" to="#T199" xml:id="s409">j</span>
+<span from="#T199" to="#T200" xml:id="s410">E</span>
+<span from="#T200" to="#T197" xml:id="s411">j</span>
+</spanGrp>
+</span>
+<span from="#T197" to="#T201" xml:id="s412">vil<spanGrp type="phones">
+<span from="#T197" to="#T202" xml:id="s413">v</span>
+<span from="#T202" to="#T203" xml:id="s414">i</span>
+<span from="#T203" to="#T201" xml:id="s415">l</span>
+</spanGrp>
+</span>
+<span from="#T201" to="#T204" xml:id="s416">ty<spanGrp type="phones">
+<span from="#T201" to="#T205" xml:id="s417">t</span>
+<span from="#T205" to="#T204" xml:id="s418">y</span>
+</spanGrp>
+</span>
+<span from="#T204" to="#T206" xml:id="s419">pRa~<spanGrp type="phones">
+<span from="#T204" to="#T207" xml:id="s420">p</span>
+<span from="#T207" to="#T208" xml:id="s421">R</span>
+<span from="#T208" to="#T206" xml:id="s422">a~</span>
+</spanGrp>
+</span>
+<span from="#T206" to="#T209" xml:id="s423">la<spanGrp type="phones">
+<span from="#T206" to="#T210" xml:id="s424">l</span>
+<span from="#T210" to="#T209" xml:id="s425">a</span>
+</spanGrp>
+</span>
+<span from="#T209" to="#T211" xml:id="s426">gRa~<spanGrp type="phones">
+<span from="#T209" to="#T212" xml:id="s427">g</span>
+<span from="#T212" to="#T213" xml:id="s428">R</span>
+<span from="#T213" to="#T211" xml:id="s429">a~</span>
+</spanGrp>
+</span>
+<span from="#T211" to="#T184" xml:id="s430">dRy<spanGrp type="phones">
+<span from="#T211" to="#T214" xml:id="s431">d</span>
+<span from="#T214" to="#T215" xml:id="s432">R</span>
+<span from="#T215" to="#T184" xml:id="s433">y</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T183" to="#T185" xml:id="s434">tu</span>
+<span from="#T185" to="#T191" xml:id="s435">continues</span>
+<span from="#T191" to="#T193" xml:id="s436">dans</span>
+<span from="#T193" to="#T195" xml:id="s437">la</span>
+<span from="#T195" to="#T197" xml:id="s438">vieille</span>
+<span from="#T197" to="#T201" xml:id="s439">ville</span>
+<span from="#T201" to="#T204" xml:id="s440">tu</span>
+<span from="#T204" to="#T206" xml:id="s441">prends</span>
+<span from="#T206" to="#T209" xml:id="s442">la</span>
+<span from="#T209" to="#T214" xml:id="s443">grande</span>
+<span from="#T214" to="#T184" xml:id="s444">rue</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T216" start="#T184" who="ortho" xml:id="au2780">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T184" to="#T216" xml:id="s445">_<spanGrp type="phones">
+<span from="#T184" to="#T216" xml:id="s446">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T184" to="#T216" xml:id="s447">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T217" start="#T216" who="ortho" xml:id="au2781">
+<u>
+<seg>et euh </seg>
+</u>
+<spanGrp type="syll">
+<span from="#T216" to="#T218" xml:id="s448">e<spanGrp type="phones">
+<span from="#T216" to="#T218" xml:id="s449">e</span>
+</spanGrp>
+</span>
+<span from="#T218" to="#T217" xml:id="s450">2<spanGrp type="phones">
+<span from="#T218" to="#T217" xml:id="s451">2</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T216" to="#T218" xml:id="s452">et</span>
+<span from="#T218" to="#T217" xml:id="s453">euh</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T219" start="#T217" who="ortho" xml:id="au2782">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T217" to="#T219" xml:id="s454">_<spanGrp type="phones">
+<span from="#T217" to="#T219" xml:id="s455">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T217" to="#T219" xml:id="s456">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T220" start="#T219" who="ortho" xml:id="au2783">
+<u>
+<seg>après tu bifurques euh</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T219" to="#T221" xml:id="s457">a<spanGrp type="phones">
+<span from="#T219" to="#T221" xml:id="s458">a</span>
+</spanGrp>
+</span>
+<span from="#T221" to="#T222" xml:id="s459">pRE<spanGrp type="phones">
+<span from="#T221" to="#T223" xml:id="s460">p</span>
+<span from="#T223" to="#T224" xml:id="s461">R</span>
+<span from="#T224" to="#T222" xml:id="s462">E</span>
+</spanGrp>
+</span>
+<span from="#T222" to="#T225" xml:id="s463">ty<spanGrp type="phones">
+<span from="#T222" to="#T226" xml:id="s464">t</span>
+<span from="#T226" to="#T225" xml:id="s465">y</span>
+</spanGrp>
+</span>
+<span from="#T225" to="#T227" xml:id="s466">bi<spanGrp type="phones">
+<span from="#T225" to="#T228" xml:id="s467">b</span>
+<span from="#T228" to="#T227" xml:id="s468">i</span>
+</spanGrp>
+</span>
+<span from="#T227" to="#T229" xml:id="s469">fyR<spanGrp type="phones">
+<span from="#T227" to="#T230" xml:id="s470">f</span>
+<span from="#T230" to="#T231" xml:id="s471">y</span>
+<span from="#T231" to="#T229" xml:id="s472">R</span>
+</spanGrp>
+</span>
+<span from="#T229" to="#T220" xml:id="s473">k2<spanGrp type="phones">
+<span from="#T229" to="#T232" xml:id="s474">k</span>
+<span from="#T232" to="#T220" xml:id="s475">2</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T219" to="#T222" xml:id="s476">après</span>
+<span from="#T222" to="#T225" xml:id="s477">tu</span>
+<span from="#T225" to="#T232" xml:id="s478">bifurques</span>
+<span from="#T232" to="#T220" xml:id="s479">euh</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T233" start="#T220" who="ortho" xml:id="au2784">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T220" to="#T233" xml:id="s480">_<spanGrp type="phones">
+<span from="#T220" to="#T233" xml:id="s481">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T220" to="#T233" xml:id="s482">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T234" start="#T233" who="ortho" xml:id="au2785">
+<u>
+<seg>y a une petite bifurcation euh juste avant la place du Tribunal</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T233" to="#T235" xml:id="s483">ja<spanGrp type="phones">
+<span from="#T233" to="#T236" xml:id="s484">j</span>
+<span from="#T236" to="#T235" xml:id="s485">a</span>
+</spanGrp>
+</span>
+<span from="#T235" to="#T237" xml:id="s486">yn<spanGrp type="phones">
+<span from="#T235" to="#T238" xml:id="s487">y</span>
+<span from="#T238" to="#T237" xml:id="s488">n</span>
+</spanGrp>
+</span>
+<span from="#T237" to="#T239" xml:id="s489">ptit<spanGrp type="phones">
+<span from="#T237" to="#T240" xml:id="s490">p</span>
+<span from="#T240" to="#T241" xml:id="s491">t</span>
+<span from="#T241" to="#T242" xml:id="s492">i</span>
+<span from="#T242" to="#T239" xml:id="s493">t</span>
+</spanGrp>
+</span>
+<span from="#T239" to="#T243" xml:id="s494">bi<spanGrp type="phones">
+<span from="#T239" to="#T244" xml:id="s495">b</span>
+<span from="#T244" to="#T243" xml:id="s496">i</span>
+</spanGrp>
+</span>
+<span from="#T243" to="#T245" xml:id="s497">fyR<spanGrp type="phones">
+<span from="#T243" to="#T246" xml:id="s498">f</span>
+<span from="#T246" to="#T247" xml:id="s499">y</span>
+<span from="#T247" to="#T245" xml:id="s500">R</span>
+</spanGrp>
+</span>
+<span from="#T245" to="#T248" xml:id="s501">ka<spanGrp type="phones">
+<span from="#T245" to="#T249" xml:id="s502">k</span>
+<span from="#T249" to="#T248" xml:id="s503">a</span>
+</spanGrp>
+</span>
+<span from="#T248" to="#T250" xml:id="s504">sjo~<spanGrp type="phones">
+<span from="#T248" to="#T251" xml:id="s505">s</span>
+<span from="#T251" to="#T252" xml:id="s506">j</span>
+<span from="#T252" to="#T250" xml:id="s507">o~</span>
+</spanGrp>
+</span>
+<span from="#T250" to="#T253" xml:id="s508">2<spanGrp type="phones">
+<span from="#T250" to="#T253" xml:id="s509">2</span>
+</spanGrp>
+</span>
+<span from="#T253" to="#T254" xml:id="s510">Zys<spanGrp type="phones">
+<span from="#T253" to="#T255" xml:id="s511">Z</span>
+<span from="#T255" to="#T256" xml:id="s512">y</span>
+<span from="#T256" to="#T254" xml:id="s513">s</span>
+</spanGrp>
+</span>
+<span from="#T254" to="#T257" xml:id="s514">ta<spanGrp type="phones">
+<span from="#T254" to="#T258" xml:id="s515">t</span>
+<span from="#T258" to="#T257" xml:id="s516">a</span>
+</spanGrp>
+</span>
+<span from="#T257" to="#T259" xml:id="s517">va~<spanGrp type="phones">
+<span from="#T257" to="#T260" xml:id="s518">v</span>
+<span from="#T260" to="#T259" xml:id="s519">a~</span>
+</spanGrp>
+</span>
+<span from="#T259" to="#T261" xml:id="s520">la<spanGrp type="phones">
+<span from="#T259" to="#T262" xml:id="s521">l</span>
+<span from="#T262" to="#T261" xml:id="s522">a</span>
+</spanGrp>
+</span>
+<span from="#T261" to="#T263" xml:id="s523">plas<spanGrp type="phones">
+<span from="#T261" to="#T264" xml:id="s524">p</span>
+<span from="#T264" to="#T265" xml:id="s525">l</span>
+<span from="#T265" to="#T266" xml:id="s526">a</span>
+<span from="#T266" to="#T263" xml:id="s527">s</span>
+</spanGrp>
+</span>
+<span from="#T263" to="#T267" xml:id="s528">dy<spanGrp type="phones">
+<span from="#T263" to="#T268" xml:id="s529">d</span>
+<span from="#T268" to="#T267" xml:id="s530">y</span>
+</spanGrp>
+</span>
+<span from="#T267" to="#T269" xml:id="s531">tRi<spanGrp type="phones">
+<span from="#T267" to="#T270" xml:id="s532">t</span>
+<span from="#T270" to="#T271" xml:id="s533">R</span>
+<span from="#T271" to="#T269" xml:id="s534">i</span>
+</spanGrp>
+</span>
+<span from="#T269" to="#T272" xml:id="s535">by<spanGrp type="phones">
+<span from="#T269" to="#T273" xml:id="s536">b</span>
+<span from="#T273" to="#T272" xml:id="s537">y</span>
+</spanGrp>
+</span>
+<span from="#T272" to="#T234" xml:id="s538">nal<spanGrp type="phones">
+<span from="#T272" to="#T274" xml:id="s539">n</span>
+<span from="#T274" to="#T275" xml:id="s540">a</span>
+<span from="#T275" to="#T234" xml:id="s541">l</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T233" to="#T236" xml:id="s542">y</span>
+<span from="#T236" to="#T235" xml:id="s543">a</span>
+<span from="#T235" to="#T237" xml:id="s544">une</span>
+<span from="#T237" to="#T239" xml:id="s545">petite</span>
+<span from="#T239" to="#T250" xml:id="s546">bifurcation</span>
+<span from="#T250" to="#T253" xml:id="s547">euh</span>
+<span from="#T253" to="#T258" xml:id="s548">juste</span>
+<span from="#T258" to="#T259" xml:id="s549">avant</span>
+<span from="#T259" to="#T261" xml:id="s550">la</span>
+<span from="#T261" to="#T263" xml:id="s551">place</span>
+<span from="#T263" to="#T267" xml:id="s552">du</span>
+<span from="#T267" to="#T234" xml:id="s553">Tribunal</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T276" start="#T234" who="ortho" xml:id="au2786">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T234" to="#T276" xml:id="s554">_<spanGrp type="phones">
+<span from="#T234" to="#T276" xml:id="s555">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T234" to="#T276" xml:id="s556">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T277" start="#T276" who="ortho" xml:id="au2787">
+<u>
+<seg>tu passes à côté d'une petite fontaine</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T276" to="#T278" xml:id="s557">ty<spanGrp type="phones">
+<span from="#T276" to="#T279" xml:id="s558">t</span>
+<span from="#T279" to="#T278" xml:id="s559">y</span>
+</spanGrp>
+</span>
+<span from="#T278" to="#T280" xml:id="s560">pa<spanGrp type="phones">
+<span from="#T278" to="#T281" xml:id="s561">p</span>
+<span from="#T281" to="#T280" xml:id="s562">a</span>
+</spanGrp>
+</span>
+<span from="#T280" to="#T282" xml:id="s563">sa<spanGrp type="phones">
+<span from="#T280" to="#T283" xml:id="s564">s</span>
+<span from="#T283" to="#T282" xml:id="s565">a</span>
+</spanGrp>
+</span>
+<span from="#T282" to="#T284" xml:id="s566">ko<spanGrp type="phones">
+<span from="#T282" to="#T285" xml:id="s567">k</span>
+<span from="#T285" to="#T284" xml:id="s568">o</span>
+</spanGrp>
+</span>
+<span from="#T284" to="#T286" xml:id="s569">te<spanGrp type="phones">
+<span from="#T284" to="#T287" xml:id="s570">t</span>
+<span from="#T287" to="#T286" xml:id="s571">e</span>
+</spanGrp>
+</span>
+<span from="#T286" to="#T288" xml:id="s572">dyn<spanGrp type="phones">
+<span from="#T286" to="#T289" xml:id="s573">d</span>
+<span from="#T289" to="#T290" xml:id="s574">y</span>
+<span from="#T290" to="#T288" xml:id="s575">n</span>
+</spanGrp>
+</span>
+<span from="#T288" to="#T291" xml:id="s576">p@<spanGrp type="phones">
+<span from="#T288" to="#T292" xml:id="s577">p</span>
+<span from="#T292" to="#T291" xml:id="s578">@</span>
+</spanGrp>
+</span>
+<span from="#T291" to="#T293" xml:id="s579">tit<spanGrp type="phones">
+<span from="#T291" to="#T294" xml:id="s580">t</span>
+<span from="#T294" to="#T295" xml:id="s581">i</span>
+<span from="#T295" to="#T293" xml:id="s582">t</span>
+</spanGrp>
+</span>
+<span from="#T293" to="#T296" xml:id="s583">fo~<spanGrp type="phones">
+<span from="#T293" to="#T297" xml:id="s584">f</span>
+<span from="#T297" to="#T296" xml:id="s585">o~</span>
+</spanGrp>
+</span>
+<span from="#T296" to="#T298" xml:id="s586">tE<spanGrp type="phones">
+<span from="#T296" to="#T299" xml:id="s587">t</span>
+<span from="#T299" to="#T298" xml:id="s588">E</span>
+</spanGrp>
+</span>
+<span from="#T298" to="#T277" xml:id="s589">n@<spanGrp type="phones">
+<span from="#T298" to="#T300" xml:id="s590">n</span>
+<span from="#T300" to="#T277" xml:id="s591">@</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T276" to="#T278" xml:id="s592">tu</span>
+<span from="#T278" to="#T283" xml:id="s593">passes</span>
+<span from="#T283" to="#T282" xml:id="s594">à</span>
+<span from="#T282" to="#T286" xml:id="s595">côté</span>
+<span from="#T286" to="#T289" xml:id="s596">d'</span>
+<span from="#T289" to="#T288" xml:id="s597">une</span>
+<span from="#T288" to="#T293" xml:id="s598">petite</span>
+<span from="#T293" to="#T277" xml:id="s599">fontaine</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T301" start="#T277" who="ortho" xml:id="au2788">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T277" to="#T301" xml:id="s600">_<spanGrp type="phones">
+<span from="#T277" to="#T301" xml:id="s601">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T277" to="#T301" xml:id="s602">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T302" start="#T301" who="ortho" xml:id="au2789">
+<u>
+<seg>t'arrives place aux Herbes avec une</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T301" to="#T303" xml:id="s603">ta<spanGrp type="phones">
+<span from="#T301" to="#T304" xml:id="s604">t</span>
+<span from="#T304" to="#T303" xml:id="s605">a</span>
+</spanGrp>
+</span>
+<span from="#T303" to="#T305" xml:id="s606">Ri<spanGrp type="phones">
+<span from="#T303" to="#T306" xml:id="s607">R</span>
+<span from="#T306" to="#T305" xml:id="s608">i</span>
+</spanGrp>
+</span>
+<span from="#T305" to="#T307" xml:id="s609">v2<spanGrp type="phones">
+<span from="#T305" to="#T308" xml:id="s610">v</span>
+<span from="#T308" to="#T307" xml:id="s611">2</span>
+</spanGrp>
+</span>
+<span from="#T307" to="#T309" xml:id="s612">pla<spanGrp type="phones">
+<span from="#T307" to="#T310" xml:id="s613">p</span>
+<span from="#T310" to="#T311" xml:id="s614">l</span>
+<span from="#T311" to="#T309" xml:id="s615">a</span>
+</spanGrp>
+</span>
+<span from="#T309" to="#T312" xml:id="s616">so<spanGrp type="phones">
+<span from="#T309" to="#T313" xml:id="s617">s</span>
+<span from="#T313" to="#T312" xml:id="s618">o</span>
+</spanGrp>
+</span>
+<span from="#T312" to="#T314" xml:id="s619">zER<spanGrp type="phones">
+<span from="#T312" to="#T315" xml:id="s620">z</span>
+<span from="#T315" to="#T316" xml:id="s621">E</span>
+<span from="#T316" to="#T314" xml:id="s622">R</span>
+</spanGrp>
+</span>
+<span from="#T314" to="#T317" xml:id="s623">ba<spanGrp type="phones">
+<span from="#T314" to="#T318" xml:id="s624">b</span>
+<span from="#T318" to="#T317" xml:id="s625">a</span>
+</spanGrp>
+</span>
+<span from="#T317" to="#T319" xml:id="s626">vE<spanGrp type="phones">
+<span from="#T317" to="#T320" xml:id="s627">v</span>
+<span from="#T320" to="#T319" xml:id="s628">E</span>
+</spanGrp>
+</span>
+<span from="#T319" to="#T302" xml:id="s629">kyn<spanGrp type="phones">
+<span from="#T319" to="#T321" xml:id="s630">k</span>
+<span from="#T321" to="#T322" xml:id="s631">y</span>
+<span from="#T322" to="#T302" xml:id="s632">n</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T301" to="#T304" xml:id="s633">t'</span>
+<span from="#T304" to="#T307" xml:id="s634">arrives</span>
+<span from="#T307" to="#T313" xml:id="s635">place</span>
+<span from="#T313" to="#T315" xml:id="s636">aux</span>
+<span from="#T315" to="#T318" xml:id="s637">Herbes</span>
+<span from="#T318" to="#T321" xml:id="s638">avec</span>
+<span from="#T321" to="#T302" xml:id="s639">une</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T323" start="#T302" who="ortho" xml:id="au2790">
+<u>
+<seg>une sorte de halle</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T302" to="#T324" xml:id="s640">yn<spanGrp type="phones">
+<span from="#T302" to="#T325" xml:id="s641">y</span>
+<span from="#T325" to="#T324" xml:id="s642">n</span>
+</spanGrp>
+</span>
+<span from="#T324" to="#T326" xml:id="s643">sORt<spanGrp type="phones">
+<span from="#T324" to="#T327" xml:id="s644">s</span>
+<span from="#T327" to="#T328" xml:id="s645">O</span>
+<span from="#T328" to="#T329" xml:id="s646">R</span>
+<span from="#T329" to="#T326" xml:id="s647">t</span>
+</spanGrp>
+</span>
+<span from="#T326" to="#T330" xml:id="s648">d@<spanGrp type="phones">
+<span from="#T326" to="#T331" xml:id="s649">d</span>
+<span from="#T331" to="#T330" xml:id="s650">@</span>
+</spanGrp>
+</span>
+<span from="#T330" to="#T323" xml:id="s651">al<spanGrp type="phones">
+<span from="#T330" to="#T332" xml:id="s652">a</span>
+<span from="#T332" to="#T323" xml:id="s653">l</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T302" to="#T324" xml:id="s654">une</span>
+<span from="#T324" to="#T326" xml:id="s655">sorte</span>
+<span from="#T326" to="#T330" xml:id="s656">de</span>
+<span from="#T330" to="#T323" xml:id="s657">halle</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T333" start="#T323" who="ortho" xml:id="au2791">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T323" to="#T333" xml:id="s658">_<spanGrp type="phones">
+<span from="#T323" to="#T333" xml:id="s659">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T323" to="#T333" xml:id="s660">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T334" start="#T333" who="ortho" xml:id="au2792">
+<u>
+<seg>quoi de</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T333" to="#T335" xml:id="s661">kwa<spanGrp type="phones">
+<span from="#T333" to="#T336" xml:id="s662">k</span>
+<span from="#T336" to="#T337" xml:id="s663">w</span>
+<span from="#T337" to="#T335" xml:id="s664">a</span>
+</spanGrp>
+</span>
+<span from="#T335" to="#T334" xml:id="s665">d@<spanGrp type="phones">
+<span from="#T335" to="#T338" xml:id="s666">d</span>
+<span from="#T338" to="#T334" xml:id="s667">@</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T333" to="#T335" xml:id="s668">quoi</span>
+<span from="#T335" to="#T334" xml:id="s669">de</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T339" start="#T334" who="ortho" xml:id="au2793">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T334" to="#T339" xml:id="s670">_<spanGrp type="phones">
+<span from="#T334" to="#T339" xml:id="s671">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T334" to="#T339" xml:id="s672">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T340" start="#T339" who="ortho" xml:id="au2794">
+<u>
+<seg>de</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T339" to="#T340" xml:id="s673">d@<spanGrp type="phones">
+<span from="#T339" to="#T341" xml:id="s674">d</span>
+<span from="#T341" to="#T340" xml:id="s675">@</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T339" to="#T340" xml:id="s676">de</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T342" start="#T340" who="ortho" xml:id="au2795">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T340" to="#T342" xml:id="s677">_<spanGrp type="phones">
+<span from="#T340" to="#T342" xml:id="s678">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T340" to="#T342" xml:id="s679">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T343" start="#T342" who="ortho" xml:id="au2796">
+<u>
+<seg>de structure métallique</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T342" to="#T344" xml:id="s680">d@<spanGrp type="phones">
+<span from="#T342" to="#T345" xml:id="s681">d</span>
+<span from="#T345" to="#T344" xml:id="s682">@</span>
+</spanGrp>
+</span>
+<span from="#T344" to="#T346" xml:id="s683">stRyk<spanGrp type="phones">
+<span from="#T344" to="#T347" xml:id="s684">s</span>
+<span from="#T347" to="#T348" xml:id="s685">t</span>
+<span from="#T348" to="#T349" xml:id="s686">R</span>
+<span from="#T349" to="#T350" xml:id="s687">y</span>
+<span from="#T350" to="#T346" xml:id="s688">k</span>
+</spanGrp>
+</span>
+<span from="#T346" to="#T351" xml:id="s689">tyR<spanGrp type="phones">
+<span from="#T346" to="#T352" xml:id="s690">t</span>
+<span from="#T352" to="#T353" xml:id="s691">y</span>
+<span from="#T353" to="#T351" xml:id="s692">R</span>
+</spanGrp>
+</span>
+<span from="#T351" to="#T354" xml:id="s693">me<spanGrp type="phones">
+<span from="#T351" to="#T355" xml:id="s694">m</span>
+<span from="#T355" to="#T354" xml:id="s695">e</span>
+</spanGrp>
+</span>
+<span from="#T354" to="#T356" xml:id="s696">ta<spanGrp type="phones">
+<span from="#T354" to="#T357" xml:id="s697">t</span>
+<span from="#T357" to="#T356" xml:id="s698">a</span>
+</spanGrp>
+</span>
+<span from="#T356" to="#T343" xml:id="s699">lik<spanGrp type="phones">
+<span from="#T356" to="#T358" xml:id="s700">l</span>
+<span from="#T358" to="#T359" xml:id="s701">i</span>
+<span from="#T359" to="#T343" xml:id="s702">k</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T342" to="#T344" xml:id="s703">de</span>
+<span from="#T344" to="#T351" xml:id="s704">structure</span>
+<span from="#T351" to="#T343" xml:id="s705">métallique</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T360" start="#T343" who="ortho" xml:id="au2797">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T343" to="#T360" xml:id="s706">_<spanGrp type="phones">
+<span from="#T343" to="#T360" xml:id="s707">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T343" to="#T360" xml:id="s708">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T361" start="#T360" who="ortho" xml:id="au2798">
+<u>
+<seg>tu continues la rue</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T360" to="#T362" xml:id="s709">ty<spanGrp type="phones">
+<span from="#T360" to="#T363" xml:id="s710">t</span>
+<span from="#T363" to="#T362" xml:id="s711">y</span>
+</spanGrp>
+</span>
+<span from="#T362" to="#T364" xml:id="s712">ko~<spanGrp type="phones">
+<span from="#T362" to="#T365" xml:id="s713">k</span>
+<span from="#T365" to="#T364" xml:id="s714">o~</span>
+</spanGrp>
+</span>
+<span from="#T364" to="#T366" xml:id="s715">ti<spanGrp type="phones">
+<span from="#T364" to="#T367" xml:id="s716">t</span>
+<span from="#T367" to="#T366" xml:id="s717">i</span>
+</spanGrp>
+</span>
+<span from="#T366" to="#T368" xml:id="s718">ny<spanGrp type="phones">
+<span from="#T366" to="#T369" xml:id="s719">n</span>
+<span from="#T369" to="#T368" xml:id="s720">y</span>
+</spanGrp>
+</span>
+<span from="#T368" to="#T370" xml:id="s721">la<spanGrp type="phones">
+<span from="#T368" to="#T371" xml:id="s722">l</span>
+<span from="#T371" to="#T370" xml:id="s723">a</span>
+</spanGrp>
+</span>
+<span from="#T370" to="#T361" xml:id="s724">Ry<spanGrp type="phones">
+<span from="#T370" to="#T372" xml:id="s725">R</span>
+<span from="#T372" to="#T361" xml:id="s726">y</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T360" to="#T362" xml:id="s727">tu</span>
+<span from="#T362" to="#T368" xml:id="s728">continues</span>
+<span from="#T368" to="#T370" xml:id="s729">la</span>
+<span from="#T370" to="#T361" xml:id="s730">rue</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T373" start="#T361" who="ortho" xml:id="au2799">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T361" to="#T373" xml:id="s731">_<spanGrp type="phones">
+<span from="#T361" to="#T373" xml:id="s732">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T361" to="#T373" xml:id="s733">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T374" start="#T373" who="ortho" xml:id="au2800">
+<u>
+<seg>la petite rue et t'arrives à la fontaine euh place Notre Dame</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T373" to="#T375" xml:id="s734">la<spanGrp type="phones">
+<span from="#T373" to="#T376" xml:id="s735">l</span>
+<span from="#T376" to="#T375" xml:id="s736">a</span>
+</spanGrp>
+</span>
+<span from="#T375" to="#T377" xml:id="s737">pti<spanGrp type="phones">
+<span from="#T375" to="#T378" xml:id="s738">p</span>
+<span from="#T378" to="#T379" xml:id="s739">t</span>
+<span from="#T379" to="#T377" xml:id="s740">i</span>
+</spanGrp>
+</span>
+<span from="#T377" to="#T380" xml:id="s741">tRy<spanGrp type="phones">
+<span from="#T377" to="#T381" xml:id="s742">t</span>
+<span from="#T381" to="#T382" xml:id="s743">R</span>
+<span from="#T382" to="#T380" xml:id="s744">y</span>
+</spanGrp>
+</span>
+<span from="#T380" to="#T383" xml:id="s745">e<spanGrp type="phones">
+<span from="#T380" to="#T383" xml:id="s746">e</span>
+</spanGrp>
+</span>
+<span from="#T383" to="#T384" xml:id="s747">ta<spanGrp type="phones">
+<span from="#T383" to="#T385" xml:id="s748">t</span>
+<span from="#T385" to="#T384" xml:id="s749">a</span>
+</spanGrp>
+</span>
+<span from="#T384" to="#T386" xml:id="s750">Ri<spanGrp type="phones">
+<span from="#T384" to="#T387" xml:id="s751">R</span>
+<span from="#T387" to="#T386" xml:id="s752">i</span>
+</spanGrp>
+</span>
+<span from="#T386" to="#T388" xml:id="s753">va<spanGrp type="phones">
+<span from="#T386" to="#T389" xml:id="s754">v</span>
+<span from="#T389" to="#T388" xml:id="s755">a</span>
+</spanGrp>
+</span>
+<span from="#T388" to="#T390" xml:id="s756">la<spanGrp type="phones">
+<span from="#T388" to="#T391" xml:id="s757">l</span>
+<span from="#T391" to="#T390" xml:id="s758">a</span>
+</spanGrp>
+</span>
+<span from="#T390" to="#T392" xml:id="s759">fo~<spanGrp type="phones">
+<span from="#T390" to="#T393" xml:id="s760">f</span>
+<span from="#T393" to="#T392" xml:id="s761">o~</span>
+</spanGrp>
+</span>
+<span from="#T392" to="#T394" xml:id="s762">tEn<spanGrp type="phones">
+<span from="#T392" to="#T395" xml:id="s763">t</span>
+<span from="#T395" to="#T396" xml:id="s764">E</span>
+<span from="#T396" to="#T394" xml:id="s765">n</span>
+</spanGrp>
+</span>
+<span from="#T394" to="#T397" xml:id="s766">2<spanGrp type="phones">
+<span from="#T394" to="#T397" xml:id="s767">2</span>
+</spanGrp>
+</span>
+<span from="#T397" to="#T398" xml:id="s768">plas<spanGrp type="phones">
+<span from="#T397" to="#T399" xml:id="s769">p</span>
+<span from="#T399" to="#T400" xml:id="s770">l</span>
+<span from="#T400" to="#T401" xml:id="s771">a</span>
+<span from="#T401" to="#T398" xml:id="s772">s</span>
+</spanGrp>
+</span>
+<span from="#T398" to="#T402" xml:id="s773">nO<spanGrp type="phones">
+<span from="#T398" to="#T403" xml:id="s774">n</span>
+<span from="#T403" to="#T402" xml:id="s775">O</span>
+</spanGrp>
+</span>
+<span from="#T402" to="#T404" xml:id="s776">tR@<spanGrp type="phones">
+<span from="#T402" to="#T405" xml:id="s777">t</span>
+<span from="#T405" to="#T406" xml:id="s778">R</span>
+<span from="#T406" to="#T404" xml:id="s779">@</span>
+</spanGrp>
+</span>
+<span from="#T404" to="#T374" xml:id="s780">dam<spanGrp type="phones">
+<span from="#T404" to="#T407" xml:id="s781">d</span>
+<span from="#T407" to="#T408" xml:id="s782">a</span>
+<span from="#T408" to="#T374" xml:id="s783">m</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T373" to="#T375" xml:id="s784">la</span>
+<span from="#T375" to="#T381" xml:id="s785">petite</span>
+<span from="#T381" to="#T380" xml:id="s786">rue</span>
+<span from="#T380" to="#T383" xml:id="s787">et</span>
+<span from="#T383" to="#T385" xml:id="s788">t'</span>
+<span from="#T385" to="#T389" xml:id="s789">arrives</span>
+<span from="#T389" to="#T388" xml:id="s790">à</span>
+<span from="#T388" to="#T390" xml:id="s791">la</span>
+<span from="#T390" to="#T394" xml:id="s792">fontaine</span>
+<span from="#T394" to="#T397" xml:id="s793">euh</span>
+<span from="#T397" to="#T398" xml:id="s794">place</span>
+<span from="#T398" to="#T404" xml:id="s795">Notre</span>
+<span from="#T404" to="#T374" xml:id="s796">Dame</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T409" start="#T374" who="ortho" xml:id="au2801">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T374" to="#T409" xml:id="s797">_<spanGrp type="phones">
+<span from="#T374" to="#T409" xml:id="s798">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T374" to="#T409" xml:id="s799">_</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T410" start="#T409" who="ortho" xml:id="au2802">
+<u>
+<seg>et ben voilà</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T409" to="#T411" xml:id="s800">e<spanGrp type="phones">
+<span from="#T409" to="#T411" xml:id="s801">e</span>
+</spanGrp>
+</span>
+<span from="#T411" to="#T412" xml:id="s802">be~<spanGrp type="phones">
+<span from="#T411" to="#T413" xml:id="s803">b</span>
+<span from="#T413" to="#T412" xml:id="s804">e~</span>
+</spanGrp>
+</span>
+<span from="#T412" to="#T414" xml:id="s805">vwa<spanGrp type="phones">
+<span from="#T412" to="#T415" xml:id="s806">v</span>
+<span from="#T415" to="#T416" xml:id="s807">w</span>
+<span from="#T416" to="#T414" xml:id="s808">a</span>
+</spanGrp>
+</span>
+<span from="#T414" to="#T410" xml:id="s809">la<spanGrp type="phones">
+<span from="#T414" to="#T417" xml:id="s810">l</span>
+<span from="#T417" to="#T410" xml:id="s811">a</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T409" to="#T411" xml:id="s812">et</span>
+<span from="#T411" to="#T412" xml:id="s813">ben</span>
+<span from="#T412" to="#T410" xml:id="s814">voilà</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T418" start="#T410" who="ortho" xml:id="au2803">
+<u>
+<seg>_</seg>
+</u>
+<spanGrp type="syll">
+<span from="#T410" to="#T418" xml:id="s815">_<spanGrp type="phones">
+<span from="#T410" to="#T418" xml:id="s816">_</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="words">
+<span from="#T410" to="#T418" xml:id="s817">_</span>
+</spanGrp>
+</annotationBloc>
+</div>
+</body>
+</text>
+</TEI>

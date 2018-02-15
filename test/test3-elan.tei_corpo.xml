@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier Transcriber test3-elan.eaf</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC">
+<note type="lastUsedAnnotationId">138</note>
+</note>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">WordsInfo</note>
+<note type="parent">Words</note>
+<note type="type">Symbolic_Association</note>
+<note type="subtype">Information-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">false</note>
+</note>
+<note>
+<note type="code">PhonesInfo</note>
+<note type="parent">Phones</note>
+<note type="type">Symbolic_Association</note>
+<note type="subtype">Information-lt</note>
+<note type="langref">und</note>
+<note type="graphicref">false</note>
+<note type="timealign">false</note>
+</note>
+<note>
+<note type="code">Translation</note>
+<note type="parent">MainLine</note>
+<note type="type">Symbolic_Association</note>
+<note type="subtype">Information-lt</note>
+<note type="scribe">Henri</note>
+<note type="lang">en</note>
+<note type="graphicref">false</note>
+<note type="timealign">false</note>
+</note>
+<note>
+<note type="code">Phones</note>
+<note type="parent">Syllables</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">Phones-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Categories</note>
+<note type="parent">Words</note>
+<note type="type">Symbolic_Subdivision</note>
+<note type="subtype">Syntax-lt</note>
+<note type="cv">VC-Categ</note>
+<note type="graphicref">false</note>
+<note type="timealign">false</note>
+</note>
+<note>
+<note type="code">Morphology</note>
+<note type="parent">Categories</note>
+<note type="type">Symbolic_Subdivision</note>
+<note type="subtype">Morphology-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">false</note>
+</note>
+<note>
+<note type="code">Words</note>
+<note type="parent">MainLine</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">Words-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">MainLine</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="subtype">default-lt</note>
+<note type="scribe">Bibi</note>
+<note type="lang">fr</note>
+<note type="langref">und</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Syllables</note>
+<note type="parent">Words</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">Syllables-lt</note>
+<note type="cv">VC-Syllabes</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Stress</note>
+<note type="parent">Syllables</note>
+<note type="type">Included_In</note>
+<note type="subtype">Events-lt</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="audio/x-wav" url="file:///corpusformat/elan/testok/test3-elan.wav"/>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<particDesc>
+<listPerson>
+<person>
+<altGrp>
+<alt type="MainLine"/>
+</altGrp>
+<persName>Joe</persName>
+</person>
+<person>
+<altGrp>
+<alt type="Words"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Syllables"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Phones"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Categories"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Morphology"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="WordsInfo"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="PhonesInfo"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Translation"/>
+</altGrp>
+<persName>Alfred</persName>
+</person>
+<person>
+<altGrp>
+<alt type="Stress"/>
+</altGrp>
+</person>
+</listPerson>
+</particDesc>
+<textClass>
+<keywords scheme="VC-Lettres" xml:lang="und">
+<term xml:lang="und">a</term>
+<term xml:lang="und">b</term>
+<term xml:lang="und">c</term>
+<term xml:lang="und">d</term>
+<term xml:lang="und">e</term>
+<term xml:lang="und">f</term>
+<term xml:lang="und">g</term>
+<term xml:lang="und">h</term>
+<term xml:lang="und">i</term>
+<term xml:lang="und">j</term>
+<term xml:lang="und">k</term>
+<term xml:lang="und">l</term>
+<term xml:lang="und">m</term>
+<term xml:lang="und">n</term>
+<term xml:lang="und">o</term>
+<term xml:lang="und">p</term>
+<term xml:lang="und">q</term>
+<term xml:lang="und">r</term>
+<term xml:lang="und">s</term>
+<term xml:lang="und">t</term>
+<term xml:lang="und">u</term>
+<term xml:lang="und">v</term>
+<term xml:lang="und">x</term>
+<term xml:lang="und">y</term>
+<term xml:lang="und">z</term>
+</keywords>
+<keywords scheme="VC-Syllabes" xml:lang="und">
+<term xml:lang="und">CV</term>
+<term xml:lang="und">VC</term>
+<term xml:lang="und">CVC</term>
+<term xml:lang="und">CCV</term>
+<term xml:lang="und">CVCC</term>
+<term xml:lang="und">CCVCC</term>
+<term xml:lang="und">V</term>
+</keywords>
+<keywords scheme="VC-Categ" style="Un sous ensemble de catégories" xml:lang="und">
+<term type="Nom commun ou nom propre" xml:lang="und">Nom</term>
+<term xml:lang="und">Verbe</term>
+<term xml:lang="und">Adjectif</term>
+<term xml:lang="und">Adverbe</term>
+<term xml:lang="und">Communicateur</term>
+<term xml:lang="und">MotVide</term>
+</keywords>
+</textClass>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Elan" version="2.8">
+<desc>Transcription created with Elan and converted to TEI_CORPO</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/test3-elan.eaf</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/test3-elan.tei_corpo.xml</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="ms">
+<when absolute="0" xml:id="T0"/>
+<when interval="370" since="#T0" xml:id="T1"/>
+<when interval="920" since="#T0" xml:id="T2"/>
+<when interval="993.0" since="#T0" xml:id="T7"/>
+<when interval="993.6666666666666" since="#T0" xml:id="T5"/>
+<when interval="1067.3333333333333" since="#T0" xml:id="T6"/>
+<when interval="1086.0" since="#T0" xml:id="T8"/>
+<when interval="1141.0" since="#T0" xml:id="T4"/>
+<when interval="1212.0" since="#T0" xml:id="T10"/>
+<when interval="1283.0" since="#T0" xml:id="T9"/>
+<when interval="1344.0" since="#T0" xml:id="T12"/>
+<when interval="1381.0" since="#T0" xml:id="T13"/>
+<when interval="1483.0" since="#T0" xml:id="T11"/>
+<when interval="1548.2" since="#T0" xml:id="T15"/>
+<when interval="1613.4" since="#T0" xml:id="T16"/>
+<when interval="1678.6" since="#T0" xml:id="T17"/>
+<when interval="1743.8" since="#T0" xml:id="T18"/>
+<when interval="1809.0" since="#T0" xml:id="T14"/>
+<when interval="1895.0" since="#T0" xml:id="T22"/>
+<when interval="1901.0" since="#T0" xml:id="T21"/>
+<when interval="1938.0" since="#T0" xml:id="T23"/>
+<when interval="1993.0" since="#T0" xml:id="T20"/>
+<when interval="2065.3333333333335" since="#T0" xml:id="T25"/>
+<when interval="2137.6666666666665" since="#T0" xml:id="T26"/>
+<when interval="2210.0" since="#T0" xml:id="T24"/>
+<when interval="2282.3333333333335" since="#T0" xml:id="T27"/>
+<when interval="2354.6666666666665" since="#T0" xml:id="T28"/>
+<when interval="2427.0" since="#T0" xml:id="T19"/>
+<when interval="3360.0" since="#T0" xml:id="T29"/>
+<when interval="3432.0" since="#T0" xml:id="T31"/>
+<when interval="3504.0" since="#T0" xml:id="T30"/>
+<when interval="3556.5" since="#T0" xml:id="T33"/>
+<when interval="3609.0" since="#T0" xml:id="T32"/>
+<when interval="3658.0" since="#T0" xml:id="T35"/>
+<when interval="3707.0" since="#T0" xml:id="T34"/>
+<when interval="3737.75" since="#T0" xml:id="T37"/>
+<when interval="3768.5" since="#T0" xml:id="T38"/>
+<when interval="3799.25" since="#T0" xml:id="T39"/>
+<when interval="3830.0" since="#T0" xml:id="T36"/>
+<when interval="3889.6666666666665" since="#T0" xml:id="T40"/>
+<when interval="3949.3333333333335" since="#T0" xml:id="T41"/>
+<when interval="4009" since="#T0" xml:id="T3"/>
+</timeline>
+<body>
+<div>
+<head>
+<note type="start">#T0</note>
+<note type="end">#T3</note>
+</head>
+<annotationBloc end="#T1" start="#T0" who="MainLine" xml:id="a138">
+<u>
+<seg>début</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="MainLine" xml:id="a49">
+<u>
+<seg>this is a first utterance (.) as an example !</seg>
+</u>
+<spanGrp type="Translation">
+<span target="#a49" xml:id="a128">c'est un énoncé (.) qui sert d'exemple !</span>
+</spanGrp>
+<spanGrp type="Words">
+<span from="#T2" to="#T4" xml:id="a50">this<spanGrp type="WordsInfo">
+<span target="#a50" xml:id="a124">pointer</span>
+</spanGrp>
+<spanGrp type="Categories">
+<span target="#a50" xml:id="a116">MotVide<spanGrp type="Morphology">
+<span target="#a116" xml:id="a129">TH</span>
+<span target="#a116" xml:id="a130">H</span>
+<span target="#a116" xml:id="a131">IS</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T2" to="#T4" xml:id="a59">CVC<spanGrp type="Phones">
+<span from="#T2" to="#T5" xml:id="a71">ð</span>
+<span from="#T5" to="#T6" xml:id="a72">ɪ<spanGrp type="PhonesInfo">
+<span target="#a72" xml:id="a99">vowel</span>
+</spanGrp>
+</span>
+<span from="#T6" to="#T4" xml:id="a73">s</span>
+</spanGrp>
+<spanGrp type="Stress">
+<span from="#T7" to="#T8" xml:id="a135">accent1</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T4" to="#T9" xml:id="a51">is<spanGrp type="Categories">
+<span target="#a51" xml:id="a117">Verbe</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T4" to="#T9" xml:id="a60">VC<spanGrp type="Phones">
+<span from="#T4" to="#T10" xml:id="a74">ɪ<spanGrp type="PhonesInfo">
+<span target="#a74" xml:id="a100">vowel</span>
+</spanGrp>
+</span>
+<span from="#T10" to="#T9" xml:id="a75">z</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T9" to="#T11" xml:id="a52">a<spanGrp type="Categories">
+<span target="#a52" xml:id="a118">MotVide</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T9" to="#T11" xml:id="a61">V<spanGrp type="Phones">
+<span from="#T9" to="#T11" xml:id="a76">a<spanGrp type="PhonesInfo">
+<span target="#a76" xml:id="a101">vowel</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="Stress">
+<span from="#T12" to="#T13" xml:id="a136">accent2</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T11" to="#T14" xml:id="a53">first<spanGrp type="WordsInfo">
+<span target="#a53" xml:id="a125">intensifier</span>
+</spanGrp>
+<spanGrp type="Categories">
+<span target="#a53" xml:id="a119">Adjectif</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T11" to="#T14" xml:id="a62">CVCC<spanGrp type="Phones">
+<span from="#T11" to="#T15" xml:id="a77">f</span>
+<span from="#T15" to="#T16" xml:id="a78">ə<spanGrp type="PhonesInfo">
+<span target="#a78" xml:id="a102">vowel</span>
+</spanGrp>
+</span>
+<span from="#T16" to="#T17" xml:id="a79">r</span>
+<span from="#T17" to="#T18" xml:id="a80">s</span>
+<span from="#T18" to="#T14" xml:id="a81">t</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T14" to="#T19" xml:id="a54">utterance<spanGrp type="Categories">
+<span target="#a54" xml:id="a120">Nom<spanGrp type="Morphology">
+<span target="#a120" xml:id="a132">utt</span>
+<span target="#a120" xml:id="a133">ran</span>
+<span target="#a120" xml:id="a134">ce</span>
+</spanGrp>
+</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T14" to="#T20" xml:id="a63">V<spanGrp type="Phones">
+<span from="#T14" to="#T21" xml:id="a82">ə</span>
+<span from="#T21" to="#T20" xml:id="a97">t</span>
+</spanGrp>
+<spanGrp type="Stress">
+<span from="#T22" to="#T23" xml:id="a137">accent3</span>
+</spanGrp>
+</span>
+<span from="#T20" to="#T24" xml:id="a64">CV<spanGrp type="Phones">
+<span from="#T20" to="#T25" xml:id="a83">t</span>
+<span from="#T25" to="#T26" xml:id="a84">ə<spanGrp type="PhonesInfo">
+<span target="#a84" xml:id="a104">vowel</span>
+</spanGrp>
+</span>
+<span from="#T26" to="#T24" xml:id="a85">r</span>
+</spanGrp>
+</span>
+<span from="#T24" to="#T19" xml:id="a65">CVCC<spanGrp type="Phones">
+<span from="#T24" to="#T27" xml:id="a86">ə<spanGrp type="PhonesInfo">
+<span target="#a86" xml:id="a105">vowel</span>
+</spanGrp>
+</span>
+<span from="#T27" to="#T28" xml:id="a87">n</span>
+<span from="#T28" to="#T19" xml:id="a88">s</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T19" to="#T29" xml:id="a55">(.)</span>
+<span from="#T29" to="#T30" xml:id="a56">as<spanGrp type="Categories">
+<span target="#a56" xml:id="a121">MotVide</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T29" to="#T30" xml:id="a66">VC<spanGrp type="Phones">
+<span from="#T29" to="#T31" xml:id="a89">a<spanGrp type="PhonesInfo">
+<span target="#a89" xml:id="a106">vowel</span>
+</spanGrp>
+</span>
+<span from="#T31" to="#T30" xml:id="a90">z</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T30" to="#T32" xml:id="a57">an<spanGrp type="Categories">
+<span target="#a57" xml:id="a122">MotVide</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T30" to="#T32" xml:id="a67">VC<spanGrp type="Phones">
+<span from="#T30" to="#T33" xml:id="a91">ə<spanGrp type="PhonesInfo">
+<span target="#a91" xml:id="a107">vowel</span>
+</spanGrp>
+</span>
+<span from="#T33" to="#T32" xml:id="a92">n</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+<span from="#T32" to="#T3" xml:id="a58">example<spanGrp type="Categories">
+<span target="#a58" xml:id="a123">Nom</span>
+</spanGrp>
+<spanGrp type="Syllables">
+<span from="#T32" to="#T34" xml:id="a68">VC<spanGrp type="Phones">
+<span from="#T32" to="#T35" xml:id="a93">i<spanGrp type="PhonesInfo">
+<span target="#a93" xml:id="a108">vowel</span>
+</spanGrp>
+</span>
+<span from="#T35" to="#T34" xml:id="a94">g</span>
+</spanGrp>
+</span>
+<span from="#T34" to="#T36" xml:id="a69">CVC<spanGrp type="Phones">
+<span from="#T34" to="#T37" xml:id="a110">z</span>
+<span from="#T37" to="#T38" xml:id="a96">a<spanGrp type="PhonesInfo">
+<span target="#a96" xml:id="a109">vowel</span>
+</spanGrp>
+</span>
+<span from="#T38" to="#T39" xml:id="a111">a<spanGrp type="PhonesInfo">
+<span target="#a111" xml:id="a126">vowel</span>
+</spanGrp>
+</span>
+<span from="#T39" to="#T36" xml:id="a112">m</span>
+</spanGrp>
+</span>
+<span from="#T36" to="#T3" xml:id="a70">CVC<spanGrp type="Phones">
+<span from="#T36" to="#T40" xml:id="a113">p</span>
+<span from="#T40" to="#T41" xml:id="a114">ə<spanGrp type="PhonesInfo">
+<span target="#a114" xml:id="a127">vowel</span>
+</spanGrp>
+</span>
+<span from="#T41" to="#T3" xml:id="a115">l</span>
+</spanGrp>
+</span>
+</spanGrp>
+</span>
+</spanGrp>
+</annotationBloc>
+</div>
+</body>
+</text>
+</TEI>

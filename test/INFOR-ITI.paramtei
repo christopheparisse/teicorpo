@@ -1,0 +1,4 @@
+-t words timediv ortho
+-t syll timediv ortho
+-t phones timediv syll
+-t prom assoc syll

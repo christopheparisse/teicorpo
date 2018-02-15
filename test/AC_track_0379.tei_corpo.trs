@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="AC_track_0379" version="1.01">
+<Speakers>
+<Speaker id="PhonAlign" name="PhonAlign"/>
+<Speaker id="Transcription" name="Transcription"/>
+<Speaker id="TokensAlign" name="TokensAlign"/>
+</Speakers>
+<Episode>
+<Section endTime="2.328" startTime="0" type="report">
+<Turn endTime="2.328" speaker="Transcription" startTime="0">
+<Sync time="0"/>une classe entière qui a bien vu comment ça s'est passé<Comment desc="PhonAlign:&#9;#"/>
+<Comment desc="PhonAlign:&#9;y"/>
+<Comment desc="PhonAlign:&#9;n"/>
+<Comment desc="PhonAlign:&#9;k"/>
+<Comment desc="PhonAlign:&#9;l"/>
+<Comment desc="PhonAlign:&#9;a"/>
+<Comment desc="PhonAlign:&#9;s"/>
+<Comment desc="PhonAlign:&#9;a~"/>
+<Comment desc="PhonAlign:&#9;n"/>
+<Comment desc="PhonAlign:&#9;t"/>
+<Comment desc="PhonAlign:&#9;j"/>
+<Comment desc="PhonAlign:&#9;E"/>
+<Comment desc="PhonAlign:&#9;r"/>
+<Comment desc="PhonAlign:&#9;k"/>
+<Comment desc="PhonAlign:&#9;i"/>
+<Comment desc="PhonAlign:&#9;a"/>
+<Comment desc="PhonAlign:&#9;b"/>
+<Comment desc="PhonAlign:&#9;j"/>
+<Comment desc="PhonAlign:&#9;U~"/>
+<Comment desc="PhonAlign:&#9;v"/>
+<Comment desc="PhonAlign:&#9;y"/>
+<Comment desc="PhonAlign:&#9;g"/>
+<Comment desc="PhonAlign:&#9;m"/>
+<Comment desc="PhonAlign:&#9;a~"/>
+<Comment desc="PhonAlign:&#9;s"/>
+<Comment desc="PhonAlign:&#9;a"/>
+<Comment desc="PhonAlign:&#9;s"/>
+<Comment desc="PhonAlign:&#9;e"/>
+<Comment desc="PhonAlign:&#9;p"/>
+<Comment desc="PhonAlign:&#9;a"/>
+<Comment desc="PhonAlign:&#9;s"/>
+<Comment desc="PhonAlign:&#9;e"/>
+<Comment desc="PhonAlign:&#9;#"/>
+<Comment desc="TokensAlign:&#9;#"/>
+<Comment desc="TokensAlign:&#9;une"/>
+<Comment desc="TokensAlign:&#9;classe"/>
+<Comment desc="TokensAlign:&#9;entière"/>
+<Comment desc="TokensAlign:&#9;qui"/>
+<Comment desc="TokensAlign:&#9;a"/>
+<Comment desc="TokensAlign:&#9;bien"/>
+<Comment desc="TokensAlign:&#9;vu"/>
+<Comment desc="TokensAlign:&#9;comment"/>
+<Comment desc="TokensAlign:&#9;ça"/>
+<Comment desc="TokensAlign:&#9;s'"/>
+<Comment desc="TokensAlign:&#9;est"/>
+<Comment desc="TokensAlign:&#9;passé"/>
+<Comment desc="TokensAlign:&#9;#"/>
+</Turn>
+</Section>
+</Episode>
+</Trans>

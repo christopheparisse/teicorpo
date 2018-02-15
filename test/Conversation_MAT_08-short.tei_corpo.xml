@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier Transcriber Conversation_MAT_08-short.trs</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC">
+<note type="scribe">bigau0042</note>
+<note type="version">13</note>
+<note type="version_date">101222</note>
+</note>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="type">-</note>
+<note type="parent">-</note>
+<note type="code">spk1</note>
+</note>
+<note>
+<note type="type">-</note>
+<note type="parent">-</note>
+<note type="code">spk2</note>
+</note>
+<note>
+<note type="code">com</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="audio/x-wav" url="Conversation_MAT_08-short.wav"/>
+<date dur="477.172">101222</date>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<settingDesc>
+<setting>
+<activity>no setting information</activity>
+</setting>
+</settingDesc>
+<particDesc>
+<listPerson>
+<person>
+<note type="check">no</note>
+<note type="dialect">native</note>
+<altGrp>
+<alt type="spk1"/>
+</altGrp>
+<persName>L1</persName>
+<note type="scope">local</note>
+</person>
+<person>
+<note type="check">no</note>
+<note type="dialect">native</note>
+<altGrp>
+<alt type="spk2"/>
+</altGrp>
+<persName>L2</persName>
+<note type="scope">local</note>
+</person>
+</listPerson>
+</particDesc>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Transcriber" version="13">
+<desc>Transcription created with Transcriber and converted to TEI_CORPO - Soft version: 1.01</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/./Conversation_MAT_08-short.trs</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/.tei_corpo.xml</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="2.391" since="#T0" xml:id="T1"/>
+<when interval="2.937" since="#T0" xml:id="T2"/>
+<when interval="3.469" since="#T0" xml:id="T3"/>
+<when interval="6.859" since="#T0" xml:id="T5"/>
+<when interval="9.328" since="#T0" xml:id="T4"/>
+<when interval="10.672" since="#T0" xml:id="T6"/>
+<when interval="13.046" since="#T0" xml:id="T8"/>
+<when interval="17.093" since="#T0" xml:id="T7"/>
+<when interval="19.248" since="#T0" xml:id="T9"/>
+<when interval="21.593" since="#T0" xml:id="T11"/>
+<when interval="22.857" since="#T0" xml:id="T10"/>
+<when interval="24.093" since="#T0" xml:id="T12"/>
+<when interval="33.262" since="#T0" xml:id="T14"/>
+<when interval="33.608" since="#T0" xml:id="T15"/>
+<when interval="36.090" since="#T0" xml:id="T16"/>
+<when interval="39.233" since="#T0" xml:id="T17"/>
+<when interval="39.996" since="#T0" xml:id="T13"/>
+<when interval="40.389" since="#T0" xml:id="T18"/>
+<when interval="41.311" since="#T0" xml:id="T19"/>
+<when interval="42.623" since="#T0" xml:id="T20"/>
+<when interval="46.701" since="#T0" xml:id="T21"/>
+<when interval="49.669" since="#T0" xml:id="T22"/>
+<when interval="50.373" since="#T0" xml:id="T23"/>
+<when interval="56.810" since="#T0" xml:id="T24"/>
+<when interval="58.170" since="#T0" xml:id="T25"/>
+<when interval="58.857" since="#T0" xml:id="T26"/>
+<when interval="61.404" since="#T0" xml:id="T28"/>
+<when interval="63.654" since="#T0" xml:id="T29"/>
+<when interval="65.888" since="#T0" xml:id="T27"/>
+<when interval="68.326" since="#T0" xml:id="T30"/>
+<when interval="69.216" since="#T0" xml:id="T31"/>
+<when interval="70.232" since="#T0" xml:id="T32"/>
+<when interval="75.450" since="#T0" xml:id="T33"/>
+<when interval="76.581" since="#T0" xml:id="T34"/>
+<when interval="76.652" since="#T0" xml:id="T35"/>
+<when interval="78.357" since="#T0" xml:id="T37"/>
+<when interval="79.811" since="#T0" xml:id="T36"/>
+<when interval="85.529" since="#T0" xml:id="T38"/>
+<when interval="86.998" since="#T0" xml:id="T39"/>
+<when interval="88.216" since="#T0" xml:id="T40"/>
+<when interval="92.716" since="#T0" xml:id="T41"/>
+<when interval="93.935" since="#T0" xml:id="T42"/>
+<when interval="100.778" since="#T0" xml:id="T43"/>
+<when interval="101.34" since="#T0" xml:id="T44"/>
+<when interval="103.419" since="#T0" xml:id="T45"/>
+<when interval="105.436" since="#T0" xml:id="T47"/>
+<when interval="106.716" since="#T0" xml:id="T46"/>
+<when interval="113.967" since="#T0" xml:id="T48"/>
+<when interval="115.483" since="#T0" xml:id="T49"/>
+<when interval="126.795" since="#T0" xml:id="T51"/>
+<when interval="131.389" since="#T0" xml:id="T50"/>
+<when interval="136.935" since="#T0" xml:id="T53"/>
+<when interval="143.888" since="#T0" xml:id="T52"/>
+<when interval="145.122" since="#T0" xml:id="T54"/>
+<when interval="148.685" since="#T0" xml:id="T55"/>
+<when interval="150.092" since="#T0" xml:id="T56"/>
+<when interval="152.982" since="#T0" xml:id="T58"/>
+<when interval="163.934" since="#T0" xml:id="T59"/>
+<when interval="167.732" since="#T0" xml:id="T57"/>
+<when interval="169.794" since="#T0" xml:id="T60"/>
+<when interval="170.342" since="#T0" xml:id="T61"/>
+<when interval="173.138" since="#T0" xml:id="T62"/>
+<when interval="176.389" since="#T0" xml:id="T64"/>
+<when interval="178.904" since="#T0" xml:id="T63"/>
+<when interval="179.842" since="#T0" xml:id="T65"/>
+<when interval="184.201" since="#T0" xml:id="T66"/>
+<when interval="184.405" since="#T0" xml:id="T67"/>
+<when interval="186.607" since="#T0" xml:id="T68"/>
+<when interval="188.764" since="#T0" xml:id="T70"/>
+<when interval="193.107" since="#T0" xml:id="T69"/>
+<when interval="195.952" since="#T0" xml:id="T71"/>
+<when interval="197.264" since="#T0" xml:id="T73"/>
+<when interval="202.765" since="#T0" xml:id="T72"/>
+<when interval="204.123" since="#T0" xml:id="T74"/>
+<when interval="205.523" since="#T0" xml:id="T75"/>
+<when interval="206.28" since="#T0" xml:id="T76"/>
+<when interval="207.092" since="#T0" xml:id="T77"/>
+<when interval="208.374" since="#T0" xml:id="T78"/>
+<when interval="210.176" since="#T0" xml:id="T79"/>
+<when interval="210.765" since="#T0" xml:id="T80"/>
+<when interval="212.374" since="#T0" xml:id="T81"/>
+<when interval="212.951" since="#T0" xml:id="T82"/>
+<when interval="213.286" since="#T0" xml:id="T83"/>
+<when interval="214.422" since="#T0" xml:id="T84"/>
+<when interval="215.613" since="#T0" xml:id="T86"/>
+<when interval="217.930" since="#T0" xml:id="T87"/>
+<when interval="220.061" since="#T0" xml:id="T88"/>
+<when interval="225.702" since="#T0" xml:id="T89"/>
+<when interval="228.573" since="#T0" xml:id="T85"/>
+<when interval="229.002" since="#T0" xml:id="T90"/>
+<when interval="234.179" since="#T0" xml:id="T91"/>
+<when interval="234.77" since="#T0" xml:id="T92"/>
+<when interval="243.202" since="#T0" xml:id="T93"/>
+<when interval="248.623" since="#T0" xml:id="T94"/>
+<when interval="251.382" since="#T0" xml:id="T95"/>
+<when interval="251.757" since="#T0" xml:id="T96"/>
+<when interval="256.641" since="#T0" xml:id="T98"/>
+<when interval="261.438" since="#T0" xml:id="T99"/>
+<when interval="265.518" since="#T0" xml:id="T100"/>
+<when interval="268.403" since="#T0" xml:id="T101"/>
+<when interval="270.701" since="#T0" xml:id="T102"/>
+<when interval="275.908" since="#T0" xml:id="T103"/>
+<when interval="277.867" since="#T0" xml:id="T97"/>
+<when interval="278.386" since="#T0" xml:id="T104"/>
+<when interval="281.318" since="#T0" xml:id="T105"/>
+<when interval="282.791" since="#T0" xml:id="T106"/>
+<when interval="290.334" since="#T0" xml:id="T107"/>
+<when interval="290.665" since="#T0" xml:id="T108"/>
+<when interval="298.739" since="#T0" xml:id="T110"/>
+<when interval="305.495" since="#T0" xml:id="T109"/>
+<when interval="309.148" since="#T0" xml:id="T111"/>
+<when interval="319.131" since="#T0" xml:id="T112"/>
+<when interval="319.481" since="#T0" xml:id="T113"/>
+<when interval="322.486" since="#T0" xml:id="T114"/>
+<when interval="324.18" since="#T0" xml:id="T115"/>
+<when interval="326.243" since="#T0" xml:id="T117"/>
+<when interval="327.853" since="#T0" xml:id="T116"/>
+<when interval="329.303" since="#T0" xml:id="T118"/>
+<when interval="329.723" since="#T0" xml:id="T119"/>
+<when interval="330.622" since="#T0" xml:id="T120"/>
+<when interval="335.333" since="#T0" xml:id="T121"/>
+<when interval="335.434" since="#T0" xml:id="T122"/>
+<when interval="336.281" since="#T0" xml:id="T123"/>
+<when interval="336.522" since="#T0" xml:id="T124"/>
+<when interval="338.579" since="#T0" xml:id="T125"/>
+<when interval="339.376" since="#T0" xml:id="T126"/>
+<when interval="342.49" since="#T0" xml:id="T127"/>
+<when interval="342.818" since="#T0" xml:id="T128"/>
+<when interval="347.222" since="#T0" xml:id="T129"/>
+<when interval="349.117" since="#T0" xml:id="T130"/>
+<when interval="351.14" since="#T0" xml:id="T131"/>
+<when interval="351.593" since="#T0" xml:id="T132"/>
+<when interval="353.336" since="#T0" xml:id="T133"/>
+<when interval="353.601" since="#T0" xml:id="T134"/>
+<when interval="354.187" since="#T0" xml:id="T135"/>
+<when interval="354.641" since="#T0" xml:id="T136"/>
+<when interval="358.392" since="#T0" xml:id="T137"/>
+<when interval="358.808" since="#T0" xml:id="T138"/>
+<when interval="369.66" since="#T0" xml:id="T139"/>
+<when interval="370.808" since="#T0" xml:id="T140"/>
+<when interval="371.215" since="#T0" xml:id="T141"/>
+<when interval="375.545" since="#T0" xml:id="T142"/>
+<when interval="384.317" since="#T0" xml:id="T143"/>
+<when interval="385.242" since="#T0" xml:id="T144"/>
+<when interval="385.713" since="#T0" xml:id="T145"/>
+<when interval="387.576" since="#T0" xml:id="T146"/>
+<when interval="389.81" since="#T0" xml:id="T147"/>
+<when interval="392.819" since="#T0" xml:id="T149"/>
+<when interval="396.829" since="#T0" xml:id="T148"/>
+<when interval="400.174" since="#T0" xml:id="T150"/>
+<when interval="400.478" since="#T0" xml:id="T151"/>
+<when interval="407.336" since="#T0" xml:id="T152"/>
+<when interval="407.697" since="#T0" xml:id="T153"/>
+<when interval="411.631" since="#T0" xml:id="T154"/>
+<when interval="412.678" since="#T0" xml:id="T155"/>
+<when interval="415.429" since="#T0" xml:id="T157"/>
+<when interval="419.874" since="#T0" xml:id="T158"/>
+<when interval="424.5" since="#T0" xml:id="T156"/>
+<when interval="426.368" since="#T0" xml:id="T159"/>
+<when interval="428.934" since="#T0" xml:id="T160"/>
+<when interval="429.564" since="#T0" xml:id="T161"/>
+<when interval="431.166" since="#T0" xml:id="T162"/>
+<when interval="431.361" since="#T0" xml:id="T163"/>
+<when interval="435.871" since="#T0" xml:id="T165"/>
+<when interval="441.815" since="#T0" xml:id="T164"/>
+<when interval="443.797" since="#T0" xml:id="T166"/>
+<when interval="444.985" since="#T0" xml:id="T167"/>
+<when interval="445.375" since="#T0" xml:id="T169"/>
+<when interval="447.348" since="#T0" xml:id="T168"/>
+<when interval="447.654" since="#T0" xml:id="T170"/>
+<when interval="448.074" since="#T0" xml:id="T171"/>
+<when interval="454.129" since="#T0" xml:id="T173"/>
+<when interval="457.325" since="#T0" xml:id="T172"/>
+<when interval="459.667" since="#T0" xml:id="T174"/>
+<when interval="460.953" since="#T0" xml:id="T175"/>
+<when interval="461.909" since="#T0" xml:id="T176"/>
+<when interval="463.193" since="#T0" xml:id="T177"/>
+<when interval="465.216" since="#T0" xml:id="T178"/>
+<when interval="465.324" since="#T0" xml:id="T179"/>
+<when interval="470.187" since="#T0" xml:id="T180"/>
+<when interval="470.588" since="#T0" xml:id="T181"/>
+<when interval="471.286" since="#T0" xml:id="T182"/>
+<when interval="476.712" since="#T0" xml:id="T183"/>
+<when interval="477.172" since="#T0" xml:id="T184"/>
+</timeline>
+<body>
+<div>
+<head/>
+<div type="report">
+<head>
+<note type="start">#T0</note>
+<note type="end">#T184</note>
+</head>
+<annotationBloc end="#T1" start="#T0" who="spk1" xml:id="au0">
+<u>
+<anchor synch="#T0"/>
+<seg>
+<pause type="short"/>et c'est quoi l'envers comme boîte </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T1" who="spk2" xml:id="au1">
+<u>
+<seg>l'envers </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="spk1" xml:id="au2">
+<u>
+<seg>ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T3" who="spk2" xml:id="au3">
+<u>
+<seg>eh ben c'est une boîte euh euh ils appellent ça une rockothèque </seg>
+<anchor synch="#T5"/>
+<seg>donc il passe que de du rock </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T4" who="spk1" xml:id="au4">
+<u>
+<seg>il y a &lt; beaucoup de gens </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="spk2" xml:id="au5">
+<u>
+<seg>rien à voir av- &gt; ouais rien avoir avec le Chat noir </seg>
+<anchor synch="#T8"/>
+<seg>c'est c'est une super boîte quoi c'est toujours une bonne ambiance euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T7" who="spk1" xml:id="au6">
+<u>
+<seg>ouais il(s) passe(nt) quoi comme musique </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="spk2" xml:id="au7">
+<u>
+<seg>euh il(s) passe(nt) La Rue Ketanou </seg>
+<anchor synch="#T11"/>
+<seg>tu vois tu connais La Rue Ketanou </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T10" who="spk1" xml:id="au8">
+<u>
+<seg>ouais ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="spk2" xml:id="au9">
+<u>
+<seg>il(s) passe(nt) euh les Amis de ta femme euh il passe euh <pause type="short"/>Téléphone euh Indochine euh enfin tu ce qui est un peu rock rock français </seg>
+<anchor synch="#T14"/>
+<seg>tu vois </seg>
+<anchor synch="#T15"/>
+<seg>c'est ouais c'est sympa </seg>
+<anchor synch="#T16"/>
+<seg>ben toi tu connaissais à l'époque où c'était euh </seg>
+<anchor synch="#T17"/>
+<seg>comment ça s'appellait avant </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T13" who="spk1" xml:id="au10">
+<u>
+<seg>le Métro </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T19" start="#T18" who="spk2" xml:id="au11">
+<u>
+<seg>le Métro ouais voilà </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T20" start="#T19" who="spk1" xml:id="au12">
+<u>
+<seg>ben j'y suis allé deux trois fois quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T21" start="#T20" who="spk2" xml:id="au13">
+<u>
+<seg>c'é- c'était déjà euh cette ambiance là ou euh <pause type="short"/>
+</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T22" start="#T21" who="spk1" xml:id="au14">
+<u>
+<seg>je me souviens plus de trop donc non il(s) passai(en)t un peu de tout en fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T23" start="#T22" who="spk2" xml:id="au15">
+<u>
+<seg>ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T24" start="#T23" who="spk1" xml:id="au16">
+<u>
+<seg>il(s) passai(en)t un peu de tout quoi euh <pause type="short"/>mais c'était assez jeune à l'époque je ne sais pas si euh maintenant il y a plus de trentenaires quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T25" start="#T24" who="spk2" xml:id="au17">
+<u>
+<seg>ouais il y a un peu de tout ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T26" start="#T25" who="spk1" xml:id="au18">
+<u>
+<seg>il y a un peu de tout &lt; un peu de tout </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T27" start="#T26" who="spk2" xml:id="au19">
+<u>
+<seg>ouais &gt; ouais hum </seg>
+<anchor synch="#T28"/>
+<seg>ben ce qui est bien c'est qu'il n'y a pas de sélection à l'entrée quoi </seg>
+<anchor synch="#T29"/>
+<seg>ben si si tu es trop bourré ils te font pas rentrer quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T30" start="#T27" who="spk1" xml:id="au20">
+<u>
+<seg>ils te font pas rentrer &lt; ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T31" start="#T30" who="spk2" xml:id="au21">
+<u>
+<seg>ouais &gt; <incident subtype="noise" type="Event">
+<desc type="desc">tousse</desc>
+<desc type="extent">instantaneous</desc>
+</incident>&lt; et tu peux </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T32" start="#T31" who="spk1" xml:id="au22">
+<u>
+<seg>mettre des baskets &gt; quoi euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T33" start="#T32" who="spk2" xml:id="au23">
+<u>
+<seg>oui oui tu peux venir comme tu veux quoi <pause type="short"/>mais ce serait bien que tu viennes d'ailleurs euh ce soir quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T34" start="#T33" who="spk1" xml:id="au24">
+<u>
+<seg>&lt; pff ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T35" start="#T34" who="spk2" xml:id="au25">
+<u>
+<seg>ce serait cool &gt; </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T36" start="#T35" who="spk1" xml:id="au26">
+<u>
+<seg>on verra si je suis pas trop creuvé </seg>
+<anchor synch="#T37"/>
+<seg>tu sais je suis levé depuis six heures moi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T38" start="#T36" who="spk2" xml:id="au27">
+<u>
+<seg>ouais ouais <pause type="short"/>il y a une fois où tu avais bossé la nuit et puis tu avais continué à reprendre le matin jusque euh dix heures </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T39" start="#T38" who="spk1" xml:id="au28">
+<u>
+<seg>ouais ouais jusqu'à dix heures ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T40" start="#T39" who="spk2" xml:id="au29">
+<u>
+<seg>je sais pas comment tu as fait quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T41" start="#T40" who="spk1" xml:id="au30">
+<u>
+<seg>ben euh <pause type="short"/>bon j'ai pas trop assuré le matin euh tu vois j'étais un peu sur les radars quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T42" start="#T41" who="spk2" xml:id="au31">
+<u>
+<seg>hum hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T43" start="#T42" who="spk1" xml:id="au32">
+<u>
+<seg>mais en fait euh <pause type="short"/>mais j'étais bien content qu'elle arrive la <pause type="short"/>
+<incident subtype="noise" type="Event">
+<desc type="desc">bruit de froissement de papiers</desc>
+<desc type="extent">instantaneous</desc>
+</incident>l'infirmière pour me relayer quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T44" start="#T43" who="spk2" xml:id="au33">
+<u>
+<seg>hum hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T45" start="#T44" who="spk1" xml:id="au34">
+<u>
+<seg>putain je sais pas du tout rouler /les, des/ cigarettes quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T46" start="#T45" who="spk2" xml:id="au35">
+<u>
+<seg>ah tu aurais dû me demander </seg>
+<anchor synch="#T47"/>
+<seg>je te l'aurais fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T48" start="#T46" who="spk1" xml:id="au36">
+<u>
+<seg>on va la recommencer celle-là <pause type="verylong"/>/ça détend,***/ </seg>
+</u>
+<spanGrp type="com">
+<span>le locuteur essaie de se rouler une cigarette</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T49" start="#T48" who="spk2" xml:id="au37">
+<u>
+<seg>tu veux que je te la fasse </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T50" start="#T49" who="spk1" xml:id="au38">
+<u>
+<seg>ouais tu vas me la faire <pause type="verylong"/>
+</seg>
+<anchor synch="#T51"/>
+<seg>et sinon ¤P1¤ <pause type="short"/>elle bosse dans une école maternelle c'est ça </seg>
+</u>
+<spanGrp type="com">
+<span>L2 roule une cigarette à L1</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T52" start="#T50" who="spk2" xml:id="au39">
+<u>
+<seg>ouais elle bosse avec des enfants ouais <pause type="short"/>le donc euh </seg>
+<anchor synch="#T53"/>
+<seg>le midi à de onze et demie à une heure et demie elle bosse sur l'école ¤S1¤ et à ¤T1¤ en fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T54" start="#T52" who="spk1" xml:id="au40">
+<u>
+<seg>hum hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T55" start="#T54" who="spk2" xml:id="au41">
+<u>
+<seg>et puis euh ben le soir et ben elle bosse à côté de ¤S2¤ là </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T56" start="#T55" who="spk1" xml:id="au42">
+<u>
+<seg>hum hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T57" start="#T56" who="spk2" xml:id="au43">
+<u>
+<seg>ah non en fait c'est le soir elle bosse à ¤S1¤ voilà </seg>
+<anchor synch="#T58"/>
+<seg>ah ben je sais plus je me rappelle plus je lui redemanderai <pause type="verylong"/>
+</seg>
+<seg/>
+<anchor synch="#T59"/>
+<seg>ouais c'est du travail périscolaire en fait quoi c'est </seg>
+</u>
+<spanGrp type="com">
+<span>L2 se roule une cigarette</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T60" start="#T57" who="spk1" xml:id="au44">
+<u>
+<seg>elle les elle les habille elle leur </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T61" start="#T60" who="spk2" xml:id="au45">
+<u>
+<seg>ouais &lt; ou alors </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T62" start="#T61" who="spk1" xml:id="au46">
+<u>
+<seg>elle va &gt; leur donner à manger <pause type="short"/>les installe pour la sieste </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T63" start="#T62" who="spk2" xml:id="au47">
+<u>
+<seg>voilà <pause type="short"/>
+</seg>
+<anchor synch="#T64"/>
+<seg>elle veille à ce qu'ils aient pas trop froid euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T65" start="#T63" who="spk1" xml:id="au48">
+<u>
+<seg>ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T66" start="#T65" who="spk2" xml:id="au49">
+<u>
+<seg>elle s'amuse avec une de ses collègues elle m'a parlé d'une de ses collègues une blonde oh la la </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T67" start="#T66" who="spk1" xml:id="au50">
+<u>
+<seg>une blonde </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T68" start="#T67" who="spk2" xml:id="au51">
+<u>
+<seg>ça à l'air d'être un sacré numéro </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T69" start="#T68" who="spk1" xml:id="au52">
+<u>
+<seg>intéressant </seg>
+<anchor synch="#T70"/>
+<seg/>
+<seg>
+<incident subtype="noise" type="Event">
+<desc type="desc">toux</desc>
+<desc type="extent">instantaneous</desc>
+</incident>
+</seg>
+<seg/>
+</u>
+</annotationBloc>
+<annotationBloc end="#T71" start="#T69" who="spk2" xml:id="au53">
+<u>
+<seg>les jeux de rôle alors tu tu le refais quand la prochaine fois </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T72" start="#T71" who="spk1" xml:id="au54">
+<u>
+<seg>ben je sais pas </seg>
+<anchor synch="#T73"/>
+<seg>ça va sûrement être en janvier quand on va essayer de se trouver un coin parce que tu sais les mecs qui ont font avec moi ben ils ont euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T74" start="#T72" who="spk2" xml:id="au55">
+<u>
+<seg>il y a qui alors il y a ¤P2¤ </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T75" start="#T74" who="spk1" xml:id="au56">
+<u>
+<seg>il y a ¤P2¤ &lt; euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T76" start="#T75" who="spk2" xml:id="au57">
+<u>
+<seg>¤P3¤ &gt; il en fait des fois </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T77" start="#T76" who="spk1" xml:id="au58">
+<u>
+<seg>non ¤P3¤ il en fait pas </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T78" start="#T77" who="spk2" xml:id="au59">
+<u>
+<seg>il avait pas déja essayé une fois </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T79" start="#T78" who="spk1" xml:id="au60">
+<u>
+<seg>ouais il a déja essayé une fois mais ça le branchait &lt; pas </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T80" start="#T79" who="spk2" xml:id="au61">
+<u>
+<seg>ça lui &gt; a pas plu </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T81" start="#T80" who="spk1" xml:id="au62">
+<u>
+<seg>tu vois ça intéresse pas tout le monde en fait euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T82" start="#T81" who="spk2" xml:id="au63">
+<u>
+<seg>ouais ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T83" start="#T82" who="spk1" xml:id="au64">
+<u>
+<seg>&lt; les /mecs,*/ </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T84" start="#T83" who="spk2" xml:id="au65">
+<u>
+<seg>et ¤P2¤ &gt; lui il est à fond lui </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T85" start="#T84" who="spk1" xml:id="au66">
+<u>
+<seg>ouais ouais il est à fond dedans </seg>
+<anchor synch="#T86"/>
+<seg>enfin moi aussi quoi <pause type="short"/>
+</seg>
+<anchor synch="#T87"/>
+<seg>moi je j'aime bien quoi </seg>
+<anchor synch="#T88"/>
+<seg>ah c'est euh tu vois c'est euh c'est comme si tu tu allais voir un film sauf que c'est toi l'acteur et euh </seg>
+<anchor synch="#T89"/>
+<seg>tu passes vraiment un bon moment si tu te plies au jeu quoi euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T90" start="#T85" who="spk2" xml:id="au67">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T91" start="#T90" who="spk1" xml:id="au68">
+<u>
+<seg>en plus maintenant on a on a /notre, nos/ personnage(s) avec nos <pause type="short"/>nos caractères et puis le personnage il évolue aussi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T92" start="#T91" who="spk2" xml:id="au69">
+<u>
+<seg>ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T93" start="#T92" who="spk1" xml:id="au70">
+<u>
+<seg>
+<pause type="short"/>
+<incident subtype="noise" type="Event">
+<desc type="desc">bruit de microphone</desc>
+<desc type="extent">instantaneous</desc>
+</incident>le personnage il évolue ouais euh <pause type="short"/>
+<incident subtype="noise" type="Event">
+<desc type="desc">bruit de microphone</desc>
+<desc type="extent">instantaneous</desc>
+</incident>et en fait euh <pause type="short"/>
+</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T94" start="#T93" who="spk2" xml:id="au71">
+<u>
+<seg>mais euh il évolue comment tu peux le faire mourir tu peux le faire ressusciter tout ça tu fais ce que tu veux en fait quoi il y a un maître du jeu </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T95" start="#T94" who="spk1" xml:id="au72">
+<u>
+<seg>ben quand il meurt il meurt quoi quand il meurt il faut que tu en retires un autre quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T96" start="#T95" who="spk2" xml:id="au73">
+<u>
+<seg>d'accord </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T97" start="#T96" who="spk1" xml:id="au74">
+<u>
+<seg>et euh par exemple euh ben pour un magicien moi j'ai un magicien il peut avoir de nouveaux sorts <pause type="short"/>
+</seg>
+<anchor synch="#T98"/>
+<seg>là euh là il est devenu à moitié dragon le magicien euh </seg>
+<anchor synch="#T99"/>
+<seg>donc euh il peut voler enfin il y a des trucs comme ça il peut cracher de l'acide des trucs comme ça </seg>
+<anchor synch="#T100"/>
+<seg>puis ils ont leur caractère tu vois le magicien là euh </seg>
+<anchor synch="#T101"/>
+<seg>il est un peu vile quoi euh </seg>
+<anchor synch="#T102"/>
+<seg>/ben,bon/ il il aime bien faire chier le monde en fait euh sinon il y a un barbare complètement idiot quoi euh </seg>
+<anchor synch="#T103"/>
+<seg>et qui peut se taper toutes les meufs du monde </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T104" start="#T97" who="spk2" xml:id="au75">
+<u>
+<seg>ah ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T105" start="#T104" who="spk1" xml:id="au76">
+<u>
+<seg>il a la force d'un mammouth euh enfin c'est des trucs comme ça en fait euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T106" start="#T105" who="spk2" xml:id="au77">
+<u>
+<seg>mais c'est des personnes inventés ou euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T107" start="#T106" who="spk1" xml:id="au78">
+<u>
+<seg>ben à la base c'est euh ouais c'est des personnages inventés alors euh tu choisis de jouer un un barbare ou un magicien ou ou on a un samouraï aussi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T108" start="#T107" who="spk2" xml:id="au79">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T109" start="#T108" who="spk1" xml:id="au80">
+<u>
+<seg>on a un prêtre euh on a un un arché euh un arché magicien aussi enfin c'est c'est sympa on a </seg>
+<anchor synch="#T110"/>
+<seg>mais et en fait donc tu inventes ta classe de personnage tu choisis sa race si c'est un elfe un nain euh &lt; enfin </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T111" start="#T109" who="spk2" xml:id="au81">
+<u>
+<seg>vous avez déjà fait &gt; une histoire euh style euh Final Fantasy là tu connais le jeu là non </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T112" start="#T111" who="spk1" xml:id="au82">
+<u>
+<seg>ouais ben <pause type="verylong"/>je connais enfin j'y ai jamais trop joué ça /mais bon, dépend/ c'est à moitié futuriste à moitié héroic fantasy <incident subtype="language" type="Event">
+<desc type="desc">anglais</desc>
+<desc type="extent">previous</desc>
+</incident>
+</seg>
+</u>
+<spanGrp type="com">
+<span>le locuteur fume</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T113" start="#T112" who="spk2" xml:id="au83">
+<u>
+<seg>ouais &lt; ouais ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T114" start="#T113" who="spk1" xml:id="au84">
+<u>
+<seg>Final Fantasy en fait &gt; <pause type="short"/>
+</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T115" start="#T114" who="spk2" xml:id="au85">
+<u>
+<seg>c'est un jeu de rôles mais sur console tu vois c'est </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T116" start="#T115" who="spk1" xml:id="au86">
+<u>
+<seg>hum <pause type="short"/>
+</seg>
+<anchor synch="#T117"/>
+<seg>mais j'aime pas trop les jeux de rôles &lt; sur console </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T118" start="#T116" who="spk2" xml:id="au87">
+<u>
+<seg>et et &gt; c'est un R.P.G. ça s'appelle en fait </seg>
+</u>
+<spanGrp type="com">
+<span>sigle=Role Playing Game</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T119" start="#T118" who="spk1" xml:id="au88">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T120" start="#T119" who="spk2" xml:id="au89">
+<u>
+<seg>donc euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T121" start="#T120" who="spk1" xml:id="au90">
+<u>
+<seg>tu as moi j'ai l'impression d'avoir plus de liberté dans dans les jeux de rôles euh ben sur une table en fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T122" start="#T121" who="spk2" xml:id="au91">
+<u>
+<seg>&lt; ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T123" start="#T122" who="spk1" xml:id="au92">
+<u>
+<seg>que &gt; sur console </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T124" start="#T123" who="spk2" xml:id="au93">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T125" start="#T124" who="spk1" xml:id="au94">
+<u>
+<seg>sur console tu as toujours tu es toujours limité alors que </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T126" start="#T125" who="spk2" xml:id="au95">
+<u>
+<seg>ouais ouais c'est vrai </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T127" start="#T126" who="spk1" xml:id="au96">
+<u>
+<seg>tu peux tu peux vraiment faire ce que tu veux en jeu(x) de rôles en fait tu vois </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T128" start="#T127" who="spk2" xml:id="au97">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T129" start="#T128" who="spk1" xml:id="au98">
+<u>
+<seg>bon après euh <pause type="short"/>le le truc c'est que tu interagis avec les autres personnages quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T130" start="#T129" who="spk2" xml:id="au99">
+<u>
+<seg>mais tu as un support tu as des cartes tu as quoi tu as </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T131" start="#T130" who="spk1" xml:id="au100">
+<u>
+<seg>ben euh tu as tu as une feuille de personnage </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T132" start="#T131" who="spk2" xml:id="au101">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T133" start="#T132" who="spk1" xml:id="au102">
+<u>
+<seg>avec les caratéristiques de ton personnage et puis tu as des </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T134" start="#T133" who="spk2" xml:id="au103">
+<u>
+<seg>hum &gt; </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T135" start="#T134" who="spk1" xml:id="au104">
+<u>
+<seg>dés en fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T136" start="#T135" who="spk2" xml:id="au105">
+<u>
+<seg>hum hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T137" start="#T136" who="spk1" xml:id="au106">
+<u>
+<seg>donc quand tu veux faire un combat par exemple ça dépend de tes capacités tu lances des dés </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T138" start="#T137" who="spk2" xml:id="au107">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T139" start="#T138" who="spk1" xml:id="au108">
+<u>
+<seg>et euh on <incident subtype="noise" type="Event">
+<desc type="desc">bruit de microphone</desc>
+<desc type="extent">previous</desc>
+</incident>tu vois si tu y arrives ou pas en fait <pause type="verylong"/>
+<incident subtype="noise" type="Event">
+<desc type="desc">bruit de microphone</desc>
+<desc type="extent">instantaneous</desc>
+</incident>
+</seg>
+</u>
+<spanGrp type="com">
+<span>un des locuteurs regarde son portable</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T140" start="#T139" who="spk2" xml:id="au109">
+<u>
+<seg>ouais ben &lt; il faut voir </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T141" start="#T140" who="spk1" xml:id="au110">
+<u>
+<seg>pareil quand &gt; tu lances des * </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T142" start="#T141" who="spk2" xml:id="au111">
+<u>
+<seg>ouais ben je peux voir si jamais euh tu refais une soirée tu tu es (ir)régulier ou euh <incident subtype="noise" type="Event">
+<desc type="desc">quelque chose cogne sur la table</desc>
+<desc type="extent">instantaneous</desc>
+</incident>
+</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T143" start="#T142" who="spk1" xml:id="au112">
+<u>
+<seg>non pff ça fait ça un peu près une fois par mois quoi <pause type="short"/>on essaye parce qu'en fait mes potes tu vois ils sont tous euh plus ou moins mariés ben tu ¤P2¤ il a une gamine </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T144" start="#T143" who="spk2" xml:id="au113">
+<u>
+<seg>ouais bah ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T145" start="#T144" who="spk1" xml:id="au114">
+<u>
+<seg>il y en d'autres &lt; qui </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T146" start="#T145" who="spk2" xml:id="au115">
+<u>
+<seg>mais &gt; il vit avec ¤P4¤ si il vit avec ¤P4¤ maintenant </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T147" start="#T146" who="spk1" xml:id="au116">
+<u>
+<seg>oui il vit avec ¤P4¤ ouais <pause type="short"/>ouais ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T148" start="#T147" who="spk2" xml:id="au117">
+<u>
+<seg>ça fait longtemps que j'ai pas eu de nouvelles de de ¤P2¤ </seg>
+<anchor synch="#T149"/>
+<seg>ouais je me souviens qu'il m'avait envoyé son nouveau numéro mais j'ai ja- enfin j'ose pas le recontacter moi tu vois </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T150" start="#T148" who="spk1" xml:id="au118">
+<u>
+<seg>ben si tu peux hein ça le ça lui fera super plaisir je pense </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T151" start="#T150" who="spk2" xml:id="au119">
+<u>
+<seg>ah bon </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T152" start="#T151" who="spk1" xml:id="au120">
+<u>
+<seg>ah bien sûr quoi bien sûr même pour avoir une conversation téléphonique ou aller boire un coup à la limite euh ou je sais pas mais euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T153" start="#T152" who="spk2" xml:id="au121">
+<u>
+<seg>ah ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T154" start="#T153" who="spk1" xml:id="au122">
+<u>
+<seg>je pense que ça lui fera plaisir d'avoir de tes nouvelles quoi mais des fois il demande de tes nouvelles hein &lt; quand j'y vais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T155" start="#T154" who="spk2" xml:id="au123">
+<u>
+<seg>ouais &gt; </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T156" start="#T155" who="spk1" xml:id="au124">
+<u>
+<seg>donc n'hésite pas à l'appeler hein <pause type="short"/>
+</seg>
+<anchor synch="#T157"/>
+<seg>ben là j- j'ai recontacté un <pause type="short"/>
+</seg>
+<anchor synch="#T158"/>
+<seg>un ancien collègue qui bossait avant que tu arrives en fait je sais pas si tu connais euh ¤P5¤ en fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T159" start="#T156" who="spk2" xml:id="au125">
+<u>
+<seg>¤P5¤ mais qui bossait où à l'UPPAM ou euh </seg>
+</u>
+<spanGrp type="com">
+<span>sigle=Unité de Psychiatrie de Pont-à-Mousson</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T160" start="#T159" who="spk1" xml:id="au126">
+<u>
+<seg>non il bossait euh à Hardeval D en fait </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T161" start="#T160" who="spk2" xml:id="au127">
+<u>
+<seg>ah ouais non j'ai pas connu </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T162" start="#T161" who="spk1" xml:id="au128">
+<u>
+<seg>je vais faire de la gratte avec lui </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T163" start="#T162" who="spk2" xml:id="au129">
+<u>
+<seg>ah ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T164" start="#T163" who="spk1" xml:id="au130">
+<u>
+<seg>tu sais c'est un il a bah il est en retraite maintenant dans il doit avoir la soixantaine </seg>
+<anchor synch="#T165"/>
+<seg>et euh en fait il joue beaucoup euh des trucs rockabilly ou des trucs des Shadows je sais pas si tu connais les Shadows </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T166" start="#T164" who="spk2" xml:id="au131">
+<u>
+<seg>ah les Shadows c'est un vieux groupe qui date euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T167" start="#T166" who="spk1" xml:id="au132">
+<u>
+<seg>ouais des années soixante-dix &lt; quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T168" start="#T167" who="spk2" xml:id="au133">
+<u>
+<seg>des années &gt; soixante-dix </seg>
+<anchor synch="#T169"/>
+<seg>ben l'époque où Johnny euh il commençait &lt; quoi </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T170" start="#T168" who="spk1" xml:id="au134">
+<u>
+<seg>ouais &gt; ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T171" start="#T170" who="spk2" xml:id="au135">
+<u>
+<seg>c'est ça </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T172" start="#T171" who="spk1" xml:id="au136">
+<u>
+<seg>et donc il euh il aimerait bien il cherche un guitariste donc euh après les fêtes là on va se revoir et puis on va essayer de jouer ensemble </seg>
+<anchor synch="#T173"/>
+<seg>il aimerait bien euh monter un petit groupe en fait donc je vais voir euh </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T174" start="#T172" who="spk2" xml:id="au137">
+<u>
+<seg>ben écoute euh vas-y pas de problèmes moi je me mets à la basse </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T175" start="#T174" who="spk1" xml:id="au138">
+<u>
+<seg>ouais tu veux bien te mettre à la basse </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T176" start="#T175" who="spk2" xml:id="au139">
+<u>
+<seg>moi je me mets à la basse hein </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T177" start="#T176" who="spk1" xml:id="au140">
+<u>
+<seg>moi j'en ai une de basse si je peux te la &lt; prêter </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T178" start="#T177" who="spk2" xml:id="au141">
+<u>
+<seg>bah &gt; écoute je me mets à la basse moi pas de problèmes </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T179" start="#T178" who="spk1" xml:id="au142">
+<u>
+<seg>&lt; ouais </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T180" start="#T179" who="spk2" xml:id="au143">
+<u>
+<seg>¤P6¤ &gt; m'a dit qu'il me verrait bien à la basse donc pourquoi pas <pause type="short"/>
+</seg>
+</u>
+<spanGrp type="com">
+<span>le locuteur fume</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T181" start="#T180" who="spk1" xml:id="au144">
+<u>
+<seg>c'est vrai </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T182" start="#T181" who="spk2" xml:id="au145">
+<u>
+<seg>hum </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T183" start="#T182" who="spk1" xml:id="au146">
+<u>
+<seg>ouais tu as <pause type="short"/>tu es pas mauvais en guitare quoi tout à l'heure le solo c'était pas mal c'était assez original quoi euh &lt; tu vois </seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T184" start="#T183" who="spk2" xml:id="au147">
+<u>
+<seg>hum hum &gt; </seg>
+</u>
+</annotationBloc>
+</div>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="F2-C1-7mar14" version="2.8">
+<Speakers>
+<Speaker id="Commentaires" name="Commentaires"/>
+<Speaker id="Montages" name="Montages"/>
+<Speaker id="Montages 2" name="Montages 2"/>
+<Speaker id="Séquences" name="Séquences"/>
+<Speaker id="Séquences autre cam" name="Séquences autre cam"/>
+<Speaker id="Thèmes Charlotte" name="Thèmes Charlotte"/>
+<Speaker id="Thèmes Fat" name="Thèmes Fat"/>
+<Speaker id="Thèmes Marine" name="Thèmes Marine"/>
+<Speaker id="Thèmes Mot" name="Thèmes Mot"/>
+<Speaker id="Trad Charlotte LSF" name="Trad Charlotte LSF"/>
+<Speaker id="Trad Fat LSF" name="Trad Fat LSF"/>
+<Speaker id="Trad Marine LSF" name="Trad Marine LSF"/>
+<Speaker id="Trad Mot LSF" name="Trad Mot LSF"/>
+<Speaker id="Trad Obs Stéphanie" name="Trad Obs Stéphanie"/>
+</Speakers>
+<Episode>
+<Section endTime="768.200" startTime="0" type="report">
+<Turn endTime="40.0" speaker="Séquences" startTime="0">
+<Sync time="0"/>Dans l'ascenseur</Turn>
+<Turn endTime="599.625" speaker="Trad Mot LSF" startTime="585.550">
+<Sync time="585.550"/>Bravo ! Dix sur dix, c'est parfait !<Sync time="594.825"/>C'est difficile parce que les couleurs sont proches. C'est un pays d'Afrique.</Turn>
+<Turn endTime="5503.075" speaker="Trad Charlotte LSF" startTime="5488.625">
+<Sync time="5488.625"/>Une question... Quoi ?<Sync time="5493.025"/>Non, non. Parce qu'il faut faire vite pour y aller, sinon c'est occupé.</Turn>
+<Turn endTime="4619.800" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5505.075">
+<Sync time="5505.075"/>
+<Who nb="1"/>Une question, une question, une question ! Le médecin, lui il travaille lentemen, tout le temps lentement, parce qu'il réfléchit ?<Sync time="4612.050"/>
+<Who nb="2"/>(Appel) Du fromage ? (Appel)<Sync time="5525.225"/>
+<Who nb="1"/>Non.<Sync time="4618.400"/>
+<Who nb="2"/>Bon appétit !</Turn>
+<Turn endTime="4621.500" speaker="Trad Fat LSF" startTime="4619.800">
+<Sync time="4619.800"/>C'est bon ça.</Turn>
+<Turn endTime="5591.112" speaker="Trad Charlotte LSF" startTime="5527.700">
+<Sync time="5527.700"/>Parce que... le docteur nous a examiné, il travaillait lentement... Il nous a examiné et son travail était long, je sais pas pourqoi...<Sync time="5557.012"/>Oui... À la récréation, j'ai vu le docteur encore... Il me dit : toi tu dois voir le directeur ! Mais à la récréation, il est occupé donc il peut pas m'accompagner. Je vais voir le directeur. Je lui demande pour aller après à la maternelle. C'est à coté, faut entrer aller à droite, tout en haut. Tout en haut.</Turn>
+<Turn endTime="4624.500" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5591.112">
+<Sync time="5591.112"/>
+<Who nb="1"/>Aussi, on entre à la bibliothèque...<Sync time="483.100"/>
+<Who nb="2"/>Je pense ça va être difficile. Parti !<Sync time="5599.612"/>
+<Who nb="1"/>Encore je monte à la bibliothèque, à l'étage, je monte là-bas, y a le docteur. Il me laisse, se déplace. Moi, j'observe. Je rentre pour... Euh... l'oscultation, et je la (prénom signe) trouve ! Elle s'est différent c'est les dents, elle a un problème, elle crie ! Moi, je sais pas... Elle me dit le dentiste c'est là-bas, moi, j'en sais rien.<Sync time="4621.700"/>
+<Who nb="2"/>(Appel)</Turn>
+<Turn endTime="5656.062" speaker="Trad Charlotte LSF" startTime="5646.962">
+<Sync time="5646.962"/>Par exemple quand ils parlent c'est compliqué ! En premier, je vais voir le médecin, on discute. Mais je veux pas aller me faire osculter par le dentiste.</Turn>
+<Turn endTime="4634.050" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5666.412">
+<Sync time="5666.412"/>
+<Who nb="1"/>Les petits.<Sync time="4633.450"/>
+<Who nb="2"/>Merci.</Turn>
+<Turn endTime="5790.012" speaker="Trad Charlotte LSF" startTime="5675.437">
+<Sync time="5675.437"/>Moi, j'ai pas le temps à midi ! À midi... Non, à midi, on doit aller voir les orthophonistes, tous on les voit, ils nous disent c'est bon, et des fois on voit le médecin.<Sync time="5789.012"/>La dame me parlait.</Turn>
+<Turn endTime="4635.650" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5795.662">
+<Sync time="5795.662"/>
+<Who nb="1"/>J'ai rien ! Le fromage est passé où ? Le fromage... Où est le mien ? Où est mon fromage ? Mon fromage est où ?<Sync time="4634.650"/>
+<Who nb="2"/>Quoi ?</Turn>
+<Turn endTime="5836.562" speaker="Trad Charlotte LSF" startTime="5815.812">
+<Sync time="5815.812"/>Pourquoi ?<Sync time="5835.562"/>Oui.</Turn>
+<Turn endTime="4643.050" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5991.637">
+<Sync time="5991.637"/>
+<Who nb="1"/>S'il te plait, encore.<Sync time="4637.450"/>
+<Who nb="2"/>S'il te plait, quoi ? Comme ça ?</Turn>
+<Turn endTime="6023.037" speaker="Trad Charlotte LSF" startTime="6003.237">
+<Sync time="6003.237"/>Han ! Là ! Elle s'en ai mis là.<Sync time="6018.437"/>Je peux dessiner les drapeaux, je sais.</Turn>
+<Turn endTime="606.825" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6030.537">
+<Sync time="6030.537"/>
+<Who nb="1"/>Non, le drapeau tu suis c'est obligé. Oui... Le drapeau de la France, interdit l'amour de deux femmes, interdit l'amour de deux hommes... Y a l'Etat... Y a l'Eglise...<Sync time="605.025"/>
+<Who nb="2"/>C'est bon. Ah, bon !</Turn>
+<Turn endTime="4648.0" speaker="Trad Mot LSF" startTime="4644.100">
+<Sync time="4644.100"/>Du fromage ? Tu en as déjà là.</Turn>
+<Turn endTime="6130.431" speaker="Trad Charlotte LSF" startTime="6093.912">
+<Sync time="6093.912"/>Deux hommes, deux femmes.<Sync time="6124.731"/>J'ai envie de ça, j'adore ça !</Turn>
+<Turn endTime="4652.650" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6140.531">
+<Sync time="6140.531"/>
+<Who nb="1"/>Merci.<Sync time="4649.050"/>
+<Who nb="2"/>Tu en as déjà. C'est moi qui fait.</Turn>
+<Turn endTime="6227.831" speaker="Trad Charlotte LSF" startTime="6159.831">
+<Sync time="6159.831"/>Beurre.<Sync time="6225.531"/>Je peux partir.</Turn>
+<Turn endTime="4682.0" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6238.531">
+<Sync time="6238.531"/>
+<Who nb="1"/>Qui ? C'est qui ? J... Non, c'est toi, c'est le tien, J comme ça...<Sync time="4680.600"/>
+<Who nb="2"/>Ah, oui j'avais oublié.</Turn>
+<Turn endTime="6269.781" speaker="Trad Charlotte LSF" startTime="6264.681">
+<Sync time="6264.681"/>Moi, je sais pas si c'est comme ça, ou comme ça...</Turn>
+<Turn endTime="4742.700" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6273.581">
+<Sync time="6273.581"/>
+<Who nb="1"/>Pourquoi ? J'ai envie de partir.<Sync time="4697.050"/>
+<Who nb="2"/>Quoi ? Non, non, j'ai pas oublié... Y a rien.<Sync time="6287.231"/>
+<Who nb="1"/>(?)<Sync time="4734.650"/>
+<Who nb="2"/>C'est bon !<Sync time="6296.0"/>
+<Who nb="1"/>Lui (prénom signe), comme ça... Il a un tuyau mais veut pas entendre, c'est quoi ?<Sync time="4742.0"/>
+<Who nb="2"/>(Appel) Ça va ?<Sync time="4742.0"/>
+<Who nb="1"/>Non.</Turn>
+<Turn endTime="4756.0" speaker="Trad Mot LSF" startTime="4752.600">
+<Sync time="4752.600"/>C'est le théatre chinois. Oui.</Turn>
+<Turn endTime="500.0" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6323.181">
+<Sync time="6323.181"/>
+<Who nb="1"/>Je veux partir, je peux partir.<Sync time="497.500"/>
+<Who nb="2"/>Oula ! Attention ils sont proches !</Turn>
+<Turn endTime="4761.450" speaker="Trad Mot LSF" startTime="4757.550">
+<Sync time="4757.550"/>(Appel) C'est du théatre typiquement chinois, c'est pour ça.</Turn>
+<Turn endTime="7179.0" speaker="Trad Charlotte LSF" startTime="7173.150">
+<Sync time="7173.150"/>Toutes les deux vous êtes dans le master.</Turn>
+<Turn endTime="4788.550" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="7185.550">
+<Sync time="7185.550"/>
+<Who nb="1"/>Tous les soirs elle se trompe quand elle signe. Il faut quoi... c'est important... ton cerveau il signe...<Sync time="4771.500"/>
+<Who nb="2"/>Japon, oui.<Sync time="7199.975"/>
+<Who nb="1"/>Ah bon, ok. Assieds-toi, s'il te plaît. Assieds-toi, s'il te plaît. Tu t'accroupis, s'il te plait.<Sync time="4782.150"/>
+<Who nb="2"/>(Appel) Doucement... (Appel) Tu es énervée, calme-toi ! Mange doucement, c'est pour ça que tu as plus faim.</Turn>
+<Turn endTime="8132.050" speaker="Trad Charlotte LSF" startTime="8130.750">
+<Sync time="8130.750"/>Merci.</Turn>
+<Turn endTime="4341.700" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="8141.0">
+<Sync time="8141.0"/>
+<Who nb="1"/>Merci.<Sync time="4340.500"/>
+<Who nb="2"/>Une oui.</Turn>
+<Turn endTime="615.825" speaker="Trad Mot LSF" startTime="4348.350">
+<Sync time="4348.350"/>Qu'est-ce que tu veux ? (Appel) Tu veux quoi ?<Sync time="613.025"/>C'est peut être un pays d'Afrique, le Nigéria ?</Turn>
+<Turn endTime="4800.600" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="8148.650">
+<Sync time="8148.650"/>
+<Who nb="1"/>Moi ! Moi ! Je veux l'appareil.<Sync time="4795.600"/>
+<Who nb="2"/>(Appel) Quand je suis allée la chercher au chant-signe, on m'a dit que ça passe bien pour elle.</Turn>
+<Turn endTime="4214.050" speaker="Thèmes Charlotte Thèmes Fat Trad Charlotte LSF" startTime="8153.850">
+<Sync time="8153.850"/>
+<Who nb="3"/>L'appareil, l'appareil.<Sync time="4202.050"/>
+<Who nb="1"/>L'orthoponiste<Sync time="4202.050"/>
+<Who nb="2"/>L'orthoponiste</Turn>
+<Turn endTime="4733.0" speaker="Montages Thèmes Charlotte Thèmes Fat Thèmes Mot Trad Fat LSF Trad Mot LSF" startTime="4811.0">
+<Sync time="4811.0"/>
+<Who nb="6"/>J'ai oublié de te demander : dimanche prochain, tu sais, on va à l'association. Mais si, tu sais, l'association qui s'appelle DLS. Attends !<Sync time="4811.0"/>
+<Who nb="4"/>Carnaval à l'association (1)<Sync time="4811.0"/>
+<Who nb="2"/>Carnaval à l'association (1)<Sync time="4811.0"/>
+<Who nb="1"/>Peut-on tout exprimer en LSF ? Evoquer ce qui n'est pas présent.<Sync time="4811.0"/>
+<Who nb="3"/>Carnaval à l'association (1)<Sync time="4673.0"/>
+<Who nb="2"/>À l'école : cours de maths (1)<Sync time="4673.0"/>
+<Who nb="5"/>(Appel) Tu as fais quoi toute la journée à l'école ?<Sync time="4673.0"/>
+<Who nb="3"/>À l'école : cours de maths (1)</Turn>
+<Turn endTime="4876.050" speaker="Thèmes Charlotte Thèmes Fat" startTime="4870.050">
+<Sync time="4870.050"/>
+<Who nb="1"/>Carnaval à l'association (2)<Sync time="4870.050"/>
+<Who nb="2"/>Carnaval à l'association (2)</Turn>
+<Turn endTime="4828.0" speaker="Thèmes Charlotte Thèmes Fat Trad Fat LSF Trad Mot LSF" startTime="5080.050">
+<Sync time="5080.050"/>
+<Who nb="1"/>À l'école : cours de maths (2)<Sync time="5080.050"/>
+<Who nb="3"/>(Appel) Tu m'as dit qu'en maths vous avez fait les paires, 2 + 2, 5 + 5... Et après ?<Sync time="5080.050"/>
+<Who nb="2"/>À l'école : cours de maths (2)<Sync time="4823.0"/>
+<Who nb="4"/>Pour le carnaval. Tu es prête ? Tu as réfléchi à ton costume ?</Turn>
+<Turn endTime="4839.600" speaker="Trad Mot LSF" startTime="4837.200">
+<Sync time="4837.200"/>Le brésil, c'est sure !</Turn>
+<Turn endTime="510.150" speaker="Thèmes Charlotte Trad Mot LSF" startTime="6001.150">
+<Sync time="6001.150"/>
+<Who nb="1"/>Les drapeaux<Sync time="508.650"/>
+<Who nb="2"/>Pourquoi ?</Turn>
+<Turn endTime="4850.0" speaker="Trad Mot LSF" startTime="4848.700">
+<Sync time="4848.700"/>S'il te plait.</Turn>
+<Turn endTime="4862.750" speaker="Trad Charlotte LSF" startTime="4850.0">
+<Sync time="4850.0"/>Du beurre. Du beurre... Du beurre (Appel) Du beurre (Appel) Je veux du beurre s'il te plait.</Turn>
+<Turn endTime="8170.0" speaker="Thèmes Charlotte" startTime="8147.0">
+<Sync time="8147.0"/>Appareil photo</Turn>
+<Turn endTime="4855.100" speaker="Thèmes Charlotte Thèmes Fat Trad Mot LSF" startTime="8260.0">
+<Sync time="8260.0"/>
+<Who nb="1"/>Bougie senteur<Sync time="8260.0"/>
+<Who nb="2"/>Bougie senteur<Sync time="4851.700"/>
+<Who nb="3"/>Pourquoi ? Qu'est-ce que tu fais ?</Turn>
+<Turn endTime="8348.050" speaker="Séquences autre cam Thèmes Charlotte Thèmes Fat" startTime="8296.150">
+<Sync time="8296.150"/>
+<Who nb="2"/>Livre de Némo (1)<Sync time="8296.150"/>
+<Who nb="1"/>Timer : 1h45'10 / Livre de Némo<Sync time="8296.150"/>
+<Who nb="3"/>Livre de Némo (1)</Turn>
+<Turn endTime="4860.750" speaker="Thèmes Charlotte Thèmes Fat Trad Mot LSF" startTime="8390.0">
+<Sync time="8390.0"/>
+<Who nb="1"/>Livre de Némo (2)<Sync time="8390.0"/>
+<Who nb="2"/>Livre de Némo (2)<Sync time="4855.700"/>
+<Who nb="3"/>Papa t'a dit : non.<Sync time="8661.050"/>
+<Who nb="1"/>Positionnement des caméras<Sync time="8661.050"/>
+<Who nb="2"/>Positionnement des caméras<Sync time="4859.050"/>
+<Who nb="3"/>Tant pis !</Turn>
+<Turn endTime="9235.100" speaker="Thèmes Charlotte" startTime="8932.0">
+<Sync time="8932.0"/>MT : Où as-tu appris la LSF ? (Timer cam2 : 1h53'30)<Sync time="9001.050"/>MT : À l'école tu signes ? il y a de la LSF ? (Timer cam2 : 1h54'40)</Turn>
+<Turn endTime="4885.050" speaker="Thèmes Charlotte Trad Mot LSF" startTime="9235.100">
+<Sync time="9235.100"/>
+<Who nb="1"/>MT : Ta maîtresse signe ? Tu as de personnes pour t'aider (interprètes, interfaces) ? (Timer cam2 : 1h58'30)<Sync time="4881.550"/>
+<Who nb="2"/>(Appel) Regarde là. T'as pas encore fini tout ça.</Turn>
+<Turn endTime="10225.0" speaker="Thèmes Charlotte" startTime="9733.100">
+<Sync time="9733.100"/>MT : Il y a des personnes pour t'expliquer les contes ? les hitstoires ? (Timer cam2 : 2h06'55)<Sync time="9894.900"/>MT : Quelle est ton histoire préférée ? (Timer cam2 : 2h09'35)</Turn>
+<Turn endTime="4354.0" speaker="Thèmes Charlotte Trad Charlotte LSF Trad Mot LSF" startTime="10225.0">
+<Sync time="10225.0"/>
+<Who nb="1"/>MT : Quel est ton livre préféré à la maison ? (Timer cam2 : 2h15'05)<Sync time="4888.150"/>
+<Who nb="3"/>Papa t'appelle.<Sync time="4351.700"/>
+<Who nb="2"/>C'est quoi le point rouge ?</Turn>
+<Turn endTime="10601.0" speaker="Thèmes Charlotte" startTime="10379.050">
+<Sync time="10379.050"/>MT : Quel est ton film préféré ? (Timer cam2 : 2h17'40)</Turn>
+<Turn endTime="4918.0" speaker="Thèmes Charlotte Trad Mot LSF" startTime="10601.0">
+<Sync time="10601.0"/>
+<Who nb="1"/>MT : Ce sont les mêmes langues de signes ? (Timer cam2 : 2h21'20)<Sync time="512.0"/>
+<Who nb="2"/>C'est facile. C'est quoi ? Oui, c'est facile.<Sync time="10809.0"/>
+<Who nb="1"/>MT : Tu as joué au jeu des mimes, c'est dur ? (Timer cam2 : 2h24'50)<Sync time="4913.0"/>
+<Who nb="2"/>Papa... Papa t'appelle.</Turn>
+<Turn endTime="450.100" speaker="Séquences Thèmes Charlotte" startTime="11154.0">
+<Sync time="11154.0"/>
+<Who nb="2"/>MT : Tu sais cuisiner ? (Timer cam2 : 2h30'30)<Sync time="40.0"/>
+<Who nb="1"/>Arrivée - Présentation</Turn>
+<Turn endTime="623.0" speaker="Séquences" startTime="450.100">
+<Sync time="450.100"/>Jeu des drapeaux sur la tablette (1)</Turn>
+<Turn endTime="785.450" speaker="Trad Mot LSF" startTime="784.450">
+<Sync time="784.450"/>Portugal</Turn>
+<Turn endTime="669.900" speaker="Séquences Trad Mot LSF" startTime="4934.0">
+<Sync time="4934.0"/>
+<Who nb="2"/>Ils ont allumé les bougies.<Sync time="623.0"/>
+<Who nb="1"/>Installation des pieds de caméra par MT</Turn>
+<Turn endTime="1114.800" speaker="Séquences Trad Fat LSF Trad Mot LSF" startTime="4950.600">
+<Sync time="4950.600"/>
+<Who nb="3"/>Bravo !<Sync time="4950.600"/>
+<Who nb="2"/>Oui !<Sync time="669.900"/>
+<Who nb="1"/>Jeu des drapeaux sur la tablette (2)</Turn>
+<Turn endTime="2765.0" speaker="Séquences" startTime="1114.800">
+<Sync time="1114.800"/>Discussion entre MT et la mère (Charlotte est au bain)<Sync time="1500.0"/>Préparation du thé pour la mère - découverte de la cuisine<Sync time="1603.900"/>Jeu des mimes<Sync time="2630.0"/>Télévision : la mère allume la télé pour Charlotte</Turn>
+<Turn endTime="4968.950" speaker="Trad Mot LSF" startTime="4957.012">
+<Sync time="4957.012"/>Et y a pas de cadeaux !<Sync time="4967.050"/>(Appel) Les cadeaux, les cadeaux.</Turn>
+<Turn endTime="3541.0" speaker="Séquences Trad Mot LSF" startTime="4978.050">
+<Sync time="4978.050"/>
+<Who nb="2"/>T'as compris ? Ellle te donne des cadeaux.<Sync time="2765.0"/>
+<Who nb="1"/>Préparation du repas (1)</Turn>
+<Turn endTime="4090.200" speaker="Séquences" startTime="3541.0">
+<Sync time="3541.0"/>Appel vidéo de Marine et du père<Sync time="3583.0"/>Préparation du repas (2)<Sync time="4075.100"/>Arrivée de Marine et son père</Turn>
+<Turn endTime="4190.0" speaker="Séquences Trad Mot LSF" startTime="4986.150">
+<Sync time="4986.150"/>
+<Who nb="2"/>Quoi ? Ici ? Je crois pas que ça soit de la lumière, je crois que c'est le micro.<Sync time="4090.200"/>
+<Who nb="1"/>Préparation du repas (2)</Turn>
+<Turn endTime="6704.0" speaker="Séquences" startTime="4190.0">
+<Sync time="4190.0"/>Discussion dans le salon<Sync time="4270.0"/>Repas<Sync time="6409.900"/>Marine : dinette (1)</Turn>
+<Turn endTime="5008.050" speaker="Séquences Trad Mot LSF" startTime="6704.0">
+<Sync time="6704.0"/>
+<Who nb="1"/>Marine : lecture<Sync time="5004.050"/>
+<Who nb="2"/>Encore, merci.</Turn>
+<Turn endTime="5015.0" speaker="Trad Mot LSF" startTime="5011.0">
+<Sync time="5011.0"/>(Appel) Miam, miam, je le mange. C'est bon !</Turn>
+<Turn endTime="7055.700" speaker="Séquences" startTime="6782.550">
+<Sync time="6782.550"/>Marine : dinette (2)<Sync time="6973.100"/>Visite appartement (pas de membre de la famille)</Turn>
+<Turn endTime="5023.450" speaker="Séquences Trad Mot LSF" startTime="7055.700">
+<Sync time="7055.700"/>
+<Who nb="1"/>Intéractions familiales : salon - couloir<Sync time="5021.650"/>
+<Who nb="2"/>Là, là !</Turn>
+<Turn endTime="5034.850" speaker="Trad Mot LSF" startTime="5032.850">
+<Sync time="5032.850"/>(Appel) Vas-y !</Turn>
+<Turn endTime="8559.0" speaker="Séquences" startTime="7240.050">
+<Sync time="7240.050"/>Marine dans sa chambre : jeu<Sync time="7427.600"/>Famille dans le salon : discussion, jeu, cadeau<Sync time="8349.950"/>Préparation du coucher de Marine<Sync time="8380.0"/>Discussion familiale - choix des livres</Turn>
+<Turn endTime="525.550" speaker="Séquences Thèmes Fat Trad Mot LSF" startTime="8559.0">
+<Sync time="8559.0"/>
+<Who nb="1"/>Discussion MT et le père<Sync time="8559.0"/>
+<Who nb="2"/>Explication du projet par l'observatrice<Sync time="519.350"/>
+<Who nb="3"/>Ça c'est le drapeau d'un pays où la vie est (?). Oui.</Turn>
+<Turn endTime="5057.0" speaker="Séquences Séquences autre cam Trad Mot LSF" startTime="8804.0">
+<Sync time="8804.0"/>
+<Who nb="1"/>MT : entretien de Charlotte<Sync time="8804.0"/>
+<Who nb="2"/>Timer : 1h51'25 / MT : entretien de Charlotte (meilleur angle de la cam2)<Sync time="5055.200"/>
+<Who nb="3"/>Bravo !</Turn>
+<Turn endTime="5062.550" speaker="Séquences Thèmes Fat Thèmes Marine Trad Mot LSF" startTime="11470.0">
+<Sync time="11470.0"/>
+<Who nb="1"/>MT : entretien des parents<Sync time="7271.050"/>
+<Who nb="3"/>Princesse<Sync time="7271.050"/>
+<Who nb="2"/>Princesse<Sync time="5060.050"/>
+<Who nb="4"/>(1) (Appel) Mange ! (2) (Appel) Ça se passe ici. (3) (Appel) Ici !</Turn>
+<Turn endTime="527.750" speaker="Trad Mot LSF" startTime="5066.650">
+<Sync time="5066.650"/>Mange !<Sync time="5077.0"/>Non, non, avec la fourchette. (Appel) Tu veux de l'aide ? Tu veux que maman t'aide ?<Sync time="672.0"/>C'est moyen, 4 sur 10. Y a beaucoup de fautes.<Sync time="4367.500"/>Où ? Non, non. C'est pour le son... Le flash, ah bon ! (? mère dos cam)<Sync time="4394.0"/>Reste assise !<Sync time="4401.500"/>(Appel) Les pâtes.<Sync time="4472.0"/>(Appel) Tu veux de la tomate ? (Appel) Y a les caméras ! (Appel) Tu veux de la tomate. Non ! Du parmesan, tu veux aussi du parmesan ?<Sync time="4506.550"/>C'est à moi.<Sync time="4518.050"/>Non, pas celui-là, j'ai choisi celui-là. C'est de la moutarde, j'en veux pas. Non, celui-là, oui..<Sync time="4534.050"/>Oh, là, là. C'est dur ! Ah, voilà.<Sync time="4543.400"/>Aujourd'hui... Je sais pas.<Sync time="681.950"/>Y a des images là. Y a des images.<Sync time="526.450"/>Bien.</Turn>
+<Turn endTime="2002.025" speaker="Montages" startTime="1953.075">
+<Sync time="1953.075"/>Jeu de devinette : entre mime et signe</Turn>
+<Turn endTime="4465.150" speaker="Montages Trad Mot LSF" startTime="6371.881">
+<Sync time="6371.881"/>
+<Who nb="2"/>Tu jettes.<Sync time="4453.0"/>
+<Who nb="1"/>Entre frères et soeurs.</Turn>
+<Turn endTime="2172.400" speaker="Trad Mot LSF" startTime="4564.650">
+<Sync time="4564.650"/>Non.<Sync time="693.400"/>(Appel) Tu suis les mots par rapport aux images qui sont proches. Ça veut dire (?).<Sync time="708.300"/>(Appel) Tu as oublié ? Dans les dictionnaires, y a une longue liste de mots, tous les réviser c'est pas possible !<Sync time="529.100"/>Le Japon. C'est facile, oui.<Sync time="2167.400"/>Faire le ménage ? C'est tout ?</Turn>
+<Turn endTime="4356.500" speaker="Trad Fat LSF" startTime="4354.0">
+<Sync time="4354.0"/>Ça enregistre. C'est pour dire que ça enregistre.</Turn>
+<Turn endTime="4363.550" speaker="Trad Charlotte LSF" startTime="4358.550">
+<Sync time="4358.550"/>C'est drôle. C'est pourquoi ça et ça ?</Turn>
+<Turn endTime="790.0" speaker="Trad Mot LSF" startTime="6709.037">
+<Sync time="6709.037"/>Là, c'est l'ours, et là, le ballon rouge.<Sync time="787.850"/>Oui. La Belgique.</Turn>
+<Turn endTime="4686.450" speaker="Montages Trad Fat LSF Trad Mot LSF" startTime="6720.175">
+<Sync time="6720.175"/>
+<Who nb="3"/>Y a des arbres partout, c'est une forêt. Là, y a un petit...<Sync time="6720.175"/>
+<Who nb="1"/>Lecture : Petit ours mal peigné et le ballon rouge<Sync time="4685.050"/>
+<Who nb="1"/>Comment s'est passée ta journée ? Discussions familiales autour de la journée, de l'école.<Sync time="4685.050"/>
+<Who nb="2"/>Oui, mais à l'école, tu as travaillé quoi ?</Turn>
+<Turn endTime="4951.700" speaker="Montages Montages 2 Trad Marine LSF Trad Mot LSF" startTime="6725.425">
+<Sync time="6725.425"/>
+<Who nb="4"/>Oui, qu'est-ce que c'est ? Un ballon rouge. Oui, l'ours le veut.<Sync time="6725.425"/>
+<Who nb="3"/>Ah ! Veut, veut.<Sync time="6725.425"/>
+<Who nb="2"/>Présentation + Medley Accueil<Sync time="5087.400"/>
+<Who nb="4"/>(Appel) Arrête !<Sync time="4941.050"/>
+<Who nb="1"/>Présentation</Turn>
+<Turn endTime="4391.100" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6733.725">
+<Sync time="6733.725"/>
+<Who nb="2"/>Le ballon vole. Regarde, il arrive. L'ours tape dans le ballon qui s'envole. Oh ! Il est où ? Le ballon rouge, il est où ? Il a disparu ! L'ours le cherche derrière l'arbre. Comment il va faire ? On va voir.<Sync time="4385.400"/>
+<Who nb="1"/>Les pâtes ? Les pâtes ont fini de cuire ? Les pâtes ont fini de cuire ?</Turn>
+<Turn endTime="1975.075" speaker="Montages Montages 2 Séquences autre cam Trad Mot LSF" startTime="6669.900">
+<Sync time="6669.900"/>
+<Who nb="1"/>Cam2 F2 : Présentation - séquence jeu avec les lunettes<Sync time="6669.900"/>
+<Who nb="3"/>Timer : 1h18'00 / Charlotte et son père jouent dans la chambre de cette dernière<Sync time="6669.900"/>
+<Who nb="2"/>Cam2 F2 : Medely Accueil - séquence jeu avec les lunettes<Sync time="1962.075"/>
+<Who nb="4"/>(mime)</Turn>
+<Turn endTime="6760.475" speaker="Montages Trad Mot LSF" startTime="7201.425">
+<Sync time="7201.425"/>
+<Who nb="1"/>Présentation<Sync time="6756.125"/>
+<Who nb="2"/>Ça c'est qui ? Oui.</Turn>
+<Turn endTime="2202.900" speaker="Trad Mot LSF" startTime="6760.800">
+<Sync time="6760.800"/>Y en a 1, 2, 3, 4 ! 4. 1, 2, 3, 4 !<Sync time="2175.800"/>Oui. C'est plus précis, c'est nettoyer les fenêtres, les biters avec du spray. C'est pas grave. La tienne...<Sync time="2183.500"/>(mime)</Turn>
+<Turn endTime="4413.150" speaker="Trad Charlotte LSF" startTime="4409.550">
+<Sync time="4409.550"/>(Appel) Non, le beurre avant.</Turn>
+<Turn endTime="2205.0" speaker="Montages Trad Mot LSF" startTime="8143.750">
+<Sync time="8143.750"/>
+<Who nb="1"/>Echange en LSF<Sync time="2202.900"/>
+<Who nb="2"/>Bravo !</Turn>
+<Turn endTime="6771.037" speaker="Trad Mot LSF" startTime="6767.037">
+<Sync time="6767.037"/>L'ours, il leurs demande "il est où le ballon?"</Turn>
+<Turn endTime="1949.500" speaker="Trad Marine LSF Trad Mot LSF" startTime="6774.700">
+<Sync time="6774.700"/>
+<Who nb="2"/>Tu as faim ? Tu veux manger ? Tu veux manger des crêpes ? T'aimes pas !<Sync time="1948.500"/>
+<Who nb="1"/>Oui.</Turn>
+<Turn endTime="4199.875" speaker="Trad Marine LSF" startTime="4198.975">
+<Sync time="4198.975"/>Oui.</Turn>
+<Turn endTime="5091.050" speaker="Trad Mot LSF" startTime="5089.650">
+<Sync time="5089.650"/>(Appel) Frotte tes mains.</Turn>
+<Turn endTime="5141.250" speaker="Thèmes Marine Thèmes Mot Trad Mot LSF" startTime="5112.500">
+<Sync time="5112.500"/>
+<Who nb="3"/>T'es fatiguée ?<Sync time="5112.500"/>
+<Who nb="2"/>Jeu avec les bouchées (2)<Sync time="5112.500"/>
+<Who nb="1"/>Jeu avec les bouchées (2)</Turn>
+<Turn endTime="8082.550" speaker="Trad Mot LSF" startTime="7176.050">
+<Sync time="7176.050"/>Non, C'est pas ça. Marie-Thérèse est sourde, Stéphanie est sourde... euh, entendante !<Sync time="7195.025"/>Oui, mon cerveau il marche mal, il y a des problèmes de réglages.<Sync time="7204.600"/>Pourquoi je m'assieds ?<Sync time="8071.050"/>(Appel) Il prend pas de photo.<Sync time="8079.050"/>Coucou, tu me vois ?</Turn>
+<Turn endTime="4287.650" speaker="Trad Marine LSF Trad Mot LSF" startTime="8136.050">
+<Sync time="8136.050"/>
+<Who nb="2"/>(Appel) Aux deux !<Sync time="5116.350"/>Quoi ? En premier, quoi ?<Sync time="4286.550"/>
+<Who nb="1"/>Ça !</Turn>
+<Turn endTime="5120.750" speaker="Trad Marine LSF" startTime="4381.550">
+<Sync time="4381.550"/>Moi ?<Sync time="5119.050"/>Le bateau.</Turn>
+<Turn endTime="5141.250" speaker="Trad Mot LSF" startTime="5125.500">
+<Sync time="5125.500"/>Mince ! C'est tombé.<Sync time="8144.600"/>Allez, on va au lit !<Sync time="5139.450"/>Non, non.</Turn>
+<Turn endTime="590.050" speaker="Montages Trad Mot LSF" startTime="8148.900">
+<Sync time="8148.900"/>
+<Who nb="2"/>Ecoute...<Sync time="535.200"/>Espagne<Sync time="535.200"/>
+<Who nb="1"/>A quoi joue-t-on ? Retrouver le drapeau du pays</Turn>
+<Turn endTime="5144.150" speaker="Trad Mot LSF" startTime="5142.650">
+<Sync time="5142.650"/>Mange, s'il te plait.</Turn>
+<Turn endTime="4515.950" speaker="Trad Marine LSF Trad Mot LSF" startTime="5149.450">
+<Sync time="5149.450"/>
+<Who nb="2"/>Stop !<Sync time="4509.0"/>
+<Who nb="1"/>Je veux voir ça.<Sync time="5157.550"/>
+<Who nb="2"/>(Appel) Non. Mange !<Sync time="4514.950"/>
+<Who nb="1"/>Regarde.</Turn>
+<Turn endTime="4444.450" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="8151.600">
+<Sync time="8151.600"/>
+<Who nb="2"/>Il marche pas.<Sync time="4443.050"/>
+<Who nb="1"/>(1)Y a pas. (2)Y en a pas. (3) J'en ai pas.</Turn>
+<Turn endTime="4458.0" speaker="Trad Charlotte LSF" startTime="4454.200">
+<Sync time="4454.200"/>Non ! Faut pas manger ça !</Turn>
+<Turn endTime="4462.350" speaker="Trad Charlotte LSF Trad Marine LSF" startTime="4529.400">
+<Sync time="4529.400"/>
+<Who nb="2"/>(1) C'est dur ! C'est dur !<Sync time="4460.650"/>
+<Who nb="1"/>Tu as vu, y a les deux caméras qui nous filment !</Turn>
+<Turn endTime="2217.825" speaker="Trad Marine LSF Trad Mot LSF" startTime="4638.650">
+<Sync time="4638.650"/>
+<Who nb="1"/>S'il te plat, de ça, ça. S'il te plait de ça.<Sync time="2211.125"/>
+<Who nb="2"/>Encore (Appel) Encore 1 ou 2 après je vais cuisiner, parce qu'il sera l'heure de manger.</Turn>
+<Turn endTime="4651.0" speaker="Thèmes Marine Thèmes Mot Trad Marine LSF Trad Mot LSF" startTime="5167.450">
+<Sync time="5167.450"/>
+<Who nb="4"/>Une moto ?<Sync time="5167.450"/>
+<Who nb="2"/>Jeu avec les bouchées (2)<Sync time="5167.450"/>
+<Who nb="1"/>Jeu avec les bouchées (2)<Sync time="4647.0"/>
+<Who nb="3"/>De ça, encore ! De ça, on verse.</Turn>
+<Turn endTime="4739.150" speaker="Trad Marine LSF Trad Mot LSF" startTime="8156.0">
+<Sync time="8156.0"/>
+<Who nb="2"/>(Appel) Ecoute, je te prends en photo, après tu vas te brosser les dents. D'accord ? Pipi ? Tu veux faire pipi ? Vas-y !<Sync time="5207.500"/>Encore ? Je l'ai allume... 1... (Appel) Attends ! 1, 2, 3 ! Bravo !<Sync time="4681.950"/>
+<Who nb="1"/>Là... (Appel) Ça cherche... trouvé... Cherche là. Tu l'a cherché là.<Sync time="794.025"/>
+<Who nb="2"/>Non, l'Allemagne les bande sont horizontale. Là, elles sont verticales, c'est différent. Là, tu vois c'est la Suède. Comme tout à l'heure : le jaune et bleu, c'est la Suède. Voilà, là c'est l'Allemagne. C'est différent si les bandes sont horizontales ou verticales. Tu as le temps, le temps. Ça c'est un pays d'Afrique.<Sync time="5230.050"/>
+<Who nb="2"/>H-U-R. Arthur. Peut-être ? Voilà.<Sync time="4738.050"/>
+<Who nb="1"/>Ça...</Turn>
+<Turn endTime="4748.450" speaker="Trad Marine LSF" startTime="4746.050">
+<Sync time="4746.050"/>Ça...</Turn>
+<Turn endTime="1207.0" speaker="Thèmes Mot Trad Marine LSF" startTime="4766.700">
+<Sync time="4766.700"/>
+<Who nb="2"/>Ça, (J)apon ?<Sync time="1114.900"/>
+<Who nb="1"/>Jeu des drapeaux sur la tablette (avec l'observatrice)</Turn>
+<Turn endTime="1345.150" speaker="Thèmes Mot" startTime="1292.050">
+<Sync time="1292.050"/>Déroulement de la soirée (avec l'observatrice)</Turn>
+<Turn endTime="4822.850" speaker="Trad Marine LSF" startTime="4811.100">
+<Sync time="4811.100"/>De ça... (Appel) De la menthe... De la menthe (Appel) Veux de la menthe, de l'eau.</Turn>
+<Turn endTime="2002.0" speaker="Thèmes Charlotte Thèmes Mot Trad Mot LSF" startTime="5258.0">
+<Sync time="5258.0"/>
+<Who nb="3"/>Quoi ? De la tomate ? T-O-M-A-T-E.<Sync time="1978.100"/>
+<Who nb="2"/>Le mot ROSE : fleur et couleur<Sync time="1978.100"/>
+<Who nb="1"/>Le mot ROSE : fleur et couleur</Turn>
+<Turn endTime="4250.100" speaker="Thèmes Fat Trad Mot LSF" startTime="5291.0">
+<Sync time="5291.0"/>
+<Who nb="2"/>C'est bon.<Sync time="4216.0"/>
+<Who nb="1"/>La piscine</Turn>
+<Turn endTime="4841.0" speaker="Trad Marine LSF" startTime="4837.0">
+<Sync time="4837.0"/>(Appel) S'il te plait de l'eau.</Turn>
+<Turn endTime="1976.375" speaker="Thèmes Fat Trad Mot LSF" startTime="5295.100">
+<Sync time="5295.100"/>
+<Who nb="1"/>À l'école : après midi<Sync time="1975.175"/>
+<Who nb="2"/>Oui, tu connais le nom ?</Turn>
+<Turn endTime="4860.0" speaker="Trad Marine LSF" startTime="4858.0">
+<Sync time="4858.0"/>Veux pas ça.</Turn>
+<Turn endTime="2807.0" speaker="Thèmes Mot Trad Charlotte LSF Trad Marine LSF" startTime="4930.775">
+<Sync time="4930.775"/>
+<Who nb="3"/>La bougie, là.<Sync time="4502.300"/>
+<Who nb="2"/>Mince ! (Appel) Regarde.<Sync time="2802.0"/>
+<Who nb="1"/>Repas du soir avec l'observatrice</Turn>
+<Turn endTime="4543.450" speaker="Trad Charlotte LSF Trad Marine LSF" startTime="4940.500">
+<Sync time="4940.500"/>
+<Who nb="2"/>(Appel) Tu souffles les bougies à 3. 1, attends... 1, 2, 3, vas-y !<Sync time="4537.450"/>
+<Who nb="1"/>3... Qu'est-ce qui se passe... On est le 7 mars, le 7 mars !</Turn>
+<Turn endTime="4973.600" speaker="Trad Marine LSF" startTime="4949.0">
+<Sync time="4949.0"/>Bravo !<Sync time="4962.0"/>On découpe... Une part... Une autre part pour toi...</Turn>
+<Turn endTime="818.0" speaker="Trad Mot LSF" startTime="5317.350">
+<Sync time="5317.350"/>Quoi ?<Sync time="816.700"/>L'Australie.</Turn>
+<Turn endTime="2996.100" speaker="Thèmes Mot" startTime="2951.0">
+<Sync time="2951.0"/>Ce que ses filles aiment manger (avec l'observatrice)</Turn>
+<Turn endTime="4558.050" speaker="Trad Charlotte LSF" startTime="4547.050">
+<Sync time="4547.050"/>Aujourd'hui c'est le 7 mars. Avant demain, pourquoi là, y a le 8 mars, on est le 7 mars, pourquoi on a changé en avance le 8 mars ?</Turn>
+<Turn endTime="5357.775" speaker="Trad Mot LSF" startTime="5344.075">
+<Sync time="5344.075"/>(Appel) Assieds-toi, ou tu as fini de manger !<Sync time="542.550"/>Ça c'est Israël. Non, Israël, comme ça.<Sync time="5356.775"/>(Appel) De l'eau ?</Turn>
+<Turn endTime="5036.0" speaker="Trad Marine LSF Trad Mot LSF" startTime="5377.775">
+<Sync time="5377.775"/>
+<Who nb="2"/>Oui, c'est à toi. (Appel) c'est à toi. Pour les filles, c'est rose.<Sync time="5023.500"/>
+<Who nb="1"/>(Appel) Maman a soufflé. Regarde là, 1, 2, 3, vas-y !</Turn>
+<Turn endTime="3098.050" speaker="Thèmes Mot Trad Mot LSF" startTime="5410.175">
+<Sync time="5410.175"/>
+<Who nb="2"/>Non, avale.<Sync time="3062.050"/>
+<Who nb="1"/>Marine ne sait pas pour les caméras (avec l'observatrice)</Turn>
+<Turn endTime="5422.475" speaker="Trad Mot LSF" startTime="5420.475">
+<Sync time="5420.475"/>(Appel) T'es fatiguée !</Turn>
+<Turn endTime="3163.050" speaker="Thèmes Mot Trad Mot LSF" startTime="5431.225">
+<Sync time="5431.225"/>
+<Who nb="2"/>C'est la troisième bêtise. La troisième fois que je fais des bêtises !<Sync time="3110.050"/>
+<Who nb="1"/>Qui prépare à manger généralement ? (avec l'observatrice)</Turn>
+<Turn endTime="3263.0" speaker="Thèmes Mot Trad Charlotte LSF Trad Marine LSF Trad Mot LSF" startTime="5443.475">
+<Sync time="5443.475"/>
+<Who nb="4"/>(Appel) Arrête de manger, et pars. Si tu as fini de manger, tu arrêtes. Ou alors tu t'assieds.<Sync time="5443.475"/>
+<Who nb="2"/>Euh... Je crois... J'étais perdue, bloquée. Je réfléchie et pense à la bibliothèque, j'ouvre la porte et personne ! Je réflechie, et oui ! La récréation.<Sync time="5037.0"/>
+<Who nb="3"/>1, 2... Souffle ! Là, souffle !<Sync time="4605.200"/>
+<Who nb="2"/>(? cam2 : 44'03)<Sync time="3168.050"/>
+<Who nb="1"/>Métiers des parents (avec l'observatrice)</Turn>
+<Turn endTime="4621.750" speaker="Trad Charlotte LSF Trad Marine LSF Trad Mot LSF" startTime="5465.475">
+<Sync time="5465.475"/>
+<Who nb="3"/>Assieds-toi bien !<Sync time="5465.475"/>
+<Who nb="1"/>Parce qu'il étais 3 heures, et ils jouent... Là, y avait un groupe, ils discutaient...<Sync time="5049.300"/>
+<Who nb="2"/>Là, souffle ! 1, 2, 3, vas-y. Bravo !<Sync time="4620.550"/>
+<Who nb="1"/>Bon appétit !</Turn>
+<Turn endTime="5116.350" speaker="Trad Marine LSF" startTime="5113.450">
+<Sync time="5113.450"/>(Appel) Tu fais le bateau et l'avion ?</Turn>
+<Turn endTime="3360.025" speaker="Thèmes Mot Trad Marine LSF" startTime="5122.550">
+<Sync time="5122.550"/>
+<Who nb="2"/>L'avion.<Sync time="3280.125"/>
+<Who nb="1"/>Charlotte oralise ? (avec l'observatrice)</Turn>
+<Turn endTime="4625.350" speaker="Trad Charlotte LSF" startTime="4624.750">
+<Sync time="4624.750"/>Non.</Turn>
+<Turn endTime="5139.450" speaker="Trad Marine LSF Trad Mot LSF" startTime="5517.125">
+<Sync time="5517.125"/>
+<Who nb="2"/>Arrête.<Sync time="5138.550"/>
+<Who nb="1"/>Encore.</Turn>
+<Turn endTime="5207.050" speaker="Trad Marine LSF" startTime="5206.050">
+<Sync time="5206.050"/>Ça.</Turn>
+<Turn endTime="550.0" speaker="Thèmes Mot Trad Marine LSF Trad Mot LSF" startTime="5222.050">
+<Sync time="5222.050"/>
+<Who nb="2"/>S'il te plait, ça.<Sync time="3405.0"/>
+<Who nb="1"/>Ils (les paretns) proposent tous aux filles pour qu'elles puissent choisir plus tard (avec l'observatrice)<Sync time="549.0"/>
+<Who nb="3"/>Maroc</Turn>
+<Turn endTime="4667.650" speaker="Trad Charlotte LSF" startTime="4657.650">
+<Sync time="4657.650"/>(Appel) S'il te plait du jus de pame. Non, je suis bête ! S'il te plait du jus de poume... C'est pas vrai ! S'il te plait, du jus de pomme !</Turn>
+<Turn endTime="3501.0" speaker="Thèmes Mot Trad Marine LSF" startTime="5231.400">
+<Sync time="5231.400"/>
+<Who nb="2"/>Oui.<Sync time="3486.0"/>
+<Who nb="1"/>L'âge des filles (avec l'observatrice)</Turn>
+<Turn endTime="4684.050" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5519.725">
+<Sync time="5519.725"/>
+<Who nb="2"/>Attends papa n'a pas fini de manger, regarde.<Sync time="4676.050"/>
+<Who nb="1"/>J'ai bien mangé ce midi, et après c'était bien mais je sais plus sur quoi.</Turn>
+<Turn endTime="480.050" speaker="Trad Marine LSF Trad Mot LSF" startTime="5257.050">
+<Sync time="5257.050"/>
+<Who nb="1"/>(Appel)<Sync time="820.050"/>
+<Who nb="2"/>(Appel) Tout à l'heure, y avait des question sur l'Australie, tu te rappelles. Non, tu t'es trompée.<Sync time="477.500"/>
+<Who nb="2"/>Les drapeaux ? Là.</Turn>
+<Turn endTime="5260.100" speaker="Trad Marine LSF" startTime="5258.900">
+<Sync time="5258.900"/>S'il te plait (to)mate.</Turn>
+<Turn endTime="4028.250" speaker="Thèmes Mot Trad Mot LSF" startTime="5531.412">
+<Sync time="5531.412"/>
+<Who nb="2"/>(Appel) Tu veux de ça ?<Sync time="3786.100"/>
+<Who nb="1"/>Son mémoire et ses études (avec l'observatrice)</Turn>
+<Turn endTime="5293.500" speaker="Trad Marine LSF" startTime="5291.500">
+<Sync time="5291.500"/>Ça, s'il te plait, de la (to)mate.</Turn>
+<Turn endTime="4688.0" speaker="Trad Charlotte LSF Trad Marine LSF" startTime="5356.700">
+<Sync time="5356.700"/>
+<Who nb="2"/>(Appel) Ça, ça.<Sync time="4686.500"/>
+<Who nb="1"/>Attends.</Turn>
+<Turn endTime="5475.625" speaker="Trad Marine LSF" startTime="5472.125">
+<Sync time="5472.125"/>Ça. (Appel) Ça.</Turn>
+<Turn endTime="1705.900" speaker="Thèmes Marine Thèmes Mot Trad Mot LSF" startTime="5547.412">
+<Sync time="5547.412"/>
+<Who nb="3"/>(Appel) Non, bois comme ça. Aspire. Toi.<Sync time="4197.0"/>
+<Who nb="2"/>La piscine<Sync time="4197.0"/>
+<Who nb="1"/>La piscine<Sync time="4250.150"/>
+<Who nb="2"/>Présence des caméras<Sync time="4250.150"/>
+<Who nb="1"/>Présence des caméras<Sync time="1697.0"/>
+<Who nb="3"/>C'est bon cette image, tu as compris ? Si tu connais pas tu changes.</Turn>
+<Turn endTime="4541.0" speaker="Thèmes Marine Thèmes Mot Trad Marine LSF Trad Mot LSF" startTime="5559.012">
+<Sync time="5559.012"/>
+<Who nb="4"/>Attends, je vais nettoyer.<Sync time="5518.175"/>
+<Who nb="3"/>Vais chercher, vais chercher.<Sync time="4506.500"/>
+<Who nb="2"/>Pot de sauce<Sync time="4506.500"/>
+<Who nb="1"/>Pot de sauce</Turn>
+<Turn endTime="4606.400" speaker="Thèmes Charlotte Thèmes Mot Trad Charlotte LSF Trad Marine LSF Trad Mot LSF" startTime="5600.012">
+<Sync time="5600.012"/>
+<Who nb="5"/>Tu veux du fromage ? C'est qui là ? Une vache qui rit.<Sync time="5564.662"/>
+<Who nb="4"/>Nettoie, nettoie.<Sync time="4592.050"/>
+<Who nb="2"/>Les pieds de caméra / Timer Cam1 : 43'50<Sync time="4592.050"/>
+<Who nb="3"/>Ils sont différents les deux. Lui, il est comme ça, non, lui il est plus bas. Ils sont différents les deux.Lui il est bas, lui il est haut, comme ça.<Sync time="4592.050"/>
+<Who nb="1"/>Les pieds de caméra / Timer Cam1 : 43'50</Turn>
+<Turn endTime="4656.0" speaker="Thèmes Fat Thèmes Marine Thèmes Mot Trad Marine LSF" startTime="4634.100">
+<Sync time="4634.100"/>
+<Who nb="3"/>Du fromage<Sync time="4634.100"/>
+<Who nb="2"/>Du fromage<Sync time="4634.100"/>
+<Who nb="4"/>(Appel) S'il te plait, de ça...<Sync time="4634.100"/>
+<Who nb="1"/>Du fromage</Turn>
+<Turn endTime="4696.0" speaker="Trad Charlotte LSF" startTime="4689.300">
+<Sync time="4689.300"/>J'ai travaillé sur... Tu sais... 3, après je bois.</Turn>
+<Turn endTime="556.0" speaker="Trad Charlotte LSF Trad Marine LSF Trad Mot LSF" startTime="5678.487">
+<Sync time="5678.487"/>
+<Who nb="2"/>(Appel) Nages bien. Moi je nage pas, toi bien, tu nages bien.<Sync time="4698.600"/>
+<Who nb="1"/>Euh... par exemple, 3 + 2.<Sync time="552.400"/>
+<Who nb="3"/>Ça, tu le sais ou tu le fais au hasard ?</Turn>
+<Turn endTime="4960.050" speaker="Thèmes Charlotte Thèmes Fat Thèmes Marine Thèmes Mot" startTime="4913.050">
+<Sync time="4913.050"/>
+<Who nb="4"/>Bougies du gâteau d'anniversaire (1)<Sync time="4913.050"/>
+<Who nb="1"/>Bougies du gâteau d'anniversaire (1)<Sync time="4913.050"/>
+<Who nb="3"/>Bougies du gâteau d'anniversaire (1)<Sync time="4913.050"/>
+<Who nb="2"/>Bougies du gâteau d'anniversaire (1)</Turn>
+<Turn endTime="4721.950" speaker="Thèmes Charlotte Thèmes Marine Trad Charlotte LSF" startTime="4960.050">
+<Sync time="4960.050"/>
+<Who nb="1"/>Une part du gâteau<Sync time="4960.050"/>
+<Who nb="2"/>Une part du gâteau<Sync time="4709.750"/>
+<Who nb="3"/>Attends, non. Il fallait essayer de calculer des sommes. Ça veut dire par exemple 6 + 6, 4 + 4... 2 + 2, les sommes des deux mêmes chiffres.</Turn>
+<Turn endTime="5001.200" speaker="Thèmes Marine Thèmes Mot Trad Marine LSF" startTime="4994.050">
+<Sync time="4994.050"/>
+<Who nb="2"/>Bougies et part du gâteau<Sync time="4994.050"/>
+<Who nb="1"/>Bougies et part du gâteau<Sync time="4994.050"/>
+<Who nb="3"/>(Appel) Là, souffle. 1, 2, 3, vas-y ! Bravo !</Turn>
+<Turn endTime="5022.550" speaker="Trad Fat LSF" startTime="5018.050">
+<Sync time="5018.050"/>(Appel) Je me suis dit que cet après midi, elle a mangé du gâteau au chocolat, mais ce matin aussi, c'était au chocolat.</Turn>
+<Turn endTime="5060.050" speaker="Thèmes Fat Thèmes Marine Thèmes Mot Trad Mot LSF" startTime="5628.062">
+<Sync time="5628.062"/>
+<Who nb="4"/>(Appel) Dans l'eau, tu plonges et tu nages comme un poisson ? Non ?<Sync time="5023.050"/>
+<Who nb="3"/>Bougies du gâteau d'anniversaire (2)<Sync time="5023.050"/>
+<Who nb="2"/>Bougies du gâteau d'anniversaire (2)<Sync time="5023.050"/>
+<Who nb="1"/>Bougies du gâteau d'anniversaire (2)</Turn>
+<Turn endTime="1710.400" speaker="Trad Marine LSF Trad Mot LSF" startTime="6145.131">
+<Sync time="6145.131"/>
+<Who nb="1"/>Beurre, s'il te pliat du beurre. Beurre.<Sync time="1708.200"/>
+<Who nb="2"/>Je peux pas te poser des questions.</Turn>
+<Turn endTime="4727.550" speaker="Thèmes Marine Thèmes Mot Trad Charlotte LSF" startTime="5628.050">
+<Sync time="5628.050"/>
+<Who nb="2"/>Natation<Sync time="5628.050"/>
+<Who nb="1"/>Natation<Sync time="4726.750"/>
+<Who nb="3"/>Quoi ?</Turn>
+<Turn endTime="5649.612" speaker="Trad Marine LSF Trad Mot LSF" startTime="6248.081">
+<Sync time="6248.081"/>
+<Who nb="1"/>(Appel) Toi non, moi. Moi. Toutes les trois, toi, moi.<Sync time="5647.612"/>
+<Who nb="2"/>(Appel)</Turn>
+<Turn endTime="6335.731" speaker="Trad Marine LSF" startTime="6334.831">
+<Sync time="6334.831"/>Elle.</Turn>
+<Turn endTime="2219.025" speaker="Trad Charlotte LSF Trad Marine LSF" startTime="6758.525">
+<Sync time="6758.525"/>
+<Who nb="2"/>Lap... Lapin.<Sync time="2217.825"/>
+<Who nb="1"/>Quoi ?</Turn>
+<Turn endTime="8068.550" speaker="Trad Marine LSF" startTime="8065.050">
+<Sync time="8065.050"/>Photo, s'il te plait. Photo, ici.</Turn>
+<Turn endTime="2231.175" speaker="Trad Marine LSF Trad Mot LSF" startTime="8163.050">
+<Sync time="8163.050"/>
+<Who nb="1"/>Pipi... Fais la photo.<Sync time="2218.975"/>
+<Who nb="2"/>De la viande avec des choux... non du brocolis, et du riz ou des pates, tu veux quoi ? Tu veux des pâtes.</Turn>
+<Turn endTime="1983.025" speaker="Trad Mot LSF Trad Obs Stéphanie" startTime="4632.700">
+<Sync time="4632.700"/>
+<Who nb="2"/>Bon appétit.<Sync time="1978.025"/>
+<Who nb="1"/>C'est comme... C'est comme...</Turn>
+<Turn endTime="4729.600" speaker="Trad Charlotte LSF" startTime="4729.0">
+<Sync time="4729.0"/>10.</Turn>
+<Turn endTime="5744.887" speaker="Trad Obs Stéphanie" startTime="5743.287">
+<Sync time="5743.287"/>C'est fini ?</Turn>
+<Turn endTime="4732.300" speaker="Thèmes Charlotte Thèmes Mot Trad Charlotte LSF" startTime="7171.100">
+<Sync time="7171.100"/>
+<Who nb="2"/>Réglage de cerveau<Sync time="7171.100"/>
+<Who nb="1"/>Réglage de cerveau<Sync time="4731.500"/>
+<Who nb="3"/>Si c'est ça !</Turn>
+<Turn endTime="4075.100" speaker="Séquences autre cam Thèmes Marine Thèmes Mot Trad Obs Stéphanie" startTime="7462.0">
+<Sync time="7462.0"/>
+<Who nb="3"/>Des crêpes<Sync time="7462.0"/>
+<Who nb="2"/>Des crêpes<Sync time="6396.031"/>
+<Who nb="4"/>Pardon.<Sync time="2765.100"/>
+<Who nb="1"/>Timer : 16'20 / Charlotte regarde une série télévisée : Switched at birth</Turn>
+<Turn endTime="1716.100" speaker="Séquences autre cam Trad Mot LSF" startTime="7483.0">
+<Sync time="7483.0"/>
+<Who nb="1"/>Timer : 1h31'35 / Charlotte et son père jouent au jeu des drapeaux sur la tablette<Sync time="1714.300"/>
+<Who nb="2"/>C'est bronzer à la plage.</Turn>
+<Turn endTime="3562.350" speaker="Trad Fat LSF Trad Mot LSF" startTime="5658.512">
+<Sync time="5658.512"/>
+<Who nb="2"/>Ça y est, tu as été examiné par le médecin de l'école ? Non... Y a pas.<Sync time="3560.350"/>
+<Who nb="1"/>Coucou. Bonjour.</Turn>
+<Turn endTime="4203.125" speaker="Trad Fat LSF" startTime="4201.725">
+<Sync time="4201.725"/>Ça va ?</Turn>
+<Turn endTime="4208.375" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="4771.400">
+<Sync time="4771.400"/>
+<Who nb="1"/>La seconde moitié je la laisse, je vais pas finir.<Sync time="4204.575"/>
+<Who nb="2"/>Ça va ? Ça a été chez l'orthophoniste ? Tu as été sage ?</Turn>
+<Turn endTime="4837.500" speaker="Trad Charlotte LSF" startTime="4832.900">
+<Sync time="4832.900"/>Oui, le brésil. Le brésil.</Turn>
+<Turn endTime="4210.625" speaker="Commentaires Trad Charlotte LSF Trad Fat LSF" startTime="4845.050">
+<Sync time="4845.050"/>
+<Who nb="2"/>Du beurre. Du beurre.<Sync time="4845.050"/>
+<Who nb="1"/>Anaïs : Jeu de signe avec le signe "beurre"<Sync time="4209.325"/>
+<Who nb="3"/>Tu as travaillé quoi ?</Turn>
+<Turn endTime="4865.850" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5679.937">
+<Sync time="5679.937"/>
+<Who nb="2"/>Tu nages bien. Non ? Toi, tu nages pas ? Moi, non, toi, tu nages. Moi je nage un petit peu, toi, tu nages avec papa, tous les deux.<Sync time="4864.550"/>
+<Who nb="1"/>J'en ai envie.</Turn>
+<Turn endTime="3557.300" speaker="Montages Thèmes Charlotte Thèmes Fat Thèmes Marine Thèmes Mot Trad Mot LSF" startTime="7546.0">
+<Sync time="7546.0"/>
+<Who nb="5"/>Je te sers quoi ?<Sync time="7546.0"/>
+<Who nb="2"/>Je te sers quoi ?<Sync time="7546.0"/>
+<Who nb="4"/>Je te sers quoi ?<Sync time="7546.0"/>
+<Who nb="3"/>Je te sers quoi ?<Sync time="3542.850"/>
+<Who nb="6"/>Coucou, ça va ? Tu arrives bientôt ?<Sync time="3542.850"/>
+<Who nb="1"/>Echange en LSF</Turn>
+<Turn endTime="4228.012" speaker="Trad Fat LSF" startTime="4215.525">
+<Sync time="4215.525"/>Elle nage bien. Elle poussait tout le monde, comme si elle était seule, pour plonger, encore et encore. Elle s'est bien amusée !<Sync time="4227.012"/>Oui.</Turn>
+<Turn endTime="3557.300" speaker="Trad Fat LSF Trad Mot LSF" startTime="5695.837">
+<Sync time="5695.837"/>
+<Who nb="2"/>Voilà.<Sync time="4322.050"/>
+<Who nb="1"/>Le porc, c'est blanc. Tu passes son assiette.<Sync time="3549.100"/>
+<Who nb="2"/>Je prépare, je fais cuire la viande. D'accord, à tout à l'heure. Oui, y a les caméras. Tu veux que je te montre ?</Turn>
+<Turn endTime="5705.587" speaker="Trad Mot LSF" startTime="5703.787">
+<Sync time="5703.787"/>Elle a faim !</Turn>
+<Turn endTime="4340.550" speaker="Thèmes Marine Thèmes Mot Trad Charlotte LSF Trad Fat LSF" startTime="7689.100">
+<Sync time="7689.100"/>
+<Who nb="2"/>Une cuillère ?<Sync time="7689.100"/>
+<Who nb="1"/>Une cuillère ?<Sync time="4877.300"/>
+<Who nb="3"/>Non.<Sync time="4336.550"/>
+<Who nb="4"/>(Appel) Une moitié, ou deux ?</Turn>
+<Turn endTime="5712.137" speaker="Trad Mot LSF" startTime="5708.337">
+<Sync time="5708.337"/>Attention aux caméras. C'est fini.</Turn>
+<Turn endTime="4900.050" speaker="Thèmes Marine Thèmes Mot Trad Charlotte LSF" startTime="7731.050">
+<Sync time="7731.050"/>
+<Who nb="2"/>C'est l'heure d'aller au lit<Sync time="7731.050"/>
+<Who nb="1"/>C'est l'heure d'aller au lit<Sync time="4898.550"/>
+<Who nb="3"/>Des pâtes.</Turn>
+<Turn endTime="4967.050" speaker="Trad Charlotte LSF" startTime="4955.050">
+<Sync time="4955.050"/>(Début ?) (Appel) S'il te plait, tu peux découper le morceau.</Turn>
+<Turn endTime="5740.087" speaker="Thèmes Marine Thèmes Mot Trad Mot LSF" startTime="8005.050">
+<Sync time="8005.050"/>
+<Who nb="2"/>Se brosser les dents (1)<Sync time="8005.050"/>
+<Who nb="1"/>Se brosser les dents (1)<Sync time="5737.187"/>
+<Who nb="3"/>Tu veux un yaourt au chocolat ? Oui.</Turn>
+<Turn endTime="8053.0" speaker="Thèmes Marine Thèmes Mot" startTime="8040.0">
+<Sync time="8040.0"/>
+<Who nb="2"/>Se brosser les dents (2)<Sync time="8040.0"/>
+<Who nb="1"/>Se brosser les dents (2)</Turn>
+<Turn endTime="4991.0" speaker="Thèmes Marine Thèmes Mot Trad Charlotte LSF" startTime="8065.0">
+<Sync time="8065.0"/>
+<Who nb="2"/>Appareil photo<Sync time="8065.0"/>
+<Who nb="1"/>Appareil photo<Sync time="4981.400"/>
+<Who nb="3"/>Pourquoi je vois la lumière, c'est bizarre. Je savais pas qu'il y avait de la lumière. La lumière là, vers là.</Turn>
+<Turn endTime="5133.100" speaker="Trad Charlotte LSF" startTime="5084.600">
+<Sync time="5084.600"/>Après... Euh... Après, attends... Alors, moi... Je sais plus... Ah oui ! Euh... On a travaillé, c'est-à-dire, ça fait combien 1, 2, 3... J'ai besoin de combien... Par exemple, je regarde là, et j'ai besoin de combien pour payer ? 8... Je te demande 8€, je te donne un billet, et je l'achète. Voilà.</Turn>
+<Turn endTime="4367.500" speaker="Trad Fat LSF Trad Mot LSF" startTime="5744.737">
+<Sync time="5744.737"/>
+<Who nb="2"/>Non, elle est partie, mais on a pas fini. Elle est aux toilettes. Je savais pas.<Sync time="4364.0"/>
+<Who nb="1"/>Oui, le soir, ça fait de la lumière.</Turn>
+<Turn endTime="11876.0" speaker="Séquences autre cam Thèmes Fat Thèmes Mot" startTime="11665.100">
+<Sync time="11665.100"/>
+<Who nb="3"/>MT : Comment se déroule le quotidien ? (Timer cam2 : 2h35'09)<Sync time="11665.100"/>
+<Who nb="1"/>Timer : 2h35'09 / MT : entretien des parents<Sync time="11665.100"/>
+<Who nb="2"/>MT : Comment se déroule le quotidien ? (Timer cam2 : 2h35'09)</Turn>
+<Turn endTime="5761.062" speaker="Thèmes Fat Thèmes Mot Trad Mot LSF" startTime="11876.0">
+<Sync time="11876.0"/>
+<Who nb="2"/>MT : L'éducation des enfants (Timer cam2 : 2h42'35)<Sync time="11876.0"/>
+<Who nb="1"/>MT : L'éducation des enfants (Timer cam2 : 2h42'35)<Sync time="5757.762"/>
+<Who nb="3"/>C'est drôle, elles pensaient qu'on avait fini, C'est pour ça.</Turn>
+<Turn endTime="4369.100" speaker="Trad Fat LSF Trad Mot LSF" startTime="5761.862">
+<Sync time="5761.862"/>
+<Who nb="2"/>(Appel) Assieds-toi, s'il te plait !<Sync time="4368.300"/>
+<Who nb="1"/>Le flash.</Turn>
+<Turn endTime="5139.500" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5138.400">
+<Sync time="5138.400"/>
+<Who nb="1"/>À midi... À midi, c'était la pause après... je mange... J'ai travaillé avec (?), puis...<Sync time="5138.400"/>
+<Who nb="2"/>C'est facile.</Turn>
+<Turn endTime="1988.325" speaker="Trad Mot LSF" startTime="5765.162">
+<Sync time="5765.162"/>Elle fait n'importe quoi ! Elle est fatiguée !<Sync time="1987.025"/>Regarde le mot.</Turn>
+<Turn endTime="4373.150" speaker="Thèmes Fat Thèmes Mot Trad Fat LSF" startTime="11960.075">
+<Sync time="11960.075"/>
+<Who nb="2"/>MT : Vos familes sont sourdes ou entendantes ? (Timer cam2 : 2h43'10)<Sync time="11960.075"/>
+<Who nb="1"/>MT : Vos familes sont sourdes ou entendantes ? (Timer cam2 : 2h43'10)<Sync time="4370.850"/>
+<Who nb="3"/>Le flash, c'est pour la nuit. C'est ça ?</Turn>
+<Turn endTime="12205.550" speaker="Thèmes Mot" startTime="12123.0">
+<Sync time="12123.0"/>MT : Votre vécu comment vous le transmettait à vos enfants ? (Timer cam2 : 2h46'45)</Turn>
+<Turn endTime="4379.050" speaker="Thèmes Fat Trad Fat LSF" startTime="12205.550">
+<Sync time="12205.550"/>
+<Who nb="1"/>MT : Vos frères et soeurs connaissent la LSF ? (Timer cam2 : 2h48'05)<Sync time="4375.450"/>
+<Who nb="2"/>(1)Ma Mère et mon Père, je les ai vu enregistrés, mais ça c'est un autre modèle. (2)Ma mère et mon père enregistraient avec un autre, celui là est supérieur. (3)Ma mère et mon père, je les ai vu enregistré, mais là, c'est un modèle supérieur.</Turn>
+<Turn endTime="4382.450" speaker="Thèmes Fat Thèmes Mot Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="12284.0">
+<Sync time="12284.0"/>
+<Who nb="2"/>MT : Quel moyen d'échange choisissez-vous avec les personnes ? (Timer cam2 : 2h49'25)<Sync time="12284.0"/>
+<Who nb="1"/>MT : Quel moyen d'échange choisissez-vous avec les personnes ? (Timer cam2 : 2h49'25)<Sync time="5771.512"/>
+<Who nb="5"/>T'as raison, elle est épuisée.<Sync time="5157.500"/>
+<Who nb="3"/>Je sais ! On a travaillé... Y avait des boîtes avec plein de petites histoires, où il faut réflechir sur combien... Combien ajouter... On réfléchit pour trouver précisément. Moi, j'ai trouvé !<Sync time="4380.750"/>
+<Who nb="4"/>Tu veux tomber !</Turn>
+<Turn endTime="4385.050" speaker="Trad Fat LSF" startTime="4384.050">
+<Sync time="4384.050"/>Je la pose ici.</Turn>
+<Turn endTime="5197.500" speaker="Trad Charlotte LSF" startTime="5177.0">
+<Sync time="5177.0"/>C'est-à-dire, j'a trouvé... Trouvé... J'ai oublié. Ah oui... La maîtresse a dit quoi ? Là, y a une femme, Zoé. Elle va à la bibliothèque, une grande bibliothèqye ! Avec 100 livres, 100...</Turn>
+<Turn endTime="4440.500" speaker="Trad Fat LSF Trad Mot LSF" startTime="5774.912">
+<Sync time="5774.912"/>
+<Who nb="2"/>S'il te plait, avec la caméra je peux pas passer.<Sync time="4438.700"/>
+<Who nb="1"/>(Appel) Des pâtes ?</Turn>
+<Turn endTime="5796.462" speaker="Trad Mot LSF" startTime="5782.512">
+<Sync time="5782.512"/>Oh, là, là ! T'as du chocolat !<Sync time="5795.462"/>Super.</Turn>
+<Turn endTime="4447.100" speaker="Thèmes Fat Thèmes Mot Trad Fat LSF" startTime="12620.150">
+<Sync time="12620.150"/>
+<Who nb="2"/>MT : Vos parents parlent ou signent avec les petites ? (Timer cam2 : 2h55'00)<Sync time="12620.150"/>
+<Who nb="1"/>MT : Vos parents parlent ou signent avec les petites ? (Timer cam2 : 2h55'00)<Sync time="4446.400"/>
+<Who nb="3"/>Oui.</Turn>
+<Turn endTime="12850.0" speaker="Thèmes Fat Thèmes Mot" startTime="12692.0">
+<Sync time="12692.0"/>
+<Who nb="2"/>MT : Vous êtes appareillés ? Vous l'avez choisi ? (Timer cam2 : 2h56'12)<Sync time="12692.0"/>
+<Who nb="1"/>MT : Vous êtes appareillés ? Vous l'avez choisi ? (Timer cam2 : 2h56'12)</Turn>
+<Turn endTime="4509.0" speaker="Thèmes Fat Thèmes Mot Trad Fat LSF" startTime="12900.0">
+<Sync time="12900.0"/>
+<Who nb="2"/>MT : Qu'en est-il des interprêtes ou autres ? (Timer cam2 : 2h59'40)<Sync time="12900.0"/>
+<Who nb="1"/>MT : Qu'en est-il des interprêtes ou autres ? (Timer cam2 : 2h59'40)<Sync time="4507.700"/>
+<Who nb="3"/>(Appel) Fais attention !</Turn>
+<Turn endTime="4559.900" speaker="Trad Fat LSF" startTime="4557.900">
+<Sync time="4557.900"/>Elle l'ignorait.</Turn>
+<Turn endTime="4618.850" speaker="Thèmes Fat Thèmes Mot Trad Fat LSF Trad Mot LSF" startTime="13051.0">
+<Sync time="13051.0"/>
+<Who nb="2"/>MT : Vos parents ont donc appris la LSF ? (Timer cam2 : 3h02'10)<Sync time="13051.0"/>
+<Who nb="1"/>MT : Vos parents ont donc appris la LSF ? (Timer cam2 : 3h02'10)<Sync time="5801.312"/>
+<Who nb="4"/>Tu as une cuillère, là.<Sync time="4617.650"/>
+<Who nb="3"/>Bon appétit !</Turn>
+<Turn endTime="5810.012" speaker="Thèmes Fat Thèmes Mot Trad Mot LSF" startTime="13185.100">
+<Sync time="13185.100"/>
+<Who nb="2"/>MT : Vous exprimez comment ? à travers quoi ? (Timer cam2 : 3h04'25)<Sync time="13185.100"/>
+<Who nb="1"/>MT : Vous exprimez comment ? à travers quoi ? (Timer cam2 : 3h04'25)<Sync time="5808.312"/>
+<Who nb="3"/>Je croyais que vous aviez fini.</Turn>
+<Turn endTime="5218.0" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5810.012">
+<Sync time="5810.012"/>
+<Who nb="2"/>Pas encore.<Sync time="5204.550"/>
+<Who nb="1"/>100 livres. Ç veut dire qu'elle va à la bibliothèque marche... Elle voit et prend 2 livres. Ça veut dire -2, il reste combien... Je réfléchis, et trouve...</Turn>
+<Turn endTime="5819.162" speaker="Trad Mot LSF" startTime="5816.562">
+<Sync time="5816.562"/>Vous finissez ça ?</Turn>
+<Turn endTime="13595.0" speaker="Thèmes Mot" startTime="13503.0">
+<Sync time="13503.0"/>MT : Vous avez joué au jeu de mimes, il y un but éducatif ? (Timer cam2 : 3h09'42)</Turn>
+<Turn endTime="5849.062" speaker="Thèmes Fat Thèmes Mot Trad Mot LSF" startTime="13595.0">
+<Sync time="13595.0"/>
+<Who nb="2"/>MT : Vous allez à des rencontres LSF ? Vous faîtes du sport ? (Timer cam2 : 3h11'15)<Sync time="13595.0"/>
+<Who nb="1"/>MT : Vous allez à des rencontres LSF ? Vous faîtes du sport ? (Timer cam2 : 3h11'15)<Sync time="5846.012"/>
+<Who nb="3"/>Quoi ? Normandie.</Turn>
+<Turn endTime="4625.150" speaker="Thèmes Fat Thèmes Mot Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="13821.100">
+<Sync time="13821.100"/>
+<Who nb="2"/>MT : Vous avez l'habitude de filmer vos filles ? (Timer cam2 : 3h15'00)<Sync time="13821.100"/>
+<Who nb="1"/>MT : Vous avez l'habitude de filmer vos filles ? (Timer cam2 : 3h15'00)<Sync time="5851.012"/>
+<Who nb="5"/>Un taxis. C'est une voiture qui roule et que tu appelles comme ça, tu montes dedans, et tu pars.<Sync time="5218.600"/>
+<Who nb="3"/>9... 98 ! Après, c'est pareil... Un garçon, Artne, je crois. H-U-R, tu connais ? Oui, c'est vrai !<Sync time="4623.450"/>
+<Who nb="4"/>T'as besoin d'aide ?</Turn>
+<Turn endTime="5259.050" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5859.712">
+<Sync time="5859.712"/>
+<Who nb="2"/>Normandie. La région de Normandie.<Sync time="5241.050"/>
+<Who nb="1"/>Après, oui... Lui, il a 1000 livres, le chien en prend. Ça fait -3, je réfléchis... 1000...</Turn>
+<Turn endTime="4644.0" speaker="Thèmes Fat Thèmes Mot Trad Fat LSF" startTime="14106.0">
+<Sync time="14106.0"/>
+<Who nb="2"/>MT : Les filles mangent de tout ? Les filles cuisinent ? (Timer cam2 : 3h419'45)<Sync time="14106.0"/>
+<Who nb="1"/>MT : Les filles mangent de tout ? Les filles cuisinent ? (Timer cam2 : 3h419'45)<Sync time="4642.300"/>
+<Who nb="3"/>Ketchup ?</Turn>
+<Turn endTime="515.800" speaker="Thèmes Fat Thèmes Mot Trad Charlotte LSF Trad Mot LSF" startTime="5864.412">
+<Sync time="5864.412"/>
+<Who nb="4"/>Oui. Tout à l'heure, avant que les deux personnes n'arrivent, une collègue m'a envoyé un lien "livre LAROUSSE", c'est un jeu, mais c'est cher, 5€, mais en ce moment c'est gratuit, voilà.<Sync time="5864.412"/>
+<Who nb="2"/>Les drapeaux<Sync time="5864.412"/>
+<Who nb="1"/>Les drapeaux<Sync time="5878.462"/>
+<Who nb="4"/>J'ai pensé on peut le télécharger quand même comme c'est gratuit. Biensur dedans, y a tous les mots, mais y a aussi pas mal de jeu, dont un le thème sont les drapeaux, au début c'est facile, euh, non... Je mélange...<Sync time="514.900"/>
+<Who nb="3"/>Facile !</Turn>
+<Turn endTime="4731.700" speaker="Trad Fat LSF" startTime="4721.0">
+<Sync time="4721.0"/>Oui. Et 5 + 5, ça fait combien ?<Sync time="4727.600"/>Et 5 + 5, ça fait combien ? 10 ! Non, tu t'es trompée.</Turn>
+<Turn endTime="524.750" speaker="Trad Charlotte LSF" startTime="5260.050">
+<Sync time="5260.050"/>Non... Non... Y a 1000 livres, le chien prend pour lire 3 livres, il lit. Moi, je réfléchis... 3, ça veut dire... Je réfléchis, non, -2, ça veut dire 1000... Euh, là... 990... 980... 980... 900.. Euh, 907.<Sync time="523.650"/>(?)</Turn>
+<Turn endTime="536.950" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5892.062">
+<Sync time="5892.062"/>
+<Who nb="2"/>Au début c'est difficile, on commence au début, y a beaucoup de pays dont on connait le drapeau, y en a pas mal qu'on sait. Après c'est au hasard, on met, on met... Aussi faut être malin, par exemple, lui je connais pas, mais lui je connais, lui je connais, et ça correspond pas, donc c'est le celui-là.<Sync time="536.150"/>
+<Who nb="1"/>Facile !</Turn>
+<Turn endTime="555.300" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="5909.012">
+<Sync time="5909.012"/>
+<Who nb="3"/>On a été coupée quand elles ont sonné, on avait pas fini. Elles arrivent en nous filmant, j'ouvre la porte et j'ai été surprise elles filmaient déjà. Je pensais après, mais non, elles me disent tout de suite. Bon d'accord, elles m'expliquent, y a pas de problème..<Sync time="5909.012"/>
+<Who nb="1"/>Pourquoi ?<Sync time="4740.050"/>
+<Who nb="2"/>(Appel) Tu veux que je t'aide ? Je te laisse.<Sync time="5920.062"/>
+<Who nb="3"/>Euh... Elles m'expliquent qu'elles nous laissent faire comme d'habitude, donc je leur dis qu'on est sur la tablette. C'est à mon tour, et je vois que c'est difficile même pour moi, parce que par exemple...<Sync time="4765.650"/>
+<Who nb="2"/>(Appel) Tu veux ça ?<Sync time="554.400"/>
+<Who nb="1"/>Je sais pas, c'est au hasard.</Turn>
+<Turn endTime="4809.450" speaker="Trad Fat LSF" startTime="4801.850">
+<Sync time="4801.850"/>Je te l'ai dit que ça se passait bien, c'est pour ça que je t'ai prévenu quand tu vas la chercher... (?)</Turn>
+<Turn endTime="565.0" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5933.762">
+<Sync time="5933.762"/>
+<Who nb="2"/>Non ! Je croyais que c'était ça, mais non. C'est sur des drapeaux qui sont vraiment proches ! Par exemple, la France et les Pays... Voilà ! Les Pays-Bas et la France, y en a un avec les bandes horizontales, et l'autres verticales, et faut choisir. Aussi un autre...<Sync time="563.600"/>
+<Who nb="1"/>Facile, on signe la croix du drapeau.</Turn>
+<Turn endTime="592.725" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="5950.037">
+<Sync time="5950.037"/>
+<Who nb="3"/>Euh... Par exemple, elle a dit directement ça, mais non. Y avait 3 drapeaux, la Belgique, le second j'ai oublié, et le troisième aussi, mais elle le connaissait. Euh, non... Lui, elle le connait, celui du milieu elle le connait pas, et le premier elle le connait pas. On lui demande celui de la Belgique, directement elle va sur celui du milieu. Je lui demande pourquoi ? Bah, le premier c'est l'Allemagne. Je lui dis : Ah non, les bandes de l'Allemagne sont verticales ! Et celles de la Belgique horizontales.<Sync time="4828.450"/>
+<Who nb="2"/>(Appel) Le brésil !<Sync time="591.125"/>
+<Who nb="1"/>C'est difficile pour moi !</Turn>
+<Turn endTime="681.300" speaker="Trad Charlotte LSF" startTime="677.0">
+<Sync time="677.0"/>C'est comment ? Je vais voir, je suis curieuse.</Turn>
+<Turn endTime="3581.200" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="5979.437">
+<Sync time="5979.437"/>
+<Who nb="2"/>C'est ce que je dis.<Sync time="720.850"/>
+<Who nb="1"/>Ce sont des écouteurs ! C'est bête.<Sync time="5289.700"/>
+<Who nb="1"/>Oui.<Sync time="3564.600"/>
+<Who nb="2"/>(Appel) Profite... (Appel) Papa ? Profites-en pour expliquer à Marine les caméras. Profite pour lui expliquer un peu. Ah, c'est fait, tu lui as expliqué ! Bon, Papa a fini de lui expliquer, c'est bon. Quoi ? Non... Ok, à tout à l'heure. Ok.</Turn>
+<Turn endTime="742.250" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="4853.250">
+<Sync time="4853.250"/>
+<Who nb="2"/>Elle veut de la menthe.<Sync time="738.550"/>
+<Who nb="1"/>C'est (?), j'adore moi !</Turn>
+<Turn endTime="1724.750" speaker="Trad Mot LSF" startTime="1723.750">
+<Sync time="1723.750"/>Pour toi ?</Turn>
+<Turn endTime="757.200" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="4871.350">
+<Sync time="4871.350"/>
+<Who nb="2"/>(Appel) T'as une idée de déguisement. Le Brésil ?<Sync time="755.500"/>
+<Who nb="1"/>Ça me gêne qu'on me filme..</Turn>
+<Turn endTime="4917.450" speaker="Trad Fat LSF" startTime="4876.0">
+<Sync time="4876.0"/>Non, non.<Sync time="4886.050"/>Appelle Marine.<Sync time="4916.150"/>Pardon.</Turn>
+<Turn endTime="763.950" speaker="Thèmes Fat Trad Charlotte LSF" startTime="12055.0">
+<Sync time="12055.0"/>
+<Who nb="1"/>MT : Votre vécu et l'éducation de vos enfants ? (Timer cam2 : 2h45'35)<Sync time="762.650"/>
+<Who nb="2"/>Ah, je suis sourde moi !</Turn>
+<Turn endTime="4949.050" speaker="Trad Fat LSF" startTime="4918.050">
+<Sync time="4918.050"/>Ce matin tu as fait l'anniversaire, tu as mangé du gâteau. Tu te rappelles ce matin ? Et l'après-midi tu as fait quoi ?<Sync time="4936.225"/>Tu as encore oublié de signer "Joyeux Anniversaire" mais tu as mangé du gâteau !<Sync time="4947.150"/>Souffle, oui !</Turn>
+<Turn endTime="784.050" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="4952.400">
+<Sync time="4952.400"/>
+<Who nb="2"/>Ce matin ils ont mangé la moitié du gâteau, puis à midi, et encore l'après-midi.<Sync time="769.675"/>
+<Who nb="1"/>J'adore. C'est facile.<Sync time="4958.612"/>
+<Who nb="2"/>Ils leurs font pas signer "Joyeaux Anniversaire" !<Sync time="781.650"/>
+<Who nb="1"/>Alors, là c'est au hasard ! Je sais pas moi !</Turn>
+<Turn endTime="5049.700" speaker="Trad Fat LSF" startTime="5035.600">
+<Sync time="5035.600"/>Marine t'appelle.<Sync time="5041.300"/>Oui... Ce matin, ils préparaient les bougies, et ils se sont aperçus qu'ils n'avaient pas de briquet ! Mais moi, j'en avais un ! Je l'ai sorti, et je les ai allumées.</Turn>
+<Turn endTime="5205.500" speaker="Trad Fat LSF Trad Mot LSF" startTime="5980.537">
+<Sync time="5980.537"/>
+<Who nb="1"/>Non, tu as inversé. Tu as dit la Belgique c'est horizontale et l'Allemagne verticale.<Sync time="5985.287"/>
+<Who nb="2"/>Pff, j'ai mélangé... Mais voilà, elles a confondu les bandes horizontales et verticales, c'est pour ça.<Sync time="5200.100"/>
+<Who nb="1"/>(Appel) Pardon, tu parlais de Zoé ?</Turn>
+<Turn endTime="788.450" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6000.737">
+<Sync time="6000.737"/>
+<Who nb="2"/>Tu connais... (Appel) Tu connais le drapeau du brésil ? Quoi ?<Sync time="786.050"/>
+<Who nb="1"/>Facile, celui-là c'est l'Italie et celui-là l'Espagne.</Turn>
+<Turn endTime="1707.150" speaker="Trad Charlotte LSF" startTime="790.025">
+<Sync time="790.025"/>Belgique. Non, c'est l'Allemagne celui-là !<Sync time="1705.750"/>Je connais pas.</Turn>
+<Turn endTime="5219.150" speaker="Trad Fat LSF" startTime="5217.950">
+<Sync time="5217.950"/>Combien ?</Turn>
+<Turn endTime="1717.550" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6009.437">
+<Sync time="6009.437"/>
+<Who nb="2"/>(Appel) Tu t'en ai mis partout ! C'est sale !<Sync time="1716.050"/>
+<Who nb="1"/>Je savais pas</Turn>
+<Turn endTime="5233.0" speaker="Trad Fat LSF Trad Mot LSF" startTime="6032.762">
+<Sync time="6032.762"/>
+<Who nb="2"/>Regarde tes mains ! Tes mains... Tu vois tes mains sont sales.<Sync time="5230.100"/>
+<Who nb="1"/>Tu veux de la tomate ? Ça t'en veux pas ?</Turn>
+<Turn endTime="5240.600" speaker="Trad Fat LSF" startTime="5233.800">
+<Sync time="5233.800"/>(Appel) Assieds-toi ! C'est pas possible, assieds-toi ! (Appel) C'est fini, tu as fini de manger.</Turn>
+<Turn endTime="1757.025" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5242.500">
+<Sync time="5242.500"/>
+<Who nb="2"/>Assieds-toi bien ! Comme ça, tourne-toi !<Sync time="1755.225"/>
+<Who nb="1"/>Je comprends pas.</Turn>
+<Turn endTime="5292.950" speaker="Trad Fat LSF" startTime="5256.700">
+<Sync time="5256.700"/>Le chien ? (Appel) Le chien, il fait quoi ? Tu as dit, y avait 1000 livres et le chien... 1000 livres, oui. Il aperçoit...<Sync time="5285.550"/>Non, 998. Tu as dit 1000 - 2, c'est ça ? Ça fait 998.</Turn>
+<Turn endTime="5308.650" speaker="Trad Fat LSF Trad Mot LSF" startTime="6050.012">
+<Sync time="6050.012"/>
+<Who nb="2"/>C'est où ? Ça a disparu... C'est où ?<Sync time="5306.350"/>
+<Who nb="1"/>Avec elle ?</Turn>
+<Turn endTime="1762.025" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5327.450">
+<Sync time="5327.450"/>
+<Who nb="2"/>Elles (prénoms signes), oui.<Sync time="1761.025"/>
+<Who nb="1"/>C'est facile.</Turn>
+<Turn endTime="1840.0" speaker="Trad Charlotte LSF" startTime="1837.0">
+<Sync time="1837.0"/>C'était facile ! C'est ça, t'as trouvé.</Turn>
+<Turn endTime="1866.025" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5348.075">
+<Sync time="5348.075"/>
+<Who nb="2"/>Pourquoi la maternelle ? Il y a des jeux en LSF là-bas ? Ou tu vas regarder ?<Sync time="1854.175"/>
+<Who nb="1"/>Réparer le robinet. Réparer.<Sync time="5410.625"/>
+<Who nb="2"/>Toi, tu es allée chez le directeur ?<Sync time="1859.025"/>
+<Who nb="1"/>C'est pas ça qui est dit, c'est qu'il y a de l'eau qui coule. Je vois pas réparer.</Turn>
+<Turn endTime="5417.125" speaker="Trad Fat LSF" startTime="5413.525">
+<Sync time="5413.525"/>Ah bon, c'est toi qui va les chercher.</Turn>
+<Turn endTime="1898.0" speaker="Thèmes Charlotte Thèmes Fat Trad Charlotte LSF Trad Marine LSF Trad Mot LSF" startTime="6053.512">
+<Sync time="6053.512"/>
+<Who nb="3"/>Pourquoi dans le film... Pourquoi ils refusent deux femmes ensemble, ils manifestennt et refusent deux femmes et deux hommes.<Sync time="6053.512"/>
+<Who nb="1"/>Mariage pour tous<Sync time="6053.512"/>
+<Who nb="4"/>Là.<Sync time="6053.512"/>
+<Who nb="2"/>Mariage pour tous<Sync time="6054.512"/>
+<Who nb="5"/>Ah bon, encore ! Ça fait 4 fois que je fais tombé ! (Appel) Je vais le chercher.<Sync time="1897.0"/>
+<Who nb="3"/>Où ?</Turn>
+<Turn endTime="1946.0" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5439.075">
+<Sync time="5439.075"/>
+<Who nb="2"/>Ta maîtresse te laisse toute seule monter, descendre, c'est pas possible.<Sync time="1936.0"/>
+<Who nb="1"/>(mimes)</Turn>
+<Turn endTime="5463.025" speaker="Trad Fat LSF" startTime="5462.025">
+<Sync time="5462.025"/>La récréation.</Turn>
+<Turn endTime="1974.075" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="6075.962">
+<Sync time="6075.962"/>
+<Who nb="3"/>Sa biscotte.<Sync time="5487.475"/>
+<Who nb="2"/>(Appel) C'est bizarre.<Sync time="1970.975"/>
+<Who nb="1"/>Ah oui ! Et osus les pétales, ça pique ?</Turn>
+<Turn endTime="1978.175" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6080.712">
+<Sync time="6080.712"/>
+<Who nb="2"/>(Appel) La mienne.<Sync time="1977.075"/>
+<Who nb="1"/>Je connais pas.</Turn>
+<Turn endTime="1986.225" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5491.275">
+<Sync time="5491.275"/>
+<Who nb="2"/>C'est bizarre que tu puisses faire des allers-retours comme ça, sans que personne ne t'accompagne.<Sync time="1979.025"/>
+<Who nb="1"/>C-U-E-I-L-LE U-N-E R-O-S-E.</Turn>
+<Turn endTime="1731.0" speaker="Thèmes Mot Trad Mot LSF" startTime="6097.912">
+<Sync time="6097.912"/>
+<Who nb="2"/>Quoi ?<Sync time="6097.912"/>
+<Who nb="1"/>Mariage pour tous<Sync time="1729.600"/>
+<Who nb="2"/>J'ai oublié les règles.</Turn>
+<Turn endTime="2000.525" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5522.025">
+<Sync time="5522.025"/>
+<Who nb="2"/>(Appel) Tu as eu un vaccin ?<Sync time="1988.675"/>
+<Who nb="1"/>C'est chou-fleur rose ! Mince ! Comme si je mangeais une rose !<Sync time="5539.612"/>
+<Who nb="2"/>C'est drôle... Elle dit que personne vient...<Sync time="1999.025"/>
+<Who nb="1"/>Ah, d'accord.</Turn>
+<Turn endTime="5588.562" speaker="Trad Fat LSF" startTime="5586.162">
+<Sync time="5586.162"/>Y a deux chemins comme ça, oui.</Turn>
+<Turn endTime="2060.900" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6116.506">
+<Sync time="6116.506"/>
+<Who nb="2"/>(Appel) Assieds-toi. Non, tu attends qu'on est tous fini. Tu ne veux pas de yaourt ? Tu veux un yaourt.<Sync time="2004.0"/>
+<Who nb="1"/>Pou toi.<Sync time="4592.500"/>
+<Who nb="2"/>C'est parce que tu es célèbre ! Oui, y a plusieurs places. Et moi ! S'il te plait... Oui, il y a deux places, et pourquoi... parce que tu es grande.<Sync time="2056.600"/>
+<Who nb="1"/>Bronzer ? Bronzer ?</Turn>
+<Turn endTime="5597.412" speaker="Trad Fat LSF" startTime="5595.112">
+<Sync time="5595.112"/>Oui, à gauche quand tu rentres.</Turn>
+<Turn endTime="5658.562" speaker="Trad Fat LSF Trad Mot LSF" startTime="5636.012">
+<Sync time="5636.012"/>
+<Who nb="1"/>Je pense plus qu'en général les médécins oscultent, y a pas de dentiste là. Il regarde et note si tu as besoin de prendre rendez-vosu pour aller chez le dentiste.<Sync time="1744.050"/>
+<Who nb="2"/>(Appel) Non, c'est pas ce que je t'ai dit. Moi je mimes et toi tu dois deviner. D'accord ? C'est pour ça qu'il faut que tu comprennes ce qui est écrit.<Sync time="6127.431"/>
+<Who nb="2"/>Oui, elle est fatigué, et exceptionnellement. (Appel) Tu le veux ? Donne le à Charlotte, donne lui.<Sync time="5657.162"/>
+<Who nb="1"/>On t'appelle.</Turn>
+<Turn endTime="2086.400" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="6141.781">
+<Sync time="6141.781"/>
+<Who nb="3"/>Demande gentillement à papa.<Sync time="5668.037"/>
+<Who nb="2"/>Ton carnet de santé, tu l'as rapporté, y a rien.<Sync time="5292.850"/>
+<Who nb="1"/>Je me suis trompée.<Sync time="2070.0"/>
+<Who nb="1"/>(mimes)</Turn>
+<Turn endTime="2094.500" speaker="Trad Charlotte LSF" startTime="2086.450">
+<Sync time="2086.450"/>Ecrire oui, mais comme autrefois !<Sync time="2089.150"/>(mimes)</Turn>
+<Turn endTime="2099.700" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5677.637">
+<Sync time="5677.637"/>
+<Who nb="2"/>Tu es en retard ?<Sync time="2094.500"/>
+<Who nb="1"/>Oui, parfait ! Parfait !</Turn>
+<Turn endTime="2106.050" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="6152.081">
+<Sync time="6152.081"/>
+<Who nb="3"/>(Appel) Du pain grillé. Avec du beurre, je pense.<Sync time="5687.937"/>
+<Who nb="2"/>À mon avis, tu l'as fait.<Sync time="2103.550"/>
+<Who nb="1"/>Je connais pas le mot moi.</Turn>
+<Turn endTime="2205.0" speaker="Montages Trad Charlotte LSF Trad Fat LSF" startTime="5692.487">
+<Sync time="5692.487"/>
+<Who nb="3"/>(Appel) Elle a du le montrer, et c'est bon.<Sync time="2150.350"/>
+<Who nb="2"/>(mime)<Sync time="2150.350"/>
+<Who nb="1"/>Jeu de devinette : entre mime et signe</Turn>
+<Turn endTime="2172.400" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="6160.081">
+<Sync time="6160.081"/>
+<Who nb="3"/>Elle veut du beurre. C'est vrai !<Sync time="5704.337"/>
+<Who nb="2"/>(Appel) Du fromage ?<Sync time="2169.0"/>
+<Who nb="1"/>Oui. Oui.</Turn>
+<Turn endTime="5697.050" speaker="Thèmes Charlotte Trad Charlotte LSF Trad Mot LSF" startTime="6193.531">
+<Sync time="6193.531"/>
+<Who nb="3"/>Non, tu manges comme ça, tu lèches pas. C'est mieux comme ça.<Sync time="5295.0"/>
+<Who nb="2"/>Après, moi, je sors... Je marche, 3 heures pile. Je marche... Je vais à la LSF, je travaille, quand c'est fini je change, pour faire quoi ? Je vais au jeu libre, on travaille seul, c'est libre.<Sync time="5295.0"/>
+<Who nb="1"/>À l'école : après midi</Turn>
+<Turn endTime="5349.450" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5744.812">
+<Sync time="5744.812"/>
+<Who nb="2"/>Aux toilettes. (Appel) Aux toilettes.<Sync time="5321.0"/>
+<Who nb="1"/>J'y vais et je vois, Mme X et Mme Y (prénoms signes) travailler dans le bureau du directeur, depuis hier jusqu'au aujourd'hui à midi. Le soir, non... L'après-midi, elle me dit : je vais venir te chercher à 2heures et demi, et on va à la maternelle. Parce qu'il y a du théatre à midi. Elle m'a dit qu'elle sait signer.</Turn>
+<Turn endTime="5771.012" speaker="Trad Fat LSF Trad Mot LSF" startTime="6228.631">
+<Sync time="6228.631"/>
+<Who nb="2"/>(Appel) Y a des étudiants qui ont fait des observations et ils ont trouvé qu'un papa et une maman c'est mieux. Leur couple à eux (deux prenoms signes ) c'est mieux. Oui, elle (prénom signe) m'a dit c'est comme ça... comme ça...<Sync time="5768.312"/>
+<Who nb="1"/>Souvent après la natation, elle est cassée.</Turn>
+<Turn endTime="2203.950" speaker="Trad Charlotte LSF Trad Mot LSF" startTime="6252.081">
+<Sync time="6252.081"/>
+<Who nb="2"/>Non, j'aime pas, je laisse de côté, je laisse... Non, c'est pareil, on respecte, son signe c'est celui-là, comme ça... Pas comme ça, non c'est son signe. Tu as compris.<Sync time="2200.250"/>
+<Who nb="1"/>Chocolat ! Préparer, cuisiner un gâteau au chocolat !</Turn>
+<Turn endTime="5808.462" speaker="Trad Fat LSF" startTime="5773.662">
+<Sync time="5773.662"/>(Appel) Du fromage avec le pain... C'est juste.<Sync time="5804.662"/>(Appel) Le fromage ? Le fromage.</Turn>
+<Turn endTime="5821.012" speaker="Trad Fat LSF Trad Mot LSF" startTime="6267.081">
+<Sync time="6267.081"/>
+<Who nb="2"/>Je suis sure l'emplacement c'est vers là, sure, comme ça ou comme ça... Moi, je crois que c'est comme ça. Assieds-toi, s'il te plait.<Sync time="5814.912"/>
+<Who nb="1"/>Non.<Sync time="6282.281"/>
+<Who nb="2"/>On l'a pris pour dessiner un jeune couple.<Sync time="5819.212"/>
+<Who nb="1"/>Oui, et celui rectangulaire.</Turn>
+<Turn endTime="2231.125" speaker="Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="6286.331">
+<Sync time="6286.331"/>
+<Who nb="3"/>C'est mieux.<Sync time="5876.312"/>
+<Who nb="2"/>On paye pas. Oui, j'ai vu ça passer.<Sync time="2229.825"/>
+<Who nb="1"/>Oui.</Turn>
+<Turn endTime="5379.725" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="5932.562">
+<Sync time="5932.562"/>
+<Who nb="2"/>Oui, ce sont des pays d'Afrique, ou...<Sync time="5353.675"/>
+<Who nb="1"/>Non, je reste. Je marchais, cherchais, mais j'hésitais, parce qu'il y a de porte qui sont proches, la première... Je crois, oui, la première porte, c'est pour le chant signe, tout en bas y a le directeur. Et... Moi je devais la (prénom signe) rejoindre.</Turn>
+<Turn endTime="5979.637" speaker="Trad Fat LSF" startTime="5940.937">
+<Sync time="5940.937"/>Par exemple, les Pays-Bas.<Sync time="5974.337"/>Non, l'Allemagne c'est horizontale et la Belgique verticale.</Turn>
+<Turn endTime="562.650" speaker="Trad Fat LSF Trad Mot LSF" startTime="6005.487">
+<Sync time="6005.487"/>
+<Who nb="1"/>Super !<Sync time="722.050"/>
+<Who nb="2"/>Oui<Sync time="557.750"/>
+<Who nb="2"/>Canada<Sync time="6008.237"/>
+<Who nb="1"/>Quand j'étais petit j'adorais dessiner les drapeaux.<Sync time="561.350"/>
+<Who nb="2"/>Suisse</Turn>
+<Turn endTime="578.550" speaker="Trad Mot LSF" startTime="573.950">
+<Sync time="573.950"/>C'est la Nouvelle-Zélande.</Turn>
+<Turn endTime="6021.787" speaker="Trad Fat LSF" startTime="6018.587">
+<Sync time="6018.587"/>Je te disais pareil, que je dessinais les drapeaux.</Turn>
+<Turn endTime="5391.175" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="6023.087">
+<Sync time="6023.087"/>
+<Who nb="2"/>Non, je prenais comme modèle les drapeaux. Je prenais les mesures, c'était précis, dans le détail, et après j'avais un drapeau.<Sync time="5389.275"/>
+<Who nb="1"/>Euh... Stop !</Turn>
+<Turn endTime="6074.612" speaker="Trad Fat LSF" startTime="6048.862">
+<Sync time="6048.862"/>Tu connais ? Tu connais ? Tu te rappelles, c'est bien.<Sync time="6070.012"/>Bah, j'étais le premier contre, mais je pense que ça dépend...</Turn>
+<Turn endTime="730.850" speaker="Trad Fat LSF Trad Mot LSF" startTime="6079.112">
+<Sync time="6079.112"/>
+<Who nb="1"/>Nno, vas là-bas.<Sync time="728.350"/>
+<Who nb="2"/>Ça c'est (?)</Turn>
+<Turn endTime="737.700" speaker="Trad Mot LSF" startTime="736.300">
+<Sync time="736.300"/>Quoi ?</Turn>
+<Turn endTime="6093.912" speaker="Trad Fat LSF Trad Mot LSF" startTime="6290.881">
+<Sync time="6290.881"/>
+<Who nb="2"/>A la fin, il va danser.<Sync time="6085.012"/>
+<Who nb="1"/>Maintenant le gouvernement a adopté une loi, deux hommes peuvent s'aimer, deux femmes peuvent s'aimer ou un homme et une femme peuvent s'aimer, c'est libre.</Turn>
+<Turn endTime="6097.962" speaker="Trad Fat LSF" startTime="6096.162">
+<Sync time="6096.162"/>Bah, tu sais tout le monde est libre.</Turn>
+<Turn endTime="6116.512" speaker="Trad Fat LSF Trad Mot LSF" startTime="6306.081">
+<Sync time="6306.081"/>
+<Who nb="2"/>Un bracelet. Je vous en ai déjà apporter y a 3, 4 ans, c'est encore les mêmes. Il en a plein et adore changer, pour être différent encore et encore. C'est pour ça qu'à la fin on va lui offrir comme cadeau de la danse pour changer.<Sync time="6100.0"/>
+<Who nb="1"/>Elle disait deux femmes qui s'aiment, deux hommes qui s'aiment, y a des drapeaux contre, elle a vu à la télévision les manifestations avec le drapeau français, sur le thème de l'amour entre deux hommes, deux femmes qu est interdit, ils sont pas d'accord. Moi, je lui dis tout le monde est libre de son choix, on a le droit.</Turn>
+<Turn endTime="566.0" speaker="Trad Mot LSF" startTime="6324.831">
+<Sync time="6324.831"/>T'es mal assise, tu vas tomber.<Sync time="564.300"/>Oui, oui, c'est la croix, la Suisse. Oui.</Turn>
+<Turn endTime="1761.075" speaker="Trad Fat LSF Trad Mot LSF" startTime="6146.481">
+<Sync time="6146.481"/>
+<Who nb="1"/>Quoi ?<Sync time="1757.075"/>
+<Who nb="2"/>Si tu comprends pas c'est mieux d'arrêter.</Turn>
+<Turn endTime="743.700" speaker="Trad Mot LSF" startTime="1991.075">
+<Sync time="1991.075"/>Mais non c'est pas un chou !<Sync time="742.200"/>Oui. C'est (?)</Turn>
+<Turn endTime="1841.150" speaker="Montages Trad Mot LSF" startTime="4196.075">
+<Sync time="4196.075"/>
+<Who nb="2"/>C'était bien à la piscine ? Tu as plongé ?<Sync time="4196.075"/>
+<Who nb="1"/>Comment s'est passée ta journée ? Discussions familiales autour de la journée, de l'école - angle cam2-<Sync time="773.325"/>
+<Who nb="2"/>Le Japon.<Sync time="1822.0"/>
+<Who nb="2"/>Tu dois mimer en suivant l'image qui est là.<Sync time="1822.0"/>
+<Who nb="1"/>Jeu de devinette : entre mime et signe</Turn>
+<Turn endTime="4212.525" speaker="Trad Mot LSF" startTime="4204.625">
+<Sync time="4204.625"/>(Appel) La piscine alors ?<Sync time="4210.025"/>Tu as plongé ?</Turn>
+<Turn endTime="4213.425" speaker="Trad Marine LSF" startTime="4212.525">
+<Sync time="4212.525"/>Oui.</Turn>
+<Turn endTime="4227.912" speaker="Trad Mot LSF" startTime="4214.325">
+<Sync time="4214.325"/>Alors ?<Sync time="4224.912"/>Voilà, c'est ça qu'elle veut faire.</Turn>
+<Turn endTime="5410.575" speaker="Trad Charlotte LSF" startTime="5392.475">
+<Sync time="5392.475"/>Oui, moi... J'y vais, je frappe au bureau du directeur, j'attends, j'attends... Oui, encore... Je viens pour travailler, il me dit : Ah bon ! Jamais le soir !</Turn>
+<Turn endTime="6150.931" speaker="Trad Fat LSF" startTime="6148.731">
+<Sync time="6148.731"/>Pour où le beurre ?</Turn>
+<Turn endTime="776.225" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="6158.381">
+<Sync time="6158.381"/>
+<Who nb="2"/>C'est bon ?<Sync time="774.925"/>
+<Who nb="1"/>Je sais pas moi.</Turn>
+<Turn endTime="4209.075" speaker="Trad Charlotte LSF" startTime="4208.075">
+<Sync time="4208.075"/>Oui.</Turn>
+<Turn endTime="6163.081" speaker="Trad Fat LSF Trad Mot LSF" startTime="6334.081">
+<Sync time="6334.081"/>
+<Who nb="2"/>Moi ?<Sync time="6160.981"/>
+<Who nb="1"/>Là. Là.</Turn>
+<Turn endTime="571.950" speaker="Trad Mot LSF" startTime="6335.731">
+<Sync time="6335.731"/>Tu as fini de manger ? Tu as fini ? Tu peux sortir, mais essuie toi la bouche, tu as du chocolat, c'est sale. Essuie-toi.<Sync time="567.850"/>Je connais pas. Je crois pas que ça soit celui-là, à mon avis.</Turn>
+<Turn endTime="1837.0" speaker="Trad Charlotte LSF Trad Fat LSF" startTime="6223.031">
+<Sync time="6223.031"/>
+<Who nb="2"/>(Appel) Ça va ? T'as fini ? Non, c'est pas l'heure, on finit tous les quatre ensemble. Bientôt.<Sync time="1824.0"/>
+<Who nb="1"/>(mime)</Turn>
+<Turn endTime="6278.281" speaker="Trad Fat LSF Trad Mot LSF" startTime="6346.781">
+<Sync time="6346.781"/>
+<Who nb="2"/>Mouais... Tu l'essuies ?<Sync time="6276.381"/>
+<Who nb="1"/>On est ensemble !</Turn>
+<Turn endTime="6330.831" speaker="Trad Fat LSF" startTime="6329.031">
+<Sync time="6329.031"/>(Appel) Elle va pas finir.</Turn>
+<Turn endTime="6368.181" speaker="Trad Mot LSF" startTime="6365.081">
+<Sync time="6365.081"/>On a fini. C'est bon, on a fini.</Turn>
+<Turn endTime="1837.600" speaker="Thèmes Marine Thèmes Mot Trad Charlotte LSF Trad Fat LSF Trad Mot LSF" startTime="8128.650">
+<Sync time="8128.650"/>
+<Who nb="4"/>(Appel) Tu dis merci.<Sync time="5413.075"/>
+<Who nb="3"/>Oui pour les (prénoms signes) chercher. Parce qu'elles travaillent en haut et préparent. Et, elle (prénom signe) est à la maternelle. C'est pour ça moi je suis toute seule. Je cherche mais j'étais perdue, c'était vide, j'étais perdue. Je regarde, je cherche, tout en bas y a personne, j'étais perdue. J'ai une idée : la bibliothèque...<Sync time="4283.600"/>
+<Who nb="5"/>(Appel) On va manger. Arpès, d'abord on mange de la viande avec des pâtes, après la compote, oui.<Sync time="4283.600"/>
+<Who nb="2"/>Compote<Sync time="4283.600"/>
+<Who nb="1"/>Compote<Sync time="1835.0"/>
+<Who nb="5"/>Arroser les fleurs ?</Turn>
+<Turn endTime="1949.950" speaker="Trad Mot LSF" startTime="1839.150">
+<Sync time="1839.150"/>Tu mimes bien, donc j'ai compris !<Sync time="776.625"/>L'Italie.<Sync time="755.150"/>La danse ?<Sync time="1844.075"/>Oui, parfait. Mon tour.<Sync time="1994.025"/>Je cueille une rose. C'est le m^e mot pour la couleur rose et pour la fleur, qui a des pétales roses.<Sync time="1846.025"/>(mimes)<Sync time="757.350"/>(Appel) Oublie !<Sync time="1856.075"/>Oui ! Bien !<Sync time="1861.900"/>Quoi ? Si la phrase c'est "je répare le robinet" c'est ce qui est écrit. Regarde là, le mot s'est "répare".<Sync time="1893.300"/>Tu me donnes. Merci.<Sync time="1896.950"/>Non, tu regardes pas. Tu la mets là.<Sync time="1904.050"/>Quoi ?<Sync time="1944.050"/>(Appel) Ah, oui. Une tapette à mouche, c'est ça ? Non, c'est moi.</Turn>
+<Turn endTime="810.625" speaker="Montages Trad Mot LSF" startTime="1951.800">
+<Sync time="1951.800"/>
+<Who nb="2"/>Oui. La tienne... Tu connais le nom des fleurs ? On va essayer.<Sync time="780.750"/>Le Japon<Sync time="780.750"/>
+<Who nb="1"/>A quoi joue-t-on ? Retrouver le drapeau du pays</Turn>
+<Turn endTime="768.200" speaker="Trad Mot LSF" startTime="2005.100">
+<Sync time="2005.100"/>Tu connais ?<Sync time="2021.700"/>Donc je signe pas, je mime...<Sync time="4608.200"/>C'est bon. Super.<Sync time="2024.950"/>(mimes)<Sync time="2068.700"/>(?)<Sync time="2084.050"/>(Appel) Ecrire ?<Sync time="2089.300"/>Ecrire avec... Un stylo qui a une plume au bout que l'on trempe<Sync time="2099.050"/>Ah oui, c'est écrire un poème. C'est pour ça que je t'explique, c'est écrire un poème, comme...<Sync time="2112.950"/>(Appel) Tu as pas déjà appris des poèmes à l'école ?<Sync time="2119.050"/>Quoi ?<Sync time="763.950"/>Oui,mais le niveau au-dessus. C'est mieux, là.</Turn>
+</Section>
+</Episode>
+</Trans>

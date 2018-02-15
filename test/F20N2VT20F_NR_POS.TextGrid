@@ -1,0 +1,416 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.673875 
+tiers? <exists> 
+size = 6 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "TRANSLIT" 
+        xmin = 0 
+        xmax = 3.673875 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5084712 
+            text = "#____" 
+        intervals [2]:
+            xmin = 0.5084712 
+            xmax = 3.1711885 
+            text = "en de hele dom staat vol met toeristen en daarna mag je d''r niet meer in . __F20N2VT20F" 
+        intervals [3]:
+            xmin = 3.1711885 
+            xmax = 3.673875 
+            text = "#____" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "WORDS" 
+        xmin = 0 
+        xmax = 3.673875 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5084712 
+            text = "#__-A1" 
+        intervals [2]:
+            xmin = 0.5084712 
+            xmax = 0.596 
+            text = "en__F20N2VT20F1" 
+        intervals [3]:
+            xmin = 0.596 
+            xmax = 0.676 
+            text = "de__F20N2VT20F2" 
+        intervals [4]:
+            xmin = 0.676 
+            xmax = 0.8869265 
+            text = "hele__F20N2VT20F3" 
+        intervals [5]:
+            xmin = 0.8869265 
+            xmax = 1.0571695 
+            text = "dom__F20N2VT20F4" 
+        intervals [6]:
+            xmin = 1.0571695 
+            xmax = 1.296 
+            text = "staat__F20N2VT20F5" 
+        intervals [7]:
+            xmin = 1.296 
+            xmax = 1.4516166 
+            text = "vol__F20N2VT20F6" 
+        intervals [8]:
+            xmin = 1.4516166 
+            xmax = 1.6211624 
+            text = "met=__F20N2VT20F7" 
+        intervals [9]:
+            xmin = 1.6211624 
+            xmax = 2.026 
+            text = "=toeristen__F20N2VT20F8" 
+        intervals [10]:
+            xmin = 2.026 
+            xmax = 2.1729213 
+            text = "en__F20N2VT20F9" 
+        intervals [11]:
+            xmin = 2.1729213 
+            xmax = 2.366 
+            text = "daarna__F20N2VT20F10" 
+        intervals [12]:
+            xmin = 2.366 
+            xmax = 2.526 
+            text = "mag__F20N2VT20F11" 
+        intervals [13]:
+            xmin = 2.526 
+            xmax = 2.586 
+            text = "je__F20N2VT20F12" 
+        intervals [14]:
+            xmin = 2.586 
+            xmax = 2.696 
+            text = "d''r__F20N2VT20F13" 
+        intervals [15]:
+            xmin = 2.696 
+            xmax = 2.876 
+            text = "niet__F20N2VT20F14" 
+        intervals [16]:
+            xmin = 2.876 
+            xmax = 3.036 
+            text = "meer__F20N2VT20F15" 
+        intervals [17]:
+            xmin = 3.036 
+            xmax = 3.1711885 
+            text = "in__F20N2VT20F16" 
+        intervals [18]:
+            xmin = 3.1711885 
+            xmax = 3.673875 
+            text = "#__F20N2VT20F-A1" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "POS" 
+        xmin = 0 
+        xmax = 3.673875 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5084712 
+            text = "#__-A1" 
+        intervals [2]:
+            xmin = 0.5084712 
+            xmax = 0.596 
+            text = "VG__F20N2VT20F1" 
+        intervals [3]:
+            xmin = 0.596 
+            xmax = 0.676 
+            text = "LID__F20N2VT20F2" 
+        intervals [4]:
+            xmin = 0.676 
+            xmax = 0.8869265 
+            text = "ADJ__F20N2VT20F3" 
+        intervals [5]:
+            xmin = 0.8869265 
+            xmax = 1.0571695 
+            text = "N__F20N2VT20F4" 
+        intervals [6]:
+            xmin = 1.0571695 
+            xmax = 1.296 
+            text = "WW__F20N2VT20F5" 
+        intervals [7]:
+            xmin = 1.296 
+            xmax = 1.4516166 
+            text = "ADJ__F20N2VT20F6" 
+        intervals [8]:
+            xmin = 1.4516166 
+            xmax = 1.6211624 
+            text = "VZ=__F20N2VT20F7" 
+        intervals [9]:
+            xmin = 1.6211624 
+            xmax = 2.026 
+            text = "=N__F20N2VT20F8" 
+        intervals [10]:
+            xmin = 2.026 
+            xmax = 2.1729213 
+            text = "VG__F20N2VT20F9" 
+        intervals [11]:
+            xmin = 2.1729213 
+            xmax = 2.366 
+            text = "BW__F20N2VT20F10" 
+        intervals [12]:
+            xmin = 2.366 
+            xmax = 2.526 
+            text = "WW__F20N2VT20F11" 
+        intervals [13]:
+            xmin = 2.526 
+            xmax = 2.586 
+            text = "VNW__F20N2VT20F12" 
+        intervals [14]:
+            xmin = 2.586 
+            xmax = 2.696 
+            text = "VNW__F20N2VT20F13" 
+        intervals [15]:
+            xmin = 2.696 
+            xmax = 2.876 
+            text = "BW__F20N2VT20F14" 
+        intervals [16]:
+            xmin = 2.876 
+            xmax = 3.036 
+            text = "VNW__F20N2VT20F15" 
+        intervals [17]:
+            xmin = 3.036 
+            xmax = 3.1711885 
+            text = "VZ__F20N2VT20F16" 
+        intervals [18]:
+            xmin = 3.1711885 
+            xmax = 3.673875 
+            text = "#__F20N2VT20F-A1" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "POSspec" 
+        xmin = 0 
+        xmax = 3.673875 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5084712 
+            text = "#__-A1" 
+        intervals [2]:
+            xmin = 0.5084712 
+            xmax = 0.596 
+            text = "neven__F20N2VT20F1" 
+        intervals [3]:
+            xmin = 0.596 
+            xmax = 0.676 
+            text = "bep,stan,rest__F20N2VT20F2" 
+        intervals [4]:
+            xmin = 0.676 
+            xmax = 0.8869265 
+            text = "prenom,basis,met-e,stan__F20N2VT20F3" 
+        intervals [5]:
+            xmin = 0.8869265 
+            xmax = 1.0571695 
+            text = "soort,ev,basis,zijd,stan__F20N2VT20F4" 
+        intervals [6]:
+            xmin = 1.0571695 
+            xmax = 1.296 
+            text = "pv,tgw,met-t__F20N2VT20F5" 
+        intervals [7]:
+            xmin = 1.296 
+            xmax = 1.4516166 
+            text = "vrij,basis,zonder__F20N2VT20F6" 
+        intervals [8]:
+            xmin = 1.4516166 
+            xmax = 1.6211624 
+            text = "init=__F20N2VT20F7" 
+        intervals [9]:
+            xmin = 1.6211624 
+            xmax = 2.026 
+            text = "=soort,mv,basis__F20N2VT20F8" 
+        intervals [10]:
+            xmin = 2.026 
+            xmax = 2.1729213 
+            text = "neven__F20N2VT20F9" 
+        intervals [11]:
+            xmin = 2.1729213 
+            xmax = 2.366 
+            text = "__F20N2VT20F10" 
+        intervals [12]:
+            xmin = 2.366 
+            xmax = 2.526 
+            text = "pv,tgw,ev__F20N2VT20F11" 
+        intervals [13]:
+            xmin = 2.526 
+            xmax = 2.586 
+            text = "pers,pron,nomin,red,2v,ev__F20N2VT20F12" 
+        intervals [14]:
+            xmin = 2.586 
+            xmax = 2.696 
+            text = "aanw,adv-pron,stan,red,3,getal__F20N2VT20F13" 
+        intervals [15]:
+            xmin = 2.696 
+            xmax = 2.876 
+            text = "__F20N2VT20F14" 
+        intervals [16]:
+            xmin = 2.876 
+            xmax = 3.036 
+            text = "onbep,grad,stan,vrij,zonder,comp__F20N2VT20F15" 
+        intervals [17]:
+            xmin = 3.036 
+            xmax = 3.1711885 
+            text = "fin__F20N2VT20F16" 
+        intervals [18]:
+            xmin = 3.1711885 
+            xmax = 3.673875 
+            text = "#__F20N2VT20F-A1" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "LEMMA" 
+        xmin = 0 
+        xmax = 3.673875 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5084712 
+            text = "#__-A1" 
+        intervals [2]:
+            xmin = 0.5084712 
+            xmax = 0.596 
+            text = "en__F20N2VT20F1" 
+        intervals [3]:
+            xmin = 0.596 
+            xmax = 0.676 
+            text = "de__F20N2VT20F2" 
+        intervals [4]:
+            xmin = 0.676 
+            xmax = 0.8869265 
+            text = "heel__F20N2VT20F3" 
+        intervals [5]:
+            xmin = 0.8869265 
+            xmax = 1.0571695 
+            text = "dom__F20N2VT20F4" 
+        intervals [6]:
+            xmin = 1.0571695 
+            xmax = 1.296 
+            text = "staan__F20N2VT20F5" 
+        intervals [7]:
+            xmin = 1.296 
+            xmax = 1.4516166 
+            text = "vol__F20N2VT20F6" 
+        intervals [8]:
+            xmin = 1.4516166 
+            xmax = 1.6211624 
+            text = "met=__F20N2VT20F7" 
+        intervals [9]:
+            xmin = 1.6211624 
+            xmax = 2.026 
+            text = "=toerist__F20N2VT20F8" 
+        intervals [10]:
+            xmin = 2.026 
+            xmax = 2.1729213 
+            text = "en__F20N2VT20F9" 
+        intervals [11]:
+            xmin = 2.1729213 
+            xmax = 2.366 
+            text = "daarna__F20N2VT20F10" 
+        intervals [12]:
+            xmin = 2.366 
+            xmax = 2.526 
+            text = "mogen__F20N2VT20F11" 
+        intervals [13]:
+            xmin = 2.526 
+            xmax = 2.586 
+            text = "je__F20N2VT20F12" 
+        intervals [14]:
+            xmin = 2.586 
+            xmax = 2.696 
+            text = "er__F20N2VT20F13" 
+        intervals [15]:
+            xmin = 2.696 
+            xmax = 2.876 
+            text = "niet__F20N2VT20F14" 
+        intervals [16]:
+            xmin = 2.876 
+            xmax = 3.036 
+            text = "veel__F20N2VT20F15" 
+        intervals [17]:
+            xmin = 3.036 
+            xmax = 3.1711885 
+            text = "in__F20N2VT20F16" 
+        intervals [18]:
+            xmin = 3.1711885 
+            xmax = 3.673875 
+            text = "#__F20N2VT20F-A1" 
+    item [6]:
+        class = "IntervalTier" 
+        name = "POSfit" 
+        xmin = 0 
+        xmax = 3.673875 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5084712 
+            text = "#__-A1" 
+        intervals [2]:
+            xmin = 0.5084712 
+            xmax = 0.596 
+            text = "99.96__F20N2VT20F1" 
+        intervals [3]:
+            xmin = 0.596 
+            xmax = 0.676 
+            text = "99.87__F20N2VT20F2" 
+        intervals [4]:
+            xmin = 0.676 
+            xmax = 0.8869265 
+            text = "100.00__F20N2VT20F3" 
+        intervals [5]:
+            xmin = 0.8869265 
+            xmax = 1.0571695 
+            text = "66.67__F20N2VT20F4" 
+        intervals [6]:
+            xmin = 1.0571695 
+            xmax = 1.296 
+            text = "100.00__F20N2VT20F5" 
+        intervals [7]:
+            xmin = 1.296 
+            xmax = 1.4516166 
+            text = "100.00__F20N2VT20F6" 
+        intervals [8]:
+            xmin = 1.4516166 
+            xmax = 1.6211624 
+            text = "99.88=__F20N2VT20F7" 
+        intervals [9]:
+            xmin = 1.6211624 
+            xmax = 2.026 
+            text = "=100.00__F20N2VT20F8" 
+        intervals [10]:
+            xmin = 2.026 
+            xmax = 2.1729213 
+            text = "99.96__F20N2VT20F9" 
+        intervals [11]:
+            xmin = 2.1729213 
+            xmax = 2.366 
+            text = "100.00__F20N2VT20F10" 
+        intervals [12]:
+            xmin = 2.366 
+            xmax = 2.526 
+            text = "100.00__F20N2VT20F11" 
+        intervals [13]:
+            xmin = 2.526 
+            xmax = 2.586 
+            text = "99.75__F20N2VT20F12" 
+        intervals [14]:
+            xmin = 2.586 
+            xmax = 2.696 
+            text = "98.96__F20N2VT20F13" 
+        intervals [15]:
+            xmin = 2.696 
+            xmax = 2.876 
+            text = "100.00__F20N2VT20F14" 
+        intervals [16]:
+            xmin = 2.876 
+            xmax = 3.036 
+            text = "100.00__F20N2VT20F15" 
+        intervals [17]:
+            xmin = 3.036 
+            xmax = 3.1711885 
+            text = "100.00__F20N2VT20F16" 
+        intervals [18]:
+            xmin = 3.1711885 
+            xmax = 3.673875 
+            text = "#__F20N2VT20F-A1" 

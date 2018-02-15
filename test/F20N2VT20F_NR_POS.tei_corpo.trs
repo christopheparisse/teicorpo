@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="test" version="1.01">
+<Speakers>
+<Speaker id="TRANSLIT" name="TRANSLIT"/>
+<Speaker id="POS" name="POS"/>
+<Speaker id="WORDS" name="WORDS"/>
+<Speaker id="POSspec" name="POSspec"/>
+<Speaker id="LEMMA" name="LEMMA"/>
+<Speaker id="POSfit" name="POSfit"/>
+</Speakers>
+<Episode>
+<Section endTime="3.673" startTime="0" type="report">
+<Turn endTime="3.171" speaker="TRANSLIT" startTime="0">
+<Sync time="0"/>#____<Sync time="0.508"/>en de hele dom staat vol met toeristen en daarna mag je d''r niet meer in . __F20N2VT20F</Turn>
+<Turn endTime="0.508" speaker="POS TRANSLIT" startTime="3.171">
+<Sync time="3.171"/>
+<Who nb="2"/>#____<Sync time="0"/>
+<Who nb="1"/>#__-A1</Turn>
+<Turn endTime="3.171" speaker="POS" startTime="0.508">
+<Sync time="0.508"/>VG__F20N2VT20F1<Sync time="0.596"/>LID__F20N2VT20F2<Sync time="0.676"/>ADJ__F20N2VT20F3<Sync time="0.886"/>N__F20N2VT20F4<Sync time="1.057"/>WW__F20N2VT20F5<Sync time="1.296"/>ADJ__F20N2VT20F6<Sync time="1.451"/>VZ=__F20N2VT20F7<Sync time="1.621"/>=N__F20N2VT20F8<Sync time="2.026"/>VG__F20N2VT20F9<Sync time="2.172"/>BW__F20N2VT20F10<Sync time="2.366"/>WW__F20N2VT20F11<Sync time="2.526"/>VNW__F20N2VT20F12<Sync time="2.586"/>VNW__F20N2VT20F13<Sync time="2.696"/>BW__F20N2VT20F14<Sync time="2.876"/>VNW__F20N2VT20F15<Sync time="3.036"/>VZ__F20N2VT20F16</Turn>
+<Turn endTime="0.508" speaker="POS WORDS" startTime="3.171">
+<Sync time="3.171"/>
+<Who nb="1"/>#__F20N2VT20F-A1<Sync time="0"/>
+<Who nb="2"/>#__-A1</Turn>
+<Turn endTime="3.171" speaker="WORDS" startTime="0.508">
+<Sync time="0.508"/>en__F20N2VT20F1<Sync time="0.596"/>de__F20N2VT20F2<Sync time="0.676"/>hele__F20N2VT20F3<Sync time="0.886"/>dom__F20N2VT20F4<Sync time="1.057"/>staat__F20N2VT20F5<Sync time="1.296"/>vol__F20N2VT20F6<Sync time="1.451"/>met=__F20N2VT20F7<Sync time="1.621"/>=toeristen__F20N2VT20F8<Sync time="2.026"/>en__F20N2VT20F9<Sync time="2.172"/>daarna__F20N2VT20F10<Sync time="2.366"/>mag__F20N2VT20F11<Sync time="2.526"/>je__F20N2VT20F12<Sync time="2.586"/>d''r__F20N2VT20F13<Sync time="2.696"/>niet__F20N2VT20F14<Sync time="2.876"/>meer__F20N2VT20F15<Sync time="3.036"/>in__F20N2VT20F16</Turn>
+<Turn endTime="0.508" speaker="POSspec WORDS" startTime="3.171">
+<Sync time="3.171"/>
+<Who nb="2"/>#__F20N2VT20F-A1<Sync time="0"/>
+<Who nb="1"/>#__-A1</Turn>
+<Turn endTime="3.171" speaker="POSspec" startTime="0.508">
+<Sync time="0.508"/>neven__F20N2VT20F1<Sync time="0.596"/>bep,stan,rest__F20N2VT20F2<Sync time="0.676"/>prenom,basis,met-e,stan__F20N2VT20F3<Sync time="0.886"/>soort,ev,basis,zijd,stan__F20N2VT20F4<Sync time="1.057"/>pv,tgw,met-t__F20N2VT20F5<Sync time="1.296"/>vrij,basis,zonder__F20N2VT20F6<Sync time="1.451"/>init=__F20N2VT20F7<Sync time="1.621"/>=soort,mv,basis__F20N2VT20F8<Sync time="2.026"/>neven__F20N2VT20F9<Sync time="2.172"/>__F20N2VT20F10<Sync time="2.366"/>pv,tgw,ev__F20N2VT20F11<Sync time="2.526"/>pers,pron,nomin,red,2v,ev__F20N2VT20F12<Sync time="2.586"/>aanw,adv-pron,stan,red,3,getal__F20N2VT20F13<Sync time="2.696"/>__F20N2VT20F14<Sync time="2.876"/>onbep,grad,stan,vrij,zonder,comp__F20N2VT20F15<Sync time="3.036"/>fin__F20N2VT20F16</Turn>
+<Turn endTime="0.508" speaker="LEMMA POSspec" startTime="3.171">
+<Sync time="3.171"/>
+<Who nb="2"/>#__F20N2VT20F-A1<Sync time="0"/>
+<Who nb="1"/>#__-A1</Turn>
+<Turn endTime="3.171" speaker="LEMMA" startTime="0.508">
+<Sync time="0.508"/>en__F20N2VT20F1<Sync time="0.596"/>de__F20N2VT20F2<Sync time="0.676"/>heel__F20N2VT20F3<Sync time="0.886"/>dom__F20N2VT20F4<Sync time="1.057"/>staan__F20N2VT20F5<Sync time="1.296"/>vol__F20N2VT20F6<Sync time="1.451"/>met=__F20N2VT20F7<Sync time="1.621"/>=toerist__F20N2VT20F8<Sync time="2.026"/>en__F20N2VT20F9<Sync time="2.172"/>daarna__F20N2VT20F10<Sync time="2.366"/>mogen__F20N2VT20F11<Sync time="2.526"/>je__F20N2VT20F12<Sync time="2.586"/>er__F20N2VT20F13<Sync time="2.696"/>niet__F20N2VT20F14<Sync time="2.876"/>veel__F20N2VT20F15<Sync time="3.036"/>in__F20N2VT20F16</Turn>
+<Turn endTime="0.508" speaker="LEMMA POSfit" startTime="3.171">
+<Sync time="3.171"/>
+<Who nb="1"/>#__F20N2VT20F-A1<Sync time="0"/>
+<Who nb="2"/>#__-A1</Turn>
+<Turn endTime="3.673" speaker="POSfit" startTime="0.508">
+<Sync time="0.508"/>99.96__F20N2VT20F1<Sync time="0.596"/>99.87__F20N2VT20F2<Sync time="0.676"/>100.00__F20N2VT20F3<Sync time="0.886"/>66.67__F20N2VT20F4<Sync time="1.057"/>100.00__F20N2VT20F5<Sync time="1.296"/>100.00__F20N2VT20F6<Sync time="1.451"/>99.88=__F20N2VT20F7<Sync time="1.621"/>=100.00__F20N2VT20F8<Sync time="2.026"/>99.96__F20N2VT20F9<Sync time="2.172"/>100.00__F20N2VT20F10<Sync time="2.366"/>100.00__F20N2VT20F11<Sync time="2.526"/>99.75__F20N2VT20F12<Sync time="2.586"/>98.96__F20N2VT20F13<Sync time="2.696"/>100.00__F20N2VT20F14<Sync time="2.876"/>100.00__F20N2VT20F15<Sync time="3.036"/>100.00__F20N2VT20F16<Sync time="3.171"/>#__F20N2VT20F-A1</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="test4-elan" version="2.8">
+<Speakers>
+<Speaker id="K-Spch" name="K-Spch"/>
+<Speaker id="W-Spch" name="W-Spch"/>
+<Speaker id="W-Words" name="W-Words"/>
+<Speaker id="W-POS" name="W-POS"/>
+<Speaker id="W-IPA" name="W-IPA"/>
+<Speaker id="W-RGU" name="W-RGU"/>
+<Speaker id="W-RGph" name="W-RGph"/>
+<Speaker id="W-RGMe" name="W-RGMe"/>
+<Speaker id="K-RGU" name="K-RGU"/>
+<Speaker id="K-RGph" name="K-RGph"/>
+<Speaker id="K-RGMe" name="K-RGMe"/>
+</Speakers>
+<Episode>
+<Section endTime="36.180" startTime="0" type="report">
+<Turn endTime="1.250" speaker="K-RGU K-Spch W-RGU" startTime="0">
+<Sync time="0"/>
+<Who nb="3"/>R Gesture Unit 1<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going out of the Insitute&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going out of the Insitute"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going out of MPI to Saint Anna Street&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going out of MPI to Saint Anna Street"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going along St. Anna Street&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going along St. Anna Street"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;part.retraction"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going along St. Anna Street&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going along St. Anna Street"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;A roundabout&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;A roundabout"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going to the direction of Kleve&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going to the direction of Kleve"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going along Oranje Singel (Street)&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going along Oranje Singel (Street)"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going to the direction of Kleve&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going to the direction of Kleve"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going down&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going down"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;a roundabout&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;a roundabout"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;stroke&#10;a roundabout&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;a roundabout"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going down&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going down"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going down&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going down"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;a roundabout&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;a roundabout"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;a roundabout&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;a roundabout"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;a roundabout&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;a roundabout"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going down&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going down"/>
+<Comment desc="W-RGph:&#9;hold"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going down&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going down"/>
+<Comment desc="W-RGph:&#9;preparation"/>
+<Comment desc="W-RGph:&#9;stroke&#10;Going to Kleve&#10;&#10;"/>
+<Comment desc="W-RGph:&#9;Going to Kleve"/>
+<Comment desc="W-RGph:&#9;retraction"/>
+<Sync time="23.120"/>
+<Who nb="1"/>R Gesture Unit 1<Comment desc="K-RGph:&#9;preparation"/>
+<Comment desc="K-RGph:&#9;stroke&#10;a roundabout&#10;&#10;"/>
+<Comment desc="K-RGph:&#9;a roundabout"/>
+<Comment desc="K-RGph:&#9;retraction"/>
+<Sync time="0.280"/>
+<Who nb="2"/>so from here.</Turn>
+<Turn endTime="27.990" speaker="K-Spch" startTime="4.040">
+<Sync time="4.040"/>yeah<Sync time="10.060"/>ja<Sync time="14.620"/>ja<Sync time="22.830"/>there is another plein<Sync time="27.030"/>rotunda</Turn>
+<Turn endTime="4.090" speaker="K-Spch W-Spch" startTime="29.010">
+<Sync time="29.010"/>
+<Who nb="1"/>ja<Sync time="0.780"/>
+<Who nb="2"/>so you go out of the Institute to the Saint Anna Straat.<Comment desc="W-Words:&#9;so&#10;&#10;&#10;"/>
+<Comment desc="W-Words:&#9;"/>
+<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;go&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;out&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;of&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;Institute&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;to&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;Saint&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Anna&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Straat&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;səʋ  juː ɡɔ aut əf ðə ɪnstɪtjuːt tʊ zə sant ana straːt"/>
+</Turn>
+<Turn endTime="36.180" speaker="W-Spch" startTime="4.600">
+<Sync time="4.600"/>and then you go the other, Saint Anna Straat to this to the center of the town, to this big rotunde.<Comment desc="W-Words:&#9;and&#10;con&#10;&#10;"/>
+<Comment desc="W-Words:&#9;con"/>
+<Comment desc="W-Words:&#9;then&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;go&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;other&#10;adj&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adj"/>
+<Comment desc="W-Words:&#9;Saint&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Anna&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Straat&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;to&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;this&#10;dem&#10;&#10;"/>
+<Comment desc="W-Words:&#9;dem"/>
+<Comment desc="W-Words:&#9;to&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;center&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;of&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;town&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;to&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;this&#10;dem&#10;&#10;"/>
+<Comment desc="W-Words:&#9;dem"/>
+<Comment desc="W-Words:&#9;big&#10;adj&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adj"/>
+<Comment desc="W-Words:&#9;rotunde&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ənd ðen juː ɡəʊ ðɪ ɔθɛ sant ana straːt tʊ ðɪs to ðə sɛntə əf ðə taun tu ðɪs bɪɡ rɔtundə"/>
+<Sync time="11.150"/>and you follow then the sign Kleef<Comment desc="W-Words:&#9;and&#10;con&#10;&#10;"/>
+<Comment desc="W-Words:&#9;con"/>
+<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;follow&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;then&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;sign&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Kleef&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ænd juː fɔləʊ ðən ðə saɪn kleːf"/>
+<Sync time="13.310"/>that's the oranje single<Comment desc="W-Words:&#9;that&#10;dem&#10;&#10;"/>
+<Comment desc="W-Words:&#9;dem"/>
+<Comment desc="W-Words:&#9;'s&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;Oranje&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Single&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ðæts ðə ɔranjə sɪŋl"/>
+<Sync time="15.330"/>then you follow the sign kleef<Comment desc="W-Words:&#9;then&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;follow&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;sign&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Kleef&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ðen juː fɔləʊ ðə saɪn kleːf"/>
+<Sync time="17.570"/>you come down<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;come&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;down&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-IPA:&#9;juː kʌm daʊn"/>
+<Sync time="18.990"/>you know eh after this trajanus plein<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;know&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;eh&#10;post&#10;&#10;"/>
+<Comment desc="W-Words:&#9;post"/>
+<Comment desc="W-Words:&#9;after&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;this&#10;dem&#10;&#10;"/>
+<Comment desc="W-Words:&#9;dem"/>
+<Comment desc="W-Words:&#9;Trajanus&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;Plein&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;juː nɔː ə aftə ðɪs trajanus pleːɪn"/>
+<Sync time="21.860"/>you come down to the<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;come&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;down&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;to&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-IPA:&#9;juː kʌm daʊn tʊ ðə"/>
+<Sync time="23.470"/>rhine eh valley<Comment desc="W-Words:&#9;Rhine&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;eh&#10;post&#10;&#10;"/>
+<Comment desc="W-Words:&#9;post"/>
+<Comment desc="W-Words:&#9;valley&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;raɪn ə vælɪ"/>
+<Sync time="25.080"/>yeah that's another eh<Comment desc="W-Words:&#9;yeah&#10;int&#10;&#10;"/>
+<Comment desc="W-Words:&#9;int"/>
+<Comment desc="W-Words:&#9;that&#10;dem&#10;&#10;"/>
+<Comment desc="W-Words:&#9;dem"/>
+<Comment desc="W-Words:&#9;'s&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;another&#10;adj&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adj"/>
+<Comment desc="W-Words:&#9;eh&#10;part&#10;&#10;"/>
+<Comment desc="W-Words:&#9;part"/>
+<Comment desc="W-IPA:&#9;jɛː ðæts ənaðə ə"/>
+<Sync time="28.160"/>kind of rotunde<Comment desc="W-Words:&#9;kind&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;of&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;rotunde&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;kaɪnd əv rotʊndə"/>
+<Sync time="29.370"/>and then you follow the signs kleef<Comment desc="W-Words:&#9;and&#10;con&#10;&#10;"/>
+<Comment desc="W-Words:&#9;con"/>
+<Comment desc="W-Words:&#9;then&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;follow&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;signs&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-Words:&#9;kleef&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ənd ðen juː fɔləʊ ðə saɪns kleːf"/>
+<Sync time="31.320"/>go down<Comment desc="W-Words:&#9;go&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;down&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-IPA:&#9;jə ɡɔ daʊn"/>
+<Sync time="32.379"/>and then you go the this way<Comment desc="W-Words:&#9;and&#10;con&#10;&#10;"/>
+<Comment desc="W-Words:&#9;con"/>
+<Comment desc="W-Words:&#9;then&#10;adv&#10;&#10;"/>
+<Comment desc="W-Words:&#9;adv"/>
+<Comment desc="W-Words:&#9;you&#10;pro&#10;&#10;"/>
+<Comment desc="W-Words:&#9;pro"/>
+<Comment desc="W-Words:&#9;go&#10;v&#10;&#10;"/>
+<Comment desc="W-Words:&#9;v"/>
+<Comment desc="W-Words:&#9;the&#10;art&#10;&#10;"/>
+<Comment desc="W-Words:&#9;art"/>
+<Comment desc="W-Words:&#9;this&#10;dem&#10;&#10;"/>
+<Comment desc="W-Words:&#9;dem"/>
+<Comment desc="W-Words:&#9;way&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ənd ðen juː ɡɔ ðə ðɪs weɪ"/>
+<Sync time="34.380"/>eh ja to kleef<Comment desc="W-Words:&#9;eh&#10;part&#10;&#10;"/>
+<Comment desc="W-Words:&#9;part"/>
+<Comment desc="W-Words:&#9;ja&#10;int&#10;&#10;"/>
+<Comment desc="W-Words:&#9;int"/>
+<Comment desc="W-Words:&#9;to&#10;prep&#10;&#10;"/>
+<Comment desc="W-Words:&#9;prep"/>
+<Comment desc="W-Words:&#9;Kleef&#10;n&#10;&#10;"/>
+<Comment desc="W-Words:&#9;n"/>
+<Comment desc="W-IPA:&#9;ə jaː tʊ kleːf"/>
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans elapsed_time="36.77" scribe=" Gabrielle Miesse (february 2009) Françoise Bourdoux (september&#9;2009)" version="Chat" version_date="15-JUL-2008" xml:lang="fra">
+<Speakers>
+<Speaker id="CHI" name="Antoine" type="unknown"/>
+<Speaker id="OBS" name="Christophe" type="unknown"/>
+<Speaker id="MOT" name="Tania" type="unknown"/>
+<Speaker id="UNI" name="UNI"/>
+</Speakers>
+<Topics>
+<Topic desc="CHI et OBS sont dans la salon de CHI" id="d0"/>
+</Topics>
+<Episode air_date="d0" program="Situation">
+<Section endTime="36.770" startTime="0" type="report">
+<Turn endTime="2.350" speaker="OBS" startTime="0">
+<Sync time="0"/>et si j(e) faisais un+peu d(e) lumière #! <Comment desc="mor:&#9;conj|et conj|si pro:subj|je v:mdl|faire-IMPF adv|un+peu prep:art|de n|lumière !"/>
+<Comment desc="act:&#9;OBS se dirige vers la fenêtre"/>
+<Comment desc="com:&#9;il fait très sombre dans la pièce"/>
+<Comment desc="sit:&#9;CHI est assis à terre"/>
+</Turn>
+<Turn endTime="9.673" speaker="CHI OBS" startTime="2.350">
+<Sync time="2.350"/>
+<Who nb="1"/>oui #! <Comment desc="mor:&#9;adv:yn|oui !"/>
+<Comment desc="pho:&#9;wi"/>
+<Comment desc="com:&#9;on entend CHI enlever ses chaussures"/>
+<Sync time="3.356"/>
+<Who nb="2"/>ah de la lumière #! <Comment desc="mor:&#9;co|ah prep|de det|la&amp;FEM&amp;SING n|lumière !"/>
+<Comment desc="com:&#9;on entend OBS ouvrir les volets et la lumière arrive dans la pièce"/>
+</Turn>
+<Turn endTime="11.628" speaker="CHI" startTime="9.673">
+<Sync time="9.673"/>0 #. <Comment desc="act:&#9;CHI se tourne pour être assis face à la fenêtre"/>
+<Sync time="10.273"/>euh yy [/] yy #. <Comment desc="mor:&#9;co|euh ."/>
+<Comment desc="pho:&#9;ø ɔʁut ɔʁut"/>
+<Comment desc="act:&#9;CHI lève le bras et regarde dans la direction de la fenêtre"/>
+</Turn>
+<Turn endTime="14.338" speaker="OBS" startTime="11.628">
+<Sync time="11.628"/>+&lt; c'est quoi qu(e) j' ouvre là #? <Comment desc="mor:&#9;v:exist|c'est pro:rel|quoi conj|que pro:subj|je v|ouvrir adv:place|là ?"/>
+</Turn>
+<Turn endTime="24.019" speaker="CHI OBS" startTime="14.338">
+<Sync time="14.338"/>
+<Who nb="2"/>yy #! <Comment desc="pho:&#9;ɔʁut"/>
+<Sync time="15.441"/>
+<Who nb="1"/>c'est quoi là qu(e) j' ai ouvert #? <Comment desc="mor:&#9;v:exist|c'est pro:int|quoi adv:place|là conj|que pro:subj|je v:aux|avoir v|ouvrir-PP ?"/>
+<Sync time="16.965"/>
+<Who nb="1"/>i@fs avions #! <Comment desc="mor:&#9;fs|i n|avion !"/>
+<Comment desc="pho:&#9;i ʃavjɔ̃"/>
+<Comment desc="int:&#9;avions/1/"/>
+<Sync time="19.701"/>
+<Who nb="2"/>c'est les volets qu(e) j' ai ouverts #. <Comment desc="mor:&#9;v:exist|c'est det|les&amp;PL n|volet conj|que pro:subj|je v:aux|avoir v|ouvrir-PP ."/>
+<Sync time="20.701"/>
+<Who nb="1"/>0 #. <Comment desc="act:&#9;CHI regarde dans la direction de OBS"/>
+</Turn>
+<Turn endTime="29.284" speaker="OBS" startTime="24.019">
+<Sync time="24.019"/>1 <Sync time="26.756"/>2 </Turn>
+<Turn endTime="34.970" speaker="CHI" startTime="29.284">
+<Sync time="29.284"/>3 <Sync time="32.404"/>4 <Sync time="32.536"/>5 </Turn>
+<Turn endTime="36.770" speaker="OBS" startTime="34.970">
+<Sync time="34.970"/>666 </Turn>
+</Section>
+</Episode>
+</Trans>

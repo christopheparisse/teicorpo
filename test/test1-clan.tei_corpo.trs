@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="TEST1-CLAN-480P" elapsed_time="48.19" scribe=" Gabrielle Miesse (february 2009) Françoise Bourdoux (september&#9;2009)" version="Chat" version_date="15-JUL-2008" xml:lang="fra">
+<Speakers>
+<Speaker id="CHI" name="Antoine" type="unknown"/>
+<Speaker id="OBS" name="Christophe" type="unknown"/>
+<Speaker id="MOT" name="Tania" type="unknown"/>
+<Speaker id="UNI" name="UNI"/>
+</Speakers>
+<Topics>
+<Topic desc="CHI et OBS sont dans la salon de CHI" id="d0"/>
+</Topics>
+<Episode air_date="d0" program="Situation">
+<Section endTime="48.190" startTime="0" type="report">
+<Turn endTime="2.350" speaker="OBS" startTime="0">
+<Sync time="0"/>et si j(e) faisais un+peu d(e) lumière #! <Comment desc="mor:&#9;conj|et conj|si pro:subj|je v:mdl|faire-IMPF adv|un+peu prep:art|de n|lumière !"/>
+<Comment desc="act:&#9;OBS se dirige vers la fenêtre"/>
+<Comment desc="com:&#9;il fait très sombre dans la pièce"/>
+<Comment desc="sit:&#9;CHI est assis à terre"/>
+</Turn>
+<Turn endTime="3.356" speaker="CHI" startTime="2.350">
+<Sync time="2.350"/>oui #! <Comment desc="mor:&#9;adv:yn|oui !"/>
+<Comment desc="pho:&#9;wi"/>
+<Comment desc="com:&#9;on entend CHI enlever ses chaussures"/>
+</Turn>
+<Turn endTime="7.562" speaker="OBS" startTime="3.356">
+<Sync time="3.356"/>ah de la lumière #! <Comment desc="mor:&#9;co|ah prep|de det|la&amp;FEM&amp;SING n|lumière !"/>
+<Comment desc="com:&#9;on entend OBS ouvrir les volets et la lumière arrive dans la pièce"/>
+</Turn>
+<Turn endTime="11.228" speaker="CHI" startTime="7.562">
+<Sync time="7.562"/>0 #. <Comment desc="act:&#9;CHI se tourne pour être assis face à la fenêtre"/>
+<Sync time="9.673"/>euh yy [/] yy #. <Comment desc="mor:&#9;co|euh ."/>
+<Comment desc="pho:&#9;ø ɔʁut ɔʁut"/>
+<Comment desc="act:&#9;CHI lève le bras et regarde dans la direction de la fenêtre"/>
+</Turn>
+<Turn endTime="14.338" speaker="OBS" startTime="11.228">
+<Sync time="11.228"/>+&lt; c'est quoi qu(e) j' ouvre là #? <Comment desc="mor:&#9;v:exist|c'est pro:rel|quoi conj|que pro:subj|je v|ouvrir adv:place|là ?"/>
+</Turn>
+<Turn endTime="15.441" speaker="CHI" startTime="14.338">
+<Sync time="14.338"/>yy #! <Comment desc="pho:&#9;ɔʁut"/>
+</Turn>
+<Turn endTime="16.965" speaker="OBS" startTime="15.441">
+<Sync time="15.441"/>c'est quoi là qu(e) j' ai ouvert #? <Comment desc="mor:&#9;v:exist|c'est pro:int|quoi adv:place|là conj|que pro:subj|je v:aux|avoir v|ouvrir-PP ?"/>
+</Turn>
+<Turn endTime="19.701" speaker="CHI" startTime="16.965">
+<Sync time="16.965"/>i@fs avions #! <Comment desc="mor:&#9;fs|i n|avion !"/>
+<Comment desc="pho:&#9;i ʃavjɔ̃"/>
+<Comment desc="int:&#9;avions/1/"/>
+</Turn>
+<Turn endTime="21.789" speaker="OBS" startTime="19.701">
+<Sync time="19.701"/>c'est les volets qu(e) j' ai ouverts #. <Comment desc="mor:&#9;v:exist|c'est det|les&amp;PL n|volet conj|que pro:subj|je v:aux|avoir v|ouvrir-PP ."/>
+</Turn>
+<Turn endTime="23.836" speaker="CHI" startTime="21.789">
+<Sync time="21.789"/>0 #. <Comment desc="act:&#9;CHI regarde dans la direction de OBS"/>
+<Sync time="22.486"/>li@fs avion #! <Comment desc="mor:&#9;fs|li n|avion !"/>
+<Comment desc="pho:&#9;li ʃavjɔ̃"/>
+<Comment desc="int:&#9;avions/1/"/>
+<Comment desc="com:&#9;OBS apparaît dans le champ de la caméra"/>
+</Turn>
+<Turn endTime="24.328" speaker="OBS" startTime="23.836">
+<Sync time="23.836"/>t(u) as des avions #? <Comment desc="mor:&#9;pro:subj|tu v:poss|avoir det|des&amp;PL n|avion ?"/>
+</Turn>
+<Turn endTime="25.685" speaker="CHI" startTime="24.328">
+<Sync time="24.328"/>0 #. <Comment desc="act:&#9;CHI regarde OBS"/>
+<Sync time="24.575"/>oui #. <Comment desc="mor:&#9;adv:yn|oui ."/>
+<Comment desc="pho:&#9;wiʃ"/>
+</Turn>
+<Turn endTime="27.185" speaker="OBS" startTime="25.685">
+<Sync time="25.685"/>les avions dans l(e) ciel #? <Comment desc="mor:&#9;det|les&amp;PL n|avion prep|dans det|le&amp;MASC&amp;SING n|ciel ?"/>
+<Comment desc="act:&#9;OBS déplace un peu la caméra"/>
+</Turn>
+<Turn endTime="33.051" speaker="CHI" startTime="27.185">
+<Sync time="27.185"/>&lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] là+haut #! <Comment desc="mor:&#9;adv:place|là+haut !"/>
+<Comment desc="pho:&#9;lalo lalo lalo lalo lalo lalo lao"/>
+<Comment desc="int:&#9;là haut/2/"/>
+<Comment desc="act:&#9;CHI se lève et court vers la baie vitrée"/>
+<Comment desc="xpnt:&#9;show le ciel de la main ouverte"/>
+</Turn>
+<Turn endTime="34.023" speaker="OBS" startTime="33.051">
+<Sync time="33.051"/>ah ben oui là+haut i(l)+y+a des avions #! <Comment desc="mor:&#9;co|ah co|ben adv:yn|oui adv:place|là+haut v:exist|il+y+a det|des&amp;PL n|avion !"/>
+<Comment desc="act:&#9;OBS s' approche de CHI"/>
+</Turn>
+<Turn endTime="34.355" speaker="CHI" startTime="34.023">
+<Sync time="34.023"/>0 #. <Comment desc="act:&#9;CHI regarde l' extérieur à travers la baie vitrée"/>
+</Turn>
+<Turn endTime="37.743" speaker="OBS" startTime="34.355">
+<Sync time="34.355"/>t(u) as tout+à+fait raison #! <Comment desc="mor:&#9;pro:subj|tu v:poss|avoir adv|tout+à+fait n|raison !"/>
+<Sync time="35.510"/>mais j(e) sais pas si i(l)+y+en+a en c(e) moment hein #! <Comment desc="mor:&#9;conj|mais pro:subj|je v:mdl|savoir adv:neg|pas conj|si v:exist|il+y+en+a prep|en det:dem|ce&amp;MASC&amp;SING n|moment co|hein !"/>
+</Turn>
+<Turn endTime="39.293" speaker="CHI" startTime="37.743">
+<Sync time="37.743"/>dehors #! <Comment desc="mor:&#9;adv:place|dehors !"/>
+<Comment desc="pho:&#9;dəlɔʁ"/>
+<Comment desc="act:&#9;CHI se retourne vers OBS"/>
+</Turn>
+<Turn endTime="40.521" speaker="OBS" startTime="39.293">
+<Sync time="39.293"/>dehors #! <Comment desc="mor:&#9;adv:place|dehors !"/>
+</Turn>
+<Turn endTime="42.995" speaker="CHI" startTime="40.521">
+<Sync time="40.521"/>0 [=! petit bruit] &lt;ɛ@fs monsieur&gt; [=! parle fort] #! <Comment desc="mor:&#9;fs|ɛ n|monsieur !"/>
+<Comment desc="pho:&#9;ɛ məʃjø"/>
+<Comment desc="act:&#9;CHI se retourne vers la baie vitrée regarde à l' extérieur puis regarde OBS"/>
+</Turn>
+<Turn endTime="46.310" speaker="OBS" startTime="42.995">
+<Sync time="42.995"/>i(l)+y+a des messieurs dehors ouais #! <Comment desc="mor:&#9;v:exist|il+y+a prep:art|des n|messieurs adv:place|dehors adv:yn|ouais !"/>
+<Sync time="44.430"/>hé t(u) as vu #? <Comment desc="mor:&#9;co|hé pro:subj|tu v:aux|avoir v|voir&amp;PP-MASC ?"/>
+<Comment desc="act:&#9;OBS s' approche de CHI"/>
+<Comment desc="com:&#9;OBS n' a plus la caméra en mains"/>
+</Turn>
+<Turn endTime="48.190" speaker="CHI" startTime="46.310">
+<Sync time="46.310"/>0 #. <Comment desc="act:&#9;CHI regarde vers la rue puis OBS puis vers la rue"/>
+</Turn>
+</Section>
+</Episode>
+</Trans>

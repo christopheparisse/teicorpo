@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9" xml:lang="fra">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier CLAN test1-clan.cha</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC">
+<note type="@Birth">of CHI:	10-APR-2006</note>
+<note type="scribe">coder - Gabrielle Miesse (february 2009) Françoise Bourdoux (september	2009)</note>
+</note>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="type">-</note>
+<note type="parent">-</note>
+<note type="code">CHI</note>
+</note>
+<note>
+<note type="type">-</note>
+<note type="parent">-</note>
+<note type="code">OBS</note>
+</note>
+<note>
+<note type="type">-</note>
+<note type="parent">-</note>
+<note type="code">MOT</note>
+</note>
+<note>
+<note type="type">-</note>
+<note type="parent">-</note>
+<note type="code">UNI</note>
+</note>
+<note>
+<note type="code">com</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+<note>
+<note type="code">mor</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+<note>
+<note type="code">act</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+<note>
+<note type="code">pho</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+<note>
+<note type="code">xpnt</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+<note>
+<note type="code">int</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+<note>
+<note type="code">sit</note>
+<note type="type">Symbolic_Association</note>
+<note type="parent">annotationBloc</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="video/quicktime" url="TEST1-CLAN-480P.mov"/>
+<date dur="48.19">15-JUL-2008</date>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<settingDesc>
+<place>
+<placeName>Antoine's home</placeName>
+</place>
+<setting xml:id="d0">
+<activity>CHI et OBS sont dans la salon de CHI</activity>
+</setting>
+</settingDesc>
+<particDesc>
+<listPerson>
+<person age="2;03.05" role="Target_Child" sex="1" source="Paris-Corpus_Antoine">
+<persName>Antoine</persName>
+<altGrp>
+<alt type="CHI"/>
+</altGrp>
+<langKnowledge>
+<langKnown tag="fra">fra</langKnown>
+</langKnowledge>
+</person>
+<person role="Observer" sex="1" source="Paris-Corpus_Antoine">
+<persName>Christophe</persName>
+<altGrp>
+<alt type="OBS"/>
+</altGrp>
+<langKnowledge>
+<langKnown tag="fra">fra</langKnown>
+</langKnowledge>
+</person>
+<person role="Mother" sex="2" source="Paris-Corpus_Antoine">
+<persName>Tania</persName>
+<altGrp>
+<alt type="MOT"/>
+</altGrp>
+<langKnowledge>
+<langKnown tag="fra">fra</langKnown>
+</langKnowledge>
+</person>
+<person role="Unidentified" source="Paris-Corpus_Antoine">
+<altGrp>
+<alt type="UNI"/>
+</altGrp>
+<langKnowledge>
+<langKnown tag="fra">fra</langKnown>
+</langKnowledge>
+</person>
+</listPerson>
+</particDesc>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Clan" version="Chat">
+<desc>Transcription created with CLAN/CHAT and converted to TEI_CORPO - Soft: 1.01</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/./test1-clan.cha</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/.tei_corpo.xml</item>
+<item>date: 2016-04-13:00:00:55</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="2.35" since="#T0" xml:id="T1"/>
+<when interval="3.356" since="#T0" xml:id="T2"/>
+<when interval="7.562" since="#T0" xml:id="T3"/>
+<when interval="9.673" since="#T0" xml:id="T4"/>
+<when interval="11.228" since="#T0" xml:id="T5"/>
+<when interval="14.338" since="#T0" xml:id="T6"/>
+<when interval="15.441" since="#T0" xml:id="T7"/>
+<when interval="16.965" since="#T0" xml:id="T8"/>
+<when interval="19.701" since="#T0" xml:id="T9"/>
+<when interval="21.789" since="#T0" xml:id="T10"/>
+<when interval="22.486" since="#T0" xml:id="T11"/>
+<when interval="23.836" since="#T0" xml:id="T12"/>
+<when interval="24.328" since="#T0" xml:id="T13"/>
+<when interval="24.575" since="#T0" xml:id="T14"/>
+<when interval="25.685" since="#T0" xml:id="T15"/>
+<when interval="27.185" since="#T0" xml:id="T16"/>
+<when interval="33.051" since="#T0" xml:id="T17"/>
+<when interval="34.023" since="#T0" xml:id="T18"/>
+<when interval="34.355" since="#T0" xml:id="T19"/>
+<when interval="35.51" since="#T0" xml:id="T20"/>
+<when interval="37.743" since="#T0" xml:id="T21"/>
+<when interval="39.293" since="#T0" xml:id="T22"/>
+<when interval="40.521" since="#T0" xml:id="T23"/>
+<when interval="42.995" since="#T0" xml:id="T24"/>
+<when interval="44.43" since="#T0" xml:id="T25"/>
+<when interval="46.31" since="#T0" xml:id="T26"/>
+<when interval="48.19" since="#T0" xml:id="T27"/>
+</timeline>
+<body>
+<div subtype="d0" type="Situation">
+<head>
+<note type="start">#T0</note>
+<note type="end">#T27</note>
+</head>
+<annotationBloc end="#T1" start="#T0" who="OBS" xml:id="au0">
+<u>
+<seg>et si j(e) faisais un+peu d(e) lumière #! </seg>
+</u>
+<spanGrp type="mor">
+<span>conj|et conj|si pro:subj|je v:mdl|faire-IMPF adv|un+peu prep:art|de n|lumière !</span>
+</spanGrp>
+<spanGrp type="act">
+<span>OBS se dirige vers la fenêtre</span>
+</spanGrp>
+<spanGrp type="com">
+<span>il fait très sombre dans la pièce</span>
+</spanGrp>
+<spanGrp type="sit">
+<span>CHI est assis à terre</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T1" who="CHI" xml:id="au1">
+<u>
+<seg>oui #! </seg>
+</u>
+<spanGrp type="mor">
+<span>adv:yn|oui !</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>wi</span>
+</spanGrp>
+<spanGrp type="com">
+<span>on entend CHI enlever ses chaussures</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="OBS" xml:id="au2">
+<u>
+<seg>ah de la lumière #! </seg>
+</u>
+<spanGrp type="mor">
+<span>co|ah prep|de det|la&amp;FEM&amp;SING n|lumière !</span>
+</spanGrp>
+<spanGrp type="com">
+<span>on entend OBS ouvrir les volets et la lumière arrive dans la pièce</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T3" who="CHI" xml:id="au3">
+<u>
+<seg>0 #. </seg>
+</u>
+<spanGrp type="act">
+<span>CHI se tourne pour être assis face à la fenêtre</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T5" start="#T4" who="CHI" xml:id="au4">
+<u>
+<seg>euh yy [/] yy #. </seg>
+</u>
+<spanGrp type="mor">
+<span>co|euh .</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>ø ɔʁut ɔʁut</span>
+</spanGrp>
+<spanGrp type="act">
+<span>CHI lève le bras et regarde dans la direction de la fenêtre</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="OBS" xml:id="au5">
+<u>
+<seg>+&lt; c'est quoi qu(e) j' ouvre là #? </seg>
+</u>
+<spanGrp type="mor">
+<span>v:exist|c'est pro:rel|quoi conj|que pro:subj|je v|ouvrir adv:place|là ?</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="CHI" xml:id="au6">
+<u>
+<seg>yy #! </seg>
+</u>
+<spanGrp type="pho">
+<span>ɔʁut</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="OBS" xml:id="au7">
+<u>
+<seg>c'est quoi là qu(e) j' ai ouvert #? </seg>
+</u>
+<spanGrp type="mor">
+<span>v:exist|c'est pro:int|quoi adv:place|là conj|que pro:subj|je v:aux|avoir v|ouvrir-PP ?</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T8" who="CHI" xml:id="au8">
+<u>
+<seg>i@fs avions #! </seg>
+</u>
+<spanGrp type="mor">
+<span>fs|i n|avion !</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>i ʃavjɔ̃</span>
+</spanGrp>
+<spanGrp type="int">
+<span>avions/1/</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="OBS" xml:id="au9">
+<u>
+<seg>c'est les volets qu(e) j' ai ouverts #. </seg>
+</u>
+<spanGrp type="mor">
+<span>v:exist|c'est det|les&amp;PL n|volet conj|que pro:subj|je v:aux|avoir v|ouvrir-PP .</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T11" start="#T10" who="CHI" xml:id="au10">
+<u>
+<seg>0 #. </seg>
+</u>
+<spanGrp type="act">
+<span>CHI regarde dans la direction de OBS</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="CHI" xml:id="au11">
+<u>
+<seg>li@fs avion #! </seg>
+</u>
+<spanGrp type="mor">
+<span>fs|li n|avion !</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>li ʃavjɔ̃</span>
+</spanGrp>
+<spanGrp type="int">
+<span>avions/1/</span>
+</spanGrp>
+<spanGrp type="com">
+<span>OBS apparaît dans le champ de la caméra</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="OBS" xml:id="au12">
+<u>
+<seg>t(u) as des avions #? </seg>
+</u>
+<spanGrp type="mor">
+<span>pro:subj|tu v:poss|avoir det|des&amp;PL n|avion ?</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="CHI" xml:id="au13">
+<u>
+<seg>0 #. </seg>
+</u>
+<spanGrp type="act">
+<span>CHI regarde OBS</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T15" start="#T14" who="CHI" xml:id="au14">
+<u>
+<seg>oui #. </seg>
+</u>
+<spanGrp type="mor">
+<span>adv:yn|oui .</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>wiʃ</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="OBS" xml:id="au15">
+<u>
+<seg>les avions dans l(e) ciel #? </seg>
+</u>
+<spanGrp type="mor">
+<span>det|les&amp;PL n|avion prep|dans det|le&amp;MASC&amp;SING n|ciel ?</span>
+</spanGrp>
+<spanGrp type="act">
+<span>OBS déplace un peu la caméra</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T17" start="#T16" who="CHI" xml:id="au16">
+<u>
+<seg>&lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] &lt;là+haut&gt; [/] là+haut #! </seg>
+</u>
+<spanGrp type="mor">
+<span>adv:place|là+haut !</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>lalo lalo lalo lalo lalo lalo lao</span>
+</spanGrp>
+<spanGrp type="int">
+<span>là haut/2/</span>
+</spanGrp>
+<spanGrp type="act">
+<span>CHI se lève et court vers la baie vitrée</span>
+</spanGrp>
+<spanGrp type="xpnt">
+<span>show le ciel de la main ouverte</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="OBS" xml:id="au17">
+<u>
+<seg>ah ben oui là+haut i(l)+y+a des avions #! </seg>
+</u>
+<spanGrp type="mor">
+<span>co|ah co|ben adv:yn|oui adv:place|là+haut v:exist|il+y+a det|des&amp;PL n|avion !</span>
+</spanGrp>
+<spanGrp type="act">
+<span>OBS s' approche de CHI</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T19" start="#T18" who="CHI" xml:id="au18">
+<u>
+<seg>0 #. </seg>
+</u>
+<spanGrp type="act">
+<span>CHI regarde l' extérieur à travers la baie vitrée</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T20" start="#T19" who="OBS" xml:id="au19">
+<u>
+<seg>t(u) as tout+à+fait raison #! </seg>
+</u>
+<spanGrp type="mor">
+<span>pro:subj|tu v:poss|avoir adv|tout+à+fait n|raison !</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T21" start="#T20" who="OBS" xml:id="au20">
+<u>
+<seg>mais j(e) sais pas si i(l)+y+en+a en c(e) moment hein #! </seg>
+</u>
+<spanGrp type="mor">
+<span>conj|mais pro:subj|je v:mdl|savoir adv:neg|pas conj|si v:exist|il+y+en+a prep|en det:dem|ce&amp;MASC&amp;SING n|moment co|hein !</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T22" start="#T21" who="CHI" xml:id="au21">
+<u>
+<seg>dehors #! </seg>
+</u>
+<spanGrp type="mor">
+<span>adv:place|dehors !</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>dəlɔʁ</span>
+</spanGrp>
+<spanGrp type="act">
+<span>CHI se retourne vers OBS</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T23" start="#T22" who="OBS" xml:id="au22">
+<u>
+<seg>dehors #! </seg>
+</u>
+<spanGrp type="mor">
+<span>adv:place|dehors !</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T24" start="#T23" who="CHI" xml:id="au23">
+<u>
+<seg>0 [=! petit bruit] &lt;ɛ@fs monsieur&gt; [=! parle fort] #! </seg>
+</u>
+<spanGrp type="mor">
+<span>fs|ɛ n|monsieur !</span>
+</spanGrp>
+<spanGrp type="pho">
+<span>ɛ məʃjø</span>
+</spanGrp>
+<spanGrp type="act">
+<span>CHI se retourne vers la baie vitrée regarde à l' extérieur puis regarde OBS</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T25" start="#T24" who="OBS" xml:id="au24">
+<u>
+<seg>i(l)+y+a des messieurs dehors ouais #! </seg>
+</u>
+<spanGrp type="mor">
+<span>v:exist|il+y+a prep:art|des n|messieurs adv:place|dehors adv:yn|ouais !</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T26" start="#T25" who="OBS" xml:id="au25">
+<u>
+<seg>hé t(u) as vu #? </seg>
+</u>
+<spanGrp type="mor">
+<span>co|hé pro:subj|tu v:aux|avoir v|voir&amp;PP-MASC ?</span>
+</spanGrp>
+<spanGrp type="act">
+<span>OBS s' approche de CHI</span>
+</spanGrp>
+<spanGrp type="com">
+<span>OBS n' a plus la caméra en mains</span>
+</spanGrp>
+</annotationBloc>
+<annotationBloc end="#T27" start="#T26" who="CHI" xml:id="au26">
+<u>
+<seg>0 #. </seg>
+</u>
+<spanGrp type="act">
+<span>CHI regarde vers la rue puis OBS puis vers la rue</span>
+</spanGrp>
+</annotationBloc>
+</div>
+</body>
+</text>
+</TEI>

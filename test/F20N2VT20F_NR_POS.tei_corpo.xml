@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier Transcriber F20N2VT20F_NR_POS.TextGrid</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC"/>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">TRANSLIT</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">POS</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">WORDS</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">POSspec</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">LEMMA</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">POSfit</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="unknown" url="/Users/cp/OneDrive/christopheparisse/tei-corpo/test"/>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<particDesc>
+<listPerson>
+<person>
+<altGrp>
+<alt type="TRANSLIT"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="POS"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="WORDS"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="POSspec"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="LEMMA"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="POSfit"/>
+</altGrp>
+</person>
+</listPerson>
+</particDesc>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Praat" version="1.01">
+<desc>Transcription created with Elan and converted to TEI_CORPO</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/./F20N2VT20F_NR_POS.TextGrid</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/.tei_corpo.xml</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="0.5084712" since="#T0" xml:id="T1"/>
+<when interval="0.596" since="#T0" xml:id="T4"/>
+<when interval="0.676" since="#T0" xml:id="T5"/>
+<when interval="0.8869265" since="#T0" xml:id="T6"/>
+<when interval="1.0571695" since="#T0" xml:id="T7"/>
+<when interval="1.296" since="#T0" xml:id="T8"/>
+<when interval="1.4516166" since="#T0" xml:id="T9"/>
+<when interval="1.6211624" since="#T0" xml:id="T10"/>
+<when interval="2.026" since="#T0" xml:id="T11"/>
+<when interval="2.1729213" since="#T0" xml:id="T12"/>
+<when interval="2.366" since="#T0" xml:id="T13"/>
+<when interval="2.526" since="#T0" xml:id="T14"/>
+<when interval="2.586" since="#T0" xml:id="T15"/>
+<when interval="2.696" since="#T0" xml:id="T16"/>
+<when interval="2.876" since="#T0" xml:id="T17"/>
+<when interval="3.036" since="#T0" xml:id="T18"/>
+<when interval="3.1711885" since="#T0" xml:id="T2"/>
+<when interval="3.673875" since="#T0" xml:id="T3"/>
+</timeline>
+<body>
+<div>
+<head>
+<note type="start">#T0</note>
+<note type="end">#T3</note>
+</head>
+<annotationBloc end="#T1" start="#T0" who="TRANSLIT" xml:id="au2669">
+<u>
+<seg>#____</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T1" who="TRANSLIT" xml:id="au2670">
+<u>
+<seg>en de hele dom staat vol met toeristen en daarna mag je d''r niet meer in . __F20N2VT20F</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="TRANSLIT" xml:id="au2671">
+<u>
+<seg>#____</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1" start="#T0" who="POS" xml:id="au2672">
+<u>
+<seg>#__-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T1" who="POS" xml:id="au2673">
+<u>
+<seg>VG__F20N2VT20F1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T5" start="#T4" who="POS" xml:id="au2674">
+<u>
+<seg>LID__F20N2VT20F2</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="POS" xml:id="au2675">
+<u>
+<seg>ADJ__F20N2VT20F3</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="POS" xml:id="au2676">
+<u>
+<seg>N__F20N2VT20F4</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="POS" xml:id="au2677">
+<u>
+<seg>WW__F20N2VT20F5</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T8" who="POS" xml:id="au2678">
+<u>
+<seg>ADJ__F20N2VT20F6</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="POS" xml:id="au2679">
+<u>
+<seg>VZ=__F20N2VT20F7</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T11" start="#T10" who="POS" xml:id="au2680">
+<u>
+<seg>=N__F20N2VT20F8</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="POS" xml:id="au2681">
+<u>
+<seg>VG__F20N2VT20F9</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="POS" xml:id="au2682">
+<u>
+<seg>BW__F20N2VT20F10</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="POS" xml:id="au2683">
+<u>
+<seg>WW__F20N2VT20F11</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T15" start="#T14" who="POS" xml:id="au2684">
+<u>
+<seg>VNW__F20N2VT20F12</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="POS" xml:id="au2685">
+<u>
+<seg>VNW__F20N2VT20F13</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T17" start="#T16" who="POS" xml:id="au2686">
+<u>
+<seg>BW__F20N2VT20F14</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="POS" xml:id="au2687">
+<u>
+<seg>VNW__F20N2VT20F15</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T18" who="POS" xml:id="au2688">
+<u>
+<seg>VZ__F20N2VT20F16</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="POS" xml:id="au2689">
+<u>
+<seg>#__F20N2VT20F-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1" start="#T0" who="WORDS" xml:id="au2690">
+<u>
+<seg>#__-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T1" who="WORDS" xml:id="au2691">
+<u>
+<seg>en__F20N2VT20F1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T5" start="#T4" who="WORDS" xml:id="au2692">
+<u>
+<seg>de__F20N2VT20F2</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="WORDS" xml:id="au2693">
+<u>
+<seg>hele__F20N2VT20F3</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="WORDS" xml:id="au2694">
+<u>
+<seg>dom__F20N2VT20F4</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="WORDS" xml:id="au2695">
+<u>
+<seg>staat__F20N2VT20F5</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T8" who="WORDS" xml:id="au2696">
+<u>
+<seg>vol__F20N2VT20F6</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="WORDS" xml:id="au2697">
+<u>
+<seg>met=__F20N2VT20F7</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T11" start="#T10" who="WORDS" xml:id="au2698">
+<u>
+<seg>=toeristen__F20N2VT20F8</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="WORDS" xml:id="au2699">
+<u>
+<seg>en__F20N2VT20F9</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="WORDS" xml:id="au2700">
+<u>
+<seg>daarna__F20N2VT20F10</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="WORDS" xml:id="au2701">
+<u>
+<seg>mag__F20N2VT20F11</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T15" start="#T14" who="WORDS" xml:id="au2702">
+<u>
+<seg>je__F20N2VT20F12</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="WORDS" xml:id="au2703">
+<u>
+<seg>d''r__F20N2VT20F13</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T17" start="#T16" who="WORDS" xml:id="au2704">
+<u>
+<seg>niet__F20N2VT20F14</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="WORDS" xml:id="au2705">
+<u>
+<seg>meer__F20N2VT20F15</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T18" who="WORDS" xml:id="au2706">
+<u>
+<seg>in__F20N2VT20F16</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="WORDS" xml:id="au2707">
+<u>
+<seg>#__F20N2VT20F-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1" start="#T0" who="POSspec" xml:id="au2708">
+<u>
+<seg>#__-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T1" who="POSspec" xml:id="au2709">
+<u>
+<seg>neven__F20N2VT20F1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T5" start="#T4" who="POSspec" xml:id="au2710">
+<u>
+<seg>bep,stan,rest__F20N2VT20F2</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="POSspec" xml:id="au2711">
+<u>
+<seg>prenom,basis,met-e,stan__F20N2VT20F3</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="POSspec" xml:id="au2712">
+<u>
+<seg>soort,ev,basis,zijd,stan__F20N2VT20F4</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="POSspec" xml:id="au2713">
+<u>
+<seg>pv,tgw,met-t__F20N2VT20F5</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T8" who="POSspec" xml:id="au2714">
+<u>
+<seg>vrij,basis,zonder__F20N2VT20F6</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="POSspec" xml:id="au2715">
+<u>
+<seg>init=__F20N2VT20F7</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T11" start="#T10" who="POSspec" xml:id="au2716">
+<u>
+<seg>=soort,mv,basis__F20N2VT20F8</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="POSspec" xml:id="au2717">
+<u>
+<seg>neven__F20N2VT20F9</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="POSspec" xml:id="au2718">
+<u>
+<seg>__F20N2VT20F10</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="POSspec" xml:id="au2719">
+<u>
+<seg>pv,tgw,ev__F20N2VT20F11</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T15" start="#T14" who="POSspec" xml:id="au2720">
+<u>
+<seg>pers,pron,nomin,red,2v,ev__F20N2VT20F12</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="POSspec" xml:id="au2721">
+<u>
+<seg>aanw,adv-pron,stan,red,3,getal__F20N2VT20F13</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T17" start="#T16" who="POSspec" xml:id="au2722">
+<u>
+<seg>__F20N2VT20F14</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="POSspec" xml:id="au2723">
+<u>
+<seg>onbep,grad,stan,vrij,zonder,comp__F20N2VT20F15</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T18" who="POSspec" xml:id="au2724">
+<u>
+<seg>fin__F20N2VT20F16</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="POSspec" xml:id="au2725">
+<u>
+<seg>#__F20N2VT20F-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1" start="#T0" who="LEMMA" xml:id="au2726">
+<u>
+<seg>#__-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T1" who="LEMMA" xml:id="au2727">
+<u>
+<seg>en__F20N2VT20F1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T5" start="#T4" who="LEMMA" xml:id="au2728">
+<u>
+<seg>de__F20N2VT20F2</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="LEMMA" xml:id="au2729">
+<u>
+<seg>heel__F20N2VT20F3</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="LEMMA" xml:id="au2730">
+<u>
+<seg>dom__F20N2VT20F4</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="LEMMA" xml:id="au2731">
+<u>
+<seg>staan__F20N2VT20F5</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T8" who="LEMMA" xml:id="au2732">
+<u>
+<seg>vol__F20N2VT20F6</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="LEMMA" xml:id="au2733">
+<u>
+<seg>met=__F20N2VT20F7</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T11" start="#T10" who="LEMMA" xml:id="au2734">
+<u>
+<seg>=toerist__F20N2VT20F8</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="LEMMA" xml:id="au2735">
+<u>
+<seg>en__F20N2VT20F9</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="LEMMA" xml:id="au2736">
+<u>
+<seg>daarna__F20N2VT20F10</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="LEMMA" xml:id="au2737">
+<u>
+<seg>mogen__F20N2VT20F11</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T15" start="#T14" who="LEMMA" xml:id="au2738">
+<u>
+<seg>je__F20N2VT20F12</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="LEMMA" xml:id="au2739">
+<u>
+<seg>er__F20N2VT20F13</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T17" start="#T16" who="LEMMA" xml:id="au2740">
+<u>
+<seg>niet__F20N2VT20F14</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="LEMMA" xml:id="au2741">
+<u>
+<seg>veel__F20N2VT20F15</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T18" who="LEMMA" xml:id="au2742">
+<u>
+<seg>in__F20N2VT20F16</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="LEMMA" xml:id="au2743">
+<u>
+<seg>#__F20N2VT20F-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T1" start="#T0" who="POSfit" xml:id="au2744">
+<u>
+<seg>#__-A1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T4" start="#T1" who="POSfit" xml:id="au2745">
+<u>
+<seg>99.96__F20N2VT20F1</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T5" start="#T4" who="POSfit" xml:id="au2746">
+<u>
+<seg>99.87__F20N2VT20F2</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T6" start="#T5" who="POSfit" xml:id="au2747">
+<u>
+<seg>100.00__F20N2VT20F3</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T7" start="#T6" who="POSfit" xml:id="au2748">
+<u>
+<seg>66.67__F20N2VT20F4</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T8" start="#T7" who="POSfit" xml:id="au2749">
+<u>
+<seg>100.00__F20N2VT20F5</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T9" start="#T8" who="POSfit" xml:id="au2750">
+<u>
+<seg>100.00__F20N2VT20F6</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T10" start="#T9" who="POSfit" xml:id="au2751">
+<u>
+<seg>99.88=__F20N2VT20F7</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T11" start="#T10" who="POSfit" xml:id="au2752">
+<u>
+<seg>=100.00__F20N2VT20F8</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T12" start="#T11" who="POSfit" xml:id="au2753">
+<u>
+<seg>99.96__F20N2VT20F9</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T13" start="#T12" who="POSfit" xml:id="au2754">
+<u>
+<seg>100.00__F20N2VT20F10</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T14" start="#T13" who="POSfit" xml:id="au2755">
+<u>
+<seg>100.00__F20N2VT20F11</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T15" start="#T14" who="POSfit" xml:id="au2756">
+<u>
+<seg>99.75__F20N2VT20F12</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T16" start="#T15" who="POSfit" xml:id="au2757">
+<u>
+<seg>98.96__F20N2VT20F13</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T17" start="#T16" who="POSfit" xml:id="au2758">
+<u>
+<seg>100.00__F20N2VT20F14</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T18" start="#T17" who="POSfit" xml:id="au2759">
+<u>
+<seg>100.00__F20N2VT20F15</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T2" start="#T18" who="POSfit" xml:id="au2760">
+<u>
+<seg>100.00__F20N2VT20F16</seg>
+</u>
+</annotationBloc>
+<annotationBloc end="#T3" start="#T2" who="POSfit" xml:id="au2761">
+<u>
+<seg>#__F20N2VT20F-A1</seg>
+</u>
+</annotationBloc>
+</div>
+</body>
+</text>
+</TEI>

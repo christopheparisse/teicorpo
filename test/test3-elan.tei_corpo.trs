@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans audio_filename="test3-elan" version="2.8">
+<Speakers>
+<Speaker id="MainLine" name="Joe"/>
+<Speaker id="Words" name="Words"/>
+<Speaker id="Syllables" name="Syllables"/>
+<Speaker id="Phones" name="Phones"/>
+<Speaker id="Categories" name="Categories"/>
+<Speaker id="Morphology" name="Morphology"/>
+<Speaker id="WordsInfo" name="WordsInfo"/>
+<Speaker id="PhonesInfo" name="PhonesInfo"/>
+<Speaker id="Translation" name="Alfred"/>
+<Speaker id="Stress" name="Stress"/>
+</Speakers>
+<Episode>
+<Section endTime="4.009" startTime="0" type="report">
+<Turn endTime="4.009" speaker="MainLine" startTime="0">
+<Sync time="0"/>début<Sync time="0.920"/>this is a first utterance (.) as an example !<Comment desc="Translation:&#9;c'est un énoncé (.) qui sert d'exemple !"/>
+<Comment desc="Words:&#9;this&#10;pointer&#10;&#10;&#10;MotVide&#10;TH&#10;H&#10;IS&#10;&#10;&#10;&#10;&#10;CVC&#10;ð&#10;ɪ&#10;vowel&#10;&#10;&#10;s&#10;&#10;&#10;accent1&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;pointer"/>
+<Comment desc="Words:&#9;MotVide&#10;TH&#10;H&#10;IS&#10;&#10;"/>
+<Comment desc="Words:&#9;TH"/>
+<Comment desc="Words:&#9;H"/>
+<Comment desc="Words:&#9;IS"/>
+<Comment desc="Words:&#9;CVC&#10;ð&#10;ɪ&#10;vowel&#10;&#10;&#10;s&#10;&#10;&#10;accent1&#10;&#10;"/>
+<Comment desc="Words:&#9;ð"/>
+<Comment desc="Words:&#9;ɪ&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;s"/>
+<Comment desc="Words:&#9;accent1"/>
+<Comment desc="Words:&#9;is&#10;Verbe&#10;&#10;&#10;VC&#10;ɪ&#10;vowel&#10;&#10;&#10;z&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;Verbe"/>
+<Comment desc="Words:&#9;VC&#10;ɪ&#10;vowel&#10;&#10;&#10;z&#10;&#10;"/>
+<Comment desc="Words:&#9;ɪ&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;z"/>
+<Comment desc="Words:&#9;a&#10;MotVide&#10;&#10;&#10;V&#10;a&#10;vowel&#10;&#10;&#10;&#10;&#10;accent2&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;MotVide"/>
+<Comment desc="Words:&#9;V&#10;a&#10;vowel&#10;&#10;&#10;&#10;&#10;accent2&#10;&#10;"/>
+<Comment desc="Words:&#9;a&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;accent2"/>
+<Comment desc="Words:&#9;first&#10;intensifier&#10;&#10;&#10;Adjectif&#10;&#10;&#10;CVCC&#10;f&#10;ə&#10;vowel&#10;&#10;&#10;r&#10;s&#10;t&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;intensifier"/>
+<Comment desc="Words:&#9;Adjectif"/>
+<Comment desc="Words:&#9;CVCC&#10;f&#10;ə&#10;vowel&#10;&#10;&#10;r&#10;s&#10;t&#10;&#10;"/>
+<Comment desc="Words:&#9;f"/>
+<Comment desc="Words:&#9;ə&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;r"/>
+<Comment desc="Words:&#9;s"/>
+<Comment desc="Words:&#9;t"/>
+<Comment desc="Words:&#9;utterance&#10;Nom&#10;utt&#10;ran&#10;ce&#10;&#10;&#10;&#10;&#10;V&#10;ə&#10;t&#10;&#10;&#10;accent3&#10;&#10;&#10;CV&#10;t&#10;ə&#10;vowel&#10;&#10;&#10;r&#10;&#10;&#10;CVCC&#10;ə&#10;vowel&#10;&#10;&#10;n&#10;s&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;Nom&#10;utt&#10;ran&#10;ce&#10;&#10;"/>
+<Comment desc="Words:&#9;utt"/>
+<Comment desc="Words:&#9;ran"/>
+<Comment desc="Words:&#9;ce"/>
+<Comment desc="Words:&#9;V&#10;ə&#10;t&#10;&#10;&#10;accent3&#10;&#10;"/>
+<Comment desc="Words:&#9;ə"/>
+<Comment desc="Words:&#9;t"/>
+<Comment desc="Words:&#9;accent3"/>
+<Comment desc="Words:&#9;CV&#10;t&#10;ə&#10;vowel&#10;&#10;&#10;r&#10;&#10;"/>
+<Comment desc="Words:&#9;t"/>
+<Comment desc="Words:&#9;ə&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;r"/>
+<Comment desc="Words:&#9;CVCC&#10;ə&#10;vowel&#10;&#10;&#10;n&#10;s&#10;&#10;"/>
+<Comment desc="Words:&#9;ə&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;n"/>
+<Comment desc="Words:&#9;s"/>
+<Comment desc="Words:&#9;(.)"/>
+<Comment desc="Words:&#9;as&#10;MotVide&#10;&#10;&#10;VC&#10;a&#10;vowel&#10;&#10;&#10;z&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;MotVide"/>
+<Comment desc="Words:&#9;VC&#10;a&#10;vowel&#10;&#10;&#10;z&#10;&#10;"/>
+<Comment desc="Words:&#9;a&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;z"/>
+<Comment desc="Words:&#9;an&#10;MotVide&#10;&#10;&#10;VC&#10;ə&#10;vowel&#10;&#10;&#10;n&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;MotVide"/>
+<Comment desc="Words:&#9;VC&#10;ə&#10;vowel&#10;&#10;&#10;n&#10;&#10;"/>
+<Comment desc="Words:&#9;ə&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;n"/>
+<Comment desc="Words:&#9;example&#10;Nom&#10;&#10;&#10;VC&#10;i&#10;vowel&#10;&#10;&#10;g&#10;&#10;&#10;CVC&#10;z&#10;a&#10;vowel&#10;&#10;&#10;a&#10;vowel&#10;&#10;&#10;m&#10;&#10;&#10;CVC&#10;p&#10;ə&#10;vowel&#10;&#10;&#10;l&#10;&#10;&#10;&#10;"/>
+<Comment desc="Words:&#9;Nom"/>
+<Comment desc="Words:&#9;VC&#10;i&#10;vowel&#10;&#10;&#10;g&#10;&#10;"/>
+<Comment desc="Words:&#9;i&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;g"/>
+<Comment desc="Words:&#9;CVC&#10;z&#10;a&#10;vowel&#10;&#10;&#10;a&#10;vowel&#10;&#10;&#10;m&#10;&#10;"/>
+<Comment desc="Words:&#9;z"/>
+<Comment desc="Words:&#9;a&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;a&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;m"/>
+<Comment desc="Words:&#9;CVC&#10;p&#10;ə&#10;vowel&#10;&#10;&#10;l&#10;&#10;"/>
+<Comment desc="Words:&#9;p"/>
+<Comment desc="Words:&#9;ə&#10;vowel&#10;&#10;"/>
+<Comment desc="Words:&#9;vowel"/>
+<Comment desc="Words:&#9;l"/>
+</Turn>
+</Section>
+</Episode>
+</Trans>

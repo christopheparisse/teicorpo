@@ -1,0 +1,1814 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 865.10846875000004 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "96aer1gt_Transcript-graphe" 
+        xmin = 0 
+        xmax = 865.10846875000004 
+        intervals: size = 149 
+        intervals [1]:
+            xmin = 0 
+            xmax = 4.0457352920343954 
+            text = "(bruit de fond)" 
+        intervals [2]:
+            xmin = 4.0457352920343954 
+            xmax = 6.212512926577042 
+            text = "E: (X) ça va être vite fait, on va essayer, on va essayer de, " 
+        intervals [3]:
+            xmin = 6.212512926577042 
+            xmax = 7.0379520254504318 
+            text = "E: speeder." 
+        intervals [4]:
+            xmin = 7.0379520254504318 
+            xmax = 8.4034999999999993 
+            text = "ER: Tu as des questions ?" 
+        intervals [5]:
+            xmin = 8.4034999999999993 
+            xmax = 10.88725 
+            text = "E: Ouais, ben je remplis une petite fiche, en fait." 
+        intervals [6]:
+            xmin = 10.88725 
+            xmax = 24.200206622859653 
+            text = "(bruit de fond)" 
+        intervals [7]:
+            xmin = 24.200206622859653 
+            xmax = 25.746124999999999 
+            text = "E: Alors, Mademoiselle ?" 
+        intervals [8]:
+            xmin = 25.746124999999999 
+            xmax = 29.636624999999999 
+            text = "E: C'est, votre nom c'est quoi, en fait <ER: Emmanuelle. Mais ça marche pas, là, ton truc ?> ?" 
+        intervals [9]:
+            xmin = 29.636624999999999 
+            xmax = 30.344570585260456 
+            text = "ER: Ah, si, ça marche." 
+        intervals [10]:
+            xmin = 30.344570585260456 
+            xmax = 33.405573910249274 
+            text = "(bruit de fond)" 
+        intervals [11]:
+            xmin = 33.405573910249274 
+            xmax = 34.990250000000003 
+            text = "E: (XX) Emmanuelle ?" 
+        intervals [12]:
+            xmin = 34.990250000000003 
+            xmax = 36.363397347878923 
+            text = "(bruit de fond)" 
+        intervals [13]:
+            xmin = 36.363397347878923 
+            xmax = 37.257623038325093 
+            text = "E: Emmanuelle comment ?" 
+        intervals [14]:
+            xmin = 37.257623038325093 
+            xmax = 39.474625000000003 
+            text = "ER: Emmanuelle Reynaud, R.E.Y.," 
+        intervals [15]:
+            xmin = 39.474625000000003 
+            xmax = 41.412000000000006 
+            text = "ER: R.E.Y.N.A.U.D." 
+        intervals [16]:
+            xmin = 41.412000000000006 
+            xmax = 42.313437518924609 
+            text = "E: N.A.U.D. ?" 
+        intervals [17]:
+            xmin = 42.313437518924609 
+            xmax = 43.287125000000003 
+            text = "ER: (onomatopée d'approbation : Mm.)" 
+        intervals [18]:
+            xmin = 43.287125000000003 
+            xmax = 44.833750000000002 
+            text = "E: Alors, tu es née ? " 
+        intervals [19]:
+            xmin = 44.833750000000002 
+            xmax = 46.849187500000006 
+            text = "ER: A/. Le vingt-quatre, " 
+        intervals [20]:
+            xmin = 46.849187500000006 
+            xmax = 47.818187500000008 
+            text = "ER: six, " 
+        intervals [21]:
+            xmin = 47.818187500000008 
+            xmax = 48.881375000000006 
+            text = "ER: soixante-quinze. " 
+        intervals [22]:
+            xmin = 48.881375000000006 
+            xmax = 50.602221803444898 
+            text = "(bruit de fond)" 
+        intervals [23]:
+            xmin = 50.602221803444898 
+            xmax = 51.462054198104681 
+            text = "ER: A Bron. " 
+        intervals [24]:
+            xmin = 51.462054198104681 
+            xmax = 52.180937500000006 
+            text = "E: A Bron ? " 
+        intervals [25]:
+            xmin = 52.180937500000006 
+            xmax = 53.458500000000001 
+            text = "E: C'est où, Bron ?" 
+        intervals [26]:
+            xmin = 53.458500000000001 
+            xmax = 55.239562500000005 
+            text = "ER: C'est une banlieue de Lyon." 
+        intervals [27]:
+            xmin = 55.239562500000005 
+            xmax = 57.567500000000003 
+            text = "E: C'est/, ça c'est où, euh ?" 
+        intervals [28]:
+            xmin = 57.567500000000003 
+            xmax = 59.207625000000007 
+            text = "ER: C'est, euh, l/." 
+        intervals [29]:
+            xmin = 59.207625000000007 
+            xmax = 60.818299355685539 
+            text = "ER: C'est à l'est lyonnais, " 
+        intervals [30]:
+            xmin = 60.818299355685539 
+            xmax = 64.065875000000006 
+            text = "ER: c'est entre, euh, Villeurbanne et Vaux-en-velun. A peu près." 
+        intervals [31]:
+            xmin = 64.065875000000006 
+            xmax = 72.268750000000011 
+            text = "(bruit de fond)" 
+        intervals [32]:
+            xmin = 72.268750000000011 
+            xmax = 73.830500000000001 
+            text = "E: Euh, tu as toujours habité Lyon, ou ?" 
+        intervals [33]:
+            xmin = 73.830500000000001 
+            xmax = 75.052250000000001 
+            text = "ER: Ouais. O<E: Ouais ?> Ouais, ouais." 
+        intervals [34]:
+            xmin = 75.052250000000001 
+            xmax = 76.596043747282152 
+            text = "E: Tu as, tu as, " 
+        intervals [35]:
+            xmin = 76.596043747282152 
+            xmax = 77.971775578737805 
+            text = "E: habité Bron, euh ?" 
+        intervals [36]:
+            xmin = 77.971775578737805 
+            xmax = 79.037967748115932 
+            text = "ER: Non, jamais en fait, euh, " 
+        intervals [37]:
+            xmin = 79.037967748115932 
+            xmax = 80.51687946693076 
+            text = "ER: la clinique où je suis née était à Bron, " 
+        intervals [38]:
+            xmin = 80.51687946693076 
+            xmax = 82.973687500000011 
+            text = "ER: mais <E: Ouais.> mes parents habitaient déjà à Lyon, donc on ne, euh <E: Ils hab/.>." 
+        intervals [39]:
+            xmin = 82.973687500000011 
+            xmax = 85.864249999999998 
+            text = "ER: Ils y sont allés pour l'accouchement, ils sont repartis <E: Ouais, ouais.>, donc, euh, bon." 
+        intervals [40]:
+            xmin = 85.864249999999998 
+            xmax = 88.674125000000004 
+            text = "E: C'est qu'une clinique pour, euh, pour accoucher, euh." 
+        intervals [41]:
+            xmin = 88.674125000000004 
+            xmax = 93.762062499999999 
+            text = "ER: Ben euh, ouais parce qu'en fait, euh, l/, l'accoucheur de ma mère il était, euh, il travaillait là-bas, donc <E: Ouais ?>, euh." 
+        intervals [42]:
+            xmin = 93.762062499999999 
+            xmax = 95.511875000000003 
+            text = "ER: (X) voilà quoi (rires)." 
+        intervals [43]:
+            xmin = 95.511875000000003 
+            xmax = 98.636750000000006 
+            text = "E: Et, euh, euh, donc ils habitaient Lyon, où ça ?" 
+        intervals [44]:
+            xmin = 98.636750000000006 
+            xmax = 100.2774375 
+            text = "ER: Lyon deuxième, en face Bellecour." 
+        intervals [45]:
+            xmin = 100.2774375 
+            xmax = 106.08968750000001 
+            text = "(bruit de fond)" 
+        intervals [46]:
+            xmin = 106.08968750000001 
+            xmax = 107.53344765898232 
+            text = "E: Tu as, toujours vécu là-bas, euh ?" 
+        intervals [47]:
+            xmin = 107.53344765898232 
+            xmax = 109.76901188509775 
+            text = "ER: J'ai vécu là-bas jusqu'à ce que j'ai euh, vingt ans." 
+        intervals [48]:
+            xmin = 109.76901188509775 
+            xmax = 110.7320241671167 
+            text = "(bruit de fond)" 
+        intervals [49]:
+            xmin = 110.7320241671167 
+            xmax = 113.24273475952327 
+            text = "ER: Donc j'ai habité dans le même appart/ jusquà, mes vingt ans, " 
+        intervals [50]:
+            xmin = 113.24273475952327 
+            xmax = 115.1830625 
+            text = "ER: après j'ai pris un appart/ toute seule, euh, " 
+        intervals [51]:
+            xmin = 115.1830625 
+            xmax = 116.18073829209463 
+            text = "ER: aux Terreaux." 
+        intervals [52]:
+            xmin = 116.18073829209463 
+            xmax = 117.02790625 
+            text = "ER: A peu près." 
+        intervals [53]:
+            xmin = 117.02790625 
+            xmax = 118.60609375 
+            text = "ER: Juste en-dessous des Terreaux." 
+        intervals [54]:
+            xmin = 118.60609375 
+            xmax = 119.31052820865625 
+            text = "(bruit de fond)" 
+        intervals [55]:
+            xmin = 119.31052820865625 
+            xmax = 120.34232708224799 
+            text = "ER: Donc dans euh, le premier. " 
+        intervals [56]:
+            xmin = 120.34232708224799 
+            xmax = 122.02759857578117 
+            text = "(bruit de fond)" 
+        intervals [57]:
+            xmin = 122.02759857578117 
+            xmax = 123.43772370302321 
+            text = "ER: Là je suis restée, trois ans." 
+        intervals [58]:
+            xmin = 123.43772370302321 
+            xmax = 125.77646781649783 
+            text = "ER: Trois ans, deux ans, peut-être, deux ans et demi." 
+        intervals [59]:
+            xmin = 125.77646781649783 
+            xmax = 129.62115625000001 
+            text = "ER: Et après, je suis venue habiter, euh, dans le sixième, euh, à Lyon." 
+        intervals [60]:
+            xmin = 129.62115625000001 
+            xmax = 132.27680072012581 
+            text = "E: C'est à côté, le sixième, non, c'est quoi, c'est ?" 
+        intervals [61]:
+            xmin = 132.27680072012581 
+            xmax = 134.40221875 
+            text = "ER: Non, c'est pas tout à fait à côté, c'est, euh, (onomatopée : Ff)." 
+        intervals [62]:
+            xmin = 134.40221875 
+            xmax = 136.23202973556082 
+            text = "ER: C'est le quartier chic de Lyon, en fait." 
+        intervals [63]:
+            xmin = 136.23202973556082 
+            xmax = 136.91989565128864 
+            text = "E: C'est quoi ?" 
+        intervals [64]:
+            xmin = 136.91989565128864 
+            xmax = 138.77713362375377 
+            text = "ER: C'est, euh, en euh." 
+        intervals [65]:
+            xmin = 138.77713362375377 
+            xmax = 139.96459375000001 
+            text = "ER: Tu vois les Terreaux ?" 
+        intervals [66]:
+            xmin = 139.96459375000001 
+            xmax = 140.81128125000001 
+            text = "E: Ouais <ER: Tu vois le Rhône ?> ?" 
+        intervals [67]:
+            xmin = 140.81128125000001 
+            xmax = 141.17036518909356 
+            text = "E: Ouais." 
+        intervals [68]:
+            xmin = 141.17036518909356 
+            xmax = 144.49878125000001 
+            text = "ER: Ben c'est ce qu'il y a de l'autre côté du, des Terreaux, mais, euh, de l'autre côté du Rhône." 
+        intervals [69]:
+            xmin = 144.49878125000001 
+            xmax = 145.09120090874217 
+            text = "(bruit de fond)" 
+        intervals [70]:
+            xmin = 145.09120090874217 
+            xmax = 146.74853125000001 
+            text = "ER: C'est au niveau des Terreaux, de l'autre côté du Rhône." 
+        intervals [71]:
+            xmin = 146.74853125000001 
+            xmax = 148.56492378316773 
+            text = "E: Il s'appelle comment, ce quartier ?" 
+        intervals [72]:
+            xmin = 148.56492378316773 
+            xmax = 149.56232936097308 
+            text = "ER: Ben, le sixième." 
+        intervals [73]:
+            xmin = 149.56232936097308 
+            xmax = 154.99647009522292 
+            text = "E: Ouais, mais il a, il a. <ER: Euh, il y a Foche, il y a euh, le parc de la tête d'or, il y a euh, la Part-Dieu, euh.> Ouais." 
+        intervals [74]:
+            xmin = 154.99647009522292 
+            xmax = 160.12107116739526 
+            text = "(bruit de fond)" 
+        intervals [75]:
+            xmin = 160.12107116739526 
+            xmax = 161.97957784354264 
+            text = "E: Et toi, tu es à côté de la tête d'or, non, enfin ?" 
+        intervals [76]:
+            xmin = 161.97957784354264 
+            xmax = 164.24334375000001 
+            text = "ER: Non, je suis à côté de la Part-Dieu, non, je suis du côté Part-Dieu." 
+        intervals [77]:
+            xmin = 164.24334375000001 
+            xmax = 166.16509375000001 
+            text = "E: Et ça fait combien de temps que tu es là-bas ?" 
+        intervals [78]:
+            xmin = 166.16509375000001 
+            xmax = 170.78426156485887 
+            text = "ER: Ca va faire, euh, ça va faire, euh, un an, deux ans, ça va faire deux ans, bientôt." 
+        intervals [79]:
+            xmin = 170.78426156485887 
+            xmax = 171.54091407215947 
+            text = "E: Deux ans ?" 
+        intervals [80]:
+            xmin = 171.54091407215947 
+            xmax = 171.74727384687782 
+            text = "ER : Ouais." 
+        intervals [81]:
+            xmin = 171.74727384687782 
+            xmax = 173.63890511512935 
+            text = "(bruit de fond)" 
+        intervals [82]:
+            xmin = 173.63890511512935 
+            xmax = 175.47709375 
+            text = "ER: Je prends le micro, hein, parce qu'il y a du bruit. " 
+        intervals [83]:
+            xmin = 175.47709375 
+            xmax = 176.83748162326376 
+            text = "(bruit de fond)" 
+        intervals [84]:
+            xmin = 176.83748162326376 
+            xmax = 177.83488720106911 
+            text = "ER: Je parle dans le micro." 
+        intervals [85]:
+            xmin = 177.83488720106911 
+            xmax = 179.44596875000002 
+            text = "(bruit de fond)" 
+        intervals [86]:
+            xmin = 179.44596875000002 
+            xmax = 181.30861007549467 
+            text = "E: Non mais normalement ça capte < ER: Ca capte ?>, hein." 
+        intervals [87]:
+            xmin = 181.30861007549467 
+            xmax = 184.02390625000001 
+            text = "ER: Ouais, bon, c'est <E: (XXX).>. Je le remettrai." 
+        intervals [88]:
+            xmin = 184.02390625000001 
+            xmax = 186.02049159823028 
+            text = "(bruit de fond)" 
+        intervals [89]:
+            xmin = 186.02049159823028 
+            xmax = 187.60184375 
+            text = "E: Euh, tu fais quoi, en fait, dans, " 
+        intervals [90]:
+            xmin = 187.60184375 
+            xmax = 190.11456250049309 
+            text = "E: Euh <ER: Je fais une thèse en euh, sciences cognitives.>." 
+        intervals [91]:
+            xmin = 190.11456250049309 
+            xmax = 202.6337221667396 
+            text = "(bruit de fond)" 
+        intervals [92]:
+            xmin = 202.6337221667396 
+            xmax = 204.05953125000002 
+            text = "E: Sciences cognitives ?" 
+        intervals [93]:
+            xmin = 204.05953125000002 
+            xmax = 206.71565625 
+            text = "ER: (onomatopée d'affirmation : Mm.) Je suis inscrite en sciences cognitives, et c'est, euh. " 
+        intervals [94]:
+            xmin = 206.71565625 
+            xmax = 211.07490625 
+            text = "ER: C'est la partie modélisation, euh, modélisation connexionniste <E: Ah, ouais ?>, par réseaux de neurones." 
+        intervals [95]:
+            xmin = 211.07490625 
+            xmax = 212.82484375000001 
+            text = "ER: Ouais <E: Ah, c'est pour ça que tu connais Atanase ?>." 
+        intervals [96]:
+            xmin = 212.82484375000001 
+            xmax = 213.43321704366653 
+            text = "ER: Ouais." 
+        intervals [97]:
+            xmin = 213.43321704366653 
+            xmax = 213.77821875000001 
+            text = "E: Ouais ?" 
+        intervals [98]:
+            xmin = 213.77821875000001 
+            xmax = 217.01365625 
+            text = "ER: Ouais, enfin, c/, je l'ai rencontré à un séminaire qui parlait de réseaux de neurones." 
+        intervals [99]:
+            xmin = 217.01365625 
+            xmax = 218.35740625 
+            text = "ER: En fait, on travaille, euh, " 
+        intervals [100]:
+            xmin = 218.35740625 
+            xmax = 220.91996875000001 
+            text = "ER: enfin, la dernière fois que je l'ai vu, il avait sangé, il avait chan/" 
+        intervals [101]:
+            xmin = 220.91996875000001 
+            xmax = 224.70090625 
+            text = "ER: il avait changé de sujet de thèse et il faisait à peu près comme moi, donc c'est pour ça que j'étais allée le voir." 
+        intervals [102]:
+            xmin = 224.70090625 
+            xmax = 225.76334375000002 
+            text = "(bruit de fond)" 
+        intervals [103]:
+            xmin = 225.76334375000002 
+            xmax = 227.01334375000002 
+            text = "ER: Pour voir, euh, ce que lui il faisait, quoi." 
+        intervals [104]:
+            xmin = 227.01334375000002 
+            xmax = 227.54904170681499 
+            text = "(bruit de fond)" 
+        intervals [105]:
+            xmin = 227.54904170681499 
+            xmax = 228.89038024248424 
+            text = "E: Et tu bosses sur quoi, en fait ?" 
+        intervals [106]:
+            xmin = 228.89038024248424 
+            xmax = 232.3297098211234 
+            text = "ER: Je bosse sur la, modélisation des mémoires associatives multimodales, " 
+        intervals [107]:
+            xmin = 232.3297098211234 
+            xmax = 236.68496875 
+            text = "ER: c'est-à-dire, euh, on cherche à faire une mémoire, qui pourrait relier la vision, l'olfaction, euh, " 
+        intervals [108]:
+            xmin = 236.68496875 
+            xmax = 240.23171875 
+            text = "ER: l'audition, enfin, qui pourrait relier toutes les, les perceptions sensorielles, " 
+        intervals [109]:
+            xmin = 240.23171875 
+            xmax = 242.46128125000001 
+            text = "ER: pour donner, euh, l'identification d'un objet." 
+        intervals [110]:
+            xmin = 242.46128125000001 
+            xmax = 243.57758624695563 
+            text = "E: Ah, O.K." 
+        intervals [111]:
+            xmin = 243.57758624695563 
+            xmax = 245.12528455734326 
+            text = "(bruit de fond)" 
+        intervals [112]:
+            xmin = 245.12528455734326 
+            xmax = 245.94771875000001 
+            text = "E: ca doit être complexe." 
+        intervals [113]:
+            xmin = 245.94771875000001 
+            xmax = 247.96090625000002 
+            text = "E: Et les réseaux, tu t'en sers pour quoi, en fait ?" 
+        intervals [114]:
+            xmin = 247.96090625000002 
+            xmax = 248.94540625000002 
+            text = "ER: Les réseaux de neurones <E: Ouais.>?" 
+        intervals [115]:
+            xmin = 248.94540625000002 
+            xmax = 251.80453125 
+            text = "ER: Ben en fait j'ai, euh, deux ré/, enfin euh, j'ai un euh." 
+        intervals [116]:
+            xmin = 251.80453125 
+            xmax = 255.83019787085763 
+            text = "ER: Ce que je fais, c'est un gros réseau de neurones, qui se compose de plusieurs petits réseaux de neurones qui se parlent." 
+        intervals [117]:
+            xmin = 255.83019787085763 
+            xmax = 256.50086713869229 
+            text = "(bruit de fond)" 
+        intervals [118]:
+            xmin = 256.50086713869229 
+            xmax = 260.61671875000002 
+            text = "ER: Et euh. J'ai plusieurs réseaux de neurones, qui servent, euh, pour la partie, euh." 
+        intervals [119]:
+            xmin = 260.61671875000002 
+            xmax = 261.66353125 
+            text = "ER: Sensorienne." 
+        intervals [120]:
+            xmin = 261.66353125 
+            xmax = 266.13209375000002 
+            text = "ER: C'est des réseaux de neurones qui sont chargés de, euh, reconnaître, un stimulus, sensoriel." 
+        intervals [121]:
+            xmin = 266.13209375000002 
+            xmax = 268.35078125000001 
+            text = "ER: Et après, j'ai un gros réseau de neurones central, " 
+        intervals [122]:
+            xmin = 268.35078125000001 
+            xmax = 270.93165625 
+            text = "ER: qui est chargé, lui, de, euh, d'identifier, " 
+        intervals [123]:
+            xmin = 270.93165625 
+            xmax = 271.37886498205262 
+            text = "ER: en r/." 
+        intervals [124]:
+            xmin = 271.37886498205262 
+            xmax = 275.0073576875169 
+            text = "ER: D'identifier à partir des différentes bas/, facettes perceptives qui ont été reconnues." 
+        intervals [125]:
+            xmin = 275.0073576875169 
+            xmax = 276.33149957529298 
+            text = "E: Ouais <ER: Ouais, c'est ça.>." 
+        intervals [126]:
+            xmin = 276.33149957529298 
+            xmax = 278.3585625 
+            text = "E: C'est genre, perceptron, euh, que ?" 
+        intervals [127]:
+            xmin = 278.3585625 
+            xmax = 280.35843750000004 
+            text = "ER: Non, non, pas du tout <E: Non ?>, c'est genre, euh." 
+        intervals [128]:
+            xmin = 280.35843750000004 
+            xmax = 284.8167332494483 
+            text = "ER: Ben j'ai un classif/, enfin, j'ai des classifieurs incrémentaux, donc ça c'est un réseau de neurones, euh, particulier, " 
+        intervals [129]:
+            xmin = 284.8167332494483 
+            xmax = 287.34464048974803 
+            text = "ER: et sinon c'est un système dynamique, c'est un gros système dynamique." 
+        intervals [130]:
+            xmin = 287.34464048974803 
+            xmax = 288.10612500000002 
+            text = "(bruit de fond)" 
+        intervals [131]:
+            xmin = 288.10612500000002 
+            xmax = 290.10465625 
+            text = "ER: Non mais Perceptron, euh, ils veulent pas." 
+        intervals [132]:
+            xmin = 290.10465625 
+            xmax = 291.85446875000002 
+            text = "E: C'est vrai <ER: ils sont contre. Ouais.>? Pourquoi ?" 
+        intervals [133]:
+            xmin = 291.85446875000002 
+            xmax = 292.79597787189107 
+            text = "ER: Ben, " 
+        intervals [134]:
+            xmin = 292.79597787189107 
+            xmax = 293.38066390025972 
+            text = "ER: parce qu'en fait, " 
+        intervals [135]:
+            xmin = 293.38066390025972 
+            xmax = 293.93095663284197 
+            text = "(bruit de fond)" 
+        intervals [136]:
+            xmin = 293.93095663284197 
+            xmax = 296.19434375000003 
+            text = "ER: On cherche à faire du euh, biologiquement plausible." 
+        intervals [137]:
+            xmin = 296.19434375000003 
+            xmax = 298.10053125000002 
+            text = "ER: Et donc le Perceptron, euh, " 
+        intervals [138]:
+            xmin = 298.10053125000002 
+            xmax = 299.88163115572883 
+            text = "ER: enfin, la rétropropagation du gradient" 
+        intervals [139]:
+            xmin = 299.88163115572883 
+            xmax = 302.08471875000004 
+            text = "ER: qui est euh, l'algorythme dont on se sert pour le Perceptron, " 
+        intervals [140]:
+            xmin = 302.08471875000004 
+            xmax = 304.60021875000001 
+            text = "ER: ça serait pas, biologiquement plausible, donc, euh." 
+        intervals [141]:
+            xmin = 304.60021875000001 
+            xmax = 306.86609375 
+            text = "ER: En fait, on cherche à coller au modèle d'un type, " 
+        intervals [142]:
+            xmin = 306.86609375 
+            xmax = 308.84687500000001 
+            text = "ER: Enfin, de deux types, qui sont (XX) et (XX), " 
+        intervals [143]:
+            xmin = 308.84687500000001 
+            xmax = 309.6280625 
+            text = "(bruit de fond)" 
+        intervals [144]:
+            xmin = 309.6280625 
+            xmax = 313.10259534403571 
+            text = "ER: euh, qui ont proposé un euh, schéma d'architecture fonctionnelle de haut niveau." 
+        intervals [145]:
+            xmin = 313.10259534403571 
+            xmax = 313.87644449922954 
+            text = "(bruit de fond)" 
+        intervals [146]:
+            xmin = 313.87644449922954 
+            xmax = 316.85146458475236 
+            text = "ER: Et, euh, donc on cherche à coller au maximum à leur modèle, mais, " 
+        intervals [147]:
+            xmin = 316.85146458475236 
+            xmax = 319.1121875 
+            text = "ER: et donc, euh, on a pas le droit, enfin, on a pas le droit, " 
+        intervals [148]:
+            xmin = 319.1121875 
+            xmax = 325.43037500000003 
+            text = "ER: on s'interdit les Perceptrons, on s'interdit des tas de choses, qui marcheraient peut-être mieux, mais, qui sont pas, ni biologiquement, ni psychologiquement plausibles. " 
+        intervals [149]:
+            xmin = 325.43037500000003 
+            xmax = 865.10846875000004 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "96aer1gt_schwa" 
+        xmin = 0 
+        xmax = 865.10846875000004 
+        intervals: size = 149 
+        intervals [1]:
+            xmin = 0 
+            xmax = 4.0457352920343954 
+            text = "(bruit de fond)" 
+        intervals [2]:
+            xmin = 4.0457352920343954 
+            xmax = 6.212512926577042 
+            text = "E: (X) ça va être vite fait, on va essayer, on va essayer de, " 
+        intervals [3]:
+            xmin = 6.212512926577042 
+            xmax = 7.0379520254504318 
+            text = "E: speeder." 
+        intervals [4]:
+            xmin = 7.0379520254504318 
+            xmax = 8.4034999999999993 
+            text = "ER: Tu as des questions ?" 
+        intervals [5]:
+            xmin = 8.4034999999999993 
+            xmax = 10.88725 
+            text = "E: Ouais, ben je remplis une petite fiche, en fait." 
+        intervals [6]:
+            xmin = 10.88725 
+            xmax = 24.200206622859653 
+            text = "(bruit de fond)" 
+        intervals [7]:
+            xmin = 24.200206622859653 
+            xmax = 25.746124999999999 
+            text = "E: Alors, Mademoiselle ?" 
+        intervals [8]:
+            xmin = 25.746124999999999 
+            xmax = 29.636624999999999 
+            text = "E: C'est, votre nom c'est quoi, en fait <ER: Emmanuelle1413. Mais ça marche0422 pas, là, ton truc0413 ?> ?" 
+        intervals [9]:
+            xmin = 29.636624999999999 
+            xmax = 30.344570585260456 
+            text = "ER: Ah, si, ça marche0423." 
+        intervals [10]:
+            xmin = 30.344570585260456 
+            xmax = 33.405573910249274 
+            text = "(bruit de fond)" 
+        intervals [11]:
+            xmin = 33.405573910249274 
+            xmax = 34.990250000000003 
+            text = "E: (XX) Emmanuelle ?" 
+        intervals [12]:
+            xmin = 34.990250000000003 
+            xmax = 36.363397347878923 
+            text = "(bruit de fond)" 
+        intervals [13]:
+            xmin = 36.363397347878923 
+            xmax = 37.257623038325093 
+            text = "E: Emmanuelle comment ?" 
+        intervals [14]:
+            xmin = 37.257623038325093 
+            xmax = 39.474625000000003 
+            text = "ER: Emmanuelle0412 Reynaud, R.E.Y0414.," 
+        intervals [15]:
+            xmin = 39.474625000000003 
+            xmax = 41.412000000000006 
+            text = "ER: R.E.Y0414.N0414.A.U.D." 
+        intervals [16]:
+            xmin = 41.412000000000006 
+            xmax = 42.313437518924609 
+            text = "E: N.A.U.D. ?" 
+        intervals [17]:
+            xmin = 42.313437518924609 
+            xmax = 43.287125000000003 
+            text = "ER: (onomatopée d'approbation : Mm.)" 
+        intervals [18]:
+            xmin = 43.287125000000003 
+            xmax = 44.833750000000002 
+            text = "E: Alors, tu es née ? " 
+        intervals [19]:
+            xmin = 44.833750000000002 
+            xmax = 46.849187500000006 
+            text = "ER: A/. Le1132 vingt0412-quatre0424, " 
+        intervals [20]:
+            xmin = 46.849187500000006 
+            xmax = 47.818187500000008 
+            text = "ER: six0414, " 
+        intervals [21]:
+            xmin = 47.818187500000008 
+            xmax = 48.881375000000006 
+            text = "ER: soixante0412-quinze0413. " 
+        intervals [22]:
+            xmin = 48.881375000000006 
+            xmax = 50.602221803444898 
+            text = "(bruit de fond)" 
+        intervals [23]:
+            xmin = 50.602221803444898 
+            xmax = 51.462054198104681 
+            text = "ER: A Bron. " 
+        intervals [24]:
+            xmin = 51.462054198104681 
+            xmax = 52.180937500000006 
+            text = "E: A Bron ? " 
+        intervals [25]:
+            xmin = 52.180937500000006 
+            xmax = 53.458500000000001 
+            text = "E: C'est où, Bron ?" 
+        intervals [26]:
+            xmin = 53.458500000000001 
+            xmax = 55.239562500000005 
+            text = "ER: C'est une0412 banlieue de1112 Lyon." 
+        intervals [27]:
+            xmin = 55.239562500000005 
+            xmax = 57.567500000000003 
+            text = "E: C'est/, ça c'est où, euh ?" 
+        intervals [28]:
+            xmin = 57.567500000000003 
+            xmax = 59.207625000000007 
+            text = "ER: C'est, euh, l/." 
+        intervals [29]:
+            xmin = 59.207625000000007 
+            xmax = 60.818299355685539 
+            text = "ER: C'est à l'est1422 lyonnais, " 
+        intervals [30]:
+            xmin = 60.818299355685539 
+            xmax = 64.065875000000006 
+            text = "ER: c'est entre0424, euh, Villeurbanne0411 et Vaux-en-ve0212lun. A peu près." 
+        intervals [31]:
+            xmin = 64.065875000000006 
+            xmax = 72.268750000000011 
+            text = "(bruit de fond)" 
+        intervals [32]:
+            xmin = 72.268750000000011 
+            xmax = 73.830500000000001 
+            text = "E: Euh, tu as toujours habité Lyon, ou ?" 
+        intervals [33]:
+            xmin = 73.830500000000001 
+            xmax = 75.052250000000001 
+            text = "ER: Ouais. O<E: Ouais ?> Ouais, ouais." 
+        intervals [34]:
+            xmin = 75.052250000000001 
+            xmax = 76.596043747282152 
+            text = "E: Tu as, tu as, " 
+        intervals [35]:
+            xmin = 76.596043747282152 
+            xmax = 77.971775578737805 
+            text = "E: habité Bron, euh ?" 
+        intervals [36]:
+            xmin = 77.971775578737805 
+            xmax = 79.037967748115932 
+            text = "ER: Non, jamais en fait0414, euh, " 
+        intervals [37]:
+            xmin = 79.037967748115932 
+            xmax = 80.51687946693076 
+            text = "ER: la clinique0411 où je0112 suis née était à Bron, " 
+        intervals [38]:
+            xmin = 80.51687946693076 
+            xmax = 82.973687500000011 
+            text = "ER: mais <E: Ouais.> mes parents habitaient déjà à Lyon, donc on ne0414, euh <E: Ils hab/.>." 
+        intervals [39]:
+            xmin = 82.973687500000011 
+            xmax = 85.864249999999998 
+            text = "ER: Ils y sont allés pour0412 l'accouche0312ment, ils sont repartis <E: Ouais, ouais.>, donc0414, euh, bon." 
+        intervals [40]:
+            xmin = 85.864249999999998 
+            xmax = 88.674125000000004 
+            text = "E: C'est qu'une clinique pour, euh, pour accoucher, euh." 
+        intervals [41]:
+            xmin = 88.674125000000004 
+            xmax = 93.762062499999999 
+            text = "ER: Ben euh, ouais par0352ce qu'en fait0414, euh, l/, l'accoucheur de0122 ma mère0411 il était, euh, il travaillait là-bas, donc0414 <E: Ouais ?>, euh." 
+        intervals [42]:
+            xmin = 93.762062499999999 
+            xmax = 95.511875000000003 
+            text = "ER: (X) voilà quoi (rires)." 
+        intervals [43]:
+            xmin = 95.511875000000003 
+            xmax = 98.636750000000006 
+            text = "E: Et, euh, euh, donc ils habitaient Lyon, où ça ?" 
+        intervals [44]:
+            xmin = 98.636750000000006 
+            xmax = 100.2774375 
+            text = "ER: Lyon deuxième0414, en face0412 Belle0312cour0413." 
+        intervals [45]:
+            xmin = 100.2774375 
+            xmax = 106.08968750000001 
+            text = "(bruit de fond)" 
+        intervals [46]:
+            xmin = 106.08968750000001 
+            xmax = 107.53344765898232 
+            text = "E: Tu as, toujours vécu là-bas, euh ?" 
+        intervals [47]:
+            xmin = 107.53344765898232 
+            xmax = 109.76901188509775 
+            text = "ER: J'ai vécu là-bas jusqu'à ce0112 que0122 j'ai euh, vingt0411 ans." 
+        intervals [48]:
+            xmin = 109.76901188509775 
+            xmax = 110.7320241671167 
+            text = "(bruit de fond)" 
+        intervals [49]:
+            xmin = 110.7320241671167 
+            xmax = 113.24273475952327 
+            text = "ER: Donc0412 j'ai habité dans le0112 même0411 appart0422/ jusquà, mes vingt0411 ans, " 
+        intervals [50]:
+            xmin = 113.24273475952327 
+            xmax = 115.1830625 
+            text = "après j'ai pris un appart0422/ toute0412 seule0414, euh, " 
+        intervals [51]:
+            xmin = 115.1830625 
+            xmax = 116.18073829209463 
+            text = "ER: aux Terreaux." 
+        intervals [52]:
+            xmin = 116.18073829209463 
+            xmax = 117.02790625 
+            text = "ER: A peu près." 
+        intervals [53]:
+            xmin = 117.02790625 
+            xmax = 118.60609375 
+            text = "ER: Juste0421 en-de0212ssous des Terreaux." 
+        intervals [54]:
+            xmin = 118.60609375 
+            xmax = 119.31052820865625 
+            text = "(bruit de fond)" 
+        intervals [55]:
+            xmin = 119.31052820865625 
+            xmax = 120.34232708224799 
+            text = "ER: Donc0412 dans euh, le0132 pre1222mier. " 
+        intervals [56]:
+            xmin = 120.34232708224799 
+            xmax = 122.02759857578117 
+            text = "(bruit de fond)" 
+        intervals [57]:
+            xmin = 122.02759857578117 
+            xmax = 123.43772370302321 
+            text = "ER: Là je0112 suis restée, trois ans." 
+        intervals [58]:
+            xmin = 123.43772370302321 
+            xmax = 125.77646781649783 
+            text = "ER: Trois ans, deux ans, peut-êt0454re, deux ans et demi." 
+        intervals [59]:
+            xmin = 125.77646781649783 
+            xmax = 129.62115625000001 
+            text = "ER: Et après, je0132 suis ve0212nue habiter, euh, dans le0112 sixième0414, euh, à Lyon." 
+        intervals [60]:
+            xmin = 129.62115625000001 
+            xmax = 132.27680072012581 
+            text = "E: C'est à côté, le sixième, non, c'est quoi, c'est ?" 
+        intervals [61]:
+            xmin = 132.27680072012581 
+            xmax = 134.40221875 
+            text = "ER: Non, c'est pas tout à fait à côté, c'est, euh, (onomatopée : Ff)." 
+        intervals [62]:
+            xmin = 134.40221875 
+            xmax = 136.23202973556082 
+            text = "ER: C'est le0112 quartier chic0412 de1122 Lyon, en fait0413." 
+        intervals [63]:
+            xmin = 136.23202973556082 
+            xmax = 136.91989565128864 
+            text = "E: C'est quoi ?" 
+        intervals [64]:
+            xmin = 136.91989565128864 
+            xmax = 138.77713362375377 
+            text = "ER: C'est, euh, en euh." 
+        intervals [65]:
+            xmin = 138.77713362375377 
+            xmax = 139.96459375000001 
+            text = "ER: Tu vois les Terreaux ?" 
+        intervals [66]:
+            xmin = 139.96459375000001 
+            xmax = 140.81128125000001 
+            text = "E: Ouais <ER: Tu vois le Rhône ?> ?" 
+        intervals [67]:
+            xmin = 140.81128125000001 
+            xmax = 141.17036518909356 
+            text = "E: Ouais." 
+        intervals [68]:
+            xmin = 141.17036518909356 
+            xmax = 144.49878125000001 
+            text = "ER: Ben c'est ce0112 qu'il y a de1112 l'aut0452re côté du, des Terreaux, mais, euh, de1132 l'aut0452re côté du Rhône0413." 
+        intervals [69]:
+            xmin = 144.49878125000001 
+            xmax = 145.09120090874217 
+            text = "(bruit de fond)" 
+        intervals [70]:
+            xmin = 145.09120090874217 
+            xmax = 146.74853125000001 
+            text = "ER: C'est au niveau des Terreaux, de1132 l'aut0412re côté du Rhône0413." 
+        intervals [71]:
+            xmin = 146.74853125000001 
+            xmax = 148.56492378316773 
+            text = "E: Il s'appelle comment, ce quartier ?" 
+        intervals [72]:
+            xmin = 148.56492378316773 
+            xmax = 149.56232936097308 
+            text = "ER: Ben, le0132 sixième0413." 
+        intervals [73]:
+            xmin = 149.56232936097308 
+            xmax = 154.99647009522292 
+            text = "E: Ouais, mais il a, il a. <ER: Euh, il y a Foche0414, il y a euh, le1132 parc0422 de1122 la tête0412 d'or0414, il y a euh, la Par0412t-Dieu, euh.> Ouais." 
+        intervals [74]:
+            xmin = 154.99647009522292 
+            xmax = 160.12107116739526 
+            text = "(bruit de fond)" 
+        intervals [75]:
+            xmin = 160.12107116739526 
+            xmax = 161.97957784354264 
+            text = "E: Et toi, tu es à côté de la tête d'or, non, enfin ?" 
+        intervals [76]:
+            xmin = 161.97957784354264 
+            xmax = 164.24334375000001 
+            text = "ER: Non, je0132 suis à côté de0112 la Par0412t-Dieu, non, je0132 suis du côté Par0412t-Dieu." 
+        intervals [77]:
+            xmin = 164.24334375000001 
+            xmax = 166.16509375000001 
+            text = "E: Et ça fait combien de temps que tu es là-bas ?" 
+        intervals [78]:
+            xmin = 166.16509375000001 
+            xmax = 170.78426156485887 
+            text = "ER: Ca va faire0414, euh, ça va faire0414, euh, un an, deux ans, ça va faire0412 deux ans, bientôt." 
+        intervals [79]:
+            xmin = 170.78426156485887 
+            xmax = 171.54091407215947 
+            text = "E: Deux ans ?" 
+        intervals [80]:
+            xmin = 171.54091407215947 
+            xmax = 171.74727384687782 
+            text = "ER : Ouais." 
+        intervals [81]:
+            xmin = 171.74727384687782 
+            xmax = 173.63890511512935 
+            text = "(bruit de fond)" 
+        intervals [82]:
+            xmin = 173.63890511512935 
+            xmax = 175.47709375 
+            text = "ER: Je0132 prends le0112 micro, hein, parce0352 qu'il y a du bruit. " 
+        intervals [83]:
+            xmin = 175.47709375 
+            xmax = 176.83748162326376 
+            text = "(bruit de fond)" 
+        intervals [84]:
+            xmin = 176.83748162326376 
+            xmax = 177.83488720106911 
+            text = "ER: Je1132 parle0422 dans le0112 micro." 
+        intervals [85]:
+            xmin = 177.83488720106911 
+            xmax = 179.44596875000002 
+            text = "(bruit de fond)" 
+        intervals [86]:
+            xmin = 179.44596875000002 
+            xmax = 181.30861007549467 
+            text = "E: Non mais normalement ça capte < ER: Ca capte0423 ?>, hein." 
+        intervals [87]:
+            xmin = 181.30861007549467 
+            xmax = 184.02390625000001 
+            text = "ER: Ouais, bon, c'est <E: (XXX).>. Je0132 le1122 re0212mettrai." 
+        intervals [88]:
+            xmin = 184.02390625000001 
+            xmax = 186.02049159823028 
+            text = "(bruit de fond)" 
+        intervals [89]:
+            xmin = 186.02049159823028 
+            xmax = 187.60184375 
+            text = "E: Euh, tu fais quoi, en fait, dans, " 
+        intervals [90]:
+            xmin = 187.60184375 
+            xmax = 190.11456250049309 
+            text = "E: Euh <ER: Je0132 fais une0412 thèse0411 en euh, science0412s cognitive1413s.>." 
+        intervals [91]:
+            xmin = 190.11456250049309 
+            xmax = 202.6337221667396 
+            text = "(bruit de fond)" 
+        intervals [92]:
+            xmin = 202.6337221667396 
+            xmax = 204.05953125000002 
+            text = "E: Sciences cognitives ?" 
+        intervals [93]:
+            xmin = 204.05953125000002 
+            xmax = 206.71565625 
+            text = "ER: (onomatopée d'affirmation : Mm.) Je0132 suis inscrite0411 en science0412s cognitive0414s, et c'est, euh. " 
+        intervals [94]:
+            xmin = 206.71565625 
+            xmax = 211.07490625 
+            text = "ER: C'est la partie modélisation, euh, modélisation connexionniste0424 <E: Ah, ouais ?>, par0412 réseaux de0112 neurone0413s." 
+        intervals [95]:
+            xmin = 211.07490625 
+            xmax = 212.82484375000001 
+            text = "ER: Ouais <E: Ah, c'est pour ça que tu connais Atanase ?>." 
+        intervals [96]:
+            xmin = 212.82484375000001 
+            xmax = 213.43321704366653 
+            text = "ER: Ouais." 
+        intervals [97]:
+            xmin = 213.43321704366653 
+            xmax = 213.77821875000001 
+            text = "E: Ouais ?" 
+        intervals [98]:
+            xmin = 213.77821875000001 
+            xmax = 217.01365625 
+            text = "ER: Ouais, enfin, c/, je l'ai rencontré à un séminaire qui parlait de réseaux de neurones." 
+        intervals [99]:
+            xmin = 217.01365625 
+            xmax = 218.35740625 
+            text = "ER: En fait, on travaille, euh, " 
+        intervals [100]:
+            xmin = 218.35740625 
+            xmax = 220.91996875000001 
+            text = "ER: enfin, la dernière fois que je l'ai vu, il avait sangé, il avait chan/" 
+        intervals [101]:
+            xmin = 220.91996875000001 
+            xmax = 224.70090625 
+            text = "ER: il avait changé de sujet de thèse et il faisait à peu près comme moi, donc c'est pour ça que j'étais allée le voir." 
+        intervals [102]:
+            xmin = 224.70090625 
+            xmax = 225.76334375000002 
+            text = "(bruit de fond)" 
+        intervals [103]:
+            xmin = 225.76334375000002 
+            xmax = 227.01334375000002 
+            text = "ER: Pour voir, euh, ce que lui il faisait, quoi." 
+        intervals [104]:
+            xmin = 227.01334375000002 
+            xmax = 227.54904170681499 
+            text = "(bruit de fond)" 
+        intervals [105]:
+            xmin = 227.54904170681499 
+            xmax = 228.89038024248424 
+            text = "E: Et tu bosses sur quoi, en fait ?" 
+        intervals [106]:
+            xmin = 228.89038024248424 
+            xmax = 232.3297098211234 
+            text = "ER: Je bosse sur la, modélisation des mémoires associatives multimodales, " 
+        intervals [107]:
+            xmin = 232.3297098211234 
+            xmax = 236.68496875 
+            text = "ER: c'est-à-dire, euh, on cherche à faire une mémoire, qui pourrait relier la vision, l'olfaction, euh, " 
+        intervals [108]:
+            xmin = 236.68496875 
+            xmax = 240.23171875 
+            text = "ER: l'audition, enfin, qui pourrait relier toutes les, les perceptions sensorielles, " 
+        intervals [109]:
+            xmin = 240.23171875 
+            xmax = 242.46128125000001 
+            text = "ER: pour donner, euh, l'identification d'un objet." 
+        intervals [110]:
+            xmin = 242.46128125000001 
+            xmax = 243.57758624695563 
+            text = "E: Ah, O.K." 
+        intervals [111]:
+            xmin = 243.57758624695563 
+            xmax = 245.12528455734326 
+            text = "(bruit de fond)" 
+        intervals [112]:
+            xmin = 245.12528455734326 
+            xmax = 245.94771875000001 
+            text = "E: ca doit être complexe." 
+        intervals [113]:
+            xmin = 245.94771875000001 
+            xmax = 247.96090625000002 
+            text = "E: Et les réseaux, tu t'en sers pour quoi, en fait ?" 
+        intervals [114]:
+            xmin = 247.96090625000002 
+            xmax = 248.94540625000002 
+            text = "ER: Les réseaux de neurones <E: Ouais.>?" 
+        intervals [115]:
+            xmin = 248.94540625000002 
+            xmax = 251.80453125 
+            text = "ER: Ben en fait j'ai, euh, deux ré/, enfin euh, j'ai un euh." 
+        intervals [116]:
+            xmin = 251.80453125 
+            xmax = 255.83019787085763 
+            text = "ER: Ce que je fais, c'est un gros réseau de neurones, qui se compose de plusieurs petits réseaux de neurones qui se parlent." 
+        intervals [117]:
+            xmin = 255.83019787085763 
+            xmax = 256.50086713869229 
+            text = "(bruit de fond)" 
+        intervals [118]:
+            xmin = 256.50086713869229 
+            xmax = 260.61671875000002 
+            text = "ER: Et euh. J'ai plusieurs réseaux de neurones, qui servent, euh, pour la partie, euh." 
+        intervals [119]:
+            xmin = 260.61671875000002 
+            xmax = 261.66353125 
+            text = "ER: Sensorienne." 
+        intervals [120]:
+            xmin = 261.66353125 
+            xmax = 266.13209375000002 
+            text = "ER: C'est des réseaux de neurones qui sont chargés de, euh, reconnaître, un stimulus, sensoriel." 
+        intervals [121]:
+            xmin = 266.13209375000002 
+            xmax = 268.35078125000001 
+            text = "ER: Et après, j'ai un gros réseau de neurones central, " 
+        intervals [122]:
+            xmin = 268.35078125000001 
+            xmax = 270.93165625 
+            text = "ER: qui est chargé, lui, de, euh, d'identifier, " 
+        intervals [123]:
+            xmin = 270.93165625 
+            xmax = 271.37886498205262 
+            text = "ER: en r/." 
+        intervals [124]:
+            xmin = 271.37886498205262 
+            xmax = 275.0073576875169 
+            text = "ER: D'identifier à partir des différentes bas/, facettes perceptives qui ont été reconnues." 
+        intervals [125]:
+            xmin = 275.0073576875169 
+            xmax = 276.33149957529298 
+            text = "E: Ouais <ER: Ouais, c'est ça.>." 
+        intervals [126]:
+            xmin = 276.33149957529298 
+            xmax = 278.3585625 
+            text = "E: C'est genre, perceptron, euh, que ?" 
+        intervals [127]:
+            xmin = 278.3585625 
+            xmax = 280.35843750000004 
+            text = "ER: Non, non, pas du tout <E: Non ?>, c'est genre, euh." 
+        intervals [128]:
+            xmin = 280.35843750000004 
+            xmax = 284.8167332494483 
+            text = "ER: Ben j'ai un classif/, enfin, j'ai des classifieurs incrémentaux, donc ça c'est un réseau de neurones, euh, particulier, " 
+        intervals [129]:
+            xmin = 284.8167332494483 
+            xmax = 287.34464048974803 
+            text = "ER: et sinon c'est un système dynamique, c'est un gros système dynamique." 
+        intervals [130]:
+            xmin = 287.34464048974803 
+            xmax = 288.10612500000002 
+            text = "(bruit de fond)" 
+        intervals [131]:
+            xmin = 288.10612500000002 
+            xmax = 290.10465625 
+            text = "ER: Non mais Perceptron, euh, ils veulent pas." 
+        intervals [132]:
+            xmin = 290.10465625 
+            xmax = 291.85446875000002 
+            text = "E: C'est vrai <ER: ils sont contre. Ouais.>? Pourquoi ?" 
+        intervals [133]:
+            xmin = 291.85446875000002 
+            xmax = 292.79597787189107 
+            text = "ER: Ben, " 
+        intervals [134]:
+            xmin = 292.79597787189107 
+            xmax = 293.38066390025972 
+            text = "parce qu'en fait, " 
+        intervals [135]:
+            xmin = 293.38066390025972 
+            xmax = 293.93095663284197 
+            text = "(bruit de fond)" 
+        intervals [136]:
+            xmin = 293.93095663284197 
+            xmax = 296.19434375000003 
+            text = "ER: On cherche à faire du euh, biologiquement plausible." 
+        intervals [137]:
+            xmin = 296.19434375000003 
+            xmax = 298.10053125000002 
+            text = "ER: Et donc le Perceptron, euh, " 
+        intervals [138]:
+            xmin = 298.10053125000002 
+            xmax = 299.88163115572883 
+            text = "ER: enfin, la rétropropagation du gradient" 
+        intervals [139]:
+            xmin = 299.88163115572883 
+            xmax = 302.08471875000004 
+            text = "ER: qui est euh, l'algorythme dont on se sert pour le Perceptron, " 
+        intervals [140]:
+            xmin = 302.08471875000004 
+            xmax = 304.60021875000001 
+            text = "ER: ça serait pas, biologiquement plausible, donc, euh." 
+        intervals [141]:
+            xmin = 304.60021875000001 
+            xmax = 306.86609375 
+            text = "ER: En fait, on cherche à coller au modèle d'un type, " 
+        intervals [142]:
+            xmin = 306.86609375 
+            xmax = 308.84687500000001 
+            text = "ER: Enfin, de deux types, qui sont (XX) et (XX), " 
+        intervals [143]:
+            xmin = 308.84687500000001 
+            xmax = 309.6280625 
+            text = "(bruit de fond)" 
+        intervals [144]:
+            xmin = 309.6280625 
+            xmax = 313.10259534403571 
+            text = "ER: euh, qui ont proposé un euh, schéma d'architecture fonctionnelle de haut niveau." 
+        intervals [145]:
+            xmin = 313.10259534403571 
+            xmax = 313.87644449922954 
+            text = "(bruit de fond)" 
+        intervals [146]:
+            xmin = 313.87644449922954 
+            xmax = 316.85146458475236 
+            text = "ER: Et, euh, donc on cherche à coller au maximum à leur modèle, mais, " 
+        intervals [147]:
+            xmin = 316.85146458475236 
+            xmax = 319.1121875 
+            text = "ER: et donc, euh, on a pas le droit, enfin, on a pas le droit, " 
+        intervals [148]:
+            xmin = 319.1121875 
+            xmax = 325.43037500000003 
+            text = "ER: on s'interdit les Perceptrons, on s'interdit des tas de choses, qui marcheraient peut-être mieux, mais, qui sont pas, ni biologiquement, ni psychologiquement plausibles. " 
+        intervals [149]:
+            xmin = 325.43037500000003 
+            xmax = 865.10846875000004 
+            text = "" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "96aer1gt_liaison" 
+        xmin = 0 
+        xmax = 865.10846875000004 
+        intervals: size = 149 
+        intervals [1]:
+            xmin = 0 
+            xmax = 4.0457352920343954 
+            text = "(bruit de fond)" 
+        intervals [2]:
+            xmin = 4.0457352920343954 
+            xmax = 6.212512926577042 
+            text = "E: (X) ça va être vite fait, on va essayer, on va essayer de, " 
+        intervals [3]:
+            xmin = 6.212512926577042 
+            xmax = 7.0379520254504318 
+            text = "E: speeder." 
+        intervals [4]:
+            xmin = 7.0379520254504318 
+            xmax = 8.4034999999999993 
+            text = "ER: Tu as des questions ?" 
+        intervals [5]:
+            xmin = 8.4034999999999993 
+            xmax = 10.88725 
+            text = "E: Ouais, ben je remplis une petite fiche, en fait." 
+        intervals [6]:
+            xmin = 10.88725 
+            xmax = 24.200206622859653 
+            text = "(bruit de fond)" 
+        intervals [7]:
+            xmin = 24.200206622859653 
+            xmax = 25.746124999999999 
+            text = "E: Alors, Mademoiselle ?" 
+        intervals [8]:
+            xmin = 25.746124999999999 
+            xmax = 29.636624999999999 
+            text = "E: C'est, votre nom c'est quoi, en fait <ER: Emmanuelle. Mais ça marche pas, là, ton truc ?> ?" 
+        intervals [9]:
+            xmin = 29.636624999999999 
+            xmax = 30.344570585260456 
+            text = "ER: Ah, si, ça marche." 
+        intervals [10]:
+            xmin = 30.344570585260456 
+            xmax = 33.405573910249274 
+            text = "(bruit de fond)" 
+        intervals [11]:
+            xmin = 33.405573910249274 
+            xmax = 34.990250000000003 
+            text = "E: (XX) Emmanuelle ?" 
+        intervals [12]:
+            xmin = 34.990250000000003 
+            xmax = 36.363397347878923 
+            text = "(bruit de fond)" 
+        intervals [13]:
+            xmin = 36.363397347878923 
+            xmax = 37.257623038325093 
+            text = "E: Emmanuelle comment ?" 
+        intervals [14]:
+            xmin = 37.257623038325093 
+            xmax = 39.474625000000003 
+            text = "ER: Emmanuelle Reynaud, R.E.Y.," 
+        intervals [15]:
+            xmin = 39.474625000000003 
+            xmax = 41.412000000000006 
+            text = "ER: R.E.Y.N.A.U.D." 
+        intervals [16]:
+            xmin = 41.412000000000006 
+            xmax = 42.313437518924609 
+            text = "E: N.A.U.D. ?" 
+        intervals [17]:
+            xmin = 42.313437518924609 
+            xmax = 43.287125000000003 
+            text = "ER: (onomatopée d'approbation : Mm.)" 
+        intervals [18]:
+            xmin = 43.287125000000003 
+            xmax = 44.833750000000002 
+            text = "E: Alors, tu es née ? " 
+        intervals [19]:
+            xmin = 44.833750000000002 
+            xmax = 46.849187500000006 
+            text = "ER: A/. Le vingt-quatre, " 
+        intervals [20]:
+            xmin = 46.849187500000006 
+            xmax = 47.818187500000008 
+            text = "ER: six, " 
+        intervals [21]:
+            xmin = 47.818187500000008 
+            xmax = 48.881375000000006 
+            text = "ER: soixante-quinze. " 
+        intervals [22]:
+            xmin = 48.881375000000006 
+            xmax = 50.602221803444898 
+            text = "(bruit de fond)" 
+        intervals [23]:
+            xmin = 50.602221803444898 
+            xmax = 51.462054198104681 
+            text = "ER: A Bron. " 
+        intervals [24]:
+            xmin = 51.462054198104681 
+            xmax = 52.180937500000006 
+            text = "E: A Bron ? " 
+        intervals [25]:
+            xmin = 52.180937500000006 
+            xmax = 53.458500000000001 
+            text = "E: C'est où, Bron ?" 
+        intervals [26]:
+            xmin = 53.458500000000001 
+            xmax = 55.239562500000005 
+            text = "ER: C'est10 une banlieue de Lyon." 
+        intervals [27]:
+            xmin = 55.239562500000005 
+            xmax = 57.567500000000003 
+            text = "E: C'est/, ça c'est où, euh ?" 
+        intervals [28]:
+            xmin = 57.567500000000003 
+            xmax = 59.207625000000007 
+            text = "ER: C'est, euh, l/." 
+        intervals [29]:
+            xmin = 59.207625000000007 
+            xmax = 60.818299355685539 
+            text = "ER: C'est10 à l'est lyonnais, " 
+        intervals [30]:
+            xmin = 60.818299355685539 
+            xmax = 64.065875000000006 
+            text = "ER: c'est10 entre, euh, Villeurbanne et Vaux-en-velun. A peu près." 
+        intervals [31]:
+            xmin = 64.065875000000006 
+            xmax = 72.268750000000011 
+            text = "(bruit de fond)" 
+        intervals [32]:
+            xmin = 72.268750000000011 
+            xmax = 73.830500000000001 
+            text = "E: Euh, tu as toujours habité Lyon, ou ?" 
+        intervals [33]:
+            xmin = 73.830500000000001 
+            xmax = 75.052250000000001 
+            text = "ER: Ouais. O<E: Ouais ?> Ouais, ouais." 
+        intervals [34]:
+            xmin = 75.052250000000001 
+            xmax = 76.596043747282152 
+            text = "E: Tu as, tu as, " 
+        intervals [35]:
+            xmin = 76.596043747282152 
+            xmax = 77.971775578737805 
+            text = "E: habité Bron, euh ?" 
+        intervals [36]:
+            xmin = 77.971775578737805 
+            xmax = 79.037967748115932 
+            text = "ER: Non, jamais20 en fait, euh, " 
+        intervals [37]:
+            xmin = 79.037967748115932 
+            xmax = 80.51687946693076 
+            text = "ER: la clinique où je suis née était20 à Bron, " 
+        intervals [38]:
+            xmin = 80.51687946693076 
+            xmax = 82.973687500000011 
+            text = "ER: mais <E: Ouais.> mes parents habitaient déjà à Lyon, donc on ne, euh <E: Ils hab/.>." 
+        intervals [39]:
+            xmin = 82.973687500000011 
+            xmax = 85.864249999999998 
+            text = "ER: Ils11z y sont10 allés pour l'accouchement, ils sont repartis <E: Ouais, ouais.>, donc, euh, bon." 
+        intervals [40]:
+            xmin = 85.864249999999998 
+            xmax = 88.674125000000004 
+            text = "E: C'est qu'une clinique pour, euh, pour accoucher, euh." 
+        intervals [41]:
+            xmin = 88.674125000000004 
+            xmax = 93.762062499999999 
+            text = "ER: Ben euh, ouais parce qu'en fait, euh, l/, l'accoucheur de ma mère il était, euh, il travaillait là-bas, donc <E: Ouais ?>, euh." 
+        intervals [42]:
+            xmin = 93.762062499999999 
+            xmax = 95.511875000000003 
+            text = "ER: (X) voilà quoi (rires)." 
+        intervals [43]:
+            xmin = 95.511875000000003 
+            xmax = 98.636750000000006 
+            text = "E: Et, euh, euh, donc ils habitaient Lyon, où ça ?" 
+        intervals [44]:
+            xmin = 98.636750000000006 
+            xmax = 100.2774375 
+            text = "ER: Lyon deuxième, en face Bellecour." 
+        intervals [45]:
+            xmin = 100.2774375 
+            xmax = 106.08968750000001 
+            text = "(bruit de fond)" 
+        intervals [46]:
+            xmin = 106.08968750000001 
+            xmax = 107.53344765898232 
+            text = "E: Tu as, toujours vécu là-bas, euh ?" 
+        intervals [47]:
+            xmin = 107.53344765898232 
+            xmax = 109.76901188509775 
+            text = "ER: J'ai vécu là-bas jusqu'à ce que j'ai euh, vingt11t ans." 
+        intervals [48]:
+            xmin = 109.76901188509775 
+            xmax = 110.7320241671167 
+            text = "(bruit de fond)" 
+        intervals [49]:
+            xmin = 110.7320241671167 
+            xmax = 113.24273475952327 
+            text = "ER: Donc j'ai habité dans le même appart/ jusquà, mes vingt11t ans, " 
+        intervals [50]:
+            xmin = 113.24273475952327 
+            xmax = 115.1830625 
+            text = "après j'ai pris10 un11nVN appart/ toute seule, euh, " 
+        intervals [51]:
+            xmin = 115.1830625 
+            xmax = 116.18073829209463 
+            text = "ER: aux Terreaux." 
+        intervals [52]:
+            xmin = 116.18073829209463 
+            xmax = 117.02790625 
+            text = "ER: A peu près." 
+        intervals [53]:
+            xmin = 117.02790625 
+            xmax = 118.60609375 
+            text = "ER: Juste en-dessous des Terreaux." 
+        intervals [54]:
+            xmin = 118.60609375 
+            xmax = 119.31052820865625 
+            text = "(bruit de fond)" 
+        intervals [55]:
+            xmin = 119.31052820865625 
+            xmax = 120.34232708224799 
+            text = "ER: Donc dans euh, le premier. " 
+        intervals [56]:
+            xmin = 120.34232708224799 
+            xmax = 122.02759857578117 
+            text = "(bruit de fond)" 
+        intervals [57]:
+            xmin = 122.02759857578117 
+            xmax = 123.43772370302321 
+            text = "ER: Là je suis restée, trois11z ans." 
+        intervals [58]:
+            xmin = 123.43772370302321 
+            xmax = 125.77646781649783 
+            text = "ER: Trois11z ans, deux11z ans, peut-être, deux11z ans et demi." 
+        intervals [59]:
+            xmin = 125.77646781649783 
+            xmax = 129.62115625000001 
+            text = "ER: Et après, je suis venue habiter, euh, dans le sixième, euh, à Lyon." 
+        intervals [60]:
+            xmin = 129.62115625000001 
+            xmax = 132.27680072012581 
+            text = "E: C'est à côté, le sixième, non, c'est quoi, c'est ?" 
+        intervals [61]:
+            xmin = 132.27680072012581 
+            xmax = 134.40221875 
+            text = "ER: Non, c'est pas tout11t à fait10 à côté, c'est, euh, (onomatopée : Ff)." 
+        intervals [62]:
+            xmin = 134.40221875 
+            xmax = 136.23202973556082 
+            text = "ER: C'est le quartier chic de Lyon, en fait." 
+        intervals [63]:
+            xmin = 136.23202973556082 
+            xmax = 136.91989565128864 
+            text = "E: C'est quoi ?" 
+        intervals [64]:
+            xmin = 136.91989565128864 
+            xmax = 138.77713362375377 
+            text = "ER: C'est, euh, en euh." 
+        intervals [65]:
+            xmin = 138.77713362375377 
+            xmax = 139.96459375000001 
+            text = "ER: Tu vois les Terreaux ?" 
+        intervals [66]:
+            xmin = 139.96459375000001 
+            xmax = 140.81128125000001 
+            text = "E: Ouais <ER: Tu vois le Rhône ?> ?" 
+        intervals [67]:
+            xmin = 140.81128125000001 
+            xmax = 141.17036518909356 
+            text = "E: Ouais." 
+        intervals [68]:
+            xmin = 141.17036518909356 
+            xmax = 144.49878125000001 
+            text = "ER: Ben c'est ce qu'il y a de l'autre côté du, des Terreaux, mais, euh, de l'autre côté du Rhône." 
+        intervals [69]:
+            xmin = 144.49878125000001 
+            xmax = 145.09120090874217 
+            text = "(bruit de fond)" 
+        intervals [70]:
+            xmin = 145.09120090874217 
+            xmax = 146.74853125000001 
+            text = "ER: C'est10 au niveau des Terreaux, de l'autre côté du Rhône." 
+        intervals [71]:
+            xmin = 146.74853125000001 
+            xmax = 148.56492378316773 
+            text = "E: Il s'appelle comment, ce quartier ?" 
+        intervals [72]:
+            xmin = 148.56492378316773 
+            xmax = 149.56232936097308 
+            text = "ER: Ben, le sixième." 
+        intervals [73]:
+            xmin = 149.56232936097308 
+            xmax = 154.99647009522292 
+            text = "E: Ouais, mais il a, il a. <ER: Euh, il y a Foche, il y a euh, le parc de la tête d'or, il y a euh, la Part-Dieu, euh.> Ouais." 
+        intervals [74]:
+            xmin = 154.99647009522292 
+            xmax = 160.12107116739526 
+            text = "(bruit de fond)" 
+        intervals [75]:
+            xmin = 160.12107116739526 
+            xmax = 161.97957784354264 
+            text = "E: Et toi, tu es à côté de la tête d'or, non, enfin ?" 
+        intervals [76]:
+            xmin = 161.97957784354264 
+            xmax = 164.24334375000001 
+            text = "ER: Non, je suis10 à côté de la Part-Dieu, non, je suis du côté Part-Dieu." 
+        intervals [77]:
+            xmin = 164.24334375000001 
+            xmax = 166.16509375000001 
+            text = "E: Et ça fait combien de temps que tu es là-bas ?" 
+        intervals [78]:
+            xmin = 166.16509375000001 
+            xmax = 170.78426156485887 
+            text = "ER: Ca va faire, euh, ça va faire, euh, un11nVN an, deux11z ans, ça va faire deux11z ans, bientôt." 
+        intervals [79]:
+            xmin = 170.78426156485887 
+            xmax = 171.54091407215947 
+            text = "E: Deux ans ?" 
+        intervals [80]:
+            xmin = 171.54091407215947 
+            xmax = 171.74727384687782 
+            text = "ER : Ouais." 
+        intervals [81]:
+            xmin = 171.74727384687782 
+            xmax = 173.63890511512935 
+            text = "(bruit de fond)" 
+        intervals [82]:
+            xmin = 173.63890511512935 
+            xmax = 175.47709375 
+            text = "ER: Je prends le micro, hein, parce qu'il y a du bruit. " 
+        intervals [83]:
+            xmin = 175.47709375 
+            xmax = 176.83748162326376 
+            text = "(bruit de fond)" 
+        intervals [84]:
+            xmin = 176.83748162326376 
+            xmax = 177.83488720106911 
+            text = "ER: Je parle dans le micro." 
+        intervals [85]:
+            xmin = 177.83488720106911 
+            xmax = 179.44596875000002 
+            text = "(bruit de fond)" 
+        intervals [86]:
+            xmin = 179.44596875000002 
+            xmax = 181.30861007549467 
+            text = "E: Non mais normalement ça capte < ER: Ca capte ?>, hein." 
+        intervals [87]:
+            xmin = 181.30861007549467 
+            xmax = 184.02390625000001 
+            text = "ER: Ouais, bon, c'est <E: (XXX).>. Je le remettrai." 
+        intervals [88]:
+            xmin = 184.02390625000001 
+            xmax = 186.02049159823028 
+            text = "(bruit de fond)" 
+        intervals [89]:
+            xmin = 186.02049159823028 
+            xmax = 187.60184375 
+            text = "E: Euh, tu fais quoi, en fait, dans, " 
+        intervals [90]:
+            xmin = 187.60184375 
+            xmax = 190.11456250049309 
+            text = "E: Euh <ER: Je fais10 une thèse en euh, sciences cognitives.>." 
+        intervals [91]:
+            xmin = 190.11456250049309 
+            xmax = 202.6337221667396 
+            text = "(bruit de fond)" 
+        intervals [92]:
+            xmin = 202.6337221667396 
+            xmax = 204.05953125000002 
+            text = "E: Sciences cognitives ?" 
+        intervals [93]:
+            xmin = 204.05953125000002 
+            xmax = 206.71565625 
+            text = "ER: (onomatopée d'affirmation : Mm.) Je suis10 inscrite en sciences cognitives, et c'est, euh. " 
+        intervals [94]:
+            xmin = 206.71565625 
+            xmax = 211.07490625 
+            text = "ER: C'est la partie modélisation, euh, modélisation connexionniste <E: Ah, ouais ?>, par réseaux de neurones." 
+        intervals [95]:
+            xmin = 211.07490625 
+            xmax = 212.82484375000001 
+            text = "ER: Ouais <E: Ah, c'est pour ça que tu connais Atanase ?>." 
+        intervals [96]:
+            xmin = 212.82484375000001 
+            xmax = 213.43321704366653 
+            text = "ER: Ouais." 
+        intervals [97]:
+            xmin = 213.43321704366653 
+            xmax = 213.77821875000001 
+            text = "E: Ouais ?" 
+        intervals [98]:
+            xmin = 213.77821875000001 
+            xmax = 217.01365625 
+            text = "ER: Ouais, enfin, c/, je l'ai rencontré à un séminaire qui parlait de réseaux de neurones." 
+        intervals [99]:
+            xmin = 217.01365625 
+            xmax = 218.35740625 
+            text = "ER: En fait, on travaille, euh, " 
+        intervals [100]:
+            xmin = 218.35740625 
+            xmax = 220.91996875000001 
+            text = "ER: enfin, la dernière fois que je l'ai vu, il avait sangé, il avait chan/" 
+        intervals [101]:
+            xmin = 220.91996875000001 
+            xmax = 224.70090625 
+            text = "ER: il avait changé de sujet de thèse et il faisait10 à peu près comme moi, donc c'est pour ça que j'étais20 allée le voir." 
+        intervals [102]:
+            xmin = 224.70090625 
+            xmax = 225.76334375000002 
+            text = "(bruit de fond)" 
+        intervals [103]:
+            xmin = 225.76334375000002 
+            xmax = 227.01334375000002 
+            text = "ER: Pour voir, euh, ce que lui il faisait, quoi." 
+        intervals [104]:
+            xmin = 227.01334375000002 
+            xmax = 227.54904170681499 
+            text = "(bruit de fond)" 
+        intervals [105]:
+            xmin = 227.54904170681499 
+            xmax = 228.89038024248424 
+            text = "E: Et tu bosses sur quoi, en fait ?" 
+        intervals [106]:
+            xmin = 228.89038024248424 
+            xmax = 232.3297098211234 
+            text = "ER: Je bosse sur la, modélisation des mémoires20 associatives multimodales, " 
+        intervals [107]:
+            xmin = 232.3297098211234 
+            xmax = 236.68496875 
+            text = "ER: c'est-à-dire, euh, on cherche à faire une mémoire, qui pourrait relier la vision, l'olfaction, euh, " 
+        intervals [108]:
+            xmin = 236.68496875 
+            xmax = 240.23171875 
+            text = "ER: l'audition, enfin, qui pourrait relier toutes les, les perceptions sensorielles, " 
+        intervals [109]:
+            xmin = 240.23171875 
+            xmax = 242.46128125000001 
+            text = "ER: pour donner, euh, l'identification d'un objet." 
+        intervals [110]:
+            xmin = 242.46128125000001 
+            xmax = 243.57758624695563 
+            text = "E: Ah, O.K." 
+        intervals [111]:
+            xmin = 243.57758624695563 
+            xmax = 245.12528455734326 
+            text = "(bruit de fond)" 
+        intervals [112]:
+            xmin = 245.12528455734326 
+            xmax = 245.94771875000001 
+            text = "E: ca doit être complexe." 
+        intervals [113]:
+            xmin = 245.94771875000001 
+            xmax = 247.96090625000002 
+            text = "E: Et les réseaux, tu t'en sers pour quoi, en fait ?" 
+        intervals [114]:
+            xmin = 247.96090625000002 
+            xmax = 248.94540625000002 
+            text = "ER: Les réseaux de neurones <E: Ouais.>?" 
+        intervals [115]:
+            xmin = 248.94540625000002 
+            xmax = 251.80453125 
+            text = "ER: Ben en fait j'ai, euh, deux ré/, enfin euh, j'ai un euh." 
+        intervals [116]:
+            xmin = 251.80453125 
+            xmax = 255.83019787085763 
+            text = "ER: Ce que je fais, c'est10 un gros réseau de neurones, qui se compose de plusieurs petits réseaux de neurones qui se parlent." 
+        intervals [117]:
+            xmin = 255.83019787085763 
+            xmax = 256.50086713869229 
+            text = "(bruit de fond)" 
+        intervals [118]:
+            xmin = 256.50086713869229 
+            xmax = 260.61671875000002 
+            text = "ER: Et euh. J'ai plusieurs réseaux de neurones, qui servent, euh, pour la partie, euh." 
+        intervals [119]:
+            xmin = 260.61671875000002 
+            xmax = 261.66353125 
+            text = "ER: Sensorienne." 
+        intervals [120]:
+            xmin = 261.66353125 
+            xmax = 266.13209375000002 
+            text = "ER: C'est des réseaux de neurones qui sont chargés de, euh, reconnaître, un stimulus, sensoriel." 
+        intervals [121]:
+            xmin = 266.13209375000002 
+            xmax = 268.35078125000001 
+            text = "ER: Et après, j'ai un gros réseau de neurones central, " 
+        intervals [122]:
+            xmin = 268.35078125000001 
+            xmax = 270.93165625 
+            text = "ER: qui est chargé, lui, de, euh, d'identifier, " 
+        intervals [123]:
+            xmin = 270.93165625 
+            xmax = 271.37886498205262 
+            text = "ER: en r/." 
+        intervals [124]:
+            xmin = 271.37886498205262 
+            xmax = 275.0073576875169 
+            text = "ER: D'identifier20 à partir des différentes bas/, facettes perceptives qui ont10 été reconnues." 
+        intervals [125]:
+            xmin = 275.0073576875169 
+            xmax = 276.33149957529298 
+            text = "E: Ouais <ER: Ouais, c'est ça.>." 
+        intervals [126]:
+            xmin = 276.33149957529298 
+            xmax = 278.3585625 
+            text = "E: C'est genre, perceptron, euh, que ?" 
+        intervals [127]:
+            xmin = 278.3585625 
+            xmax = 280.35843750000004 
+            text = "ER: Non, non, pas du tout <E: Non ?>, c'est genre, euh." 
+        intervals [128]:
+            xmin = 280.35843750000004 
+            xmax = 284.8167332494483 
+            text = "ER: Ben j'ai un classif/, enfin, j'ai des classifieurs20 incrémentaux, donc ça c'est10 un réseau de neurones, euh, particulier, " 
+        intervals [129]:
+            xmin = 284.8167332494483 
+            xmax = 287.34464048974803 
+            text = "ER: et sinon c'est10 un système dynamique, c'est10 un gros système dynamique." 
+        intervals [130]:
+            xmin = 287.34464048974803 
+            xmax = 288.10612500000002 
+            text = "(bruit de fond)" 
+        intervals [131]:
+            xmin = 288.10612500000002 
+            xmax = 290.10465625 
+            text = "ER: Non mais Perceptron, euh, ils veulent pas." 
+        intervals [132]:
+            xmin = 290.10465625 
+            xmax = 291.85446875000002 
+            text = "E: C'est vrai <ER: ils sont contre. Ouais.>? Pourquoi ?" 
+        intervals [133]:
+            xmin = 291.85446875000002 
+            xmax = 292.79597787189107 
+            text = "ER: Ben, " 
+        intervals [134]:
+            xmin = 292.79597787189107 
+            xmax = 293.38066390025972 
+            text = "parce qu'en fait, " 
+        intervals [135]:
+            xmin = 293.38066390025972 
+            xmax = 293.93095663284197 
+            text = "(bruit de fond)" 
+        intervals [136]:
+            xmin = 293.93095663284197 
+            xmax = 296.19434375000003 
+            text = "ER: On cherche à faire du euh, biologiquement plausible." 
+        intervals [137]:
+            xmin = 296.19434375000003 
+            xmax = 298.10053125000002 
+            text = "ER: Et donc le Perceptron, euh, " 
+        intervals [138]:
+            xmin = 298.10053125000002 
+            xmax = 299.88163115572883 
+            text = "ER: enfin, la rétropropagation du gradient" 
+        intervals [139]:
+            xmin = 299.88163115572883 
+            xmax = 302.08471875000004 
+            text = "ER: qui est euh, l'algorythme dont11t on se sert pour le Perceptron, " 
+        intervals [140]:
+            xmin = 302.08471875000004 
+            xmax = 304.60021875000001 
+            text = "ER: ça serait pas, biologiquement plausible, donc, euh." 
+        intervals [141]:
+            xmin = 304.60021875000001 
+            xmax = 306.86609375 
+            text = "ER: En fait, on cherche à coller20 au modèle d'un type, " 
+        intervals [142]:
+            xmin = 306.86609375 
+            xmax = 308.84687500000001 
+            text = "ER: Enfin, de deux types, qui sont (XX) et (XX), " 
+        intervals [143]:
+            xmin = 308.84687500000001 
+            xmax = 309.6280625 
+            text = "(bruit de fond)" 
+        intervals [144]:
+            xmin = 309.6280625 
+            xmax = 313.10259534403571 
+            text = "ER: euh, qui ont proposé un euh, schéma d'architecture fonctionnelle de haut niveau." 
+        intervals [145]:
+            xmin = 313.10259534403571 
+            xmax = 313.87644449922954 
+            text = "(bruit de fond)" 
+        intervals [146]:
+            xmin = 313.87644449922954 
+            xmax = 316.85146458475236 
+            text = "ER: Et, euh, donc on cherche à coller20 au maximum à leur modèle, mais, " 
+        intervals [147]:
+            xmin = 316.85146458475236 
+            xmax = 319.1121875 
+            text = "ER: et donc, euh, on11nVN a pas le droit, enfin, on11nVN a pas le droit, " 
+        intervals [148]:
+            xmin = 319.1121875 
+            xmax = 325.43037500000003 
+            text = "ER: on s'interdit les Perceptrons, on s'interdit des tas de choses, qui marcheraient peut-être mieux, mais, qui sont pas, ni biologiquement, ni psychologiquement plausibles. " 
+        intervals [149]:
+            xmin = 325.43037500000003 
+            xmax = 865.10846875000004 
+            text = "" 

@@ -1,0 +1,90 @@
+<h1 id="tei-corpo">tei-corpo</h1>
+<p>Conversion tool from Elan, Clan, Transcriber and Praat files to TEI files and back</p>
+<h3 id="java-library-and-swing-user-interface">Java library and Swing user interface</h3>
+<p>Les conversions peuvent être faites en ligne à cette adresse : <a href="http://ct3.ortolang.fr/teiconvert/">http://ct3.ortolang.fr/teiconvert/</a></p>
+<p>L&#39;outil Java avec interface utilisateur de conversion de formats (TEI_CORPO, CLAN, ELAN, Transcriber, Praat) peut être téléchargé ici :<br><a href="http://ct3.ortolang.fr/tei-corpo/conversions.jar">conversions.jar</a><br>Le site github ne contient que les fichiers sources du projet.</p>
+<p><strong>Attention</strong> : il faut avoir installé Java sur son ordinateur pour exécuter les commandes : <a href="http://www.java.com/fr/">Télécharger Java</a></p>
+<h3 id="utilisation-de-l-outil-de-conversion-avec-interface-graphique">Utilisation de l&#39;outil de conversion avec interface graphique</h3>
+<p>L&#39;outil est à utiliser directement depuis le Finder ou Bureau (faire double clic sur le nom de fichier).</p>
+<p>  Cet outil est assez simple d&#39;utilisation et permet de faire des conversions en grande quantité sur des fichiers ou des répertoires, en utilisant les paramètres par défaut des commandes. Pour une interface utilisateur plus conviviale et plus puissante, allez sur la version en ligne (<a href="http://ct3.ortolang.fr/teiconvert/">http://ct3.ortolang.fr/teiconvert/</a> ou testez le logiciel AEEC qui est en développement (voir <a href="https://github.com/christopheparisse/aeec">https://github.com/christopheparisse/aeec</a>).</p>
+<h3 id="utilisation-de-l-outil-de-conversion-en-ligne-de-commande">Utilisation de l&#39;outil de conversion en ligne de commande</h3>
+<p>L&#39;outil est utilisable en ligne de commande. Il existe plusieurs commandes qui peuvent être exécutées. Les commandes principales sont regroupées dans une commande générale TeiCorpo.<br>Les paramètres complémentaires ont la même forme pour toutes les commandes, mais certains paramètres ne s&#39;appliquent qu&#39;à certaines commandes.</p>
+<p><strong>java -cp conversions.jar fr.ortolang.teicorpo.TeiCorpo -from format-entree -to format-sortie fichiers_input -o output [paramètres]</strong></p>
+<p>Toutes les commandes utilisent les mêmes paramètres d&#39;entrée sortie:</p>
+<ul>
+<li>nom du fichier ou répertoire où se trouvent les fichiers à convertir (peut être précédé de -i)</li>
+<li>-o nom du fichier de sortie des fichiers ou répertoire des fichiers résultats</li>
+<li>-from format d&#39;entrée (si -from est omis, le format d&#39;entrée est déduit de l&#39;extension de fichier)</li>
+<li>-to format de sortie (si -to est omis, le format de sortie est déduit de l&#39;extension de fichier)  </li>
+</ul>
+<p>Le nombre d&#39;éléments à convertir n&#39;est pas limité. Par contre un seul paramètre de sortie peut être donné avec -o. Si l&#39;option -o n&#39;est pas spécifié, ou s&#39;il y a plus d&#39;un fichier entrée, le fichier de sortie aura le même nom que le fichier d&#39;entrée, avec une autre extension, et sera stocké au même endroit.<br>Les paramètres entrée et sortie peuvent être des noms de répertoire.<br>En entrée, tous les fichiers de l&#39;arborescence correspondant au format de l&#39;option -from (ou tous les fichiers de type connus si pas d&#39;option -from) seront convertis.<br>En sortie, un nom de répertoire servira d&#39;emplacement pour les fichiers produits.</p>
+<p>L&#39;usage de -from et -to est prioritaire sur les informations données par les extensions de fichier.<br>Les options -from et -to peuvent accepter les valeurs suivantes:</p>
+<ul>
+<li>clan</li>
+<li>elan</li>
+<li>praat</li>
+<li>transcriber</li>
+</ul>
+<p>L&#39;option -to peut accepter les valeurs complémentaires suivantes:</p>
+<ul>
+<li>txm (fichiers pour TXM)</li>
+<li>lexico (lexico ou le trameur)</li>
+<li>text (texte UTF8)</li>
+<li>srt (sous-titres)</li>
+</ul>
+<p>Paramètres complémentaires s&#39;appliquant à toutes les commandes</p>
+<ul>
+<li>-n niveau: niveau d&#39;imbrication (1 pour lignes principales)</li>
+<li>-a name : le locuteur/champ name est produit en sortie (caractères génériques acceptés)</li>
+<li>-s name : le locuteur/champ name est suprimé de la sortie (caractères génériques acceptés)</li>
+<li>-cleanline : produit des fichiers sans codes spécifiques de transcription orale</li>
+<li>-clearchat : produit des fichiers sans codes spécifiques de transcription orale</li>
+</ul>
+<p>Paramètres supplémentaires pour les exports vers Txm et vers Lexico</p>
+<ul>
+<li>-tv &quot;type:valeur&quot; : un champ type:valeur est ajouté dans les &lt;w&gt; de txm ou lexico ou le trameur</li>
+<li>-section : ajoute un indicateur de section en fin de chaque énoncé (pour lexico/le trameur)</li>
+</ul>
+<p>Paramètres supplémentaires pour les exports vers du texte</p>
+<ul>
+<li>-raw seules les transcriptions sont produites sans information de locuteur ou autre</li>
+<li>-iramuteq les fichiers texte sont complétés par les entêtes pour l&#39;usage d&#39;Iramuteq</li>
+<li>-concat tous les fichiers sortie sont ajoutés dans un seul fichier output</li>
+<li>-append les fichiers sont ajoutés au fichier original</li>
+</ul>
+<p>La conversion depuis Praat dispose de paramètres supplémentaires</p>
+<ul>
+<li>-p fichier_de_paramètres: contient les paramètres sous leur format ci-dessous, un jeu de paramètre par ligne.</li>
+<li>-m nom/adresse du fichier média</li>
+<li>-e encoding (par défaut detect encoding)</li>
+<li>-d default UTF8 encoding</li>
+<li>-t tiername type parent (descriptions des relations entre tiers)<ul>
+<li>types autorisés: - assoc incl symbdiv timediv</li>
+</ul>
+</li>
+</ul>
+<p>Commandes complémentaires (faisant partie de TeiCorpo) :</p>
+<ul>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.ClanToTei [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TranscriberToTei [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.PraatToTei [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.ElanToTei [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToClan [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToTranscriber [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToElan [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToPraat [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToTxm [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToLexico [paramètres]</li>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiToSrt [paramètres]</li>
+</ul>
+<p>Commande supplémentaire pour éditer automatiquement les fichiers TEI</p>
+<ul>
+<li>java -cp conversions.jar fr.ortolang.teicorpo.TeiEdit [paramètres]<br>Cette commande permet de modifier les valeurs des champs media, mediamime, docname et les valeurs temporelles dans la timeline<br>Pour cela utiliser l&#39;option -c commande=valeur<ul>
+<li>-c media=nom_de_fichier</li>
+<li>-c mediamime=valeur</li>
+<li>-c docname=nom-de_fichier (nom interne du document utilisé pour l&#39;interrogation en xml)</li>
+<li>-c chgtime=valeur (décale tous les repères temporels de &#39;valeur&#39;)</li>
+<li>-c replace (ne crée pas un nouveau fichier mais remplace l&#39;ancien)</li>
+</ul>
+</li>
+</ul>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fichier TEI obtenu à partir du fichier Transcriber AC_track_0379.TextGrid</title>
+</titleStmt>
+<publicationStmt>
+<distributor>tei_corpo</distributor>
+</publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC"/>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">PhonAlign</note>
+<note type="parent">Transcription</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">PhonAlign</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">Transcription</note>
+<note type="parent">-</note>
+<note type="type">-</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+<note>
+<note type="code">TokensAlign</note>
+<note type="parent">Transcription</note>
+<note type="type">Time_Subdivision</note>
+<note type="subtype">TokensAlign</note>
+<note type="graphicref">false</note>
+<note type="timealign">true</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt>
+<recording>
+<media mimeType="audio/x-wav" url="/Users/cp/OneDrive/christopheparisse/tei-corpo/test/AC_track_0379.wav"/>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<particDesc>
+<listPerson>
+<person>
+<altGrp>
+<alt type="PhonAlign"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="Transcription"/>
+</altGrp>
+</person>
+<person>
+<altGrp>
+<alt type="TokensAlign"/>
+</altGrp>
+</person>
+</listPerson>
+</particDesc>
+</profileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="Praat" version="1.01">
+<desc>Transcription created with Elan and converted to TEI_CORPO</desc>
+</application>
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>from: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/./AC_track_0379.TextGrid</item>
+<item>to: /Users/cp/OneDrive/christopheparisse/tei-corpo/test/.tei_corpo.xml</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="0.06864564803610905" since="#T0" xml:id="T2"/>
+<when interval="0.11712426554755782" since="#T0" xml:id="T3"/>
+<when interval="0.20047532512269478" since="#T0" xml:id="T4"/>
+<when interval="0.2965069379845246" since="#T0" xml:id="T5"/>
+<when interval="0.34090374071124074" since="#T0" xml:id="T6"/>
+<when interval="0.40522901494857466" since="#T0" xml:id="T7"/>
+<when interval="0.49311002341366467" since="#T0" xml:id="T8"/>
+<when interval="0.6043805892888724" since="#T0" xml:id="T9"/>
+<when interval="0.6262905207782857" since="#T0" xml:id="T10"/>
+<when interval="0.7621889874768786" since="#T0" xml:id="T11"/>
+<when interval="0.8201723332682782" since="#T0" xml:id="T12"/>
+<when interval="0.8854035972836027" since="#T0" xml:id="T13"/>
+<when interval="0.9670453141304346" since="#T0" xml:id="T14"/>
+<when interval="1.0322016395314477" since="#T0" xml:id="T15"/>
+<when interval="1.0676109979036388" since="#T0" xml:id="T16"/>
+<when interval="1.1144580742656778" since="#T0" xml:id="T17"/>
+<when interval="1.2076117389198004" since="#T0" xml:id="T18"/>
+<when interval="1.2633034714160636" since="#T0" xml:id="T19"/>
+<when interval="1.3738494667469918" since="#T0" xml:id="T20"/>
+<when interval="1.427028790258461" since="#T0" xml:id="T21"/>
+<when interval="1.4988652886061344" since="#T0" xml:id="T22"/>
+<when interval="1.5617542824067132" since="#T0" xml:id="T23"/>
+<when interval="1.626213299651127" since="#T0" xml:id="T24"/>
+<when interval="1.6652733759509963" since="#T0" xml:id="T25"/>
+<when interval="1.748884951505994" since="#T0" xml:id="T26"/>
+<when interval="1.7855147846062789" since="#T0" xml:id="T27"/>
+<when interval="1.8739041644787053" since="#T0" xml:id="T28"/>
+<when interval="1.9005706884309554" since="#T0" xml:id="T29"/>
+<when interval="1.9742380551447027" since="#T0" xml:id="T30"/>
+<when interval="2.058645931419272" since="#T0" xml:id="T31"/>
+<when interval="2.1780910393549835" since="#T0" xml:id="T32"/>
+<when interval="2.3054991544864087" since="#T0" xml:id="T33"/>
+<when interval="2.328813" since="#T0" xml:id="T1"/>
+</timeline>
+<body>
+<div>
+<head>
+<note type="start">#T0</note>
+<note type="end">#T1</note>
+</head>
+<annotationBloc end="#T1" start="#T0" who="Transcription" xml:id="au444">
+<u>
+<seg>une classe entière qui a bien vu comment ça s'est passé</seg>
+</u>
+<spanGrp type="PhonAlign">
+<span from="#T0" to="#T2" xml:id="s1">#</span>
+<span from="#T2" to="#T3" xml:id="s2">y</span>
+<span from="#T3" to="#T4" xml:id="s3">n</span>
+<span from="#T4" to="#T5" xml:id="s4">k</span>
+<span from="#T5" to="#T6" xml:id="s5">l</span>
+<span from="#T6" to="#T7" xml:id="s6">a</span>
+<span from="#T7" to="#T8" xml:id="s7">s</span>
+<span from="#T8" to="#T9" xml:id="s8">a~</span>
+<span from="#T9" to="#T10" xml:id="s9">n</span>
+<span from="#T10" to="#T11" xml:id="s10">t</span>
+<span from="#T11" to="#T12" xml:id="s11">j</span>
+<span from="#T12" to="#T13" xml:id="s12">E</span>
+<span from="#T13" to="#T14" xml:id="s13">r</span>
+<span from="#T14" to="#T15" xml:id="s14">k</span>
+<span from="#T15" to="#T16" xml:id="s15">i</span>
+<span from="#T16" to="#T17" xml:id="s16">a</span>
+<span from="#T17" to="#T18" xml:id="s17">b</span>
+<span from="#T18" to="#T19" xml:id="s18">j</span>
+<span from="#T19" to="#T20" xml:id="s19">U~</span>
+<span from="#T20" to="#T21" xml:id="s20">v</span>
+<span from="#T21" to="#T22" xml:id="s21">y</span>
+<span from="#T22" to="#T23" xml:id="s22">g</span>
+<span from="#T23" to="#T24" xml:id="s23">m</span>
+<span from="#T24" to="#T25" xml:id="s24">a~</span>
+<span from="#T25" to="#T26" xml:id="s25">s</span>
+<span from="#T26" to="#T27" xml:id="s26">a</span>
+<span from="#T27" to="#T28" xml:id="s27">s</span>
+<span from="#T28" to="#T29" xml:id="s28">e</span>
+<span from="#T29" to="#T30" xml:id="s29">p</span>
+<span from="#T30" to="#T31" xml:id="s30">a</span>
+<span from="#T31" to="#T32" xml:id="s31">s</span>
+<span from="#T32" to="#T33" xml:id="s32">e</span>
+<span from="#T33" to="#T1" xml:id="s33">#</span>
+</spanGrp>
+<spanGrp type="TokensAlign">
+<span from="#T0" to="#T2" xml:id="s34">#</span>
+<span from="#T2" to="#T4" xml:id="s35">une</span>
+<span from="#T4" to="#T8" xml:id="s36">classe</span>
+<span from="#T8" to="#T14" xml:id="s37">entière</span>
+<span from="#T14" to="#T16" xml:id="s38">qui</span>
+<span from="#T16" to="#T17" xml:id="s39">a</span>
+<span from="#T17" to="#T20" xml:id="s40">bien</span>
+<span from="#T20" to="#T22" xml:id="s41">vu</span>
+<span from="#T22" to="#T25" xml:id="s42">comment</span>
+<span from="#T25" to="#T27" xml:id="s43">ça</span>
+<span from="#T27" to="#T28" xml:id="s44">s'</span>
+<span from="#T28" to="#T29" xml:id="s45">est</span>
+<span from="#T29" to="#T33" xml:id="s46">passé</span>
+<span from="#T33" to="#T1" xml:id="s47">#</span>
+</spanGrp>
+</annotationBloc>
+</div>
+</body>
+</text>
+</TEI>
