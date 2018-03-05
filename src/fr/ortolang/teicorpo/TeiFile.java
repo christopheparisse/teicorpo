@@ -23,17 +23,17 @@ import org.w3c.dom.NodeList;
 
 public class TeiFile {
 
-	// Document TEI à lire
+	// TEI Document to be parsed
 	public Document teiDoc;
-	// acces Xpath
+	// access to Xpath
 	public XPathFactory xPathfactory;
 	public XPath xpath;
-	// Informations sur la transcription
+	// Information about the transcription
 	public TransInfo transInfo;
 	// Transcription
 	public Trans trans;
-	// Langage du discours
-	public String language;
+	// Languages of the recording or corpus
+	public String[] language;
 	// compute the timeline
 	public TeiTimeline teiTimeline;
 
@@ -91,7 +91,22 @@ public class TeiFile {
 		transInfo = new TransInfo((Element) root.getElementsByTagName("teiHeader").item(0));
 		trans = new Trans((Element) root.getElementsByTagName("text").item(0), this);
 		transInfo.fileLocation = teiFile.getAbsolutePath();
-		language = root.getAttribute("xml:lang");
+		Element e = (Element) root.getElementsByTagName("langUsage").item(0);
+		if (e != null && e.hasChildNodes()) {
+			NodeList nl = e.getChildNodes();
+			language = new String[nl.getLength()];
+			// read all nodes (== all languages)
+			for (int i=0; i < nl.getLength(); i++) {
+				Element el = (Element)nl.item(i);
+				String ident = el.getAttribute("ident");
+				if (ident.isEmpty())
+					ident = el.getTextContent();
+				if (!ident.isEmpty())
+					language[i] = ident;
+				else
+					language[i] = "unknown";
+			}
+		}
 	}
 
 	public int mainLinesSize() {

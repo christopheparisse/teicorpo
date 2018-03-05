@@ -334,9 +334,16 @@ public class ClanToTei extends GenericMain {
 		Element settingDesc = docTEI.createElement("settingDesc");
 		profileDesc.appendChild(settingDesc);
 
+		Element langUsage = docTEI.createElement("langUsage");
+		profileDesc.appendChild(langUsage);
 		if (cf.lang != null) {
-			ChatLine cl = new ChatLine(cf.lang);
-			rootTEI.setAttribute("xml:lang", cl.tail.trim());
+			for (int i=0; i<cf.lang.length; i++) {
+				Element language = docTEI.createElement("language");
+				// here we should find the real name for language and the ISO code
+				language.setAttribute("ident", cf.lang[i].trim());
+				language.setTextContent(cf.lang[i].trim());
+				langUsage.appendChild(language);
+			}
 		}
 
 		if (cf.location != null) {

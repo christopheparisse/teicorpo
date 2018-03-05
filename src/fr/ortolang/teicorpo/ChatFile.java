@@ -72,7 +72,7 @@ public class ChatFile {
 	String location;
 	String transcriber;
 	String situation;
-	String lang;
+	String[] lang;
 	String timeDuration;
 	String timeStart;
 	ArrayList<String> comments = new ArrayList<String>();
@@ -146,8 +146,11 @@ public class ChatFile {
 						found = true;
 						// dans l'@ID
 						if (wds.length > 0) {
-							String[] details = wds[0].split("(?i)@ID:\\s+");
+							String[] details = wds[0].split(":\\s*");
+							//System.err.printf("ID: %s %d%n", wds[0], details.length);
 							if(details.length >= 2){
+								//System.err.printf("ET: %s%n", details[0]);
+								//System.err.printf("LANG: %s%n", details[1]);
 								id.language = details[1];
 							}
 						}
@@ -163,11 +166,11 @@ public class ChatFile {
 					}
 				}
 				if (found == false) {
-					// System.err.println("erreur sur ID " + ml(i) + "pas trouvé dans les participants - ajourt direct");
+					System.err.println("erreur sur ID " + ml(i) + "pas trouvé dans les participants - ajout direct");
 					ID nid = new ID();
 					// dans l'@ID
 					if (wds.length > 0) {
-						String[] details = wds[0].split("(?i)@ID:\\s+");
+						String[] details = wds[0].split(":\\s*");
 						if(details.length >= 2){
 							nid.language = details[1];
 						}
@@ -210,7 +213,16 @@ public class ChatFile {
 				gemes.add(ml(i));
 			}
 			else if ( ml(i).toLowerCase().startsWith("@languages") ) {
-				lang = ml(i);
+				int k = ml(i).indexOf(':');
+				if (k < 0)
+					k = ml(i).indexOf(' ');
+				if (k < 0)
+					k = ml(i).indexOf('\t');
+				if (k>0) {
+					String tail = ml(i).substring(k+1).trim();
+					String w[] = tail.split("[\\s,]+");
+					if (w.length > 0) lang = w;
+				}
 			}
 			else if ( ml(i).toLowerCase().startsWith("@time start") ) {
 				try{

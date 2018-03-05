@@ -59,7 +59,7 @@ public class TeiParticipant {
 				} else if (attValue.equals("2")) {
 					sex = "female";
 				} else {
-					sex = "Unknown";
+					sex = "";
 				}
 			}
 			/*

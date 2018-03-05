@@ -8,6 +8,7 @@ package fr.ortolang.teicorpo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -104,7 +105,14 @@ public class TeiToTranscriber extends TeiConverter {
 		else
 			setAttr(trans, "audio_filename", "", false);
 		setAttr(trans, "scribe", tf.transInfo.transcriber, false);
-		setAttr(trans, "xml:lang", tf.language, false);
+		if (tf.language == null || tf.language.length <= 0) {
+			tf.language = new String[1];
+			Locale currentLocale = Locale.getDefault();
+			setAttr(trans, "xml:lang", currentLocale.getLanguage(), false);
+		} else {
+			setAttr(trans, "xml:lang", tf.language[0], false);
+		}
+		
 		setAttr(trans, "version", tf.transInfo.version, false);
 		setAttr(trans, "version_date", tf.transInfo.date, false);
 		setAttr(trans, "elapsed_time", tf.transInfo.timeDuration, false);

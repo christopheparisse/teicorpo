@@ -75,12 +75,18 @@ public class TeiToClan extends TeiConverter {
 	public void buildHeader() {
 		out.println("@UTF8");
 		out.println("@Begin");
-		// Language est une ligne obligatoire dans l'en-tête de Chat donc par
-		// défaut on mettra français ("fra")
-		if (!Utils.isNotEmptyOrNull(tf.language) || tf.language.startsWith("fr")) {
-			tf.language = "fra";
+		// Languages is mandatory for chat format
+		// by default we put French or better the system language
+		if (tf.language == null || tf.language.length <= 0) {
+			tf.language = new String[1];
+			Locale currentLocale = Locale.getDefault();
+			tf.language[0] = currentLocale.getLanguage();
 		}
-		out.println("@Languages:\t" + tf.language);
+		out.print("@Languages:\t");
+		for (int i=0; i < tf.language.length-1; i++) {
+			out.print(tf.language[i] + ", ");
+		}
+		out.println(tf.language[tf.language.length-1]);
 		// Lignes concernant les locuteurs
 		addParticipantProperties();
 		// Lignes contenant les informations sur l'enregistrement
@@ -119,10 +125,11 @@ public class TeiToClan extends TeiConverter {
 		String participantsIDS = "";
 		for (TeiParticipant p : participants) {
 			participantsLine += toString(p.id) + " " + toString(p.name) + " " + getRole(p) + ", ";
-			// Chaque locuteur doit obligatoirement avoir un langage, par défaut
-			// on mettre le français.
+			// all speakers must have a language
+			// by default we use the value from the langUsage field
+			// if there is no default we put French (better would be the system language)
 			if (!Utils.isNotEmptyOrNull(p.language)) {
-				p.language = "fra";
+				p.language = tf.language[0];
 			}
 			// Chaque locuteur doit être rataché à un corpus, par défaut on
 			// mettra la valeur "unspecified"
@@ -345,7 +352,7 @@ public class TeiToClan extends TeiConverter {
 	 */
 	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
 		// System.out.println(speechContent);
-		out.print("*" + loc + ":\t" + speechContent);
+		out.print("*" + loc + ":\t" + Utils.cleanEntities(speechContent));
 		// Si le temps de début n'est pas renseigné, on mettra par défaut le
 		// temps de fin (s'il est renseigné) moins une seconde.
 		if (!Utils.isNotEmptyOrNull(startTime)) {
@@ -396,7 +403,7 @@ public class TeiToClan extends TeiConverter {
 		String type = tier.name;
 		String tierContent = tier.getContent();
 		String tierLine = "%" + type + ":\t" + tierContent.replaceAll("\\s+", " ").trim();
-		out.println(tierLine);
+		out.println(Utils.cleanEntities(tierLine));
 	}
 
 	/**
@@ -451,7 +458,7 @@ public class TeiToClan extends TeiConverter {
 
 	/**
 	 * Conversion de la chaîne de caractère correspondant au sexe du locuteur.
-	 * Chat accepte les valeurs "male", "female" et "unknown".
+	 * Chat accepte les valeurs "male", "female" et "" (for unknown).
 	 * 
 	 * @param sex
 	 * @return
@@ -463,9 +470,10 @@ public class TeiToClan extends TeiConverter {
 			} else if (sex.equals("1")) {
 				sex = "male";
 			} else {
-				sex = "unknown";
+				sex = "";
 			}
 		} catch (NullPointerException e) {
+			sex = "";
 		}
 		return sex;
 	}
