@@ -95,3 +95,5 @@ Commande supplémentaire pour éditer automatiquement les fichiers TEI
     * -c docname=nom-de_fichier (nom interne du document utilisé pour l'interrogation en xml)
     * -c chgtime=valeur (décale tous les repères temporels de 'valeur')
     * -c replace (ne crée pas un nouveau fichier mais remplace l'ancien)
+
+Test 22 mai 2019
