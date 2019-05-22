@@ -24,6 +24,7 @@ public abstract class GenericMain {
 	
 	public void mainCommand(String[] args, String extensionIn, String extensionOut, String usageString, int style) throws IOException {
 		TierParams options = new TierParams();
+//		System.err.printf("EXTIN: %s%n", extensionIn);
 		// Parcours des arguments
 		if (!TierParams.processArgs(args, options, usageString, extensionIn, extensionOut, style)) {
 			if (!options.noerror) return;

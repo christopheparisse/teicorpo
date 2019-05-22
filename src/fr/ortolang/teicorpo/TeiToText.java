@@ -175,9 +175,12 @@ public class TeiToText extends TeiConverter {
 		}
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
-		if (tf.optionsOutput.raw == true)
-			out.println(speechContent);
-		else {
+		if (tf.optionsOutput.raw == true) {
+			if (optionsOutput.tiernames)
+				out.println("[" + loc + "] " + speechContent);
+			else
+				out.println(speechContent);
+		} else {
 			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 				float start = Float.parseFloat(startTime);
 				float end = Float.parseFloat(endTime);
@@ -243,7 +246,7 @@ public class TeiToText extends TeiConverter {
 	}
 
 	public static void main(String args[]) throws IOException {
-		String usage = "Description: TeiToText convertit un fichier au format TEI en un fichier au format Text (txt)%nUsage: TeiToText [-options] <file."
+		String usage = "Description: TeiToText converts a TEI file to a Text file (txt)%nUsage: TeiToText [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToText ttc = new TeiToText();
 		ttc.mainCommand(args, Utils.EXT, EXT, usage, 6);

@@ -1,12 +1,9 @@
 package fr.ortolang.teicorpo;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.TreeMap;
 
 import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.w3c.dom.Document;
@@ -82,7 +79,7 @@ public class TeiToPartition {
 		for (int i = 0; i < annotationGrps.getLength(); i++) {
 			Element annotGrp = (Element) annotationGrps.item(i);
 			AnnotatedUtterance au = new AnnotatedUtterance();
-			au.process(annotGrp, this.timeline, null, optionsOutput, false);
+			au.processAnnotatedU(annotGrp, this.timeline, null, optionsOutput, false);
 			NodeList annotGrpElmts = annotGrp.getChildNodes();
 			String name = au.speakerCode;
 			if (!Utils.isNotEmptyOrNull(name))
@@ -120,6 +117,17 @@ public class TeiToPartition {
 				}
 			}
 		}
+		/*
+		// dump tiers
+		for(Entry<String, ArrayList<Annot>> entry : tiers.entrySet()){
+			String tierName = entry.getKey();
+			ArrayList<Annot> tierContent = entry.getValue();
+			System.out.printf("%s%n", tierName);
+			for (Annot a: tierContent) {
+				System.out.printf("   %s%n", a.toString());
+			}
+		}
+		*/
 	}
 
 	// Traitement des spanGrp pour ajout dans la structure Map
@@ -132,6 +140,7 @@ public class TeiToPartition {
 				return;
 			if (optionsOutput.isDontDisplay(typeSG, 2))
 				return;
+			//System.err.printf(">>> %s%n", typeSG);
 			if (!optionsOutput.isDoDisplay(typeSG, 2))
 				return;
 		}
@@ -168,7 +177,9 @@ public class TeiToPartition {
 			/*
 			 * deals with all types of span content.
 			 */
-			annot.setContent(AnnotatedUtterance.processSpan(span).trim());
+			String s = AnnotatedUtterance.processSpan(span);
+			//System.out.printf("[%s]%n",s);
+			annot.setContent(s);
 			String spid = span.getAttribute("xml:id");
 			if (!spid.isEmpty())
 				annot.id = spid;
@@ -192,7 +203,7 @@ public class TeiToPartition {
 				 * add equivalence in time in case it is necessary
 				 */
 				// System.out.printf("++ %d %s %n", z, annot);
-				if (timelength > 0.0) {
+				if (timelength >= 0.0) {
 					Double refstart = ((double)nth) * timelength + Double.parseDouble(start);
 					Double refend = (((double)nth) + 1.0) * timelength + Double.parseDouble(start);
 					// System.out.printf("-- %d %f %f %n", nth, refstart, refend);
@@ -245,6 +256,7 @@ public class TeiToPartition {
 			newTiers.put(truename, nt);
 		} else
 			truename = type;
+		annot.topParent = topparent;
 		if (map.containsKey(truename)) {
 			map.get(truename).add(annot);
 		} else {

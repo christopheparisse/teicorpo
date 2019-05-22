@@ -18,7 +18,7 @@ public class ElanToTei extends GenericMain {
 		ht = new HT_ToTei(ElanToHT.ht, options);
 		Utils.setTranscriptionDesc(ht.docTEI, "elan", "0.1", "no information on format");
 
-		Utils.setDocumentName(ht.docTEI, Utils.lastname(outputName));
+		Utils.setDocumentName(ht.docTEI, options.test ? "testfile" : Utils.lastname(outputName));
 		Utils.createFile(outputName, ht.docTEI);
 	}
 
@@ -33,7 +33,7 @@ public class ElanToTei extends GenericMain {
 	public static void main(String[] args) throws Exception {
 		TierParams.printVersionMessage();
 		ElanToTei tr = new ElanToTei();
-		tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanToTei convertit un fichier au format Elan en un fichier au format TEI", 0);
+		tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanToTei converts a ELAN file to an TEI file%n", 0);
 	}
 
 	@Override

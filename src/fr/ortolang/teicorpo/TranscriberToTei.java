@@ -98,7 +98,7 @@ public class TranscriberToTei extends GenericMain {
 			 * return "http://www.w3.org/2001/XMLSchema-instance"; } else {
 			 * return XMLConstants.NULL_NS_URI; } }
 			 * 
-			 * public Iterator<?> getPrefixes(String val) { return null; }
+			 * public Iterator<String> getPrefixes(String val) { return null; }
 			 * 
 			 * public String getPrefix(String uri) { return null; } });
 			 */
@@ -174,11 +174,12 @@ public class TranscriberToTei extends GenericMain {
 		Element profileDesc = this.docTEI.createElement("profileDesc");
 		teiHeader.appendChild(profileDesc);
 		Element encodingDesc = this.docTEI.createElement("encodingDesc");
+		encodingDesc.setAttribute("style", Utils.versionTEI);
 		teiHeader.appendChild(encodingDesc);
 
 		Element revisionDesc = this.docTEI.createElement("revisionDesc");
 		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, this.inputTRS.getAbsolutePath(), null);
+		Utils.setRevisionInfo(this.docTEI, revisionDesc, this.inputTRS.getAbsolutePath(), null, optionsTEI.test);
 
 		///
 		teiHeader.appendChild(revisionDesc);
@@ -1054,7 +1055,7 @@ public class TranscriberToTei extends GenericMain {
 	public static void main(String[] args) throws Exception {
 		TierParams.printVersionMessage();
 		TranscriberToTei tr = new TranscriberToTei();
-		tr.mainCommand(args, ".trs", Utils.EXT, "Description: TranscriberToTei convertit un fichier au format Transcriber en un fichier au format TEI", 2);
+		tr.mainCommand(args, ".trs", Utils.EXT, "Description: TranscriberToTei converts a Transcriber file to an TEI file%n", 2);
 		// if (!(Utils.validFileFormat(input, ".trs") || Utils.validFileFormat(input, ".trs.xml") || Utils.validFileFormat(input, ".xml"))) {
 	}
 
@@ -1062,7 +1063,7 @@ public class TranscriberToTei extends GenericMain {
 	public void mainProcess(String input, String output, TierParams options) {
 		// System.out.println("Lecture de " + input);
 		transform(new File(input), options);
-		Utils.setDocumentName(docTEI, Utils.lastname(output));
+		Utils.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
 		Utils.createFile(output, docTEI);
 		// System.out.println("New file created " + output);
 	}

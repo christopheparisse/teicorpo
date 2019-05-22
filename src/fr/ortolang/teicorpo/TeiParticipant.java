@@ -24,6 +24,10 @@ public class TeiParticipant {
 	public String language;
 	// Corpus
 	public String corpus;
+	// socecStatus
+	public String socecStatus;
+	// education
+	public String education;
 	// Age du locuteur
 	public String age;
 	// Informations supplémentaires concernant le locuteur
@@ -37,6 +41,8 @@ public class TeiParticipant {
 		language = "";
 		corpus = "";
 		age = "";
+		socecStatus = "";
+		education = "";
 	}
 
 	public TeiParticipant(Element participant) {
@@ -96,6 +102,21 @@ public class TeiParticipant {
 					language = el.getTextContent();
 				} else if (el.getNodeName().equals("persName")) {
 					name = el.getTextContent();
+				} else if (el.getNodeName().equals("socecStatus")) {
+					socecStatus = el.getTextContent();
+				} else if (el.getNodeName().equals("education")) {
+					education = el.getTextContent();
+				} else if (el.getNodeName().equals("occupation")) {
+					adds.put("occupation", el.getAttribute("pos"));
+				} else if (el.getNodeName().equals("age")) {
+					String agevalue = el.getAttribute("value");
+					if (!agevalue.isEmpty())
+						age = agevalue;
+					else
+						age = el.getTextContent();
+					agevalue = el.getTextContent();
+					if (!agevalue.isEmpty())
+						adds.put("ageinfo", agevalue);
 				} else {
 					adds.put(el.getNodeName(), el.getTextContent());
 				}

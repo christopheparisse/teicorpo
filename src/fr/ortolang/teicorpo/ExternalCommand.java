@@ -10,50 +10,41 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
 
-class AfficheurFlux implements Runnable {
-
-    private final InputStream inputStream;
-    private PrintWriter out;
-    private boolean verbose;
-
-    AfficheurFlux(InputStream inputStream, String outputName, boolean verbose) {
-    	this.verbose = verbose;
-        this.inputStream = inputStream;
-        if (outputName != null) {
-    		try {
-    			FileOutputStream of = new FileOutputStream(outputName);
-    			OutputStreamWriter outWriter = new OutputStreamWriter(of, "UTF-8");
-    			out = new PrintWriter(outWriter, true);
-    		} catch (Exception e) {
-    			out = new PrintWriter(System.out, true);
-    		}
-        } else
-        	out = null;
-    }
-
-    private BufferedReader getBufferedReader(InputStream is) {
-        return new BufferedReader(new InputStreamReader(is));
-    }
-
-    @Override
-    public void run() {
-        BufferedReader br = getBufferedReader(inputStream);
-        String ligne = "";
-        try {
-            while ((ligne = br.readLine()) != null) {
-            	if (out != null)
-                    out.println(ligne);
-            	else {
-            		if (verbose) System.out.println(ligne);
-            	}
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-}
-
 public class ExternalCommand {
+	public static void executeCommand(String command, boolean verbose)
+	{
+		if (verbose) System.out.println("Command: {" + command + "}");
+
+	    Runtime runtime = Runtime.getRuntime();
+	    try
+	    {
+	        Process process = runtime.exec(command);
+
+	        BufferedReader stdInput = new BufferedReader(new
+	                InputStreamReader(process.getInputStream()));
+
+	        BufferedReader stdError = new BufferedReader(new
+	                InputStreamReader(process.getErrorStream()));
+
+	        // read the output from the command
+	        if (verbose) System.out.println("Standard output of the command:\n");
+	        String s = null;
+	        while ((s = stdInput.readLine()) != null) {
+	        	if (verbose) System.out.println(s);
+	        }
+
+	        // read any errors from the attempted command
+	        if (verbose) System.out.println("Standard error of the command (if any):\n");
+	        while ((s = stdError.readLine()) != null) {
+	        	if (verbose) System.out.println(s);
+	        }
+	        process.waitFor();
+	    } catch (Exception e)
+	    {
+	        e.printStackTrace();
+	    }
+	}
+	
 	public static File getJarParent() {
 		try {
 			return new File(ExternalCommand.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
@@ -66,13 +57,21 @@ public class ExternalCommand {
 	
 	public static String getLocation(String progName, String envVar) {
 		// current dir
+		// System.out.printf("progname: %s (%s)%n", progName, progName.substring(0, 1));
 		File test = new File(progName);
-		if (test.exists())
-			return progName;
+		if (test.exists()) {
+			if (progName.substring(0, 1).equals("/"))
+				return progName;
+			// if (progName.substring(0, 2).compareToIgnoreCase("c:") == 0)
+			if (progName.substring(0, 2).matches("[a-zA-Z]:"))
+				return progName;
+			return "./" + progName.replaceAll("\\\\", "/");
+		}
 		// environment variables
 		String value = System.getenv(envVar);
         if (value != null) {
-			String pLoc = value + "/" + progName;
+    		value = value.replaceAll("\\\\", "/");
+			String pLoc = (value.endsWith("/")) ? value + progName : value + "/" + progName;
 			//System.err.println("EnvL:" + pLoc);
 			test = new File(pLoc);
 			if (test.exists())
@@ -81,7 +80,8 @@ public class ExternalCommand {
         // location of jar
 		File jarLocation = getJarParent();
 		if (jarLocation != null) {
-			String pLoc = jarLocation.getParent() + "/" + progName;
+			String parent = jarLocation.getParent().replaceAll("\\\\", "/");
+			String pLoc =  (parent.endsWith("/")) ? parent + progName : parent + "/" + progName;
 			//System.err.println("PL:" + pLoc);
 			test = new File(pLoc);
 			if (test.exists())
@@ -90,23 +90,9 @@ public class ExternalCommand {
 		return null;
 	}
 
-    public static void command(String[] args, String output, boolean verbose) {
-        if (verbose) System.err.println("Début du programme : " + Utils.join(args));
-        try {
-            Process p = Runtime.getRuntime().exec(args);
-            AfficheurFlux fluxSortie = new AfficheurFlux(p.getInputStream(), output, verbose);
-            AfficheurFlux fluxErreur = new AfficheurFlux(p.getErrorStream(), null, verbose);
-
-            new Thread(fluxSortie).start();
-            new Thread(fluxErreur).start();
-
-            p.waitFor();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        if (verbose) System.err.println("Fin du programme");
+    public static void command(String[] args, boolean verbose) {
+        if (verbose) System.err.println("Starting : " + Utils.join(args));
+        executeCommand(Utils.join(args), verbose);
     }
     
     public static void main(String[] args) {
@@ -117,5 +103,21 @@ public class ExternalCommand {
     	os = System.getProperty("os.arch");
     	System.out.println(os);
 //        System.getProperties().list(System.out);
+    	executeCommand(args[0], true);
     }
+
+	public static String noblank(String location) {
+		if (location == null) return null;
+    	String os = System.getProperty("os.name").toLowerCase();
+    	// System.out.printf("OS=%s%n", os);
+		if (os.indexOf("mac") < 0 && os.indexOf("nix") < 0  && os.indexOf("linux") < 0)
+			return "\"" + location + "\"";
+		else {
+			if (location.indexOf(" ") >= 0) {
+				System.out.printf("Warning: there is a white space in [%s]. The tool might not work properly.%n", location);
+				return location.replaceAll(" ", "\\\\ ");
+			} else
+				return location;
+		}
+	}
 }

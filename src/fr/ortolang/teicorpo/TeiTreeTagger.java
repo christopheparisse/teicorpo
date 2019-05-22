@@ -54,8 +54,6 @@ public class TeiTreeTagger extends GenericMain {
 	String inputName;
 	// Nom du fichier de sortie
 	String outputName;
-	// Validation du document Tei par la dtd
-	boolean validation = false;
 	// racine du fichier teiDoc
 	Element root;
 	
@@ -78,7 +76,7 @@ public class TeiTreeTagger extends GenericMain {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, validation);
+			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(inputFile);
 			root = teiDoc.getDocumentElement();
@@ -102,7 +100,7 @@ public class TeiTreeTagger extends GenericMain {
 					}
 				}
 
-				public Iterator<?> getPrefixes(String val) {
+				public Iterator<String> getPrefixes(String val) {
 					return null;
 				}
 
@@ -118,6 +116,13 @@ public class TeiTreeTagger extends GenericMain {
 	}
 	
 	public String getTreeTaggerLocation() {
+		// get location of program
+		if (!optionsOutput.program.isEmpty()) {
+			String p = ExternalCommand.getLocation(optionsOutput.program, "TREE_TAGGER");
+			if (p != null) return p;
+			System.err.printf("Cannot find %s program%n", optionsOutput.program);
+			return null;
+		}
 		String os = System.getProperty("os.name").toLowerCase();
 		if (os.indexOf("mac") >= 0) {
 			String p = ExternalCommand.getLocation("tree-tagger-macos","TREE_TAGGER");
@@ -126,7 +131,7 @@ public class TeiTreeTagger extends GenericMain {
 			if (p != null) return p;
 			System.err.println("Cannot find tree-tagger-macos program");
 			return null;
-		} else if (os.indexOf("nix") >= 0 || os.indexOf("nux") >= 0) {
+		} else if (os.indexOf("nix") >= 0 || os.indexOf("linux") >= 0) {
 			String p = ExternalCommand.getLocation("tree-tagger","TREE_TAGGER");
 			if (p != null) return p;
 			p = ExternalCommand.getLocation("bin/tree-tagger","TREE_TAGGER");
@@ -144,6 +149,7 @@ public class TeiTreeTagger extends GenericMain {
 	}
 
 	public String getTreeTaggerModel() {
+		// get location of model
 		String model = (!optionsOutput.model.isEmpty()) ? optionsOutput.model : "spoken-french.par";
 		String p = ExternalCommand.getLocation(model,"TREE_TAGGER");
 		if (p != null) return p;
@@ -153,7 +159,7 @@ public class TeiTreeTagger extends GenericMain {
 		return null;
 	}
 
-	// Conversion du fichier teiml
+	// Conversion of teicorpo file
 	public boolean process() {
 		Tokenizer.init("fr", null);
 		int numAU = 0;
@@ -182,13 +188,15 @@ public class TeiTreeTagger extends GenericMain {
 			for (int i=0; i < aBlocks.getLength(); i++) {
 				Element eAU = (Element) aBlocks.item(i);
 				AnnotatedUtterance au = new AnnotatedUtterance();
-				au.process(eAU, null, null, optionsOutput, false);
+				au.processAnnotatedU(eAU, null, null, optionsOutput, false);
 				// mettre en place l'élément qui recevra l'analyse syntaxique.
 				Element syntaxGrp = teiDoc.createElement("spanGrp");
 				if (optionsOutput.syntaxformat.equals("conll")) {
 					syntaxGrp.setAttribute("type", "conll");
+					syntaxGrp.setAttribute("inst", "treetagger");
 				} else if (optionsOutput.syntaxformat.equals("ref")) {
-					syntaxGrp.setAttribute("type", "treetagger");
+					syntaxGrp.setAttribute("type", "ref");
+					syntaxGrp.setAttribute("inst", "treetagger");
 				}
 				numAU++;
 				syntaxGrp.setAttribute("id", "tt" + numAU);
@@ -210,26 +218,31 @@ public class TeiTreeTagger extends GenericMain {
 		}
 		out.close();
 		/*
-		 * TRAITEMENT AVEC TREETAGGER : démarrer l'analyse
+		 * PROCESSING WITH TREETAGGER : start the analysis
 		 */
 		String outputNameResults = outputName + "_tmp.conll";
-        String[] commande = { getTreeTaggerLocation(), "-token",
-        		"-lemma", "-sgml", getTreeTaggerModel(),
-        		outputNameTemp };
+		String cmdname = ExternalCommand.noblank(getTreeTaggerLocation());
+        String[] commande = { cmdname, // "\"" + getTreeTaggerLocation() + "\"",
+        		"-token",
+        		"-lemma",
+        		"-sgml",
+        		ExternalCommand.noblank(getTreeTaggerModel()),
+        		ExternalCommand.noblank(outputNameTemp.replaceAll("\\\\", "/")),
+        		ExternalCommand.noblank(outputNameResults.replaceAll("\\\\", "/")) };
         if (commande[0] == null || commande[4] == null) {
         	// cannot parse
         	System.err.println("tree-tagger files not found: stop.");
         	return false;
         } else {
-        	System.out.printf("using model %s.%n", commande[4]);
-        	System.out.printf("treetagger located at %s.%n", commande[0]);
+        	System.out.printf("using model [%s].%n", commande[4]);
+        	System.out.printf("treetagger located at [%s].%n", commande[0]);
         }
-        ExternalCommand.command(commande, outputNameResults, optionsOutput.verbose);
+        ExternalCommand.command(commande, optionsOutput.verbose);
 		/*
 		 * Le fichier résultat de TREETAGGER existe
 		 * récupérer les résultats
 		 */
-        // ajouter les informations de structure du document
+        // add informations about document structure
 		if (optionsOutput.syntaxformat.equals("conll")) {
 			/*
 			 * version conll
@@ -240,9 +253,9 @@ public class TeiTreeTagger extends GenericMain {
 			insertTemplate("lemma", LgqType.SYMB_ASSOC, "conll");
 		} else if (optionsOutput.syntaxformat.equals("ref")) {
 			/*
-			 * version <treetagger><ref><w>
+			 * version <ref><ref><w>
 			 */
-			insertTemplate("treetagger", LgqType.SYMB_ASSOC, Utils.ANNOTATIONBLOC);
+			insertTemplate("ref", LgqType.SYMB_ASSOC, Utils.ANNOTATIONBLOC);
 		} else {
 			// format words : optionsOutput.syntaxformat === "w"
 		}
@@ -271,8 +284,7 @@ public class TeiTreeTagger extends GenericMain {
 			if (!lastID.isEmpty())
 				flush(lastID, tu); // insère la derniere phrase (depuis le dernier id) dans la structure XML teiDoc
 				// voir TaggedUtterance pour le détail de ce format qui sera inséré sous la forme d'un span
-			if (reader != null)
-				reader.close();
+			reader.close();
 		} catch (FileNotFoundException fnfe) {
 			System.err.println("Erreur fichier : " + outputNameResults + " indisponible");
 			return false;
@@ -383,7 +395,7 @@ public class TeiTreeTagger extends GenericMain {
 			Transformer transformer = fabrique2.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.teiCorpoDtd());
+			//transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.teiCorpoDtd());
 			transformer.transform(source, resultat);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -405,7 +417,7 @@ public class TeiTreeTagger extends GenericMain {
 	// Programme principal
 	public static void main(String args[]) throws IOException {
 		TierParams.printVersionMessage();
-		String usageString = "Description: TeiTreeTagger permet d'appliquer le programme TreeTagger sur un fichier Tei.%nUsage: TeiTreeTagger -c command [-options] <"
+		String usageString = "Description: TeiTreeTagger allows to apply the TreeTagger software (Helmut Schmid) on a TEI file.%nUsage: TeiTreeTagger -c command [-options] <"
 				+ Utils.EXT + ">%n";
 		TeiTreeTagger ttt = new TeiTreeTagger();
 		ttt.mainCommand(args, Utils.EXT, TT_EXT + Utils.EXT, usageString, 7);

@@ -81,7 +81,8 @@ public class ChatFile {
 	ArrayList<ID> ids= new ArrayList<ID>();
 	boolean inMainLine = false;
 
-	void findInfo(boolean verbose) {
+	void findInfo(boolean verbose, TierParams tparams) {
+		if (!tparams.inputFormat.equals(".cha")) return;
 		// find all types of information and preprocess it.
 		int sz = nbMainLines();
 		boolean inHeader = true;
@@ -128,12 +129,16 @@ public class ChatFile {
 					}
 				}
 			} else if ( ml(i).toLowerCase().startsWith("@media") ) {
-				String[] wds = ml(i).split("[\\s,]+");
+				String[] wds = ml(i).split("[\\s:,]+");
 				if (wds.length == 3) {
 					// try to find the mediafile according to type
 					mediaFilename = wds[1];
 					mediaType =  wds[2];
-				}
+				} else if (wds.length == 2) {
+					// type is not defined
+					mediaFilename = wds[1];
+					mediaType =  "audio";
+				} 
 			} else if ( ml(i).toLowerCase().startsWith("@id") ) {
 				String[] wds = ml(i).split("\\|");
 				if (wds.length < 3) {
@@ -406,6 +411,7 @@ public class ChatFile {
 				startTime = Integer.parseInt(matcher.group(1));
 				endTime = Integer.parseInt(matcher.group(2));
 				mainLine = ml.replaceAll("\\x15\\d+_\\d+\\x15",""); // replaceFirst
+				mainLine = mainLine.replaceAll("\\t", " ");
 				mainLine = mainLine.replaceAll("\\p{C}", "");
 			} else {
 				patternStr = ".*\\x15(.*?)_(\\d+)_(\\d+)\\x15";
@@ -420,11 +426,13 @@ public class ChatFile {
 					startTime = Integer.parseInt(matcher.group(2));
 					endTime = Integer.parseInt(matcher.group(3));
 					mainLine = ml.replaceAll("\\x15.*?\\x15",""); // replaceFirst
+					mainLine = mainLine.replaceAll("\\t", " ");
 					mainLine = mainLine.replaceAll("\\p{C}", "");
 				} else {
 					startTime = -1;
 					endTime = -1;
 					mainLine = ml;
+					mainLine = mainLine.replaceAll("\\t", " ");
 					mainLine = mainLine.replaceAll("\\p{C}", "");
 				}
 			}
@@ -432,6 +440,30 @@ public class ChatFile {
 			nl = -1;
 			tiers = null;
 		}
+
+		MainTier(String ml, int start, int end) {
+			mainRaw = ml;
+			startTime = start;
+			endTime = end;
+			mainLine = ml;
+			mainCleaned = ConventionsToChat.clean(ml);
+			nl = -1;
+			tiers = null;
+		}
+
+		MainTier(String ml, String style) {
+			if (style.equals("noparticipant")) {
+				ml = "*LOC: " + ml;
+			} else {
+				ml = "*" + ml.trim();
+			}
+			mainRaw = ml;
+			mainLine = ml;
+			mainCleaned = ConventionsToChat.clean(mainLine);
+			nl = -1;
+			tiers = null;
+		}
+
 		MainTier(String ml, int n) {
 			this(ml);
 			nl = n;
@@ -483,21 +515,65 @@ public class ChatFile {
 	}
 
 	void addML(String ml) {
-		mainLines.add( new MainTier(ml) );
+		/*
+		 * split into parts if the are more than one "\\x15.*?\\x15"
+		 */
+		Pattern pattern = Pattern.compile("\\x15.*?\\x15");
+		Matcher matcher = pattern.matcher(ml);
+		
+		// look for the first pattern
+		if (!matcher.find()) {
+			// no pattern at all
+			// process whole line directly
+//			System.out.println("DIRECT:" + ml);
+			mainLines.add( new MainTier(ml) );
+			return;
+		}
+		// store the pattern
+		int start = 0; // beginning of line
+		int end = matcher.end(); // end of pattern
+		ChatLine cl = new ChatLine(ml);
+
+//		System.out.println("SE1: " + start + " " + end + "||||" + ml);
+
+        while (matcher.find()) {    
+            // found the pattern "+matcher.group()+" starting at index "+    
+            // matcher.start()+" and ending at index "+matcher.end());
+        	// find another pattern
+        	// process the previous one
+        	if (start == 0) {
+        		mainLines.add( new MainTier(ml.substring(start, end)) );
+//        		System.out.println("SENEXT: " + start + " " + end + "||||" + ml.substring(start, end));
+        	} else {
+        		mainLines.add( new MainTier(cl.type() + ":\t" + ml.substring(start, end)) );       		
+//        		System.out.println("SENEXT(U): " + start + " " + end + "||||" + cl.type() + ":\t" + ml.substring(start, end));
+        	}
+    		start = end+1; // follows previous pattern
+            end = matcher.end(); // end of current pattern
+        }    
+		
+        // final part up to end of line
+    	if (start == 0) {
+//    		System.out.println("SEFINAL: " + start + " " + end + "||||" + ml.substring(start));
+    		mainLines.add( new MainTier(ml) );
+    	} else {
+    		mainLines.add( new MainTier(cl.type() + ":\t" + ml.substring(start, end)) );       		
+//    		System.out.println("SENFINAL(U): " + start + " " + end + "||||" + cl.type() + ":\t" + ml.substring(start, end));
+    	}
 	}
-	void addML(String ml, int n) {
+/*	void addML(String ml, int n) {
 		mainLines.add( new MainTier(ml, n) );
 	}
-
+*/
 	void addT(String ml) {
 		MainTier last = mainLines.get( mainLines.size()-1 );
 		last.addTier( ml );
 	}
-	void addT(String ml, int n) {
+/*	void addT(String ml, int n) {
 		MainTier last = mainLines.get( mainLines.size()-1 );
 		last.addTier( ml, n );
 	}
-
+*/
 	void insertML(String ml) {
 		if ( ml.startsWith("%") ) {
 			if (inMainLine == false) {
@@ -514,7 +590,15 @@ public class ChatFile {
 		}
 	}
 
-	void load(String fn) throws IOException {
+	void load(String fn, TierParams tparams) throws IOException {
+		if (tparams.inputFormat.equals(".txt")) {
+			loadText(fn, tparams);
+			return;
+		}
+		if (tparams.inputFormat.equals(".srt")) {
+			loadSrt(fn);
+			return;
+		}
 		chatFilename = fn;
 		String line = "";
 		String ml = "";
@@ -534,6 +618,134 @@ public class ChatFile {
 					}
 					ml = line;
 				}
+			}
+		}
+		catch (FileNotFoundException fnfe) {
+			System.err.println("Erreur fichier : " + fn + " indisponible");
+			System.exit(1);
+			return;
+		}
+		catch(IOException ioe) {
+			System.err.println("Erreur sur fichier : " + fn );
+			ioe.printStackTrace();
+			System.exit(1);
+		}
+		finally {
+			if ( !ml.equals("") )
+				insertML(ml);
+			if (reader != null) reader.close();
+		}
+	}
+
+	void loadText(String fn, TierParams tparams) throws IOException {
+		chatFilename = fn;
+		String line = "";
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader( new InputStreamReader(new FileInputStream(fn), inputEncoding) );
+			while((line = reader.readLine()) != null) {
+				mainLines.add( new MainTier(line, tparams.normalize));
+			}
+		}
+		catch (FileNotFoundException fnfe) {
+			System.err.println("Erreur fichier : " + fn + " indisponible");
+			System.exit(1);
+			return;
+		}
+		catch(IOException ioe) {
+			System.err.println("Erreur sur fichier : " + fn );
+			ioe.printStackTrace();
+			System.exit(1);
+		}
+		finally {
+			if (reader != null) reader.close();
+		}
+	}
+
+	void loadSrt(String fn) throws IOException {
+		chatFilename = fn;
+		String line = "";
+		String ml = "";
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader( new InputStreamReader(new FileInputStream(fn), inputEncoding) );
+			while((line = reader.readLine()) != null) {
+				if (line.isEmpty()) continue;
+				// read an srt triplet
+				// first number
+				int nb;
+				int start = -1;
+				int end = -1;
+				try {
+					nb = Integer.parseInt(line);
+				} catch (Exception e) {
+					nb = 0;
+					System.out.printf("Error srt: bad number at %s%n", line);
+				}
+				if ((line = reader.readLine()) == null) {
+					System.out.printf("Error srt: incomplete last element%n");
+					break;
+				}
+				//System.out.printf("srt: %d%n", nb);
+				String regex = "([\\d:,]+)\\s+-{2}\\>\\s+([\\d:,]+)";
+				Pattern p = Pattern.compile(regex);
+				Matcher m = p.matcher(line);
+				if (m.find()) {
+					String sbegin = m.group(1);
+					String send = m.group(2);
+					// System.out.printf("found: %s %s%n", m.group(1), m.group(2));
+					// START
+					regex = "(\\d+):(\\d+):(\\d+),(\\d+)";
+					p = Pattern.compile(regex);
+					m = p.matcher(sbegin);
+					if (m.find()) {
+						int h = Integer.parseInt(m.group(1));
+						int mn = Integer.parseInt(m.group(2));
+						int s = Integer.parseInt(m.group(3));
+						int ms = Integer.parseInt(m.group(4));
+						start = (h * 3600 + mn * 60 + s) * 1000 + ms;
+					} else {
+						regex = "(\\d+):(\\d+):(\\d+)";
+						p = Pattern.compile(regex);
+						m = p.matcher(sbegin);
+						if (m.find()) {
+							int h = Integer.parseInt(m.group(1));
+							int mn = Integer.parseInt(m.group(2));
+							int s = Integer.parseInt(m.group(3));
+							start = (h * 3600 + mn * 60 + s) * 1000;
+						}
+					}
+					// END
+					regex = "(\\d+):(\\d+):(\\d+),(\\d+)";
+					p = Pattern.compile(regex);
+					m = p.matcher(send);
+					if (m.find()) {
+						int h = Integer.parseInt(m.group(1));
+						int mn = Integer.parseInt(m.group(2));
+						int s = Integer.parseInt(m.group(3));
+						int ms = Integer.parseInt(m.group(4));
+						end = (h * 3600 + mn * 60 + s) * 1000 + ms;
+					} else {
+						regex = "(\\d+):(\\d+):(\\d+)";
+						p = Pattern.compile(regex);
+						m = p.matcher(send);
+						if (m.find()) {
+							int h = Integer.parseInt(m.group(1));
+							int mn = Integer.parseInt(m.group(2));
+							int s = Integer.parseInt(m.group(3));
+							end = (h * 3600 + mn * 60 + s) * 1000;
+						}
+					}
+				} else {
+					System.out.printf("srt: cannot process: %s%n", line);
+				}
+				String content = "*SRT";
+				while ((line = reader.readLine()) != null) {
+					if (line.isEmpty()) break;
+					content += " " + line.trim();
+				}
+				// System.out.printf("content: %d %d %d %s%n", nb, start, end, content);
+				mainLines.add( new MainTier(content, start, end));
 			}
 		}
 		catch (FileNotFoundException fnfe) {
@@ -590,7 +802,7 @@ public class ChatFile {
 		return chatFilename;
 	}
 
-	public void dump() {
+	public void dumpHeader() {
 		System.out.println( "Filename : " + filename() );
 		System.out.println( "Nb Lines : " + nbMainLines() );
 		int nbids = ids.size();
@@ -625,6 +837,10 @@ public class ChatFile {
 			System.out.println("ID-education : " + id.education );
 			System.out.println("ID-customfield : " + id.customfield );
 		}
+	}
+
+	public void dump() {
+		dumpHeader();
 
 		int sz = nbMainLines();
 
@@ -786,15 +1002,17 @@ public class ChatFile {
 		 * exception en cas de fichier absent ou incorrect.
 		 * @param fn fichier Chat à lire
 		 */
-		load(fn);
-		findInfo(false);
+		TierParams tp = new TierParams();
+		load(fn, tp);
+		findInfo(false, tp);
 		cleantime_inmemory(1);
 	}
 
 	public static void main(String[] args) throws Exception {
+		TierParams tp = new TierParams();
 		ChatFile cf = new ChatFile();
-		cf.load(args[0]);
-		cf.findInfo(false);
+		cf.load(args[0], tp);
+		cf.findInfo(false, tp);
 		cf.dump();
 	}
 };

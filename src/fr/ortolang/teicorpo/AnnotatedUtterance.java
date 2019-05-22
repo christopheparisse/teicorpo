@@ -88,7 +88,7 @@ public class AnnotatedUtterance {
 		return s;
 	}
 
-	public boolean process(Element annotatedU, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+	public boolean processAnnotatedU(Element annotatedU, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
 		optionsTEI = options;
 		morClan = "";
 		this.teiTimeline = teiTimeline;
@@ -175,24 +175,33 @@ public class AnnotatedUtterance {
 					if (type.equals("conll")) {
 						String conll = "";
 						NodeList spans = annotUEl.getChildNodes();
+						ArrayList<Annot> da = new ArrayList<Annot>();
 						for (int k=0; k<spans.getLength(); k++) {
 							String conllLine = "";
 							Node n = spans.item(k);
 							if (n.getNodeName().equals("span")) {
 								NodeList spanElts = n.getChildNodes();
+								Annot w = new Annot("w", Utils.getText((Element)n)); // String(k);
+								w.dependantAnnotations = new ArrayList<Annot>();
 								for (int l=0; l<spanElts.getLength(); l++) {
 									Node m = spanElts.item(l);
 									if (m.getNodeName().equals("spanGrp")) {
 										String text = m.getTextContent();
-										// String attr = ((Element)m).getAttribute("type");
-										conllLine += (conllLine.isEmpty()) ? text.trim() : "|" + text.trim();
+										String attr = ((Element)m).getAttribute("type");
+										// System.err.println("conll: " + attr + " x " + text.trim());
+										Annot a = new Annot(attr, text.trim());
+										w.dependantAnnotations.add(a);
+										conllLine += (conllLine.isEmpty()) ? (attr + "/" + text.trim()) : "|" + (attr + "/" + text.trim());
 									}
 								}
+								conll += (conll.isEmpty()) ? conllLine : " " + conllLine;
+								da.add(w);
 							}
-							conll += (conll.isEmpty()) ? conllLine : " " + conllLine;
 						}
-						tiers.add(new Annot("conll", conll));
-					} else if (type.equals("treetagger")) {
+						Annot ca = new Annot("conll", conll);
+						ca.dependantAnnotations = da;
+						tiers.add(ca);
+					} else if (type.equals("ref")) {
 						// ref.
 						// skip the ref element and go directly to w elements
 						String morpho = "";
@@ -203,12 +212,12 @@ public class AnnotatedUtterance {
 								Element we = (Element)w;
 //								System.err.println(w.toString() + "++" + w.getTextContent());
 								if (!morpho.isEmpty()) morpho += " ";
-								morpho += we.getAttribute("ana") + "_";
+								morpho += we.getAttribute("pos") + "_";
 								morpho += we.getAttribute("lemma") + "_";
 								morpho += w.getTextContent();
 							}
 						}
-						tiers.add(new Annot("morpho", morpho));
+						tiers.add(new Annot("ref", morpho, refs)); // add refs to the Annot
 					} else {
 						NodeList spans = annotUEl.getElementsByTagName("span");
 						for (int y = 0; y < spans.getLength(); y++) {
@@ -229,28 +238,17 @@ public class AnnotatedUtterance {
 		return true;
 	}
 
-	static public String processSpan(Element span) {
-		String spanContent = "";
-		// the span might be decomposed into elements.
-		NodeList spanElements = span.getChildNodes();
-		for (int k = 0; k < spanElements.getLength(); k++) {
-			Node elt = spanElements.item(k);
-			if (elt.getNodeType() == Node.TEXT_NODE) {
-				if (!spanContent.isEmpty()) spanContent += " ";
-				spanContent += elt.getTextContent();
-				// text.
-			} else {
-				// not text.
-				// spanContent += " " + elt.getTextContent();
-				// this should be processed in including spanGrp and span
-				// add all content without special analysis (but special analysis could be interesting in some cases)
-				if (!spanContent.isEmpty()) spanContent += " ";
-				spanContent += elt.getTextContent();
-			}
-		}
-		return spanContent;
+	public static String processSpan(Node node) {
+	    NodeList list = node.getChildNodes();
+	    StringBuilder textContent = new StringBuilder();
+	    for (int i = 0; i < list.getLength(); ++i) {
+	        Node child = list.item(i);
+	        if (child.getNodeType() == Node.TEXT_NODE)
+	            textContent.append(child.getTextContent().trim());
+	    }
+	    return textContent.toString();
 	}
-
+	
 	public void processSeg(NodeList us) {
 		//System.out.printf("KKKKK processSeg%n");
 		for (int z = 0; z < us.getLength(); z++) {
@@ -404,7 +402,7 @@ public class AnnotatedUtterance {
 				}
 				// Splitted into <w> "w"
 				else if (segChildName.equals("w")) {
-					String ana = segChildEl.getAttribute("ana");
+					String ana = segChildEl.getAttribute("pos");
 					String lemma = segChildEl.getAttribute("lemma");
 					String w = segChildEl.getTextContent();
 					speech += (lemma.isEmpty())
@@ -452,14 +450,6 @@ public class AnnotatedUtterance {
 			}
 		}
 		return t;
-	}
-
-	public String joinString(String[] stringSplit, int begin, int end) {
-		String sentence = "";
-		for (int i = begin; i < end; i++) {
-			sentence += stringSplit[i] + " ";
-		}
-		return sentence;
 	}
 
 	public String getIncidentDescAttr(Element incident, String attName) {

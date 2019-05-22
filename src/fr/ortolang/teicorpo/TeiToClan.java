@@ -142,9 +142,9 @@ public class TeiToClan extends TeiConverter {
 			participantsIDS += toAge(p.age) + "|";
 			participantsIDS += toString(p.sex) + "|"; // already converted
 			participantsIDS += toString(p.adds.get("group")) + "|";
-			participantsIDS += toString(p.adds.get("socecStatus")) + "|";
+			participantsIDS += toString(p.socecStatus) + "|";
 			participantsIDS += getRole(p) + "|";
-			participantsIDS += toString(p.adds.get("education")) + "|";
+			participantsIDS += toString(p.education) + "|";
 			participantsIDS += toString(p.adds.get("customField")) + "|";
 			participantsIDS += "\n";
 		}
@@ -401,6 +401,7 @@ public class TeiToClan extends TeiConverter {
 	 */
 	public void writeTier(AnnotatedUtterance u, Annot tier) {
 		String type = tier.name;
+		if (tier.name.length() > 8) type = type.substring(0, 8);
 		String tierContent = tier.getContent();
 		String tierLine = "%" + type + ":\t" + tierContent.replaceAll("\\s+", " ").trim();
 		out.println(Utils.cleanEntities(tierLine));
@@ -427,8 +428,10 @@ public class TeiToClan extends TeiConverter {
 	}
 
 	public void createOutput() {
-		if (out != null)
+		if (out != null) {
 			out.println("@End");
+			out.close();
+		}
 	}
 
 	public static String convertSpecialCodes(String initial) {
@@ -498,7 +501,7 @@ public class TeiToClan extends TeiConverter {
 
 	public static void main(String args[]) throws IOException {
 		TierParams.printVersionMessage();
-		String usageString = "Description: TeiToClan convertit un fichier au format TEI en un fichier au format Clan/Chat%nUsage: TeiToClan [-options] <file."
+		String usageString = "Description: TeiToClan converts a TEI file to a CLAN file%nUsage: TeiToClan [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToClan ttc = new TeiToClan();
 		ttc.mainCommand(args, Utils.EXT, EXT, usageString, 0);

@@ -15,12 +15,15 @@ public class ChatLine {
 		} else {
 			Pattern pattern = Pattern.compile("([%*@]\\w+)[\\s:]+(.*)");
 			Matcher matcher = pattern.matcher(line);
+			//System.out.println(line);
 			if (matcher.matches()) { // cas des lignes avec @ ou * et un :
 				head = matcher.group(1);
 				tail = matcher.group(2);
+				//System.out.printf("x> %s <x> %s%n", head, tail);
 			} else {// cas des lignes avec @ mais sans :
 				head = line;
 				tail = "";
+				//System.out.printf("xx> %s%n", head);
 			}
 		}
 	}

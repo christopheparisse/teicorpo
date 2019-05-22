@@ -803,7 +803,7 @@ public class TeiToTranscriber extends TeiConverter {
 	public static void main(String args[]) throws IOException {
 		TierParams.printVersionMessage();
 
-		String usageString = "Description: TeiToTranscriber convertit un fichier au format Tei en un fichier au format Transcriber.%nUsage: TeiToTranscriber [-options] <file"
+		String usageString = "Description: TeiToTranscriber converts a TEI file to a Transcriber file .%nUsage: TeiToTranscriber [-options] <file"
 				+ Utils.EXT + ">%n";
 		TeiToTranscriber ttt = new TeiToTranscriber();
 		ttt.mainCommand(args, Utils.EXT, EXT, usageString, 0);

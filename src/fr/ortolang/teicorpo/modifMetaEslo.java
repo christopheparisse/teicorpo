@@ -66,7 +66,7 @@ public class modifMetaEslo {
 			Transformer transformer = fabrique2.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.TEI_CORPO_DTD);
+			// transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.TEI_CORPO_DTD);
 
 			// Transformation
 			transformer.transform(source, resultat);

@@ -4,7 +4,6 @@
  */
 package fr.ortolang.teicorpo;
 
-import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 //import java.io.FilenameFilter;
@@ -12,10 +11,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import fr.ortolang.teicorpo.AnnotatedUtterance;
 import fr.ortolang.teicorpo.TeiFile.Div;
 
 public class TeiToLexico extends TeiConverter {
@@ -94,7 +90,7 @@ public class TeiToLexico extends TeiConverter {
 		ArrayList<TeiFile.Div> divs = tf.trans.divs;
 		// System.out.println("divs size= " + divs.size());
 		for (Div d : divs) {
-			System.out.println("DIV: " + d.type + " <" + d.theme + ">");
+			//System.out.println("DIV: " + d.type + " <" + d.theme + ">");
 			/*
 			if (d.type.toLowerCase().equals("bg") || d.type.toLowerCase().equals("g")) {
 				typeDiv = d.theme;
@@ -178,7 +174,10 @@ public class TeiToLexico extends TeiConverter {
 		String sc = ConventionsToChat.clean(speechContent);
 		if (optionsOutput.sectionDisplay)
 			sc += " §";
-		out.printf("<loc=%s>%s%n", loc.replaceAll("\\s+", "_"), sc);
+		if (optionsOutput.tiernames)
+			out.printf("<loc=%s>[%s] %s%n", loc, loc.replaceAll("\\s+", "_"), sc);
+		else
+			out.printf("<loc=%s>%s%n", loc.replaceAll("\\s+", "_"), sc);
 	}
 
 	/**
@@ -224,7 +223,7 @@ public class TeiToLexico extends TeiConverter {
 	}
 
 	public static void main(String args[]) throws IOException {
-		String usage = "Description: TeiToLexico convertit un fichier au format TEI en un fichier au format Lexico (txt)%nUsage: TeiToLexico [-options] <file."
+		String usage = "Description: TeiToLexico converts a TEI file to a Lexico/Le Trameur file (txt)%nUsage: TeiToLexico [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToLexico ttc = new TeiToLexico();
 		ttc.mainCommand(args, Utils.EXT, EXT, usage, 2);

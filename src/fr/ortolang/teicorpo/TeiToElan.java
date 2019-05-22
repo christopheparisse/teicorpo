@@ -75,7 +75,7 @@ public class TeiToElan extends GenericMain {
 		try {
 			File teiFile = new File(inputName);
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, validation);
+			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(teiFile);
 			xPathfactory = XPathFactory.newInstance();
@@ -98,7 +98,7 @@ public class TeiToElan extends GenericMain {
 					}
 				}
 
-				public Iterator<?> getPrefixes(String val) {
+				public Iterator<String> getPrefixes(String val) {
 					return null;
 				}
 
@@ -202,7 +202,10 @@ public class TeiToElan extends GenericMain {
 		if (date.isEmpty()) {
 			date = getDate();
 		}
-		annot_doc.setAttribute("DATE", date);
+		if (ttp.optionsOutput.test)
+			annot_doc.setAttribute("DATE", "2018-09-10");
+		else
+			annot_doc.setAttribute("DATE", date);
 		annot_doc.setAttribute("AUTHOR", "TEI_CORPO Converter");
 		annot_doc.setAttribute("FORMAT", "2.8");
 		annot_doc.setAttribute("VERSION", "2.8");
@@ -279,6 +282,8 @@ public class TeiToElan extends GenericMain {
 	Map<String, String> newTimeline = new TreeMap<String, String>(timeCompare);
 	int lastIdTimeline = 0; // last id included in the map
 
+	private boolean setDefault = false;
+
 	String timelineValueOf(String time) {
 		if (time.isEmpty())
 			return "";
@@ -338,6 +343,13 @@ public class TeiToElan extends GenericMain {
 
 	// Elements linguistic_type
 	void buildLgqTypes() {
+		if (setDefault == true) {
+			Element lgqType = elanDoc.createElement("LINGUISTIC_TYPE");
+			lgqType.setAttribute("LINGUISTIC_TYPE_ID", "default");
+			lgqType.setAttribute("TIME_ALIGNABLE", "true");
+			lgqType.setAttribute("GRAPHIC_REFERENCES", "false");
+			annot_doc.appendChild(lgqType);
+		}
 		Set<String> namesLgqTypes = new HashSet<String>();
 		for (int j = 0; j < ttp.tierInfos.size(); j++) {
 			TierInfo ti = (TierInfo) ttp.tierInfos.get(j);
@@ -421,6 +433,7 @@ public class TeiToElan extends GenericMain {
 
 	// Ajout des attributs des élement TIER
 	String setTierAtt(Element tier, String type) {
+//		System.out.printf("setTierAtt(type): %s%n", type);
 		for (TierInfo ti : ttp.tierInfos) {
 			if (ti.tier_id.equals(type)) {
 				if (Utils.isNotEmptyOrNull(ti.participant))
@@ -447,14 +460,23 @@ public class TeiToElan extends GenericMain {
 				}
 				if (Utils.isNotEmptyOrNull(ti.type.lgq_type_id))
 					tier.setAttribute("LINGUISTIC_TYPE_REF", ti.type.lgq_type_id);
+				else {
+					tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
+					setDefault = true;
+				}
 				return ti.type.cv_ref;
 			}
 		}
+//		System.out.printf("setTierAtt(type): default%n");
+		tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
+		setDefault = true;
 		return "";
 	}
 
 	private String setTierAtt(Element tier, NewTier newTier, String type) {
+//		System.out.printf("setTierAtt(new): %s%n", newTier.toString());
 		for (TierInfo ti : ttp.tierInfos) {
+			// System.out.printf("---: %s%n", ti.toString());
 			if (ti.tier_id.equals(newTier.oldID)) {
 				if (Utils.isNotEmptyOrNull(ti.participant))
 					tier.setAttribute("PARTICIPANT", ti.participant);
@@ -466,6 +488,10 @@ public class TeiToElan extends GenericMain {
 					tier.setAttribute("LANG_REF", ti.lang_ref);
 				if (Utils.isNotEmptyOrNull(newTier.lingType))
 					tier.setAttribute("LINGUISTIC_TYPE_REF", newTier.lingType);
+				else {
+					tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
+					setDefault = true;
+				}
 				if (Utils.isNotEmptyOrNull(ti.parent)) {
 					//System.out.printf("WW: %s %s %s%n", newTier.oldID, ti.parent, type);
 					int p = type.indexOf("-");
@@ -489,6 +515,9 @@ public class TeiToElan extends GenericMain {
 				return ti.type.cv_ref;
 			}
 		}
+//		System.out.printf("setTierAtt(new): default%n");
+		tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
+		setDefault = true;
 		return "";
 	}
 
@@ -518,7 +547,8 @@ public class TeiToElan extends GenericMain {
 					annot.appendChild(align_annot);
 					Element annotationValue = elanDoc.createElement("ANNOTATION_VALUE");
 					String str = a.getContent(ttp.optionsOutput.rawLine);
-					String strNorm = NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput);
+					// is it a top tier ?
+					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput) : str;
 					annotationValue.setTextContent(strNorm);
 					if (Utils.isNotEmptyOrNull(cvref)) {
 						Map<String, String> cvi = cvs.get(cvref);
@@ -537,7 +567,8 @@ public class TeiToElan extends GenericMain {
 					annot.appendChild(ref_annot);
 					Element annotationValue = elanDoc.createElement("ANNOTATION_VALUE");
 					String str = a.getContent(ttp.optionsOutput.rawLine);
-					String strNorm = NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput);
+					// is it a top tier ?
+					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput) : str;
 					annotationValue.setTextContent(strNorm);
 					if (Utils.isNotEmptyOrNull(cvref)) {
 						Map<String, String> cvi = cvs.get(cvref);
@@ -563,6 +594,7 @@ public class TeiToElan extends GenericMain {
 			Transformer transformer = fabrique2.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+			transformer.setOutputProperty(OutputKeys.STANDALONE, "no");
 			transformer.transform(source, resultat);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -571,9 +603,10 @@ public class TeiToElan extends GenericMain {
 
 	public static void main(String args[]) throws IOException {
 		TierParams.printVersionMessage();
-		String usage = "Description: TeiToElan convertit un fichier au format Tei en un fichier au format Elan%nUsage: TeiToElan [-options] <file"
+		String usage = "Description: TeiToElan converts a TEI file to a ELAN file%nUsage: TeiToElan [-options] <file"
 				+ Utils.EXT + ">%n";
 		TeiToElan tte = new TeiToElan();
+		//System.out.println(args);
 		tte.mainCommand(args, Utils.EXT, EXT, usage, 0);
 	}
 

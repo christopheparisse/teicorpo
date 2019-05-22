@@ -976,7 +976,7 @@ public class PraatToTei extends GenericMain {
 			HT_ToTei hiertransToTei = new HT_ToTei(ht, optionsTEI);
 			// System.out.println(outputfile);
 			Utils.setTranscriptionDesc(hiertransToTei.docTEI, "praat", "1.0", optionsTEI.praatParamsToString());
-			Utils.setDocumentName(hiertransToTei.docTEI, Utils.lastname(outputfile));
+			Utils.setDocumentName(hiertransToTei.docTEI, options.test ? "testfile" : Utils.lastname(outputfile));
 			Utils.createFile(outputfile, hiertransToTei.docTEI);
 
 		} catch (IOException ioe) {
@@ -989,7 +989,7 @@ public class PraatToTei extends GenericMain {
 
 	public static void main(String[] args) throws Exception {
 		TierParams.printVersionMessage();
-		String usageString = "Description: PraatToTei convertit un fichier Praat vers un fichier TEI%n";
+		String usageString = "Description: PraatToTei converts a PRAAT file to an TEI file%n";
 		PraatToTei ptt = new PraatToTei();
 		ptt.mainCommand(args, EXT, Utils.EXT, usageString, 5);
 	}

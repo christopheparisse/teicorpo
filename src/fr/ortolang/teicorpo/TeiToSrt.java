@@ -238,7 +238,7 @@ public class TeiToSrt extends TeiConverter {
 	}
 
 	public static void main(String args[]) throws IOException {
-		String usage = "Description: TeiToSrt convertit un fichier au format TEI en un fichier au format Srt%nUsage: TeiToSrt [-options] <file."
+		String usage = "Description: TeiToSrt converts a TEI file to an SRT file (subtitles)%nUsage: TeiToSrt [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToSrt ttc = new TeiToSrt();
 		ttc.mainCommand(args, Utils.EXT, EXT, usage, 0);

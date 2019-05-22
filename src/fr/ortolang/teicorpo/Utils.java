@@ -45,11 +45,13 @@ public class Utils {
 	public static String EXT = ".tei_corpo.xml";
 	public static String EXT_PUBLISH = ".tei_corpo";
 	public static String ANNOTATIONBLOC = "annotationBlock";
-	public static String versionTEI = "0.9";
-	public static String versionSoft = "1.37"; // full version with Elan, Clan, Transcriber and Praat
-	public static String versionDate = "05/03/2018 8:00";
+	public static String versionTEI = "0.9.1";
+	public static String versionSoft = "1.40.14"; // full version with Elan, Clan, Transcriber and Praat
+	public static String versionDate = "7/5/2019 17:00";
 	public static String TEI_ALL = "http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/dtd/tei_all.dtd";
-	public static String TEI_CORPO_DTD = "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd";
+	// "https://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_all.dtd";
+	// "http://www.tei-c.org/Vault/P5/current/xml/tei/schema/dtd/spoken.dtd";
+	public static String TEI_SPOKEN_DTD = "http://ct3.ortolang.fr/tei-corpo/spoken.dtd";
 	public static boolean teiStylePure = false;
 	
 	public static String shortPause = " # ";
@@ -113,6 +115,22 @@ public class Utils {
 		return result;
 	}
 
+	public static String join2(String... args) {
+		String result = "";
+		for(String st : args){
+			result += st + "_";
+		}
+		return result;
+	}
+
+	public static String joinString(String[] stringSplit, int begin, int end) {
+		String sentence = "";
+		for (int i = begin; i < end; i++) {
+			sentence += stringSplit[i] + " ";
+		}
+		return sentence;
+	}
+
 	public static String join(String[] s, String delimiter) {
 		StringBuffer buffer = new StringBuffer();
 		int i = 0;
@@ -165,9 +183,9 @@ public class Utils {
 	}
 	
 	/**
-	 * Création du fichier TEI à partir de la transcription originale. 
-	 * @param outputFileName
-	 *            Nom du fichier TEI à créer.
+	 * Creation of TEI file out of the original transcription. 
+	 * @param outputFileName Name of TEI file to be created
+	 * @param d XML document
 	 */
 	public static void createFile(String outputFileName, Document d) {
 
@@ -182,6 +200,7 @@ public class Utils {
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
 			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.teiCorpoDtd());
+			transformer.setOutputProperty(OutputKeys.STANDALONE, "no");
 
 			// Transformation
 			transformer.transform(source, resultat);
@@ -193,11 +212,14 @@ public class Utils {
 
 	public static void setDTDvalidation(DocumentBuilderFactory factory,	boolean b) {
 		try {
+			System.out.printf("validation:%s%n",b?"yes":"no");
 			factory.setValidating(b);
-			factory.setFeature("http://xml.org/sax/features/namespaces", b);
+//			factory.setNamespaceAware(true);
+ 			factory.setFeature("http://xml.org/sax/features/namespaces", b);
 			factory.setFeature("http://xml.org/sax/features/validation", b);
 			factory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar",	b);
 			factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", b);
+			//System.out.println("end validation");
 		}
 		catch (Exception e) {
 			System.err.println("Votre fichier n'est pas conforme à la DTD passée en argument");
@@ -739,7 +761,7 @@ public class Utils {
 		}
 	}
 
-	public static void setRevisionInfo(Document docTEI, Element revisionDesc, String input, String output) {
+	public static void setRevisionInfo(Document docTEI, Element revisionDesc, String input, String output, boolean test) {
 		if (revisionDesc ==  null) {
 			NodeList revDesc = docTEI.getElementsByTagName("revisionDesc");
 			if (revDesc == null || revDesc.getLength() < 1) {
@@ -755,34 +777,43 @@ public class Utils {
 			revisionDesc.appendChild(list);
 		} else
 			list = ((Element)nlist.item(0));
-
-		Element item = docTEI.createElement("item");
-		Element desc = docTEI.createElement("desc");
-		item.setTextContent(
-				new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss").format(Calendar.getInstance().getTime()));
-		desc.setTextContent("date");
-		list.appendChild(item);
-		item.appendChild(desc);
-
-		if (input != null) {
-			item = docTEI.createElement("item");
-			desc = docTEI.createElement("desc");
-			item.setTextContent(input);
-			desc.setTextContent("from");
+		
+		if (test == true) {
+			Element item = docTEI.createElement("item");
+			Element desc = docTEI.createElement("desc");
+			item.setTextContent("test document");
+			desc.setTextContent("test");
 			list.appendChild(item);
 			item.appendChild(desc);
-		}
-
-		if (output != null || input != null) {
-			item = docTEI.createElement("item");
-			desc = docTEI.createElement("desc");
-			if (output != null)
-				item.setTextContent(output);
-			else
-				item.setTextContent(Utils.fullbasename(input) + Utils.EXT);
-			desc.setTextContent("to");
+		} else {
+			Element item = docTEI.createElement("item");
+			Element desc = docTEI.createElement("desc");
+			item.setTextContent(
+					new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss").format(Calendar.getInstance().getTime()));
+			desc.setTextContent("date");
 			list.appendChild(item);
 			item.appendChild(desc);
+
+			if (input != null) {
+				item = docTEI.createElement("item");
+				desc = docTEI.createElement("desc");
+				item.setTextContent(input);
+				desc.setTextContent("from");
+				list.appendChild(item);
+				item.appendChild(desc);
+			}
+
+			if (output != null || input != null) {
+				item = docTEI.createElement("item");
+				desc = docTEI.createElement("desc");
+				if (output != null)
+					item.setTextContent(output);
+				else
+					item.setTextContent(Utils.fullbasename(input) + Utils.EXT);
+				desc.setTextContent("to");
+				list.appendChild(item);
+				item.appendChild(desc);
+			}
 		}
 	}
 
@@ -796,7 +827,7 @@ public class Utils {
 				double y = Double.parseDouble(mm.group(1));
 				double m = Double.parseDouble(mm.group(2));
 				double d = Double.parseDouble(mm.group(3));
-				return Double.toString(Math.floor((y + (m*30.5 + d)/365.0) * 100) / 100);
+				return Double.toString(Math.floor((y + (m*30.5 + d)/365.0) * 10) / 10);
 			}
 			// case y;m
 			pp = Pattern.compile("(\\d+);(\\d+)");
@@ -805,7 +836,7 @@ public class Utils {
 			if (bb) {
 				double y = Double.parseDouble(mm.group(1));
 				double m = Double.parseDouble(mm.group(2));
-				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 100) / 100);
+				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 10) / 10);
 			}
 			// case y;m.
 			pp = Pattern.compile("(\\d+);(\\d+)\\.");
@@ -814,7 +845,7 @@ public class Utils {
 			if (bb) {
 				double y = Double.parseDouble(mm.group(1));
 				double m = Double.parseDouble(mm.group(2));
-				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 100) / 100);
+				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 10) / 10);
 			}
 			// case y;
 			pp = Pattern.compile("(\\d+);");
@@ -822,16 +853,16 @@ public class Utils {
 			bb = mm.matches();
 			if (bb) {
 				double y = Double.parseDouble(mm.group(1));
-				return Double.toString(Math.floor(y * 100) / 100);
+				return Double.toString(Math.floor(y * 10) / 10);
 			}
 			double d = Double.parseDouble(age);
 			if (d < 0.0 || d > 120.0) {
 				System.err.println("age hors limites: (" + age + ")");
-				return "40.02";
+				return "40.1";
 			}
 		} catch (Exception e) {
 			System.err.println("age anormal: " + age);
-			return "40.03";
+			return "40.1";
 		}
 		return age;
 	}

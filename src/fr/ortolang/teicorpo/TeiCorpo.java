@@ -19,6 +19,10 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
@@ -48,9 +52,9 @@ public class TeiCorpo extends GenericMain {
 		
 		// on regarde le type de la sortie
 		if (fileOut != null && !fileOut.isEmpty()) {
-			// éviter les conversions sur le même fichier
+			// avoid conversions on the same file
 			if (fileIn.equals(fileOut)) {
-				System.err.printf("fichiers identiques - ignoré : %s%n", fileIn);
+				System.err.printf("same file ignored : %s%n", fileIn);
 				return;
 			}
 			extOut = extensions(extOut);
@@ -61,7 +65,7 @@ public class TeiCorpo extends GenericMain {
 					extOut = extensions(ext.substring(1));
 				}
 				if (extOut.equals(".none")) {
-					System.err.printf("Impossible de déterminer le format de sortie pour %s %s%n", extOut, fileOut);
+					System.err.printf("cannot guess output format for %s %s%n", extOut, fileOut);
 					return;
 				}
 			}
@@ -80,7 +84,7 @@ public class TeiCorpo extends GenericMain {
 					extIn = extensions(ext.substring(1));
 				}
 				if (extIn.equals(".none")) {
-					System.err.printf("Impossible de déterminer le format d'entrée pour %s %s%n", extIn, fileIn);
+					System.err.printf("cannot guess input format for %s %s%n", extIn, fileIn);
 					return;
 				}
 			}
@@ -115,6 +119,8 @@ public class TeiCorpo extends GenericMain {
 		} else {
 			switch(extIn) {
 			case ".cha":
+			case ".srt":
+			case ".txt":
 				ClanToTei tc = new ClanToTei();
 				tc.mainProcess(fileIn, tempTEI, tp);
 				break;
@@ -132,7 +138,7 @@ public class TeiCorpo extends GenericMain {
 				break;
 			default:
 				// file ignored
-				System.err.printf("Format entrée inconnu: erreur interne%n");
+				System.err.printf("Unknown input format: internal error.%n");
 				return;
 			}
 		}
@@ -141,17 +147,47 @@ public class TeiCorpo extends GenericMain {
 		if (extOut.equals(Utils.EXT)) {
 			// nothing but rename temp file
 			if (fileOut == null || fileOut.isEmpty() || fileOut == outputTEI) {
+				try {
+					Path of = Paths.get(outputTEI);
+					Path tmp = Paths.get(tempTEI);
+				    Files.move(tmp, of,
+				            StandardCopyOption.REPLACE_EXISTING);
+				    if (tp.verbose) System.out.println("Moved to: " + outputTEI);
+				} catch (IOException e) {
+				    //moving file failed.
+					System.out.println("Cannot move to: " + outputTEI);
+				}
+				/*
 				File of = new File(outputTEI);
 				// of.delete(); // if exist before.
 				File tmp = new File(tempTEI);
-				tmp.renameTo(of);
-				if (tp.verbose) System.out.println("Renamed to: " + outputTEI);
+				if (tmp.renameTo(of)) {
+					if (tp.verbose) System.out.println("Renamed to: " + outputTEI);
+				} else {
+					System.out.println("Cannot rename to: " + outputTEI);
+				}
+				*/
 			} else {
+				try {
+					Path of = Paths.get(fileOut);
+					Path tmp = Paths.get(tempTEI);
+				    Files.move(tmp, of,
+				            StandardCopyOption.REPLACE_EXISTING);
+					if (tp.verbose) System.out.println("Moved to: " + fileOut);
+				} catch (IOException e) {
+				    //moving file failed.
+					System.out.println("Cannot move to: " + fileOut);
+				}
+				/*
 				File of = new File(fileOut);
 				// of.delete(); // if exist before.
 				File tmp = new File(tempTEI);
-				tmp.renameTo(of);
-				if (tp.verbose) System.out.println("Renamed to: " + fileOut);
+				if (tmp.renameTo(of)) {
+					if (tp.verbose) System.out.println("Renamed to: " + fileOut);
+				} else {
+					System.out.println("Cannot rename to: " + fileOut);
+				}
+				*/
 			}
 		} else {
 			// System.out.println("toLexico: " + extOut);
@@ -184,12 +220,16 @@ public class TeiCorpo extends GenericMain {
 				TeiToSrt tsr = new TeiToSrt();
 				tsr.mainProcess(tempTEI, fileOut, tp);
 				break;
+			case ".subt.html":
+				TeiToSubtHtml tsh = new TeiToSubtHtml();
+				tsh.mainProcess(tempTEI, fileOut, tp);
+				break;
 			case ".txt":
 				TeiToText txt = new TeiToText();
 				txt.mainProcess(tempTEI, fileOut, tp);
 				break;
 			default:
-				System.err.printf("Format non implémenté dans TeiCorpo: %s%n", extOut);
+				System.err.printf("Format not implemented in TeiCorpo: %s%n", extOut);
 				break;
 			}
 			File of = new File(tempTEI);
@@ -198,6 +238,7 @@ public class TeiCorpo extends GenericMain {
 	}
 
 	public static String extensions(String format) {
+		//System.err.printf("ext: (%s)%n", format);
 		String lcFormat = format.toLowerCase();
 		if (lcFormat.startsWith(".")) lcFormat = lcFormat.substring(1);
 		switch(lcFormat) {
@@ -219,6 +260,9 @@ public class TeiCorpo extends GenericMain {
 			case "srt":
 			case "soustitres":
 				return ".srt";
+			case "subthtml":
+			case "subt.html":
+				return ".subt.html";
 			case "lex.txt":
 			case "tmr.txt":
 			case "letrameur":
@@ -247,10 +291,10 @@ public class TeiCorpo extends GenericMain {
 
 	public static void main(String[] args) throws Exception {
 		TierParams.printVersionMessage();
-		String usageString = "Description: TeiCorpo convertit un fichier d'un format à l'autre%n"
+		String usageString = "Description: TeiCorpo converts one file from one format to another%n"
 				+ "Usage: TeiCorpo [-options] <file>%n"
-				+ "Formats possibles: TEI_CORPO, Clan, Elan, Praat, Transcriber%n"
-				+ "Sortie TEI_CORPO par défaut";
+				+ "Known formats: TEI_CORPO, Clan, Elan, Praat, Transcriber%n"
+				+ "Output format TEI_CORPO by default%n";
 		TeiCorpo tc = new TeiCorpo();
 		tc.mainCommand(args, "", "", usageString, 4);
 	}

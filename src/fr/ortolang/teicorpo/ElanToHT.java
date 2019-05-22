@@ -75,7 +75,7 @@ public class ElanToHT {
 				}
 			}
 
-			public Iterator<?> getPrefixes(String val) {
+			public Iterator<String> getPrefixes(String val) {
 				return null;
 			}
 

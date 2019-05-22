@@ -2,6 +2,8 @@ package fr.ortolang.teicorpo;
 
 import java.util.ArrayList;
 
+import org.w3c.dom.NodeList;
+
 public class Annot {
 	String id;
 	String name;
@@ -13,6 +15,8 @@ public class Annot {
 	String previous;
 	String timereftype; // time ou ref
 	private String cleanedContent = null; // the content without oral markers
+	public String topParent;
+	public NodeList pptRef; // pointer of a list of <w> tags
 	
 	public String getContent(boolean style) {
 		return (style == true && cleanedContent != null) ? cleanedContent : content;
@@ -35,6 +39,8 @@ public class Annot {
 		content = "";
 		link = "";
 		timereftype = "";
+		cleanedContent = null;
+		topParent = "";
 	}
 
 	public Annot(String tierName, String value) {
@@ -46,6 +52,8 @@ public class Annot {
 		content = value;
 		link = "";
 		timereftype = "";
+		cleanedContent = null;
+		topParent = "";
 	}
 
 	public void setTime(long beginTime, long endTime) {
@@ -120,16 +128,22 @@ public class Annot {
 		timereftype = "time";
 	}
 
+	public Annot(String tierName, String value, NodeList refs) {
+		this(tierName, value);
+		pptRef = refs;
+	}
+
 	public String toString() {
 		String s = "NAME = (" + name + "); ID = (" + id;
 		if (timereftype.equals("ref")) {
-			s += "); LINK = (" + link;
+			s += "); LINK = (" + link + "); ";
+			s += "START = (" + start + "); END = (" + end + "); ";
 		} else {
-			s += "); START = (" + start + "); END = (" + end;
+			s += "); START = (" + start + "); END = (" + end + "); ";
 		}
-		s += "); CONTENT = (" + content.trim() + ")";
+		s += "CONTENT = (" + content.trim() + ")";
 		int i = 0;
-		if (dependantAnnotations != null)
+		if (dependantAnnotations != null) {
 			while (i < dependantAnnotations.size()) {
 				s += "\nDA: " + String.valueOf(i) + ". " + dependantAnnotations.get(i).toString();
 				i++;
@@ -138,6 +152,9 @@ public class Annot {
 					break;
 				}
 			}
+//		} else {
+//			s += "\nnoDA";
+		}
 		return s;
 	}
 

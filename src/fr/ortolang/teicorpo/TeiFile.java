@@ -42,9 +42,6 @@ public class TeiFile {
 	// Lignes principales de la transcriptions (liste d'utterances)
 	ArrayList<AnnotatedUtterance> mainLines = new ArrayList<AnnotatedUtterance>();
 
-	// Validation du document Tei par la dtd
-	boolean validation = false;
-
 	public TeiFile(File teiFile, TierParams options) {
 		optionsOutput = options;
 		DocumentBuilderFactory factory = null;
@@ -52,7 +49,7 @@ public class TeiFile {
 		teiTimeline = new TeiTimeline();
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, validation);
+			Utils.setDTDvalidation(factory, options.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(teiFile);
 			root = teiDoc.getDocumentElement();
@@ -76,7 +73,7 @@ public class TeiFile {
 					}
 				}
 
-				public Iterator<?> getPrefixes(String val) {
+				public Iterator<String> getPrefixes(String val) {
 					return null;
 				}
 
@@ -91,20 +88,25 @@ public class TeiFile {
 		transInfo = new TransInfo((Element) root.getElementsByTagName("teiHeader").item(0));
 		trans = new Trans((Element) root.getElementsByTagName("text").item(0), this);
 		transInfo.fileLocation = teiFile.getAbsolutePath();
-		Element e = (Element) root.getElementsByTagName("langUsage").item(0);
-		if (e != null && e.hasChildNodes()) {
-			NodeList nl = e.getChildNodes();
-			language = new String[nl.getLength()];
-			// read all nodes (== all languages)
-			for (int i=0; i < nl.getLength(); i++) {
-				Element el = (Element)nl.item(i);
-				String ident = el.getAttribute("ident");
-				if (ident.isEmpty())
-					ident = el.getTextContent();
-				if (!ident.isEmpty())
-					language[i] = ident;
-				else
-					language[i] = "unknown";
+		NodeList lu = root.getElementsByTagName("langUsage");
+		if (lu != null && lu.getLength() > 0 ) {
+			Element e = (Element) lu.item(0);
+			if (e != null && e.hasChildNodes()) {
+				NodeList nl = e.getChildNodes();
+				language = new String[nl.getLength()];
+				// read all nodes (== all languages)
+				for (int i=0; i < nl.getLength(); i++) {
+					if (nl.item(i).getNodeType() == Node.ELEMENT_NODE) {
+						Element el = (Element)nl.item(i);
+						String ident = el.getAttribute("ident");
+						if (ident.isEmpty())
+							ident = el.getTextContent();
+						if (!ident.isEmpty())
+							language[i] = ident;
+						else
+							language[i] = "unknown";
+					}
+				}
 			}
 		}
 	}
@@ -239,7 +241,8 @@ public class TeiFile {
 			for (int i = 0; i < ch.getLength(); i++) {
 				if (Utils.isElement(ch.item(i))) {
 					Element el = (Element) ch.item(i);
-					if (Utils.isAnnotatedBloc(el)) {
+					if (Utils.isAnnotatedBloc(el) || el.getNodeName().equals("u") || el.getNodeName().equals("p")
+							 || el.getNodeName().equals("post") || el.getNodeName().equals("prod")) {
 						if (getNote(el) != null) {
 							Element note = getNote(el);
 							AnnotatedUtterance lastU = getLastAnnotU();
@@ -249,7 +252,31 @@ public class TeiFile {
 						} else {
 							AnnotatedUtterance utt = new AnnotatedUtterance();
 							utt.codes = optionsOutput.codes;
-							utt.process(el, teiTimeline, transInfo, optionsOutput, true);
+							if (Utils.isAnnotatedBloc(el)) {
+								utt.processAnnotatedU(el, teiTimeline, transInfo, optionsOutput, true);
+							}
+							/*
+							// Case u
+							else if (el.getNodeName().equals("u")) {
+								// process u
+								utt.processU(el, teiTimeline, transInfo, optionsOutput, true);
+							}
+							// Case p
+							else if (el.getNodeName().equals("p")) {
+								// process p
+								utt.processP(el, teiTimeline, transInfo, optionsOutput, true);
+							}
+							// Case post
+							else if (el.getNodeName().equals("post")) {
+								// process post
+								utt.processPOST(el, teiTimeline, transInfo, optionsOutput, true);
+							}
+							// Case post
+							else if (el.getNodeName().equals("post")) {
+								// process post
+								utt.processPROD(el, teiTimeline, transInfo, optionsOutput, true);
+							}
+							*/
 							// Si c'est le premier u, on lui ajoute le type du
 							// div
 							if (first == true) {

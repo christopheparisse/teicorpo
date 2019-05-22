@@ -89,7 +89,7 @@ class TierParams {
 	String defaultAge;
 	String situation;
 	boolean ignorePraatNumbering;
-	String syntax;
+	//String syntax;
 	String normalize;
 	String target;
 	String model;
@@ -97,6 +97,10 @@ class TierParams {
 	String syntaxformat;
 	boolean sandhi;
 	Codes codes;
+	String program;
+	public boolean test;
+	boolean absolute;
+	boolean tiernames;
 
 	TierParams() {
 		noerror = false;
@@ -128,17 +132,21 @@ class TierParams {
 		outputFormat = "";
 		inputFormat = "";
 		shortextension = false;
-		defaultAge = "40.01";
+		defaultAge = "40.0";
 		situation = null;
 		ignorePraatNumbering = false;
 		syntaxformat = "w";
-		syntax = "";
+		//syntax = "";
 		model = "";
+		program = "";
 		normalize ="";
 		target ="";
 		sandhi = false;
 		codes = new Codes();
 		codes.standardCodes();
+		absolute = false;
+		test = false;
+		tiernames = false;
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -176,6 +184,7 @@ class TierParams {
 	private static boolean test(String s, HashSet<String> dd) {
 		s = s.toLowerCase();
 		for (String f: dd) {
+			//System.out.printf("%s %s%n", s, f);
 			if (f.startsWith("*") && f.endsWith("*")) {
 				if (s.indexOf(f.substring(1, f.length()-2)) >= 0) return true;
 			} else if (f.startsWith("*")) {
@@ -223,82 +232,170 @@ class TierParams {
 	}
 
 	public static void printVersionMessage() {
-    	System.out.println("Conversions (version "+ Utils.versionSoft +") " + Utils.versionDate + " Version TEI_CORPO: " + Utils.versionTEI);
+    	System.out.println("TeiCorpo (version "+ Utils.versionSoft +") " + Utils.versionDate + " Version TEI_CORPO: " + Utils.versionTEI);
 	}
 	
 	public static void printUsageMessage(String mess, String ext1, String ext2, int style) {
 		System.err.printf(mess);
-		System.err.println("         :(sans option ou -i) nom du fichier ou repertoire où se trouvent les fichiers Tei à convertir.");
+		System.err.println("         (without option or -i) name of the file or directory where are located the TEI files to be converted.");
 		if (!ext1.isEmpty())
-			System.err.println("            Les fichiers ont pour extension " + ext1);
-		System.err.println("         :-o nom du fichier de sortie au format Elan (.eaf) ou du repertoire de résultats");
-		System.err.println("            -si cette option n'est pas spécifiée, le fichier de sortie aura le même nom que le fichier d'entrée avec l'extension qui correspond au format demandé");
-		System.err.println("            -si cette option est spécifiée, le fichier de sortie aura le même nom exact indiqué.");
-		System.err.println("            -si on donne un repertoire en entrée et que l'option -o n'est pas spécifiée, les résultats seront générés dans le même répertoire.");
-		System.err.println("            -sinon l'option -o doit désigner un nom  de répertoire.");
-		System.err.println("         :-p fichier_de_parametres: contient les paramètres sous leur format ci-dessous, un jeu de paramètre par ligne.");
-		System.err.println("         :-n niveau: niveau d'imbrication (1 pour lignes principales)");
-		System.err.println("         :-a name : le locuteur/champ name est produit en sortie (caractères génériques acceptés)");
-		System.err.println("         :-s name : le locuteur/champ name est suprimé de la sortie (caractères génériques acceptés)");
-		System.err.println("         :-rawline : exporte des énoncés sans marqueurs spéficiques de l'oral");
-		System.err.println("         :-normalize format : normalisation réalisée à partir du format indiqué en paramètre - options possibles: clan");
-		System.err.println("         :-target format : normalisation réalisée en direction du format indiqué en paramètre");
-		System.err.println("         :-short : les extensions fichiers autres que TEI_CORPO ne contiennent pas tei_corpo");
-		System.err.println("         :--noerror : considère les erreurs dans les paramètres comme des warnings");
-		System.err.println("         :--dtd cette option permet de vérifier que les fichiers Transcriber sont conformes à leur dtd");
-		System.err.println("            si cette option est spécifiée, la dtd (Trans-14.dtd) doit se trouver dans le même repertoire que le fichier Transcriber\n"
-						+ "\t\tTéléchargement de la DTD de Transcriber : http://sourceforge.net/p/trans/git/ci/master/tree/etc/trans-14.dtd");
+			System.err.println("            The files have for extension " + ext1);
+		System.err.println("         -o name of the output file or name of the output diretory for all results");
+		System.err.println("            -if this option is not specified, the output file will have the same name as the input");
+		System.err.println("               file but with the extension that matches the required format");
+		System.err.println("            -if this option is specified, the output file will have the exact name provided.");
+		System.err.println("            -if a directory is provided as input and no -o option is provided, result files");
+		System.err.println("               will be in the same directory as input files.");
+		System.err.println("            -otherwise option -o has to point to a directory.");
+
+		if (style == 4) {
+			System.err.println("         -from format_of_input_files: chat elan praat trs tei");
+			System.err.println("         -to format_of_output_files: chat elan praat trs tei iramuteq txm lexico letrameur srt subthtml\n");
+		}
+		
+		System.err.println("         -n level: imbrication level (1 means main lines, 2 means secondary lines)");
+		System.err.println("         -a name : the tier with this name is produced as output (generic characters are accepted)");
+		System.err.println("         -s name : the tier with this name is removed from output (generic characters are accepted)");
+		System.err.println("         -rawline : exports utterances with removing spoken language special codes");
+		System.err.println("         -normalize format : normalization is done from this format - possible options: clan ca");
+		System.err.println("         -target format : normalization is done towards this format - possible options: praat\n");
+
+		System.err.println("         -short : file extensions do not contain tei_corpo");
+		System.err.println("         -p parameter_file: contains parameters with the same format as the command line, one parameter per line.");
+		System.err.println("         --noerror : errors in the parameter are considered as warnings");
+		System.err.println("         --dtd - this option allows to validate the format of the XML files");
+		/*
+		System.err.println("            with this option specified, Transcriber dtd (Trans-14.dtd) must be in the same\n" +
+						   "            directory as the transcriber file. Downloading DTD for Transcriber : \n" +
+						   "            http://sourceforge.net/p/trans/git/ci/master/tree/etc/trans-14.dtd\n");
+		*/
+
+		if (style == 4) {
+			System.err.println("         -stdevent ascci standard format for events in text mode");
+			System.err.println("         -advevent advanced unicode format for event in text mode");
+		}
 		if (style == 5) {
 			printImportPartitionMessage();
 		}
-		if (style == 4) {
-			System.err.println("         :-from format des fichiers input");
-			System.err.println("         :-to format des fichiers output");
-			System.err.println("         :-stdevent format ascci standard des événements en mode texte");
-			System.err.println("         :-advevent format unicode avancé des événements en mode texte");
-		}
 		if (style == 3) {
-			System.err.println("         *** paramètre pour édition de fichier TEI***");
-			System.err.printf ("         :-c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
+			System.err.println("         *** paramater for editing TEI files***");
+			System.err.printf ("         -c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
 		}
 		if (style == 2) {
-			System.err.println("         *** paramètre pour export dans TXM/Iramuteq/Le Trameur ***");
-			System.err.println("         :-tv \"type:valeur\" : un champ type:valeur est ajouté dans les <w> de txm ou lexico ou le trameur");
-			System.err.println("         :-section : ajoute un indicateur de section en fin de chaque énoncé (pour lexico/le trameur)");
-			System.err.println("         :-syntax nom : choix pour la syntaxe à exporter");
-			System.err.println("         :-sandhi : information spécifique intégrées pour l'analyse des liaisons");
+			System.err.println("         *** parameter for export to TXM/Iramuteq/Le Trameur ***");
+			System.err.println("         -tv \"type:value\" : a parameter type:value is added to <u> or <w> tags for txm or lexico or le trameur");
+			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
+			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
+			System.err.println("         -sandhi : specific information for the analyse of liaisons");
 		}
 		if (style == 6) {
-			System.err.println("         :-raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
-			System.err.println("         :-iramuteq : headers for iramuteq");
-			System.err.println("         *** paramètre pour export dans Iramuteq ***");
-			System.err.println("         :-tv \"type:valeur\" : un champ type:valeur est ajouté dans les <u> ou <w> de txm ou lexico ou le trameur");
-			System.err.println("         :-concat : concaténation des fichiers résultats for iramuteq");
-			System.err.println("         :-append : pas d'effacement préalable du fichier destination si concaténation");
+			System.err.println("         *** parameters for export in Iramuteq ***");
+			System.err.println("         -raw : text is exported after removing all locutors or spoken language marking");
+			System.err.println("         -tv \"type:value\" : a parameter type:value is added to <u> or <w> tags for txm or lexico or le trameur");
+			System.err.println("         -iramuteq : headers for iramuteq");
+			System.err.println("         -concat : concatenate result files for iramuteq");
+			System.err.println("         -append : do not erase destination file before processing - to be used with concat");
 		}
 		if (style == 7) {
-			System.err.println("         :-syntaxformat : format de l'export syntaxique (conll / ref / w");
-			System.err.println("         :-model nom : fichier modèle pour la syntaxe");
-			System.err.println("         :-syntax nom : choix pour la syntaxe à générer");
+			System.err.println("         -syntaxformat : format of syntatic annotation (conll / ref / w)");
+			System.err.println("         -model name : model file for syntax");
+			System.err.println("         -program name : executable file for syntax");
 		}
-		System.err.println("	     :-usage ou -help = affichage ce message");
+		if (style == 8) {
+			System.err.println("         -absolute : syntax of included tools/ library in html");
+		}
+		System.err.println("	     -usage or -help = display this message");
 		// System.exit(1);
 	}
 
 	private static void printImportPartitionMessage() {
+		System.err.println("         *** parameter for importing partition files ***");
+		System.err.println("         -m name/address of media file");
+		System.err.println("         -e encoding (by default detect encoding)");
+		System.err.println("         -d default UTF8 encoding ");
+		System.err.println("         -t tiername type parent (describe relations between tiers)");
+		System.err.println("              available types: - assoc incl symbdiv timediv");
+	}
+	
+	public static void frPrintUsageMessage(String mess, String ext1, String ext2, int style) {
+		System.err.printf(mess);
+		System.err.println("         :(sans option ou -i) nom du fichier ou repertoire où se trouvent les fichiers Tei à convertir.");
+		if (!ext1.isEmpty())
+			System.err.println("            Les fichiers ont pour extension " + ext1);
+		System.err.println("         -o nom du fichier de sortie au format Elan (.eaf) ou du repertoire de résultats");
+		System.err.println("            -si cette option n'est pas spécifiée, le fichier de sortie aura le même nom que le fichier d'entrée avec l'extension qui correspond au format demandé");
+		System.err.println("            -si cette option est spécifiée, le fichier de sortie aura le même nom exact indiqué.");
+		System.err.println("            -si on donne un repertoire en entrée et que l'option -o n'est pas spécifiée, les résultats seront générés dans le même répertoire.");
+		System.err.println("            -sinon l'option -o doit désigner un nom  de répertoire.");
+		System.err.println("         -p fichier_de_parametres: contient les paramètres sous leur format ci-dessous, un jeu de paramètre par ligne.");
+		System.err.println("         -n niveau: niveau d'imbrication (1 pour lignes principales)");
+		System.err.println("         -a name : le locuteur/champ name est produit en sortie (caractères génériques acceptés)");
+		System.err.println("         -s name : le locuteur/champ name est suprimé de la sortie (caractères génériques acceptés)");
+		System.err.println("         -rawline : exporte des énoncés sans marqueurs spéficiques de l'oral");
+		System.err.println("         -normalize format : normalisation réalisée à partir du format indiqué en paramètre - options possibles: clan");
+		System.err.println("         -target format : normalisation réalisée en direction du format indiqué en paramètre");
+		System.err.println("         -short : les extensions fichiers autres que TEI_CORPO ne contiennent pas tei_corpo");
+		System.err.println("         --noerror : considère les erreurs dans les paramètres comme des warnings");
+		System.err.println("         --dtd cette option permet de vérifier que les fichiers sont conformes à leur dtd");
+		/*
+		System.err.println("            si cette option est spécifiée, la dtd (Trans-14.dtd) doit se trouver dans le même repertoire que le fichier Transcriber\n"
+						+ "\t\tTéléchargement de la DTD de Transcriber : http://sourceforge.net/p/trans/git/ci/master/tree/etc/trans-14.dtd");
+		*/
+		if (style == 5) {
+			printImportPartitionMessage();
+		}
+		if (style == 4) {
+			System.err.println("         -from format des fichiers input");
+			System.err.println("         -to format des fichiers output");
+			System.err.println("         -stdevent format ascci standard des événements en mode texte");
+			System.err.println("         -advevent format unicode avancé des événements en mode texte");
+		}
+		if (style == 3) {
+			System.err.println("         *** paramètre pour édition de fichier TEI***");
+			System.err.printf ("         -c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
+		}
+		if (style == 2) {
+			System.err.println("         *** paramètre pour export dans TXM/Iramuteq/Le Trameur ***");
+			System.err.println("         -tv \"type:valeur\" : un champ type:valeur est ajouté dans les <w> de txm ou lexico ou le trameur");
+			System.err.println("         -section : ajoute un indicateur de section en fin de chaque énoncé (pour lexico/le trameur)");
+			System.err.println("         -syntax nom : choix pour la syntaxe à exporter");
+			System.err.println("         -sandhi : information spécifique intégrées pour l'analyse des liaisons");
+		}
+		if (style == 6) {
+			System.err.println("         -raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
+			System.err.println("         -iramuteq : headers for iramuteq");
+			System.err.println("         *** paramètre pour export dans Iramuteq ***");
+			System.err.println("         -tv \"type:valeur\" : un champ type:valeur est ajouté dans les <u> ou <w> de txm ou lexico ou le trameur");
+			System.err.println("         -concat : concaténation des fichiers résultats for iramuteq");
+			System.err.println("         -append : pas d'effacement préalable du fichier destination si concaténation");
+		}
+		if (style == 7) {
+			System.err.println("         -syntaxformat : format de l'export syntaxique (conll / ref / w)");
+			System.err.println("         -model nom : fichier modèle pour la syntaxe");
+			System.err.println("         -program name : executable file for syntax");
+//			System.err.println("         -syntax nom : choix pour la syntaxe à générer");
+		}
+		if (style == 8) {
+			System.err.println("         -absolute : syntaxe de l'inclusion de la librairie tools/ en html");
+		}
+		System.err.println("	     -usage ou -help = affichage ce message");
+		// System.exit(1);
+	}
+
+	private static void frPrintImportPartitionMessage() {
 		System.err.println("         *** paramètre pour import fichiers partition ***");
-		System.err.println("         :-m nom/adresse du fichier média");
-		System.err.println("         :-e encoding (par défaut detect encoding)");
-		System.err.println("         :-d default UTF8 encoding ");
-		System.err.println("         :-t tiername type parent (describe relations between tiers)");
+		System.err.println("         -m nom/adresse du fichier média");
+		System.err.println("         -e encoding (par défaut detect encoding)");
+		System.err.println("         -d default UTF8 encoding ");
+		System.err.println("         -t tiername type parent (describe relations between tiers)");
 		System.err.println("             types autorisés: - assoc incl symbdiv timediv");
 	}
 
 	public static boolean processArgs(String[] args, TierParams options, String usage, String ext1, String ext2, int style) {
-		options.inputFormat = ext1;
+//		options.inputFormat = ext1;
 		options.outputFormat = ext2.isEmpty() ? Utils.EXT : ext2;
 		if (args.length == 0) {
-			System.err.println("Vous n'avez spécifié aucun argument\n");
+			System.err.printf("No arguments were specified.%n%n");
 			printUsageMessage(usage, ext1, ext2, style);
 			return false;
 		} else {
@@ -343,16 +440,22 @@ class TierParams {
 					} else if (argument.equals("-e")) {
 						i++;
 						continue;
+					} else if (argument.equals("-tiernames")) {
+						i++;
+						continue;
 					} else if (argument.equals("-age")) {
 						i++;
 						continue;
 					} else if (argument.equals("-syntaxformat")) {
 						i++;
 						continue;
-					} else if (argument.equals("-syntax")) {
+//					} else if (argument.equals("-syntax")) {
+//						i++;
+//						continue;
+					} else if (argument.equals("-model")) {
 						i++;
 						continue;
-					} else if (argument.equals("-model")) {
+					} else if (argument.equals("-program")) {
 						i++;
 						continue;
 					} else if (argument.equals("-normalize")) {
@@ -426,7 +529,7 @@ class TierParams {
 						options.inputFormat = TeiCorpo.extensions(args[i]);
 					} else if (argument.equals("-n")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -n n'est pas suivi d'une valeur");
+							System.err.println("the parameter -n is not followed by a value");
 							// printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -434,13 +537,13 @@ class TierParams {
 						try {
 							options.setLevel(Integer.parseInt(args[i]));
 						} catch(Exception e) {
-							System.err.println("Le paramètre -n n'est pas suivi d'un entier.");
+							System.err.println("the parameter -n is not followed by a number.");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							if (!options.noerror) return false; else break;
 						}
 					} else if (argument.equals("-c")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -c n'est pas suivi d'une valeur");
+							System.err.println("the parameter -c is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -448,7 +551,7 @@ class TierParams {
 						options.addCommand(args[i]);
 					} else if (argument.equals("-a")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -a n'est pas suivi d'une valeur");
+							System.err.println("the parameter -a is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -456,7 +559,7 @@ class TierParams {
 						options.addDoDisplay(args[i]);
 					} else if (argument.equals("-s")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -s n'est pas suivi d'une valeur");
+							System.err.println("the parameter -s is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -464,12 +567,13 @@ class TierParams {
 						options.addDontDisplay(args[i]);
 					} else if (argument.equals("-age")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -age n'est pas suivi d'une valeur");
+							System.err.println("the parameter -age is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
 						i++;
 						options.defaultAge = args[i];
+					/*
 					} else if (argument.equals("-syntax")) {
 						if (i+1 >= args.length) {
 							System.err.println("le parametre -syntax n'est pas suivi d'une valeur");
@@ -478,9 +582,10 @@ class TierParams {
 						}
 						i++;
 						options.syntax = args[i];
+					*/
 					} else if (argument.equals("-syntaxformat")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -syntaxformat n'est pas suivi d'une valeur");
+							System.err.println("the parameter -syntaxformat is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -488,15 +593,23 @@ class TierParams {
 						options.syntaxformat = args[i];
 					} else if (argument.equals("-model")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -model n'est pas suivi d'une valeur");
+							System.err.println("the parameter -model is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
 						i++;
 						options.model = args[i];
+					} else if (argument.equals("-program")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -program is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						options.program = args[i];
 					} else if (argument.equals("-situation")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -situation n'est pas suivi d'une valeur");
+							System.err.println("the parameter -situation is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -504,7 +617,7 @@ class TierParams {
 						options.situation = args[i];
 					} else if (argument.equals("-tv")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -tv n'est pas suivi d'une valeur");
+							System.err.println("the parameter -tv is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -512,7 +625,7 @@ class TierParams {
 						options.addTv(args[i]);
 					} else if (argument.equals("-f")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -f n'est pas suivi d'une valeur");
+							System.err.println("the parameter -f is not followed by a value");
 							// Utils.printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -541,6 +654,12 @@ class TierParams {
 					} else if (argument.equals("-rawline")) {
 						options.rawLine = true;
 						continue;
+					} else if (argument.equals("-tiernames")) {
+						options.tiernames = true;
+						continue;
+					} else if (argument.equals("-test")) {
+						options.test = true;
+						continue;
 					} else if (argument.equals("-nospreadtime")) {
 						options.nospreadtime = true;
 						continue;
@@ -551,7 +670,7 @@ class TierParams {
 						options.dtdValidation = true;
 					} else if (argument.equals("-normalize")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -normalize n'est pas suivi d'une valeur");
+							System.err.println("the parameter -normalize is not followed by a value");
 							return false;
 						}
 						i++;
@@ -559,7 +678,7 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-target")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -target n'est pas suivi d'une valeur");
+							System.err.println("the parameter -target is not followed by a value");
 							return false;
 						}
 						i++;
@@ -589,6 +708,9 @@ class TierParams {
 					} else if (argument.equals("-sandhi")) {
 						options.sandhi = true;
 						continue;
+					} else if (argument.equals("-absolute")) {
+						options.absolute = true;
+						continue;
 					} else if (argument.equals("-iramuteq")) {
 						options.iramuteq = true;
 						options.raw = true;
@@ -602,14 +724,14 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-m")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -m n'est pas suivi d'une valeur");
+							System.err.println("the parameter -m is not followed by a value");
 							return false;
 						}
 						i++;
 						options.mediaName = args[i];
 					} else if (argument.equals("-e")) {
 						if (i+1 >= args.length) {
-							System.err.println("le parametre -e n'est pas suivi d'une valeur");
+							System.err.println("the parameter -e is not followed by a value");
 							return false;
 						}
 						i++;
@@ -617,7 +739,7 @@ class TierParams {
 						options.detectEncoding = false;
 					} else if (argument.equals("-t")) {
 						if (i+3 >= args.length) {
-							System.err.println("le parametre -m n'est pas suivi d'une valeur");
+							System.err.println("the parameter -t is not followed by a value");
 							return false;
 						}
 						DescTier d = new DescTier();
@@ -626,7 +748,7 @@ class TierParams {
 						i++;
 						d.type = args[i];
 						if (DescTier.whichType(args[i]) == null) {
-							System.err.println("le parametre -t ne contient pas un argument connu: " + args[i]);
+							System.err.println("the parameter -t does not contain a known value: " + args[i]);
 							if (!options.noerror) return false; else break;
 						}
 						i++;
@@ -647,7 +769,7 @@ class TierParams {
 			}
 		}
 		if (options.input == null) {
-			System.out.println("Pas de fichier à traiter");
+			System.out.println("No input file to process.");
 			return false;
 		}
 		return true;
@@ -658,7 +780,7 @@ class TierParams {
 		try {
 			ls = Utils.loadTextFile(fn);
 		} catch (IOException e) {
-			System.err.println("Impossible de traiter le fichier: " + fn);
+			System.err.println("Cannot process file: " + fn);
 			return false;
 		}
 		for (int k = 0; k < ls.size(); k++) {
@@ -687,24 +809,24 @@ class TierParams {
 					ldt.add(d);
 				} else if (p[0].equals("-n") || p[0].equals("n")) {
 					if (p.length < 2) {
-						System.err.println("Mauvaise ligne [" + l + "] dans le fichier paramètre: " + fn);
+						System.err.println("Wrong line [" + l + "] in the parameter file: " + fn);
 						return false;
 					}
 					pr.setLevel(Integer.parseInt(p[1]));
 				} else if (p[0].equals("-s") || p[0].equals("s")) {
 					if (p.length < 2) {
-						System.err.println("Mauvaise ligne [" + l + "] dans le fichier paramètre: " + fn);
+						System.err.println("Wrong line [" + l + "] in the parameter file: " + fn);
 						return false;
 					}
 					pr.addDontDisplay(p[1]);
 				} else if (p[0].equals("-a") || p[0].equals("a")) {
 					if (p.length < 2) {
-						System.err.println("Mauvaise ligne [" + l + "] dans le fichier paramètre: " + fn);
+						System.err.println("Wrong line [" + l + "] in the parameter file: " + fn);
 						return false;
 					}
 					pr.addDoDisplay(p[1]);
 			} else {
-					System.err.println("Format inconnu dans le fichier paramètre: " + fn);
+					System.err.println("Unknown format in the parameter file: " + fn);
 					return false;
 				}
 			}

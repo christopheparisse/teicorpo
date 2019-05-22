@@ -54,7 +54,7 @@ public class ConventionsToChat {
 		return Utils.cleanString(s);
 	}
 	
-	public static String chatToText(String s) {
+	public static String caToText(String s) {
 		// FClitic = "-t-elles?|-t-ils?|-t-on|-ce|-elles?|-ils?|-je|-la|-les?|-leur|-lui|-mes?|-m\'|-moi|-nous|-on|-toi|-tu|-t\'|-vous|-en|-y|-ci|-elle|-il";
 		String patternStr = "(\\+\\.\\.\\.|\\+/\\.|\\+!\\?|\\+//\\.|\\+/\\?|\\+\"/\\.|\\+\"\\.|\\+//\\?|\\+\\.\\.\\?|\\+\\.)\\s*$";
 		Pattern pattern = Pattern.compile(patternStr);
@@ -62,6 +62,59 @@ public class ConventionsToChat {
 		if (matcher.find()) {
 			s  = s.replace(matcher.group(), ".");
 		}
+		s = s.replaceAll("↑", "");
+		s = s.replaceAll("↓", "");
+		s = s.replaceAll("⇗", "");
+		s = s.replaceAll("↗", "");
+		s = s.replaceAll("→", "");
+		s = s.replaceAll("↘", "");
+		s = s.replaceAll("⇘", "");
+		s = s.replaceAll("≈", "");
+		s = s.replaceAll("≋", "");
+		s = s.replaceAll("≡", "");
+		s = s.replaceAll("∙", "");
+		s = s.replaceAll("⌈", "");
+		s = s.replaceAll("⌉", "");
+		s = s.replaceAll("⌊", "");
+		s = s.replaceAll("⌋", "");
+		s = s.replaceAll("∆", "");
+		s = s.replaceAll("∇", "");
+		s = s.replaceAll("⁎", "");
+		s = s.replaceAll("⁇", "");
+		s = s.replaceAll("°", "");
+		s = s.replaceAll("◉", "");
+		s = s.replaceAll("▁", "");
+		s = s.replaceAll("▔", "");
+		s = s.replaceAll("☺", "");
+		s = s.replaceAll("♋", "");
+		s = s.replaceAll("∬", "");
+		s = s.replaceAll("Ϋ", "");
+		s = s.replaceAll("∲", "");
+		s = s.replaceAll("§", "");
+		s = s.replaceAll("∾", "");
+		s = s.replaceAll("↻", "");
+		s = s.replaceAll("Ἡ", "");
+		s = s.replaceAll("„", "");
+		s = s.replaceAll("‡", "");
+		s = s.replaceAll("ạ", "");
+		s = s.replaceAll("ā", "");
+		s = s.replaceAll("ʔ", "");
+		s = s.replaceAll("ʕ", "");
+		s = s.replaceAll("š", "");
+		s = s.replaceAll("ˌ", "");
+		s = s.replaceAll("‹", "");
+		s = s.replaceAll("›", "");
+		s = s.replaceAll("〔", "");
+		s = s.replaceAll("〕", "");
+		s = s.replaceAll("“", "");
+		s = s.replaceAll("”", "");
+		s = s.replaceAll("/\\.", ".");
+		s = s.replaceAll(" \\.", ".");
+		s = s.replaceAll("\\s+", " ");
+		return s;
+	}
+	
+	public static String chatToText(String s) {
 		s = s.replaceAll("\\+", " ");
 		s = s.replaceAll("_", " ");
 		s = s.replaceAll("' ", "'");
@@ -71,6 +124,7 @@ public class ConventionsToChat {
 
 	public static String clean(String l) {
 		l = l.replaceAll( "\\&.*?\\s", " " );
+		l = l.replaceAll( "\\([.]*\\)", "" );
 		l = l.replaceAll( "\\([.\\d]\\)", "" );
 		l = l.replaceAll( "\\(", "" );
 		l = l.replaceAll( "\\)", "" );
@@ -109,6 +163,7 @@ public class ConventionsToChat {
 		l = l.replaceAll( "9", "" );
 		//l = l.replaceAll( " +", " " ); // garder les marqueurs de fin d'énoncé
 		//l = l.replaceAll( "' ", "'" );
+		l = l.replaceAll( "\\&.*?$", " " );
 		return l;
 	}
 	

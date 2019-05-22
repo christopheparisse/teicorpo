@@ -1,5 +1,6 @@
 package fr.ortolang.teicorpo;
 
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,19 +33,44 @@ public class NormalizeSpeech {
 		}
 		return line;
 	}
-
 	
 	public static String parseText(String str, String originalFormat, TierParams optionsOutput) {
 		String firstpass, secondpass;
 		String format = (optionsOutput == null || optionsOutput.normalize.isEmpty()) ? originalFormat : optionsOutput.normalize;
 		String target = (optionsOutput == null || optionsOutput.target.isEmpty()) ? optionsOutput.outputFormat : optionsOutput.target;
-		//System.out.printf("/%s/ /%s/ /%s/%n", str, originalFormat, format);
-		if (format.equals("clan") && !target.equals(".cha")) {
-			String s1 = toChatLine(str).trim();
+//		System.out.printf("pT/%s/ /%s/ /%s/ /%s/%n", str, originalFormat, format, target);
+		if (format.equals("ca") && !target.equals(".cha")) {
+			String s1 = convertSpecialCodes(str).replaceAll("\\s+", " ");
 			String s2 = ConventionsToChat.clean(s1);
-			String s3 = convertSpecialCodes(s2).replaceAll("\\s+", " ");
-			firstpass = ConventionsToChat.chatToText(s3);
-			//System.out.printf("§%s§ §%s§ §%s§%n", s1, s2, s3);
+			String s3 = ConventionsToChat.chatToText(s2);
+			firstpass = ConventionsToChat.caToText(s3);
+			//System.out.printf("§%s§ §%s§ §%s§ §%s§ §%s§%n", str, s1, s2, s3, firstpass);
+		} else if (format.equals("clan") && !target.equals(".cha")) {
+			String s1 = convertSpecialCodes(str).replaceAll("\\s+", " ");
+			String s2 = ConventionsToChat.clean(s1);
+			firstpass = ConventionsToChat.chatToText(s2);
+		} else if (format.equals("pfc")) {
+			String s1 = convertSpecialCodes(str).replaceAll("\\s+", " ");
+			String s2 = ConventionsToChat.clean(s1);
+			String s4 = ConventionsToChat.chatToText(s2);
+			// clean up Uppercase letters
+			ArrayList<String> p = Tokenizer.splitTextTT(s4);
+			String s5 = "";
+			LowerCaseLexicon lx = new LowerCaseLexicon();
+			for (int ti = 0; ti < p.size(); ti++) {
+				String s6 = p.get(ti);
+				for (int li=0; li < lx.lowerCaseLexicon.length; li++ ) 
+					if (lx.lowerCaseLexicon[li].equals(s6)) {
+						s6 = s6.toLowerCase();
+						break;
+					}
+				if (ti < p.size()-1)
+					s5 += s6 + " ";
+				else
+					s5 += s6;
+			}
+			firstpass = s5.replaceAll("' ", "'");
+			// System.out.printf("§%s§ §%s§ §%s§ §%s§ §%s§%n", s1, s2, s3, s4, s5);
 		} else {
 			firstpass = str;
 		}
@@ -53,8 +79,8 @@ public class NormalizeSpeech {
 		} else {
 			secondpass = firstpass;
 		}
-		//System.out.printf("{%s} {%s}%n", firstpass, secondpass);
-		return secondpass;
+//		System.out.printf("{%s} {%s}%n", firstpass, secondpass);
+		return secondpass.trim();
 	}
 
 	public static void main(String[] args) {

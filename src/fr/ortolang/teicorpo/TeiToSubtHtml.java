@@ -62,24 +62,32 @@ public class TeiToSubtHtml extends TeiConverter{
 		//Etapes de conversion
 	    // Remove the extension.
 		// System.out.println(tf.transInfo.recordName);
-		String filename;
-		String inputFileName = new File(inputName).getName();
-	    int extensionIndex = inputFileName.lastIndexOf(".");
-	    if (extensionIndex == -1)
-	        filename = inputFileName;
-	    else
-	    	filename = inputFileName.substring(0, extensionIndex);
-		if (filename.endsWith("-240p"))
-			filename = filename.substring(0, filename.length()-5);
-		else if (filename.endsWith("-480p"))
-			filename = filename.substring(0, filename.length()-5);
-		else if (filename.endsWith("-480p"))
-			filename = filename.substring(0, filename.length()-5);
-		else if (filename.endsWith("-720p"))
-			filename = filename.substring(0, filename.length()-5);
-		else if (filename.endsWith("-1020p"))
-			filename = filename.substring(0, filename.length()-6);
-		buildHeader(inputName, filename);
+		String medianame;
+		TransInfo teiHeader = getTransInfo();
+		if (optionsOutput.mediaName != null) {
+			medianame = optionsOutput.mediaName;
+		} else if (teiHeader.medianame != null) {
+			medianame = Utils.basename(teiHeader.medianame);
+		} else {
+			// create a medianame form the name of the current file
+			String inputFileName = new File(inputName).getName();
+		    int extensionIndex = inputFileName.lastIndexOf(".");
+		    if (extensionIndex == -1)
+		        medianame = inputFileName;
+		    else
+		    	medianame = inputFileName.substring(0, extensionIndex);
+			if (medianame.endsWith("-240p"))
+				medianame = medianame.substring(0, medianame.length()-5);
+			else if (medianame.endsWith("-480p"))
+				medianame = medianame.substring(0, medianame.length()-5);
+			else if (medianame.endsWith("-480p"))
+				medianame = medianame.substring(0, medianame.length()-5);
+			else if (medianame.endsWith("-720p"))
+				medianame = medianame.substring(0, medianame.length()-5);
+			else if (medianame.endsWith("-1020p"))
+				medianame = medianame.substring(0, medianame.length()-6);
+		}
+		buildHeader(Utils.lastname(inputName), medianame);
 		buildText();
         /* terminate file */
         out.println( "</p></div></div></body></html>" );
@@ -90,14 +98,20 @@ public class TeiToSubtHtml extends TeiConverter{
 	 * ecriture de l'entete des fichier html en fonction du fichier TEI à convertir
 	 */
 	public void buildHeader(String title, String media) {
-        String cssLayout = "/tools/subt/layout.css";
-        String jsLocation = "/tools/subt/timesheets.js";
+        String cssLayout = (optionsOutput.absolute ? "/" : "") + "tools/subt/layout.css";
+        String jsLocation = (optionsOutput.absolute ? "/" : "") + "tools/subt/timesheets.js";
 
         /* initialise head file */
         out.println( "<html xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:toc=\"http://www.tei-c.org/ns/teioc\" lang=\"en\">" );
         out.println( "<head>" );
         out.println( "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">" );
         out.println( "<meta charset=\"utf-8\">" );
+        out.println( "<link rel=\"shortcut icon\" href=\"favicon.ico\" type=\"image/x-icon\">");
+        /**
+         * Copyright for icon
+         * Name: alecive (Alessandro Roncone)
+		 * URL: Favicon of github.comhttps://github.com/alecive
+         */
         out.printf( "<title>%s</title>%n", title );
         out.printf( "<link rel=\"stylesheet\" type=\"text/css\" href=\"%s\">%n", cssLayout );
         out.println( "<script type=\"text/javascript\" src=\"" + jsLocation + "\"></script>" );
@@ -119,7 +133,7 @@ public class TeiToSubtHtml extends TeiConverter{
         out.println( "mediaPlayer.play(); }; }" );
         out.println( "else {" );
         out.println( "// the video is displayed in a native HTML element" );
-        out.println( "mediaController.style.display = \"none\"; } });" );
+        out.println( "if (mediaController && mediaController.style) mediaController.style.display = \"none\"; } });" );
         out.println( "window.addEventListener('blur', function() {" );
         out.println( "	//alert('lost focus');" );
         out.println( "	var mediaContainer  = document.getElementById(\"media\");" );
@@ -133,19 +147,30 @@ public class TeiToSubtHtml extends TeiConverter{
         out.println( "<div id=\"demo\">" );
         out.println( "<div id=\"media\" class=\"highlight\" data-timecontainer=\"excl\" data-timeaction=\"display\">" );
         out.println( "<video data-syncmaster=\"true\" data-timeaction=\"none\" controls=\"controls\" preload=\"auto\">" );
-        out.printf( "<source type=\"video/mp4\" src=\"%s-480p.mp4\"></source><br/>%n", media );
-        out.printf( "<source type=\"video/webm\" src=\"%s-480p.webm\"></source>%n", media );
-        out.printf( "<source type=\"video/mp4\" src=\"%s-240p.mp4\"></source><br/>%n", media );
-        out.printf( "<source type=\"video/ogg\" src=\"%s-240p.ogv\"></source>%n", media );
-        out.printf( "<source type=\"video/mp4\" src=\"%s.mp4\"></source><br/>%n", media );
-        out.printf( "<source type=\"video/webm\" src=\"%s.webm\"></source>%n", media );
-        out.printf( "<source type=\"video/ogg\" src=\"%s.ogv\"></source>%n", media );
+        if (optionsOutput.mediaName != null) {
+        	String type = "video/mp4";
+        	if (media.endsWith("ogv")) type = "video/ogg";
+        	else if (media.endsWith("webm")) type = "video/webm";
+        	else if (media.endsWith("mp3")) type = "audio/mp3";
+        	else if (media.endsWith("wav")) type = "audio/wav";
+            out.printf( "<source type=\"%s\" src=\"%s\"></source><br/>%n", type, media );
+        } else {
+            out.printf( "<source type=\"video/mp4\" src=\"%s-480p.mp4\"></source><br/>%n", media );
+            out.printf( "<source type=\"video/webm\" src=\"%s-480p.webm\"></source>%n", media );
+            out.printf( "<source type=\"video/ogg\" src=\"%s-480p.ogv\"></source>%n", media );
+            out.printf( "<source type=\"video/mp4\" src=\"%s-240p.mp4\"></source><br/>%n", media );
+            out.printf( "<source type=\"video/webm\" src=\"%s-240p.webm\"></source><br/>%n", media );
+            out.printf( "<source type=\"video/ogg\" src=\"%s-240p.ogv\"></source>%n", media );
+            out.printf( "<source type=\"video/mp4\" src=\"%s.mp4\"></source><br/>%n", media );
+            out.printf( "<source type=\"video/webm\" src=\"%s.webm\"></source>%n", media );
+            out.printf( "<source type=\"video/ogg\" src=\"%s.ogv\"></source>%n", media );
+        }
         out.println( "This page requires <strong>&lt;video&gt;</strong> support:<br/>" );
         out.println( "best viewed with Firefox&nbsp;3.5+, Safari&nbsp;4+, Chrome&nbsp;5+, Opera&nbsp;10.60+ or IE9.<br/><br/>" );
         out.println( "Internet Explorer users, please enable Flash or Silverlight." );
         out.println( "</video>" );
         /* end of head file */
-        printHeader("0.0", "1.0", inputName, media);
+        printHeader("0.0", "1.0", title, (optionsOutput.mediaName != null) ? media : media + ".mp4");
 	}
 	
 	public void printLine(String startTime, String endTime, String loc, String speechContent) {
@@ -172,9 +197,9 @@ public class TeiToSubtHtml extends TeiConverter{
             out.printf( "<p class=\"header\" data-begin=\"%d:%d.%d\" data-end=\"%d:%d.%d\"><span class=\"nutt\">%s</span> %s%n",
             	TimeDivision.toMinutes(startTime), TimeDivision.toSeconds(startTime), TimeDivision.toCentiSeconds(startTime), 
             	TimeDivision.toMinutes(endTime), TimeDivision.toSeconds(endTime), TimeDivision.toCentiSeconds(endTime),
-            	loc, speechContent );
+            	loc, "<br/>" + speechContent );
         } else {
-        	printContinuation( loc, speechContent );
+        	printContinuation( loc, "<br/>" + speechContent );
         }
 	}
 	
@@ -281,16 +306,19 @@ public class TeiToSubtHtml extends TeiConverter{
 	}
 
 	public static void main(String args[]) throws IOException {
-		String usage = "Description: TeiToSubtHtml convertit un fichier au format TEI en un fichier au format Sous-titre HTML%nUsage: TeiToSubtHtml [-options] <file.subt.html>%n";
+		TierParams.printVersionMessage();
+		String usage = "Description: TeiToSubtHtml converts a TEI file to an subtilte HTML file%nUsage: TeiToSubtHtml [-options] <file.subt.html>%n";
 		TeiToSubtHtml ttc = new TeiToSubtHtml();
-		ttc.mainCommand(args, Utils.EXT, EXT, usage, 0);
+		ttc.mainCommand(args, Utils.EXT, EXT, usage, 8);
 	}
 
 	@Override
 	public void mainProcess(String input, String output, TierParams options) {
-		transform(new File(input).getAbsolutePath(), output, options);
+		transform(input, output, options);
 		// System.out.println("Reading " + input);
-		createOutput();
+		if (tf != null) {
+			createOutput();
+		}
 		// System.out.println("New file created " + output);
 	}
 

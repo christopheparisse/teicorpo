@@ -55,7 +55,7 @@ public class TeiToPraat extends GenericMain {
 		try {
 			File teiFile = new File(inputName);
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, validation);
+			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
 			try {
 				DocumentBuilder builder = factory.newDocumentBuilder();
 				teiDoc = builder.parse(teiFile);
@@ -88,7 +88,7 @@ public class TeiToPraat extends GenericMain {
 					}
 				}
 
-				public Iterator<?> getPrefixes(String val) {
+				public Iterator<String> getPrefixes(String val) {
 					return null;
 				}
 
@@ -177,7 +177,9 @@ public class TeiToPraat extends GenericMain {
 							kmax = end;
 					}
 				} catch(java.lang.NumberFormatException e) {
-					System.err.println("Attention: fichier praat probablement corrompu");
+					System.err.println("Attention: fichier praat probablement corrompu (1)");
+					System.err.println(a.toString());
+					e.printStackTrace();
 					continue;
 				}
 			}
@@ -204,11 +206,14 @@ public class TeiToPraat extends GenericMain {
 					out.printf("            xmin = %s%n", printDouble(start));
 					out.printf("            xmax = %s%n", printDouble(end));
 					String str = a.getContent(ttp.optionsOutput.rawLine);
-					String strNorm = NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput);
+					// is it a top tier ?
+					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput) : str;
 					out.printf("            text = \"%s\"%n", strNorm);
 					nk++;
 				} catch(java.lang.NumberFormatException e) {
-					System.err.println("Attention: fichier praat probablement corrompu");
+					System.err.println("Attention: fichier praat probablement corrompu (2)");
+					System.err.println(a.toString());
+					e.printStackTrace();
 					continue;
 				}
 			}
@@ -221,7 +226,7 @@ public class TeiToPraat extends GenericMain {
 
 	public static void main(String args[]) throws IOException {
 		TierParams.printVersionMessage();
-		String usage = "Description: TeiToPraat convertit un fichier au format Tei en un fichier au format Praat%nUsage: TeiToPraat [-options] <file"
+		String usage = "Description: TeiToPraat converts a TEI file to a PRAAT file%nUsage: TeiToPraat [-options] <file"
 				+ Utils.EXT + ">%n";
 		TeiToPraat tte = new TeiToPraat();
 		tte.mainCommand(args, Utils.EXT, Utils.EXT_PUBLISH + EXT, usage, 0);

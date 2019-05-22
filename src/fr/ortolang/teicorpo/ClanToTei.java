@@ -77,21 +77,23 @@ public class ClanToTei extends GenericMain {
 		utteranceId = 0;
 		whenId = 0;
 		tparams = (tp != null) ? tp : new TierParams();
+//		System.err.printf("fmt: %s%n", tparams.inputFormat);
+		if (tparams.inputFormat.isEmpty()) tparams.inputFormat = ".cha";
 		times = new ArrayList<String>();
 		tiersNames = new HashSet<String>();
 		cf = new ChatFile();
 		chatFile = new File(chatFileName);
-		cf.load(chatFileName);
-		cf.findInfo(false);
+		cf.load(chatFileName, tparams);
+		cf.findInfo(false, tparams);
 		// ajouter paramètre
-		if (!tp.nospreadtime) cf.cleantime_inmemory(1);
+		if (!tp.nospreadtime && !tp.inputFormat.equals(".srt") && !tp.inputFormat.equals(".txt")) cf.cleantime_inmemory(1);
 		timeElements = new ArrayList<Element>();
 		DocumentBuilderFactory factory = null;
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
+			Utils.setDTDvalidation(factory, tparams.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Utils.setDTDvalidation(factory, true);
 			docTEI = builder.newDocument();
 			this.xPathfactory = XPathFactory.newInstance();
 			this.xpath = xPathfactory.newXPath();
@@ -113,16 +115,18 @@ public class ClanToTei extends GenericMain {
 					}
 				}
 
-				public Iterator<?> getPrefixes(String val) {
+				public String getPrefix(String uri) {
 					return null;
 				}
 
-				public String getPrefix(String uri) {
+				@Override
+				public Iterator<String> getPrefixes(String arg0) {
+					// TODO Auto-generated method stub
 					return null;
 				}
 			});
 			rootTEI = docTEI.createElement("TEI");
-			rootTEI.setAttribute("version", Utils.versionTEI);
+//			rootTEI.setAttribute("version", Utils.versionTEI);
 			this.rootTEI.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
 			docTEI.appendChild(rootTEI);
 		} catch (Exception e) {
@@ -178,10 +182,11 @@ public class ClanToTei extends GenericMain {
 		Element profileDesc = this.docTEI.createElement("profileDesc");
 		teiHeader.appendChild(profileDesc);
 		Element encodingDesc = this.docTEI.createElement("encodingDesc");
+		encodingDesc.setAttribute("style", Utils.versionTEI);
 		teiHeader.appendChild(encodingDesc);
 		Element revisionDesc = this.docTEI.createElement("revisionDesc");
 		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, chatFile.getAbsolutePath(), null);
+		Utils.setRevisionInfo(this.docTEI, revisionDesc, chatFile.getAbsolutePath(), null, tparams.test);
 
 		Element text = this.docTEI.createElement("text");
 		this.rootTEI.appendChild(text);
@@ -260,7 +265,7 @@ public class ClanToTei extends GenericMain {
 			media.setAttribute("mimeType", Utils.findMimeType(tparams.mediaName));
 			media.setAttribute("url", tparams.mediaName);
 		} else if (cf.mediaFilename != null) {
-			String url = Utils.findClosestMedia(chatFile.getParent(), cf.mediaFilename.toUpperCase(), cf.mediaType);
+			String url = Utils.findClosestMedia(chatFile.getParent(), cf.mediaFilename, cf.mediaType); // removed (cf.mediaFilename).toUpperCase()
 			media.setAttribute("mimeType", Utils.findMimeType(url));
 			media.setAttribute("url", url);
 		}
@@ -382,17 +387,6 @@ public class ClanToTei extends GenericMain {
 		if (cf.situation != null) {
 			cl = new ChatLine(cf.situation);
 			activity.setTextContent(cl.tail);
-			/*
-			String a = Utils.normaliseActivity(cl.tail);
-			if (a != null) {
-				activity.setTextContent(a);
-			} else {
-				activity.setTextContent(tparams.situation);
-			}
-			Element p = docTEI.createElement("p");
-			p.setTextContent(cl.tail);
-			setting.appendChild(p);
-			*/
 			div.setAttribute("type", "Situation");
 		}
 		settingDesc.appendChild(setting);
@@ -411,18 +405,6 @@ public class ClanToTei extends GenericMain {
 	public Element addNewDiv(Element parent, String type, String subj) {
 		Element setting = docTEI.createElement("setting");
 		setting.setTextContent(subj);
-		/*
-		String a = Utils.normaliseActivity(subj);
-		if (a != null) {
-			Element activity = docTEI.createElement("activity");
-			activity.setTextContent(a);
-			setting.appendChild(activity);
-		} else {
-			Element p = docTEI.createElement("p");
-			p.setTextContent(subj);
-			setting.appendChild(p);
-		}
-		*/
 		descID++;
 		setting.setAttribute("xml:id", "d" + descID);
 		Element settingDesc = (Element) docTEI.getElementsByTagName("settingDesc").item(0);
@@ -1607,7 +1589,8 @@ public class ClanToTei extends GenericMain {
 	public static void main(String[] args) throws Exception {
 		TierParams.printVersionMessage();
 		ClanToTei tr = new ClanToTei();
-		tr.mainCommand(args, EXT, Utils.EXT, "Description: ClanToTei convertit un fichier au format Chat en un fichier au format TEI", 0);
+		//System.err.printf("EXT(M): %s%n", EXT);
+		tr.mainCommand(args, EXT, Utils.EXT, "Description: ClanToTei converts a CLAN file to an TEI file%n", 0);
 	}
 
 	@Override
@@ -1620,7 +1603,7 @@ public class ClanToTei extends GenericMain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Utils.setDocumentName(docTEI, Utils.lastname(output));
+		Utils.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
 		Utils.createFile(output, docTEI);
 	}
 

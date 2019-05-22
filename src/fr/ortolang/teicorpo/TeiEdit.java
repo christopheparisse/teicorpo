@@ -46,8 +46,6 @@ public class TeiEdit extends GenericMain {
 	String inputName;
 	// Nom du fichier de sortie
 	String outputName;
-	// Validation du document Tei par la dtd
-	boolean validation = false;
 	// racine du fichier teiDoc
 	Element root;
 	
@@ -70,7 +68,7 @@ public class TeiEdit extends GenericMain {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, validation);
+			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(inputFile);
 			root = teiDoc.getDocumentElement();
@@ -94,7 +92,7 @@ public class TeiEdit extends GenericMain {
 					}
 				}
 
-				public Iterator<?> getPrefixes(String val) {
+				public Iterator<String> getPrefixes(String val) {
 					return null;
 				}
 
@@ -286,7 +284,7 @@ public class TeiEdit extends GenericMain {
 	public static void main(String args[]) throws IOException {
 		TierParams.printVersionMessage();
 
-		String usageString = "Description: TeiEdit permet de modifier des éléments d'un fichier Tei.%nUsage: TeiEdit -c command [-options] <"
+		String usageString = "Description: TeiEdit allows to modify elements from a TEI file.%nUsage: TeiEdit -c command [-options] <"
 				+ Utils.EXT + ">%n";
 		TeiEdit ttc = new TeiEdit();
 		ttc.mainCommand(args, Utils.EXT, ".chg.xml", usageString, 3);

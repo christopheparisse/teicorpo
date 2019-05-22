@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -27,6 +28,7 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
 import fr.ortolang.teicorpo.AnnotatedUtterance;
 import fr.ortolang.teicorpo.TeiFile.Div;
@@ -181,21 +183,29 @@ public class TeiToTxm extends TeiConverter {
 	 *            Temps de fin de l'énoncé
 	 */
 	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
-		if (optionsOutput.syntax.equals("tt") || optionsOutput.syntax.equals("treetagger"))
+		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
+/*		if (optionsOutput.syntaxformat.equals("conll")) { // || optionsOutput.syntax.equals("treetagger")) {
+			System.out.println("skip writeSpeech");
 			return;
+		}
+*/
 		if (optionsOutput != null) {
 			if (optionsOutput.isDontDisplay(loc))
 				return;
 			if (!optionsOutput.isDoDisplay(loc))
 				return;
 		}
-		Element u = generateUStart(loc, startTime, endTime);
-		generateU(u, speechContent, loc);
+		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
+		if (!optionsOutput.syntaxformat.equals("ref") && !optionsOutput.syntaxformat.equals("conll")) {
+			// System.err.println("writeSpeech0: " + optionsOutput.syntaxformat);
+			Element u = generateUStart(loc, startTime, endTime, null);
+			generateU(u, speechContent, loc);
+		}
+		// if this is the ref case or the conll, the result will be written by the tier in writeTier function
 	}
 
-	Element generateUStart(String loc, String startTime, String endTime) {
-		// System.out.println(loc + ' ' + startTime + ' ' + endTime +' ' +
-		// speechContent);
+	Element generateUStart(String loc, String startTime, String endTime, String age) {
+		// System.err.println(loc + ' ' + startTime + ' ' + endTime + ' ' + age);
 		// Si le temps de début n'est pas renseigné, on mettra par défaut le
 		// temps de fin (s'il est renseigné) moins une seconde.
 		if (!Utils.isNotEmptyOrNull(startTime)) {
@@ -217,15 +227,22 @@ public class TeiToTxm extends TeiConverter {
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
-			u.setAttribute("who", loc);
+			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
 			u.setAttribute("start", Double.toString(Double.parseDouble(startTime)));
 			u.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
 			// u.setTextContent(speechContent);
 		} else {
-			u.setAttribute("who", loc);
+			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
 			u.setAttribute("start", "");
 			u.setAttribute("end", "");
 			// u.setTextContent(speechContent);
+		}
+		// u.setAttribute("loc", loc);
+		if (age != null) u.setAttribute("age", age);
+		for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+		    String key = entry.getKey();
+		    String value = entry.getValue().replaceAll("[ _]", "-");
+			u.setAttribute(key, value);
 		}
 		head.appendChild(u);
 		return u;
@@ -239,49 +256,203 @@ public class TeiToTxm extends TeiConverter {
 
 	@Override
 	public void writeTier(AnnotatedUtterance au, Annot tier) {
-		if (optionsOutput.syntax.equals("tt") || optionsOutput.syntax.equals("treetagger")) {
-			// System.out.println("writeTier: " + tier.name);
-			if (tier.name.equals("treetagger")) {
-				Element u = generateUStart(au.speakerCode, au.start, au.end);
-				// System.out.println("writeTier: " + tier.toString());
-				// get loc age
-				String age = "";
-				ArrayList<TeiParticipant> part = getParticipants();
-				for (TeiParticipant tp: part) {
-					if (tp == null || tp.id == null || au.speakerCode == null) continue;
-					if (tp.id.equals(au.speakerCode)) {
+		// System.err.println("writeTier1: " + tier.toString() + " syntf " + optionsOutput.syntaxformat + " name: " + tier.name);
+		if (optionsOutput.syntaxformat.equals("conll") && tier.name.equals("conll")) {
+			// System.out.println("writeTier2: " + tier.toString());
+			// get loc age
+			String age = "";
+			ArrayList<TeiParticipant> part = getParticipants();
+			for (TeiParticipant tp: part) {
+				if (tp == null || tp.id == null || au.speakerCode == null) continue;
+				if (tp.id.equals(au.speakerCode)) {
+					// normalize age for TXM
+					try {
+						float fage = Float.parseFloat(tp.age);
+						String sage = String.format("%04.1f",fage);
+						age = sage;
+					} catch (Exception e) {
+						System.err.printf("Warning: age is not a standard number: %s%n", tp.age);
 						age = tp.age;
 					}
 				}
-				// tier.name
-				if (tier.dependantAnnotations != null) {
-					for (int i=0; i < tier.dependantAnnotations.size(); i++) {
-						Annot aw = tier.dependantAnnotations.get(i);
+			}
+			Element u = generateUStart(au.speakerCode, au.start, au.end, age);
+			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
+			// tier.name
+			if (tier.dependantAnnotations != null) {
+				// System.out.println("dep: " + tier.dependantAnnotations.toString());
+				if (optionsOutput.tiernames) {
+					Element we = txmDoc.createElement("w");
+					// we.setTextContent(w);
+					we.setTextContent("["+spkcode+"]");
+					u.appendChild(we);
+				}
+				for (int i=0; i < tier.dependantAnnotations.size(); i++) {
+					Annot aw = tier.dependantAnnotations.get(i);
+					// System.out.println("writeConnl3 " + aw.toString());
+					Element we = txmDoc.createElement("w");
+					if (!au.speakerCode.isEmpty()) {
+						we.setAttribute("loc", spkcode);
+						we.setAttribute("age", age);
+					}
+					for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+					    String key = entry.getKey();
+					    String value = entry.getValue().replaceAll("[ _]", "-");
+						we.setAttribute(key, value);
+					}
+					for (int k=0; k < aw.dependantAnnotations.size(); k++) {
+						Annot kw = aw.dependantAnnotations.get(k);
+						if (kw.name.equals("word")) {
+							String m = kw.getContent().trim().replaceAll("[ _]", "-");
+							we.setTextContent(m);
+							if (optionsOutput.sandhi) {
+								setSandhiInfo(m, we);
+							}
+//						} else if (kw.name.equals("pos")) {
+//							we.setAttribute("pos", kw.getContent().trim().replaceAll("[ _]", "-"));
+//						} else if (kw.name.equals("lemma")) {
+//							we.setAttribute("lemma", kw.getContent().trim().replaceAll("[ _]", "-"));
+						} else {
+							we.setAttribute(kw.name, kw.getContent().trim().replaceAll("[ _]", "-"));
+						}
+					}
+					u.appendChild(we);
+				}
+			}
+		} else if (optionsOutput.syntaxformat.equals("ref") && tier.name.equals("ref")) {
+			// System.err.println("writeTier3: " + tier.toString());
+			// get loc age
+			String age = "";
+			ArrayList<TeiParticipant> part = getParticipants();
+			for (TeiParticipant tp: part) {
+				if (tp == null || tp.id == null || au.speakerCode == null) continue;
+				if (tp.id.equals(au.speakerCode)) {
+					// normalize age for TXM
+					try {
+						float fage = Float.parseFloat(tp.age);
+						String sage = String.format(Locale.US, "%04.1f",fage);
+						age = sage;
+					} catch (Exception e) {
+						System.err.printf("Warning: age is not a standard number: %s%n", tp.age);
+						age = tp.age;
+					}
+				}
+			}
+			Element u = generateUStart(au.speakerCode, au.start, au.end, age);
+			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
+			// tier.name
+			
+			if (tier.pptRef != null) {
+				//System.out.println(tier.pptRef);
+				if (optionsOutput.tiernames) {
+					Element we = txmDoc.createElement("w");
+					// we.setTextContent(w);
+					we.setTextContent("["+spkcode+"]");
+					u.appendChild(we);
+				}
+				for (int x = 0; x < tier.pptRef.getLength(); x++) {
+					Node w = tier.pptRef.item(x);
+					if (w.getNodeType() == Node.ELEMENT_NODE) {
+						Element wo = (Element)w;
 						Element we = txmDoc.createElement("w");
+//						System.err.println(w.toString() + "++" + w.getTextContent());
 						if (!au.speakerCode.isEmpty()) {
-							we.setAttribute("loc", au.speakerCode);
+							we.setAttribute("loc", spkcode);
 							we.setAttribute("age", age);
 						}
 						for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
 						    String key = entry.getKey();
-						    String value = entry.getValue();
+						    String value = entry.getValue().replaceAll("[ _]", "-");
 							we.setAttribute(key, value);
 						}
-						for (int k=0; k < aw.dependantAnnotations.size(); k++) {
-							Annot kw = aw.dependantAnnotations.get(k);
-							if (kw.name.equals("word")) {
-								we.setTextContent(kw.getContent().trim());
-							} else if (kw.name.equals("pos")) {
-								we.setAttribute("pos", kw.getContent().trim());
-							} else if (kw.name.equals("lemma")) {
-								we.setAttribute("lemma", kw.getContent().trim());
-							}
+						String m = wo.getAttribute("pos");
+						m = m.trim().replaceAll("[ _]", "-");
+						we.setAttribute("pos", m);
+
+						m = wo.getAttribute("lemma");
+						m = m.trim().replaceAll("[ _]", "-");
+						we.setAttribute("lemma", m);
+						
+						m = wo.getTextContent().trim().replaceAll("[ _]", "-");
+						we.setTextContent(m);
+						if (optionsOutput.sandhi) {
+							setSandhiInfo(m, we);
 						}
+
 						u.appendChild(we);
 					}
 				}
 			}
+			//System.out.println(u);
 		}
+	}
+
+	private void setSandhiInfo(String word, Element we) {
+		String init = word.substring(0,1);
+		we.setAttribute("initletter", init);
+		switch(init) {
+			case "a":
+			case "e":
+			case "i":
+			case "o":
+			case "u":
+			case "é":
+			case "è":
+			case "ê":
+			case "ë":
+			case "à":
+			case "â":
+			case "ä":
+			case "ô":
+			case "ö":
+			case "ù":
+			case "û":
+			case "ü":
+			case "y":
+				we.setAttribute("initclass", "voy");
+				break;
+			case "h":
+				we.setAttribute("initclass", "h");
+				break;
+			default:
+				we.setAttribute("initclass", "cons");
+				break;
+		}
+		String last = word.substring(word.length()-1);
+		we.setAttribute("finalletter", last);
+		switch(last) {
+			case "z":
+			case "s":
+			case "x":
+				we.setAttribute("lastclass", "liaison-z");
+				break;
+			case "r":
+				we.setAttribute("lastclass", "liaison-r");
+				break;
+			case "k":
+			case "c":
+				we.setAttribute("lastclass", "liaison-k");
+				break;
+			case "t":
+				we.setAttribute("lastclass", "liaison-t");
+				break;
+			case "n":
+				we.setAttribute("lastclass", "liaison-n");
+				break;
+			default:
+				we.setAttribute("lastclass", "none");
+				break;
+		}
+		if (word.endsWith("re"))
+			we.setAttribute("lastclass", "ench-r");
+		else if (word.endsWith("ne"))
+			we.setAttribute("lastclass", "ench-n");
+		else if (word.endsWith("l"))
+			we.setAttribute("lastclass", "ench-l");
+		else if (word.endsWith("ne"))
+			we.setAttribute("lastclass", "ench-n");
+		else if (word.endsWith("que"))
+			we.setAttribute("lastclass", "ench-k");
 	}
 
 	void generateU(Element u, String speechContent, String loc) {
@@ -300,8 +471,22 @@ public class TeiToTxm extends TeiConverter {
 		for (TeiParticipant tp: part) {
 			if (tp == null || tp.id == null || loc == null) continue;
 			if (tp.id.equals(loc)) {
-				age = tp.age;
+				// normalize age for TXM
+				try {
+					float fage = Float.parseFloat(tp.age);
+					String sage = String.format("%04.1f",fage);
+					age = sage;
+				} catch (Exception e) {
+					System.err.printf("Warning: age is not a standard number: %s%n", tp.age);
+					age = tp.age;
+				}
 			}
+		}
+		if (optionsOutput.tiernames) {
+			Element we = txmDoc.createElement("w");
+			// we.setTextContent(w);
+			we.setTextContent("["+loc+"]");
+			u.appendChild(we);
 		}
 		// for (String w: s) {
 		for (int ti = 0; ti < p.size(); ti++) {
@@ -344,7 +529,7 @@ public class TeiToTxm extends TeiConverter {
 	*/
 	
 	public static void main(String args[]) throws IOException {
-		String usage = "Description: TeiToTxm convertit un fichier au format TEI en un fichier au format Txm%nUsage: TeiToTxm [-options] <file."
+		String usage = "Description: TeiToTxm converts a TEI file to a TXM file%nUsage: TeiToTxm [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToTxm ttc = new TeiToTxm();
 		ttc.mainCommand(args, Utils.EXT, EXT, usage, 2);

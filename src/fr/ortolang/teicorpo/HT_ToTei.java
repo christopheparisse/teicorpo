@@ -102,10 +102,9 @@ public class HT_ToTei {
 		try {
 			factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Utils.setDTDvalidation(factory, true);
+			Utils.setDTDvalidation(factory, tp.dtdValidation);
 			docTEI = builder.newDocument();
 			rootTEI = docTEI.createElement("TEI");
-			rootTEI.setAttribute("version", Utils.versionTEI);
 			rootTEI.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
 			docTEI.appendChild(rootTEI);
 		} catch (Exception e) {
@@ -145,7 +144,7 @@ public class HT_ToTei {
 		teiHeader.appendChild(encodingDesc);
 		Element revisionDesc = this.docTEI.createElement("revisionDesc");
 		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, ht.filePath, null);
+		Utils.setRevisionInfo(this.docTEI, revisionDesc, ht.filePath, null, options.test);
 
 		Element text = docTEI.createElement("text");
 		rootTEI.appendChild(text);
@@ -326,6 +325,7 @@ public class HT_ToTei {
 
 	public void setEncodingDesc() {
 		Element encodingDesc = (Element) docTEI.getElementsByTagName("encodingDesc").item(0);
+		encodingDesc.setAttribute("style", Utils.versionTEI);
 		Element appInfo = docTEI.createElement("appInfo");
 		encodingDesc.appendChild(appInfo);
 		Element application = docTEI.createElement("application");
