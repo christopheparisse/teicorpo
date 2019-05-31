@@ -6,8 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.TreeMap;
 
-import fr.ortolang.teicorpo.Codes;
-
 /**
  * local temporary structures description of relation between tiers
  */
@@ -101,6 +99,7 @@ class TierParams {
 	public boolean test;
 	boolean absolute;
 	boolean tiernames;
+    boolean tiernamescontent;
 
 	TierParams() {
 		noerror = false;
@@ -147,6 +146,7 @@ class TierParams {
 		absolute = false;
 		test = false;
 		tiernames = false;
+		tiernamescontent = false;
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -286,6 +286,7 @@ class TierParams {
 			System.err.println("         -tv \"type:value\" : a parameter type:value is added to <u> or <w> tags for txm or lexico or le trameur");
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
+			System.err.println("         -tiernamescontent : add all fields in tiernames as for other words");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
 		}
 		if (style == 6) {
@@ -441,6 +442,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-tiernames")) {
+						i++;
+						continue;
+					} else if (argument.equals("-tiernamescontent")) {
 						i++;
 						continue;
 					} else if (argument.equals("-age")) {
@@ -656,6 +660,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-tiernames")) {
 						options.tiernames = true;
+						continue;
+					} else if (argument.equals("-tiernamescontent")) {
+						options.tiernamescontent = true;
 						continue;
 					} else if (argument.equals("-test")) {
 						options.test = true;

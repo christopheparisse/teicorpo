@@ -125,11 +125,11 @@ public class TeiTreeTagger extends GenericMain {
 		}
 		String os = System.getProperty("os.name").toLowerCase();
 		if (os.indexOf("mac") >= 0) {
-			String p = ExternalCommand.getLocation("tree-tagger-macos","TREE_TAGGER");
+			String p = ExternalCommand.getLocation("tree-tagger","TREE_TAGGER");
 			if (p != null) return p;
-			p = ExternalCommand.getLocation("bin/tree-tagger-macos","TREE_TAGGER");
+			p = ExternalCommand.getLocation("bin/tree-tagger","TREE_TAGGER");
 			if (p != null) return p;
-			System.err.println("Cannot find tree-tagger-macos program");
+			System.err.println("Cannot find tree-tagger program");
 			return null;
 		} else if (os.indexOf("nix") >= 0 || os.indexOf("linux") >= 0) {
 			String p = ExternalCommand.getLocation("tree-tagger","TREE_TAGGER");

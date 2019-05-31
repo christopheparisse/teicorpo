@@ -285,6 +285,19 @@ public class TeiToTxm extends TeiConverter {
 					Element we = txmDoc.createElement("w");
 					// we.setTextContent(w);
 					we.setTextContent("["+spkcode+"]");
+                    if (optionsOutput.tiernamescontent) {
+                        if (!au.speakerCode.isEmpty()) {
+                            we.setAttribute("loc", spkcode);
+                            we.setAttribute("age", age);
+                        }
+                        for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+                            String key = entry.getKey();
+                            String value = entry.getValue();
+                            we.setAttribute(key, value);
+                        }
+                        if (!typeDiv.isEmpty())
+                            we.setAttribute("div", typeDiv);
+                    }
 					u.appendChild(we);
 				}
 				for (int i=0; i < tier.dependantAnnotations.size(); i++) {
@@ -348,6 +361,19 @@ public class TeiToTxm extends TeiConverter {
 					Element we = txmDoc.createElement("w");
 					// we.setTextContent(w);
 					we.setTextContent("["+spkcode+"]");
+                    if (optionsOutput.tiernamescontent) {
+                        if (!au.speakerCode.isEmpty()) {
+                            we.setAttribute("loc", spkcode);
+                            we.setAttribute("age", age);
+                        }
+                        for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+                            String key = entry.getKey();
+                            String value = entry.getValue();
+                            we.setAttribute(key, value);
+                        }
+						we.setAttribute("pos", "SENT");
+						we.setAttribute("lemma", "_");
+                    }
 					u.appendChild(we);
 				}
 				for (int x = 0; x < tier.pptRef.getLength(); x++) {
@@ -486,6 +512,19 @@ public class TeiToTxm extends TeiConverter {
 			Element we = txmDoc.createElement("w");
 			// we.setTextContent(w);
 			we.setTextContent("["+loc+"]");
+    		if (optionsOutput.tiernamescontent) {
+                if (!loc.isEmpty()) {
+                    we.setAttribute("loc", loc);
+                    we.setAttribute("age", age);
+                }
+                for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+                    String key = entry.getKey();
+                    String value = entry.getValue();
+                    we.setAttribute(key, value);
+                }
+                if (!typeDiv.isEmpty())
+                    we.setAttribute("div", typeDiv);
+            }
 			u.appendChild(we);
 		}
 		// for (String w: s) {

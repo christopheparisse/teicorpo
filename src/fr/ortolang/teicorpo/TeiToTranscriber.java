@@ -47,6 +47,8 @@ public class TeiToTranscriber extends TeiConverter {
 	boolean sectionEndSet;
 	boolean shiftNextStart;
 	boolean noComments;
+    int notprocessed = 0;
+    int processed = 0;
 
 	// Extension du fichier de sortie: .trs
 	final static String EXT = ".trs";
@@ -65,6 +67,13 @@ public class TeiToTranscriber extends TeiConverter {
 		subsectionAdded = false;
 		outputWriter();
 		conversion();
+        if (processed == 0 && notprocessed == 0) {
+            System.err.printf("No lines were converted: is it an empty file?%n");
+        } else if (processed == 0 && notprocessed > 0) {
+            System.err.printf("No lines were converted: do you have a timeline?%n");
+        } else if (notprocessed > 0 && ((double)processed / (double)notprocessed < 0.8)) {
+            System.err.printf("A large number of lines were not converted: you need a full timeline for a correct conversion.%n");
+        }
 	}
 
 	// Création du document trs
@@ -397,6 +406,7 @@ public class TeiToTranscriber extends TeiConverter {
 					episode.appendChild(section);
 					turns = new ArrayList<TranscriberTurn>();
 				}
+    			// System.out.printf("Turn %d %d %s%n", ptr, nd.getNodeType(), d.getTagName());
 				buildTurn(d);
 			}
 		}
@@ -478,7 +488,7 @@ public class TeiToTranscriber extends TeiConverter {
 	}
 
 	// Construction d'un élément turn pour la première fois
-	// Les turns seront modifiés et compactés dans addTurnsToSectin
+	// Les turns seront modifiés et compactés dans addTurnsToSection
 	public void buildTurn(Element elt) {
 		String spk = cleanId(Utils.getAttrAnnotationBloc(elt, "who"));
 		String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(elt, "start")));
@@ -489,8 +499,11 @@ public class TeiToTranscriber extends TeiConverter {
 		}
 		String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(elt, "end")));
 		if (startTime.isEmpty() || endTime.isEmpty()) {
-			if (oldEndTime.isEmpty())
+			if (oldEndTime.isEmpty()) {
+                System.out.printf("Cannot process this line: no time reference.%n");
+                notprocessed++;
 				return;
+            }
 			startTime = oldEndTime;
 			if (shiftNextStart) {
 				// System.err.println(startTime);
@@ -520,6 +533,7 @@ public class TeiToTranscriber extends TeiConverter {
 		oldEndTime = endTime;
 		NodeList uChildNodes = elt.getChildNodes();
 		tt.add(TranscriberTurn.Sync, startTime);
+        processed++;
 		setTurn(tt, uChildNodes);
 	}
 
