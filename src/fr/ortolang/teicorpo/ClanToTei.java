@@ -440,6 +440,7 @@ public class ClanToTei extends ImportToTei {
 		try {
 			while (i < size) {
 				ChatLine cl = new ChatLine(cf.ml(i));
+				if (cl.head.length() == 0) cl.head = "UNK";
 				String start = Integer.toString(cf.startMl(i));
 				String end = Integer.toString(cf.endMl(i));
 				if (cl.head.startsWith("@")) {
