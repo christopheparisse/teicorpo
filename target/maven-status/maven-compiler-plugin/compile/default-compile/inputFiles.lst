@@ -105,6 +105,7 @@
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/Latin5Model.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/MoissonnageEslo.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiConventions.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/ImportConllToTei.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/MBCSGroupProber.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/statemachine/EUCKRSMModel.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/EncodingDetector.java
@@ -129,6 +130,7 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToDC_colaje.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/distributionanalysis/JISDistributionAnalysis.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TranscriberTurn.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/ImportToTei.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/statemachine/ISO2022CNSMModel.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/distributionanalysis/CharDistributionAnalysis.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToPraat.java

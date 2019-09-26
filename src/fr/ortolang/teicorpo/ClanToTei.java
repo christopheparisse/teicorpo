@@ -29,7 +29,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class ClanToTei extends GenericMain {
+public class ClanToTei extends ImportToTei {
 	static String EXT = ".cha";
 
 	// Variables d'instance
@@ -37,30 +37,18 @@ public class ClanToTei extends GenericMain {
 	ChatFile cf;
 	/** Fichier Chat. */
 	File chatFile;
-	/** Nouveau document TEI. */
-	Document docTEI;
-	/** Racine du document TEI. */
-	Element rootTEI;
-	// acces Xpath
-	public XPathFactory xPathfactory;
-	public XPath xpath;
-	/** Element timeline */
-	// Element timeline;
+	String chatFN;
 	/** Liste des types de tiers présents dans le fichier */
 	HashSet<String> tiersNames;
-	ArrayList<String> times;
-	ArrayList<Element> timeElements;
-	Double maxTime = 0.0;
-	TierParams tparams;
 	int nbBG = 0; // stores depth of BG/EG
 
 	/**
 	 * Identifiant des éléments <strong>desc</strong> de <strong>text</strong>.
 	 */
-	static int descID;
+	int descID;
 	/** Identifiant des éléments <strong>u</strong> de <strong>text</strong>. */
-	static int utteranceId;
-	static int whenId;
+	int utteranceId;
+	int whenId;
 
 	/**
 	 * Construction de l'objet ChatFile à partir du fichier CHAT.
@@ -72,6 +60,7 @@ public class ClanToTei extends GenericMain {
 	// initialise et construit le ChatFile et le docTEI
 	public void transform(String chatFileName, TierParams tp) throws Exception {
 //		System.err.printf("ClanToTei %s -- %s %n", chatFileName, tp);
+		chatFN = chatFileName;
 		if (tp == null) tp = new TierParams();
 		descID = 0;
 		utteranceId = 0;
@@ -146,92 +135,14 @@ public class ClanToTei extends GenericMain {
 	// public void conversion(String extension) throws DOMException,
 	// IOException{
 	public void conversion(String extension) throws DOMException, IOException {
-		this.buildEmptyTEI();
-		this.buildHeader();
-		this.buildText(extension);
+		buildEmptyTEI(chatFN);
+		buildHeader("Fichier TEI obtenu à partir du fichier CLAN " + chatFN);
+		setFileDescComplement();
+		buildText(extension);
 		setDurDate();
 		setDivTimes();
-		addTemplateDesc();
+		addTemplateDesc(docTEI);
 		addTimeline();
-	}
-
-	/**
-	 * Création d'un Document TEI minimal.
-	 */
-	public void buildEmptyTEI() {
-		Element teiHeader = this.docTEI.createElement("teiHeader");
-		this.rootTEI.appendChild(teiHeader);
-		Element fileDesc = this.docTEI.createElement("fileDesc");
-		teiHeader.appendChild(fileDesc);
-
-		Element titleStmt = this.docTEI.createElement("titleStmt");
-		fileDesc.appendChild(titleStmt);
-		Element publicationStmt = docTEI.createElement("publicationStmt");
-		fileDesc.appendChild(publicationStmt);
-
-		// Ajout publicationStmt
-		Element distributor = docTEI.createElement("distributor");
-		distributor.setTextContent("tei_corpo");
-		publicationStmt.appendChild(distributor);
-
-		Element notesStmt = docTEI.createElement("notesStmt");
-		fileDesc.appendChild(notesStmt);
-		Element sourceDesc = this.docTEI.createElement("sourceDesc");
-		fileDesc.appendChild(sourceDesc);
-
-		Element profileDesc = this.docTEI.createElement("profileDesc");
-		teiHeader.appendChild(profileDesc);
-		Element encodingDesc = this.docTEI.createElement("encodingDesc");
-		encodingDesc.setAttribute("style", Utils.versionTEI);
-		teiHeader.appendChild(encodingDesc);
-		Element revisionDesc = this.docTEI.createElement("revisionDesc");
-		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, chatFile.getAbsolutePath(), null, tparams.test);
-
-		Element text = this.docTEI.createElement("text");
-		this.rootTEI.appendChild(text);
-		Element timeline = this.docTEI.createElement("timeline");
-		text.appendChild(timeline);
-		Element body = docTEI.createElement("body");
-		text.appendChild(body);
-		Element when = this.docTEI.createElement("when");
-		when.setAttribute("absolute", "0");
-		when.setAttribute("xml:id", "T" + whenId);
-		// timeline.appendChild(when);
-		timeElements.add(when);
-		timeline.setAttribute("unit", "s");
-		times.add("0.0");
-	}
-
-	/**
-	 * Remplissage du header.
-	 * 
-	 * @throws IOException
-	 * @throws DOMException
-	 */
-	public void buildHeader() throws DOMException, IOException {
-		////// Mise à jour de l'élémentFileDesc: titre + info enregistrement+
-		////// date + lieu+ éventuelles notes
-		setFileDesc();
-		setProfileDesc();
-		setEncodingDesc();
-	}
-
-	/**
-	 * Mise à jour de l'élémént encodingDesc: informations sur le logiciel qui a
-	 * généré le document d'origine (ici Clan)
-	 */
-	public void setEncodingDesc() {
-		Element encodingDesc = (Element) docTEI.getElementsByTagName("encodingDesc").item(0);
-		Element appInfo = this.docTEI.createElement("appInfo");
-		encodingDesc.appendChild(appInfo);
-		Element application = this.docTEI.createElement("application");
-		application.setAttribute("ident", "TeiCorpo");
-		application.setAttribute("version", Utils.versionSoft);
-		appInfo.appendChild(application);
-		Element desc = this.docTEI.createElement("desc");
-		application.appendChild(desc);
-		desc.setTextContent("Transcription converted with TeiCorpo to TEI_CORPO - Soft: " + Utils.versionSoft);
 	}
 
 	/**
@@ -243,28 +154,11 @@ public class ClanToTei extends GenericMain {
 	 * @throws IOException
 	 * @throws DOMException
 	 */
-	public void setFileDesc() throws DOMException, IOException {
-		// titleStmt
-		Element titleStmt = (Element) this.docTEI.getElementsByTagName("titleStmt").item(0);
-		Element title = docTEI.createElement("title");
-		titleStmt.appendChild(title);
-		Element desc = docTEI.createElement("desc");
-		title.appendChild(desc);
-		desc.setTextContent("Fichier TEI obtenu à partir du fichier CLAN " + new File(cf.filename()).getName());
-
-		// sourceDesc
-		Element sourceDesc = (Element) this.docTEI.getElementsByTagName("sourceDesc").item(0);
-		Element recordingStmt = docTEI.createElement("recordingStmt");
-		sourceDesc.appendChild(recordingStmt);
-		Element recording = docTEI.createElement("recording");
-		recordingStmt.appendChild(recording);
+	public void setFileDescComplement() throws DOMException, IOException {
 		// Element media
-		Element media = docTEI.createElement("media");
-		recording.appendChild(media);
-		if (tparams.mediaName != null) {
-			media.setAttribute("mimeType", Utils.findMimeType(tparams.mediaName));
-			media.setAttribute("url", tparams.mediaName);
-		} else if (cf.mediaFilename != null) {
+		Element media = (Element) this.docTEI.getElementsByTagName("media").item(0);
+		Element recording = (Element) this.docTEI.getElementsByTagName("recording").item(0);
+		if (tparams.mediaName == null && cf.mediaFilename != null) {
 			String url = Utils.findClosestMedia(chatFile.getParent(), cf.mediaFilename, cf.mediaType); // removed (cf.mediaFilename).toUpperCase()
 			media.setAttribute("mimeType", Utils.findMimeType(url));
 			media.setAttribute("url", url);
@@ -689,9 +583,6 @@ public class ClanToTei extends GenericMain {
 	/**
 	 * Construction et mise à jour des élément <strong>u</strong> à partir d'une
 	 * ligne de ChatFile.
-	 * 
-	 * @param utterance
-	 * @return
 	 */
 	public Element build_comment(String startTime, String endTime, ChatLine cl) {
 		Element incident = this.docTEI.createElement("incident");
@@ -712,9 +603,6 @@ public class ClanToTei extends GenericMain {
 	/**
 	 * Construction et mise à jour des élément <strong>u</strong> à partir d'une
 	 * ligne de ChatFile.
-	 * 
-	 * @param utterance
-	 * @return
 	 */
 	public Element build_u_element(String startTime, String endTime, ChatLine cl, String[] tiers, String extension) {
 		Element annotatedU = Utils.createAnnotationBloc(docTEI);
@@ -775,14 +663,6 @@ public class ClanToTei extends GenericMain {
 					// span.appendChild(seg);
 				}
 			}
-		}
-	}
-
-	public void addTimeline() {
-		Utils.sortTimeline(timeElements);
-		Element timeline = (Element) docTEI.getElementsByTagName("timeline").item(0);
-		for (Element when : timeElements) {
-			timeline.appendChild(when);
 		}
 	}
 
@@ -921,7 +801,7 @@ public class ClanToTei extends GenericMain {
 	 * 
 	 * @param source
 	 *            La phrase à splitter.
-	 * @param u
+	 * @param annotatedU
 	 *            L'élément <strong>u<strong> auquel se rattache la phrase.
 	 * @param tiers
 	 *            L'étiquetage morpho-syntaxique à redéployer sur les mots de la
@@ -1027,7 +907,7 @@ public class ClanToTei extends GenericMain {
 	 * 
 	 * @param source
 	 *            La phrase à splitter.
-	 * @param u
+	 * @param annotatedU
 	 *            L'élément <strong>u<strong> auquel se rattache la phrase.
 	 * @param tiers
 	 *            L'étiquetage morpho-syntaxique à redéployer sur les mots de la
@@ -1379,8 +1259,6 @@ public class ClanToTei extends GenericMain {
 
 	/**
 	 * Crée le fichier de sortie contenant le nouveau Document TEI.
-	 * 
-	 * @param outputFileName
 	 *            Le nom du fichier de sortie. public void createFile(String
 	 *            outputFileName) {
 	 * 
@@ -1398,195 +1276,8 @@ public class ClanToTei extends GenericMain {
 	 *            { e.printStackTrace(); } }
 	 */
 
-	public void setDivTimes() {
-		NodeList divs = null;
-		try {
-			divs = Utils.getAllDivs(this.xpath, this.docTEI);
-		} catch (XPathExpressionException e1) {
-			e1.printStackTrace();
-		}
-		// System.out.println("nb divs: " + divs.getLength());
-		for (int i = 0; i < divs.getLength(); i++) {
-			Element div = (Element) divs.item(i);
-			// System.out.println(i + " " + div.getAttribute("type"));
-			NodeList annotUElmts = null;
-			try {
-				annotUElmts = Utils.getSomeAnnotationBloc(this.xpath, div);
-			} catch (XPathExpressionException e) {
-				e.printStackTrace();
-			}
-			// System.out.println(i + " :- " + annotUElmts.getLength());
-			if (annotUElmts.getLength() != 0) {
-				String start = "";
-				String end = "";
-				for (int j = 0; j < annotUElmts.getLength(); j++) {
-					Element currentU = (Element) annotUElmts.item(j);
-					// System.out.println(j + " " +
-					// currentU.getAttribute("type"));
-					String time = Utils.getAttrAnnotationBloc(currentU, "start");
-					// System.out.println("start: "+time);
-					if (Utils.isNotEmptyOrNull(time) && start == "") {
-						start = time;
-					}
-					time = Utils.getAttrAnnotationBloc(currentU, "end");
-					// System.out.println("end: "+time);
-					if (Utils.isNotEmptyOrNull(time)) {
-						end = time;
-					}
-				}
-				String startId = addTimeToTimeline(getTimeValue(start));
-				String endId = addTimeToTimeline(getTimeValue(end));
-				Utils.setDivHeadAttr(this.docTEI, div, "start", startId);
-				Utils.setDivHeadAttr(this.docTEI, div, "end", endId);
-			}
-		}
-	}
-
-	/**
-	 * Ajoute au document l'information de la durée de l'enregistrement.
-	 */
-	public void setDurDate() {
-		Element recording = (Element) this.docTEI.getElementsByTagName("recording").item(0);
-		NodeList mediaList = recording.getElementsByTagName("media");
-		if (mediaList.getLength() > 0) {
-			Element media = (Element) recording.getElementsByTagName("media").item(0);
-			media.setAttribute("dur-iso", String.valueOf(maxTime));
-		} else {
-			Element media = docTEI.createElement("media");
-			recording.appendChild(media);
-			media.setAttribute("dur-iso", String.valueOf(maxTime));
-		}
-	}
-
-	public String getTimeValue(String timeId) {
-		if (Utils.isNotEmptyOrNull(timeId)) {
-			return times.get(Integer.parseInt(timeId.split("#T")[1]));
-		}
-		return "";
-	}
-
-	public String addTimeToTimeline(String time) {
-		if (Utils.isNotEmptyOrNull(time)) {
-			Double t = Double.parseDouble(time);
-			if (t > maxTime)
-				maxTime = t;
-			String id = "";
-			if (times.contains(time)) {
-				id = "T" + times.indexOf(time);
-			} else {
-				times.add(time);
-				Element when = docTEI.createElement("when");
-				when.setAttribute("interval", time);
-				whenId++;
-				id = "T" + whenId;
-				when.setAttribute("xml:id", id);
-				when.setAttribute("since", "#T0");
-				// timeline.appendChild(when);
-				timeElements.add(when);
-			}
-			return "#" + id;
-		} else {
-			return "";
-		}
-	}
-
-	/*
-	 * String deleteControlChars(String line){ StringBuffer buff = new
-	 * StringBuffer(); char c; for (int pos = 0; pos < line.length(); pos++) { c
-	 * = line.charAt(pos); if (Character.isISOControl(c)) { buff.append(' '); }
-	 * else { buff.append(c); } } return buff.toString().replaceAll("\\x21",
-	 * ""); }
-	 */
-
-	public void removeNote(Element add) {
-		try {
-			Element notesStmt = (Element) docTEI.getElementsByTagName("notesStmt").item(0);
-			NodeList notes = notesStmt.getElementsByTagName("note");
-			for (int i = 0; i < notes.getLength(); i++) {
-				Element note = (Element) notes.item(i);
-				if (note.getTextContent().equals(add.getTextContent())) {
-					notesStmt.removeChild(note);
-				}
-			}
-		} catch (Exception e) {
-		}
-	}
-
-	public void addTemplateDesc() {
-		Element fileDesc = (Element) this.docTEI.getElementsByTagName("fileDesc").item(0);
-		Element notesStmt = (Element) fileDesc.getElementsByTagName("notesStmt").item(0);
-		Element templateNote = docTEI.createElement("note");
-		templateNote.setAttribute("type", "TEMPLATE_DESC");
-		notesStmt.appendChild(templateNote);
-
-		// Ajout des locuteurs dans les templates
-		Element particDesc = (Element) this.docTEI.getElementsByTagName("particDesc").item(0);
-		NodeList persons = particDesc.getElementsByTagName("person");
-		for (int i = 0; i < persons.getLength(); i++) {
-			Element person = (Element) persons.item(i);
-			Element note = docTEI.createElement("note");
-
-			Element noteType = docTEI.createElement("note");
-			noteType.setAttribute("type", "type");
-			noteType.setTextContent("-");
-			note.appendChild(noteType);
-
-			Element noteParent = docTEI.createElement("note");
-			noteParent.setAttribute("type", "parent");
-			noteParent.setTextContent("-");
-			note.appendChild(noteParent);
-			if (person.getElementsByTagName("alt").getLength() > 0) {
-				Element alt = (Element) person.getElementsByTagName("alt").item(0);
-
-				Element noteCode = docTEI.createElement("note");
-				noteCode.setAttribute("type", "code");
-				noteCode.setTextContent(alt.getAttribute("type"));
-				note.appendChild(noteCode);
-
-			}
-			templateNote.appendChild(note);
-		}
-		for (String tierName : this.tiersNames) {
-			Element note = docTEI.createElement("note");
-
-			Element noteCode = docTEI.createElement("note");
-			noteCode.setAttribute("type", "code");
-			noteCode.setTextContent(tierName);
-			note.appendChild(noteCode);
-
-			Element noteType = docTEI.createElement("note");
-			noteType.setAttribute("type", "type");
-			noteType.setTextContent(LgqType.SYMB_ASSOC);
-			note.appendChild(noteType);
-
-			String parent = Utils.ANNOTATIONBLOC;
-			if (tierName.toLowerCase().equals(Utils.ANNOTATIONBLOC)) {
-				parent = "-";
-			}
-			Element noteParent = docTEI.createElement("note");
-			noteParent.setAttribute("type", "parent");
-			noteParent.setTextContent(parent);
-			note.appendChild(noteParent);
-
-			templateNote.appendChild(note);
-		}
-	}
-
-	public static String toSeconds(String time_milliseconds) {
-		return Float.toString(Float.parseFloat(time_milliseconds) / 1000);
-	}
-
-	public static String convTerm(String s) {
-		String patternStr = "([^#])(\\+\\.\\.\\.|\\+/\\.|\\+!\\?|\\+//\\.|\\+/\\?|\\+\"/\\.|\\+\"\\.|\\+//\\?|\\+\\.\\.\\?|\\+\\.|\\.|\\?|!\\s*$)";
-		Pattern pattern = Pattern.compile(patternStr);
-		Matcher matcher = pattern.matcher(s);
-		if (matcher.find()) {
-			s = s.replace(matcher.group(), matcher.group(1) + " {" + matcher.group(2)) + " /T}";
-		}
-		return s;
-	}
-
 	public static void main(String[] args) throws Exception {
+		EXT = ".cha";
 		TierParams.printVersionMessage();
 		ClanToTei tr = new ClanToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);

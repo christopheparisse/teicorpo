@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libjars">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libjars/stanford-corenlp-3.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libjars/docx4j-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

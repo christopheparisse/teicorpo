@@ -86,7 +86,7 @@ public class ChatFile {
 		// find all types of information and preprocess it.
 		int sz = nbMainLines();
 		boolean inHeader = true;
-		Pattern pattern = Pattern.compile("[%*@](\\w+)[\\s:]?.*");
+		Pattern pattern = Pattern.compile("[%*@](\\w*)[\\s:]?.*");
 		Set<String> idsMap= new HashSet<String>();;
 		for (int i=0; i<sz; i++) {
 			if (ml(i).startsWith("*")) {
@@ -97,7 +97,9 @@ public class ChatFile {
 						idsMap.add(matcher.group(1));
 						ID nid = new ID();
 						nid.code = matcher.group(1);
-						if (nid.code == "UNK")
+						if (nid.code.isEmpty())
+							nid.code = "UNK";
+						if (nid.code.equals("UNK"))
 							nid.role = "Unknown";
 						ids.add(nid);
 					}
@@ -683,7 +685,7 @@ public class ChatFile {
 					System.out.printf("Error srt: bad number at %s%n", line);
 				}
 				if ((line = reader.readLine()) == null) {
-					System.out.printf("Error srt: incomplete last element%n");
+					System.out.printf("Error srt: incomplete last element%n", nb);
 					break;
 				}
 				//System.out.printf("srt: %d%n", nb);

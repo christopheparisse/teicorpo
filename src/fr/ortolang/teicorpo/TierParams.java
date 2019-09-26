@@ -100,6 +100,7 @@ class TierParams {
 	boolean absolute;
 	boolean tiernames;
     boolean tiernamescontent;
+	String metadata;
 
 	TierParams() {
 		noerror = false;
@@ -147,6 +148,7 @@ class TierParams {
 		test = false;
 		tiernames = false;
 		tiernamescontent = false;
+		metadata = null;
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -411,6 +413,9 @@ class TierParams {
 					} else if (argument.equals("-o")) {
 						i++;
 						continue;
+					} else if (argument.equals("-metadata")) {
+						i++;
+						continue;
 					} else if (argument.equals("-to")) {
 						i++;
 						continue;
@@ -531,6 +536,14 @@ class TierParams {
 						}
 						i++;
 						options.inputFormat = TeiCorpo.extensions(args[i]);
+					} else if (argument.equals("-metadata")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -metadata is not followed by a filename");
+//							printUsageMessage(usage, "-", "-", style);
+							return false;
+						}
+						i++;
+						options.metadata = args[i];
 					} else if (argument.equals("-n")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -n is not followed by a value");
