@@ -19,6 +19,7 @@ public class TeiTimeline {
 	public void buildTimeline(Document teiDoc) {
 		timeline.put("T0", "0");
 		Element tl = (Element) teiDoc.getElementsByTagName("timeline").item(0);
+		if (tl == null) return; // No timeline in TEI
 		String unit = tl.getAttribute("unit");
 		double ratio = 1.0;
 		if (unit.equals("ms"))

@@ -107,7 +107,7 @@ public abstract class TeiConverter extends GenericMain {
 		 * Chaque utterance a une liste d'énoncé, dans un format spécifique:
 		 * start;end__speech
 		 */
-		// System.err.print(u.toString());
+		if (u.speeches == null) return;
 		for (int s = 0; s < u.speeches.size(); s++) {
 			String start = null;
 			String end = null;

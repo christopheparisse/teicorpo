@@ -52,12 +52,13 @@ public class TransInfo {
 	public ArrayList<String> situationList = new ArrayList<String>();
 
 	public TransInfo(Element docTeiHeader) {
+		if (docTeiHeader == null) return;
 		// Récupération des informations relatives au fichier
-		Element fileDesc = (Element) docTeiHeader.getElementsByTagName("fileDesc").item(0);
-		getFileDescInfo(fileDesc);
+		NodeList fileDesc = docTeiHeader.getElementsByTagName("fileDesc");
+		if (fileDesc != null) getFileDescInfo((Element)fileDesc.item(0));
 		// Récupération de informations relatives à l'enregistrement
-		Element profileDesc = (Element) docTeiHeader.getElementsByTagName("profileDesc").item(0);
-		getProfileDescInfo(profileDesc);
+		NodeList profileDesc = docTeiHeader.getElementsByTagName("profileDesc");
+		if (profileDesc != null) getProfileDescInfo((Element) profileDesc.item(0));
 		// Récupération des information relatives aux versions de
 		// l'enregistrement
 		// Element revisionDesc = (Element)
@@ -65,10 +66,10 @@ public class TransInfo {
 
 		// Récupération des informations relatives au logiciel d'origine de
 		// la transcription
-		Element application = (Element) docTeiHeader.getElementsByTagName("application").item(0);
+		NodeList application = docTeiHeader.getElementsByTagName("application");
 		if (application != null) {
-			format = application.getAttribute("ident");
-			version = application.getAttribute("version");
+			format = ((Element)application.item(0)).getAttribute("ident");
+			version = ((Element)application.item(0)).getAttribute("version");
 		}
 	}
 

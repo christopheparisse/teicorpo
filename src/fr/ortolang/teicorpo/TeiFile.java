@@ -169,7 +169,8 @@ public class TeiFile {
 				Div d = new Div(tf, ep, attr, theme);
 				divs.add(d); // la situation
 				for (AnnotatedUtterance u : d.utterances) {
-					tierTypes.addAll(u.tierTypes);
+					if (u.tierTypes != null)
+						tierTypes.addAll(u.tierTypes);
 				}
 			} else {
 				String attr = Utils.getDivHeadAttr(body, "subtype");
@@ -179,7 +180,8 @@ public class TeiFile {
 				Div d = new Div(tf, body, attr, theme);
 				divs.add(d); // la situation
 				for (AnnotatedUtterance u : d.utterances) {
-					tierTypes.addAll(u.tierTypes);
+					if (u.tierTypes != null)
+						tierTypes.addAll(u.tierTypes);
 				}
 			}
 		}
@@ -255,7 +257,6 @@ public class TeiFile {
 							if (Utils.isAnnotatedBloc(el)) {
 								utt.processAnnotatedU(el, teiTimeline, transInfo, optionsOutput, true);
 							}
-							/*
 							// Case u
 							else if (el.getNodeName().equals("u")) {
 								// process u
@@ -266,12 +267,13 @@ public class TeiFile {
 								// process p
 								utt.processP(el, teiTimeline, transInfo, optionsOutput, true);
 							}
+							/*
 							// Case post
 							else if (el.getNodeName().equals("post")) {
 								// process post
 								utt.processPOST(el, teiTimeline, transInfo, optionsOutput, true);
 							}
-							// Case post
+							// Case prod
 							else if (el.getNodeName().equals("post")) {
 								// process post
 								utt.processPROD(el, teiTimeline, transInfo, optionsOutput, true);

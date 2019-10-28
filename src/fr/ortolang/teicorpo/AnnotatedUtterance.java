@@ -88,6 +88,93 @@ public class AnnotatedUtterance {
 		return s;
 	}
 
+	public boolean processP(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+		optionsTEI = options;
+		morClan = "";
+		this.teiTimeline = teiTimeline;
+		id = u.getAttribute("xml:id");
+		nthid = 0;
+		speakerCode = "p";
+		coms = new ArrayList<String>();
+		speeches = new ArrayList<Annot>();
+		tiers = new ArrayList<Annot>();
+		tierTypes = new HashSet<String>();
+		speakerName = "";
+		nomarkerSpeech = "";
+		speech = u.getTextContent();
+		nomarkerSpeech = speech;
+		Annot a = new Annot(speakerName, start, end, speech, nomarkerSpeech);
+		if (nthid == 0) {
+			a.id = id;
+			nthid++;
+		} else {
+			a.id = id + nthid;
+			nthid++;
+		}
+		speeches.add(a);
+		return true;
+	}
+
+	public boolean processU(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+		optionsTEI = options;
+		morClan = "";
+		this.teiTimeline = teiTimeline;
+		// Initialisation des variables d'instances
+		if (options != null && options.outputFormat == ".cha") {
+			shortPause = Utils.shortPauseCha;
+			longPause = Utils.longPauseCha;
+			veryLongPause = Utils.veryLongPauseCha;
+		} else {
+			shortPause = Utils.shortPause;
+			longPause = Utils.longPause;
+			veryLongPause = Utils.veryLongPause;
+		}
+		id = u.getAttribute("xml:id");
+		nthid = 0;
+		if (teiTimeline != null) {
+			start = teiTimeline.getTimeValue(u.getAttribute("start"));
+			end = teiTimeline.getTimeValue(u.getAttribute("end"));
+		} else {
+			start = u.getAttribute("start");
+			end = u.getAttribute("end");
+		}
+		speakerCode = u.getAttribute("who");
+		coms = new ArrayList<String>();
+		speeches = new ArrayList<Annot>();
+		tiers = new ArrayList<Annot>();
+		tierTypes = new HashSet<String>();
+		if (options != null) {
+			if (options.isDontDisplay(speakerCode, 1))
+				return false;
+			if (!options.isDoDisplay(speakerCode, 1))
+				return false;
+		}
+		// System.err.printf(speakerCode +  "  = code%n");
+		if (transInfo != null)
+			speakerName = transInfo.getParticipantName(speakerCode);
+		else
+			speakerName = "";
+
+		nomarkerSpeech = "";
+		speech = "";
+		NodeList us = u.getChildNodes();
+		processSeg(us);
+		//System.out.printf("UUUU : %s%n", speech);
+		speech = Utils.cleanStringPlusEntities(speech);
+		nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
+		Annot a = new Annot(speakerName, start, end, speech, nomarkerSpeech);
+		if (nthid == 0) {
+			a.id = id;
+			nthid++;
+		} else {
+			a.id = id + nthid;
+			nthid++;
+		}
+		speeches.add(a);
+
+		return true;
+	}
+
 	public boolean processAnnotatedU(Element annotatedU, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
 		optionsTEI = options;
 		morClan = "";
@@ -123,7 +210,7 @@ public class AnnotatedUtterance {
 			if (!options.isDoDisplay(speakerCode, 1))
 				return false;
 		}
-		//System.out.printf("Yes.%n");
+		// System.err.printf(speakerCode +  "  = code%n");
 		if (transInfo != null)
 			speakerName = transInfo.getParticipantName(speakerCode);
 		else
