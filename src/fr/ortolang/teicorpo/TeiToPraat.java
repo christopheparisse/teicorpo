@@ -177,7 +177,7 @@ public class TeiToPraat extends GenericMain {
 							kmax = end;
 					}
 				} catch(java.lang.NumberFormatException e) {
-					System.err.println("Attention: fichier praat probablement corrompu (1)");
+					System.err.println("Warning: Praat file might be corrupted (1)");
 					System.err.println(a.toString());
 					e.printStackTrace();
 					continue;
@@ -190,7 +190,17 @@ public class TeiToPraat extends GenericMain {
 			int nk = 1;
 			for (Annot a : entry.getValue()) {
 				try {
+					if (a.start == null || a.start.isEmpty()) {
+						System.err.println("Warning: Praat file with empty value");
+						System.err.println(a.toString());
+						continue;
+					}
 					double start = Double.parseDouble(a.start);
+					if (a.end == null || a.end.isEmpty()) {
+						System.err.println("Warning: Praat file with empty value");
+						System.err.println(a.toString());
+						continue;
+					}
 					double end = Double.parseDouble(a.end);
 					/*
 					if (nk==1 && start != 0.0) {
@@ -211,7 +221,7 @@ public class TeiToPraat extends GenericMain {
 					out.printf("            text = \"%s\"%n", strNorm);
 					nk++;
 				} catch(java.lang.NumberFormatException e) {
-					System.err.println("Attention: fichier praat probablement corrompu (2)");
+					System.err.println("Warning: Praat file might be corrupted (2)");
 					System.err.println(a.toString());
 					e.printStackTrace();
 					continue;

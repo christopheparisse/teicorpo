@@ -143,3 +143,4 @@ The Stanford parser, part of speech tagger, and other tools can be called to pro
   - 1.40.4 Inclusion of Stanford Natural Language Processing program
   - 1.40.5 Add text and srt input format
   - 1.40.6 Bug correction (conversion to praat and elan) and modification of argument name in &lt;ref&gt; syntactic information
+  - 1.40.18 (since 1.40.7) Bug corrections

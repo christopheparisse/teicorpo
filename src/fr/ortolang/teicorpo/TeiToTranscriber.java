@@ -498,7 +498,7 @@ public class TeiToTranscriber extends TeiConverter {
 			shiftNextStart = false;
 		}
 		String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(elt, "end")));
-		if (startTime.isEmpty() || endTime.isEmpty()) {
+		if (startTime == null || startTime.isEmpty() || endTime == null || endTime.isEmpty()) {
 			if (oldEndTime.isEmpty()) {
                 System.out.printf("Cannot process this line: no time reference.%n");
                 notprocessed++;
@@ -544,9 +544,10 @@ public class TeiToTranscriber extends TeiConverter {
 			if (startApresVirgule.length() > 3) {
 				firstVal = valTimeSplit[0] + "." + valTimeSplit[1].substring(0, 3);
 			}
+			return firstVal;
 		} catch (Exception e) {
+			return firstVal;
 		}
-		return firstVal;
 	}
 
 	public boolean time1InfTime2(String time1, String time2) {

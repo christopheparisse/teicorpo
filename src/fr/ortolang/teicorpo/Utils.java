@@ -46,8 +46,8 @@ public class Utils {
 	public static String EXT_PUBLISH = ".tei_corpo";
 	public static String ANNOTATIONBLOC = "annotationBlock";
 	public static String versionTEI = "0.9.1";
-	public static String versionSoft = "1.40.17"; // full version with Elan, Clan, Transcriber and Praat
-	public static String versionDate = "28/10/2019 18:00";
+	public static String versionSoft = "1.40.18"; // full version with Elan, Clan, Transcriber and Praat
+	public static String versionDate = "25/11/2019 08:00";
 	public static String TEI_ALL = "http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/dtd/tei_all.dtd";
 	// "https://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_all.dtd";
 	// "http://www.tei-c.org/Vault/P5/current/xml/tei/schema/dtd/spoken.dtd";
