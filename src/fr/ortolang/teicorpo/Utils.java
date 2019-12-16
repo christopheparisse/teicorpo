@@ -46,8 +46,8 @@ public class Utils {
 	public static String EXT_PUBLISH = ".tei_corpo";
 	public static String ANNOTATIONBLOC = "annotationBlock";
 	public static String versionTEI = "0.9.1";
-	public static String versionSoft = "1.40.18"; // full version with Elan, Clan, Transcriber and Praat
-	public static String versionDate = "25/11/2019 08:00";
+	public static String versionSoft = "1.40.19"; // full version with Elan, Clan, Transcriber and Praat
+	public static String versionDate = "17/12/2019 14:00";
 	public static String TEI_ALL = "http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/dtd/tei_all.dtd";
 	// "https://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_all.dtd";
 	// "http://www.tei-c.org/Vault/P5/current/xml/tei/schema/dtd/spoken.dtd";
@@ -706,17 +706,59 @@ public class Utils {
 		sg.appendChild(s);
 		annotatedU.appendChild(sg);
 	}
-	
+
+	static void addToHead(Document docTEI, Element head, String name) {
+		// split name in two parts
+		String pname = pathname(name);
+		String bname = basename(name);
+		Element pnote = docTEI.createElement("note");
+		pnote.setAttribute("type", "pathname");
+		pnote.setTextContent(pname);
+		head.appendChild(pnote);
+		Element bnote = docTEI.createElement("note");
+		bnote.setAttribute("type", "basename");
+		bnote.setTextContent(bname);
+		head.appendChild(bnote);
+	}
+
 	public static void setDocumentName(Document docTEI, String name) {
 		NodeList revDesc = docTEI.getElementsByTagName("revisionDesc");
-		NodeList list = ((Element)revDesc.item(0)).getElementsByTagName("list");
+		NodeList llist = ((Element)revDesc.item(0)).getElementsByTagName("list");
+		Element list;
+		if (llist.getLength() == 0) {
+			list = docTEI.createElement("list");
+			((Element)revDesc.item(0)).appendChild(list);
+		} else {
+			list = ((Element)llist.item(0));
+		}
+		// put name in head
+		NodeList lhead = list.getElementsByTagName("head");
+		if (lhead.getLength() == 0) {
+			Element head = docTEI.createElement("head");
+			addToHead(docTEI, head, name);
+			((Element)list).appendChild(head);
+		} else {
+			Element head = (Element)lhead.item(0);
+			NodeList notes = head.getElementsByTagName("note");
+			for (int i=0; i < notes.getLength() ; i++) {
+				head.removeChild(notes.item(i));
+			}
+			addToHead(docTEI, head, name);
+			// removes all child nodes
+			/*
+			while (head.hasChildNodes())
+				head.removeChild(head.getFirstChild());
+			*/
+		}
 		Element item = docTEI.createElement("item");
 		Element desc = docTEI.createElement("desc");
 		item.setTextContent(name);
 		desc.setTextContent("docname");
 		item.appendChild(desc);
-		for (int i=0; i < list.getLength(); i++) {
-			NodeList d = ((Element)list.item(i)).getElementsByTagName("desc");
+
+		NodeList litem = list.getElementsByTagName("item");
+		for (int i=0; i < litem.getLength(); i++) {
+			NodeList d = ((Element)litem.item(i)).getElementsByTagName("desc");
 			if (d != null && d.getLength() > 0) {
 				if (((Element)d.item(0)).getTextContent().equals("docname")) {
 					((Element)d.item(0)).setTextContent(name);
@@ -725,7 +767,7 @@ public class Utils {
 			}
 		}
 		// if not done
-		((Element)list.item(0)).appendChild(item);
+		list.appendChild(item);
 	}
 	
 	public static void setTranscriptionDesc(Document docTEI, String id, String version, String desc) {

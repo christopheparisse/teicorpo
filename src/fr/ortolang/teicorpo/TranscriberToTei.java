@@ -1063,7 +1063,7 @@ public class TranscriberToTei extends GenericMain {
 	public void mainProcess(String input, String output, TierParams options) {
 		// System.out.println("Lecture de " + input);
 		transform(new File(input), options);
-		Utils.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
+		Utils.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
 		Utils.createFile(output, docTEI);
 		// System.out.println("New file created " + output);
 	}

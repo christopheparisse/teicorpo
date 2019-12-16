@@ -101,6 +101,7 @@ public class TeiCorpo extends GenericMain {
 		}
 		
 		String outputTEI = Utils.fullbasename(fileIn) + Utils.EXT;
+		tp.outputTEIName = outputTEI;
 		// creates a true temp file.
 		String tempTEI;
 		try {

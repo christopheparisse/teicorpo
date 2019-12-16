@@ -1295,7 +1295,7 @@ public class ClanToTei extends ImportToTei {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Utils.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
+		Utils.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
 		Utils.createFile(output, docTEI);
 	}
 

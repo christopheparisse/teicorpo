@@ -55,7 +55,8 @@ class DescTier {
 }
 
 class TierParams {
-	boolean verbose;
+    String outputTEIName;
+    boolean verbose;
 	boolean forceEmpty;
 	boolean rawLine;
 	boolean sectionDisplay;
@@ -149,6 +150,7 @@ class TierParams {
 		tiernames = false;
 		tiernamescontent = false;
 		metadata = null;
+		outputTEIName = null;
 	}
 	void addCommand(String s) {
 		commands.add(s);
