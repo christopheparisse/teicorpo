@@ -83,6 +83,7 @@ fr/ortolang/teicorpo/Tests.class
 org/mozilla/universalchardet/prober/contextanalysis/JapaneseContextAnalysis.class
 fr/ortolang/teicorpo/FileChooserInterface.class
 fr/ortolang/teicorpo/HT_ToTei$1.class
+fr/ortolang/teicorpo/TcofInsertMeta.class
 fr/ortolang/teicorpo/AnnotatedUtterance.class
 fr/ortolang/teicorpo/TranscriberTurn.class
 fr/ortolang/teicorpo/TeiFile.class
@@ -146,6 +147,7 @@ fr/ortolang/teicorpo/ConversionUI.class
 org/mozilla/universalchardet/prober/HebrewProber.class
 org/mozilla/universalchardet/prober/EUCTWProber.class
 fr/ortolang/teicorpo/TierInfo.class
+fr/ortolang/teicorpo/XmlDocument.class
 org/mozilla/universalchardet/prober/EUCJPProber.class
 fr/ortolang/teicorpo/ReorgPath$1.class
 org/mozilla/universalchardet/prober/Latin1Prober.class

@@ -46,7 +46,7 @@ public class MoissonnageEslo {
 	/**
 	 * décrit par la DTD "tei_corpo.dtd" Utils.TEI_CORPO_DTD .
 	 * 
-	 * @param File
+	 * @param inputFile File to open
 	 *            : fichier à convertir, au format Transcriber
 	 * @throws ParserConfigurationException
 	 */
@@ -69,8 +69,8 @@ public class MoissonnageEslo {
 	/**
 	 * décrit par la DTD "tei_corpo.dtd" Utils.TEI_CORPO_DTD .
 	 * 
-	 * @param InputStream
-	 *            : fichier à convertir, au format Transcriber
+	 * @param is InputStream to open
+	 *             : fichier à convertir, au format Transcriber
 	 * @throws ParserConfigurationException
 	 */
 	public void getDocument(InputStream is) throws ParserConfigurationException {
@@ -92,7 +92,7 @@ public class MoissonnageEslo {
 	/**
 	 * décrit par la DTD "tei_corpo.dtd" Utils.TEI_CORPO_DTD .
 	 * 
-	 * @param String
+	 * @param uri String
 	 *            : fichier à convertir, au format Transcriber
 	 * @throws ParserConfigurationException
 	 */
@@ -103,6 +103,7 @@ public class MoissonnageEslo {
 		DocumentBuilderFactory factory = null;
 		try {
 			factory = DocumentBuilderFactory.newInstance();
+			// Utils.setDTDvalidation(factory, false);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			this.docMetadatas = builder.parse(uri);
 			this.rootMoissonnage = this.docMetadatas.getDocumentElement();
@@ -119,7 +120,7 @@ public class MoissonnageEslo {
 		for (int i = 0; i < records.getLength(); i++) {
 			Element record = (Element) records.item(i);
 			String recordName = record.getElementsByTagName("identifier").item(0).getTextContent();
-			//		.split("oai:crdo.vjf.cnrs.fr:crdo-")[1];
+			//	.split("oai:crdo.vjf.cnrs.fr:crdo-")[1];
 			NodeList identifiers = record.getElementsByTagName("dc:identifier");
 			for (int j = 0; j < identifiers.getLength(); j++) {
 				Element identifier = (Element) identifiers.item(j);
@@ -162,8 +163,13 @@ public class MoissonnageEslo {
 			record.setAttribute("xsi:schemaLocation",
 					"http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd");
 
-			String recordName = record.getElementsByTagName("identifier").item(0).getTextContent()
-					.split("oai:crdo.vjf.cnrs.fr:crdo-")[1];
+			String recordNames0 = record.getElementsByTagName("identifier").item(0).getTextContent();
+			System.out.printf("# record: %s%n", recordNames0);
+			String[] recordNames1 = recordNames0.split("oai:crdo.vjf.cnrs.fr:cocoon-");
+//			System.err.println(recordNames1.length);
+//			System.err.println(recordNames1[0]);
+//			System.err.println(recordNames1[1]);
+			String recordName = recordNames1[1];
 			String outputFileName = output + "/" + recordName + ".meta.xml";
 			System.out.println("# metadata: " + outputFileName);
 
@@ -201,7 +207,7 @@ public class MoissonnageEslo {
 
 		// parcours des arguments
 		if (args.length == 0) {
-			System.err.println("Vous n'avez spécifié aucun argument -: java -cp conversions.jar fr.ortolang.teicorpo.MoissonnageEslo -url URL -user USER -o output-dir.\n");
+			System.err.println("Vous n'avez spécifié aucun argument -: java -cp teicorpo.jar fr.ortolang.teicorpo.MoissonnageEslo -url URL -user USER -o output-dir.\n");
 		} else {
 			for (int i = 0; i < args.length; i++) {
 				try {
@@ -223,7 +229,7 @@ public class MoissonnageEslo {
 		
 		if (inputName == null || inputName.isEmpty()) {
 			System.out.printf("# Utilisation de l'adresse par défaut%n# http://cocoon.huma-num.fr/crdo_servlet/oai-pmh?verb=ListRecords&metadataPrefix=olac&set=Eslo%n");
-			inputName = "http://cocoon.huma-num.fr/crdo_servlet/oai-pmh?verb=ListRecords&metadataPrefix=olac&set=Eslo";
+			inputName = "https://cocoon.huma-num.fr/crdo_servlet/oai-pmh?verb=ListRecords&metadataPrefix=olac&set=Eslo";
 		}
 
 		File outFile = new File(outputName);
