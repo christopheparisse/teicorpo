@@ -1,10 +1,7 @@
 package fr.ortolang.teicorpo;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * local temporary structures description of relation between tiers
@@ -55,7 +52,8 @@ class DescTier {
 }
 
 class TierParams {
-    String outputTEIName;
+	String baseName;
+	String outputTEIName;
     boolean verbose;
 	boolean forceEmpty;
 	boolean rawLine;
@@ -109,6 +107,7 @@ class TierParams {
 		input = new ArrayList<String>();
 		output = null;
 		mediaName = null;
+		baseName = "";
 		encoding = null;
 		detectEncoding = true;
 		commands = new HashSet<String>();
@@ -751,6 +750,13 @@ class TierParams {
 						}
 						i++;
 						options.mediaName = args[i];
+					} else if (argument.equals("-b")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -b is not followed by a value");
+							return false;
+						}
+						i++;
+						options.baseName = args[i];
 					} else if (argument.equals("-e")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -e is not followed by a value");
@@ -820,6 +826,10 @@ class TierParams {
 				} else if (p[0].equals("-m") || p[0].equals("m")) {
 					if (p.length > 1) {
 						pr.mediaName = p[1];
+					}
+				} else if (p[0].equals("-b") || p[0].equals("b")) {
+					if (p.length > 1) {
+						pr.baseName = p[1];
 					}
 				} else if (p[0].equals("-t") || p[0].equals("t")) {
 					DescTier d = new DescTier();

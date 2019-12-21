@@ -22,9 +22,6 @@ import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.*;
 
-import org.apache.commons.io.FileUtils;
-
-
 public class SNLP {
 	
 	StanfordCoreNLP pipeline;
