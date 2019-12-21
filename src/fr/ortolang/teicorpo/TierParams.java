@@ -1,7 +1,10 @@
 package fr.ortolang.teicorpo;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.TreeMap;
 
 /**
  * local temporary structures description of relation between tiers
@@ -52,8 +55,8 @@ class DescTier {
 }
 
 class TierParams {
-	String baseName;
-	String outputTEIName;
+    public String baseName;
+    String outputTEIName;
     boolean verbose;
 	boolean forceEmpty;
 	boolean rawLine;
@@ -107,7 +110,6 @@ class TierParams {
 		input = new ArrayList<String>();
 		output = null;
 		mediaName = null;
-		baseName = "";
 		encoding = null;
 		detectEncoding = true;
 		commands = new HashSet<String>();
@@ -150,6 +152,7 @@ class TierParams {
 		tiernamescontent = false;
 		metadata = null;
 		outputTEIName = null;
+		baseName = "";
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -743,21 +746,21 @@ class TierParams {
 					} else if (argument.equals("-section")) {
 						options.sectionDisplay = true;
 						continue;
-					} else if (argument.equals("-m")) {
+					} else if (argument.equals("-m") || argument.equals("-medianame")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -m is not followed by a value");
 							return false;
 						}
 						i++;
 						options.mediaName = args[i];
-					} else if (argument.equals("-b")) {
+					} else if (argument.equals("-b") || argument.equals("-basename")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -b is not followed by a value");
 							return false;
 						}
 						i++;
 						options.baseName = args[i];
-					} else if (argument.equals("-e")) {
+					} else if (argument.equals("-e") || argument.equals("-encoding")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -e is not followed by a value");
 							return false;
@@ -765,7 +768,7 @@ class TierParams {
 						i++;
 						options.encoding = args[i];
 						options.detectEncoding = false;
-					} else if (argument.equals("-t")) {
+					} else if (argument.equals("-t") || argument.equals("-tier")) {
 						if (i+3 >= args.length) {
 							System.err.println("the parameter -t is not followed by a value");
 							return false;
@@ -782,7 +785,7 @@ class TierParams {
 						i++;
 						d.parent = args[i];
 						options.ldt.add(d);
-					} else if (argument.equals("-d")) {
+					} else if (argument.equals("-d") || argument.equals("-detect")) {
 						options.detectEncoding = false;
 						options.encoding = "UTF-8";
 					} else {
