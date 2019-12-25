@@ -44,7 +44,7 @@ public class TcofInsertMeta {
         return e;
     }
 
-    public void process(String tcofmetaName, String teicorpofileName, String teicorporesultName) {
+    public void process(String tcofmetaName, String teicorpofileName, String teicorporesultName, String purpose) {
         System.out.printf("insert tcof meta from %s into %s and save as %s%n", tcofmetaName, teicorpofileName, teicorporesultName);
         tcof = new XmlDocument(tcofmetaName);
         teicorpo = new XmlDocument(teicorpofileName);
@@ -249,6 +249,11 @@ public class TcofInsertMeta {
                 p.setAttribute("mode", "s");
                 p = setElement(elt,"domain", "");
                 p.setAttribute("nature", genre);
+
+                if (!purpose.isEmpty()) {
+                    p = setElement(elt,"purpose", "");
+                    p.setAttribute("ana", purpose);
+                }
             }
             String cadre = chidNodeContent(n,"cadre");
             find = "/TEI/teiHeader/profileDesc/settingDesc";
@@ -289,12 +294,12 @@ public class TcofInsertMeta {
 
     public static void main(String args[]) {
         // parcours des arguments
-        if (args.length != 3) {
-            System.err.println("Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta tcof_metadata_file teicorpo_xml_file teicorpo_result_file");
-            System.err.println("Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file'");
+        if (args.length < 3) {
+            System.err.println("Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta tcof_metadata_file teicorpo_xml_file teicorpo_result_file [purpose]");
+            System.err.println("Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.");
             return;
         }
         TcofInsertMeta tim = new TcofInsertMeta();
-        tim.process( args[0], args[1], args[2]);
+        tim.process( args[0], args[1], args[2], args.length > 3 ? args[3] : "");
     }
 }
