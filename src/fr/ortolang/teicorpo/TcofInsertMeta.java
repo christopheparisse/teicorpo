@@ -69,14 +69,7 @@ public class TcofInsertMeta {
         for (int i = 0 ; i < nodelist.getLength(); i++) {
             Element n = (Element)nodelist.item(i);
             String age = chidNodeContent(n,"age");
-            Pattern pattern = Pattern.compile("(\\d+)\\.(\\d+)\\.(.*)");
-            Matcher matcher = pattern.matcher(age);
-            String fage;
-            if (matcher.matches()) {
-                fage = matcher.group(1) + '.' + (matcher.group(2));
-            } else {
-                fage = "40.2";
-            }
+            String fage = normalizeAge(age);
 
             String sexe = chidNodeContent(n,"sexe");
             String role = chidNodeContent(n,"role");
@@ -273,6 +266,25 @@ public class TcofInsertMeta {
 
         // save result
         Utils.createFile(teicorporesultName, teicorpo.doc);
+    }
+
+    private String normalizeAge(String age) {
+        Pattern pattern = Pattern.compile("(\\d+)[;.,](\\d+)[;.,](.*)");
+        Matcher matcher = pattern.matcher(age);
+        if (matcher.matches()) {
+            return matcher.group(1) + '.' + (matcher.group(2));
+        }
+        pattern = Pattern.compile("(\\d+)[;.,](\\d+)");
+        matcher = pattern.matcher(age);
+        if (matcher.matches()) {
+            return matcher.group(1) + '.' + (matcher.group(2));
+        }
+        pattern = Pattern.compile("(\\d+)(.*)");
+        matcher = pattern.matcher(age);
+        if (matcher.matches()) {
+            return matcher.group(1);
+        }
+        return age;
     }
 
     public static void main(String args[]) {
