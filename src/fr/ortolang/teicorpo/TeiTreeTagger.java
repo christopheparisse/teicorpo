@@ -15,9 +15,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
@@ -37,8 +35,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
-import fr.ortolang.teicorpo.TeiFile.Div;
 
 public class TeiTreeTagger extends GenericMain {
 
@@ -76,7 +72,7 @@ public class TeiTreeTagger extends GenericMain {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(inputFile);
 			root = teiDoc.getDocumentElement();
@@ -183,7 +179,7 @@ public class TeiTreeTagger extends GenericMain {
 		} catch (Exception e) {
 			return false;
 		}
-		NodeList aBlocks = teiDoc.getElementsByTagName(Utils.ANNOTATIONBLOC);
+		NodeList aBlocks = teiDoc.getElementsByTagName(TeiDocument.ANNOTATIONBLOC);
 		if (aBlocks != null && aBlocks.getLength() > 0) {
 			for (int i=0; i < aBlocks.getLength(); i++) {
 				Element eAU = (Element) aBlocks.item(i);
@@ -247,7 +243,7 @@ public class TeiTreeTagger extends GenericMain {
 			/*
 			 * version conll
 			 */
-			insertTemplate("conll", LgqType.SYMB_DIV, Utils.ANNOTATIONBLOC);
+			insertTemplate("conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
 			insertTemplate("word", LgqType.SYMB_ASSOC, "conll");
 			insertTemplate("pos", LgqType.SYMB_ASSOC, "conll");
 			insertTemplate("lemma", LgqType.SYMB_ASSOC, "conll");
@@ -255,7 +251,7 @@ public class TeiTreeTagger extends GenericMain {
 			/*
 			 * version <ref><ref><w>
 			 */
-			insertTemplate("ref", LgqType.SYMB_ASSOC, Utils.ANNOTATIONBLOC);
+			insertTemplate("ref", LgqType.SYMB_ASSOC, TeiDocument.ANNOTATIONBLOC);
 		} else {
 			// format words : optionsOutput.syntaxformat === "w"
 		}

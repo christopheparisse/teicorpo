@@ -19,15 +19,11 @@ import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 public class ClanToTei extends ImportToTei {
 	static String EXT = ".cha";
@@ -81,7 +77,7 @@ public class ClanToTei extends ImportToTei {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, tparams.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, tparams.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			docTEI = builder.newDocument();
 			this.xPathfactory = XPathFactory.newInstance();
@@ -122,7 +118,7 @@ public class ClanToTei extends ImportToTei {
 			e.printStackTrace();
 		}
 		conversion(tp.options);
-		Utils.setTranscriptionDesc(docTEI, "clan", "1.0", "standard CHAT format");
+		TeiDocument.setTranscriptionDesc(docTEI, "clan", "1.0", "standard CHAT format");
 	}
 
 	/**
@@ -135,7 +131,7 @@ public class ClanToTei extends ImportToTei {
 	// public void conversion(String extension) throws DOMException,
 	// IOException{
 	public void conversion(String extension) throws DOMException, IOException {
-		buildEmptyTEI(chatFN);
+		buildTEI(chatFN);
 		buildHeader("Fichier TEI obtenu à partir du fichier CLAN " + chatFN);
 		setFileDescComplement();
 		buildText(extension);
@@ -275,7 +271,7 @@ public class ClanToTei extends ImportToTei {
 		setting.appendChild(activity);
 		setting.setAttribute("xml:id", "d" + descID);
 		Element body = (Element) docTEI.getElementsByTagName("body").item(0);
-		Element div = Utils.createDivHead(docTEI);
+		Element div = TeiDocument.createDivHead(docTEI);
 		body.appendChild(div);
 		div.setAttribute("subtype", "d" + descID);
 		if (cf.situation != null) {
@@ -303,7 +299,7 @@ public class ClanToTei extends ImportToTei {
 		setting.setAttribute("xml:id", "d" + descID);
 		Element settingDesc = (Element) docTEI.getElementsByTagName("settingDesc").item(0);
 		settingDesc.appendChild(setting);
-		Element div = Utils.createDivHead(docTEI);
+		Element div = TeiDocument.createDivHead(docTEI);
 		div.setAttribute("subtype", "d" + descID);
 		div.setAttribute("type", type);
 		parent.appendChild(div);
@@ -606,22 +602,22 @@ public class ClanToTei extends ImportToTei {
 	 * ligne de ChatFile.
 	 */
 	public Element build_u_element(String startTime, String endTime, ChatLine cl, String[] tiers, String extension) {
-		Element annotatedU = Utils.createAnnotationBloc(docTEI);
-		Utils.setAttrAnnotationBloc(docTEI, annotatedU, "xml:id", "au" + utteranceId);
+		Element annotatedU = TeiDocument.createAnnotationBloc(docTEI);
+		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "xml:id", "au" + utteranceId);
 		utteranceId++;
 		// tiersNames.add(Utils.ANNOTATIONBLOC);
 		if (extension.equals("xmor") || extension.equals("mor"))
 			splitWcontent(cl.tail.replaceAll("\\s+", " "), annotatedU, tiers, extension);
 		else if (extension.equals("xmorext") || extension.equals("morext"))
 			splitWcontentWithRepetition(cl.tail.replaceAll("\\s+", " "), annotatedU, tiers, extension);
-		Utils.setAttrAnnotationBloc(docTEI, annotatedU, "who", cl.head.substring(1));
+		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "who", cl.head.substring(1));
 		if (!startTime.equals("-1")) {
 			String startId = addTimeToTimeline(toSeconds(startTime));
-			Utils.setAttrAnnotationBloc(docTEI, annotatedU, "start", startId);
+			TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "start", startId);
 		}
 		if (!endTime.equals("-1")) {
 			String endId = addTimeToTimeline(toSeconds(endTime));
-			Utils.setAttrAnnotationBloc(docTEI, annotatedU, "end", endId);
+			TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "end", endId);
 		}
 		splitUContent(cl.tail, annotatedU);
 		return annotatedU;
@@ -1295,8 +1291,8 @@ public class ClanToTei extends ImportToTei {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Utils.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
-		Utils.createFile(output, docTEI);
+		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
+		TeiDocument.createFile(output, docTEI);
 	}
 
 }

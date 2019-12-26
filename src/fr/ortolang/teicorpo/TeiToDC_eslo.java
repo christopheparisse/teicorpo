@@ -18,8 +18,6 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import fr.ortolang.teicorpo.TeiParticipant;
-
 /**
  DC Format:
 1. TITLE  
@@ -133,7 +131,7 @@ public class TeiToDC_eslo{
 		try {
 			factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Utils.setDTDvalidation(factory, true);
+			TeiDocument.setDTDvalidation(factory, true);
 			dcDoc = builder.newDocument();
 			dcRoot = dcDoc.createElement("metadata");
 			dcRoot.setAttribute("xmlns:dc", "http://purl.org/dc/elements/1.1/");

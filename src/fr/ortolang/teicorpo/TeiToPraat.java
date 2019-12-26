@@ -55,7 +55,7 @@ public class TeiToPraat extends GenericMain {
 		try {
 			File teiFile = new File(inputName);
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
 			try {
 				DocumentBuilder builder = factory.newDocumentBuilder();
 				teiDoc = builder.parse(teiFile);

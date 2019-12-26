@@ -1,53 +1,24 @@
 package fr.ortolang.teicorpo;
 
-import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TcofInsertMeta {
     /** file Metadata TCOF. */
-    private XmlDocument tcof; // Xml doc
+    private TeiDocument tcof; // Xml doc
 
     /** file TEICORPO. */
-    private XmlDocument teicorpo; // xml document
-
-    private String chidNodeContent(Element e, String nodename) {
-        NodeList l = e.getElementsByTagName(nodename);
-        if (l != null && l.getLength() > 0) return l.item(0).getTextContent().trim();
-        return "";
-    }
-
-    private Element childElement(Element e, String nodename) {
-        NodeList l = e.getElementsByTagName(nodename);
-        if (l != null && l.getLength() > 0) return (Element) l.item(0);
-        return null;
-    }
-
-    private Element setElement(Element top, String s, String v) {
-        Element e = childElement(top, s);
-        if (e == null) {
-            e = teicorpo.doc.createElement(s);
-            top.appendChild(e);
-        }
-        e.setTextContent(v);
-        return e;
-    }
+    private TeiDocument teicorpo; // xml document
 
     public void process(String tcofmetaName, String teicorpofileName, String teicorporesultName, String purpose) {
         System.out.printf("insert tcof meta from %s into %s and save as %s%n", tcofmetaName, teicorpofileName, teicorporesultName);
-        tcof = new XmlDocument(tcofmetaName);
-        teicorpo = new XmlDocument(teicorpofileName);
+        tcof = new TeiDocument(tcofmetaName, false);
+        teicorpo = new TeiDocument(teicorpofileName, false);
 
         if (tcof.doc == null || teicorpo.doc == null) {
             System.err.println("cannot process: stop.");
@@ -68,15 +39,15 @@ public class TcofInsertMeta {
         // process
         for (int i = 0 ; i < nodelist.getLength(); i++) {
             Element n = (Element)nodelist.item(i);
-            String age = chidNodeContent(n,"age");
+            String age = TeiDocument.chidNodeContent(n,"age");
             String fage = normalizeAge(age);
 
-            String sexe = chidNodeContent(n,"sexe");
-            String role = chidNodeContent(n,"role");
+            String sexe = TeiDocument.chidNodeContent(n,"sexe");
+            String role = TeiDocument.chidNodeContent(n,"role");
 
             // supplements
-            String educ = chidNodeContent(n, "etude");
-            String nivlang = chidNodeContent(n, "statut_francais");
+            String educ = TeiDocument.chidNodeContent(n, "etude");
+            String nivlang = TeiDocument.chidNodeContent(n, "statut_francais");
 
             String id = n.getAttribute("identifiant");
             if (id == null) id = "x"; else id = id.trim();
@@ -102,7 +73,7 @@ public class TcofInsertMeta {
                     part.setAttribute("sex", "2");
                 else
                     part.setAttribute("sex", "9");
-                setElement(part, "role", role);
+                TeiDocument.setElement(teicorpo.doc, part, "role", role);
 
                 String tag = "XXX";
                 if (role.equals("Apprenant")) {
@@ -129,24 +100,24 @@ public class TcofInsertMeta {
                     }
                 }
                 part.setAttribute("age", fage);
-                Element teiage = setElement(part, "age", age);
+                Element teiage = TeiDocument.setElement(teicorpo.doc, part, "age", age);
                 teiage.setAttribute("value", fage);
 
                 // the supplements
                 part.setAttribute("education", educ);
-                Element lgk = setElement(part, "langKnowledge", "");
-                Element lgkn = setElement(lgk, "langKnown", "");
+                Element lgk = TeiDocument.setElement(teicorpo.doc, part, "langKnowledge", "");
+                Element lgkn = TeiDocument.setElement(teicorpo.doc, lgk, "langKnown", "");
                 lgkn.setAttribute("tag", "fra");
                 lgkn.setAttribute("level", nivlang);
 
                 // altGrp + alt
-                Element altGrp = childElement(part, "altGrp");
+                Element altGrp = TeiDocument.childElement(part, "altGrp");
                 if (altGrp == null) {
-                    altGrp = setElement(part, "altGrp", "");
+                    altGrp = TeiDocument.setElement(teicorpo.doc, part, "altGrp", "");
                 }
-                Element alt = childElement(altGrp, "alt");
+                Element alt = TeiDocument.childElement(altGrp, "alt");
                 if (alt == null) {
-                    setElement(altGrp, "alt", tag);
+                    TeiDocument.setElement(teicorpo.doc, altGrp, "alt", tag);
                     System.out.println("name (but not used in transcription): " + id + " tag: " + tag + " age: " + age + " (" + fage + ")");
                 } else {
                     String oldtag = alt.getAttribute("type");
@@ -198,9 +169,9 @@ public class TcofInsertMeta {
         if (nodelist.getLength() > 0) {
             // should be only one element
             Element n = (Element)nodelist.item(0);
-            String canal = chidNodeContent(n,"canal");
-            String genre = chidNodeContent(n,"genre");
-            String degre = chidNodeContent(n,"degre");
+            String canal = TeiDocument.chidNodeContent(n,"canal");
+            String genre = TeiDocument.chidNodeContent(n,"genre");
+            String degre = TeiDocument.chidNodeContent(n,"degre");
             String find = "//textDesc";
             Element elt;
             try {
@@ -242,20 +213,20 @@ public class TcofInsertMeta {
             }
             if (elt != null) {
                 // add element
-                Element p = setElement(elt, "preparedness", "");
+                Element p = TeiDocument.setElement(teicorpo.doc, elt, "preparedness", "");
                 p.setAttribute("ana", degre);
-                p = setElement(elt, "channel", "");
+                p = TeiDocument.setElement(teicorpo.doc, elt, "channel", "");
                 p.setAttribute("subtype", canal);
                 p.setAttribute("mode", "s");
-                p = setElement(elt,"domain", "");
+                p = TeiDocument.setElement(teicorpo.doc, elt,"domain", "");
                 p.setAttribute("nature", genre);
 
                 if (!purpose.isEmpty()) {
-                    p = setElement(elt,"purpose", "");
+                    p = TeiDocument.setElement(teicorpo.doc, elt,"purpose", "");
                     p.setAttribute("ana", purpose);
                 }
             }
-            String cadre = chidNodeContent(n,"cadre");
+            String cadre = TeiDocument.chidNodeContent(n,"cadre");
             find = "/TEI/teiHeader/profileDesc/settingDesc";
             try {
                 elt = (Element) teicorpo.path.evaluate(find, teicorpo.root, XPathConstants.NODE);
@@ -264,13 +235,13 @@ public class TcofInsertMeta {
                 return;
             }
             if (elt != null) {
-                Element p = setElement(elt, "p", cadre);
+                Element p = TeiDocument.setElement(teicorpo.doc, elt, "p", cadre);
             }
         }
 
 
         // save result
-        Utils.createFile(teicorporesultName, teicorpo.doc);
+        TeiDocument.createFile(teicorporesultName, teicorpo.doc);
     }
 
     private String normalizeAge(String age) {

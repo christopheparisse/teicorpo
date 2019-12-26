@@ -13,13 +13,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.TreeMap;
 
 /**
  * A class to extract annotations from a Praat .TextGrid file. Only
@@ -975,9 +972,9 @@ public class PraatToTei extends GenericMain {
 			ht.partionRepresentationToHierachic(annotationMap, optionsTEI);
 			HT_ToTei hiertransToTei = new HT_ToTei(ht, optionsTEI);
 			// System.out.println(outputfile);
-			Utils.setTranscriptionDesc(hiertransToTei.docTEI, "praat", "1.0", optionsTEI.praatParamsToString());
-			Utils.setDocumentName(hiertransToTei.docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(outputfile));
-			Utils.createFile(outputfile, hiertransToTei.docTEI);
+			TeiDocument.setTranscriptionDesc(hiertransToTei.docTEI, "praat", "1.0", optionsTEI.praatParamsToString());
+			TeiDocument.setDocumentName(hiertransToTei.docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(outputfile));
+			TeiDocument.createFile(outputfile, hiertransToTei.docTEI);
 
 		} catch (IOException ioe) {
 			ioe.printStackTrace();

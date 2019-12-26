@@ -269,7 +269,7 @@ public class TeiToTranscriber extends TeiConverter {
 		int first = -1;
 		for (int i = 0; i < bodyChildren.getLength(); i++) {
 			Node n = bodyChildren.item(i);
-			if (Utils.isElement(n)) {
+			if (TeiDocument.isElement(n)) {
 				if (n.getNodeName().equals("div")) {
 					if (first != -1) {
 						// more than one div: no episode
@@ -292,10 +292,10 @@ public class TeiToTranscriber extends TeiConverter {
 			// on cherche les infos program et air_date
 			// sinon on met type + substype dans program
 
-			String type = Utils.getDivHeadAttr(ep, "type");
-			String subtype = Utils.getDivHeadAttr(ep, "subtype");
-			String program = Utils.getDivHeadAttr(ep, "program");
-			String air_date = Utils.getDivHeadAttr(ep, "air_date");
+			String type = TeiDocument.getDivHeadAttr(ep, "type");
+			String subtype = TeiDocument.getDivHeadAttr(ep, "subtype");
+			String program = TeiDocument.getDivHeadAttr(ep, "program");
+			String air_date = TeiDocument.getDivHeadAttr(ep, "air_date");
 			if (Utils.isNotEmptyOrNull(program))
 				episode.setAttribute("program", program);
 			else if (Utils.isNotEmptyOrNull(type))
@@ -318,7 +318,7 @@ public class TeiToTranscriber extends TeiConverter {
 		for (int ptr = 0; ptr < elts.getLength(); ptr++) {
 			Node nd = elts.item(ptr);
 			// System.out.printf("%d %d %s%n", ptr, nd.getNodeType(), nd);
-			if (!Utils.isElement(nd))
+			if (!TeiDocument.isElement(nd))
 				continue;
 			Element d = (Element) nd;
 			if (d.getTagName().equals("div")) {
@@ -333,21 +333,21 @@ public class TeiToTranscriber extends TeiConverter {
 					section = trsDoc.createElement("Section");
 					episode.appendChild(section);
 					turns = new ArrayList<TranscriberTurn>();
-					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getDivHeadAttr(d, "start")));
+					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "start")));
 					if (shiftNextStart && !startTime.isEmpty())
 						startTime = Utils.printDouble(Double.parseDouble(startTime) + 0.001, 4);
-					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getDivHeadAttr(d, "end")));
+					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "end")));
 					setAttr(section, "startTime", startTime, true);
 					setAttr(section, "endTime", endTime, true);
 					sectionStartSet = true;
 					sectionEndSet = true;
 					if (d.getAttribute("type") == "report" || d.getAttribute("type") == "nontrans"
-							|| Utils.getDivHeadAttr(d, "type") == "filler") {
-						section.setAttribute("type", Utils.getDivHeadAttr(d, "type"));
+							|| TeiDocument.getDivHeadAttr(d, "type") == "filler") {
+						section.setAttribute("type", TeiDocument.getDivHeadAttr(d, "type"));
 					} else {
 						section.setAttribute("type", "report");
 					}
-					setAttr(section, "topic", Utils.getDivHeadAttr(d, "subtype"), false);
+					setAttr(section, "topic", TeiDocument.getDivHeadAttr(d, "subtype"), false);
 					NodeList dChilds = d.getChildNodes();
 					processDivAndAnnotation(dChilds, false);
 				} else {
@@ -363,8 +363,8 @@ public class TeiToTranscriber extends TeiConverter {
 						episode.appendChild(section);
 						turns = new ArrayList<TranscriberTurn>();
 					}
-					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getDivHeadAttr(d, "start")));
-					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getDivHeadAttr(d, "end")));
+					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "start")));
+					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "end")));
 					if (shiftNextStart && !startTime.isEmpty())
 						startTime = Utils.printDouble(Double.parseDouble(startTime) + 0.001, 4);
 					if (sectionStartSet == false) {
@@ -373,8 +373,8 @@ public class TeiToTranscriber extends TeiConverter {
 					}
 					if (sectionEndSet == false)
 						setAttr(section, "endTime", endTime, true);
-					String typediv = Utils.getDivHeadAttr(d, "type");
-					String subtypediv = Utils.getDivHeadAttr(d, "type");
+					String typediv = TeiDocument.getDivHeadAttr(d, "type");
+					String subtypediv = TeiDocument.getDivHeadAttr(d, "type");
 					String tc = "";
 					if (Utils.isNotEmptyOrNull(startTime))
 						tc += "START: " + startTime + " ";
@@ -396,7 +396,7 @@ public class TeiToTranscriber extends TeiConverter {
 						subsectionAdded = true;
 					}
 				}
-			} else if (d.getTagName().equals(Utils.ANNOTATIONBLOC)) {
+			} else if (d.getTagName().equals(TeiDocument.ANNOTATIONBLOC)) {
 				// this an annotatedU
 				if (section == null) {
 					section = trsDoc.createElement("Section");
@@ -490,14 +490,14 @@ public class TeiToTranscriber extends TeiConverter {
 	// Construction d'un élément turn pour la première fois
 	// Les turns seront modifiés et compactés dans addTurnsToSection
 	public void buildTurn(Element elt) {
-		String spk = cleanId(Utils.getAttrAnnotationBloc(elt, "who"));
-		String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(elt, "start")));
+		String spk = cleanId(TeiDocument.getAttrAnnotationBloc(elt, "who"));
+		String startTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(elt, "start")));
 		if (shiftNextStart && !startTime.isEmpty()) {
 			// System.err.println(startTime);
 			startTime = Utils.printDouble(Double.parseDouble(startTime) + 0.001, 4);
 			shiftNextStart = false;
 		}
-		String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(elt, "end")));
+		String endTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(elt, "end")));
 		if (startTime == null || startTime.isEmpty() || endTime == null || endTime.isEmpty()) {
 			if (oldEndTime.isEmpty()) {
                 System.out.printf("Cannot process this line: no time reference.%n");
@@ -560,19 +560,19 @@ public class TeiToTranscriber extends TeiConverter {
 
 	// Mise à jour des attributs de Turn
 	public void setTurnAttributes(TranscriberTurn turn, Element annotU) {
-		String e = Utils.getAttrAnnotationBloc(annotU, "mode");
+		String e = TeiDocument.getAttrAnnotationBloc(annotU, "mode");
 		if (Utils.isNotEmptyOrNull(e) && (e.equals("spontaneous") || e.equals("planned"))) {
 			turn.mode = e;
 		} else {
 			// Add comment
 		}
-		e = Utils.getAttrAnnotationBloc(annotU, "fidelity");
+		e = TeiDocument.getAttrAnnotationBloc(annotU, "fidelity");
 		if (Utils.isNotEmptyOrNull(e) && (e.equals("high") || e.equals("medium") || e.equals("low"))) {
 			turn.fidelity = e;
 		} else {
 			// Add comment
 		}
-		e = Utils.getAttrAnnotationBloc(annotU, "channel");
+		e = TeiDocument.getAttrAnnotationBloc(annotU, "channel");
 		if (Utils.isNotEmptyOrNull(e) && (e.equals("telephone") || e.equals("studio"))) {
 			turn.channel = e;
 		} else {
@@ -597,7 +597,7 @@ public class TeiToTranscriber extends TeiConverter {
 	// Mise à jour de l'élément Turn: ajout des tiers en tant que commentaires
 	public void setTurn(TranscriberTurn turn, NodeList uChildNodes) {
 		for (int j = 0; j < uChildNodes.getLength(); j++) {
-			if (Utils.isElement(uChildNodes.item(j))) {
+			if (TeiDocument.isElement(uChildNodes.item(j))) {
 				Element annotUChild = (Element) uChildNodes.item(j);
 				String nodeName = annotUChild.getNodeName();
 				// Traitement des noeuds qui peuvent être dans annotatedU: u
@@ -634,7 +634,7 @@ public class TeiToTranscriber extends TeiConverter {
 	public void addU(TranscriberTurn turn, Element u) {
 		NodeList uChildNodes = u.getChildNodes();
 		for (int t = 0; t < uChildNodes.getLength(); t++) {
-			if (Utils.isElement(uChildNodes.item(t))) {
+			if (TeiDocument.isElement(uChildNodes.item(t))) {
 				Element uChild = (Element) uChildNodes.item(t);
 				String uChildName = uChild.getNodeName();
 				String uChildContent = uChild.getTextContent().replaceAll("\\s+", " ");

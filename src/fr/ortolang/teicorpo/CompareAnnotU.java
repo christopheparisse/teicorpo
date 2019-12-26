@@ -16,8 +16,8 @@ public class CompareAnnotU implements Comparator<Element> {
 	public int compare(Element o1, Element o2) {
 		// TODO Auto-generated method stub
 		try {
-			String v1 = Utils.getAttrAnnotationBloc(o1, "start");
-			String v2 = Utils.getAttrAnnotationBloc(o2, "start");
+			String v1 = TeiDocument.getAttrAnnotationBloc(o1, "start");
+			String v2 = TeiDocument.getAttrAnnotationBloc(o2, "start");
 			//System.out.println("Compare: " + v1 + " " + v2);
 			if (!Utils.isNotEmptyOrNull(v1) && !Utils.isNotEmptyOrNull(v2))
 				return 0;

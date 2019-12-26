@@ -49,7 +49,7 @@ public class TeiFile {
 		teiTimeline = new TeiTimeline();
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, options.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, options.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(teiFile);
 			root = teiDoc.getDocumentElement();
@@ -139,7 +139,7 @@ public class TeiFile {
 			int first = -1;
 			for (int i = 0; i < bodyChildren.getLength(); i++) {
 				Node n = bodyChildren.item(i);
-				if (Utils.isElement(n)) {
+				if (TeiDocument.isElement(n)) {
 					if (n.getNodeName().equals("div")) {
 						if (first != -1) {
 							// more than one div: no episode
@@ -162,7 +162,7 @@ public class TeiFile {
 				// un seul div c'est l'épisode
 				// on cherche les infos program et air_date
 				// sinon on met type + substype dans program
-				String attr = Utils.getDivHeadAttr(ep, "subtype");
+				String attr = TeiDocument.getDivHeadAttr(ep, "subtype");
 				if (Utils.isNotEmptyOrNull(attr))
 					sit = tf.transInfo.situations.get(attr);
 				String theme = tf.transInfo.situations.get(ep);
@@ -173,10 +173,10 @@ public class TeiFile {
 						tierTypes.addAll(u.tierTypes);
 				}
 			} else {
-				String attr = Utils.getDivHeadAttr(body, "subtype");
+				String attr = TeiDocument.getDivHeadAttr(body, "subtype");
 				if (Utils.isNotEmptyOrNull(attr))
 					sit = tf.transInfo.situations.get(attr);
-				String theme = Utils.getDivHeadAttr(body, "type");;
+				String theme = TeiDocument.getDivHeadAttr(body, "type");;
 				Div d = new Div(tf, body, attr, theme);
 				divs.add(d); // la situation
 				for (AnnotatedUtterance u : d.utterances) {
@@ -230,9 +230,9 @@ public class TeiFile {
 			// initialisation des variables d'instances
 			this.theme = theme;
 			this.themeId = id;
-			this.type = Utils.getDivHeadAttr(div, "type");
-			this.start = teiTimeline.getTimeValue(Utils.getDivHeadAttr(div, "start"));
-			this.end = teiTimeline.getTimeValue(Utils.getDivHeadAttr(div, "end"));
+			this.type = TeiDocument.getDivHeadAttr(div, "type");
+			this.start = teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(div, "start"));
+			this.end = teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(div, "end"));
 			divElement = div;
 			// Noeuds contenus dans le div
 			NodeList ch = div.getChildNodes();
@@ -241,9 +241,9 @@ public class TeiFile {
 			boolean first = true;
 			// Parcours des éléments contenus dans le div (au niveau 1)
 			for (int i = 0; i < ch.getLength(); i++) {
-				if (Utils.isElement(ch.item(i))) {
+				if (TeiDocument.isElement(ch.item(i))) {
 					Element el = (Element) ch.item(i);
-					if (Utils.isAnnotatedBloc(el) || el.getNodeName().equals("u") || el.getNodeName().equals("p")
+					if (TeiDocument.isAnnotatedBloc(el) || el.getNodeName().equals("u") || el.getNodeName().equals("p")
 							 || el.getNodeName().equals("post") || el.getNodeName().equals("prod")) {
 						if (getNote(el) != null) {
 							Element note = getNote(el);
@@ -254,7 +254,7 @@ public class TeiFile {
 						} else {
 							AnnotatedUtterance utt = new AnnotatedUtterance();
 							utt.codes = optionsOutput.codes;
-							if (Utils.isAnnotatedBloc(el)) {
+							if (TeiDocument.isAnnotatedBloc(el)) {
 								utt.processAnnotatedU(el, teiTimeline, transInfo, optionsOutput, true);
 							}
 							// Case u
@@ -300,7 +300,7 @@ public class TeiFile {
 					}
 					// Cas sous-div
 					else if (el.getNodeName().equals("div")) {
-						String elid = Utils.getDivHeadAttr(el, "subtype");
+						String elid = TeiDocument.getDivHeadAttr(el, "subtype");
 						String eltheme = tf.transInfo.situations.get(elid);
 						Div subdiv = new Div(tf, el, elid, eltheme);
 						this.utterances.addAll(subdiv.utterances);
@@ -353,7 +353,7 @@ public class TeiFile {
 		Element addNotes = (Element) notesStmt.getElementsByTagName("note").item(0);
 		NodeList notes = addNotes.getElementsByTagName("note");
 		for (int i = 0; i < notes.getLength(); i++) {
-			if (Utils.isElement(notes.item(i))) {
+			if (TeiDocument.isElement(notes.item(i))) {
 				Element note = (Element) notes.item(i);
 				if (note.getAttribute("type").equals(type)) {
 					return note;

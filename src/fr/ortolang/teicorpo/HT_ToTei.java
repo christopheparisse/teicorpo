@@ -102,7 +102,7 @@ public class HT_ToTei {
 		try {
 			factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Utils.setDTDvalidation(factory, tp.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, tp.dtdValidation);
 			docTEI = builder.newDocument();
 			rootTEI = docTEI.createElement("TEI");
 			rootTEI.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
@@ -144,7 +144,7 @@ public class HT_ToTei {
 		teiHeader.appendChild(encodingDesc);
 		Element revisionDesc = this.docTEI.createElement("revisionDesc");
 		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, ht.filePath, null, options.test);
+		TeiDocument.setRevisionInfo(this.docTEI, revisionDesc, ht.filePath, null, options.test);
 
 		Element text = docTEI.createElement("text");
 		rootTEI.appendChild(text);
@@ -500,10 +500,10 @@ public class HT_ToTei {
 
 	public void buildTrans() {
 		Element body = (Element) docTEI.getElementsByTagName("body").item(0);
-		mainDiv = Utils.createDivHead(docTEI);
+		mainDiv = TeiDocument.createDivHead(docTEI);
 		mainDiv.setAttribute("type", "Situation");
 		mainDiv.setAttribute("subtype", "d0");
-		Utils.setDivHeadAttr(docTEI, mainDiv, "start", "#T0");
+		TeiDocument.setDivHeadAttr(docTEI, mainDiv, "start", "#T0");
 		body.appendChild(mainDiv);
 		// Création des annotU principaux
 		buildMainAnnotUs();
@@ -532,21 +532,21 @@ public class HT_ToTei {
 				} catch(Exception e) {
 					
 				}
-				Element annotUEl = Utils.createAnnotationBloc(docTEI);
+				Element annotUEl = TeiDocument.createAnnotationBloc(docTEI);
 				// Set annotatedU attributes
 				String startStr = timelineValueOf(annot.start);
 				String endStr = timelineValueOf(annot.end);
-				Utils.setAttrAnnotationBloc(docTEI, annotUEl, "start", "#" + startStr);
-				Utils.setAttrAnnotationBloc(docTEI, annotUEl, "end", "#" + endStr);
+				TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "start", "#" + startStr);
+				TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "end", "#" + endStr);
 				if (Utils.isNotEmptyOrNull(annot.id)) {
-					Utils.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", annot.id);
+					TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", annot.id);
 				} else {
-					Utils.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", "au" + idNb);
+					TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", "au" + idNb);
 					idNb++;
 				}
 				// System.out.println("annot: "+annotType+ " "+annot.id + " "
 				// +annot.name);
-				Utils.setAttrAnnotationBloc(docTEI, annotUEl, "who", annotType);
+				TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "who", annotType);
 				// buildU//
 				Element u = docTEI.createElement("u");
 				Element seg = docTEI.createElement("seg");
@@ -574,7 +574,7 @@ public class HT_ToTei {
 		// Element lastAU = (Element)
 		// mainDiv.getElementsByTagName(Utils.ANNOTATIONBLOC).item(mainDiv.getElementsByTagName(Utils.ANNOTATIONBLOC).getLength()-1);
 		// mainDiv.setAttribute("end",lastAU.getAttribute("end"));
-		Utils.setDivHeadAttr(docTEI, mainDiv, "end", "#" + timelineValueOf(Double.toString(maxTime)));
+		TeiDocument.setDivHeadAttr(docTEI, mainDiv, "end", "#" + timelineValueOf(Double.toString(maxTime)));
 	}
 
 	public void buildDependances(Element annotUEl, ArrayList<Annot> depAnnots) {

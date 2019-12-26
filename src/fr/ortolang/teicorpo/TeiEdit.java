@@ -7,10 +7,7 @@ package fr.ortolang.teicorpo;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
@@ -28,10 +25,7 @@ import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
-import fr.ortolang.teicorpo.TeiFile.Div;
 
 public class TeiEdit extends GenericMain {
 
@@ -68,7 +62,7 @@ public class TeiEdit extends GenericMain {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(inputFile);
 			root = teiDoc.getDocumentElement();
@@ -172,7 +166,7 @@ public class TeiEdit extends GenericMain {
 			}
 			if (cmd.startsWith("docname=")) {
 				String name = cmd.substring(8);
-				Utils.setDocumentName(teiDoc, name);
+				TeiDocument.setDocumentName(teiDoc, name);
 			}
 			if (cmd.startsWith("chgtime=")) {
 				String param = cmd.substring(8);
@@ -268,7 +262,7 @@ public class TeiEdit extends GenericMain {
 			Transformer transformer = fabrique2.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.teiCorpoDtd());
+			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, TeiDocument.teiCorpoDtd());
 			transformer.transform(source, resultat);
 		} catch (Exception e) {
 			e.printStackTrace();

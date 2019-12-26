@@ -113,7 +113,7 @@ public class TransInfo {
 			Element addNotes = (Element) notesStmt.getElementsByTagName("note").item(0);
 			NodeList allNotes = addNotes.getElementsByTagName("note");
 			for (int i = 0; i < allNotes.getLength(); i++) {
-				if (Utils.isElement(allNotes.item(i))) {
+				if (TeiDocument.isElement(allNotes.item(i))) {
 					Element n = (Element) allNotes.item(i);
 					if (n.getAttribute("type").equals("scribe")) {
 						if (n.getTextContent().toLowerCase().contains("coder -")) {

@@ -70,7 +70,7 @@ public class TeiToPartition {
 		newTiers = new TreeMap<String, NewTier>();
 		NodeList annotationGrps = null;
 		try {
-			annotationGrps = Utils.getAllAnnotationBloc(this.teiXPath, this.teiDoc);
+			annotationGrps = TeiDocument.getAllAnnotationBloc(this.teiXPath, this.teiDoc);
 		} catch (XPathExpressionException e) {
 			System.out.println("Erreur de traitement de xpath annotationBlock");
 			e.printStackTrace();
@@ -106,7 +106,7 @@ public class TeiToPartition {
 			}
 			
 			for (int j = 0; j < annotGrpElmts.getLength(); j++) {
-				if (Utils.isElement(annotGrpElmts.item(j))) {
+				if (TeiDocument.isElement(annotGrpElmts.item(j))) {
 					Element annotElmt = (Element) annotGrpElmts.item(j);
 					if (annotElmt.getNodeName().equals("spanGrp")) {
 						String at = annotElmt.getAttribute("type");
@@ -331,7 +331,7 @@ public class TeiToPartition {
 			Element person = (Element) participantsInfo.item(i);
 			NodeList cn = person.getChildNodes();
 			for (int j = 0; j < cn.getLength(); j++) {
-				if (Utils.isElement(cn.item(j))) {
+				if (TeiDocument.isElement(cn.item(j))) {
 					Element child = (Element) cn.item(j);
 					if (child.getNodeName().equals("altGrp")) {
 						NodeList nnl = child.getElementsByTagName("alt");

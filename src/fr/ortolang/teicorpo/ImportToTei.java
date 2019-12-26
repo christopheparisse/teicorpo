@@ -12,7 +12,6 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 import java.lang.String;
-import javax.xml.*;
 import javax.xml.xpath.*;
 
 import org.w3c.dom.*;
@@ -47,7 +46,7 @@ public abstract class ImportToTei extends GenericMain {
 	public void setDivTimes() {
 		NodeList divs = null;
 		try {
-			divs = Utils.getAllDivs(this.xpath, this.docTEI);
+			divs = TeiDocument.getAllDivs(this.xpath, this.docTEI);
 		} catch (XPathExpressionException e1) {
 			e1.printStackTrace();
 		}
@@ -57,7 +56,7 @@ public abstract class ImportToTei extends GenericMain {
 			// System.out.println(i + " " + div.getAttribute("type"));
 			NodeList annotUElmts = null;
 			try {
-				annotUElmts = Utils.getSomeAnnotationBloc(this.xpath, div);
+				annotUElmts = TeiDocument.getSomeAnnotationBloc(this.xpath, div);
 			} catch (XPathExpressionException e) {
 				e.printStackTrace();
 			}
@@ -69,12 +68,12 @@ public abstract class ImportToTei extends GenericMain {
 					Element currentU = (Element) annotUElmts.item(j);
 					// System.out.println(j + " " +
 					// currentU.getAttribute("type"));
-					String time = Utils.getAttrAnnotationBloc(currentU, "start");
+					String time = TeiDocument.getAttrAnnotationBloc(currentU, "start");
 					// System.out.println("start: "+time);
 					if (Utils.isNotEmptyOrNull(time) && start == "") {
 						start = time;
 					}
-					time = Utils.getAttrAnnotationBloc(currentU, "end");
+					time = TeiDocument.getAttrAnnotationBloc(currentU, "end");
 					// System.out.println("end: "+time);
 					if (Utils.isNotEmptyOrNull(time)) {
 						end = time;
@@ -82,8 +81,8 @@ public abstract class ImportToTei extends GenericMain {
 				}
 				String startId = addTimeToTimeline(getTimeValue(start));
 				String endId = addTimeToTimeline(getTimeValue(end));
-				Utils.setDivHeadAttr(this.docTEI, div, "start", startId);
-				Utils.setDivHeadAttr(this.docTEI, div, "end", endId);
+				TeiDocument.setDivHeadAttr(this.docTEI, div, "start", startId);
+				TeiDocument.setDivHeadAttr(this.docTEI, div, "end", endId);
 			}
 		}
 	}
@@ -139,43 +138,30 @@ public abstract class ImportToTei extends GenericMain {
 	/**
 	 * Création d'un Document TEI minimal.
 	 */
-	public void buildEmptyTEI(String fname) {
-		Element teiHeader = this.docTEI.createElement("teiHeader");
-		this.rootTEI.appendChild(teiHeader);
-		Element fileDesc = this.docTEI.createElement("fileDesc");
-		teiHeader.appendChild(fileDesc);
-
-		Element titleStmt = this.docTEI.createElement("titleStmt");
-		fileDesc.appendChild(titleStmt);
-		Element publicationStmt = docTEI.createElement("publicationStmt");
-		fileDesc.appendChild(publicationStmt);
+	public void buildTEI(String fname) {
+		Element teiHeader = TeiDocument.findOrCreate(docTEI, rootTEI, "teiHeader");
+		Element fileDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "fileDesc");
+		Element titleStmt = TeiDocument.findOrCreate(docTEI, fileDesc, "titleStmt");
+		Element publicationStmt = TeiDocument.findOrCreate(docTEI, titleStmt, "publicationStmt");
 
 		// Ajout publicationStmt
-		Element distributor = docTEI.createElement("distributor");
+		Element distributor = TeiDocument.findOrCreate(docTEI, publicationStmt, "distributor");
 		distributor.setTextContent("tei_corpo");
-		publicationStmt.appendChild(distributor);
 
-		Element notesStmt = docTEI.createElement("notesStmt");
-		fileDesc.appendChild(notesStmt);
-		Element sourceDesc = this.docTEI.createElement("sourceDesc");
-		fileDesc.appendChild(sourceDesc);
+		Element notesStmt = TeiDocument.findOrCreate(docTEI, fileDesc, "notesStmt");
+		Element sourceDesc = TeiDocument.findOrCreate(docTEI, fileDesc, "sourceDesc");
 
-		Element profileDesc = this.docTEI.createElement("profileDesc");
-		teiHeader.appendChild(profileDesc);
-		Element encodingDesc = this.docTEI.createElement("encodingDesc");
+		Element profileDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "profileDesc");
+		Element encodingDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "encodingDesc");
 		encodingDesc.setAttribute("style", Utils.versionTEI);
-		teiHeader.appendChild(encodingDesc);
-		Element revisionDesc = this.docTEI.createElement("revisionDesc");
-		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, fname, null, tparams.test);
+		Element revisionDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "revisionDesc");
+		TeiDocument.setRevisionInfo(docTEI, revisionDesc, fname, null, tparams.test);
 
-		Element text = this.docTEI.createElement("text");
-		this.rootTEI.appendChild(text);
-		Element timeline = this.docTEI.createElement("timeline");
-		text.appendChild(timeline);
-		Element body = docTEI.createElement("body");
-		text.appendChild(body);
-		Element when = this.docTEI.createElement("when");
+		Element text = TeiDocument.findOrCreate(docTEI, rootTEI, "text");
+		Element timeline = TeiDocument.findOrCreate(docTEI, text, "timeline");
+		Element body = TeiDocument.findOrCreate(docTEI, text, "body");
+
+		Element when = docTEI.createElement("when");
 		when.setAttribute("absolute", "0");
 		when.setAttribute("xml:id", "T" + whenId);
 		// timeline.appendChild(when);
@@ -327,7 +313,7 @@ public abstract class ImportToTei extends GenericMain {
 		Element activity = docTEI.createElement("activity");
 		setting.appendChild(activity);
 		Element body = (Element) docTEI.getElementsByTagName("body").item(0);
-		Element div = Utils.createDivHead(docTEI);
+		Element div = TeiDocument.createDivHead(docTEI);
 		body.appendChild(div);
 		settingDesc.appendChild(setting);
 		return div;

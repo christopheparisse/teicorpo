@@ -79,7 +79,7 @@ public class TranscriberToTei extends GenericMain {
 		DocumentBuilderFactory factory = null;
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, options.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, options.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			this.docTRS = builder.parse(this.inputTRS);
 			this.rootTRS = this.docTRS.getDocumentElement();
@@ -122,7 +122,7 @@ public class TranscriberToTei extends GenericMain {
 				version = attValue;
 			}
 		}
-		Utils.setTranscriptionDesc(docTEI, "transcriber", version, "no information on TRS format");
+		TeiDocument.setTranscriptionDesc(docTEI, "transcriber", version, "no information on TRS format");
 	}
 
 	/**
@@ -179,7 +179,7 @@ public class TranscriberToTei extends GenericMain {
 
 		Element revisionDesc = this.docTEI.createElement("revisionDesc");
 		teiHeader.appendChild(revisionDesc);
-		Utils.setRevisionInfo(this.docTEI, revisionDesc, this.inputTRS.getAbsolutePath(), null, optionsTEI.test);
+		TeiDocument.setRevisionInfo(this.docTEI, revisionDesc, this.inputTRS.getAbsolutePath(), null, optionsTEI.test);
 
 		///
 		teiHeader.appendChild(revisionDesc);
@@ -455,14 +455,14 @@ public class TranscriberToTei extends GenericMain {
 	public void setTextElement() {
 		Element body = (Element) this.docTEI.getElementsByTagName("body").item(0);
 		Element episode = (Element) this.docTRS.getElementsByTagName("Episode").item(0);
-		Element divEpisode = Utils.createDivHead(this.docTEI);
+		Element divEpisode = TeiDocument.createDivHead(this.docTEI);
 		divEpisode.setAttribute("type", "Situation");
 		divEpisode.setAttribute("subtype", "d0");
 		body.appendChild(divEpisode);
 		NamedNodeMap attrs = episode.getAttributes();
 		if (attrs.getLength() != 0) {
 			for (int i = 0; i < attrs.getLength(); i++) {
-				Utils.setDivHeadAttr(this.docTEI, divEpisode, attrs.item(i).getNodeName(),
+				TeiDocument.setDivHeadAttr(this.docTEI, divEpisode, attrs.item(i).getNodeName(),
 						attrs.item(i).getNodeValue());
 			}
 		}
@@ -489,7 +489,7 @@ public class TranscriberToTei extends GenericMain {
 	 *            Le noeud <strong>section</strong> issu du document Transcriber
 	 */
 	public void addDivElement(Element top, Node section) {
-		Element div = Utils.createDivHead(docTEI);
+		Element div = TeiDocument.createDivHead(docTEI);
 		top.appendChild(div);
 		NamedNodeMap attributes = section.getAttributes();
 		for (int i = 0; i < attributes.getLength(); i++) {
@@ -505,7 +505,7 @@ public class TranscriberToTei extends GenericMain {
 			else if (attName == "startTime") {
 				String startId = addTimeToTimeline(attValue);
 				// div.setAttribute("start", startId);
-				Utils.setDivHeadAttr(this.docTEI, div, "start", startId);
+				TeiDocument.setDivHeadAttr(this.docTEI, div, "start", startId);
 			}
 		}
 		this.setDivElement(section, div);
@@ -534,10 +534,10 @@ public class TranscriberToTei extends GenericMain {
 				Element turn = (Element) current;
 				String[] speakers = turn.getAttribute("speaker").split(" ");
 				if (speakers.length == 1) {
-					Element annotatedU = Utils.createAnnotationBloc(this.docTEI);
+					Element annotatedU = TeiDocument.createAnnotationBloc(this.docTEI);
 					div.appendChild(annotatedU);
 					this.setU_Id(annotatedU);
-					Utils.setAttrAnnotationBloc(this.docTEI, annotatedU, "who", turn.getAttribute("speaker"));
+					TeiDocument.setAttrAnnotationBloc(this.docTEI, annotatedU, "who", turn.getAttribute("speaker"));
 					this.set_AU_attributes(annotatedU, (Element) current);
 					this.setElementUnique((Element) current, annotatedU, div);
 				} else {
@@ -549,7 +549,7 @@ public class TranscriberToTei extends GenericMain {
 		try {
 			String endId = addTimeToTimeline(sect.getAttribute("endTime"));
 			// div.setAttribute("end", endId);
-			Utils.setDivHeadAttr(this.docTEI, div, "end", endId);
+			TeiDocument.setDivHeadAttr(this.docTEI, div, "end", endId);
 		} catch (Exception e) {
 			System.out.println("Erreur dans le traitement des turns : " + e.getMessage());
 		}
@@ -572,16 +572,16 @@ public class TranscriberToTei extends GenericMain {
 			String attValue = att.getNodeValue();
 			if (attName == "startTime") {
 				String startId = addTimeToTimeline(attValue);
-				Utils.setAttrAnnotationBloc(this.docTEI, annotatedU, "start", startId);
+				TeiDocument.setAttrAnnotationBloc(this.docTEI, annotatedU, "start", startId);
 			} else if (attName == "endTime") {
 				String endId = addTimeToTimeline(attValue);
-				Utils.setAttrAnnotationBloc(this.docTEI, annotatedU, "end", endId);
+				TeiDocument.setAttrAnnotationBloc(this.docTEI, annotatedU, "end", endId);
 			} else if (attName == "mode") {
-				Utils.setAttrAnnotationBlocSupplement(this.docTEI, annotatedU, "mode", attValue);
+				TeiDocument.setAttrAnnotationBlocSupplement(this.docTEI, annotatedU, "mode", attValue);
 			} else if (attName == "fidelity") {
-				Utils.setAttrAnnotationBlocSupplement(this.docTEI, annotatedU, "fidelity", attValue);
+				TeiDocument.setAttrAnnotationBlocSupplement(this.docTEI, annotatedU, "fidelity", attValue);
 			} else if (attName == "channel") {
-				Utils.setAttrAnnotationBlocSupplement(this.docTEI, annotatedU, "channel", attValue);
+				TeiDocument.setAttrAnnotationBlocSupplement(this.docTEI, annotatedU, "channel", attValue);
 			}
 		}
 	}
@@ -613,7 +613,7 @@ public class TranscriberToTei extends GenericMain {
 			String elmtName = elmt.getNodeName();
 			String elmtValue = elmt.getNodeValue();
 			NamedNodeMap attrs = children.item(i).getAttributes();
-			String annotatedU_start = Utils.getAttrAnnotationBloc(annotatedU, "start");
+			String annotatedU_start = TeiDocument.getAttrAnnotationBloc(annotatedU, "start");
 			if (elmtName == "Sync") {
 				sync = attrs.item(0).getNodeValue();
 				String ref_sync = addTimeToTimeline(sync);
@@ -650,10 +650,10 @@ public class TranscriberToTei extends GenericMain {
 		ArrayList<String> ids = new ArrayList<String>();
 		// Création d'un annotU par speaker
 		for (int i=0; i < speakers.length; i++) {
-			Element au = Utils.createAnnotationBloc(this.docTEI);
+			Element au = TeiDocument.createAnnotationBloc(this.docTEI);
 			setU_Id(au);
-			ids.add(Utils.getAttrAnnotationBloc(au, "xml:id"));
-			Utils.setAttrAnnotationBloc(this.docTEI, au, "who", speakers[i]);
+			ids.add(TeiDocument.getAttrAnnotationBloc(au, "xml:id"));
+			TeiDocument.setAttrAnnotationBloc(this.docTEI, au, "who", speakers[i]);
 			div.appendChild(au);
 			annotatedUs.add(au);
 			set_AU_attributes(au, turn);
@@ -728,7 +728,7 @@ public class TranscriberToTei extends GenericMain {
 
 	public void setTextTrsElement(String elmtValue, String sync, Element annotatedU, Element u, Element seg,
 			Element spangrp, boolean link) {
-		String annotatedU_start = Utils.getAttrAnnotationBloc(annotatedU, "start");
+		String annotatedU_start = TeiDocument.getAttrAnnotationBloc(annotatedU, "start");
 		if (!Utils.isNotEmptyOrNull(elmtValue.trim()) && !sync.equals("-1") && Utils.isNotEmptyOrNull(annotatedU_start)
 				&& !sync.equals(getTimeValue(annotatedU_start)) && !link) {
 			seg = docTEI.createElement("seg");
@@ -855,7 +855,7 @@ public class TranscriberToTei extends GenericMain {
 	 */
 	public void setU_Id(Element annotatedU) {
 		String IdU = "au" + utteranceId;
-		Utils.setAttrAnnotationBloc(this.docTEI, annotatedU, "xml:id", IdU);
+		TeiDocument.setAttrAnnotationBloc(this.docTEI, annotatedU, "xml:id", IdU);
 		utteranceId++;
 	}
 
@@ -1004,8 +1004,8 @@ public class TranscriberToTei extends GenericMain {
 			noteType.setTextContent(LgqType.SYMB_ASSOC);
 			note.appendChild(noteType);
 
-			String parent = Utils.ANNOTATIONBLOC;
-			if (tierName.toLowerCase().equals(Utils.ANNOTATIONBLOC)) {
+			String parent = TeiDocument.ANNOTATIONBLOC;
+			if (tierName.toLowerCase().equals(TeiDocument.ANNOTATIONBLOC)) {
 				parent = "-";
 			}
 			Element noteParent = docTEI.createElement("note");
@@ -1063,8 +1063,8 @@ public class TranscriberToTei extends GenericMain {
 	public void mainProcess(String input, String output, TierParams options) {
 		// System.out.println("Lecture de " + input);
 		transform(new File(input), options);
-		Utils.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
-		Utils.createFile(output, docTEI);
+		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
+		TeiDocument.createFile(output, docTEI);
 		// System.out.println("New file created " + output);
 	}
 }

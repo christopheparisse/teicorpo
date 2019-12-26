@@ -130,7 +130,7 @@ public class TeiToDC_colaje {
 		try {
 			factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Utils.setDTDvalidation(factory, true);
+			TeiDocument.setDTDvalidation(factory, true);
 			dcDoc = builder.newDocument();
 			dcRoot = dcDoc.createElement("oai_dc:dc");
 			dcRoot.setAttribute("xmlns:oai_dc","http://www.openarchives.org/OAI/2.0/oai_dc/");

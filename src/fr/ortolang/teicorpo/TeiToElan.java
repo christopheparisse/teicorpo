@@ -15,7 +15,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import javax.management.OperationsException;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
@@ -75,7 +74,7 @@ public class TeiToElan extends GenericMain {
 		try {
 			File teiFile = new File(inputName);
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(teiFile);
 			xPathfactory = XPathFactory.newInstance();

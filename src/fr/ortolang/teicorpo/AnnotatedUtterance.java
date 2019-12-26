@@ -14,8 +14,6 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import fr.ortolang.teicorpo.Codes;
-
 /**
  * Représentation des objets Utterance
  */
@@ -190,16 +188,16 @@ public class AnnotatedUtterance {
 			veryLongPause = Utils.veryLongPause;
 		}
 		annotU = annotatedU;
-		id = Utils.getAttrAnnotationBloc(annotatedU, "xml:id");
+		id = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
 		nthid = 0;
 		if (teiTimeline != null) {
-			start = teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(annotatedU, "start"));
-			end = teiTimeline.getTimeValue(Utils.getAttrAnnotationBloc(annotatedU, "end"));
+			start = teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
+			end = teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
 		} else {
-			start = Utils.getAttrAnnotationBloc(annotatedU, "start");
-			end = Utils.getAttrAnnotationBloc(annotatedU, "end");
+			start = TeiDocument.getAttrAnnotationBloc(annotatedU, "start");
+			end = TeiDocument.getAttrAnnotationBloc(annotatedU, "end");
 		}
-		speakerCode = Utils.getAttrAnnotationBloc(annotatedU, "who");
+		speakerCode = TeiDocument.getAttrAnnotationBloc(annotatedU, "who");
 		coms = new ArrayList<String>();
 		speeches = new ArrayList<Annot>();
 		tiers = new ArrayList<Annot>();
@@ -219,7 +217,7 @@ public class AnnotatedUtterance {
 		// Parcours des éléments contenus dans u et construction des
 		// variables speech, nomarkerSpeech et speeches en fonction.
 		for (int i = 0; i < annotUElements.getLength(); i++) {
-			if (Utils.isElement(annotUElements.item(i))) {
+			if (TeiDocument.isElement(annotUElements.item(i))) {
 				Element annotUEl = (Element) annotUElements.item(i);
 				String nodeName = annotUEl.getNodeName();
 				/*
@@ -268,7 +266,7 @@ public class AnnotatedUtterance {
 							Node n = spans.item(k);
 							if (n.getNodeName().equals("span")) {
 								NodeList spanElts = n.getChildNodes();
-								Annot w = new Annot("w", Utils.getText((Element)n)); // String(k);
+								Annot w = new Annot("w", TeiDocument.getText((Element)n)); // String(k);
 								w.dependantAnnotations = new ArrayList<Annot>();
 								for (int l=0; l<spanElts.getLength(); l++) {
 									Node m = spanElts.item(l);
@@ -346,7 +344,7 @@ public class AnnotatedUtterance {
 
 			// Ajout des pauses: syntaxe = # pour les pauses courtes, sinon
 			// ### pour les pauses longues
-			if (Utils.isElement(segChild)) {
+			if (TeiDocument.isElement(segChild)) {
 				Element segChildEl = (Element) segChild;
 				if (segChildName.equals("pause")) {
 					if (segChildEl.getAttribute("type").equals("short")) {

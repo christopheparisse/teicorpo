@@ -311,6 +311,9 @@ class TierParams {
 		if (style == 8) {
 			System.err.println("         -absolute : syntax of included tools/ library in html");
 		}
+		if (style == 9) {
+			System.err.println("         -metadata : xml metadata file");
+		}
 		System.err.println("	     -usage or -help = display this message");
 		// System.exit(1);
 	}
@@ -383,6 +386,7 @@ class TierParams {
 //			System.err.println("         -syntax nom : choix pour la syntaxe à générer");
 		}
 		if (style == 8) {
+			System.err.println("         ImportConllToTei connl_file -metadata connl_meta%n");
 			System.err.println("         -absolute : syntaxe de l'inclusion de la librairie tools/ en html");
 		}
 		System.err.println("	     -usage ou -help = affichage ce message");
@@ -447,6 +451,9 @@ class TierParams {
 					} else if (argument.equals("-m")) {
 						i++;
 						continue;
+					} else if (argument.equals("-b")) {
+						i++;
+						continue;
 					} else if (argument.equals("-e")) {
 						i++;
 						continue;
@@ -462,9 +469,6 @@ class TierParams {
 					} else if (argument.equals("-syntaxformat")) {
 						i++;
 						continue;
-//					} else if (argument.equals("-syntax")) {
-//						i++;
-//						continue;
 					} else if (argument.equals("-model")) {
 						i++;
 						continue;

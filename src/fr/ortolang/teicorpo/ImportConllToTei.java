@@ -9,11 +9,6 @@ package fr.ortolang.teicorpo;
 import java.io.*;
 import java.util.*;
 import java.lang.String;
-import javax.xml.*;
-import javax.xml.namespace.NamespaceContext;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.*;
 
@@ -23,6 +18,14 @@ class ConllWord {
         // split line
         tiers = u.split("\\t");
     }
+    public String toString() {
+    	String s = "Length: " + tiers.length + " ";
+    	for (int i=0; i < tiers.length - 1; i++) {
+    		s += tiers[i] + "!-!";
+		}
+    	s += tiers[tiers.length-1];
+    	return s;
+	}
 }
 
 class ConllUtt {
@@ -44,18 +47,20 @@ class ConllUtt {
             if (u.startsWith(uid)) {
                 int equals = u.indexOf('=');
                 if (equals < 0) {
-                    id = u.substring(uid.length()+1);
+                    id = u.substring(uid.length()).trim();
                 } else {
-                    id = u.substring(equals+2);
+                    id = u.substring(equals+1).trim();
                 }
             } else if (u.startsWith(ut)) {
                 int equals = u.indexOf('=');
                 if (equals < 0) {
-                    text = u.substring(ut.length()+1);
+                    text = u.substring(ut.length()).trim();
                 } else {
-                    text = u.substring(equals+2);
+                    text = u.substring(equals+1).trim();
                 }
-            }
+            } else {
+            	System.err.println("ignored comment: " + u);
+			}
             return;
         }
         ConllWord cw = new ConllWord(u);
@@ -68,10 +73,18 @@ class ConllUtt {
 		if (u.startsWith("\t")) return CONLL_BLANK;
 		return CONLL_WORD;
 	}
+	public String toString() {
+    	String s = "ID: " + id + " (" + text + ")\n";
+    	for (int i=0; i < words.size(); i++) {
+    		s += words.get(i).toString() + "\n";
+		}
+    	return s;
+	}
 }
 
 class conllDoc {
     public List<ConllUtt> doc;
+    conllDoc() { doc = new ArrayList<ConllUtt>(); }
     void load(String fn, TierParams tp) throws IOException {
 		String line = "";
 		ConllUtt cu = new ConllUtt();
@@ -79,16 +92,21 @@ class conllDoc {
 		try {
 			reader = new BufferedReader( new InputStreamReader(new FileInputStream(fn), ConllUtt.inputEncoding) );
 			while((line = reader.readLine()) != null) {
+				// System.err.printf("On going %s%n%s%n", line, cu.toString());
 				// end of an utterance ?
 				if ( ConllUtt.linetype(line) == ConllUtt.CONLL_COMMENT ) {
+					// System.err.println("add line comment");
 					cu.fromline(line);
 				} else if ( ConllUtt.linetype(line) == ConllUtt.CONLL_BLANK && cu.words.size() > 0) {
+					// System.err.println("add connl");
 					doc.add(cu);
 					cu = new ConllUtt();
 				} else {
+					// System.err.println("add line");
 					cu.fromline(line);
 				}
 			}
+			// System.err.println("fin du while");
 		}
 		catch (FileNotFoundException fnfe) {
 			System.err.println("Erreur fichier : " + fn + " indisponible");
@@ -101,6 +119,7 @@ class conllDoc {
 			System.exit(1);
 		}
 		finally {
+			System.err.printf("FINAL %s%n", cu.toString());
 			if ( cu.words.size() > 0 )
 				doc.add(cu);
 			if (reader != null) reader.close();
@@ -121,10 +140,10 @@ public class ImportConllToTei extends ImportToTei {
 	 */
 	// initialise et construit le conllFile et le docTEI
 	public void transform(String conllFileName, TierParams tp) throws Exception {
-//		System.err.printf("ClanToTei %s -- %s %n", conllFileName, tp);
+		System.err.printf("ConllToTei %s -- %s %n", conllFileName, tp);
 		if (tp == null) tp = new TierParams();
 		tparams = (tp != null) ? tp : new TierParams();
-//		System.err.printf("fmt: %s%n", tparams.inputFormat);
+		System.err.printf("metadata: %s%n", tparams.metadata);
 		if (tparams.inputFormat.isEmpty()) tparams.inputFormat = ".orfeo";
         clDoc = new conllDoc();
 		clDoc.load(conllFileName, tparams);
@@ -132,52 +151,21 @@ public class ImportConllToTei extends ImportToTei {
 		maxTime = 0.0;
 		times = new ArrayList<String>();
 		timeElements = new ArrayList<Element>();
-		DocumentBuilderFactory factory = null;		
 
-		try {
-			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, tparams.dtdValidation);
-			DocumentBuilder builder = factory.newDocumentBuilder();
-			docTEI = builder.newDocument();
-			this.xPathfactory = XPathFactory.newInstance();
-			this.xpath = xPathfactory.newXPath();
-			this.xpath.setNamespaceContext(new NamespaceContext() {
-				public String getNamespaceURI(String prefix) {
-					System.out.println("prefix called " + prefix);
-					if (prefix == null) {
-						throw new IllegalArgumentException("No prefix provided!");
-					} else if (prefix.equals(XMLConstants.DEFAULT_NS_PREFIX)) {
-						System.out.println("default prefix called");
-						return "http://www.tei-c.org/ns/1.0";
-					} else if (prefix.equals("tei")) {
-						System.out.println("tei prefix called");
-						return "http://www.tei-c.org/ns/1.0";
-					} else if (prefix.equals("xsi")) {
-						return "http://www.w3.org/2001/XMLSchema-instance";
-					} else {
-						return XMLConstants.NULL_NS_URI;
-					}
-				}
+		TeiDocument xmlDoc;
 
-				public String getPrefix(String uri) {
-					return null;
-				}
+		if (tparams.metadata != null && !tparams.metadata.isEmpty())
+			xmlDoc = new TeiDocument(tparams.metadata, false);
+		else
+			xmlDoc = new TeiDocument(false);
 
-				@Override
-				public Iterator<String> getPrefixes(String arg0) {
-					// TODO Auto-generated method stub
-					return null;
-				}
-			});
-			rootTEI = docTEI.createElement("TEI");
-//			rootTEI.setAttribute("version", Utils.versionTEI);
-			this.rootTEI.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
-			docTEI.appendChild(rootTEI);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		xmlDoc.addNamespace();
+
+		docTEI = xmlDoc.doc;
+		rootTEI = xmlDoc.root;
+
 		conversion(tp, conllFileName);
-		Utils.setTranscriptionDesc(docTEI, "orfeo", "1.0", "CONLL ORFEO format");
+		TeiDocument.setTranscriptionDesc(docTEI, "orfeo", "1.0", "CONLL ORFEO format");
 	}
 
 	/**
@@ -190,8 +178,10 @@ public class ImportConllToTei extends ImportToTei {
 	// public void conversion(String extension) throws DOMException,
 	// IOException{
 	public void conversion(TierParams tp, String fname) throws DOMException, IOException {
-		this.buildEmptyTEI(fname);
-		this.buildHeader("Fichier TEI obtenu à partir du fichier ORFEO " + fname);
+		this.buildTEI(fname);
+		if (tp.metadata == null || tp.metadata.isEmpty()) {
+			this.buildHeader("Fichier TEI obtenu à partir du fichier ORFEO " + fname);
+		}
 		this.buildText(tp);
 		addTemplateDesc(docTEI);
 		/*
@@ -200,7 +190,7 @@ public class ImportConllToTei extends ImportToTei {
 1	mais	mais	COO	COO	_	7	mark	_	_	40.740002	40.950001	unine11-ufa
 2	euh	euh	INT	INT	_	1	dm	_	_	40.959999	41.009998	unine11-ufa
 		 */
-		insertTemplate(docTEI, "conll", LgqType.SYMB_DIV, Utils.ANNOTATIONBLOC);
+		insertTemplate(docTEI, "conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
 		insertTemplate(docTEI, "FORM", LgqType.SYMB_ASSOC, "conll");
 		insertTemplate(docTEI, "LEMMA", LgqType.SYMB_ASSOC, "conll");
 		insertTemplate(docTEI, "CPOSTAG", LgqType.SYMB_ASSOC, "conll");
@@ -228,7 +218,7 @@ public class ImportConllToTei extends ImportToTei {
 			for (ConllWord w : cn.words) {
 				Element word = docTEI.createElement("w");
 				u.appendChild(word);
-				word.setTextContent(word.toString());
+				word.setTextContent(w.toString());
 			}
         }
 	}
@@ -238,7 +228,7 @@ public class ImportConllToTei extends ImportToTei {
 		TierParams.printVersionMessage();
 		ImportConllToTei ct = new ImportConllToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);
-		ct.mainCommand(args, EXT, Utils.EXT, "Description: TeiImportConll converts a CONLL file to an TEI file%n", 0);
+		ct.mainCommand(args, EXT, Utils.EXT, "Description: TeiImportConll converts a CONLL file to an TEI file%n", 9);
 	}
 
 	@Override
@@ -252,8 +242,8 @@ public class ImportConllToTei extends ImportToTei {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Utils.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
-		Utils.createFile(output, docTEI);
+		TeiDocument.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
+		TeiDocument.createFile(output, docTEI);
 	}
 
 }

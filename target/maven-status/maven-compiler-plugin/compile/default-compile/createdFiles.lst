@@ -11,6 +11,7 @@ fr/ortolang/teicorpo/TeiToPartition.class
 fr/ortolang/teicorpo/TeiConverter.class
 fr/ortolang/teicorpo/TeiCorpo.class
 fr/ortolang/teicorpo/ConversionUI$3.class
+fr/ortolang/teicorpo/TeiDocument$1.class
 fr/ortolang/teicorpo/ConvertAllToTei.class
 fr/ortolang/teicorpo/ConversionUI$2.class
 fr/ortolang/teicorpo/ClanToTei.class
@@ -75,7 +76,6 @@ fr/ortolang/teicorpo/Codes.class
 fr/ortolang/teicorpo/ConversionUI.class
 org/mozilla/universalchardet/prober/HebrewProber.class
 fr/ortolang/teicorpo/TierInfo.class
-fr/ortolang/teicorpo/XmlDocument.class
 fr/ortolang/teicorpo/ReorgPath$1.class
 org/mozilla/universalchardet/prober/SingleByteCharsetProber.class
 fr/ortolang/teicorpo/MoissonnageEslo.class
@@ -123,6 +123,7 @@ fr/ortolang/teicorpo/ConversionUI$ButtonField.class
 fr/ortolang/teicorpo/TransInfo.class
 fr/ortolang/teicorpo/EncodingDetector.class
 fr/ortolang/teicorpo/GenerateIndexHTML$2.class
+fr/ortolang/teicorpo/TeiDocument.class
 fr/ortolang/teicorpo/TeiToSrt.class
 fr/ortolang/teicorpo/ElanToHT$CV_elan.class
 fr/ortolang/teicorpo/TeiToPraat$1.class

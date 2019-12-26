@@ -81,7 +81,7 @@ public class TeiParticipant {
 		}
 		NodeList partEl = participant.getChildNodes();
 		for (int i = 0; i < partEl.getLength(); i++) {
-			if (Utils.isElement(partEl.item(i))) {
+			if (TeiDocument.isElement(partEl.item(i))) {
 				Element el = (Element) partEl.item(i);
 				if (el.getNodeName().equals("note")) {
 					// System.out.printf("adds: %s %s %n",

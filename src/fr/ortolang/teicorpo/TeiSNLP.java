@@ -5,20 +5,10 @@
 
 package fr.ortolang.teicorpo;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
@@ -38,8 +28,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
-import fr.ortolang.teicorpo.TeiFile.Div;
 
 public class TeiSNLP extends GenericMain {
 
@@ -80,7 +68,7 @@ public class TeiSNLP extends GenericMain {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			Utils.setDTDvalidation(factory, optionsTei.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(inputFile);
 			root = teiDoc.getDocumentElement();
@@ -128,7 +116,7 @@ public class TeiSNLP extends GenericMain {
 			/*
 			 * version conll
 			 */
-			insertTemplate("conll", LgqType.SYMB_DIV, Utils.ANNOTATIONBLOC);
+			insertTemplate("conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
 			insertTemplate("FORM", LgqType.SYMB_ASSOC, "conll");
 			insertTemplate("LEMMA", LgqType.SYMB_ASSOC, "conll");
 			insertTemplate("CPOSTAG", LgqType.SYMB_ASSOC, "conll");
@@ -142,14 +130,14 @@ public class TeiSNLP extends GenericMain {
 			/*
 			 * version <ref><ref><w>
 			 */
-			insertTemplate("ref", LgqType.SYMB_ASSOC, Utils.ANNOTATIONBLOC);
+			insertTemplate("ref", LgqType.SYMB_ASSOC, TeiDocument.ANNOTATIONBLOC);
 		} else {
 			// format words : optionsOutput.syntaxformat === "w"
 		}
 
 		int numAU = 0;
 
-		NodeList aBlocks = teiDoc.getElementsByTagName(Utils.ANNOTATIONBLOC);
+		NodeList aBlocks = teiDoc.getElementsByTagName(TeiDocument.ANNOTATIONBLOC);
 		if (aBlocks != null && aBlocks.getLength() > 0) {
 			for (int i=0; i < aBlocks.getLength(); i++) {
 				Element eAU = (Element) aBlocks.item(i);

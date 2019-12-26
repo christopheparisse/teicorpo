@@ -16,10 +16,10 @@ public class ElanToTei extends GenericMain {
 	public void transform(String inputFile, String outputName, TierParams options) throws IOException {
 		ElanToHT = new ElanToHT(new File(inputFile));
 		ht = new HT_ToTei(ElanToHT.ht, options);
-		Utils.setTranscriptionDesc(ht.docTEI, "elan", "0.1", "no information on format");
+		TeiDocument.setTranscriptionDesc(ht.docTEI, "elan", "0.1", "no information on format");
 
-		Utils.setDocumentName(ht.docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(outputName));
-		Utils.createFile(outputName, ht.docTEI);
+		TeiDocument.setDocumentName(ht.docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(outputName));
+		TeiDocument.createFile(outputName, ht.docTEI);
 	}
 
 	/**
