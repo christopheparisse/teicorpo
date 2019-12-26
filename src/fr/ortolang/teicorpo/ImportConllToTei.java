@@ -119,8 +119,8 @@ public class ImportConllToTei extends ImportToTei {
 			if (cn.words.size() < 1) continue;
 			try {
 				utt.setAttribute("who", cn.words.get(0).tiers[12]);
-				utt.setAttribute("start", cn.words.get(0).tiers[10]);
-				utt.setAttribute("end", cn.words.get(cn.words.size()-1).tiers[10]);
+				utt.setAttribute("from", addTimeToTimeline(cn.words.get(0).tiers[10]));
+				utt.setAttribute("to", addTimeToTimeline(cn.words.get(cn.words.size()-1).tiers[11]));
 				/*
 				for (ConllWord w : cn.words) {
 					Element word = docTEI.createElement("w");
@@ -129,12 +129,13 @@ public class ImportConllToTei extends ImportToTei {
 				}
 				*/
 				Element syntaxGrp = docTEI.createElement("spanGrp");
+				utt.appendChild(syntaxGrp);
 				syntaxGrp.setAttribute("type", "conll");
 				syntaxGrp.setAttribute("inst", "ORFEO");
 				if (cn.words != null) {
 					TaggedUtterance tu = new TaggedUtterance();
 					for (int w=0; w < cn.words.size(); w++) {
-						tu.addCONNLSNLP(cn.words.get(w).tiers, cn.words.get(w).tiers[10], cn.words.get(w).tiers[11]);
+						tu.addCONNLSNLP(cn.words.get(w).tiers, addTimeToTimeline(cn.words.get(w).tiers[10]), addTimeToTimeline(cn.words.get(w).tiers[11]));
 					}
 					tu.createSpanConllU(syntaxGrp, docTEI);
 				}

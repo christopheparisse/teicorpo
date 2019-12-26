@@ -41,7 +41,7 @@ public class ConllDoc {
             System.exit(1);
         }
         finally {
-            System.err.printf("FINAL %s%n", cu.toString());
+            // System.err.printf("FINAL %s%n", cu.toString());
             if ( cu.words.size() > 0 )
                 doc.add(cu);
             if (reader != null) reader.close();

@@ -27,8 +27,8 @@ public class TeiTimeline {
 		else if (unit.equals("s"))
 			ratio = 1.0;
 		else {
-			System.out.println("Unité inconnue pour timeline: " + unit);
-			System.out.println("Pas de conversion réalisée.");
+			System.out.println("Unknown unit for timeline: " + unit);
+			System.out.println("No conversion performed.");
 			ratio = 1.0;
 		}
 		NodeList whens = tl.getElementsByTagName("when");
@@ -56,7 +56,6 @@ public class TeiTimeline {
 	}
 
 	double parseTime(String tms) {
-		// TODO Auto-generated method stub
 		if (tms.indexOf(":") >= 0) {
 			// parse xx:yy or xx:yy:zz
 			Pattern pattern2x = Pattern.compile("(\\d+):(.+)");

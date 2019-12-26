@@ -106,8 +106,8 @@ public class TaggedUtterance {
 			TaggedWord c = twL.get(i);
 			Element span = teiDoc.createElement("span");
 			span.setTextContent(c.ID);
-			if (!c.start.isEmpty()) span.setAttribute("start", c.start);
-			if (!c.end.isEmpty()) span.setAttribute("end", c.end);
+			if (!c.start.isEmpty()) span.setAttribute("from", c.start);
+			if (!c.end.isEmpty()) span.setAttribute("to", c.end);
 			Element c1 = teiDoc.createElement("spanGrp");
 			Element c1sp = teiDoc.createElement("span");
 			c1sp.setTextContent(c.FORM);
