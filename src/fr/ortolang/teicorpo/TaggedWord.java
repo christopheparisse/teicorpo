@@ -16,12 +16,16 @@ public class TaggedWord {
 	String DEPREL;
 	String DEPS;
 	String MISC;
+	String start;
+	String end;
 
 	public TaggedWord() {
 		word = "";
 		pos = "";
 		lemma = "";
 		ner = "";
+		start = "";
+		end = "";
 	}
 	
 	public TaggedWord(String[] wcl) {

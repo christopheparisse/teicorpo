@@ -13,6 +13,8 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToHtml.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/Win1251BulgarianModel.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToElanTest.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiDocument.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/ConllWord.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TierParams.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToTranscriber.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToText.java
@@ -30,7 +32,6 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/HandleJCheckBoxEvent.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TestSNLP.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TierInfo.java
-/devlopt/teicorpo/src/fr/ortolang/teicorpo/XmlDocument.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiParticipant.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/Latin1Prober.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/HebrewProber.java
@@ -46,6 +47,7 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ConvertAllToTei.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/HT_ToTei.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/CV.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/ConllUtt.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/HebrewModel.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/distributionanalysis/EUCJPDistributionAnalysis.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/Constants.java
@@ -72,6 +74,7 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ConventionsToChat.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/statemachine/EUCJPSMModel.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/PraatSpecialChars.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/ConllDoc.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/distributionanalysis/GB2312DistributionAnalysis.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/LowerCaseLexicon.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/statemachine/ISO2022JPSMModel.java

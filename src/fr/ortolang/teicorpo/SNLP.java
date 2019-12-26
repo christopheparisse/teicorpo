@@ -310,14 +310,7 @@ public class SNLP {
 			List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
 //			for (CoreMap sentence : sentences) {
 			for (int nb=0; nb < sentences.size(); nb++) {
-				CoreMap sentence = sentences.get(nb);
-				SemanticGraph sg = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-				String s;
-				if (sg != null) {
-					s = conllUWriter.printSemanticGraph(sg);
-				} else {
-					s = conllUWriter.printPOSAnnotations(sentence);
-				}
+				String s = getSentenceAnalysis(sentences, nb, conllUWriter);
 				os.printf("<Sentence:%d>%n", nb);
 				os.printf("%s%n", s);
 			}
@@ -328,7 +321,20 @@ public class SNLP {
 		}
 	}
 
-	public List<String[]> parseCONLL(String text) {
+	String getSentenceAnalysis(List<CoreMap> sentences, int nb, CoNLLUDocumentWriter conllUWriter) {
+		CoreMap sentence = sentences.get(nb);
+		SemanticGraph sg = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
+		String s;
+		if (sg != null) {
+			s = conllUWriter.printSemanticGraph(sg);
+		} else {
+			s = conllUWriter.printPOSAnnotations(sentence);
+		}
+		return s;
+	}
+
+	public ConllUtt parseCONLL(String text) {
+		ConllUtt cu = new ConllUtt();
 		text = text.trim();
 		if (text.length() <= 0) return null;
 		try {
@@ -342,27 +348,19 @@ public class SNLP {
 			// CoNLLUOutputter.conllUPrint(annotation, os);
 			List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
 			int nbs = sentences.size();
-			List<String[]> lls = new ArrayList<String[]>(nbs);
 			for (int nb=0; nb < nbs; nb++) {
-				CoreMap sentence = sentences.get(nb);
-				SemanticGraph sg = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-				String s;
-				if (sg != null) {
-					s = conllUWriter.printSemanticGraph(sg);
-				} else {
-					s = conllUWriter.printPOSAnnotations(sentence);
-				}
+				String s = getSentenceAnalysis(sentences, nb, conllUWriter);
 				//System.out.printf("parseCONLL: {%s}%n", s);
 				String[] wls = s.split("\n");
 				//System.out.printf("parseCONLL2: %d%n", wls.length);
 				for (int l=0; l < wls.length; l++) {
-					String[] ws = wls[l].split("\t");
-					lls.add(ws);
-					//System.out.printf("parseCONLL3: %d[%s]{%s}%n", ws.length, wls[l], Utils.join2(ws));
+					ConllWord cw = new ConllWord(wls[l]);
+					cu.words.add(cw);
+					//System.out.printf("parseCONLL3: %s%n", cu.toString());
 				}
 			}
-			//System.out.printf("parseCONLL4: %d%n", lls.size());
-			return lls;
+			//System.out.printf("parseCONLL4: %d%n", cu.words.size());
+			return cu;
 		} catch (Exception e) {
 			System.err.printf("Error processing: %s%n", text);
 			e.printStackTrace();

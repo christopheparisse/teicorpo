@@ -27,11 +27,20 @@ public class TaggedUtterance {
 		tw.posSNLP(wcl);
 		twL.add(tw);
 	}
-	
+
 	void addCONNLSNLP(String[] wcl) {
 		//System.out.printf("addCONNLSNLP: %d%s%n", wcl.length, Utils.join2(wcl));
 		TaggedWord tw = new TaggedWord();
 		tw.conllSNLP(wcl);
+		twL.add(tw);
+	}
+
+	void addCONNLSNLP(String[] wcl, String start, String end) {
+		//System.out.printf("addCONNLSNLP: %d%s%n", wcl.length, Utils.join2(wcl));
+		TaggedWord tw = new TaggedWord();
+		tw.conllSNLP(wcl);
+		tw.start = start;
+		tw.end = end;
 		twL.add(tw);
 	}
 
@@ -97,6 +106,8 @@ public class TaggedUtterance {
 			TaggedWord c = twL.get(i);
 			Element span = teiDoc.createElement("span");
 			span.setTextContent(c.ID);
+			if (!c.start.isEmpty()) span.setAttribute("start", c.start);
+			if (!c.end.isEmpty()) span.setAttribute("end", c.end);
 			Element c1 = teiDoc.createElement("spanGrp");
 			Element c1sp = teiDoc.createElement("span");
 			c1sp.setTextContent(c.FORM);

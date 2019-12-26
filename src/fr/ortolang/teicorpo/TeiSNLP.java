@@ -165,15 +165,15 @@ public class TeiSNLP extends GenericMain {
 				String parsedUtt = NormalizeSpeech.parseText(utt, TeiToPartition.getOriginalFormat(teiDoc), optionsOutput);
 				if (numAU % 100 == 0) System.out.printf("%d%n", numAU);
 				if (optionsOutput.syntaxformat.equals("conll") || optionsOutput.syntaxformat.equals("dep")) {
-					List<String[]> lc = snlp.parseCONLL(parsedUtt);
+					ConllUtt cu = snlp.parseCONLL(parsedUtt);
 					//System.out.printf("[lc=%d]%n", lc.size());
 					/*
 					 * version <treetagger-conll>
 					 */
-					if (lc != null) {
+					if (cu.words != null) {
 						TaggedUtterance tu = new TaggedUtterance();
-						for (int w=0; w < lc.size(); w++) {
-							tu.addCONNLSNLP(lc.get(w));
+						for (int w=0; w < cu.words.size(); w++) {
+							tu.addCONNLSNLP(cu.words.get(w).tiers);
 						}
 						tu.createSpanConllU(syntaxGrp, teiDoc);					
 					}
