@@ -1,12 +1,21 @@
 package fr.ortolang.teicorpo;
 
+import edu.stanford.nlp.util.ArrayMap;
+import edu.stanford.nlp.util.ArraySet;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class ConllDoc {
     public List<ConllUtt> doc;
-    ConllDoc() { doc = new ArrayList<ConllUtt>(); }
+    public Set<String> loc;
+    ConllDoc() {
+        doc = new ArrayList<ConllUtt>();
+        loc = new ArraySet<String>();
+    }
     void load(String fn, TierParams tp) throws IOException {
         String line = "";
         ConllUtt cu = new ConllUtt();
@@ -22,6 +31,7 @@ public class ConllDoc {
                 } else if ( ConllUtt.linetype(line) == ConllUtt.CONLL_BLANK && cu.words.size() > 0) {
                     // System.err.println("add connl");
                     doc.add(cu);
+                    loc.add(cu.words.get(0).tiers[cu.words.get(0).tiers.length - 1]);
                     cu = new ConllUtt();
                 } else {
                     // System.err.println("add line");

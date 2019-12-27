@@ -39,10 +39,39 @@ public class ImportConllToTei extends ImportToTei {
 
 		TeiDocument xmlDoc;
 
-		if (tparams.metadata != null && !tparams.metadata.isEmpty())
+		if (tparams.metadata != null && !tparams.metadata.isEmpty()) {
 			xmlDoc = new TeiDocument(tparams.metadata, false);
-		else
+			// change elements in listPerson
+			NodeList l = xmlDoc.doc.getElementsByTagName("person");
+			if (l != null) {
+				for (int i = 0; i < l.getLength(); i++) {
+					Element e = (Element)l.item(i);
+					String personName = e.getAttribute("xml:id").trim();
+					String age = TeiDocument.childNodeContent(e, "age").trim();
+					String vage = "40.3";
+					if (age.equals("inconnu")) vage = "40";
+					else if (age.equals("21-60")) vage = "40";
+					else if (age.equals("60+")) vage = "65";
+					else vage = age;
+					e.setAttribute("age", vage);
+					Element ag = TeiDocument.setElement(xmlDoc.doc, e, "altGrp", "");
+					Element a = TeiDocument.setElement(xmlDoc.doc, ag, "alt", "");
+					a.setAttribute("type", personName);
+				}
+			}
+		} else {
 			xmlDoc = new TeiDocument(false);
+			Element l = TeiDocument.childElement(xmlDoc.root, "listPerson");
+			for (String t: clDoc.loc) {
+				Element e = TeiDocument.setElement(xmlDoc.doc, l, "person", "");
+				e.setAttribute("xml:id", t);
+				Element ag = TeiDocument.setElement(xmlDoc.doc, e, "altGrp", "");
+				Element a = TeiDocument.setElement(xmlDoc.doc, ag, "alt", "");
+				a.setAttribute("type", t);
+				e.setAttribute("age", "40");
+				TeiDocument.setElement(xmlDoc.doc, l, "age", "40");
+			}
+		}
 
 		xmlDoc.addNamespace();
 

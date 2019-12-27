@@ -39,15 +39,15 @@ public class TcofInsertMeta {
         // process
         for (int i = 0 ; i < nodelist.getLength(); i++) {
             Element n = (Element)nodelist.item(i);
-            String age = TeiDocument.chidNodeContent(n,"age");
+            String age = TeiDocument.childNodeContent(n,"age");
             String fage = normalizeAge(age);
 
-            String sexe = TeiDocument.chidNodeContent(n,"sexe");
-            String role = TeiDocument.chidNodeContent(n,"role");
+            String sexe = TeiDocument.childNodeContent(n,"sexe");
+            String role = TeiDocument.childNodeContent(n,"role");
 
             // supplements
-            String educ = TeiDocument.chidNodeContent(n, "etude");
-            String nivlang = TeiDocument.chidNodeContent(n, "statut_francais");
+            String educ = TeiDocument.childNodeContent(n, "etude");
+            String nivlang = TeiDocument.childNodeContent(n, "statut_francais");
 
             String id = n.getAttribute("identifiant");
             if (id == null) id = "x"; else id = id.trim();
@@ -169,9 +169,9 @@ public class TcofInsertMeta {
         if (nodelist.getLength() > 0) {
             // should be only one element
             Element n = (Element)nodelist.item(0);
-            String canal = TeiDocument.chidNodeContent(n,"canal");
-            String genre = TeiDocument.chidNodeContent(n,"genre");
-            String degre = TeiDocument.chidNodeContent(n,"degre");
+            String canal = TeiDocument.childNodeContent(n,"canal");
+            String genre = TeiDocument.childNodeContent(n,"genre");
+            String degre = TeiDocument.childNodeContent(n,"degre");
             String find = "//textDesc";
             Element elt;
             try {
@@ -226,7 +226,7 @@ public class TcofInsertMeta {
                     p.setAttribute("ana", purpose);
                 }
             }
-            String cadre = TeiDocument.chidNodeContent(n,"cadre");
+            String cadre = TeiDocument.childNodeContent(n,"cadre");
             find = "/TEI/teiHeader/profileDesc/settingDesc";
             try {
                 elt = (Element) teicorpo.path.evaluate(find, teicorpo.root, XPathConstants.NODE);

@@ -68,7 +68,7 @@ public class TeiDocument {
         }
     }
 
-    static String chidNodeContent(Element e, String nodename) {
+    static String childNodeContent(Element e, String nodename) {
         NodeList l = e.getElementsByTagName(nodename);
         if (l != null && l.getLength() > 0) return l.item(0).getTextContent().trim();
         return "";
