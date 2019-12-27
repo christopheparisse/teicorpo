@@ -25,10 +25,10 @@ public class ImportConllToTei extends ImportToTei {
 	 */
 	// initialise et construit le conllFile et le docTEI
 	public void transform(String conllFileName, TierParams tp) throws Exception {
-		System.err.printf("ConllToTei %s -- %s %n", conllFileName, tp);
+		// System.err.printf("ConllToTei %s -- %s %n", conllFileName, tp);
 		if (tp == null) tp = new TierParams();
 		tparams = (tp != null) ? tp : new TierParams();
-		System.err.printf("metadata: %s%n", tparams.metadata);
+		if (tparams.metadata != null) System.out.printf("metadata: %s%n", tparams.metadata);
 		if (tparams.inputFormat.isEmpty()) tparams.inputFormat = ".orfeo";
         clDoc = new ConllDoc();
 		clDoc.load(conllFileName, tparams);
@@ -61,16 +61,6 @@ public class ImportConllToTei extends ImportToTei {
 			}
 		} else {
 			xmlDoc = new TeiDocument(false);
-			Element l = TeiDocument.childElement(xmlDoc.root, "listPerson");
-			for (String t: clDoc.loc) {
-				Element e = TeiDocument.setElement(xmlDoc.doc, l, "person", "");
-				e.setAttribute("xml:id", t);
-				Element ag = TeiDocument.setElement(xmlDoc.doc, e, "altGrp", "");
-				Element a = TeiDocument.setElement(xmlDoc.doc, ag, "alt", "");
-				a.setAttribute("type", t);
-				e.setAttribute("age", "40");
-				TeiDocument.setElement(xmlDoc.doc, l, "age", "40");
-			}
 		}
 
 		xmlDoc.addNamespace();
@@ -95,6 +85,17 @@ public class ImportConllToTei extends ImportToTei {
 		this.buildTEI(fname);
 		if (tp.metadata == null || tp.metadata.isEmpty()) {
 			this.buildHeader("Fichier TEI obtenu à partir du fichier ORFEO " + fname);
+			Element l = TeiDocument.childElement(rootTEI, "listPerson");
+			System.err.printf("x: %d %s %n",clDoc.loc.size(), clDoc.loc.toString());
+			for (String t: clDoc.loc) {
+				Element e = TeiDocument.setElement(docTEI, l, "person", "");
+				e.setAttribute("xml:id", t);
+				Element ag = TeiDocument.setElement(docTEI, e, "altGrp", "");
+				Element a = TeiDocument.setElement(docTEI, ag, "alt", "");
+				a.setAttribute("type", t);
+				e.setAttribute("age", "40");
+				TeiDocument.setElement(docTEI, l, "age", "40");
+			}
 		}
 		this.buildText(tp);
 		addTemplateDesc(docTEI);

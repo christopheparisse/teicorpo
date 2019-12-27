@@ -5,8 +5,8 @@ import edu.stanford.nlp.util.ArraySet;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 public class ConllDoc {
@@ -14,7 +14,7 @@ public class ConllDoc {
     public Set<String> loc;
     ConllDoc() {
         doc = new ArrayList<ConllUtt>();
-        loc = new ArraySet<String>();
+        loc = new HashSet<String>();
     }
     void load(String fn, TierParams tp) throws IOException {
         String line = "";
