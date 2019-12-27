@@ -88,13 +88,14 @@ public class ImportConllToTei extends ImportToTei {
 			Element l = TeiDocument.childElement(rootTEI, "listPerson");
 			System.err.printf("x: %d %s %n",clDoc.loc.size(), clDoc.loc.toString());
 			for (String t: clDoc.loc) {
+				System.err.printf("Add%s%n",t);
 				Element e = TeiDocument.setElement(docTEI, l, "person", "");
 				e.setAttribute("xml:id", t);
 				Element ag = TeiDocument.setElement(docTEI, e, "altGrp", "");
 				Element a = TeiDocument.setElement(docTEI, ag, "alt", "");
 				a.setAttribute("type", t);
 				e.setAttribute("age", "40");
-				TeiDocument.setElement(docTEI, l, "age", "40");
+				TeiDocument.setElement(docTEI, e, "age", "40");
 			}
 		}
 		this.buildText(tp);
