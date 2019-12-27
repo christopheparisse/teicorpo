@@ -228,13 +228,13 @@ public class TeiToTxm extends TeiConverter {
 		// début et un temps de fin
 		if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
-			u.setAttribute("start", Double.toString(Double.parseDouble(startTime)));
-			u.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
+			u.setAttribute("startTime", Double.toString(Double.parseDouble(startTime)));
+			u.setAttribute("endTime", Double.toString(Double.parseDouble(endTime)));
 			// u.setTextContent(speechContent);
 		} else {
 			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
-			u.setAttribute("start", "");
-			u.setAttribute("end", "");
+			u.setAttribute("startTime", "");
+			u.setAttribute("endTime", "");
 			// u.setTextContent(speechContent);
 		}
 		// u.setAttribute("loc", loc);
@@ -260,22 +260,7 @@ public class TeiToTxm extends TeiConverter {
 		if (optionsOutput.syntaxformat.equals("conll") && tier.name.equals("conll")) {
 			// System.out.println("writeTier2: " + tier.toString());
 			// get loc age
-			String age = "";
-			ArrayList<TeiParticipant> part = getParticipants();
-			for (TeiParticipant tp: part) {
-				if (tp == null || tp.id == null || au.speakerCode == null) continue;
-				if (tp.id.equals(au.speakerCode)) {
-					// normalize age for TXM
-					try {
-						float fage = Float.parseFloat(tp.age);
-						String sage = String.format("%04.1f",fage);
-						age = sage;
-					} catch (Exception e) {
-						System.err.printf("Warning: age is not a standard number: %s%n", tp.age);
-						age = tp.age;
-					}
-				}
-			}
+			String age = getLocAge(au.speakerCode);
 			Element u = generateUStart(au.speakerCode, au.start, au.end, age);
 			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
 			// tier.name
@@ -335,22 +320,7 @@ public class TeiToTxm extends TeiConverter {
 		} else if (optionsOutput.syntaxformat.equals("ref") && tier.name.equals("ref")) {
 			// System.err.println("writeTier3: " + tier.toString());
 			// get loc age
-			String age = "";
-			ArrayList<TeiParticipant> part = getParticipants();
-			for (TeiParticipant tp: part) {
-				if (tp == null || tp.id == null || au.speakerCode == null) continue;
-				if (tp.id.equals(au.speakerCode)) {
-					// normalize age for TXM
-					try {
-						float fage = Float.parseFloat(tp.age);
-						String sage = String.format(Locale.US, "%04.1f",fage);
-						age = sage;
-					} catch (Exception e) {
-						System.err.printf("Warning: age is not a standard number: %s%n", tp.age);
-						age = tp.age;
-					}
-				}
-			}
+			String age = getLocAge(au.speakerCode);
 			Element u = generateUStart(au.speakerCode, au.start, au.end, age);
 			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
 			// tier.name
@@ -362,15 +332,7 @@ public class TeiToTxm extends TeiConverter {
 					// we.setTextContent(w);
 					we.setTextContent("["+spkcode+"]");
                     if (optionsOutput.tiernamescontent) {
-                        if (!au.speakerCode.isEmpty()) {
-                            we.setAttribute("loc", spkcode);
-                            we.setAttribute("age", age);
-                        }
-                        for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
-                            String key = entry.getKey();
-                            String value = entry.getValue();
-                            we.setAttribute(key, value);
-                        }
+                    	setCodeAndTv(au, we, spkcode, age);
 						we.setAttribute("pos", "SENT");
 						we.setAttribute("lemma", "_");
                     }
@@ -382,15 +344,7 @@ public class TeiToTxm extends TeiConverter {
 						Element wo = (Element)w;
 						Element we = txmDoc.createElement("w");
 //						System.err.println(w.toString() + "++" + w.getTextContent());
-						if (!au.speakerCode.isEmpty()) {
-							we.setAttribute("loc", spkcode);
-							we.setAttribute("age", age);
-						}
-						for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
-						    String key = entry.getKey();
-						    String value = entry.getValue().replaceAll("[ _]", "-");
-							we.setAttribute(key, value);
-						}
+						setCodeAndTv(au, we, spkcode, age);
 						String m = wo.getAttribute("pos");
 						m = m.trim().replaceAll("[ _]", "-");
 						we.setAttribute("pos", m);
@@ -410,6 +364,18 @@ public class TeiToTxm extends TeiConverter {
 				}
 			}
 			//System.out.println(u);
+		}
+	}
+
+	private void setCodeAndTv(AnnotatedUtterance au, Element we, String spkcode, String age) {
+		if (!au.speakerCode.isEmpty()) {
+			we.setAttribute("loc", spkcode);
+			we.setAttribute("age", age);
+		}
+		for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+			String key = entry.getKey();
+			String value = entry.getValue();
+			we.setAttribute(key, value);
 		}
 	}
 
@@ -482,6 +448,19 @@ public class TeiToTxm extends TeiConverter {
 	}
 
 	void generateU(Element u, String speechContent, String loc) {
+		if (optionsOutput.utterance) {
+			// do not split line
+			if (optionsOutput.tiernames)
+				u.setTextContent("["+loc+"]" + speechContent);
+			else
+				u.setTextContent(speechContent);
+			if (optionsOutput.tiernamescontent) {
+				String age = getLocAge(loc);
+				setLocAndTv(u, loc, age);
+			}
+			return;
+		}
+
 		/*
 		 * Tokenize the line.
 		 */
@@ -491,6 +470,27 @@ public class TeiToTxm extends TeiConverter {
 		/*
 		 * write word information
 		 */
+		String age = getLocAge(loc);
+		if (optionsOutput.tiernames) {
+			Element we = txmDoc.createElement("w");
+			// we.setTextContent(w);
+			we.setTextContent("["+loc+"]");
+    		if (optionsOutput.tiernamescontent) {
+				setLocAndTv(we, loc, age);
+            }
+			u.appendChild(we);
+		}
+		// for (String w: s) {
+		for (int ti = 0; ti < p.size(); ti++) {
+			Element we = txmDoc.createElement("w");
+			// we.setTextContent(w);
+			we.setTextContent(p.get(ti));
+			setLocAndTv(we, loc, age);
+			u.appendChild(we);
+		}
+	}
+
+	private String getLocAge(String loc) {
 		// get loc age
 		String age = "";
 		ArrayList<TeiParticipant> part = getParticipants();
@@ -508,50 +508,27 @@ public class TeiToTxm extends TeiConverter {
 				}
 			}
 		}
-		if (optionsOutput.tiernames) {
-			Element we = txmDoc.createElement("w");
-			// we.setTextContent(w);
-			we.setTextContent("["+loc+"]");
-    		if (optionsOutput.tiernamescontent) {
-                if (!loc.isEmpty()) {
-                    we.setAttribute("loc", loc);
-                    we.setAttribute("age", age);
-                }
-                for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
-                    String key = entry.getKey();
-                    String value = entry.getValue();
-                    we.setAttribute(key, value);
-                }
-                if (!typeDiv.isEmpty())
-                    we.setAttribute("div", typeDiv);
-            }
-			u.appendChild(we);
+		return age;
+	}
+
+	private void setLocAndTv(Element we, String loc, String age) {
+		if (!loc.isEmpty()) {
+			we.setAttribute("loc", loc);
+			we.setAttribute("age", age);
 		}
-		// for (String w: s) {
-		for (int ti = 0; ti < p.size(); ti++) {
-			Element we = txmDoc.createElement("w");
-			// we.setTextContent(w);
-			we.setTextContent(p.get(ti));
-			if (!loc.isEmpty()) {
-				we.setAttribute("loc", loc);
-				we.setAttribute("age", age);
-			}
-			for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
-			    String key = entry.getKey();
-			    String value = entry.getValue();
-				we.setAttribute(key, value);
-			}
-			if (!typeDiv.isEmpty())
-				we.setAttribute("div", typeDiv);
-			u.appendChild(we);
+		for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+			String key = entry.getKey();
+			String value = entry.getValue();
+			we.setAttribute(key, value);
 		}
+		if (!typeDiv.isEmpty())
+			we.setAttribute("div", typeDiv);
 	}
 
 	/**
 	 * Ecriture des tiers: lignes qui commencent par le signe pourcent %
 	 * 
-	 * @param tier
-	 *            Le tier à écrire, au format : Nom du tier \t Contenu du tier
+	 * Le tier à écrire, au format : Nom du tier \t Contenu du tier
 	 * Pas pour l'instant dans txm
 	public void writeTier(Annot tier) {
 		if (optionsOutput != null) {

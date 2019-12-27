@@ -1,10 +1,7 @@
 package fr.ortolang.teicorpo;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * local temporary structures description of relation between tiers
@@ -69,10 +66,10 @@ class TierParams {
 	boolean nospreadtime;
 	boolean detectEncoding;
 	boolean clearChatFormat;
-	HashSet<String> commands;  // for -c parameter
-	HashSet<String> doDisplay;
-	HashSet<String> dontDisplay;
-	TreeMap<String, String> tv;
+	Set<String> commands;  // for -c parameter
+	Set<String> doDisplay;
+	Set<String> dontDisplay;
+	Map<String, String> tv;
 	int level;
 	boolean raw;
 	boolean noHeader;
@@ -84,7 +81,7 @@ class TierParams {
 	boolean dtdValidation;
 	boolean erase;
 	boolean eraseDone;
-	ArrayList<DescTier> ldt = new ArrayList<DescTier>();
+	List<DescTier> ldt;
 	boolean shortextension;
 	String defaultAge;
 	String situation;
@@ -105,6 +102,9 @@ class TierParams {
 	String metadata;
 	boolean writtentext;
 	String purpose;
+	boolean mediacontrol;
+	Set<String> mv; // list of values
+	boolean utterance;
 
 	TierParams() {
 		noerror = false;
@@ -157,6 +157,10 @@ class TierParams {
 		baseName = "";
 		writtentext = false;
 		purpose = "";
+		mediacontrol = false;
+		mv = new HashSet<String>();
+		ldt = new ArrayList<DescTier>();
+		utterance = false;
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -191,7 +195,7 @@ class TierParams {
 		return s;
 	}
 	
-	private static boolean test(String s, HashSet<String> dd) {
+	private static boolean test(String s, Set<String> dd) {
 		s = s.toLowerCase();
 		for (String f: dd) {
 			//System.out.printf("%s %s%n", s, f);
@@ -297,11 +301,14 @@ class TierParams {
 		}
 		if (style == 2) {
 			System.err.println("         *** parameter for export to TXM/Iramuteq/Le Trameur ***");
+			System.err.println("         -utt: utterance format (not words)");
 			System.err.println("         -tv \"type:value\" : a parameter type:value is added to <u> or <w> tags for txm or lexico or le trameur");
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tiernamescontent : add all fields in tiernames as for other words");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
+			System.err.println("         -mediacontrol: add startTime information");
+			System.err.println("         -mv \"field\": insert metadata 'field' into u tags");
 		}
 		if (style == 6) {
 			System.err.println("         *** parameters for export in Iramuteq ***");
@@ -456,6 +463,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-f")) {
+						i++;
+						continue;
+					} else if (argument.equals("-mv")) {
 						i++;
 						continue;
 					} else if (argument.equals("-tv")) {
@@ -672,6 +682,14 @@ class TierParams {
 						}
 						i++;
 						options.addTv(args[i]);
+					} else if (argument.equals("-mv")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -mv is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						options.mv.add(args[i]);
 					} else if (argument.equals("-f")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -f is not followed by a value");
@@ -705,6 +723,12 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-writentext")) {
 						options.writtentext = true;
+						continue;
+					} else if (argument.equals("-mediacontrol")) {
+						options.mediacontrol = true;
+						continue;
+					} else if (argument.equals("-utt") || argument.equals("-utterance")) {
+						options.utterance = true;
 						continue;
 					} else if (argument.equals("-tiernames")) {
 						options.tiernames = true;
@@ -837,7 +861,7 @@ class TierParams {
 		return true;
 	}
 
-	public static boolean getTierParams(String fn, ArrayList<DescTier> ldt, TierParams pr) {
+	public static boolean getTierParams(String fn, List<DescTier> ldt, TierParams pr) {
 		List<String> ls = null;
 		try {
 			ls = Utils.loadTextFile(fn);
