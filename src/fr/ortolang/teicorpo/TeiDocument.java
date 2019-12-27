@@ -80,13 +80,22 @@ public class TeiDocument {
         return null;
     }
 
+    static Element createElement(Document doc, Element top, String s, String v) {
+        Element e = doc.createElement(s);
+        top.appendChild(e);
+        if (!v.isEmpty())
+            e.setTextContent(v);
+        return e;
+    }
+
     static Element setElement(Document doc, Element top, String s, String v) {
         Element e = childElement(top, s);
         if (e == null) {
             e = doc.createElement(s);
             top.appendChild(e);
         }
-        e.setTextContent(v);
+        if (!v.isEmpty())
+            e.setTextContent(v);
         return e;
     }
 

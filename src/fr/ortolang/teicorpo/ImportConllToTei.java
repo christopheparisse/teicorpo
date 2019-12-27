@@ -86,17 +86,18 @@ public class ImportConllToTei extends ImportToTei {
 		if (tp.metadata == null || tp.metadata.isEmpty()) {
 			this.buildHeader("Fichier TEI obtenu à partir du fichier ORFEO " + fname);
 			Element l = TeiDocument.childElement(rootTEI, "listPerson");
-			System.err.printf("x: %d %s %n",clDoc.loc.size(), clDoc.loc.toString());
+//			System.err.printf("x: %d %s %n",clDoc.loc.size(), clDoc.loc.toString());
 			for (String t: clDoc.loc) {
-				System.err.printf("Add%s%n",t);
-				Element e = TeiDocument.setElement(docTEI, l, "person", "");
+//				System.err.printf("Add %s%n",t);
+				Element e = TeiDocument.createElement(docTEI, l, "person", "");
 				e.setAttribute("xml:id", t);
-				Element ag = TeiDocument.setElement(docTEI, e, "altGrp", "");
-				Element a = TeiDocument.setElement(docTEI, ag, "alt", "");
+				Element ag = TeiDocument.createElement(docTEI, e, "altGrp", "");
+				Element a = TeiDocument.createElement(docTEI, ag, "alt", "");
 				a.setAttribute("type", t);
 				e.setAttribute("age", "40");
-				TeiDocument.setElement(docTEI, e, "age", "40");
+				TeiDocument.createElement(docTEI, e, "age", "40");
 			}
+//			TeiDocument.createFile("toto.xml", docTEI);
 		}
 		this.buildText(tp);
 		addTemplateDesc(docTEI);
