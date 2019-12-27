@@ -132,7 +132,7 @@ public class ClanToTei extends ImportToTei {
 	// IOException{
 	public void conversion(String extension) throws DOMException, IOException {
 		buildTEI(chatFN);
-		buildHeader("Fichier TEI obtenu à partir du fichier CLAN " + chatFN);
+		buildHeader("Fichier TEI obtenu à partir du fichier CLAN " + chatFN, false);
 		setFileDescComplement();
 		buildText(extension);
 		setDurDate();

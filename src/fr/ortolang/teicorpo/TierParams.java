@@ -103,6 +103,8 @@ class TierParams {
 	boolean tiernames;
     boolean tiernamescontent;
 	String metadata;
+	boolean writtentext;
+	String purpose;
 
 	TierParams() {
 		noerror = false;
@@ -153,6 +155,8 @@ class TierParams {
 		metadata = null;
 		outputTEIName = null;
 		baseName = "";
+		writtentext = false;
+		purpose = "";
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -242,6 +246,10 @@ class TierParams {
 	}
 	
 	public static void printUsageMessage(String mess, String ext1, String ext2, int style) {
+		if (style == 10) {
+			System.err.println(mess);
+			return;
+		}
 		System.err.printf(mess);
 		System.err.println("         (without option or -i) name of the file or directory where are located the TEI files to be converted.");
 		if (!ext1.isEmpty())
@@ -309,6 +317,7 @@ class TierParams {
 			System.err.println("         -program name : executable file for syntax");
 		}
 		if (style == 8) {
+			System.err.println("         ImportConllToTei connl_file -metadata connl_meta%n");
 			System.err.println("         -absolute : syntax of included tools/ library in html");
 		}
 		if (style == 9) {
@@ -328,6 +337,10 @@ class TierParams {
 	}
 	
 	public static void frPrintUsageMessage(String mess, String ext1, String ext2, int style) {
+		if (style == 10) {
+			System.err.println(mess);
+			return;
+		}
 		System.err.printf(mess);
 		System.err.println("         :(sans option ou -i) nom du fichier ou repertoire où se trouvent les fichiers Tei à convertir.");
 		if (!ext1.isEmpty())
@@ -482,6 +495,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-situation")) {
+						i++;
+						continue;
+					} else if (argument.equals("-purpose")) {
 						i++;
 						continue;
 					} else if (argument.equals("-t")) {
@@ -640,6 +656,14 @@ class TierParams {
 						}
 						i++;
 						options.situation = args[i];
+					} else if (argument.equals("-purpose")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -purpose is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						options.purpose = args[i];
 					} else if (argument.equals("-tv")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -tv is not followed by a value");
@@ -678,6 +702,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-rawline")) {
 						options.rawLine = true;
+						continue;
+					} else if (argument.equals("-writentext")) {
+						options.writtentext = true;
 						continue;
 					} else if (argument.equals("-tiernames")) {
 						options.tiernames = true;

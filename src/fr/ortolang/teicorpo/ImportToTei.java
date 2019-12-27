@@ -176,11 +176,11 @@ public abstract class ImportToTei extends GenericMain {
 	 * @throws IOException
 	 * @throws DOMException
 	 */
-	public void buildHeader(String info) throws DOMException, IOException {
+	public void buildHeader(String info, boolean written) throws DOMException, IOException {
 		////// Mise à jour de l'élémentFileDesc: titre + info enregistrement+
 		////// date + lieu+ éventuelles notes
 		setFileDesc(info);
-		setProfileDesc();
+		setProfileDesc(written);
 		setEncodingDesc();
 	}
 
@@ -241,12 +241,12 @@ public abstract class ImportToTei extends GenericMain {
 	 * Contient les informations sur les s et les situations de
 	 * l'enregistrement.
 	 */
-	public void setProfileDesc() {
+	public void setProfileDesc(boolean written) {
 		Element profileDesc = (Element) docTEI.getElementsByTagName("profileDesc").item(0);
 		setSettingDesc(profileDesc);
 		Element particDesc = (Element) docTEI.getElementsByTagName("particDesc").item(0);
 		if (particDesc == null)
-			setStmtWrittenText(profileDesc);
+			setParticDesc(profileDesc, written);
 	}
 
 	/**
@@ -254,30 +254,32 @@ public abstract class ImportToTei extends GenericMain {
 	 * 
 	 * @param profileDesc
 	 */
-	public void setStmtWrittenText(Element profileDesc) {
+	public void setParticDesc(Element profileDesc, boolean written) {
 		Element particDesc = docTEI.createElement("particDesc");
 		profileDesc.appendChild(particDesc);
 		Element listPerson = docTEI.createElement("listPerson");
 		particDesc.appendChild(listPerson);
 
-		Element person = docTEI.createElement("person");
-		listPerson.appendChild(person);
-		Element name = docTEI.createElement("persName");
-		name.setTextContent("writtentext");
-		person.appendChild(name);
-		person.setAttribute("source", "orfeo");
-		Element altGrp = docTEI.createElement("altGrp");
-		Element alt = docTEI.createElement("alt");
-		alt.setAttribute("type", "writtentext");
-		person.appendChild(altGrp);
-		altGrp.appendChild(alt);
-		Element langKnowledge = docTEI.createElement("langKnowledge");
-		Element langKnown = docTEI.createElement("langKnown");
-		langKnown.setTextContent("français");
-		langKnown.setAttribute("tag", "fra");
-		langKnowledge.appendChild(langKnown);
-		person.appendChild(langKnowledge);
-		person.setAttribute("sex", "9");
+		if (written == true) {
+			Element person = docTEI.createElement("person");
+			listPerson.appendChild(person);
+			Element name = docTEI.createElement("persName");
+			name.setTextContent("writtentext");
+			person.appendChild(name);
+			person.setAttribute("source", "orfeo");
+			Element altGrp = docTEI.createElement("altGrp");
+			Element alt = docTEI.createElement("alt");
+			alt.setAttribute("type", "writtentext");
+			person.appendChild(altGrp);
+			altGrp.appendChild(alt);
+			Element langKnowledge = docTEI.createElement("langKnowledge");
+			Element langKnown = docTEI.createElement("langKnown");
+			langKnown.setTextContent("français");
+			langKnown.setAttribute("tag", "fra");
+			langKnowledge.appendChild(langKnown);
+			person.appendChild(langKnowledge);
+			person.setAttribute("sex", "9");
+		}
 	}
 
 	/**

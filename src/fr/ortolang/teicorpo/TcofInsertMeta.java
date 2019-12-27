@@ -265,12 +265,22 @@ public class TcofInsertMeta {
 
     public static void main(String args[]) {
         // parcours des arguments
-        if (args.length < 3) {
-            System.err.println("Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta tcof_metadata_file teicorpo_xml_file teicorpo_result_file [purpose]");
-            System.err.println("Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.");
+        String usageString = "Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta teicorpo_xml_file -metadata tcof_metadata_file -o teicorpo_result_file -p purpose"
+            + "Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.";
+        TierParams options = new TierParams();
+        // Parcours des arguments
+        if (!TierParams.processArgs(args, options, usageString, ".tei_corpo.xml", ".tei_corpo.xml", 10)) {
+            if (!options.noerror) return;
+        }
+        if (options.input.size() != 1 || options.metadata == null || options.metadata.isEmpty()) {
+            System.err.println("No input file or more than one input file. One metadata file is also required.");
             return;
         }
+        if (options.output == null) {
+            options.output = options.input.get(0) + ".tei_corpo2.xml";
+        }
+        System.out.printf("Insertion of %s in %s := results in %s%n", options.metadata, options.input.get(0), options.output);
         TcofInsertMeta tim = new TcofInsertMeta();
-        tim.process( args[0], args[1], args[2], args.length > 3 ? args[3] : "");
+        tim.process( options.input.get(0), options.metadata, options.output, options.purpose);
     }
 }

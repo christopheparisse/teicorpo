@@ -84,11 +84,9 @@ public class ImportConllToTei extends ImportToTei {
 	public void conversion(TierParams tp, String fname) throws DOMException, IOException {
 		this.buildTEI(fname);
 		if (tp.metadata == null || tp.metadata.isEmpty()) {
-			this.buildHeader("Fichier TEI obtenu à partir du fichier ORFEO " + fname);
+			this.buildHeader("Fichier TEI obtenu à partir du fichier ORFEO " + fname, tp.writtentext);
 			Element l = TeiDocument.childElement(rootTEI, "listPerson");
-//			System.err.printf("x: %d %s %n",clDoc.loc.size(), clDoc.loc.toString());
 			for (String t: clDoc.loc) {
-//				System.err.printf("Add %s%n",t);
 				Element e = TeiDocument.createElement(docTEI, l, "person", "");
 				e.setAttribute("xml:id", t);
 				Element ag = TeiDocument.createElement(docTEI, e, "altGrp", "");
@@ -97,7 +95,6 @@ public class ImportConllToTei extends ImportToTei {
 				e.setAttribute("age", "40");
 				TeiDocument.createElement(docTEI, e, "age", "40");
 			}
-//			TeiDocument.createFile("toto.xml", docTEI);
 		}
 		this.buildText(tp);
 		addTemplateDesc(docTEI);
