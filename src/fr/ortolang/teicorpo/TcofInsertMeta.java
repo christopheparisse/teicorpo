@@ -50,19 +50,29 @@ public class TcofInsertMeta {
             String nivlang = TeiDocument.childNodeContent(n, "statut_francais");
 
             String id = n.getAttribute("identifiant");
-            if (id == null) id = "x"; else id = id.trim().toLowerCase();
+            if (id == null) id = "x"; else id = id.trim(); //.toLowerCase();
             String locp = n.getAttribute("locuteurPrincipal");
             if (locp == null) locp = ""; else locp = locp.trim();
 
             System.out.printf(":=|%d|%s|%s|%s|%s|%s|%n", i, n.getNodeName(), age, sexe, role, id, locp);
-
-            String findloc = "//listPerson/person[lower-case(persName)='" + id + "']";
+            String findloc = "//listPerson/person[persName='" + id + "']";
             Element part;
             try {
                 part = (Element) teicorpo.path.evaluate(findloc, teicorpo.root, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
                 e.printStackTrace();
                 return;
+            }
+            if (part == null) {
+                // try lowercase
+                findloc = "//listPerson/person[persName='" + id.toLowerCase() + "']";
+//            String findloc = "//listPerson/person[lower-case(persName)='" + id + "']";
+                try {
+                    part = (Element) teicorpo.path.evaluate(findloc, teicorpo.root, XPathConstants.NODE);
+                } catch (XPathExpressionException e) {
+                    e.printStackTrace();
+                    return;
+                }
             }
             if (part != null) {
                 // System.out.printf("?=|%s|%s|%n", part.getNodeName(), part.getTextContent());
@@ -76,7 +86,7 @@ public class TcofInsertMeta {
                 TeiDocument.setElement(teicorpo.doc, part, "role", role);
 
                 String tag = "XXX";
-                if (role.equals("Apprenant")) {
+                if (role.toLowerCase().equals("apprenant")) {
                     if (firstchifound == false) {
                         firstchifound = true;
                         tag = "CHI";
