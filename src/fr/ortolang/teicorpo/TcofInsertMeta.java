@@ -50,13 +50,13 @@ public class TcofInsertMeta {
             String nivlang = TeiDocument.childNodeContent(n, "statut_francais");
 
             String id = n.getAttribute("identifiant");
-            if (id == null) id = "x"; else id = id.trim();
+            if (id == null) id = "x"; else id = id.trim().toLowerCase();
             String locp = n.getAttribute("locuteurPrincipal");
             if (locp == null) locp = ""; else locp = locp.trim();
 
             System.out.printf(":=|%d|%s|%s|%s|%s|%s|%n", i, n.getNodeName(), age, sexe, role, id, locp);
 
-            String findloc = "//listPerson/person[persName='" + id + "']";
+            String findloc = "//listPerson/person[lower-case(persName)='" + id + "']";
             Element part;
             try {
                 part = (Element) teicorpo.path.evaluate(findloc, teicorpo.root, XPathConstants.NODE);
@@ -81,11 +81,27 @@ public class TcofInsertMeta {
                         firstchifound = true;
                         tag = "CHI";
                     } else {
-                        tag = "CHI" + (i+1);
+                        tag = "CHI" + (i + 1);
                     }
                     if (age.isEmpty()) {
                         age = "10 ans ?";
                         fage = "10.0";
+                    }
+                } else if (role.isEmpty()) {
+                    if (age.isEmpty() || Double.parseDouble(fage) >= 16.0) {
+                        if (firstadufound == false) {
+                            firstadufound = true;
+                            tag = "ADU";
+                        } else {
+                            tag = "ADU" + (i + 1);
+                        }
+                    } else {
+                        if (firstchifound == false) {
+                            firstchifound = true;
+                            tag = "CHI";
+                        } else {
+                            tag = "CHI" + (i+1);
+                        }
                     }
                 } else {
                     if (firstadufound == false) {
@@ -265,8 +281,8 @@ public class TcofInsertMeta {
 
     public static void main(String args[]) {
         // parcours des arguments
-        String usageString = "Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta teicorpo_xml_file -metadata tcof_metadata_file -o teicorpo_result_file -p purpose"
-            + "Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.";
+        String usageString = "Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta teicorpo_xml_file -metadata tcof_metadata_file -o teicorpo_result_file -p purpose\n"
+            + "Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.\n";
         TierParams options = new TierParams();
         // Parcours des arguments
         if (!TierParams.processArgs(args, options, usageString, ".tei_corpo.xml", ".tei_corpo.xml", 10)) {
@@ -281,6 +297,6 @@ public class TcofInsertMeta {
         }
         System.out.printf("Insertion of %s in %s := results in %s%n", options.metadata, options.input.get(0), options.output);
         TcofInsertMeta tim = new TcofInsertMeta();
-        tim.process( options.input.get(0), options.metadata, options.output, options.purpose);
+        tim.process( options.metadata,  options.input.get(0), options.output, options.purpose);
     }
 }

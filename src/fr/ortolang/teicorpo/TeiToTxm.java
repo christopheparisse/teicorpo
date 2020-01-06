@@ -358,15 +358,15 @@ public class TeiToTxm extends TeiConverter {
 
 	private void setTv(Element we) {
 		// fixed values to be added
-		for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 			String key = entry.getKey();
-			String value = entry.getValue().replaceAll("[ _]", "-");
+			String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 			we.setAttribute(key, value);
 		}
 		// metadata values to be added
-		for (Map.Entry<String, String> entry : optionsOutput.mv.entrySet()) {
+		for (Map.Entry<String, ValSpk> entry : optionsOutput.mv.entrySet()) {
 			String key = entry.getKey();
-			we.setAttribute(key, entry.getValue());
+			we.setAttribute(key, entry.getValue().genericvalue);
 		}
 	}
 

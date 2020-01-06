@@ -1,11 +1,13 @@
 package fr.ortolang.teicorpo;
 
-import org.w3c.dom.NodeList;
+import org.w3c.dom.Node;
 
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * local temporary structures description of relation between tiers
@@ -55,6 +57,17 @@ class DescTier {
 	}
 }
 
+class ValSpk {
+	Map<String, String> list; // hash of speaker names with the associated value
+	String genericspk;
+	String genericvalue;
+	ValSpk() {
+		genericspk = "";
+		genericvalue = "";
+		list = new HashMap<String, String>();
+	}
+}
+
 class TierParams {
     public String baseName;
     String outputTEIName;
@@ -73,7 +86,6 @@ class TierParams {
 	Set<String> commands;  // for -c parameter
 	Set<String> doDisplay;
 	Set<String> dontDisplay;
-	Map<String, String> tv; // list of values to be added in the result file
 	int level;
 	boolean raw;
 	boolean noHeader;
@@ -107,7 +119,8 @@ class TierParams {
 	boolean writtentext;
 	String purpose;
 	boolean mediacontrol;
-	Map<String, String> mv; // // list of values extracted from the metadata to be added in the result file
+	Map<String, ValSpk> tv; // list of values to be added in the result file
+	Map<String, ValSpk> mv; // // list of values extracted from the metadata to be added in the result file
 	boolean utterance;
 
 	TierParams() {
@@ -134,7 +147,6 @@ class TierParams {
 		concat = false;
 		erase = true;
 		eraseDone = false;
-		tv = new TreeMap<String, String>();
 		locutor = false;
 		dtdValidation = false;
 		outputFormat = "";
@@ -162,7 +174,8 @@ class TierParams {
 		writtentext = false;
 		purpose = "";
 		mediacontrol = false;
-		mv = new TreeMap<String, String>();
+		tv = new TreeMap<String, ValSpk>();
+		mv = new TreeMap<String, ValSpk>();
 		ldt = new ArrayList<DescTier>();
 		utterance = false;
 	}
@@ -174,17 +187,6 @@ class TierParams {
 	}
 	void addDontDisplay(String s) {
 		dontDisplay.add(s.toLowerCase());
-	}
-	void addPair(Map<String, String> list, String info) {
-		int p = info.indexOf(":");
-		if (p<1 || p >= info.length()) {
-			p = info.indexOf("=");
-			if (p<1 || p >= info.length()) {
-				System.err.println("error: txm information ignored (missing : or =) => " + info);
-				return;
-			}
-		}
-		list.put(info.substring(0, p), info.substring(p+1));
 	}
 	void setLevel(int l) {
 		level = l;
@@ -309,8 +311,9 @@ class TierParams {
 		if (style == 2) {
 			System.err.println("         *** parameter for export to TXM/Iramuteq/Le Trameur ***");
 			System.err.println("         -utt: utterance format (not words)");
-			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
-			System.err.println("         -mv \"type:field\": type: value of metadata 'field' added to <u>, <w>, and <div> tags (field is an xpath expression)");
+			System.err.println("         -tv \"type:value:speaker\" type and value are obligatory. speaker is optional and can also be * for all speakers");
+			System.err.println("         -mv \"type:metadatafield:speaker\": field is a metadata value (it is an xpath expression. if it does not begin with / it is looked for everywhere)");
+			System.err.println("              For the two parameters above the pairs type+value are added to <u>, <w>, <div> tags for txm or lexico or le trameur");
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tiernamescontent : add all fields in tiernames as for other words");
@@ -934,31 +937,144 @@ class TierParams {
 		return true;
 	}
 
+	void addPair(Map<String, ValSpk> list, String info) {
+		Pattern pattern = Pattern.compile("(.*)[=:](.*)[=:](.*)");
+		Matcher matcher = pattern.matcher(info);
+		//System.out.println(line);
+		if (matcher.matches()) { // option with a speaker
+			// create an new entry
+			if (list.containsKey(matcher.group(1))) {
+				System.err.println("warning: key information already specified : " + info);
+				ValSpk vs = list.get(matcher.group(1));
+				if (matcher.group(3).equals("*")) {
+					System.err.println("warning: key information about speaker was already provided : " + info);
+					vs.genericspk = "*";
+					return;
+				}
+				// update value
+				vs.list.put(matcher.group(3), matcher.group(2));
+				return;
+			}
+			ValSpk vs = new ValSpk();
+			vs.genericvalue = matcher.group(2);
+			if (matcher.group(3).equals("*")) {
+				vs.genericspk = "*";
+			} else {
+				vs.genericspk = "-";
+				vs.list.put(matcher.group(3), matcher.group(2));
+			}
+			list.put(matcher.group(1), vs);
+			return;
+		}
+		pattern = Pattern.compile("(.*)[=:](.*)");
+		matcher = pattern.matcher(info);
+		//System.out.println(line);
+		if (matcher.matches()) { // option without a speaker
+			// create an new entry
+			if (list.containsKey(matcher.group(1))) {
+				System.err.println("error: key information already specified (not possible without speaker information) : " + info);
+				return;
+			}
+			ValSpk vs = new ValSpk();
+			vs.genericspk = "";
+			vs.genericvalue = matcher.group(2);
+			list.put(matcher.group(1), vs);
+			return;
+		}
+		System.err.println("error: type:value:speaker information ignored (missing : or =) => " + info);
+		return;
+	}
+
 	public void computeMvValues(TeiFile tf) {
 		// metadata values to be added
-		for (Map.Entry<String, String> entry : mv.entrySet()) {
-			String entryxpath = entry.getValue();
-			// find entryxpath in metadata
-			if (!entryxpath.startsWith("/")) entryxpath = "//" + entryxpath;
-			String value;
-			try {
-				value = (String)tf.xpath.evaluate(entryxpath, tf.root, XPathConstants.STRING);
-			} catch (XPathExpressionException e) {
-				// not found or error ?
-				System.err.printf("Error finding entry: %s%n", e.toString());
-				//e.printStackTrace();
-				mv.remove(entry);
-				continue;
+		for (Map.Entry<String, ValSpk> entry : mv.entrySet()) {
+			// three cases:
+			// -- without any loc value
+			// -- with one or several loc values
+			// -- for all loc values
+			ValSpk vsxpath = entry.getValue();
+			if (vsxpath.genericspk.isEmpty()) {
+				// no loc value
+				String s = getXpathValue(tf, vsxpath.genericvalue);
+				if (s == null) {
+					System.err.printf("Remove incorrect parameter: %s:%s%n", entry.getKey(), vsxpath.genericspk);
+					mv.remove(entry);
+				} else {
+					vsxpath.genericvalue = s;
+				}
 			}
-			if (value == null || value.isEmpty()) {
-				System.err.printf("Cannot find entry: %s%n", entry);
-				mv.remove(entry);
-				continue;
+			if (vsxpath.genericspk.equals("-")) {
+				// for all declared speakers
+				for (Map.Entry<String, String> e : vsxpath.list.entrySet()) {
+					// a specific key:loc value:metadata
+					String s = getXpathValueLoc(tf, e.getValue(), e.getKey());
+					if (s == null) {
+						System.err.printf("Entry not found for: %s:%s%n", e.getValue(), e.getKey());
+					} else {
+						e.setValue(s);
+					}
+				}
 			}
-			value = value.replaceAll("[ _]", "-");
-			System.err.printf("Found for %s: [%s]=(%s) [%s]%n", entry.getKey(), entryxpath, value, Utils.setEntities(value));
-			entry.setValue(value);
-//			entry.setValue(Utils.setEntities(value));
 		}
+	}
+
+	String getXpathValueLoc(TeiFile tf, String pth, String loc) {
+		// find the loc
+		Node locnode;
+		String locplace = "//person[/altGrp/alt/text()='" + loc + "']";
+		try {
+			locnode = (Node)tf.xpath.evaluate(locplace, tf.root, XPathConstants.NODE);
+		} catch (XPathExpressionException e) {
+			// not found or error ?
+			System.err.printf("Error finding speaker %s (%s) %s%n", loc, locplace, e.toString());
+			//e.printStackTrace();
+			return null;
+		}
+		if (locnode == null) {
+			System.err.printf("Cannot find entry: %s (%s)%n", loc, locplace);
+			return null;
+		}
+
+		// find pth in metadata
+		if (!pth.startsWith(".")) pth = ".//" + pth;
+		String value;
+		try {
+			value = (String)tf.xpath.evaluate(pth, locnode, XPathConstants.STRING);
+		} catch (XPathExpressionException e) {
+			// not found or error ?
+			System.err.printf("Error finding entry: %s%n", e.toString());
+			//e.printStackTrace();
+			return null;
+		}
+		if (value == null || value.isEmpty()) {
+			System.err.printf("Cannot find entry: %s%n", pth);
+			return null;
+		}
+		value = value.replaceAll("[ _]", "-");
+		System.out.printf("Found for [%s] : (%s) [%s]%n", pth, value, Utils.setEntities(value));
+		return value;
+//			entry.setValue(Utils.setEntities(value));
+	}
+
+	String getXpathValue(TeiFile tf, String pth) {
+		// find pth in metadata
+		if (!pth.startsWith("/")) pth = "//" + pth;
+		String value;
+		try {
+			value = (String)tf.xpath.evaluate(pth, tf.root, XPathConstants.STRING);
+		} catch (XPathExpressionException e) {
+			// not found or error ?
+			System.err.printf("Error finding entry: %s%n", e.toString());
+			//e.printStackTrace();
+			return null;
+		}
+		if (value == null || value.isEmpty()) {
+			System.err.printf("Cannot find entry: %s%n", pth);
+			return null;
+		}
+		value = value.replaceAll("[ _]", "-");
+		System.out.printf("Found for [%s] : (%s) [%s]%n", pth, value, Utils.setEntities(value));
+		return value;
+//			entry.setValue(Utils.setEntities(value));
 	}
 }

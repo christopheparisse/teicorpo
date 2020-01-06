@@ -76,9 +76,9 @@ public class TeiToLexico extends TeiConverter {
 		out.printf("<file=%s>%n", inputName.replaceAll("\\s+", "%20"));
 //		out.println("@Fichier_output:\t" + outputName);
 //		out.print(tf.transInfo.toString());
-		for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 		    String key = entry.getKey();
-		    String value = entry.getValue();
+		    String value = entry.getValue().genericvalue;
 			out.printf("<%s=%s>%n", key, value.replaceAll("\\s+", "_"));
 		}
 	}
@@ -202,8 +202,6 @@ public class TeiToLexico extends TeiConverter {
 
 	/**
 	 * Ecriture des tiers: lignes qui commencent par le signe pourcent %
-	 * 
-	 * @param tier
 	 *            Le tier à écrire, au format : Nom du tier \t Contenu du tier
 	public void writeTier(Annot tier) {
 		if (optionsOutput != null) {

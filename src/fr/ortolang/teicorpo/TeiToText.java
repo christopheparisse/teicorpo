@@ -80,7 +80,7 @@ public class TeiToText extends TeiConverter {
 		}
 		if (tf.optionsOutput.iramuteq == true) {
 			out.printf("**** ");
-			for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+			for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 			    String key = entry.getKey();
 				out.printf("*%s ", key.replaceAll("[^0-9A-Za-z_]+", "_"));
 			}

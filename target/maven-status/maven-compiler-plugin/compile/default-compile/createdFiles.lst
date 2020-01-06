@@ -112,6 +112,7 @@ fr/ortolang/teicorpo/CV_entry.class
 org/mozilla/universalchardet/prober/contextanalysis/EUCJPContextAnalysis.class
 org/mozilla/universalchardet/prober/statemachine/UTF8SMModel.class
 org/mozilla/universalchardet/prober/sequence/GreekModel.class
+fr/ortolang/teicorpo/ValSpk.class
 fr/ortolang/teicorpo/Tokenizer.class
 org/mozilla/universalchardet/prober/sequence/Win1253Model.class
 org/mozilla/universalchardet/prober/SBCSGroupProber.class

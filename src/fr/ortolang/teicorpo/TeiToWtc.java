@@ -213,9 +213,9 @@ public class TeiToWtc extends TeiConverter {
 		System.out.printf("<sp id=\"%d\" speaker=\"%s\" starttime=\"%s\" endtime=\"%s\">%n", spid, locclean, st, et);
 		spid++;
 		System.out.printf("<u s=\"%s\" spkid=\"%s\" age=\"%s\">%n", st, locclean, getAge(locclean));
-		for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 		    String key = entry.getKey();
-		    String value = entry.getValue().replaceAll("[ _]", "-");
+		    String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 			System.out.printf(" %s=\"%s\"", key, value);
 		}
 	}
@@ -263,9 +263,9 @@ public class TeiToWtc extends TeiConverter {
 					w += "\t" + spkcode;
 					w += "\t" + age;
 					w += "\t" + typeDiv;
-					for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+					for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
-						String value = entry.getValue().replaceAll("[ _]", "-");
+						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 						w += "\t" + value;
 					}
 					// tags ???
@@ -277,9 +277,9 @@ public class TeiToWtc extends TeiConverter {
 					// System.out.println("writeConnl3 " + aw.toString());
 					// get data that in reproduced in every words
 					String locinfo = "\t" + spkcode + "\t" + age  + "\t" + typeDiv;
-					for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+					for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
-						String value = entry.getValue().replaceAll("[ _]", "-");
+						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 						locinfo += "\t" + value;
 					}
 					// the words
@@ -319,9 +319,9 @@ public class TeiToWtc extends TeiConverter {
 					w += "\t" + spkcode;
 					w += "\t" + age;
 					w += "\t" + typeDiv;
-					for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+					for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
-						String value = entry.getValue().replaceAll("[ _]", "-");
+						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 						w += "\t" + value;
 					}
 					// tags ???
@@ -333,9 +333,9 @@ public class TeiToWtc extends TeiConverter {
 					if (w.getNodeType() == Node.ELEMENT_NODE) {
 						// get data that in reproduced in every words
 						String locinfo = "\t" + spkcode + "\t" + age  + "\t" + typeDiv;
-						for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+						for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 							String key = entry.getKey();
-							String value = entry.getValue().replaceAll("[ _]", "-");
+							String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 							locinfo += "\t" + value;
 						}
 
@@ -443,9 +443,9 @@ public class TeiToWtc extends TeiConverter {
 			w += "\t" + loc;
 			w += "\t" + age;
 			w += "\t" + typeDiv;
-			for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+			for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 				String key = entry.getKey();
-				String value = entry.getValue();
+				String value = entry.getValue().genericvalue;
 				w += "\t" + value;
 			}
 			System.out.println(w);
@@ -454,9 +454,9 @@ public class TeiToWtc extends TeiConverter {
 		for (int ti = 0; ti < p.size(); ti++) {
 			String w = p.get(ti);
 			w += "\t" + loc + "\t" + age  + "\t" + typeDiv;
-			for (Map.Entry<String, String> entry : optionsOutput.tv.entrySet()) {
+			for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 			    String key = entry.getKey();
-			    String value = entry.getValue();
+			    String value = entry.getValue().genericvalue;
 				w += "\t" + value;
 			}
 			System.out.println(w);
