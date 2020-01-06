@@ -1,5 +1,9 @@
 package fr.ortolang.teicorpo;
 
+import org.w3c.dom.NodeList;
+
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
 import java.util.*;
 
@@ -69,7 +73,7 @@ class TierParams {
 	Set<String> commands;  // for -c parameter
 	Set<String> doDisplay;
 	Set<String> dontDisplay;
-	Map<String, String> tv;
+	Map<String, String> tv; // list of values to be added in the result file
 	int level;
 	boolean raw;
 	boolean noHeader;
@@ -103,7 +107,7 @@ class TierParams {
 	boolean writtentext;
 	String purpose;
 	boolean mediacontrol;
-	Set<String> mv; // list of values
+	Map<String, String> mv; // // list of values extracted from the metadata to be added in the result file
 	boolean utterance;
 
 	TierParams() {
@@ -158,7 +162,7 @@ class TierParams {
 		writtentext = false;
 		purpose = "";
 		mediacontrol = false;
-		mv = new HashSet<String>();
+		mv = new TreeMap<String, String>();
 		ldt = new ArrayList<DescTier>();
 		utterance = false;
 	}
@@ -171,13 +175,16 @@ class TierParams {
 	void addDontDisplay(String s) {
 		dontDisplay.add(s.toLowerCase());
 	}
-	void addTv(String info) {
+	void addPair(Map<String, String> list, String info) {
 		int p = info.indexOf(":");
 		if (p<1 || p >= info.length()) {
-			System.err.println("error: txm information ignored (missing :) => " + info);
-		} else {
-			tv.put(info.substring(0, p), info.substring(p+1));
+			p = info.indexOf("=");
+			if (p<1 || p >= info.length()) {
+				System.err.println("error: txm information ignored (missing : or =) => " + info);
+				return;
+			}
 		}
+		list.put(info.substring(0, p), info.substring(p+1));
 	}
 	void setLevel(int l) {
 		level = l;
@@ -246,7 +253,7 @@ class TierParams {
 	}
 
 	public static void printVersionMessage() {
-    	System.out.println("TeiCorpo (version "+ Utils.versionSoft +") " + Utils.versionDate + " Version TEI_CORPO: " + Utils.versionTEI);
+    	System.out.println("TeiCorpo (version "+ Version.versionSoft +") " + Version.versionDate + " Version TEI_CORPO: " + Version.versionTEI);
 	}
 	
 	public static void printUsageMessage(String mess, String ext1, String ext2, int style) {
@@ -302,18 +309,19 @@ class TierParams {
 		if (style == 2) {
 			System.err.println("         *** parameter for export to TXM/Iramuteq/Le Trameur ***");
 			System.err.println("         -utt: utterance format (not words)");
-			System.err.println("         -tv \"type:value\" : a parameter type:value is added to <u> or <w> tags for txm or lexico or le trameur");
+			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
+			System.err.println("         -mv \"type:field\": type: value of metadata 'field' added to <u>, <w>, and <div> tags (field is an xpath expression)");
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tiernamescontent : add all fields in tiernames as for other words");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
 			System.err.println("         -mediacontrol: add startTime information");
-			System.err.println("         -mv \"field\": insert metadata 'field' into u tags");
 		}
 		if (style == 6) {
 			System.err.println("         *** parameters for export in Iramuteq ***");
 			System.err.println("         -raw : text is exported after removing all locutors or spoken language marking");
-			System.err.println("         -tv \"type:value\" : a parameter type:value is added to <u> or <w> tags for txm or lexico or le trameur");
+			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
+			System.err.println("         -mv \"type:field\": type: value of metadata 'field' added to <u>, <w>, and <div> tags (field is an xpath expression)");
 			System.err.println("         -iramuteq : headers for iramuteq");
 			System.err.println("         -concat : concatenate result files for iramuteq");
 			System.err.println("         -append : do not erase destination file before processing - to be used with concat");
@@ -386,7 +394,8 @@ class TierParams {
 		}
 		if (style == 2) {
 			System.err.println("         *** paramètre pour export dans TXM/Iramuteq/Le Trameur ***");
-			System.err.println("         -tv \"type:valeur\" : un champ type:valeur est ajouté dans les <w> de txm ou lexico ou le trameur");
+			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
+			System.err.println("         -mv \"type:field\": type: value d'une metadata 'field' ajouté à <u>, <w>, and <div> tags (field is une expression xpath)");
 			System.err.println("         -section : ajoute un indicateur de section en fin de chaque énoncé (pour lexico/le trameur)");
 			System.err.println("         -syntax nom : choix pour la syntaxe à exporter");
 			System.err.println("         -sandhi : information spécifique intégrées pour l'analyse des liaisons");
@@ -395,7 +404,8 @@ class TierParams {
 			System.err.println("         -raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
 			System.err.println("         -iramuteq : headers for iramuteq");
 			System.err.println("         *** paramètre pour export dans Iramuteq ***");
-			System.err.println("         -tv \"type:valeur\" : un champ type:valeur est ajouté dans les <u> ou <w> de txm ou lexico ou le trameur");
+			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
+			System.err.println("         -mv \"type:field\": type: value d'une metadata 'field' ajouté à <u>, <w>, and <div> tags (field is une expression xpath)");
 			System.err.println("         -concat : concaténation des fichiers résultats for iramuteq");
 			System.err.println("         -append : pas d'effacement préalable du fichier destination si concaténation");
 		}
@@ -681,7 +691,7 @@ class TierParams {
 							return false;
 						}
 						i++;
-						options.addTv(args[i]);
+						options.addPair(options.tv, args[i]);
 					} else if (argument.equals("-mv")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -mv is not followed by a value");
@@ -689,7 +699,7 @@ class TierParams {
 							return false;
 						}
 						i++;
-						options.mv.add(args[i]);
+						options.addPair(options.mv, args[i]);
 					} else if (argument.equals("-f")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -f is not followed by a value");
@@ -922,5 +932,33 @@ class TierParams {
 			}
 		}
 		return true;
+	}
+
+	public void computeMvValues(TeiFile tf) {
+		// metadata values to be added
+		for (Map.Entry<String, String> entry : mv.entrySet()) {
+			String entryxpath = entry.getValue();
+			// find entryxpath in metadata
+			if (!entryxpath.startsWith("/")) entryxpath = "//" + entryxpath;
+			String value;
+			try {
+				value = (String)tf.xpath.evaluate(entryxpath, tf.root, XPathConstants.STRING);
+			} catch (XPathExpressionException e) {
+				// not found or error ?
+				System.err.printf("Error finding entry: %s%n", e.toString());
+				//e.printStackTrace();
+				mv.remove(entry);
+				continue;
+			}
+			if (value == null || value.isEmpty()) {
+				System.err.printf("Cannot find entry: %s%n", entry);
+				mv.remove(entry);
+				continue;
+			}
+			value = value.replaceAll("[ _]", "-");
+			System.err.printf("Found for %s: [%s]=(%s) [%s]%n", entry.getKey(), entryxpath, value, Utils.setEntities(value));
+			entry.setValue(value);
+//			entry.setValue(Utils.setEntities(value));
+		}
 	}
 }

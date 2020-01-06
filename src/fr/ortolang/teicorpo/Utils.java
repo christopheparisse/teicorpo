@@ -33,9 +33,6 @@ public class Utils {
 	public static final int styleLexicoTxm = 2;
 	public static String EXT = ".tei_corpo.xml";
 	public static String EXT_PUBLISH = ".tei_corpo";
-	public static String versionTEI = "0.9.1";
-	public static String versionSoft = "1.40.20"; // full version with Elan, Clan, Transcriber and Praat
-	public static String versionDate = "02/01/2020 14:00";
 	public static boolean teiStylePure = false;
 	
 	public static String shortPause = " # ";
@@ -73,9 +70,17 @@ public class Utils {
 	public static String cleanEntities(String s){
 		return s.replaceAll("&quot;", "\"") // 34 22
 				.replaceAll("&amp;", "&") // 38 26
-				.replaceAll("&#39;", "\'") // 39 27
+				.replaceAll("&#39;", "'") // 39 27
 				.replaceAll("&lt;", "<") // 60 3C
 				.replaceAll("&gt;", ">"); // 62 3E
+	}
+
+	public static String setEntities(String s){
+		return s.replaceAll("\"", "&quot;") // 34 22
+				.replaceAll("&", "&amp;") // 38 26
+				.replaceAll("'", "&#39;") // 39 27
+				.replaceAll("<", "&lt;") // 60 3C
+				.replaceAll(">", "&gt;"); // 62 3E
 	}
 
 	public static String join(String... args) {

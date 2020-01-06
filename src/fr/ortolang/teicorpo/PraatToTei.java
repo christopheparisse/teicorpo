@@ -844,7 +844,7 @@ public class PraatToTei extends GenericMain {
 			 */
 			HierarchicTrans ht = new HierarchicTrans();
 			ht.initial_format = "Praat";
-			ht.metaInf.version = Utils.versionSoft;
+			ht.metaInf.version = Version.versionSoft;
 			ht.metaInf.time_units = "s";
 			/*
 			 * construire tiers info

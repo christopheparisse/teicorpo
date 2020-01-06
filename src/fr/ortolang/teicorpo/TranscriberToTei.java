@@ -103,7 +103,7 @@ public class TranscriberToTei extends GenericMain {
 			 * public String getPrefix(String uri) { return null; } });
 			 */
 			this.rootTEI = this.docTEI.createElement("TEI");
-			rootTEI.setAttribute("version", Utils.versionTEI);
+			rootTEI.setAttribute("version", Version.versionTEI);
 			this.rootTEI.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
 			this.docTEI.appendChild(rootTEI);
 		} catch (Exception e) {
@@ -174,7 +174,7 @@ public class TranscriberToTei extends GenericMain {
 		Element profileDesc = this.docTEI.createElement("profileDesc");
 		teiHeader.appendChild(profileDesc);
 		Element encodingDesc = this.docTEI.createElement("encodingDesc");
-		encodingDesc.setAttribute("style", Utils.versionTEI);
+		encodingDesc.setAttribute("style", Version.versionTEI);
 		teiHeader.appendChild(encodingDesc);
 
 		Element revisionDesc = this.docTEI.createElement("revisionDesc");
@@ -221,12 +221,12 @@ public class TranscriberToTei extends GenericMain {
 		encodingDesc.appendChild(appInfo);
 		Element application = this.docTEI.createElement("application");
 		application.setAttribute("ident", "TeiCorpo");
-		application.setAttribute("version", Utils.versionSoft);
+		application.setAttribute("version", Version.versionSoft);
 		appInfo.appendChild(application);
 		Element desc = this.docTEI.createElement("desc");
 		application.appendChild(desc);
 		desc.setTextContent("Transcription converted with TeiCorpo and to TEI_CORPO - Soft version: "
-				+ Utils.versionSoft);
+				+ Version.versionSoft);
 	}
 
 	/**

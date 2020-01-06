@@ -28,6 +28,7 @@ public class TeiFile {
 	// access to Xpath
 	public XPathFactory xPathfactory;
 	public XPath xpath;
+	public Element root;
 	// Information about the transcription
 	public TransInfo transInfo;
 	// Transcription
@@ -45,7 +46,7 @@ public class TeiFile {
 	public TeiFile(File teiFile, TierParams options) {
 		optionsOutput = options;
 		DocumentBuilderFactory factory = null;
-		Element root = null;
+		root = null;
 		teiTimeline = new TeiTimeline();
 		try {
 			factory = DocumentBuilderFactory.newInstance();

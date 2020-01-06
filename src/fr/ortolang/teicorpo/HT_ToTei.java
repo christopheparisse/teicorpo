@@ -325,12 +325,12 @@ public class HT_ToTei {
 
 	public void setEncodingDesc() {
 		Element encodingDesc = (Element) docTEI.getElementsByTagName("encodingDesc").item(0);
-		encodingDesc.setAttribute("style", Utils.versionTEI);
+		encodingDesc.setAttribute("style", Version.versionTEI);
 		Element appInfo = docTEI.createElement("appInfo");
 		encodingDesc.appendChild(appInfo);
 		Element application = docTEI.createElement("application");
 		application.setAttribute("ident", "TeiCorpo");
-		application.setAttribute("version", Utils.versionSoft);
+		application.setAttribute("version", Version.versionSoft);
 		Element desc = this.docTEI.createElement("desc");
 		application.appendChild(desc);
 		desc.setTextContent("Transcription converted with TeiCorpo and to TEI_CORPO");

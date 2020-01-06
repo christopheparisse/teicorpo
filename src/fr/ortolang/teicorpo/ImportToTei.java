@@ -153,7 +153,7 @@ public abstract class ImportToTei extends GenericMain {
 
 		Element profileDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "profileDesc");
 		Element encodingDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "encodingDesc");
-		encodingDesc.setAttribute("style", Utils.versionTEI);
+		encodingDesc.setAttribute("style", Version.versionTEI);
 		Element revisionDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "revisionDesc");
 		TeiDocument.setRevisionInfo(docTEI, revisionDesc, fname, null, tparams.test);
 
@@ -194,11 +194,11 @@ public abstract class ImportToTei extends GenericMain {
 		encodingDesc.appendChild(appInfo);
 		Element application = this.docTEI.createElement("application");
 		application.setAttribute("ident", "TeiCorpo");
-		application.setAttribute("version", Utils.versionSoft);
+		application.setAttribute("version", Version.versionSoft);
 		appInfo.appendChild(application);
 		Element desc = this.docTEI.createElement("desc");
 		application.appendChild(desc);
-		desc.setTextContent("Transcription converted with TeiCorpo to TEI_CORPO - Soft: " + Utils.versionSoft);
+		desc.setTextContent("Transcription converted with TeiCorpo to TEI_CORPO - Soft: " + Version.versionSoft);
 	}
 
 	/**

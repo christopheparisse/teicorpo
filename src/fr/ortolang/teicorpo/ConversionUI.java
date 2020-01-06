@@ -49,8 +49,8 @@ public class ConversionUI extends JFrame {
 
 		this.getContentPane().setLayout(null);
 
-		this.setTitle("TeiCorpo (version " + Utils.versionSoft + ") " + Utils.versionDate + " Version TEI_CORPO: "
-				+ Utils.versionTEI);
+		this.setTitle("TeiCorpo (version " + Version.versionSoft + ") " + Version.versionDate + " Version TEI_CORPO: "
+				+ Version.versionTEI);
 
 		inputFcb = new FormatJCheckBoxes();
 		inputFcb.setVisible(true);
