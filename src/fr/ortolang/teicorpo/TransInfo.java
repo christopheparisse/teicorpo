@@ -187,6 +187,16 @@ public class TransInfo {
 		return participantID;
 	}
 
+	// Récupération du nom d'un role à partir de son identifiant (code)
+	public String getParticipantRole(String participantID) {
+		for (TeiParticipant p : this.participants) {
+			if (participantID.equals(p.id) && p.role != null && !p.role.isEmpty()) {
+				return p.role;
+			}
+		}
+		return participantID;
+	}
+
 	/**
 	 * Impression de TransInfo
 	 */

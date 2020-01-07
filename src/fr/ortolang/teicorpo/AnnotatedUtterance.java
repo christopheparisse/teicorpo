@@ -151,7 +151,7 @@ public class AnnotatedUtterance {
 		if (transInfo != null)
 			speakerName = transInfo.getParticipantName(speakerCode);
 		else
-			speakerName = "";
+			speakerName = speakerCode;
 
 		nomarkerSpeech = "";
 		speech = "";
@@ -212,7 +212,7 @@ public class AnnotatedUtterance {
 		if (transInfo != null)
 			speakerName = transInfo.getParticipantName(speakerCode);
 		else
-			speakerName = "";
+			speakerName = speakerCode;
 		NodeList annotUElements = annotatedU.getChildNodes();
 		// Parcours des éléments contenus dans u et construction des
 		// variables speech, nomarkerSpeech et speeches en fonction.

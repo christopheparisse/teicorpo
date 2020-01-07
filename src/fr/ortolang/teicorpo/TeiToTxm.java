@@ -172,8 +172,8 @@ public class TeiToTxm extends TeiConverter {
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
 	 * 
-	 * @param loc
-	 *            Locuteur
+	 * @param u
+	 *            Utterance (contains Locuteur)
 	 * @param speechContent
 	 *            Contenu de l'énoncé
 	 * @param startTime
@@ -181,7 +181,7 @@ public class TeiToTxm extends TeiConverter {
 	 * @param endTime
 	 *            Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance u, String speechContent, String startTime, String endTime) {
 		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
 /*		if (optionsOutput.syntaxformat.equals("conll")) { // || optionsOutput.syntax.equals("treetagger")) {
 			System.out.println("skip writeSpeech");
@@ -189,21 +189,21 @@ public class TeiToTxm extends TeiConverter {
 		}
 */
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(loc))
+			if (optionsOutput.isDontDisplay(u.speakerCode)) // TODO: loc
 				return;
-			if (!optionsOutput.isDoDisplay(loc))
+			if (!optionsOutput.isDoDisplay(u.speakerCode)) // TODO: loc
 				return;
 		}
 		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
 		if (!optionsOutput.syntaxformat.equals("ref") && !optionsOutput.syntaxformat.equals("conll")) {
 			// System.err.println("writeSpeech0: " + optionsOutput.syntaxformat);
-			Element u = generateUStart(loc, startTime, endTime, null);
-			generateU(u, speechContent, loc);
+			Element e = generateUStart(u, startTime, endTime, null);
+			generateU(e, speechContent, u);
 		}
 		// if this is the ref case or the conll, the result will be written by the tier in writeTier function
 	}
 
-	Element generateUStart(String loc, String startTime, String endTime, String age) {
+	Element generateUStart(AnnotatedUtterance u, String startTime, String endTime, String age) {
 		// System.err.println(loc + ' ' + startTime + ' ' + endTime + ' ' + age);
 		// Si le temps de début n'est pas renseigné, on mettra par défaut le
 		// temps de fin (s'il est renseigné) moins une seconde.
@@ -222,29 +222,35 @@ public class TeiToTxm extends TeiConverter {
 			}
 		}
 
-		Element p = txmDoc.createElement("p");
-		p.setTextContent("["+loc+"]");
-		Element u = txmDoc.createElement("u");
+		Element p = null;
+		if (optionsOutput.writtentext == false) {
+			p = txmDoc.createElement("p");
+			p.setTextContent("[" + spkChoice(u) + "]");
+		}
+		Element elt = txmDoc.createElement("u");
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
-			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
-			u.setAttribute("start", Double.toString(Double.parseDouble(startTime)));
-			u.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
+			elt.setAttribute("who", spkChoice(u).replaceAll("[ _]", "-"));
+			elt.setAttribute("start", Double.toString(Double.parseDouble(startTime)));
+			elt.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
 			// u.setTextContent(speechContent);
 		} else {
-			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
-			u.setAttribute("start", "");
-			u.setAttribute("end", "");
+			elt.setAttribute("who", spkChoice(u).replaceAll("[ _]", "-"));
+			elt.setAttribute("start", "");
+			elt.setAttribute("end", "");
 			// u.setTextContent(speechContent);
 		}
 		// u.setAttribute("loc", loc);
-		if (age != null) u.setAttribute("age", age);
-		setTv(u, loc);
-		head.appendChild(p);
-		p.appendChild(u);
-//		head.appendChild(u);
-		return u;
+		if (age != null) elt.setAttribute("age", age);
+		setTv(elt, u.speakerCode);
+		if (optionsOutput.writtentext == false) {
+			head.appendChild(p);
+			p.appendChild(elt);
+		} else {
+			head.appendChild(elt);
+		}
+		return elt;
 	}
 
 	@Override
@@ -455,18 +461,18 @@ public class TeiToTxm extends TeiConverter {
 			we.setAttribute("lastclass", "ench-k");
 	}
 
-	void generateU(Element u, String speechContent, String loc) {
+	void generateU(Element elt, String speechContent, AnnotatedUtterance u) {
 		if (optionsOutput.utterance) {
 			// do not split line
 			if (optionsOutput.tiernames)
-				u.setTextContent("["+loc+"]" + speechContent);
+				elt.setTextContent("[" + spkChoice(u) + "]" + speechContent);
 			else
-				u.setTextContent(speechContent);
+				elt.setTextContent(speechContent);
 			if (optionsOutput.tiernamescontent) {
-				String age = getLocAge(loc);
-				setCode(u, loc, age);
-				setTv(u, loc);
-				setDiv(u);
+				String age = getLocAge(u.speakerCode);
+				setCode(elt, spkChoice(u), age);
+				setTv(elt, u.speakerCode);
+				setDiv(elt);
 			}
 			return;
 		}
@@ -480,28 +486,35 @@ public class TeiToTxm extends TeiConverter {
 		/*
 		 * write word information
 		 */
-		String age = getLocAge(loc);
+		String age = getLocAge(u.speakerCode);
 		if (optionsOutput.tiernames) {
 			Element we = txmDoc.createElement("w");
 			// we.setTextContent(w);
-			we.setTextContent("["+loc+"]");
+			we.setTextContent("[" + spkChoice(u) + "]");
     		if (optionsOutput.tiernamescontent) {
-				setCode(we, loc, age);
-				setTv(we, loc);
+				setCode(we, spkChoice(u), age);
+				setTv(we, u.speakerCode);
 				setDiv(we);
             }
-			u.appendChild(we);
+			elt.appendChild(we);
 		}
 		// for (String w: s) {
 		for (int ti = 0; ti < p.size(); ti++) {
 			Element we = txmDoc.createElement("w");
 			// we.setTextContent(w);
 			we.setTextContent(p.get(ti));
-			setCode(we, loc, age);
-			setTv(we, loc);
+			setCode(we, spkChoice(u), age);
+			setTv(we, u.speakerCode);
 			setDiv(we);
-			u.appendChild(we);
+			elt.appendChild(we);
 		}
+	}
+
+	private String spkChoice(AnnotatedUtterance u) {
+		if (optionsOutput.spknamerole.equals("name"))
+			return u.speakerName;
+		else
+			return u.speakerCode;
 	}
 
 	private String getLocAge(String loc) {

@@ -754,7 +754,7 @@ class TierParams {
 					} else if (argument.equals("-rawline")) {
 						options.rawLine = true;
 						continue;
-					} else if (argument.equals("-writentext")) {
+					} else if (argument.equals("-writtentext") || argument.equals("-wr")) {
 						options.writtentext = true;
 						continue;
 					} else if (argument.equals("-mediacontrol")) {

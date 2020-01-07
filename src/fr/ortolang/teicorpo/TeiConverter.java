@@ -51,7 +51,7 @@ public abstract class TeiConverter extends GenericMain {
 	// Finalisation du fichier de sortie
 	public abstract void createOutput();
 
-	public abstract void writeSpeech(String loc, String speechContent, String startTime, String endTime);
+	public abstract void writeSpeech(AnnotatedUtterance u, String speechContent, String startTime, String endTime);
 
 	public abstract void writeAddInfo(AnnotatedUtterance u);
 	
@@ -148,7 +148,7 @@ public abstract class TeiConverter extends GenericMain {
 			String speech = NormalizeSpeech.parseText(str, tf.originalFormat(), optionsOutput);
 
 			// Ecriture de l'énoncé
-			writeSpeech(u.speakerCode, speech, start, end);
+			writeSpeech(u, speech, start, end);
 		}
 		// écriture des tiers
 		for (Annot tier : u.tiers) {
