@@ -123,7 +123,7 @@ public class TeiToTxm extends TeiConverter {
 		txm.appendChild(head);
 		Element elt = txmDoc.createElement("div");
 		head.appendChild(elt);
-		setTv(elt);
+		setTv(elt, "");
 	}
 
 	/**
@@ -222,24 +222,28 @@ public class TeiToTxm extends TeiConverter {
 			}
 		}
 
+		Element p = txmDoc.createElement("p");
+		p.setTextContent("["+loc+"]");
 		Element u = txmDoc.createElement("u");
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
-			u.setAttribute("startTime", Double.toString(Double.parseDouble(startTime)));
-			u.setAttribute("endTime", Double.toString(Double.parseDouble(endTime)));
+			u.setAttribute("start", Double.toString(Double.parseDouble(startTime)));
+			u.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
 			// u.setTextContent(speechContent);
 		} else {
 			u.setAttribute("who", loc.replaceAll("[ _]", "-"));
-			u.setAttribute("startTime", "");
-			u.setAttribute("endTime", "");
+			u.setAttribute("start", "");
+			u.setAttribute("end", "");
 			// u.setTextContent(speechContent);
 		}
 		// u.setAttribute("loc", loc);
 		if (age != null) u.setAttribute("age", age);
-		setTv(u);
-		head.appendChild(u);
+		setTv(u, loc);
+		head.appendChild(p);
+		p.appendChild(u);
+//		head.appendChild(u);
 		return u;
 	}
 
@@ -267,7 +271,7 @@ public class TeiToTxm extends TeiConverter {
 					we.setTextContent("["+spkcode+"]");
                     if (optionsOutput.tiernamescontent) {
 						setCode(we, spkcode, age);
-						setTv(we);
+						setTv(we, spkcode);
 						setDiv(we);
                     }
 					u.appendChild(we);
@@ -277,7 +281,7 @@ public class TeiToTxm extends TeiConverter {
 					// System.out.println("writeConnl3 " + aw.toString());
 					Element we = txmDoc.createElement("w");
 					setCode(we, spkcode, age);
-					setTv(we);
+					setTv(we, spkcode);
 					for (int k=0; k < aw.dependantAnnotations.size(); k++) {
 						Annot kw = aw.dependantAnnotations.get(k);
 						if (kw.name.equals("word")) {
@@ -313,7 +317,7 @@ public class TeiToTxm extends TeiConverter {
 					we.setTextContent("["+spkcode+"]");
                     if (optionsOutput.tiernamescontent) {
                     	setCode(we, spkcode, age);
-                    	setTv(we);
+                    	setTv(we, spkcode);
 						we.setAttribute("pos", "SENT");
 						we.setAttribute("lemma", "_");
                     }
@@ -326,7 +330,7 @@ public class TeiToTxm extends TeiConverter {
 						Element we = txmDoc.createElement("w");
 //						System.err.println(w.toString() + "++" + w.getTextContent());
 						setCode(we, spkcode, age);
-						setTv(we);
+						setTv(we, spkcode);
 						String m = wo.getAttribute("pos");
 						m = m.trim().replaceAll("[ _]", "-");
 						we.setAttribute("pos", m);
@@ -356,7 +360,7 @@ public class TeiToTxm extends TeiConverter {
 		}
 	}
 
-	private void setTv(Element we) {
+	private void setTv(Element we, String spkcode) {
 		// fixed values to be added
 		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
 			String key = entry.getKey();
@@ -366,7 +370,15 @@ public class TeiToTxm extends TeiConverter {
 		// metadata values to be added
 		for (Map.Entry<String, ValSpk> entry : optionsOutput.mv.entrySet()) {
 			String key = entry.getKey();
-			we.setAttribute(key, entry.getValue().genericvalue);
+			ValSpk vs = entry.getValue();
+			if (vs.genericspk.isEmpty()) {
+				we.setAttribute(key, entry.getValue().genericvalue);
+			} else {
+				if (vs.list.containsKey(spkcode)) {
+					String c = vs.list.get(spkcode);
+					if (!c.isEmpty()) we.setAttribute(key, c);
+				}
+			}
 		}
 	}
 
@@ -453,7 +465,7 @@ public class TeiToTxm extends TeiConverter {
 			if (optionsOutput.tiernamescontent) {
 				String age = getLocAge(loc);
 				setCode(u, loc, age);
-				setTv(u);
+				setTv(u, loc);
 				setDiv(u);
 			}
 			return;
@@ -475,7 +487,7 @@ public class TeiToTxm extends TeiConverter {
 			we.setTextContent("["+loc+"]");
     		if (optionsOutput.tiernamescontent) {
 				setCode(we, loc, age);
-				setTv(we);
+				setTv(we, loc);
 				setDiv(we);
             }
 			u.appendChild(we);
@@ -486,7 +498,7 @@ public class TeiToTxm extends TeiConverter {
 			// we.setTextContent(w);
 			we.setTextContent(p.get(ti));
 			setCode(we, loc, age);
-			setTv(we);
+			setTv(we, loc);
 			setDiv(we);
 			u.appendChild(we);
 		}

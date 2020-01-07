@@ -122,6 +122,7 @@ class TierParams {
 	Map<String, ValSpk> tv; // list of values to be added in the result file
 	Map<String, ValSpk> mv; // // list of values extracted from the metadata to be added in the result file
 	boolean utterance;
+	String spknamerole; // choose output out of speakers, names, roles
 
 	TierParams() {
 		noerror = false;
@@ -178,6 +179,7 @@ class TierParams {
 		mv = new TreeMap<String, ValSpk>();
 		ldt = new ArrayList<DescTier>();
 		utterance = false;
+		spknamerole = "spk";
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -311,6 +313,7 @@ class TierParams {
 		if (style == 2) {
 			System.err.println("         *** parameter for export to TXM/Iramuteq/Le Trameur ***");
 			System.err.println("         -utt: utterance format (not words)");
+			System.err.println("         -spk: value used of speaker tag (spk/=speaker=alt, pers/=persName, role/=role)");
 			System.err.println("         -tv \"type:value:speaker\" type and value are obligatory. speaker is optional and can also be * for all speakers");
 			System.err.println("         -mv \"type:metadatafield:speaker\": field is a metadata value (it is an xpath expression. if it does not begin with / it is looked for everywhere)");
 			System.err.println("              For the two parameters above the pairs type+value are added to <u>, <w>, <div> tags for txm or lexico or le trameur");
@@ -397,6 +400,8 @@ class TierParams {
 		}
 		if (style == 2) {
 			System.err.println("         *** paramètre pour export dans TXM/Iramuteq/Le Trameur ***");
+			System.err.println("         -utt: format énoncé (pas des mots)");
+			System.err.println("         -spk: valeur pour le tag du locuteur (speaker=alt, persName, role)");
 			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
 			System.err.println("         -mv \"type:field\": type: value d'une metadata 'field' ajouté à <u>, <w>, and <div> tags (field is une expression xpath)");
 			System.err.println("         -section : ajoute un indicateur de section en fin de chaque énoncé (pour lexico/le trameur)");
@@ -503,6 +508,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-syntaxformat")) {
+						i++;
+						continue;
+					} else if (argument.equals("-spk")) {
 						i++;
 						continue;
 					} else if (argument.equals("-model")) {
@@ -647,6 +655,18 @@ class TierParams {
 						i++;
 						options.syntax = args[i];
 					*/
+					} else if (argument.equals("-spk")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -spk is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						if (!args[i].equals("spk") && !args[i].equals("pers") && !args[i].equals("role")) {
+							System.err.println("the parameter -spk is only followed by spk or pers or role");
+							return false;
+						}
+						options.spknamerole = args[i];
 					} else if (argument.equals("-syntaxformat")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -syntaxformat is not followed by a value");
@@ -944,7 +964,7 @@ class TierParams {
 		if (matcher.matches()) { // option with a speaker
 			// create an new entry
 			if (list.containsKey(matcher.group(1))) {
-				System.err.println("warning: key information already specified : " + info);
+				// System.err.println("warning: key information already specified : " + info);
 				ValSpk vs = list.get(matcher.group(1));
 				if (matcher.group(3).equals("*")) {
 					System.err.println("warning: key information about speaker was already provided : " + info);
@@ -1020,17 +1040,18 @@ class TierParams {
 					String s = getXpathValueLoc(tf, e.getValue(), e.getKey());
 					if (s == null) {
 						System.err.printf("Entry not found for: %s:%s%n", e.getValue(), e.getKey());
+						e.setValue("");
 					} else {
 						e.setValue(s);
 					}
+					System.err.printf("MVL(after): %s:%s:%s%n", entry.getKey(), e.getValue(), e.getKey());
 				}
 			}
 		}
 	}
 
 	String getXpathValueLoc(TeiFile tf, String pth, String loc) {
-		// find the loc
-		Node locnode;
+		/*
 		String locplace2 = "//person[altGrp/alt/@type='FAT']";
 		String test2 = null;
 		try {
@@ -1039,7 +1060,10 @@ class TierParams {
 			e.printStackTrace();
 		}
 		System.err.printf("Test2 %s {%s}%n", locplace2, test2.toString());
+		*/
 
+		// find the loc
+		Node locnode;
 		String locplace = "//person[altGrp/alt/@type='" + loc + "']";
 		try {
 			locnode = (Node)tf.xpath.evaluate(locplace, tf.root, XPathConstants.NODE);
