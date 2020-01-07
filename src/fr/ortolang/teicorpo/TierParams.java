@@ -992,6 +992,14 @@ class TierParams {
 			// -- without any loc value
 			// -- with one or several loc values
 			// -- for all loc values
+			// display entry in mv
+			System.out.printf("mv: %s %s %s %d%n", entry.getKey(), entry.getValue().genericspk, entry.getValue().genericvalue, entry.getValue().list.size());
+			if (entry.getValue().list.size() > 0) {
+				for (Map.Entry<String, String> e : entry.getValue().list.entrySet()) {
+					System.out.printf("mvelt: %s %s%n", e.getKey(), e.getValue());
+				}
+			}
+
 			ValSpk vsxpath = entry.getValue();
 			if (vsxpath.genericspk.isEmpty()) {
 				System.err.printf("MV: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
