@@ -994,10 +994,11 @@ class TierParams {
 			// -- for all loc values
 			ValSpk vsxpath = entry.getValue();
 			if (vsxpath.genericspk.isEmpty()) {
+				System.err.printf("MV: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
 				// no loc value
 				String s = getXpathValue(tf, vsxpath.genericvalue);
 				if (s == null) {
-					System.err.printf("Remove incorrect parameter: %s:%s%n", entry.getKey(), vsxpath.genericspk);
+					System.err.printf("Remove incorrect parameter: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
 					mv.remove(entry);
 				} else {
 					vsxpath.genericvalue = s;
@@ -1006,6 +1007,7 @@ class TierParams {
 			if (vsxpath.genericspk.equals("-")) {
 				// for all declared speakers
 				for (Map.Entry<String, String> e : vsxpath.list.entrySet()) {
+					System.err.printf("MVL: %s:%s:%s%n", entry.getKey(), e.getValue(), e.getKey());
 					// a specific key:loc value:metadata
 					String s = getXpathValueLoc(tf, e.getValue(), e.getKey());
 					if (s == null) {
@@ -1021,7 +1023,16 @@ class TierParams {
 	String getXpathValueLoc(TeiFile tf, String pth, String loc) {
 		// find the loc
 		Node locnode;
-		String locplace = "//person[/altGrp/alt/text()='" + loc + "']";
+		String locplace2 = "//person[altGrp/alt/@type='FAT']";
+		String test2 = null;
+		try {
+			test2 = (String)tf.xpath.evaluate(locplace2, tf.root, XPathConstants.STRING);
+		} catch (XPathExpressionException e) {
+			e.printStackTrace();
+		}
+		System.err.printf("Test2 %s {%s}%n", locplace2, test2.toString());
+
+		String locplace = "//person[altGrp/alt/@type='" + loc + "']";
 		try {
 			locnode = (Node)tf.xpath.evaluate(locplace, tf.root, XPathConstants.NODE);
 		} catch (XPathExpressionException e) {
