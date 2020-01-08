@@ -974,7 +974,7 @@ public class PraatToTei extends GenericMain {
 			// System.out.println(outputfile);
 			TeiDocument.setTranscriptionDesc(hiertransToTei.docTEI, "praat", "1.0", optionsTEI.praatParamsToString());
 			TeiDocument.setDocumentName(hiertransToTei.docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(outputfile));
-			TeiDocument.createFile(outputfile, hiertransToTei.docTEI);
+			Utils.createFile(hiertransToTei.docTEI, outputfile);
 
 		} catch (IOException ioe) {
 			ioe.printStackTrace();

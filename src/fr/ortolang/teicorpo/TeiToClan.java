@@ -341,7 +341,7 @@ public class TeiToClan extends TeiConverter {
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
 	 * 
-	 * @param loc
+	 * @param au
 	 *            Locuteur
 	 * @param speechContent
 	 *            Contenu de l'énoncé
@@ -350,9 +350,9 @@ public class TeiToClan extends TeiConverter {
 	 * @param endTime
 	 *            Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		// System.out.println(speechContent);
-		out.print("*" + loc + ":\t" + Utils.cleanEntities(speechContent));
+		out.print("*" + spkChoice(au) + ":\t" + Utils.cleanEntities(speechContent));
 		// Si le temps de début n'est pas renseigné, on mettra par défaut le
 		// temps de fin (s'il est renseigné) moins une seconde.
 		if (!Utils.isNotEmptyOrNull(startTime)) {

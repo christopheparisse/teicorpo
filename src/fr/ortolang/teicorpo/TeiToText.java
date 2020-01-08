@@ -4,7 +4,6 @@
  */
 package fr.ortolang.teicorpo;
 
-import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 //import java.io.FilenameFilter;
@@ -12,10 +11,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import fr.ortolang.teicorpo.AnnotatedUtterance;
 import fr.ortolang.teicorpo.TeiFile.Div;
 
 public class TeiToText extends TeiConverter {
@@ -80,7 +76,7 @@ public class TeiToText extends TeiConverter {
 		}
 		if (tf.optionsOutput.iramuteq == true) {
 			out.printf("**** ");
-			for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+			for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 			    String key = entry.getKey();
 				out.printf("*%s ", key.replaceAll("[^0-9A-Za-z_]+", "_"));
 			}
@@ -130,7 +126,7 @@ public class TeiToText extends TeiConverter {
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
 	 * 
-	 * @param loc
+	 * @param au
 	 *            Locuteur
 	 * @param speechContent
 	 *            Contenu de l'énoncé
@@ -139,12 +135,12 @@ public class TeiToText extends TeiConverter {
 	 * @param endTime
 	 *            Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		/* already done in AnnotatedUtterance
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(loc, 1))
+			if (optionsOutput.isDontDisplay(spkChoice(au), 1))
 				return;
-			if (!optionsOutput.isDoDisplay(loc, 1))
+			if (!optionsOutput.isDoDisplay(spkChoice(au), 1))
 				return;
 		}
 		*/
@@ -166,15 +162,15 @@ public class TeiToText extends TeiConverter {
 		}
 
 		if (tf.optionsOutput.iramuteq == true) {
-			out.printf("-*%s%n", loc);
+			out.printf("-*%s%n", spkChoice(au));
 		} else if (tf.optionsOutput.locutor == true) {
-			out.printf("-%s: ", loc);
+			out.printf("-%s: ", spkChoice(au));
 		}
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (tf.optionsOutput.raw == true) {
 			if (optionsOutput.tiernames)
-				out.println("[" + loc + "] " + speechContent);
+				out.println("[" + spkChoice(au) + "] " + speechContent);
 			else
 				out.println(speechContent);
 		} else {
@@ -182,9 +178,9 @@ public class TeiToText extends TeiConverter {
 				float start = Float.parseFloat(startTime);
 				float end = Float.parseFloat(endTime);
 				out.printf("%f:%f\t", start, end);
-				out.println(loc + "\t" + speechContent);
+				out.println(spkChoice(au) + "\t" + speechContent);
 			} else {
-				out.println("\t\t" + loc + "\t" + speechContent);
+				out.println("\t\t" + spkChoice(au) + "\t" + speechContent);
 			}
 		}
 	}

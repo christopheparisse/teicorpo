@@ -76,7 +76,7 @@ public class TeiToLexico extends TeiConverter {
 		out.printf("<file=%s>%n", inputName.replaceAll("\\s+", "%20"));
 //		out.println("@Fichier_output:\t" + outputName);
 //		out.print(tf.transInfo.toString());
-		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+		for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 		    String key = entry.getKey();
 		    String value = entry.getValue().genericvalue;
 			out.printf("<%s=%s>%n", key, value.replaceAll("\\s+", "_"));
@@ -134,8 +134,8 @@ public class TeiToLexico extends TeiConverter {
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
 	 * 
-	 * @param loc
-	 *            Locuteur
+	 * @param au
+	 *            Utterance
 	 * @param speechContent
 	 *            Contenu de l'énoncé
 	 * @param startTime
@@ -143,11 +143,11 @@ public class TeiToLexico extends TeiConverter {
 	 * @param endTime
 	 *            Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(loc))
+			if (optionsOutput.isDontDisplay(spkChoice(au)))
 				return;
-			if (!optionsOutput.isDoDisplay(loc))
+			if (!optionsOutput.isDoDisplay(spkChoice(au)))
 				return;
 		}
 		// System.out.println(loc + ' ' + startTime + ' ' + endTime +' ' +
@@ -175,9 +175,9 @@ public class TeiToLexico extends TeiConverter {
 		if (optionsOutput.sectionDisplay)
 			sc += " §";
 		if (optionsOutput.tiernames)
-			out.printf("<loc=%s>[%s] %s%n", loc, loc.replaceAll("\\s+", "_"), sc);
+			out.printf("<loc=%s>[%s] %s%n", spkChoice(au), spkChoice(au).replaceAll("\\s+", "_"), sc);
 		else
-			out.printf("<loc=%s>%s%n", loc.replaceAll("\\s+", "_"), sc);
+			out.printf("<loc=%s>%s%n", spkChoice(au).replaceAll("\\s+", "_"), sc);
 	}
 
 	/**

@@ -19,7 +19,7 @@ public class ElanToTei extends GenericMain {
 		TeiDocument.setTranscriptionDesc(ht.docTEI, "elan", "0.1", "no information on format");
 
 		TeiDocument.setDocumentName(ht.docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(outputName));
-		TeiDocument.createFile(outputName, ht.docTEI);
+		Utils.createFile(ht.docTEI, outputName);
 	}
 
 	/**

@@ -57,11 +57,11 @@ class DescTier {
 	}
 }
 
-class ValSpk {
+class SpkVal {
 	Map<String, String> list; // hash of speaker names with the associated value
 	String genericspk;
 	String genericvalue;
-	ValSpk() {
+	SpkVal() {
 		genericspk = "";
 		genericvalue = "";
 		list = new HashMap<String, String>();
@@ -119,8 +119,8 @@ class TierParams {
 	boolean writtentext;
 	String purpose;
 	boolean mediacontrol;
-	Map<String, ValSpk> tv; // list of values to be added in the result file
-	Map<String, ValSpk> mv; // // list of values extracted from the metadata to be added in the result file
+	Map<String, SpkVal> tv; // list of values to be added in the result file
+	Map<String, SpkVal> mv; // // list of values extracted from the metadata to be added in the result file
 	boolean utterance;
 	String spknamerole; // choose output out of speakers, names, roles
 
@@ -175,8 +175,8 @@ class TierParams {
 		writtentext = false;
 		purpose = "";
 		mediacontrol = false;
-		tv = new TreeMap<String, ValSpk>();
-		mv = new TreeMap<String, ValSpk>();
+		tv = new TreeMap<String, SpkVal>();
+		mv = new TreeMap<String, SpkVal>();
 		ldt = new ArrayList<DescTier>();
 		utterance = false;
 		spknamerole = "spk";
@@ -231,29 +231,23 @@ class TierParams {
 	}
 	boolean isDoDisplay(String s, int level) {
 		if (doDisplay.size() < 1) return true;
-		if (level >= 3) {
-			if (TierParams.test("=3", doDisplay)) return true;
-		}
-		if (level == 2) {
-			if (TierParams.test("=2", doDisplay)) return true;
-		}
-		if (level == 1) {
-			if (TierParams.test("=1", doDisplay)) return true;
-		}
-		return TierParams.test(s, doDisplay);
+		return testDisplay(s,doDisplay, level);
 	}
 	boolean isDontDisplay(String s, int level) {
 		if (dontDisplay.size() < 1) return false;
+		return testDisplay(s,dontDisplay, level);
+	}
+	private boolean testDisplay(String s, Set<String> style, int level) {
 		if (level >= 3) {
-			if (TierParams.test("=3", dontDisplay)) return true;
+			if (TierParams.test("=3", style)) return true;
 		}
 		if (level == 2) {
-			if (TierParams.test("=2", dontDisplay)) return true;
+			if (TierParams.test("=2", style)) return true;
 		}
 		if (level == 1) {
-			if (TierParams.test("=1", dontDisplay)) return true;
+			if (TierParams.test("=1", style)) return true;
 		}
-		return TierParams.test(s, dontDisplay);
+		return TierParams.test(s, style);
 	}
 
 	public static void printVersionMessage() {
@@ -957,7 +951,7 @@ class TierParams {
 		return true;
 	}
 
-	void addPair(Map<String, ValSpk> list, String info) {
+	void addPair(Map<String, SpkVal> list, String info) {
 		Pattern pattern = Pattern.compile("(.*)[=:](.*)[=:](.*)");
 		Matcher matcher = pattern.matcher(info);
 		//System.out.println(line);
@@ -965,7 +959,7 @@ class TierParams {
 			// create an new entry
 			if (list.containsKey(matcher.group(1))) {
 				// System.err.println("warning: key information already specified : " + info);
-				ValSpk vs = list.get(matcher.group(1));
+				SpkVal vs = list.get(matcher.group(1));
 				if (matcher.group(3).equals("*")) {
 					System.err.println("warning: key information about speaker was already provided : " + info);
 					vs.genericspk = "*";
@@ -975,7 +969,7 @@ class TierParams {
 				vs.list.put(matcher.group(3), matcher.group(2));
 				return;
 			}
-			ValSpk vs = new ValSpk();
+			SpkVal vs = new SpkVal();
 			vs.genericvalue = matcher.group(2);
 			if (matcher.group(3).equals("*")) {
 				vs.genericspk = "*";
@@ -995,7 +989,7 @@ class TierParams {
 				System.err.println("error: key information already specified (not possible without speaker information) : " + info);
 				return;
 			}
-			ValSpk vs = new ValSpk();
+			SpkVal vs = new SpkVal();
 			vs.genericspk = "";
 			vs.genericvalue = matcher.group(2);
 			list.put(matcher.group(1), vs);
@@ -1007,7 +1001,7 @@ class TierParams {
 
 	public void computeMvValues(TeiFile tf) {
 		// metadata values to be added
-		for (Map.Entry<String, ValSpk> entry : mv.entrySet()) {
+		for (Map.Entry<String, SpkVal> entry : mv.entrySet()) {
 			// three cases:
 			// -- without any loc value
 			// -- with one or several loc values
@@ -1020,7 +1014,7 @@ class TierParams {
 				}
 			}
 
-			ValSpk vsxpath = entry.getValue();
+			SpkVal vsxpath = entry.getValue();
 			if (vsxpath.genericspk.isEmpty()) {
 				System.err.printf("MV: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
 				// no loc value
@@ -1064,7 +1058,14 @@ class TierParams {
 
 		// find the loc
 		Node locnode;
-		String locplace = "//person[altGrp/alt/@type='" + loc + "']";
+		String locplace;
+
+		if (spknamerole.equals("spk")) { // we use the loc id
+			locplace = "//person[altGrp/alt/@type='" + loc + "']";
+		} else { // we use the names
+			locplace = "//person[persName='" + loc + "']";
+		}
+
 		try {
 			locnode = (Node)tf.xpath.evaluate(locplace, tf.root, XPathConstants.NODE);
 		} catch (XPathExpressionException e) {
@@ -1077,9 +1078,13 @@ class TierParams {
 			System.err.printf("Cannot find entry: %s (%s)%n", loc, locplace);
 			return null;
 		}
+		return getXpathValueFrom(tf, locnode, pth, ".//");
+//			entry.setValue(Utils.setEntities(value));
+	}
 
+	private String getXpathValueFrom(TeiFile tf, Node locnode, String pth, String top) {
 		// find pth in metadata
-		if (!pth.startsWith(".")) pth = ".//" + pth;
+		if (!pth.startsWith(".")) pth = top + pth;
 		String value;
 		try {
 			value = (String)tf.xpath.evaluate(pth, locnode, XPathConstants.STRING);
@@ -1095,29 +1100,11 @@ class TierParams {
 		}
 		value = value.replaceAll("[ _]", "-");
 		System.out.printf("Found for [%s] : (%s) [%s]%n", pth, value, Utils.setEntities(value));
-		return value;
 //			entry.setValue(Utils.setEntities(value));
+		return value;
 	}
 
 	String getXpathValue(TeiFile tf, String pth) {
-		// find pth in metadata
-		if (!pth.startsWith("/")) pth = "//" + pth;
-		String value;
-		try {
-			value = (String)tf.xpath.evaluate(pth, tf.root, XPathConstants.STRING);
-		} catch (XPathExpressionException e) {
-			// not found or error ?
-			System.err.printf("Error finding entry: %s%n", e.toString());
-			//e.printStackTrace();
-			return null;
-		}
-		if (value == null || value.isEmpty()) {
-			System.err.printf("Cannot find entry: %s%n", pth);
-			return null;
-		}
-		value = value.replaceAll("[ _]", "-");
-		System.out.printf("Found for [%s] : (%s) [%s]%n", pth, value, Utils.setEntities(value));
-		return value;
-//			entry.setValue(Utils.setEntities(value));
+		return getXpathValueFrom(tf, tf.root, pth, "//");
 	}
 }

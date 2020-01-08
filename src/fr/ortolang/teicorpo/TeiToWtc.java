@@ -9,14 +9,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Map;
 
 //import java.io.FilenameFilter;
@@ -144,7 +138,7 @@ public class TeiToWtc extends TeiConverter {
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
 	 * 
-	 * @param loc
+	 * @param au
 	 *            Locuteur
 	 * @param speechContent
 	 *            Contenu de l'énoncé
@@ -153,7 +147,7 @@ public class TeiToWtc extends TeiConverter {
 	 * @param endTime
 	 *            Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
 /*		if (optionsOutput.syntaxformat.equals("conll")) { // || optionsOutput.syntax.equals("treetagger")) {
 			System.out.println("skip writeSpeech");
@@ -161,17 +155,17 @@ public class TeiToWtc extends TeiConverter {
 		}
 */
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(loc))
+			if (optionsOutput.isDontDisplay(spkChoice(au)))
 				return;
-			if (!optionsOutput.isDoDisplay(loc))
+			if (!optionsOutput.isDoDisplay(spkChoice(au)))
 				return;
 		}
 		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
 		// L'action ci-dessous n'est exécutée que si les instructions d'écriture de la syntaxe n'ont pas été données
 		if (!optionsOutput.syntaxformat.equals("ref") && !optionsOutput.syntaxformat.equals("conll")) {
 			// System.err.println("writeSpeech0: " + optionsOutput.syntaxformat);
-			generateUStart(loc, startTime, endTime, null);
-			generateU(speechContent, loc);
+			generateUStart(spkChoice(au), startTime, endTime, null);
+			generateU(speechContent, spkChoice(au));
 			System.out.printf("</u>%n");
 			System.out.printf("</sp>%n");
 		}
@@ -213,7 +207,7 @@ public class TeiToWtc extends TeiConverter {
 		System.out.printf("<sp id=\"%d\" speaker=\"%s\" starttime=\"%s\" endtime=\"%s\">%n", spid, locclean, st, et);
 		spid++;
 		System.out.printf("<u s=\"%s\" spkid=\"%s\" age=\"%s\">%n", st, locclean, getAge(locclean));
-		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+		for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 		    String key = entry.getKey();
 		    String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 			System.out.printf(" %s=\"%s\"", key, value);
@@ -263,7 +257,7 @@ public class TeiToWtc extends TeiConverter {
 					w += "\t" + spkcode;
 					w += "\t" + age;
 					w += "\t" + typeDiv;
-					for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+					for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
 						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 						w += "\t" + value;
@@ -277,7 +271,7 @@ public class TeiToWtc extends TeiConverter {
 					// System.out.println("writeConnl3 " + aw.toString());
 					// get data that in reproduced in every words
 					String locinfo = "\t" + spkcode + "\t" + age  + "\t" + typeDiv;
-					for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+					for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
 						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 						locinfo += "\t" + value;
@@ -319,7 +313,7 @@ public class TeiToWtc extends TeiConverter {
 					w += "\t" + spkcode;
 					w += "\t" + age;
 					w += "\t" + typeDiv;
-					for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+					for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
 						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 						w += "\t" + value;
@@ -333,7 +327,7 @@ public class TeiToWtc extends TeiConverter {
 					if (w.getNodeType() == Node.ELEMENT_NODE) {
 						// get data that in reproduced in every words
 						String locinfo = "\t" + spkcode + "\t" + age  + "\t" + typeDiv;
-						for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+						for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 							String key = entry.getKey();
 							String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 							locinfo += "\t" + value;
@@ -443,7 +437,7 @@ public class TeiToWtc extends TeiConverter {
 			w += "\t" + loc;
 			w += "\t" + age;
 			w += "\t" + typeDiv;
-			for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+			for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 				String key = entry.getKey();
 				String value = entry.getValue().genericvalue;
 				w += "\t" + value;
@@ -454,7 +448,7 @@ public class TeiToWtc extends TeiConverter {
 		for (int ti = 0; ti < p.size(); ti++) {
 			String w = p.get(ti);
 			w += "\t" + loc + "\t" + age  + "\t" + typeDiv;
-			for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+			for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 			    String key = entry.getKey();
 			    String value = entry.getValue().genericvalue;
 				w += "\t" + value;

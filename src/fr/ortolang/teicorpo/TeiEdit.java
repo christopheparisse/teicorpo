@@ -254,19 +254,7 @@ public class TeiEdit extends GenericMain {
 			return;
 		}
 
-		Source source = new DOMSource(teiDoc);
-		Result resultat = new StreamResult(outputName);
-
-		try {
-			TransformerFactory fabrique2 = TransformerFactory.newInstance();
-			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, TeiDocument.teiCorpoDtd());
-			transformer.transform(source, resultat);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		Utils.createFile(teiDoc, outputName);
 	}
 
 	/*

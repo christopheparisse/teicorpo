@@ -241,10 +241,10 @@ public class TeiToSubtHtml extends TeiConverter{
 	 * @param startTime	Temps de début de l'énoncé
 	 * @param endTime	Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime){
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime){
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(loc)) return;
-			if (!optionsOutput.isDoDisplay(loc)) return;
+			if (optionsOutput.isDontDisplay(spkChoice(au))) return;
+			if (!optionsOutput.isDoDisplay(spkChoice(au))) return;
 		}
 		//System.out.println(loc + ' ' + startTime + ' ' + endTime +' ' + speechContent);
 		//Si le temps de début n'est pas renseigné, on mettra par défaut le temps de fin (s'il est renseigné) moins une seconde.
@@ -264,9 +264,9 @@ public class TeiToSubtHtml extends TeiConverter{
 
 		//On ajoute les informations temporelles seulement si on a un temps de début et un temps de fin 
 		if(Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)){
-			printLine(startTime, endTime, loc, speechContent);
+			printLine(startTime, endTime, spkChoice(au), speechContent);
 		} else if (optionsOutput.forceEmpty) {
-			printContinuation(loc, speechContent);
+			printContinuation(spkChoice(au), speechContent);
 		}
 	}
 

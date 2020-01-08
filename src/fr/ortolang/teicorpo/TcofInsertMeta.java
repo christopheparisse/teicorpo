@@ -267,7 +267,7 @@ public class TcofInsertMeta {
 
 
         // save result
-        TeiDocument.createFile(teicorporesultName, teicorpo.doc);
+        Utils.createFile(teicorpo.doc, teicorporesultName);
     }
 
     private String normalizeAge(String age) {

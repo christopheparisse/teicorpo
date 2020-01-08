@@ -482,8 +482,8 @@ public class TranscriberToTei extends GenericMain {
 	 * Les éléments <strong>div</strong> correspondent aux
 	 * <strong>section</strong> du format Transcriber.
 	 * 
-	 * @param text
-	 *            L'élément <strong>text</strong> auquel se rattachent les
+	 * @param top
+	 *            élément <strong>text</strong> auquel se rattachent les
 	 *            éléments <strong>div</strong>.
 	 * @param section
 	 *            Le noeud <strong>section</strong> issu du document Transcriber
@@ -559,7 +559,7 @@ public class TranscriberToTei extends GenericMain {
 	 * Met à jour les attributs de l'élément <strong>u</strong> à partir des
 	 * attributs de l'élément <strong>turn</strong>.
 	 * 
-	 * @param u
+	 * @param annotatedU
 	 *            L'élément <strong>u</strong> à mettre à jour.
 	 * @param turn
 	 *            L'élément <strong>turn</strong> du document Transcriber.
@@ -595,7 +595,7 @@ public class TranscriberToTei extends GenericMain {
 	 * 
 	 * @param turn
 	 *            L'élément <strong>turn</strong> à convertir.
-	 * @param u
+	 * @param annotatedU
 	 *            L'élément <strong>u</strong> à mettre à jour.
 	 * @param div
 	 *            Le père de l'élément <strong>u</strong> (un élément
@@ -849,7 +849,6 @@ public class TranscriberToTei extends GenericMain {
 	 * Mise à jour (incrémentation) et attribution de l'identifiant des éléments
 	 * <strong>u</strong>.
 	 * 
-	 * @param u
 	 *            L'élément <strong>annotatedU</strong> auquel on attribut
 	 *            l'identifiant.
 	 */
@@ -1064,7 +1063,7 @@ public class TranscriberToTei extends GenericMain {
 		// System.out.println("Lecture de " + input);
 		transform(new File(input), options);
 		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
-		TeiDocument.createFile(output, docTEI);
+		Utils.createFile(docTEI, output);
 		// System.out.println("New file created " + output);
 	}
 }

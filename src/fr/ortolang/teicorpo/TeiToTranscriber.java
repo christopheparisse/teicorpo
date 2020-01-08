@@ -786,19 +786,7 @@ public class TeiToTranscriber extends TeiConverter {
 
 	// Création du fichier de sortie
 	public void createOutput() {
-		Source source = new DOMSource(trsDoc);
-		Result resultat = new StreamResult(outputName);
-
-		try {
-			TransformerFactory fabrique2 = TransformerFactory.newInstance();
-			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, "trans-14.dtd");
-			transformer.transform(source, resultat);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		Utils.createFile(trsDoc, outputName);
 	}
 
 	/*
@@ -825,7 +813,7 @@ public class TeiToTranscriber extends TeiConverter {
 	}
 
 	@Override
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		// unnecessary
 	}
 

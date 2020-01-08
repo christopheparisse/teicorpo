@@ -306,7 +306,7 @@ public class AnonymousVideo extends TeiConverter {
 	}
 
 	@Override
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		// nothing to do: not used for this application
 	}
 

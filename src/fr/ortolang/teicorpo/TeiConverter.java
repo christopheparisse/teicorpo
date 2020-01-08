@@ -156,4 +156,11 @@ public abstract class TeiConverter extends GenericMain {
 		}
 		writeAddInfo(u);
 	}
+
+	String spkChoice(AnnotatedUtterance u) {
+		if (optionsOutput.spknamerole.equals("name"))
+			return u.speakerName;
+		else
+			return u.speakerCode;
+	}
 }

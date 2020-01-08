@@ -81,13 +81,13 @@ public class TeiToPartition {
 			AnnotatedUtterance au = new AnnotatedUtterance();
 			au.processAnnotatedU(annotGrp, this.timeline, null, optionsOutput, false);
 			NodeList annotGrpElmts = annotGrp.getChildNodes();
-			String name = au.speakerCode;
-			if (!Utils.isNotEmptyOrNull(name))
+			String choiceTag = au.speakerChoice(optionsOutput);
+			if (!Utils.isNotEmptyOrNull(choiceTag))
 				continue; // this is a note and not an utterance
 			if (optionsOutput != null) {
-				if (optionsOutput.isDontDisplay(name, 1))
+				if (optionsOutput.isDontDisplay(choiceTag, 1))
 					continue;
-				if (!optionsOutput.isDoDisplay(name, 1))
+				if (!optionsOutput.isDoDisplay(choiceTag, 1))
 					continue;
 			}
 			String start = au.start;
@@ -99,10 +99,10 @@ public class TeiToPartition {
 				a.timereftype = "time";
 				String lgqt = "";
 				for (TierInfo ti : tierInfos) {
-					if (ti.tier_id.equals(name))
+					if (ti.tier_id.equals(choiceTag))
 						lgqt = ti.type.lgq_type_id == null ? "-" : ti.type.lgq_type_id;
 				}
-				addElementToMap(tiers, name, a, lgqt, "-");
+				addElementToMap(tiers, choiceTag, a, lgqt, "-");
 			}
 			
 			for (int j = 0; j < annotGrpElmts.getLength(); j++) {
@@ -112,7 +112,7 @@ public class TeiToPartition {
 						String at = annotElmt.getAttribute("type");
 						if (at != null && at.equals("TurnInformation"))
 							continue;
-						spanGrpCase(tiers, annotElmt, id, name, "time", start, end);
+						spanGrpCase(tiers, annotElmt, id, choiceTag, "time", start, end);
 					}
 				}
 			}

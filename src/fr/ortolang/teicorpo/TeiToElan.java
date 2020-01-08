@@ -585,19 +585,7 @@ public class TeiToElan extends GenericMain {
 
 	// Création du fichier de sortie
 	public void createOutput() {
-		Source source = new DOMSource(elanDoc);
-		Result resultat = new StreamResult(outputName);
-
-		try {
-			TransformerFactory fabrique2 = TransformerFactory.newInstance();
-			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			transformer.setOutputProperty(OutputKeys.STANDALONE, "no");
-			transformer.transform(source, resultat);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		Utils.createFile(elanDoc, outputName);
 	}
 
 	public static void main(String args[]) throws IOException {

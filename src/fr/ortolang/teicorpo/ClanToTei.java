@@ -137,6 +137,7 @@ public class ClanToTei extends ImportToTei {
 		buildText(extension);
 		setDurDate();
 		setDivTimes();
+		setStmt();
 		addTemplateDesc(docTEI);
 		addTimeline();
 	}
@@ -202,19 +203,6 @@ public class ClanToTei extends ImportToTei {
 				addNotes.appendChild(note);
 			}
 		}
-	}
-
-	// Construction de l'élément profileDesc : settingDesc + Stmt
-	/**
-	 * Mise à jour de l'élément <strong>profileDesc</strong>, correspondant à la
-	 * description sémantique du fichier.<br>
-	 * Contient les informations sur les s et les situations de
-	 * l'enregistrement.
-	 */
-	public void setProfileDesc() {
-		Element profileDesc = (Element) docTEI.getElementsByTagName("profileDesc").item(0);
-		setSettingDesc(profileDesc);
-		setStmt(profileDesc);
 	}
 
 	/**
@@ -311,11 +299,14 @@ public class ClanToTei extends ImportToTei {
 	 * 
 	 * @param profileDesc
 	 */
-	public void setStmt(Element profileDesc) {
+	public void setStmt() {
+		/*
 		Element particDesc = docTEI.createElement("particDesc");
 		profileDesc.appendChild(particDesc);
 		Element listPerson = docTEI.createElement("listPerson");
 		particDesc.appendChild(listPerson);
+		*/
+		Element listPerson = (Element) docTEI.getElementsByTagName("listPerson").item(0);
 
 		for (ChatFile.ID part : cf.ids) {
 			Element person = docTEI.createElement("person");
@@ -524,7 +515,7 @@ public class ClanToTei extends ImportToTei {
 								return i + 1;
 							// else ignore @EG
 							else {
-								System.err.printf("too many @EG at line %d%n", i);
+								System.err.printf("too many @EG at line %d %s%n", i, cl.toString());
 								nbBG = 0;
 								i++;
 							}
@@ -1254,25 +1245,6 @@ public class ClanToTei extends ImportToTei {
 		return true;
 	}
 
-	/**
-	 * Crée le fichier de sortie contenant le nouveau Document TEI.
-	 *            Le nom du fichier de sortie. public void createFile(String
-	 *            outputFileName) {
-	 * 
-	 *            Source source = new DOMSource(this.docTEI); Result resultat =
-	 *            new StreamResult(outputFileName);
-	 * 
-	 *            try { // Configuration du transformer TransformerFactory
-	 *            fabrique2 = TransformerFactory.newInstance(); Transformer
-	 *            transformer = fabrique2.newTransformer();
-	 *            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-	 *            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-	 *            transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM,
-	 *            Utils.teiCorpoDtd()); // Transformation
-	 *            transformer.transform(source, resultat); } catch (Exception e)
-	 *            { e.printStackTrace(); } }
-	 */
-
 	public static void main(String[] args) throws Exception {
 		EXT = ".cha";
 		TierParams.printVersionMessage();
@@ -1292,7 +1264,7 @@ public class ClanToTei extends ImportToTei {
 			e.printStackTrace();
 		}
 		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
-		TeiDocument.createFile(output, docTEI);
+		Utils.createFile(docTEI, output);
 	}
 
 }

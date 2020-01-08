@@ -38,15 +38,7 @@ public class validateDTD {
 	         builder.setErrorHandler(new MyErrorHandler());
 	         // Generates a Document object tree
 	         builder.parse(new InputSource(xmlFileName));
-	         
-//	         Document xmlDocument = builder.parse(new InputSource(xmlFileName));
-//	         DOMSource source = new DOMSource(xmlDocument);
-//	         StreamResult result = new StreamResult(System.out);
-//	         //
-//	         TransformerFactory transformerFactory = TransformerFactory.newInstance();
-//	         Transformer transformer = transformerFactory.newTransformer();
-//	         transformer.transform(source, result);
-	         
+
 	         return true;
 	         
 	      } catch (Throwable e) {

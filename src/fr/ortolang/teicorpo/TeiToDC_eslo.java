@@ -144,7 +144,7 @@ public class TeiToDC_eslo{
 		buildDC();
 
 		//Ecriture du fichier xml
-		createFile(outputFileName);
+		Utils.createFile(dcDoc, outputFileName);
 	}
 
 	public void buildDC(){
@@ -227,22 +227,6 @@ public class TeiToDC_eslo{
 		ArrayList<String> right = new ArrayList<String>();
 	}
 
-	public void createFile(String outputFileName) {
-		Source source = new DOMSource(this.dcDoc);
-		Result result = new StreamResult(outputFileName);
-		try {
-			// Configuration du transformer 
-			TransformerFactory fabrique2 = TransformerFactory.newInstance();
-			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			// Transformation
-			transformer.transform(source, result);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
 	//Conversion de date du format Chat : JJ-MMM-AAAA au format imposé par DC : AAAA‑MM‑JJ
 	public static String dateConversion(String date){
 		Pattern p = Pattern.compile("([0-9]{2})-([A-Z]{3})-([0-9]{4})");

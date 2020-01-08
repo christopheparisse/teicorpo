@@ -21,8 +21,6 @@ public class AnnotatedUtterance {
 	// codes for utterance display
 	public Codes codes;
 	
-	// Element annotatedU
-	public Element annotU;
 	// Identifiant
 	public String id;
 	private int nthid;
@@ -86,21 +84,7 @@ public class AnnotatedUtterance {
 		return s;
 	}
 
-	public boolean processP(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
-		optionsTEI = options;
-		morClan = "";
-		this.teiTimeline = teiTimeline;
-		id = u.getAttribute("xml:id");
-		nthid = 0;
-		speakerCode = "p";
-		coms = new ArrayList<String>();
-		speeches = new ArrayList<Annot>();
-		tiers = new ArrayList<Annot>();
-		tierTypes = new HashSet<String>();
-		speakerName = "";
-		nomarkerSpeech = "";
-		speech = u.getTextContent();
-		nomarkerSpeech = speech;
+	private void addAnnot() {
 		Annot a = new Annot(speakerName, start, end, speech, nomarkerSpeech);
 		if (nthid == 0) {
 			a.id = id;
@@ -110,15 +94,32 @@ public class AnnotatedUtterance {
 			nthid++;
 		}
 		speeches.add(a);
-		return true;
 	}
 
-	public boolean processU(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+	public boolean processP(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
 		optionsTEI = options;
 		morClan = "";
 		this.teiTimeline = teiTimeline;
+		id = u.getAttribute("xml:id");
+		nthid = 0;
+		speakerCode = "p";
+		speakerName = "p";
+		coms = new ArrayList<String>();
+		speeches = new ArrayList<Annot>();
+		tiers = new ArrayList<Annot>();
+		tierTypes = new HashSet<String>();
+		nomarkerSpeech = "";
+		speech = u.getTextContent();
+		nomarkerSpeech = speech;
+		addAnnot();
+		return true;
+	}
+
+	private void initU() {
+		morClan = "";
+		this.teiTimeline = teiTimeline;
 		// Initialisation des variables d'instances
-		if (options != null && options.outputFormat == ".cha") {
+		if (optionsTEI != null && optionsTEI.outputFormat == ".cha") {
 			shortPause = Utils.shortPauseCha;
 			longPause = Utils.longPauseCha;
 			veryLongPause = Utils.veryLongPauseCha;
@@ -127,6 +128,40 @@ public class AnnotatedUtterance {
 			longPause = Utils.longPause;
 			veryLongPause = Utils.veryLongPause;
 		}
+	}
+
+	public String speakerChoice(TierParams options) {
+		if (options.spknamerole.equals("name"))
+			return speakerName;
+		else
+			return speakerCode;
+	}
+
+	private boolean fillU(TransInfo transInfo, TierParams options) {
+		coms = new ArrayList<String>();
+		speeches = new ArrayList<Annot>();
+		tiers = new ArrayList<Annot>();
+		tierTypes = new HashSet<String>();
+
+		String spkC = speakerChoice(options);
+
+		if (optionsTEI != null) {
+			if (optionsTEI.isDontDisplay(spkC, 1))
+				return false;
+			if (!optionsTEI.isDoDisplay(spkC, 1))
+				return false;
+		}
+		// System.err.printf(speakerCode +  "  = code%n");
+		if (transInfo != null)
+			speakerName = transInfo.getParticipantName(speakerCode);
+		else
+			speakerName = speakerCode;
+		return true;
+	}
+
+	public boolean processU(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+		optionsTEI = options;
+		initU();
 		id = u.getAttribute("xml:id");
 		nthid = 0;
 		if (teiTimeline != null) {
@@ -137,21 +172,7 @@ public class AnnotatedUtterance {
 			end = u.getAttribute("end");
 		}
 		speakerCode = u.getAttribute("who");
-		coms = new ArrayList<String>();
-		speeches = new ArrayList<Annot>();
-		tiers = new ArrayList<Annot>();
-		tierTypes = new HashSet<String>();
-		if (options != null) {
-			if (options.isDontDisplay(speakerCode, 1))
-				return false;
-			if (!options.isDoDisplay(speakerCode, 1))
-				return false;
-		}
-		// System.err.printf(speakerCode +  "  = code%n");
-		if (transInfo != null)
-			speakerName = transInfo.getParticipantName(speakerCode);
-		else
-			speakerName = speakerCode;
+		if (!fillU(transInfo, options)) return false;
 
 		nomarkerSpeech = "";
 		speech = "";
@@ -160,34 +181,14 @@ public class AnnotatedUtterance {
 		//System.out.printf("UUUU : %s%n", speech);
 		speech = Utils.cleanStringPlusEntities(speech);
 		nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
-		Annot a = new Annot(speakerName, start, end, speech, nomarkerSpeech);
-		if (nthid == 0) {
-			a.id = id;
-			nthid++;
-		} else {
-			a.id = id + nthid;
-			nthid++;
-		}
-		speeches.add(a);
+		addAnnot();
 
 		return true;
 	}
 
 	public boolean processAnnotatedU(Element annotatedU, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
 		optionsTEI = options;
-		morClan = "";
-		this.teiTimeline = teiTimeline;
-		// Initialisation des variables d'instances
-		if (options != null && options.outputFormat == ".cha") {
-			shortPause = Utils.shortPauseCha;
-			longPause = Utils.longPauseCha;
-			veryLongPause = Utils.veryLongPauseCha;
-		} else {
-			shortPause = Utils.shortPause;
-			longPause = Utils.longPause;
-			veryLongPause = Utils.veryLongPause;
-		}
-		annotU = annotatedU;
+		initU();
 		id = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
 		nthid = 0;
 		if (teiTimeline != null) {
@@ -198,21 +199,7 @@ public class AnnotatedUtterance {
 			end = TeiDocument.getAttrAnnotationBloc(annotatedU, "end");
 		}
 		speakerCode = TeiDocument.getAttrAnnotationBloc(annotatedU, "who");
-		coms = new ArrayList<String>();
-		speeches = new ArrayList<Annot>();
-		tiers = new ArrayList<Annot>();
-		tierTypes = new HashSet<String>();
-		if (options != null) {
-			if (options.isDontDisplay(speakerCode, 1))
-				return false;
-			if (!options.isDoDisplay(speakerCode, 1))
-				return false;
-		}
-		// System.err.printf(speakerCode +  "  = code%n");
-		if (transInfo != null)
-			speakerName = transInfo.getParticipantName(speakerCode);
-		else
-			speakerName = speakerCode;
+		if (!fillU(transInfo, options)) return false;
 		NodeList annotUElements = annotatedU.getChildNodes();
 		// Parcours des éléments contenus dans u et construction des
 		// variables speech, nomarkerSpeech et speeches en fonction.
@@ -235,15 +222,7 @@ public class AnnotatedUtterance {
 					//System.out.printf("TTTTT : %s%n", speech);
 					speech = Utils.cleanStringPlusEntities(speech);
 					nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
-					Annot a = new Annot(speakerName, start, end, speech, nomarkerSpeech);
-					if (nthid == 0) {
-						a.id = id;
-						nthid++;
-					} else {
-						a.id = id + nthid;
-						nthid++;
-					}
-					speeches.add(a);
+					addAnnot();
 					// System.out.printf("TTTTT endofseg: %s %s %s%n", start, end, speech);
 				} else if (nodeName.equals("spanGrp") && doSpan == true) {
 					// Ajout des tiers
@@ -452,15 +431,7 @@ public class AnnotatedUtterance {
 					else
 						sync = segChildEl.getAttribute("synch");
 					// creer une ligne avec speech, nomarkerSpeech, addspeech
-					Annot a = new Annot(speakerName, start, sync, speech, nomarkerSpeech);
-					if (nthid == 0) {
-						a.id = id;
-						nthid++;
-					} else {
-						a.id = id + nthid;
-						nthid++;
-					}
-					speeches.add(a);
+					addAnnot();
 					// System.out.printf("anchor: %s %s %s %s%n", speakerName,
 					// start, sync, speech);
 					start = sync;

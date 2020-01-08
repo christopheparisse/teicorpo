@@ -139,7 +139,7 @@ public class TeiToSrt extends TeiConverter {
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
 	 * 
-	 * @param loc
+	 * @param au
 	 *            Locuteur
 	 * @param speechContent
 	 *            Contenu de l'énoncé
@@ -148,11 +148,11 @@ public class TeiToSrt extends TeiConverter {
 	 * @param endTime
 	 *            Temps de fin de l'énoncé
 	 */
-	public void writeSpeech(String loc, String speechContent, String startTime, String endTime) {
+	public void writeSpeech(AnnotatedUtterance au, String speechContent, String startTime, String endTime) {
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(loc))
+			if (optionsOutput.isDontDisplay(spkChoice(au)))
 				return;
-			if (!optionsOutput.isDoDisplay(loc))
+			if (!optionsOutput.isDoDisplay(spkChoice(au)))
 				return;
 		}
 		// System.out.println(loc + ' ' + startTime + ' ' + endTime +' ' +
@@ -187,9 +187,9 @@ public class TeiToSrt extends TeiConverter {
 					TimeDivision.toMinutes(start), TimeDivision.toSeconds(start), TimeDivision.toMilliSeconds(start),
 					TimeDivision.toHours(end), TimeDivision.toMinutes(end), TimeDivision.toSeconds(end),
 					TimeDivision.toMilliSeconds(end));
-			out.println(loc + ": " + speechContent);
+			out.println(spkChoice(au) + ": " + speechContent);
 		} else if (optionsOutput.forceEmpty) {
-			out.println(loc + ": " + speechContent);
+			out.println(spkChoice(au) + ": " + speechContent);
 		}
 	}
 

@@ -197,7 +197,7 @@ public class ImportConllToTei extends ImportToTei {
 			e.printStackTrace();
 		}
 		TeiDocument.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
-		TeiDocument.createFile(output, docTEI);
+		Utils.createFile(docTEI, output);
 	}
 
 }

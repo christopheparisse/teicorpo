@@ -35,6 +35,10 @@ public class ChatLine {
 		return head;
 	}
 
+	public String toString() {
+		return "[" + head + "][" + tail + "]";
+	}
+
 	public static void main(String[] args) {
 		ChatLine cl = new ChatLine(args[0]);
 		System.out.println(cl.head + " :-: " + cl.tail);

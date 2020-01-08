@@ -173,21 +173,7 @@ public class MoissonnageEslo {
 			String outputFileName = output + "/" + recordName + ".meta.xml";
 			System.out.println("# metadata: " + outputFileName);
 
-			Source source = new DOMSource(record);
-			Result resultat = new StreamResult(outputFileName);
-
-			try {
-				// Configuration du transformer
-				TransformerFactory fabrique2 = TransformerFactory.newInstance();
-				Transformer transformer = fabrique2.newTransformer();
-				transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-				transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-
-				// Transformation
-				transformer.transform(source, resultat);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			Utils.createFile((Document)record, outputFileName);
 		}
 	}
 

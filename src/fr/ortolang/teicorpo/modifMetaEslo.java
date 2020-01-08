@@ -36,7 +36,7 @@ public class modifMetaEslo {
 		modifNodeURL("dc:identifier");
 		modifNodeURL("dcterms:isFormatOf");
 		
-		createFile("MetadataEsloModif/" + inputMetaFile.getName());
+		Utils.createFile(docMETA,"MetadataEsloModif/" + inputMetaFile.getName());
 			
 	}
 	
@@ -53,29 +53,8 @@ public class modifMetaEslo {
 			//System.out.println("http://modyco.inist.fr/data/eslo/" + corpus + "/" + baseNameWithoutExtension + "/" + baseNameWithExtension);
 		}
 	}
-	
-	public void createFile(String outputFileName) {
 
-		Source source = new DOMSource(docMETA);
-
-		Result resultat = new StreamResult(outputFileName);
-
-		try {
-			// Configuration du transformer
-			TransformerFactory fabrique2 = TransformerFactory.newInstance();
-			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			// transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, Utils.TEI_CORPO_DTD);
-
-			// Transformation
-			transformer.transform(source, resultat);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}	
-	
-	public static void main (String args[]){
+	public static void main (String args[]) {
 		File metaDir = new File("MetadataEslo");
 		File [] listMeta = metaDir.listFiles();
 		for(File metaFile : listMeta){

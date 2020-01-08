@@ -18,9 +18,7 @@ import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
@@ -433,7 +431,7 @@ public class Utils {
          
         return null;
     }
- 
+
     public static Document convertStringToDocument(String xmlStr) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();  
         DocumentBuilder builder;  
@@ -447,6 +445,23 @@ public class Utils {
         } 
         return null;
     }
+
+	public static void createFile(Document domDoc, String outputFileName) {
+		Source source = new DOMSource(domDoc);
+		Result resultat = new StreamResult(outputFileName);
+		try {
+			// Configuration du transformer
+			TransformerFactory fabrique2 = TransformerFactory.newInstance();
+			Transformer transformer = fabrique2.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+			// Transformation
+			transformer.transform(source, resultat);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 
     public static List<String> loadTextFile(String filename) throws IOException {
 		List<String> ls = new ArrayList<String>();

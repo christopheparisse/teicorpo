@@ -154,34 +154,6 @@ public class TeiDocument {
         return n.getNodeType() == Node.TEXT_NODE;
     }
 
-    /**
-     * Creation of TEI file out of the original transcription.
-     * @param outputFileName Name of TEI file to be created
-     * @param d XML document
-     */
-    public static void createFile(String outputFileName, Document d) {
-
-        Source source = new DOMSource(d);
-
-        Result resultat = new StreamResult(outputFileName);
-
-        try {
-            // Configuration du transformer
-            TransformerFactory fabrique2 = TransformerFactory.newInstance();
-            Transformer transformer = fabrique2.newTransformer();
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-            transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, teiCorpoDtd());
-            transformer.setOutputProperty(OutputKeys.STANDALONE, "no");
-
-            // Transformation
-            transformer.transform(source, resultat);
-            // System.out.println("Fichier TEI créé : " + outputFileName);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public static void setDTDvalidation(DocumentBuilderFactory factory, boolean b) {
         try {
             System.out.printf("validation:%s%n",b?"yes":"no");

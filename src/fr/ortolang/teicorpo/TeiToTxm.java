@@ -4,35 +4,18 @@
  */
 package fr.ortolang.teicorpo;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 //import java.io.FilenameFilter;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import fr.ortolang.teicorpo.AnnotatedUtterance;
 import fr.ortolang.teicorpo.TeiFile.Div;
-import org.w3c.dom.NodeList;
 
 public class TeiToTxm extends TeiConverter {
 
@@ -85,23 +68,7 @@ public class TeiToTxm extends TeiConverter {
 
 	@Override
 	public void createOutput() {
-		createFile(outputName);
-	}
-
-	public void createFile(String outputFileName) {
-		Source source = new DOMSource(this.txmDoc);
-		Result resultat = new StreamResult(outputFileName);
-		try {
-			// Configuration du transformer 
-			TransformerFactory fabrique2 = TransformerFactory.newInstance();
-			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-			// Transformation
-			transformer.transform(source, resultat);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		Utils.createFile(txmDoc, outputName);
 	}
 
 	/**
@@ -123,6 +90,7 @@ public class TeiToTxm extends TeiConverter {
 		txm.appendChild(head);
 		Element elt = txmDoc.createElement("div");
 		head.appendChild(elt);
+		head = elt; // all other elements will be included in head
 		setTv(elt, "");
 	}
 
@@ -189,9 +157,9 @@ public class TeiToTxm extends TeiConverter {
 		}
 */
 		if (optionsOutput != null) {
-			if (optionsOutput.isDontDisplay(u.speakerCode)) // TODO: loc
+			if (optionsOutput.isDontDisplay(spkChoice(u))) // TODO: loc
 				return;
-			if (!optionsOutput.isDoDisplay(u.speakerCode)) // TODO: loc
+			if (!optionsOutput.isDoDisplay(spkChoice(u))) // TODO: loc
 				return;
 		}
 		// System.err.println("writeSpeech: " + optionsOutput.syntaxformat);
@@ -266,7 +234,7 @@ public class TeiToTxm extends TeiConverter {
 			// System.out.println("writeTier2: " + tier.toString());
 			// get loc age
 			String age = getLocAge(au.speakerCode);
-			Element u = generateUStart(au.speakerCode, au.start, au.end, age);
+			Element u = generateUStart(au, au.start, au.end, age);
 			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
 			// tier.name
 			if (tier.dependantAnnotations != null) {
@@ -311,7 +279,7 @@ public class TeiToTxm extends TeiConverter {
 			// System.err.println("writeTier3: " + tier.toString());
 			// get loc age
 			String age = getLocAge(au.speakerCode);
-			Element u = generateUStart(au.speakerCode, au.start, au.end, age);
+			Element u = generateUStart(au, au.start, au.end, age);
 			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
 			// tier.name
 			
@@ -368,15 +336,15 @@ public class TeiToTxm extends TeiConverter {
 
 	private void setTv(Element we, String spkcode) {
 		// fixed values to be added
-		for (Map.Entry<String, ValSpk> entry : optionsOutput.tv.entrySet()) {
+		for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 			String key = entry.getKey();
 			String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
 			we.setAttribute(key, value);
 		}
 		// metadata values to be added
-		for (Map.Entry<String, ValSpk> entry : optionsOutput.mv.entrySet()) {
+		for (Map.Entry<String, SpkVal> entry : optionsOutput.mv.entrySet()) {
 			String key = entry.getKey();
-			ValSpk vs = entry.getValue();
+			SpkVal vs = entry.getValue();
 			if (vs.genericspk.isEmpty()) {
 				we.setAttribute(key, entry.getValue().genericvalue);
 			} else {
@@ -508,13 +476,6 @@ public class TeiToTxm extends TeiConverter {
 			setDiv(we);
 			elt.appendChild(we);
 		}
-	}
-
-	private String spkChoice(AnnotatedUtterance u) {
-		if (optionsOutput.spknamerole.equals("name"))
-			return u.speakerName;
-		else
-			return u.speakerCode;
 	}
 
 	private String getLocAge(String loc) {
