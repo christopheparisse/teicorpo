@@ -43,14 +43,11 @@ public class TeiFile {
 	// Lignes principales de la transcriptions (liste d'utterances)
 	ArrayList<AnnotatedUtterance> mainLines = new ArrayList<AnnotatedUtterance>();
 
-	public TeiFile(File teiFile, TierParams options) {
-		optionsOutput = options;
-		DocumentBuilderFactory factory = null;
-		root = null;
-		teiTimeline = new TeiTimeline();
+	public void loadXml(File teiFile, boolean validation) {
 		try {
+			DocumentBuilderFactory factory = null;
 			factory = DocumentBuilderFactory.newInstance();
-			TeiDocument.setDTDvalidation(factory, options.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, validation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(teiFile);
 			root = teiDoc.getDocumentElement();
@@ -85,6 +82,16 @@ public class TeiFile {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public TeiFile() {
+		teiDoc = null;
+	}
+
+	public TeiFile(File teiFile, TierParams options) {
+		optionsOutput = options;
+		loadXml(teiFile, options.dtdValidation);
+		teiTimeline = new TeiTimeline();
 		teiTimeline.buildTimeline(this.teiDoc);
 		transInfo = new TransInfo((Element) root.getElementsByTagName("teiHeader").item(0));
 		trans = new Trans((Element) root.getElementsByTagName("text").item(0), this);

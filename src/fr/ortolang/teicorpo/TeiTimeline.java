@@ -12,6 +12,11 @@ public class TeiTimeline {
 	// Map pour représenter la timeline
 	public HashMap<String, String> timeline;
 	double xmaxTime;
+
+	public String toString() {
+		return timeline != null ? "TeiTimeline: nb elements: " + timeline.size() + " xmaxTime = " + xmaxTime : "TeiTimeline was not created.";
+	}
+
 	TeiTimeline() {
 		timeline = new HashMap<String, String>();
 		xmaxTime = 0.0;

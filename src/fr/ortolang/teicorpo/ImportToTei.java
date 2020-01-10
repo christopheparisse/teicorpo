@@ -26,13 +26,15 @@ public abstract class ImportToTei extends GenericMain {
 	// acces Xpath
 	public XPathFactory xPathfactory;
 	public XPath xpath;
+	/** Liste des types de tiers présents dans le fichier */
+	HashSet<String> tiersNames;
 	// timeline
 	ArrayList<String> times;
 	ArrayList<Element> timeElements;
 	Double maxTime = 0.0;
 	int whenId = 0;
 	// params
-	TierParams tparams;
+	TierParams optionsTEI = null;
 
 
 	public void addTimeline() {
@@ -111,7 +113,7 @@ public abstract class ImportToTei extends GenericMain {
 	}
 
 	public String addTimeToTimeline(String time) {
-		if (Utils.isNotEmptyOrNull(time)) {
+		if (Utils.isNotEmptyOrNull(time) && !time.equals("0")) {
 			Double t = Double.parseDouble(time);
 			if (t > maxTime)
 				maxTime = t;
@@ -136,7 +138,20 @@ public abstract class ImportToTei extends GenericMain {
 	}
 
 	/**
-	 * Création d'un Document TEI minimal.
+	 * Création d'un fichier TEI "vide": contenant les éléments principaux soit:
+	 * <br>
+	 * <ul>
+	 * <li><strong>teiHeader</strong>: contient des informations sur le document
+	 * <br>
+	 * <li><strong>fileDesc</strong>: contient une description du document<br>
+	 * <li><strong>profileDesc</strong>: contient une description du contenu du
+	 * document<br>
+	 * <li><strong>revisionDesc</strong>: contient des informations sur les
+	 * versions et révisions du document<br>
+	 * <li><strong>text</strong>: contient le contenu de la transcription<br>
+	 * <li><strong>div</strong>: contient une partie du document, distinguée par
+	 * son thème ("desc")<br>
+	 * </ul>
 	 */
 	public void buildTEI(String fname) {
 		Element teiHeader = TeiDocument.findOrCreate(docTEI, rootTEI, "teiHeader");
@@ -155,7 +170,7 @@ public abstract class ImportToTei extends GenericMain {
 		Element encodingDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "encodingDesc");
 		encodingDesc.setAttribute("style", Version.versionTEI);
 		Element revisionDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "revisionDesc");
-		TeiDocument.setRevisionInfo(docTEI, revisionDesc, fname, null, tparams.test);
+		TeiDocument.setRevisionInfo(docTEI, revisionDesc, fname, null, optionsTEI.test);
 
 		Element text = TeiDocument.findOrCreate(docTEI, rootTEI, "text");
 		Element timeline = TeiDocument.findOrCreate(docTEI, text, "timeline");
@@ -186,7 +201,7 @@ public abstract class ImportToTei extends GenericMain {
 
 	/**
 	 * Mise à jour de l'élémént encodingDesc: informations sur le logiciel qui a
-	 * généré le document d'origine (ici Clan)
+	 * généré le document d'origine
 	 */
 	public void setEncodingDesc() {
 		Element encodingDesc = (Element) docTEI.getElementsByTagName("encodingDesc").item(0);
@@ -228,9 +243,9 @@ public abstract class ImportToTei extends GenericMain {
 		// Element media
 		Element media = docTEI.createElement("media");
 		recording.appendChild(media);
-		if (tparams.mediaName != null) {
-			media.setAttribute("mimeType", Utils.findMimeType(tparams.mediaName));
-			media.setAttribute("url", tparams.mediaName);
+		if (optionsTEI.mediaName != null) {
+			media.setAttribute("mimeType", Utils.findMimeType(optionsTEI.mediaName));
+			media.setAttribute("url", optionsTEI.mediaName);
 		}
 	}
 
@@ -321,10 +336,10 @@ public abstract class ImportToTei extends GenericMain {
 		return div;
 	}
 
-	public void addTemplateDesc(Document doc) {
+	public static void addTemplateDesc(Document doc) {
 		Element fileDesc = (Element) doc.getElementsByTagName("fileDesc").item(0);
 		Element notesStmt = (Element) fileDesc.getElementsByTagName("notesStmt").item(0);
-		Element templateNote = docTEI.createElement("note");
+		Element templateNote = doc.createElement("note");
 		templateNote.setAttribute("type", "TEMPLATE_DESC");
 		notesStmt.appendChild(templateNote);
 
@@ -333,7 +348,7 @@ public abstract class ImportToTei extends GenericMain {
 		NodeList persons = particDesc.getElementsByTagName("person");
 		for (int i = 0; i < persons.getLength(); i++) {
 			Element person = (Element) persons.item(i);
-			Element note = docTEI.createElement("note");
+			Element note = doc.createElement("note");
 
 			Element noteType = doc.createElement("note");
 			noteType.setAttribute("type", "type");
@@ -357,7 +372,15 @@ public abstract class ImportToTei extends GenericMain {
 		}
 	}
 
-	public void insertTemplate(Document doc, String code, String type, String parent) {
+	public static void addTemplateTiersNames(Document doc, Set<String> tiersNames) {
+		if (tiersNames != null) {
+			for (String t : tiersNames) {
+				insertTemplate(doc, t, "Symbolic_Association", "annotationBlock");
+			}
+		}
+	}
+
+	public static void insertTemplate(Document doc, String code, String type, String parent) {
 		Element templateNote = getTemplate(doc);
 		if (templateNote == null) {
 			System.err.println("serious error: no template");
@@ -384,7 +407,7 @@ public abstract class ImportToTei extends GenericMain {
 		templateNote.appendChild(note);
 	}
 
-	public Element getTemplate(Document doc) {
+	public static Element getTemplate(Document doc) {
 		NodeList nlNotesStmt = doc.getElementsByTagName("notesStmt");
 		if (nlNotesStmt.getLength() < 1) return null;
 		NodeList notesStmt = nlNotesStmt.item(0).getChildNodes();

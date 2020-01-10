@@ -95,27 +95,12 @@ public class TeiToWtc extends TeiConverter {
 		ArrayList<Div> divs = tf.trans.divs;
 		int id = 1;
 		for (Div d : divs) {
-			// System.out.println("DIV: " + d.type + " <" + d.theme + ">");
-			/*
-			if (d.type.toLowerCase().equals("bg") || d.type.toLowerCase().equals("g")) {
-				typeDiv = d.theme;
-			} else {
-				typeDiv = "";
-			}
-			*/
 			System.out.printf("<div id=\"%d\" type=\"%s\" starttime=\"%s\" endtime=\"%s\">%n", id, "spoken", d.start, d.end);
 			id++;
 			for (AnnotatedUtterance u : d.utterances) {
-				if (u.type != null) {
-					String[] splitType = u.type.split("\t");
-					if (splitType != null && splitType.length >= 2) {
-						if (splitType[0].toLowerCase().equals("bg") || splitType[0].toLowerCase().equals("g")) {
-							String theme = Utils.cleanString(tf.transInfo.situations.get(splitType[1]));
-							typeDiv = theme;
-						}
-					}
-				}
-				writeUtterance(u); // cette fonction prépare et balance writeSpeech(u.speakerCode, speech, start, end); ansi que writeTier(u, tier) s'il y a des tiers
+				bgCase(u);
+				writeUtterance(u);
+				// cette fonction prépare et balance writeSpeech(u.speakerCode, speech, start, end); ansi que writeTier(u, tier) s'il y a des tiers
 			}
 			System.out.printf("</div>%n");
 		}
@@ -191,7 +176,7 @@ public class TeiToWtc extends TeiConverter {
 			}
 		}
 
-		String locclean = loc.replaceAll("[ _]", "-");
+		String locclean = loc.replaceAll("[ ]", "-");
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		String st, et;
@@ -209,7 +194,7 @@ public class TeiToWtc extends TeiConverter {
 		System.out.printf("<u s=\"%s\" spkid=\"%s\" age=\"%s\">%n", st, locclean, getAge(locclean));
 		for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 		    String key = entry.getKey();
-		    String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
+		    String value = entry.getValue().genericvalue.replaceAll("[ ]", "-");
 			System.out.printf(" %s=\"%s\"", key, value);
 		}
 	}
@@ -248,7 +233,7 @@ public class TeiToWtc extends TeiConverter {
 			// get loc age
 			String age = getAge(au.speakerCode);
 			generateUStart(au.speakerCode, au.start, au.end, age);
-			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
+			String spkcode = au.speakerCode.replaceAll("[ ]", "-");
 			// tier.name
 			if (tier.dependantAnnotations != null) {
 				// System.out.println("dep: " + tier.dependantAnnotations.toString());
@@ -259,7 +244,7 @@ public class TeiToWtc extends TeiConverter {
 					w += "\t" + typeDiv;
 					for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
-						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
+						String value = entry.getValue().genericvalue.replaceAll("[ ]", "-");
 						w += "\t" + value;
 					}
 					// tags ???
@@ -273,7 +258,7 @@ public class TeiToWtc extends TeiConverter {
 					String locinfo = "\t" + spkcode + "\t" + age  + "\t" + typeDiv;
 					for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
-						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
+						String value = entry.getValue().genericvalue.replaceAll("[ ]", "-");
 						locinfo += "\t" + value;
 					}
 					// the words
@@ -283,16 +268,16 @@ public class TeiToWtc extends TeiConverter {
 					for (int k=0; k < aw.dependantAnnotations.size(); k++) {
 						Annot kw = aw.dependantAnnotations.get(k);
 						if (kw.name.equals("word")) {
-							word = kw.getContent().trim().replaceAll("[ _]", "-");
+							word = kw.getContent().trim().replaceAll("[ ]", "-");
 							/*
 							if (optionsOutput.sandhi) {
 								setSandhiInfo(m, we);
 							}
 							*/
 						} else if (kw.name.equals("pos")) {
-							pos = kw.getContent().trim().replaceAll("[ _]", "-");
+							pos = kw.getContent().trim().replaceAll("[ ]", "-");
 						} else if (kw.name.equals("lemma")) {
-							lemma = kw.getContent().trim().replaceAll("[ _]", "-");
+							lemma = kw.getContent().trim().replaceAll("[ ]", "-");
 						}
 					}
 					System.out.printf("%s%s\t%s\t%s%n", word, locinfo, pos, lemma);
@@ -303,7 +288,7 @@ public class TeiToWtc extends TeiConverter {
 			// get loc age
 			String age = getAge(au.speakerCode);
 			generateUStart(au.speakerCode, au.start, au.end, age);
-			String spkcode = au.speakerCode.replaceAll("[ _]", "-");
+			String spkcode = au.speakerCode.replaceAll("[ ]", "-");
 			// tier.name
 			
 			if (tier.pptRef != null) {
@@ -315,7 +300,7 @@ public class TeiToWtc extends TeiConverter {
 					w += "\t" + typeDiv;
 					for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 						String key = entry.getKey();
-						String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
+						String value = entry.getValue().genericvalue.replaceAll("[ ]", "-");
 						w += "\t" + value;
 					}
 					// tags ???
@@ -329,14 +314,14 @@ public class TeiToWtc extends TeiConverter {
 						String locinfo = "\t" + spkcode + "\t" + age  + "\t" + typeDiv;
 						for (Map.Entry<String, SpkVal> entry : optionsOutput.tv.entrySet()) {
 							String key = entry.getKey();
-							String value = entry.getValue().genericvalue.replaceAll("[ _]", "-");
+							String value = entry.getValue().genericvalue.replaceAll("[ ]", "-");
 							locinfo += "\t" + value;
 						}
 
 						Element wo = (Element)w;
-						String pos = wo.getAttribute("pos").trim().replaceAll("[ _]", "-");
-						String lemma = wo.getAttribute("lemma").trim().replaceAll("[ _]", "-");
-						String word = wo.getTextContent().trim().replaceAll("[ _]", "-");
+						String pos = wo.getAttribute("pos").trim().replaceAll("[ ]", "-");
+						String lemma = wo.getAttribute("lemma").trim().replaceAll("[ ]", "-");
+						String word = wo.getTextContent().trim().replaceAll("[ ]", "-");
 						/*
 						if (optionsOutput.sandhi) {
 							setSandhiInfo(m, we);

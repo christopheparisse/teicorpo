@@ -648,10 +648,12 @@ public class TeiToTranscriber extends TeiConverter {
 					turn.add(TranscriberTurn.Vocal,
 							uChild.getTextContent().replaceAll("\\s+", " ").trim());
 				} else if (uChildName.equals("anchor") && uChild.getNodeValue() != null) {
-					// System.out.println(uChild.getNodeValue());
-					if (!tf.teiTimeline.getTimeValue(uChild.getAttribute("synch")).equals(turn.startTime)) {
-						turn.add(TranscriberTurn.Sync,
-								timeSimplification(tf.teiTimeline.getTimeValue(uChild.getAttribute("synch"))));
+					String syncval = uChild.getAttribute("synch");
+					String sync = tf.teiTimeline.getTimeValue(syncval);
+					String ts = timeSimplification(sync);
+					System.out.println("BBB: " + syncval + "  " + sync + "  " + ts);
+					if (!sync.equals(turn.startTime)) {
+						turn.add(TranscriberTurn.Sync, timeSimplification(sync));
 					}
 				} else if (uChildName.equals("comment")) {
 					turn.add(TranscriberTurn.Comment, uChildContent);

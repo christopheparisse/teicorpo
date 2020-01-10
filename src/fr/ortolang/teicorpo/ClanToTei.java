@@ -34,8 +34,6 @@ public class ClanToTei extends ImportToTei {
 	/** Fichier Chat. */
 	File chatFile;
 	String chatFN;
-	/** Liste des types de tiers présents dans le fichier */
-	HashSet<String> tiersNames;
 	int nbBG = 0; // stores depth of BG/EG
 
 	/**
@@ -61,15 +59,15 @@ public class ClanToTei extends ImportToTei {
 		descID = 0;
 		utteranceId = 0;
 		whenId = 0;
-		tparams = (tp != null) ? tp : new TierParams();
-//		System.err.printf("fmt: %s%n", tparams.inputFormat);
-		if (tparams.inputFormat.isEmpty()) tparams.inputFormat = ".cha";
+		optionsTEI = (tp != null) ? tp : new TierParams();
+//		System.err.printf("fmt: %s%n", optionsTEI.inputFormat);
+		if (optionsTEI.inputFormat.isEmpty()) optionsTEI.inputFormat = ".cha";
 		times = new ArrayList<String>();
 		tiersNames = new HashSet<String>();
 		cf = new ChatFile();
 		chatFile = new File(chatFileName);
-		cf.load(chatFileName, tparams);
-		cf.findInfo(false, tparams);
+		cf.load(chatFileName, optionsTEI);
+		cf.findInfo(false, optionsTEI);
 		// ajouter paramètre
 		if (!tp.nospreadtime && !tp.inputFormat.equals(".srt") && !tp.inputFormat.equals(".txt")) cf.cleantime_inmemory(1);
 		timeElements = new ArrayList<Element>();
@@ -77,7 +75,7 @@ public class ClanToTei extends ImportToTei {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
-			TeiDocument.setDTDvalidation(factory, tparams.dtdValidation);
+			TeiDocument.setDTDvalidation(factory, optionsTEI.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			docTEI = builder.newDocument();
 			this.xPathfactory = XPathFactory.newInstance();
@@ -139,6 +137,7 @@ public class ClanToTei extends ImportToTei {
 		setDivTimes();
 		setStmt();
 		addTemplateDesc(docTEI);
+		addTemplateTiersNames(docTEI, tiersNames);
 		addTimeline();
 	}
 
@@ -155,7 +154,7 @@ public class ClanToTei extends ImportToTei {
 		// Element media
 		Element media = (Element) this.docTEI.getElementsByTagName("media").item(0);
 		Element recording = (Element) this.docTEI.getElementsByTagName("recording").item(0);
-		if (tparams.mediaName == null && cf.mediaFilename != null) {
+		if (optionsTEI.mediaName == null && cf.mediaFilename != null) {
 			String url = Utils.findClosestMedia(chatFile.getParent(), cf.mediaFilename, cf.mediaType); // removed (cf.mediaFilename).toUpperCase()
 			media.setAttribute("mimeType", Utils.findMimeType(url));
 			media.setAttribute("url", url);
@@ -296,8 +295,6 @@ public class ClanToTei extends ImportToTei {
 
 	/**
 	 * Mise à jour des éléments <strong>person</strong> et de leurs attributs.
-	 * 
-	 * @param profileDesc
 	 */
 	public void setStmt() {
 		/*
@@ -358,8 +355,8 @@ public class ClanToTei extends ImportToTei {
 				person.appendChild(age);
 			} else {
 				Element age = docTEI.createElement("age");
-				age.setTextContent(tparams.defaultAge);
-				age.setAttribute("value", Utils.normaliseAge(tparams.defaultAge));
+				age.setTextContent(optionsTEI.defaultAge);
+				age.setAttribute("value", Utils.normaliseAge(optionsTEI.defaultAge));
 				person.appendChild(age);
 			}
 			if (Utils.isNotEmptyOrNull(part.SES)) {
@@ -534,12 +531,12 @@ public class ClanToTei extends ImportToTei {
 					}
 				} else {
 					//System.out.printf(">>%s %d %d%n", cl.head, nbBG, inGem);
-					if (cl.head != null && tparams != null) {
-						if (tparams.isDontDisplay(cl.head.substring(1), 1)) {
+					if (cl.head != null && optionsTEI != null) {
+						if (optionsTEI.isDontDisplay(cl.head.substring(1), 1)) {
 							i++;
 							continue;
 						}
-						if (!tparams.isDoDisplay(cl.head.substring(1), 1)) {
+						if (!optionsTEI.isDoDisplay(cl.head.substring(1), 1)) {
 							i++;
 							continue;
 						}
@@ -624,13 +621,13 @@ public class ClanToTei extends ImportToTei {
 		if (tiers.length > 0) {
 			for (String tier : tiers) {
 				ChatLine cl = new ChatLine(tier);
-				if (cl.head != null && tparams != null) {
-					if (tparams.level == 1)
+				if (cl.head != null && optionsTEI != null) {
+					if (optionsTEI.level == 1)
 						continue;
-					if (tparams.isDontDisplay(cl.head.substring(1), 2)) {
+					if (optionsTEI.isDontDisplay(cl.head.substring(1), 2)) {
 						continue;
 					}
-					if (!tparams.isDoDisplay(cl.head.substring(1), 2)) {
+					if (!optionsTEI.isDoDisplay(cl.head.substring(1), 2)) {
 						continue;
 					}
 				}

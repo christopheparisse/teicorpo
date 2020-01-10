@@ -243,15 +243,15 @@ public class TeiTreeTagger extends GenericMain {
 			/*
 			 * version conll
 			 */
-			insertTemplate("conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
-			insertTemplate("word", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("pos", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("lemma", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
+			ImportToTei.insertTemplate(teiDoc, "word", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "pos", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "lemma", LgqType.SYMB_ASSOC, "conll");
 		} else if (optionsOutput.syntaxformat.equals("ref")) {
 			/*
 			 * version <ref><ref><w>
 			 */
-			insertTemplate("ref", LgqType.SYMB_ASSOC, TeiDocument.ANNOTATIONBLOC);
+			ImportToTei.insertTemplate(teiDoc, "ref", LgqType.SYMB_ASSOC, TeiDocument.ANNOTATIONBLOC);
 		} else {
 			// format words : optionsOutput.syntaxformat === "w"
 		}
@@ -290,49 +290,6 @@ public class TeiTreeTagger extends GenericMain {
 			return false;
 		}
 		return true;
-	}
-
-	public void insertTemplate(String code, String type, String parent) {
-		Element templateNote = getTemplate(teiDoc);
-		if (templateNote == null) {
-			System.err.println("serious error: no template");
-			return;
-		}
-		
-		Element note = teiDoc.createElement("note");
-
-		Element noteCode = teiDoc.createElement("note");
-		noteCode.setAttribute("type", "code");
-		noteCode.setTextContent(code);
-		note.appendChild(noteCode);
-
-		Element noteType = teiDoc.createElement("note");
-		noteType.setAttribute("type", "type");
-		noteType.setTextContent(type);
-		note.appendChild(noteType);
-
-		Element noteParent = teiDoc.createElement("note");
-		noteParent.setAttribute("type", "parent");
-		noteParent.setTextContent(parent);
-		note.appendChild(noteParent);
-
-		templateNote.appendChild(note);
-	}
-
-	public Element getTemplate(Document doc) {
-		NodeList nlNotesStmt = doc.getElementsByTagName("notesStmt");
-		if (nlNotesStmt.getLength() < 1) return null;
-		NodeList notesStmt = nlNotesStmt.item(0).getChildNodes();
-		for (int i=0; i < notesStmt.getLength(); i++) {
-			Node n = notesStmt.item(i);
-			if (n.getNodeName().equals("note")) {
-				Element e = (Element)n;
-				if (e.getAttribute("type").equals("TEMPLATE_DESC")) {
-					return e;
-				}
-			}
-		}
-		return null;
 	}
 
 	private boolean flush(String lastID, TaggedUtterance tu) {

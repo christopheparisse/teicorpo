@@ -62,7 +62,7 @@ public class AnnotatedUtterance {
 
 	public TeiTimeline teiTimeline;
 	public TierParams optionsTEI = null;
-	
+
 	AnnotatedUtterance() {
 		codes = new Codes();
 		codes.standardCodes();
@@ -117,7 +117,6 @@ public class AnnotatedUtterance {
 
 	private void initU() {
 		morClan = "";
-		this.teiTimeline = teiTimeline;
 		// Initialisation des variables d'instances
 		if (optionsTEI != null && optionsTEI.outputFormat == ".cha") {
 			shortPause = Utils.shortPauseCha;
@@ -160,6 +159,7 @@ public class AnnotatedUtterance {
 	}
 
 	public boolean processU(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+		this.teiTimeline = teiTimeline;
 		optionsTEI = options;
 		initU();
 		id = u.getAttribute("xml:id");
@@ -178,7 +178,6 @@ public class AnnotatedUtterance {
 		speech = "";
 		NodeList us = u.getChildNodes();
 		processSeg(us);
-		//System.out.printf("UUUU : %s%n", speech);
 		speech = Utils.cleanStringPlusEntities(speech);
 		nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
 		addAnnot();
@@ -187,6 +186,7 @@ public class AnnotatedUtterance {
 	}
 
 	public boolean processAnnotatedU(Element annotatedU, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+		this.teiTimeline = teiTimeline;
 		optionsTEI = options;
 		initU();
 		id = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
@@ -219,11 +219,9 @@ public class AnnotatedUtterance {
 					speech = "";
 					NodeList us = annotUEl.getChildNodes();
 					processSeg(us);
-					//System.out.printf("TTTTT : %s%n", speech);
 					speech = Utils.cleanStringPlusEntities(speech);
 					nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
 					addAnnot();
-					// System.out.printf("TTTTT endofseg: %s %s %s%n", start, end, speech);
 				} else if (nodeName.equals("spanGrp") && doSpan == true) {
 					// Ajout des tiers
 					String type = annotUEl.getAttribute("type");
@@ -314,12 +312,9 @@ public class AnnotatedUtterance {
 	}
 	
 	public void processSeg(NodeList us) {
-		//System.out.printf("KKKKK processSeg%n");
 		for (int z = 0; z < us.getLength(); z++) {
 			Node segChild = us.item(z);
 			String segChildName = segChild.getNodeName();
-			//int segType = segChild.getNodeType();
-			//System.out.printf("%d %s %d%n", z, segChildName, segType);
 
 			// Ajout des pauses: syntaxe = # pour les pauses courtes, sinon
 			// ### pour les pauses longues
@@ -426,10 +421,12 @@ public class AnnotatedUtterance {
 					processSeg(segChildEl.getChildNodes());
 				} else if (segChildName.equals("anchor") && !segChildEl.getAttribute("synch").startsWith("#au")) {
 					String sync = "";
-					if (teiTimeline != null)
-						sync = teiTimeline.getTimeValue(segChildEl.getAttribute("synch"));
-					else
-						sync = segChildEl.getAttribute("synch");
+					String syncval = segChildEl.getAttribute("synch");
+					if (teiTimeline != null) {
+						sync = teiTimeline.getTimeValue(syncval);
+					} else {
+						sync = syncval;
+					}
 					// creer une ligne avec speech, nomarkerSpeech, addspeech
 					addAnnot();
 					// System.out.printf("anchor: %s %s %s %s%n", speakerName,

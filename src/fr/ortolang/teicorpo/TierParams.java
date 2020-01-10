@@ -1,6 +1,7 @@
 package fr.ortolang.teicorpo;
 
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
@@ -952,7 +953,7 @@ class TierParams {
 	}
 
 	void addPair(Map<String, SpkVal> list, String info) {
-		Pattern pattern = Pattern.compile("(.*)[=:](.*)[=:](.*)");
+		Pattern pattern = Pattern.compile("(.*)[:](.*)[:](.*)");
 		Matcher matcher = pattern.matcher(info);
 		//System.out.println(line);
 		if (matcher.matches()) { // option with a speaker
@@ -1041,10 +1042,47 @@ class TierParams {
 					System.err.printf("MVL(after): %s:%s:%s%n", entry.getKey(), e.getValue(), e.getKey());
 				}
 			}
+			if (vsxpath.genericspk.equals("*")) {
+				System.err.printf("MVLL: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
+				// a specific key: ... :metadata for all speakers
+				NodeList nl = getXpathNodesLoc(tf);
+				for (int i=0; i < nl.getLength(); i++) {
+					Node n = nl.item(i);
+					String locadr;
+					if (spknamerole.equals("spk")) { // we use the loc id
+						locadr = "altGrp/alt/@type";
+					} else { // we use the names
+						locadr = "persName";
+					}
+					String loc = getXpathValueFrom(tf, n, locadr, "./");
+					String value = getXpathValueFrom(tf, n, vsxpath.genericvalue, ".//");
+					System.err.printf("MVLK(after): %s:%s:%s%n", entry.getKey(), loc, value);
+					if (value != null) vsxpath.list.put(loc, value);
+				}
+			}
 		}
 	}
 
-	String getXpathValueLoc(TeiFile tf, String pth, String loc) {
+	private NodeList getXpathNodesLoc(TeiFile tf) {
+		// find the locs
+		NodeList locnodes;
+		String locplace = "//person";
+		try {
+			locnodes = (NodeList)tf.xpath.evaluate(locplace, tf.root, XPathConstants.NODESET);
+		} catch (XPathExpressionException e) {
+			// not found or error ?
+			System.err.printf("Error finding speakers (%s) %s%n", locplace, e.toString());
+			//e.printStackTrace();
+			return null;
+		}
+		if (locnodes == null) {
+			System.err.printf("Cannot find entry (NodesLoc): %s%n", locplace);
+			return null;
+		}
+		return locnodes;
+	}
+
+	private String getXpathValueLoc(TeiFile tf, String pth, String loc) {
 		/*
 		String locplace2 = "//person[altGrp/alt/@type='FAT']";
 		String test2 = null;
@@ -1098,7 +1136,7 @@ class TierParams {
 			System.err.printf("Cannot find entry: %s%n", pth);
 			return null;
 		}
-		value = value.replaceAll("[ _]", "-");
+		// value = value.replaceAll("[ _]", "-");
 		System.out.printf("Found for [%s] : (%s) [%s]%n", pth, value, Utils.setEntities(value));
 //			entry.setValue(Utils.setEntities(value));
 		return value;

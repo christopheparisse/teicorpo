@@ -27,11 +27,11 @@ public class ImportConllToTei extends ImportToTei {
 	public void transform(String conllFileName, TierParams tp) throws Exception {
 		// System.err.printf("ConllToTei %s -- %s %n", conllFileName, tp);
 		if (tp == null) tp = new TierParams();
-		tparams = (tp != null) ? tp : new TierParams();
-		if (tparams.metadata != null) System.out.printf("metadata: %s%n", tparams.metadata);
-		if (tparams.inputFormat.isEmpty()) tparams.inputFormat = ".orfeo";
+		optionsTEI = (tp != null) ? tp : new TierParams();
+		if (optionsTEI.metadata != null) System.out.printf("metadata: %s%n", optionsTEI.metadata);
+		if (optionsTEI.inputFormat.isEmpty()) optionsTEI.inputFormat = ".orfeo";
         clDoc = new ConllDoc();
-		clDoc.load(conllFileName, tparams);
+		clDoc.load(conllFileName, optionsTEI);
 		whenId = 0;
 		maxTime = 0.0;
 		times = new ArrayList<String>();
@@ -39,8 +39,8 @@ public class ImportConllToTei extends ImportToTei {
 
 		TeiDocument xmlDoc;
 
-		if (tparams.metadata != null && !tparams.metadata.isEmpty()) {
-			xmlDoc = new TeiDocument(tparams.metadata, false);
+		if (optionsTEI.metadata != null && !optionsTEI.metadata.isEmpty()) {
+			xmlDoc = new TeiDocument(optionsTEI.metadata, false);
 			// change elements in listPerson
 			NodeList l = xmlDoc.doc.getElementsByTagName("person");
 			if (l != null) {

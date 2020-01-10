@@ -116,21 +116,21 @@ public class TeiSNLP extends GenericMain {
 			/*
 			 * version conll
 			 */
-			insertTemplate("conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
-			insertTemplate("FORM", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("LEMMA", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("CPOSTAG", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("POSTAG", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("FEATS", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("HEAD", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("DEPREL", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("DEPS", LgqType.SYMB_ASSOC, "conll");
-			insertTemplate("MISC", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "conll", LgqType.SYMB_DIV, TeiDocument.ANNOTATIONBLOC);
+			ImportToTei.insertTemplate(teiDoc, "FORM", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "LEMMA", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "CPOSTAG", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "POSTAG", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "FEATS", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "HEAD", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "DEPREL", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "DEPS", LgqType.SYMB_ASSOC, "conll");
+			ImportToTei.insertTemplate(teiDoc, "MISC", LgqType.SYMB_ASSOC, "conll");
 		} else if (optionsOutput.syntaxformat.equals("ref")) {
 			/*
 			 * version <ref><ref><w>
 			 */
-			insertTemplate("ref", LgqType.SYMB_ASSOC, TeiDocument.ANNOTATIONBLOC);
+			ImportToTei.insertTemplate(teiDoc, "ref", LgqType.SYMB_ASSOC, TeiDocument.ANNOTATIONBLOC);
 		} else {
 			// format words : optionsOutput.syntaxformat === "w"
 		}
@@ -207,49 +207,6 @@ public class TeiSNLP extends GenericMain {
 			}
 		}
 		return true;
-	}
-
-	public void insertTemplate(String code, String type, String parent) {
-		Element templateNote = getTemplate(teiDoc);
-		if (templateNote == null) {
-			System.err.println("serious error: no template");
-			return;
-		}
-		
-		Element note = teiDoc.createElement("note");
-
-		Element noteCode = teiDoc.createElement("note");
-		noteCode.setAttribute("type", "code");
-		noteCode.setTextContent(code);
-		note.appendChild(noteCode);
-
-		Element noteType = teiDoc.createElement("note");
-		noteType.setAttribute("type", "type");
-		noteType.setTextContent(type);
-		note.appendChild(noteType);
-
-		Element noteParent = teiDoc.createElement("note");
-		noteParent.setAttribute("type", "parent");
-		noteParent.setTextContent(parent);
-		note.appendChild(noteParent);
-
-		templateNote.appendChild(note);
-	}
-
-	public Element getTemplate(Document doc) {
-		NodeList nlNotesStmt = doc.getElementsByTagName("notesStmt");
-		if (nlNotesStmt.getLength() < 1) return null;
-		NodeList notesStmt = nlNotesStmt.item(0).getChildNodes();
-		for (int i=0; i < notesStmt.getLength(); i++) {
-			Node n = notesStmt.item(i);
-			if (n.getNodeName().equals("note")) {
-				Element e = (Element)n;
-				if (e.getAttribute("type").equals("TEMPLATE_DESC")) {
-					return e;
-				}
-			}
-		}
-		return null;
 	}
 
 	// Création du fichier de sortie à partir de teiDoc

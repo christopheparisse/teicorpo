@@ -18,6 +18,7 @@ public abstract class TeiConverter extends GenericMain {
 	String outputName;
 	// options de production du résultat
 	TierParams optionsOutput;
+	String typeDiv;
 
 	/**
 	 * Conversion du fichier teiml: initialisation des variables d'instances
@@ -73,7 +74,7 @@ public abstract class TeiConverter extends GenericMain {
 	}
 
 	// Renvoie la chaîne de caractère passée en argument si elle n'est pas vide,
-	// sinon renvoir une chaîne de caractère vide.
+	// sinon renvoie une chaîne de caractère vide.
 	public static String toString(String s) {
 		if (!Utils.isNotEmptyOrNull(s)) {
 			s = "";
@@ -92,6 +93,18 @@ public abstract class TeiConverter extends GenericMain {
 			return "20" + year;
 		} else {
 			return "19" + year;
+		}
+	}
+
+	void bgCase(AnnotatedUtterance u) {
+		if (u.type != null) {
+			String[] splitType = u.type.split("\t");
+			if (splitType != null && splitType.length >= 2) {
+				if (splitType[0].toLowerCase().equals("bg") || splitType[0].toLowerCase().equals("g")) {
+					String theme = Utils.cleanString(tf.transInfo.situations.get(splitType[1]));
+					typeDiv = theme;
+				}
+			}
 		}
 	}
 
@@ -158,7 +171,7 @@ public abstract class TeiConverter extends GenericMain {
 	}
 
 	String spkChoice(AnnotatedUtterance u) {
-		if (optionsOutput.spknamerole.equals("name"))
+		if (optionsOutput.spknamerole.equals("pers"))
 			return u.speakerName;
 		else
 			return u.speakerCode;
