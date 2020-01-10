@@ -18,6 +18,8 @@ import javax.xml.namespace.NamespaceContext;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TeiDocument {
     public static String ANNOTATIONBLOC = "annotationBlock";
@@ -108,6 +110,59 @@ public class TeiDocument {
         } else {
             return (Element)nl.item(0);
         }
+    }
+
+    static Element createNodeFromPath(TeiDocument tei, Node top, String path) {
+        // isolate the head of the path: ./ or .// or / or // or nothing
+        // to find the first element of the path
+        String currentpath;
+        String restofpath;
+        Pattern pattern = Pattern.compile("([./]*)(.*)");
+        Matcher matcher = pattern.matcher(path);
+        if (matcher.matches()) { // there is a path above the last node
+            currentpath = matcher.group(1);
+            restofpath = matcher.group(2);
+        } else {
+            currentpath = "./";
+            restofpath = path;
+        }
+
+        if (restofpath.indexOf("//") >= 0) {
+            System.err.printf("Cannot create a path that contains a // : %s%n", path);
+            return null;
+        }
+
+        while (!restofpath.isEmpty()) {
+            String nodetocreate = "";
+            // split path
+            pattern = Pattern.compile("(.*)\\/(.*)");
+            matcher = pattern.matcher(restofpath);
+            if (matcher.matches()) { // there is a top path and a rest of path
+                nodetocreate = matcher.group(1)
+                currentpath = currentpath + matcher.group(1);
+                restofpath = matcher.group(2);
+            } else {
+                // final part
+                nodetocreate = restofpath;
+                currentpath = currentpath + restofpath;
+                restofpath = "";
+            }
+
+            Node node;
+            try {
+                node = (Node)tei.path.evaluate(currentpath, top, XPathConstants.NODE);
+            } catch (XPathExpressionException e) {
+                // not found or error ?
+                System.err.printf("Error finding entry: %s %s%n", xpth.get(c).path, e.toString());
+                //e.printStackTrace();
+                return null;
+            }
+            if (node != null) {
+                // node exist.
+                // goto to next one
+            }
+        }
+        return (Element)top;
     }
 
     void addNamespace() {
