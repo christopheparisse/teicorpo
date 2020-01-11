@@ -186,7 +186,7 @@ public class TeiDocument {
 //                System.err.printf("createNodeFromPath: look for %s%n", currentpath);
                 nodefound = (Node)tei.path.evaluate(currentpath, top, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
-                System.err.printf("Error finding entry: (%s)%n ERROR:[%s]%n", currentpath, e.toString());
+//                System.err.printf("Error finding entry: (%s)%n ERROR:[%s]%n", currentpath, e.toString());
                 //e.printStackTrace();
                 return null;
             }
@@ -200,11 +200,15 @@ public class TeiDocument {
                     currentpath = matcher.group(1);
                     missingnodes.add(matcher.group(2));
 //                    System.err.printf("NEXT IS %s => %s%n", currentpath, matcher.group(2));
+                    if (currentpath.equals(".") || currentpath.equals("/") || currentpath.equals("./") || currentpath.equals("//") || currentpath.equals(".//")) {
+                        nodefound = top;
+                        break;
+                    }
                 } else {
                     // final part
                     // it should be a / or a ./ or a // or a .//
 //                    System.err.printf("STOP AT %s%n", currentpath);
-                    if (currentpath.equals("/") || currentpath.equals("./") || currentpath.equals("//") || currentpath.equals(".//")) {
+                    if (currentpath.equals(".") || currentpath.equals("/") || currentpath.equals("./") || currentpath.equals("//") || currentpath.equals(".//")) {
                         nodefound = top;
                         break;
                     }

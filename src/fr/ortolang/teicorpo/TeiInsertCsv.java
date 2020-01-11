@@ -2,10 +2,14 @@ package fr.ortolang.teicorpo;
 
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,7 +24,7 @@ class XpathAddress {
 
     String addref(String val, boolean absolute) {
         if (val.startsWith("/") || val.startsWith(".")) return val;
-        return (absolute == true) ? "//" + val : ".//" + val ;
+        return (absolute == true) ? "//" + val : "./" + val ;
     }
 
     XpathAddress(String info, boolean absolute) {
@@ -30,6 +34,15 @@ class XpathAddress {
         // xpath ends in a simple word --> value is put in the node text content ... <name>value</name>
 
         fullform = info;
+        if (fullform.equals("none")) {
+            path = "";
+            format = "ignore";
+            attr = "";
+            type = "";
+            pathnode = "";
+            namenode = "";
+            return;
+        }
         Pattern pattern = Pattern.compile("(.*)[/](.*?)[/]?\\[@(.*?)=\\'(.*)\\'\\]");
         Matcher matcher = pattern.matcher(info);
         //System.out.println(line);
@@ -81,15 +94,18 @@ class XpathAddress {
 
 public class TeiInsertCsv {
     private List<String[]> csv;
+    private Map<String, String[]> speakers;
     TeiInsertCsv() {
         csv = null;
     }
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.printf("Usage: TeiInsertCsv <csvfile> [list if TEI xpath names for each column of the csv...]");
+            System.out.printf("Usage: TeiInsertCsv <csvfile> [-userinfo teifile] [list if TEI xpath names for each column of the csv...]");
             return;
         }
+
+        String userinfo = "";
 
         TeiInsertCsv tic = new TeiInsertCsv();
         tic.csv = CsvReader.load(args[0]);
@@ -99,27 +115,100 @@ public class TeiInsertCsv {
             return;
         }
 
+        List<String> largs = new ArrayList<String>();
+        for (int c = 1; c < args.length; c++) {
+            if (args[c].startsWith("-")) {
+                if (!args[c].equals("-userinfo")) {
+                    System.err.println("Optional arguments are only -userinfo teifile. Stop.");
+                    return;
+                }
+                if (c+1 >= args.length) {
+                    System.err.println("Missing argument after -userinfo. Stop.");
+                    return;
+                }
+                c++;
+                userinfo = args[c];
+                continue;
+            }
+            largs.add(args[c]);
+        }
+
         List<XpathAddress> lxa = new ArrayList<XpathAddress>();
-        System.out.printf("Column: 1 (%s) := file names%n", tic.csv.get(1)[0]);
+        System.out.printf("Column: 1 (%s) := file names or IDs%n", tic.csv.get(1)[0]);
         for (int c = 1; c < tic.csv.get(0).length; c++) {
-            String h = tic.headColumn(c, args);  // extracted from the second lines or from the arguments
+            String h = tic.headColumn(c, largs);  // extracted from the second lines or from the arguments
             System.out.printf("Column: %d (%s) := %s%n", c+1, tic.csv.get(0)[c], h);
-            XpathAddress xa = new XpathAddress(h, true); // true for absolute xpath position
+            XpathAddress xa = new XpathAddress(h, userinfo.isEmpty() ? true : false); // true for absolute xpath position
             System.out.println(xa.toString());
             lxa.add(xa);
         }
 
-        int l = args.length > 1 ? 1 : 2; // one or two lines to be ignored at the top of the file
-        for (; l < tic.csv.size(); l++) {
-            tic.processLine(l, lxa);
+        if (userinfo.isEmpty()) {
+            System.out.printf("Insert metadata from %s in all files%n", args[0]);
+            int l = args.length > 1 ? 1 : 2; // one or two lines to be ignored at the top of the file
+            for (; l < tic.csv.size(); l++) {
+                tic.processLine(l, lxa);
+            }
+        } else {
+            System.out.printf("Insert metadata from %s in the participants in %s%n", args[0], userinfo);
+            tic.initializeSpeakers(tic.csv, largs.size() > 0);
+            tic.processParticipants(userinfo, lxa);
         }
-
     }
 
-    private String headColumn(int c, String[] args) {
+    private void processParticipants(String userinfo, List<XpathAddress> lxa) {
+        TeiDocument tei = new TeiDocument(userinfo, false);
+        if (tei.fileXML == null) return; // skip file and line
+        // find all users and insert corresponding metadata information
+        NodeList nodelist = null;
+        String upath = "//person";
+        try {
+            nodelist = (NodeList)tei.path.evaluate(upath, tei.root, XPathConstants.NODESET);
+        } catch (XPathExpressionException e) {
+            // not found or error ?
+            System.err.printf("Error finding users: %s %s%n", upath, e.toString());
+            return;
+            //e.printStackTrace();
+        }
+        if (nodelist != null) {
+            for (int i = 0; i < nodelist.getLength(); i++) {
+                String name = null;
+                upath = ".//persName";
+                try {
+                    name = (String)tei.path.evaluate(upath, nodelist.item(i), XPathConstants.STRING);
+                } catch (XPathExpressionException e) {
+                    // not found or error ?
+                    System.err.printf("Error finding user: %s %s%n", upath, e.toString());
+                    return;
+                    //e.printStackTrace();
+                }
+                if (name != null && !name.isEmpty()) {
+                    if (speakers.containsKey(name)) {
+                        System.out.printf("Insert info for %s%n", name);
+                        insertInfo(tei, nodelist.item(i), speakers.get(name), lxa);
+                    } else {
+                        System.out.printf("Cannot find speaker %s in csv file%n", name);
+                    }
+                }
+            }
+        }
+        // save tei file
+        userinfo += ".modif.xml";
+        Utils.createFile(tei.doc, userinfo);
+    }
+
+    private void initializeSpeakers(List<String[]> csv, boolean b) {
+        // create a hash list for the speaker
+        speakers = new HashMap<String, String[]>();
+        for (int l = (b ? 1 : 2) ; l < csv.size(); l++) {
+            speakers.put(csv.get(l)[1], csv.get(l)); // speakers is the second column in the csv file
+        }
+    }
+
+    private String headColumn(int c, List<String> args) {
         String head;
-        if (c < args.length) {
-            head = args[c];
+        if (args.size() > 0) {
+            head = args.get(c);
         } else {
             head = csv.get(1)[c];
         }
@@ -128,23 +217,23 @@ public class TeiInsertCsv {
 
     public void processLine(int l, List<XpathAddress> xpth) {
         String fn = csv.get(l)[0];
-        System.out.printf("File %s%n", fn);
+//        System.out.printf("File %s%n", fn);
         TeiDocument tei = new TeiDocument(fn, false);
         if (tei.fileXML == null) return; // skip file and line
-        insertInfo(tei, tei.root, l, xpth);
+        insertInfo(tei, tei.root, csv.get(l), xpth);
         // save tei file
         fn += ".modif.xml";
         Utils.createFile(tei.doc, fn);
     }
 
-    public void insertInfo(TeiDocument tei, Node top, int l, List<XpathAddress> xpth) {
-        String[] line = csv.get(l);
+    public void insertInfo(TeiDocument tei, Node top, String[] line, List<XpathAddress> xpth) {
         for (int c = 1; c < line.length; c++) {
             if (line[c].isEmpty() || line[c].equals("NULL")) continue; // do not insert empty information ?
             // find pth in metadata
             Node node;
             XpathAddress xa = xpth.get(c-1);
-//            System.out.printf("Test: %s %s%n", xa.path, line.get(c));
+            if (xa.format.equals("ignore")) continue; // ignore this column
+//            System.out.printf("Test: %s %s%n", xa.path, line[c]);
             try {
                 node = (Node)tei.path.evaluate(xa.path, top, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
