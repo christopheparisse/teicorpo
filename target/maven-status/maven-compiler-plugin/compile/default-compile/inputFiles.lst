@@ -7,6 +7,7 @@
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/statemachine/SMModel.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/validateDTD.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/Latin5BulgarianModel.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiInsertCsv.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ClanToTei.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/CharsetListener.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ExternalCommand.java
@@ -25,6 +26,7 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToClan.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/UTF8Prober.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/distributionanalysis/SJISDistributionAnalysis.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/CsvReader.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/Big5Prober.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/GreekModel.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/statemachine/PkgInt.java
@@ -105,6 +107,7 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/Params.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToLexico.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ElanToTei.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/CsvUtils.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/CyrillicModel.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/NormalizeSpeech.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/sequence/Latin5Model.java

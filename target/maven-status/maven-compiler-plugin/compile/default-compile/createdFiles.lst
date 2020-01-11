@@ -128,6 +128,7 @@ fr/ortolang/teicorpo/GenerateIndexHTML$2.class
 fr/ortolang/teicorpo/TeiDocument.class
 fr/ortolang/teicorpo/TeiToSrt.class
 fr/ortolang/teicorpo/ElanToHT$CV_elan.class
+fr/ortolang/teicorpo/XpathAddress.class
 fr/ortolang/teicorpo/SpkVal.class
 fr/ortolang/teicorpo/TeiToPraat$1.class
 fr/ortolang/teicorpo/ConversionUI$1.class
@@ -179,6 +180,7 @@ org/mozilla/universalchardet/prober/distributionanalysis/CharDistributionAnalysi
 org/mozilla/universalchardet/prober/statemachine/SMModel.class
 fr/ortolang/teicorpo/DescTier.class
 fr/ortolang/teicorpo/ExternalCommand.class
+fr/ortolang/teicorpo/TeiInsertCsv.class
 fr/ortolang/teicorpo/TeiFile$1.class
 org/mozilla/universalchardet/prober/statemachine/Big5SMModel.class
 org/mozilla/universalchardet/prober/statemachine/EUCKRSMModel.class

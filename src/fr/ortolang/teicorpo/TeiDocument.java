@@ -16,8 +16,10 @@ import java.io.File;
 import javax.xml.*;
 import javax.xml.namespace.NamespaceContext;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -49,6 +51,8 @@ public class TeiDocument {
             // e.printStackTrace();
             System.err.println(e.toString());
             System.err.printf("cannot open uri %s or error in xml processing %n", uri);
+            fileXML = null;
+            doc = null;
         }
     }
 
@@ -112,6 +116,7 @@ public class TeiDocument {
         }
     }
 
+    /*
     static Element createNodeFromPath(TeiDocument tei, Node top, String path) {
         // isolate the head of the path: ./ or .// or / or // or nothing
         // to find the first element of the path
@@ -132,6 +137,8 @@ public class TeiDocument {
             return null;
         }
 
+        Node node = top;
+
         while (!restofpath.isEmpty()) {
             String nodetocreate = "";
             // split path
@@ -148,7 +155,6 @@ public class TeiDocument {
                 restofpath = "";
             }
 
-            Node node;
             try {
                 node = (Node)tei.path.evaluate(currentpath, top, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
@@ -157,12 +163,69 @@ public class TeiDocument {
                 //e.printStackTrace();
                 return null;
             }
-            if (node != null) {
-                // node exist.
-                // goto to next one
+            if (node == null) {
+                // create a new node.
+                Element e = tei.doc.createElement(nodetocreate);
+            } else {
+                // node exists
+                // nothing to do
             }
         }
-        return (Element)top;
+        return (Element)node;
+    }
+    */
+
+    static Element createNodeFromPath(TeiDocument tei, Node top, String path) {
+        List<String> missingnodes = new ArrayList<String>();
+        // first find starting point
+        String currentpath = path;
+        Node nodefound = null;
+        while (true) {
+            // test currentpath
+            try {
+//                System.err.printf("createNodeFromPath: look for %s%n", currentpath);
+                nodefound = (Node)tei.path.evaluate(currentpath, top, XPathConstants.NODE);
+            } catch (XPathExpressionException e) {
+                System.err.printf("Error finding entry: (%s)%n ERROR:[%s]%n", currentpath, e.toString());
+                //e.printStackTrace();
+                return null;
+            }
+            if (nodefound == null) {
+//                System.err.printf("createNodeFromPath: NOT FOUND %s%n", currentpath);
+                // not found: check above
+                // split path
+                Pattern pattern = Pattern.compile("(.*)[./]+(.+)");
+                Matcher matcher = pattern.matcher(currentpath);
+                if (matcher.matches()) { // there is a top path and a rest of path
+                    currentpath = matcher.group(1);
+                    missingnodes.add(matcher.group(2));
+//                    System.err.printf("NEXT IS %s => %s%n", currentpath, matcher.group(2));
+                } else {
+                    // final part
+                    // it should be a / or a ./ or a // or a .//
+//                    System.err.printf("STOP AT %s%n", currentpath);
+                    if (currentpath.equals("/") || currentpath.equals("./") || currentpath.equals("//") || currentpath.equals(".//")) {
+                        nodefound = top;
+                        break;
+                    }
+                    System.err.printf("Error in createNodeFromPath: %s %s%n", currentpath, path);
+                    return null;
+                }
+            } else {
+//                System.err.printf("createNodeFromPath: FOUND %s%n", currentpath);
+                // node exists
+                // stop and add missing nodes
+                break;
+            }
+        }
+        // add missing nodes to nodefound
+        for (int i = missingnodes.size() - 1; i >= 0 ; i--) {
+            // add node
+            Element e = tei.doc.createElement(missingnodes.get(i));
+            nodefound.appendChild(e);
+            nodefound = (Node)e;
+        }
+        return (Element)nodefound;
     }
 
     void addNamespace() {
@@ -350,8 +413,7 @@ public class TeiDocument {
         }
     }
 
-    public static void setAttrAnnotationBlocSupplement(Document docTEI, Element annotatedU, String string,
-String attValue) {
+    public static void setAttrAnnotationBlocSupplement(Document docTEI, Element annotatedU, String string, String attValue) {
         NodeList spanGrpList = annotatedU.getElementsByTagName("spanGrp");
         if (spanGrpList != null && spanGrpList.getLength() > 0) {
             for (int i=0; i<spanGrpList.getLength(); i++) {
