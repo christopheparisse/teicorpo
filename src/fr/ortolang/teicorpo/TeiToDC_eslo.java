@@ -290,20 +290,15 @@ public class TeiToDC_eslo{
 				}
 			}
 
-			File outFile = new File(output);
-			if(outFile.exists()){
-				if(!outFile.isDirectory()){
-					System.out.println("\n Erreur :"+ output + " est un fichier, vous devez spécifier un nom de dossier pour le stockage des résultats. \n");
-					usage();
-					System.exit(1);
+			if (!Utils.testAndCreateDir(output)) {
+				usage();
+				System.exit(1);
+			} else {
+				if(!output.endsWith("/")){
+					output += "/";
 				}
 			}
 
-			if(!output.endsWith("/")){
-				output += "/";
-			}
-			new File(output).mkdir();
-			
 			for (File file : chatFiles){
 				if(file.getName().endsWith(".teiml")){
 					String outputFileName = file.getName().split("\\.")[0] + EXT;

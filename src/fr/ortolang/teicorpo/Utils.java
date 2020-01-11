@@ -549,4 +549,17 @@ public class Utils {
 		return null;
 	}
 
+	public static boolean testAndCreateDir(String dirname) {
+		File outFile = new File(dirname);
+		if (outFile.exists()) {
+			if (!outFile.isDirectory()) {
+				System.out.println("\n Erreur :"+ dirname + " est un fichier, vous devez spécifier un nom de dossier pour le stockage des résultats. \n");
+				return false;
+			} else {
+				new File(dirname).mkdir();
+			}
+		}
+		return true;
+	}
+
 }

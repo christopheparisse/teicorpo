@@ -101,11 +101,12 @@ public class TeiInsertCsv {
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.printf("Usage: TeiInsertCsv <csvfile> [-userinfo teifile] [list if TEI xpath names for each column of the csv...]");
+            System.out.printf("Usage: TeiInsertCsv <csvfile> [-userinfo teifile] [-o outputDirectory] [list if TEI xpath names for each column of the csv...]");
             return;
         }
 
         String userinfo = "";
+        String outputDir = "";
 
         TeiInsertCsv tic = new TeiInsertCsv();
         tic.csv = CsvReader.load(args[0]);
@@ -118,45 +119,55 @@ public class TeiInsertCsv {
         List<String> largs = new ArrayList<String>();
         for (int c = 1; c < args.length; c++) {
             if (args[c].startsWith("-")) {
-                if (!args[c].equals("-userinfo")) {
-                    System.err.println("Optional arguments are only -userinfo teifile. Stop.");
+                if (!args[c].equals("-userinfo") && !args[c].equals("-o")) {
+                    System.err.println("Optional arguments are only -userinfo teifile and -o outputDirectory. Stop.");
                     return;
                 }
                 if (c+1 >= args.length) {
-                    System.err.println("Missing argument after -userinfo. Stop.");
+                    System.err.println("Missing argument after -userinfo or -o. Stop.");
                     return;
                 }
+                if (args[c].equals("-userinfo")) {
+                    userinfo = args[c+1];
+                }
+                if (args[c].equals("-o")) {
+                    outputDir = args[c+1];
+                }
                 c++;
-                userinfo = args[c];
                 continue;
             }
             largs.add(args[c]);
         }
 
+        if (!outputDir.isEmpty() && !Utils.testAndCreateDir(outputDir)) {
+            return;
+        }
+
+//        System.out.printf("userinfo(%s) outputDir(%s)%n", userinfo, outputDir);
         List<XpathAddress> lxa = new ArrayList<XpathAddress>();
-        System.out.printf("Column: 1 (%s) := file names or IDs%n", tic.csv.get(1)[0]);
+//        System.out.printf("Column: 1 (%s) := file names or IDs%n", tic.csv.get(1)[0]);
         for (int c = 1; c < tic.csv.get(0).length; c++) {
             String h = tic.headColumn(c, largs);  // extracted from the second lines or from the arguments
-            System.out.printf("Column: %d (%s) := %s%n", c+1, tic.csv.get(0)[c], h);
+//            System.out.printf("Column: %d (%s) := %s%n", c+1, tic.csv.get(0)[c], h);
             XpathAddress xa = new XpathAddress(h, userinfo.isEmpty() ? true : false); // true for absolute xpath position
-            System.out.println(xa.toString());
+//            System.out.println(xa.toString());
             lxa.add(xa);
         }
 
         if (userinfo.isEmpty()) {
             System.out.printf("Insert metadata from %s in all files%n", args[0]);
-            int l = args.length > 1 ? 1 : 2; // one or two lines to be ignored at the top of the file
+            int l = largs.size() > 1 ? 1 : 2; // one or two lines to be ignored at the top of the file
             for (; l < tic.csv.size(); l++) {
-                tic.processLine(l, lxa);
+                tic.processLine(l, lxa, outputDir);
             }
         } else {
             System.out.printf("Insert metadata from %s in the participants in %s%n", args[0], userinfo);
             tic.initializeSpeakers(tic.csv, largs.size() > 0);
-            tic.processParticipants(userinfo, lxa);
+            tic.processParticipants(userinfo, lxa, outputDir);
         }
     }
 
-    private void processParticipants(String userinfo, List<XpathAddress> lxa) {
+    private void processParticipants(String userinfo, List<XpathAddress> lxa, String outputDir) {
         TeiDocument tei = new TeiDocument(userinfo, false);
         if (tei.fileXML == null) return; // skip file and line
         // find all users and insert corresponding metadata information
@@ -193,7 +204,11 @@ public class TeiInsertCsv {
             }
         }
         // save tei file
-        userinfo += ".modif.xml";
+        if (!outputDir.isEmpty())
+            userinfo = outputDir + "/" + Utils.lastname(userinfo);
+        else
+            userinfo += ".modif.xml";
+        System.out.println("Write file: " + userinfo);
         Utils.createFile(tei.doc, userinfo);
     }
 
@@ -215,14 +230,18 @@ public class TeiInsertCsv {
         return head;
     }
 
-    public void processLine(int l, List<XpathAddress> xpth) {
+    public void processLine(int l, List<XpathAddress> xpth, String outputDir) {
         String fn = csv.get(l)[0];
 //        System.out.printf("File %s%n", fn);
         TeiDocument tei = new TeiDocument(fn, false);
         if (tei.fileXML == null) return; // skip file and line
         insertInfo(tei, tei.root, csv.get(l), xpth);
         // save tei file
-        fn += ".modif.xml";
+        if (!outputDir.isEmpty())
+            fn = outputDir + "/" + Utils.lastname(fn);
+        else
+            fn += ".modif.xml";
+        System.out.println("Write file: " + fn);
         Utils.createFile(tei.doc, fn);
     }
 
