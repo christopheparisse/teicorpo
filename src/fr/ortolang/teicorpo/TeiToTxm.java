@@ -332,7 +332,7 @@ public class TeiToTxm extends TeiConverter {
 			SpkVal vs = entry.getValue();
 //			System.out.printf("setTv:mv: %s %s %s%n", key, vs.genericspk, vs.genericvalue);
 			if (vs.genericspk.isEmpty()) {
-				we.setAttribute(key, entry.getValue().genericvalue);
+				if (!vs.genericvalue.isEmpty()) we.setAttribute(key, vs.genericvalue);
 			} else {
 				if (vs.list.containsKey(spkcode)) {
 					String c = vs.list.get(spkcode);

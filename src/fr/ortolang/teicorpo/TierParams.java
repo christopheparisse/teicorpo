@@ -1021,8 +1021,8 @@ class TierParams {
 				// no loc value
 				String s = getXpathValue(tf, vsxpath.genericvalue);
 				if (s == null) {
-					System.err.printf("Remove incorrect parameter: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
-					mv.remove(entry);
+					System.err.printf("Entry not found for: %s:%s%n", entry.getKey(), vsxpath.genericvalue);
+					vsxpath.genericvalue = "";
 				} else {
 					vsxpath.genericvalue = s;
 				}
