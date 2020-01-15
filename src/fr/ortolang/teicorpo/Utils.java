@@ -1,13 +1,6 @@
 package fr.ortolang.teicorpo;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.io.StringWriter;
+import java.io.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
@@ -562,4 +555,13 @@ public class Utils {
 		return true;
 	}
 
+    public static PrintWriter openOutputStream(String outputName, boolean concat, String outputEncoding) {
+		try {
+			FileOutputStream of = new FileOutputStream(outputName, concat);
+			OutputStreamWriter outWriter = new OutputStreamWriter(of, outputEncoding);
+			return new PrintWriter(outWriter, true);
+		} catch (Exception e) {
+			return new PrintWriter(System.out, true);
+		}
+    }
 }

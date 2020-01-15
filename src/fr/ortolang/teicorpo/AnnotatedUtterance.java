@@ -84,8 +84,8 @@ public class AnnotatedUtterance {
 		return s;
 	}
 
-	private void addAnnot() {
-		Annot a = new Annot(speakerName, start, end, speech, nomarkerSpeech);
+	private void addAnnot(String sync) {
+		Annot a = new Annot(speakerName, start, sync, speech, nomarkerSpeech);
 		if (nthid == 0) {
 			a.id = id;
 			nthid++;
@@ -94,6 +94,10 @@ public class AnnotatedUtterance {
 			nthid++;
 		}
 		speeches.add(a);
+	}
+
+	private void addAnnot() {
+		addAnnot(end);
 	}
 
 	public boolean processP(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
@@ -428,7 +432,7 @@ public class AnnotatedUtterance {
 						sync = syncval;
 					}
 					// creer une ligne avec speech, nomarkerSpeech, addspeech
-					addAnnot();
+					addAnnot(sync);
 					// System.out.printf("anchor: %s %s %s %s%n", speakerName,
 					// start, sync, speech);
 					start = sync;

@@ -44,14 +44,7 @@ public class TeiToText extends TeiConverter {
 	 * Ecriture de l'output
 	 */
 	public void outputWriter() {
-		out = null;
-		try {
-			FileOutputStream of = new FileOutputStream(outputName, tf.optionsOutput.concat);
-			OutputStreamWriter outWriter = new OutputStreamWriter(of, outputEncoding);
-			out = new PrintWriter(outWriter, true);
-		} catch (Exception e) {
-			out = new PrintWriter(System.out, true);
-		}
+		out = Utils.openOutputStream(outputName, tf.optionsOutput.concat, outputEncoding);
 	}
 
 	/**

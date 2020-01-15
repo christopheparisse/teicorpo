@@ -130,7 +130,6 @@ fr/ortolang/teicorpo/TeiToSrt.class
 fr/ortolang/teicorpo/ElanToHT$CV_elan.class
 fr/ortolang/teicorpo/XpathAddress.class
 fr/ortolang/teicorpo/SpkVal.class
-fr/ortolang/teicorpo/TeiToPraat$1.class
 fr/ortolang/teicorpo/ConversionUI$1.class
 org/mozilla/universalchardet/prober/statemachine/HZSMModel.class
 fr/ortolang/teicorpo/Media.class

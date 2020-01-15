@@ -20,6 +20,7 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 public class TeiToPraat extends GenericMain {
 
@@ -37,11 +38,8 @@ public class TeiToPraat extends GenericMain {
 	// Nom du fichier de sortie
 	String outputName;
 
-	// Document TEI à lire
-	public Document teiDoc;
-	// acces Xpath
-	public XPathFactory xPathfactory;
-	public XPath xpath;
+	// Document TEI to be read
+	TeiDocument teidoc;
 
 	// Validation du document Tei par la dtd
 	boolean validation = false;
@@ -51,56 +49,8 @@ public class TeiToPraat extends GenericMain {
 	public boolean transform(String inputName, String outputName, TierParams optionsTei) throws FileNotFoundException {
 		if (optionsTei == null) optionsTei = new TierParams();
 		ttp = new TeiToPartition();
-		DocumentBuilderFactory factory = null;
-		try {
-			File teiFile = new File(inputName);
-			factory = DocumentBuilderFactory.newInstance();
-			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
-			try {
-				DocumentBuilder builder = factory.newDocumentBuilder();
-				teiDoc = builder.parse(teiFile);
-			} catch(FileNotFoundException e) {
-				System.err.println("Le fichier " + inputName + " n'existe pas.");
-				return false;
-			} catch(Exception e) {
-				System.err.println("Impossible de traiter le fichier: " + inputName);
-				System.err.println("Erreur logicielle " + e.toString());
-				e.printStackTrace();
-				return false;
-			}
-			xPathfactory = XPathFactory.newInstance();
-			xpath = xPathfactory.newXPath();
-			xpath.setNamespaceContext(new NamespaceContext() {
-				public String getNamespaceURI(String prefix) {
-					System.out.println("prefix called " + prefix);
-					if (prefix == null) {
-						throw new IllegalArgumentException("No prefix provided!");
-					} else if (prefix.equals(XMLConstants.DEFAULT_NS_PREFIX)) {
-						System.out.println("default prefix called");
-						return "http://www.tei-c.org/ns/1.0";
-					} else if (prefix.equals("tei")) {
-						System.out.println("tei prefix called");
-						return "http://www.tei-c.org/ns/1.0";
-					} else if (prefix.equals("xsi")) {
-						return "http://www.w3.org/2001/XMLSchema-instance";
-					} else {
-						return XMLConstants.NULL_NS_URI;
-					}
-				}
-
-				public Iterator<String> getPrefixes(String val) {
-					return null;
-				}
-
-				public String getPrefix(String uri) {
-					return null;
-				}
-			});
-			ttp.init(xpath, teiDoc, optionsTei);
-		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
-		}
+		teidoc = new TeiDocument(inputName, optionsTei.dtdValidation);
+		ttp.init(teidoc.path, teidoc.doc, optionsTei);
 		this.inputName = inputName;
 		this.outputName = outputName;
 		outputWriter();
@@ -110,14 +60,7 @@ public class TeiToPraat extends GenericMain {
 
 	// Ecriture du fichier de sortie
 	public void outputWriter() {
-		out = null;
-		try {
-			FileOutputStream of = new FileOutputStream(outputName);
-			OutputStreamWriter outWriter = new OutputStreamWriter(of, outputEncoding);
-			out = new PrintWriter(outWriter, true);
-		} catch (Exception e) {
-			out = new PrintWriter(System.out, true);
-		}
+		out = Utils.openOutputStream(outputName, false, outputEncoding);
 	}
 
 	// Conversion du fichier TEI vers Elan
@@ -155,12 +98,14 @@ public class TeiToPraat extends GenericMain {
 
 	// Tiers...
 	void buildTiers() {
+		TransInfo transInfo = new TransInfo((Element) teidoc.root.getElementsByTagName("teiHeader").item(0));
 		int nth = 1;
 		out.println("item []:");
 		for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
 			out.printf("    item [%d]:%n", nth++);
 			out.println("        class = \"IntervalTier\"");
-			out.printf("        name = \"%s\"%n", entry.getKey());
+			String sp = (ttp.optionsOutput.spknamerole.equals("pers")) ? transInfo.getParticipantName(entry.getKey()) : entry.getKey();
+			out.printf("        name = \"%s\"%n", sp);
 			out.println("        xmin = 0");
 
 			double kmax = 0.0;
