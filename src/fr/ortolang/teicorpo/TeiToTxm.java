@@ -7,6 +7,8 @@ package fr.ortolang.teicorpo;
 import java.io.IOException;
 //import java.io.FilenameFilter;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -466,7 +468,7 @@ public class TeiToTxm extends TeiConverter {
 
 	private String getLocAge(String loc) {
 		// is it computed already
-		if (locAges.containsKey(loc))
+		if (locAges.containsKey(loc)) // speeds up process so that ages already computed are not recomputed
 			return locAges.get(loc);
 		// get loc age
 		ArrayList<TeiParticipant> part = getParticipants();
@@ -492,6 +494,23 @@ public class TeiToTxm extends TeiConverter {
 						int numberofdays = Integer.parseInt(m) * 12 + Integer.parseInt(d);
 						String sage = y + Integer.toString(numberofdays / 365);
 						System.out.printf("Age found for %s is %s%n", loc, sage);
+						locAges.put(loc, sage);
+						return sage;
+					}
+					// case of the eslo numbers (two digits with a / in between)
+					if (tp.age.equals("+ de 65")) {
+						System.out.printf("Age found for %s is %s%n", loc, tp.age);
+						String sage = "65.0";
+						locAges.put(loc, sage);
+						return sage;
+					}
+					Pattern pp = Pattern.compile("(\\d+)\\s?/\\s?(\\d+)");
+					Matcher mm = pp.matcher(tp.age);
+					if (mm.matches()) {
+						double d1 = Double.parseDouble(mm.group(1));
+						double d2 = Double.parseDouble(mm.group(2));
+						System.out.printf("Age found for %s is %s%n", loc, tp.age);
+						String sage = Double.toString((d1 + d2)/2);
 						locAges.put(loc, sage);
 						return sage;
 					}
