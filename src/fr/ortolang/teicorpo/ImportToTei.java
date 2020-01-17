@@ -23,7 +23,7 @@ public abstract class ImportToTei extends GenericMain {
 	Document docTEI;
 	/** root of TEI document. */
 	Element rootTEI;
-	// acces Xpath
+	// acces XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 	/** Liste des types de tiers présents dans le fichier */

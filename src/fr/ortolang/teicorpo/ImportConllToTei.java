@@ -182,7 +182,7 @@ public class ImportConllToTei extends ImportToTei {
 		TierParams.printVersionMessage();
 		ImportConllToTei ct = new ImportConllToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);
-		ct.mainCommand(args, EXT, Utils.EXT, "Description: TeiImportConll converts a CONLL file to an TEI file%n", 9);
+		ct.mainCommand(args, EXT, Utils.EXT, "Description: ImportConllToTei converts a CONLL file to an TEI file%n", 9);
 	}
 
 	@Override

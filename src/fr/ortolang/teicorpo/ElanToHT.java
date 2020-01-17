@@ -23,7 +23,7 @@ public class ElanToHT {
 	public File eafFile;
 	/** Document issu du fichier Elan. */
 	public Document docEAF;
-	// acces Xpath
+	// acces XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 	

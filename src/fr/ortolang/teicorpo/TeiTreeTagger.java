@@ -41,7 +41,7 @@ public class TeiTreeTagger extends GenericMain {
 	final static String TT_EXT = "_ttg";
 	// Document TEI à lire
 	public Document teiDoc;
-	// acces Xpath
+	// acces XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 	// paramètres

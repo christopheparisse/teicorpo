@@ -9,6 +9,7 @@ fr/ortolang/teicorpo/CsvReader.class
 org/mozilla/universalchardet/prober/sequence/Ibm855Model.class
 org/mozilla/universalchardet/prober/statemachine/CodingStateMachine.class
 fr/ortolang/teicorpo/TeiToPartition.class
+fr/ortolang/teicorpo/XpathTest.class
 fr/ortolang/teicorpo/TeiConverter.class
 fr/ortolang/teicorpo/TeiCorpo.class
 fr/ortolang/teicorpo/ConversionUI$3.class

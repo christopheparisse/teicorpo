@@ -34,7 +34,7 @@ public class TeiSNLP extends GenericMain {
 	final static String SNLP_EXT = "_snlp";
 	// Document TEI à lire
 	public Document teiDoc;
-	// acces Xpath
+	// acces XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 	// paramètres

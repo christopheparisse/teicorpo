@@ -58,7 +58,7 @@ public class TeiToElan extends GenericMain {
 
 	// Document TEI à lire
 	public Document teiDoc;
-	// acces Xpath
+	// acces XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 

@@ -25,7 +25,7 @@ public class TeiFile {
 
 	// TEI Document to be parsed
 	public Document teiDoc;
-	// access to Xpath
+	// access to XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 	public Element root;
