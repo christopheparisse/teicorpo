@@ -98,6 +98,7 @@
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToSubtHtml.java
 /devlopt/teicorpo/src/org/mozilla/universalchardet/prober/distributionanalysis/EUCTWDistributionAnalysis.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/TeiToElan.java
+/devlopt/teicorpo/src/fr/ortolang/teicorpo/XpathTest.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ElanToTeiTest.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/ReorgPath.java
 /devlopt/teicorpo/src/fr/ortolang/teicorpo/GenerateIndexHTML.java

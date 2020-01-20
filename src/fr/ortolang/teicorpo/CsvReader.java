@@ -1,6 +1,9 @@
 package fr.ortolang.teicorpo;
 
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
 import com.opencsv.exceptions.CsvValidationException;
 
@@ -29,10 +32,17 @@ public class CsvReader {
         }
     }
 
-    public static List<String[]> load(String filename) {
+    public static List<String[]> load(String filename, char delimiter) {
         CSVReader reader = null;
         try {
-            reader = new CSVReader(new FileReader(filename));
+            if (delimiter != 0) {
+                CSVParser cpb = new CSVParserBuilder().withSeparator(delimiter).build();
+                // reader = new CSVReader(new FileReader(filename), 0, cpb);
+                reader = new CSVReaderBuilder(new FileReader(filename)).withCSVParser(cpb).build();
+            }
+            else {
+                reader = new CSVReader(new FileReader(filename));
+            }
             List<String[]> myEntries = reader.readAll();
             return myEntries;
         } catch (FileNotFoundException e) {
@@ -47,5 +57,9 @@ public class CsvReader {
 //           e.printStackTrace();
         }
         return null;
+    }
+
+    CsvReader() {
+
     }
 }

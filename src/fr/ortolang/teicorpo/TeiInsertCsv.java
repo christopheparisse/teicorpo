@@ -107,18 +107,19 @@ public class TeiInsertCsv {
 
         String userinfo = "";
         String outputDir = "";
-
-        TeiInsertCsv tic = new TeiInsertCsv();
-        tic.csv = CsvReader.load(args[0]);
-
-        if (tic.csv == null || tic.csv.size() < 1) {
-            System.err.printf("File %s not found or only one line. Stop.", args[0]);
-            return;
-        }
+        char delimiter = 0;
 
         List<String> largs = new ArrayList<String>();
         for (int c = 1; c < args.length; c++) {
             if (args[c].startsWith("-")) {
+                if (args[c].equals("-tabs")) {
+                    delimiter = '\t';
+                    continue;
+                }
+                if (args[c].equals("-semicolon")) {
+                    delimiter = ';';
+                    continue;
+                }
                 if (!args[c].equals("-userinfo") && !args[c].equals("-o")) {
                     System.err.println("Optional arguments are only -userinfo teifile and -o outputDirectory. Stop.");
                     return;
@@ -143,14 +144,19 @@ public class TeiInsertCsv {
             return;
         }
 
-//        System.out.printf("userinfo(%s) outputDir(%s)%n", userinfo, outputDir);
+
+        TeiInsertCsv tic = new TeiInsertCsv();
+        tic.csv = CsvReader.load(args[0], delimiter);
+
+        if (tic.csv == null || tic.csv.size() < 1) {
+            System.err.printf("File %s not found or only one line. Stop.", args[0]);
+            return;
+        }
+
         List<XpathAddress> lxa = new ArrayList<XpathAddress>();
-//        System.out.printf("Column: 1 (%s) := file names or IDs%n", tic.csv.get(1)[0]);
         for (int c = 1; c < tic.csv.get(0).length; c++) {
             String h = tic.headColumn(c, largs);  // extracted from the second lines or from the arguments
-//            System.out.printf("Column: %d (%s) := %s%n", c+1, tic.csv.get(0)[c], h);
             XpathAddress xa = new XpathAddress(h, userinfo.isEmpty() ? true : false); // true for absolute xpath position
-//            System.out.println(xa.toString());
             lxa.add(xa);
         }
 
@@ -196,7 +202,7 @@ public class TeiInsertCsv {
                 if (name != null && !name.isEmpty()) {
                     if (speakers.containsKey(name)) {
                         System.out.printf("Insert info for %s%n", name);
-                        insertInfo(tei, nodelist.item(i), speakers.get(name), lxa);
+                        insertInfo(tei, nodelist.item(i), speakers.get(name), lxa, i);
                     } else {
                         System.out.printf("Cannot find speaker %s in csv file%n", name);
                     }
@@ -235,7 +241,7 @@ public class TeiInsertCsv {
 //        System.out.printf("File %s%n", fn);
         TeiDocument tei = new TeiDocument(fn, false);
         if (tei.fileXML == null) return; // skip file and line
-        insertInfo(tei, tei.root, csv.get(l), xpth);
+        insertInfo(tei, tei.root, csv.get(l), xpth, l);
         // save tei file
         if (!outputDir.isEmpty())
             fn = outputDir + "/" + Utils.lastname(fn);
@@ -245,9 +251,17 @@ public class TeiInsertCsv {
         Utils.createFile(tei.doc, fn);
     }
 
-    public void insertInfo(TeiDocument tei, Node top, String[] line, List<XpathAddress> xpth) {
+    public void insertInfo(TeiDocument tei, Node top, String[] line, List<XpathAddress> xpth, int lnumber) {
+//        System.out.printf("lgs %d %d%n", line.length, xpth.size());
+        if (line.length > xpth.size()) {
+            System.out.printf("Two few elements on line %d%n", lnumber+1);
+        }
         for (int c = 1; c < line.length; c++) {
             if (line[c].isEmpty() || line[c].equals("NULL")) continue; // do not insert empty information ?
+            if (c > xpth.size()) {
+                System.out.printf("Two many elements on line %d%n", lnumber+1);
+                continue;
+            }
             // find pth in metadata
             Node node;
             XpathAddress xa = xpth.get(c-1);
