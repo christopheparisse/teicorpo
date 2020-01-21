@@ -29,7 +29,7 @@ public class TeiToTxm extends TeiConverter {
 	Element txm; // root of document
 	Element head; // put all utterances inside text
 	Map<String, String> locAges; // precomputed locuteur ages
-	static public String defaultAge = "40.0";
+	static public String defaultAge = "40";
 
 	/**
 	 * Convertit le fichier TEI donné en argument en un fichier Txm.
@@ -481,6 +481,12 @@ public class TeiToTxm extends TeiConverter {
 					int p = tp.age.indexOf(';');
 					if (p > 0) {
 						String y = tp.age.substring(0, p);
+						int ageyear = Integer.parseInt(y);
+						if (ageyear >= 10) {
+							System.out.printf("Age found for %s is %s (simplified to %s)%n", loc, tp.age, y);
+							locAges.put(loc, y);
+							return y;
+						}
 						String t = tp.age.substring(p+1);
 						p = t.indexOf('.');
 						String m, d;
@@ -500,24 +506,28 @@ public class TeiToTxm extends TeiConverter {
 					// case of the eslo numbers (two digits with a / in between)
 					if (tp.age.equals("+ de 65")) {
 						System.out.printf("Age found for %s is %s%n", loc, tp.age);
-						String sage = "65.0";
+						String sage = "65";
 						locAges.put(loc, sage);
 						return sage;
 					}
 					Pattern pp = Pattern.compile("(\\d+)\\s?/\\s?(\\d+)");
 					Matcher mm = pp.matcher(tp.age);
+					double trueage;
 					if (mm.matches()) {
 						double d1 = Double.parseDouble(mm.group(1));
 						double d2 = Double.parseDouble(mm.group(2));
-						System.out.printf("Age found for %s is %s%n", loc, tp.age);
-						String sage = Double.toString((d1 + d2)/2);
-						locAges.put(loc, sage);
-						return sage;
+						trueage = (d1 + d2)/2;
 					}
 					// case of floating point numbers
-					float fage = Float.parseFloat(tp.age);
-					String sage = String.format("%04.1f",fage);
-					System.out.printf("Age found for %s is %s%n", loc, tp.age);
+					trueage = Float.parseFloat(tp.age);
+					String sage;
+					if (trueage >= 10.0) {
+						int ageint = (int) Math.round(trueage);
+						sage = Integer.toString(ageint);
+					} else {
+						sage = String.format("%0.1d", trueage);
+					}
+					System.out.printf("Age found for %s is %s (simplified to %s)%n", loc, tp.age,sage);
 					locAges.put(loc, sage);
 					return sage;
 				} catch (Exception e) {
