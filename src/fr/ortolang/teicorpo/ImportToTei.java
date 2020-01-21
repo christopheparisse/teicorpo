@@ -113,7 +113,9 @@ public abstract class ImportToTei extends GenericMain {
 	}
 
 	public String addTimeToTimeline(String time) {
-		if (Utils.isNotEmptyOrNull(time) && !time.equals("0")) {
+		if (time.equals("0")) {
+			return "#T0";
+		} else if (Utils.isNotEmptyOrNull(time)) {
 			Double t = Double.parseDouble(time);
 			if (t > maxTime)
 				maxTime = t;

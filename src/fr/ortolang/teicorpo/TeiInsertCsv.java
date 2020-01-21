@@ -257,7 +257,8 @@ public class TeiInsertCsv {
             System.out.printf("Two few elements on line %d%n", lnumber+1);
         }
         for (int c = 1; c < line.length; c++) {
-            if (line[c].isEmpty() || line[c].equals("NULL")) continue; // do not insert empty information ?
+            String cleanLine = line[c].trim().replaceAll("\\s+", " ");
+            if (cleanLine.isEmpty() || cleanLine.equals("NULL")) continue; // do not insert empty information ?
             if (c > xpth.size()) {
                 System.out.printf("Two many elements on line %d%n", lnumber+1);
                 continue;
@@ -266,7 +267,7 @@ public class TeiInsertCsv {
             Node node;
             XpathAddress xa = xpth.get(c-1);
             if (xa.format.equals("ignore")) continue; // ignore this column
-//            System.out.printf("Test: %s %s%n", xa.path, line[c]);
+//            System.out.printf("Test: %s %s%n", xa.path, cleanLine);
             try {
                 node = (Node)tei.path.evaluate(xa.path, top, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
@@ -279,13 +280,13 @@ public class TeiInsertCsv {
 //                System.out.printf("Modify %s%n", xa.toString());
                 // the node exists: update it
                 if (xa.format.equals("node")) {
-                    node.setTextContent(line[c]);
+                    node.setTextContent(cleanLine);
                 } else if (xa.format.equals("attr")) {
-                    ((Element)node).setAttribute(xa.attr, line[c]);
+                    ((Element)node).setAttribute(xa.attr, cleanLine);
                 } else {
                     // case of node with an attribute for the type of info and the info in the content
                     // case nodeinfo
-                    node.setTextContent(line[c]);
+                    node.setTextContent(cleanLine);
                 }
             } else {
                 // it is necessary to create the node.
@@ -293,17 +294,17 @@ public class TeiInsertCsv {
 //                System.out.printf("Addition of %s%n", xa.toString());
                 if (xa.format.equals("node")) {
                     Node newnode = TeiDocument.createNodeFromPath(tei, top, xa.path);
-                    newnode.setTextContent(line[c]);
+                    newnode.setTextContent(cleanLine);
                 } else if (xa.format.equals("attr")) {
                     Node newnode = TeiDocument.createNodeFromPath(tei, top, xa.path);
-                    ((Element)newnode).setAttribute(xa.attr, line[c]);
+                    ((Element)newnode).setAttribute(xa.attr, cleanLine);
                 } else {
                     // case of node with an attribute for the type of info and the info in the content
                     // case nodeinfo
                     Node newnode = TeiDocument.createNodeFromPath(tei, top, xa.pathnode);
                     Element e = tei.doc.createElement(xa.namenode);
                     e.setAttribute(xa.attr, xa.type);
-                    e.setTextContent(line[c]);
+                    e.setTextContent(cleanLine);
                     newnode.appendChild(e);
                 }
             }

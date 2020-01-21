@@ -475,6 +475,8 @@ public class TeiToTxm extends TeiConverter {
 		for (TeiParticipant tp: part) {
 			if (tp == null || tp.id == null || loc == null) continue;
 			if (tp.id.equals(loc)) {
+				String s = tp.adds.get("ageinfo");
+				System.out.printf("Loc %s Age %s AgeInfo %s%n", loc, tp.age, s);
 				try {
 					// normalize age for TXM
 					// see if it is CLAN format.
@@ -517,9 +519,10 @@ public class TeiToTxm extends TeiConverter {
 						double d1 = Double.parseDouble(mm.group(1));
 						double d2 = Double.parseDouble(mm.group(2));
 						trueage = (d1 + d2)/2;
+					} else {
+						// case of floating point numbers
+						trueage = Float.parseFloat(tp.age);
 					}
-					// case of floating point numbers
-					trueage = Float.parseFloat(tp.age);
 					String sage;
 					if (trueage >= 10.0) {
 						int ageint = (int) Math.round(trueage);
