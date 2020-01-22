@@ -335,7 +335,7 @@ public class TranscriberToTei extends ImportToTei {
 						}
 					} else if (attName == "name") {
 						Element name = docTEI.createElement("persName");
-						name.setTextContent(attValue);
+						name.setTextContent(attValue.trim()); // cleaning the name of the speakers
 						person.appendChild(name);
 					} else if (attName == "id") {
 						Element altGrp = docTEI.createElement("altGrp");

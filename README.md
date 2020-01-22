@@ -88,6 +88,15 @@ Other commands (all are part of TeiCorpo command) :
   * java -cp teicorpo.jar fr.ortolang.teicorpo.TeiToLexico [parameters]
   * java -cp teicorpo.jar fr.ortolang.teicorpo.TeiToSrt [parameters]
 
+Other commands for editing/changing TEI files
+  * java -cp teicorpo.jar fr.ortolang.teicorpo.ImportConllToTei [parameters]
+  * java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInserMeta [parameters]
+  * java -cp teicorpo.jar fr.ortolang.teicorpo.TeiInsertCsv [parameters]
+
+Jar files to download for the TeiInsertCsv command: 
+[commons-lang3-3.9.jar](http://ct3.ortolang.fr/tei-corpo/commons-lang3-3.9.jar) et 
+[opencsv-5.0.jar](http://ct3.ortolang.fr/tei-corpo/opencsv-5.0.jar)
+
 Other commands to edit automatically TEI files
   * java -cp teicorpo.jar fr.ortolang.teicorpo.TeiEdit [parameters]
   This command allows modifying the values of the fields media, mediamime, docname and the temporal values in the timeline
@@ -143,4 +152,6 @@ The Stanford parser, part of speech tagger, and other tools can be called to pro
   - 1.40.4 Inclusion of Stanford Natural Language Processing program
   - 1.40.5 Add text and srt input format
   - 1.40.6 Bug correction (conversion to praat and elan) and modification of argument name in &lt;ref&gt; syntactic information
-  - 1.40.18 (since 1.40.7) Bug corrections
+  - 1.40.15 Bug correction
+  - 1.40.18 New import function for CONLL (for Orfeo corpus) and TCOF metadata
+  - 1.40.22 New metadata import function from CSV files

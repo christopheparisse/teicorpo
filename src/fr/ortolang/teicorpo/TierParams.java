@@ -981,7 +981,7 @@ class TierParams {
 			list.put(matcher.group(1), vs);
 			return;
 		}
-		pattern = Pattern.compile("(.*)[=:](.*)");
+		pattern = Pattern.compile("(.*)[:](.*)");
 		matcher = pattern.matcher(info);
 		//System.out.println(line);
 		if (matcher.matches()) { // option without a speaker
