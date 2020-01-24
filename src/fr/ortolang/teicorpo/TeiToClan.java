@@ -102,15 +102,20 @@ public class TeiToClan extends TeiConverter {
 
 	String toAge(String age) {
 		if (age == null || age.isEmpty()) return "";
-		double dage = Double.parseDouble(age);
-		int y = (int)dage;
-		double d = (dage - (double)y) * 365.0;
-		if (d < 1.0) {
-			return String.format("%d;",y);
+		try {
+			double dage = Double.parseDouble(age);
+			int y = (int)dage;
+			double d = (dage - (double)y) * 365.0;
+			if (d < 1.0) {
+				return String.format("%d;",y);
+			}
+			int m = (int)(d / 30.5);
+			double dd = d - ((double)m * 30.5);
+			return String.format("%d;%02d.%02d", y, m, (int)dd);
+		} catch(Exception e) {
+			System.err.printf("Error on age conversion: %s%n", age);
+			return "";
 		}
-		int m = (int)(d / 30.5);
-		double dd = d - ((double)m * 30.5);
-		return String.format("%d;%02d.%02d", y, m, (int)dd);
 	}
 	
 	/**

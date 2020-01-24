@@ -139,7 +139,7 @@ public class ImportConllToTei extends ImportToTei {
 	public void buildText(TierParams tp) {
 		Element div = setFirstDiv();
 		for (ConllUtt cn : clDoc.doc) {
-			Element utt = docTEI.createElement("annotatedBlock");
+			Element utt = docTEI.createElement("annotationBlock");
 			div.appendChild(utt);
 			utt.setAttribute("id", cn.id);
 			Element u = docTEI.createElement("u");

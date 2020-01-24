@@ -409,7 +409,7 @@ public class TeiDocument {
         }
     }
 
-    public static boolean isAnnotatedBloc(Element el) {
+    public static boolean isAnnotationBloc(Element el) {
         if (Utils.teiStylePure == true) {
             return (el.getAttribute("type").equals(ANNOTATIONBLOC)) ? true : false;
         } else {

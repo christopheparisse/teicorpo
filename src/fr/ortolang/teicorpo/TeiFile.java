@@ -251,7 +251,7 @@ public class TeiFile {
 			for (int i = 0; i < ch.getLength(); i++) {
 				if (TeiDocument.isElement(ch.item(i))) {
 					Element el = (Element) ch.item(i);
-					if (TeiDocument.isAnnotatedBloc(el) || el.getNodeName().equals("u") || el.getNodeName().equals("p")
+					if (TeiDocument.isAnnotationBloc(el) || el.getNodeName().equals("u") || el.getNodeName().equals("p")
 							 || el.getNodeName().equals("post") || el.getNodeName().equals("prod")) {
 						if (getNote(el) != null) {
 							Element note = getNote(el);
@@ -262,7 +262,7 @@ public class TeiFile {
 						} else {
 							AnnotatedUtterance utt = new AnnotatedUtterance();
 							utt.codes = optionsOutput.codes;
-							if (TeiDocument.isAnnotatedBloc(el)) {
+							if (TeiDocument.isAnnotationBloc(el)) {
 								utt.processAnnotatedU(el, teiTimeline, transInfo, optionsOutput, true);
 							}
 							// Case u

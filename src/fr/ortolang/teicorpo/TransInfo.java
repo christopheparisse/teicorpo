@@ -67,7 +67,7 @@ public class TransInfo {
 		// Récupération des informations relatives au logiciel d'origine de
 		// la transcription
 		NodeList application = docTeiHeader.getElementsByTagName("application");
-		if (application != null) {
+		if (application != null && application.getLength() > 0) {
 			format = ((Element)application.item(0)).getAttribute("ident");
 			version = ((Element)application.item(0)).getAttribute("version");
 		}

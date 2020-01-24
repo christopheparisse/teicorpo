@@ -101,7 +101,7 @@ public class TeiInsertCsv {
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.printf("Usage: TeiInsertCsv <csvfile> [-userinfo teifile] [-o outputDirectory] [list if TEI xpath names for each column of the csv...]");
+            System.out.printf("Usage: TeiInsertCsv <csvfile> [-userinfo teifile] [-o outputDirectory] [list if TEI xpath names for each column of the csv...]%n");
             return;
         }
 
