@@ -18,6 +18,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import fr.ortolang.teicorpo.TeiFile.Div;
+import org.w3c.dom.NodeList;
 
 public class TeiToTxm extends TeiConverter {
 
@@ -27,7 +28,8 @@ public class TeiToTxm extends TeiConverter {
 	final static String EXT = ".txm.xml";
 	
 	Element txm; // root of document
-	Element head; // put all utterances inside text
+	Element texthead; // put all divs inside texthead
+	Element divhead; // put all utterances inside divhead
 	Map<String, String> locAges; // precomputed locuteur ages
 	static public String defaultAge = "40";
 
@@ -41,6 +43,7 @@ public class TeiToTxm extends TeiConverter {
 	 *            Nom du fichier de sortie (fichier TXM, a donc l'extenson .txm.xml)
 	 */
 	public void transform(String inputName, String outputName, TierParams optionsTei) {
+		if (!optionsTei.rawLine) optionsTei.outputFormat = ".txm";
 		init(inputName, outputName, optionsTei);
 		if (this.tf == null)
 			return;
@@ -87,12 +90,8 @@ public class TeiToTxm extends TeiConverter {
 	 */
 	public void buildHeader() {
 		txm.setAttribute("file", inputName);
-		head = txmDoc.createElement("text");
-		txm.appendChild(head);
-		Element elt = txmDoc.createElement("div");
-		head.appendChild(elt);
-		head = elt; // all other elements will be included in head
-		setTv(elt, "");
+		texthead = txmDoc.createElement("text");
+		txm.appendChild(texthead);
 	}
 
 	/**
@@ -100,11 +99,42 @@ public class TeiToTxm extends TeiConverter {
 	 */
 	public void buildText() {
 		ArrayList<TeiFile.Div> divs = tf.trans.divs;
-		for (Div d : divs) {
-			for (AnnotatedUtterance u : d.utterances) {
-				bgCase(u);
-				writeUtterance(u);
+		if (divs.size() == 1) {
+			// sets the attribute of the main div to the text
+			// and then read normally each subdiv
+			divhead = texthead;
+			Div d = divs.get(0);
+			setTv(divhead, "");
+			if (Utils.isNotEmptyOrNull(d.themeId)) divhead.setAttribute("id", d.themeId);
+			if (Utils.isNotEmptyOrNull(d.theme)) divhead.setAttribute("theme", d.theme);
+			processDiv(d);
+		} else {
+			for (Div d : divs) {
+				// creates a div and set correct attributes
+				divhead = txmDoc.createElement("div");
+				texthead.appendChild(divhead);
+				// all other elements will be included in head one by one to divhead
+				setTv(divhead, "");
+				if (Utils.isNotEmptyOrNull(d.themeId)) divhead.setAttribute("id", d.themeId);
+				if (Utils.isNotEmptyOrNull(d.theme)) divhead.setAttribute("theme", d.theme);
+				processDiv(d);
 			}
+		}
+	}
+
+	private void processDiv(Div d) {
+		for (AnnotatedUtterance u : d.utterances) {
+			if (Utils.isNotEmptyOrNull(u.type)) {
+				// create a new div
+				// add the themeid or the theme to the div (theme for clan and themeid for transcriber)
+				divhead = txmDoc.createElement("div");
+				texthead.appendChild(divhead);
+				setTv(divhead, "");
+				if (Utils.isNotEmptyOrNull(u.themeId)) divhead.setAttribute("id", u.themeId);
+				if (Utils.isNotEmptyOrNull(u.theme)) divhead.setAttribute("theme", u.theme);
+			}
+			bgCase(u);
+			writeUtterance(u);
 		}
 	}
 
@@ -180,7 +210,20 @@ public class TeiToTxm extends TeiConverter {
 		Element p = null;
 		if (optionsOutput.writtentext == false) {
 			p = txmDoc.createElement("p");
-			p.setTextContent("[" + spkChoice(u) + "]");
+			String s = "<meta><br/>[" + spkChoice(u) + "]</meta>";
+			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
+				s += "<meta>[TIME " + Double.toString(Double.parseDouble(startTime)) + " ]</meta>";
+				// elt.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
+				// u.setTextContent(speechContent);
+			}
+			Element e = Utils.convertStringToElement("<segline>" + s + "</segline>");
+			if (e != null) {
+				Node imported = txmDoc.adoptNode(e.cloneNode(true)); // .importNode(e, true);
+				appendAllChildren(p, imported);
+				// p.appendChild(imported);
+			} else {
+				p.setTextContent(s);
+			}
 		}
 		Element elt = txmDoc.createElement("u");
 		// On ajoute les informations temporelles seulement si on a un temps de
@@ -200,12 +243,19 @@ public class TeiToTxm extends TeiConverter {
 		if (age != null) elt.setAttribute("age", age);
 		setTv(elt, spkChoice(u));
 		if (optionsOutput.writtentext == false) {
-			head.appendChild(p);
+			divhead.appendChild(p);
 			p.appendChild(elt);
 		} else {
-			head.appendChild(elt);
+			divhead.appendChild(elt);
 		}
 		return elt;
+	}
+
+	private void appendAllChildren(Element p, Node imported) {
+		NodeList nl = imported.getChildNodes();
+		for (int i = 0; i < nl.getLength(); i++) {
+			p.appendChild(nl.item(i));
+		}
 	}
 
 	@Override
@@ -420,10 +470,20 @@ public class TeiToTxm extends TeiConverter {
 	void generateU(Element elt, String speechContent, AnnotatedUtterance u) {
 		if (optionsOutput.utterance) {
 			// do not split line
-			if (optionsOutput.tiernames)
-				elt.setTextContent("[" + spkChoice(u) + "]" + speechContent);
-			else
+			// in this case the marks for tiernames are automatically included
+			// so it is not necessary to add them
+
+			// speechContent was modified here to surround the [] and {} information with <meta> tags
+			// this is handled by the option outputFormat == "TXM"
+			Element e = Utils.convertStringToElement("<segline>" + speechContent + "</segline>");
+			if (e != null) {
+				Node imported = txmDoc.adoptNode(e.cloneNode(true)); // .importNode(e, true);
+				appendAllChildren(elt, imported);
+				// elt.appendChild(imported);
+			} else {
 				elt.setTextContent(speechContent);
+			}
+			// but we can add the attributes information
 			if (optionsOutput.tiernamescontent) {
 				String age = getLocAge(u.speakerCode);
 				setCode(elt, spkChoice(u), age);

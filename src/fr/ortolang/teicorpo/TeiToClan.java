@@ -268,11 +268,8 @@ public class TeiToClan extends TeiConverter {
 			for (AnnotatedUtterance u : d.utterances) {
 				// u.print();
 				if (Utils.isNotEmptyOrNull(u.type)) {
-					String[] splitType = u.type.split("\t");
-					// System.out.printf("DIV: %s %s %n", splitType[0],
-					// splitType[1]);
-					if (splitType.length > 1)
-						eg = writeDiv(splitType[0], splitType[1]);
+					if (Utils.isNotEmptyOrNull(u.theme))
+						eg = writeDiv(u.type, u.theme);
 				}
 				writeUtterance(u);
 				if (eg) {

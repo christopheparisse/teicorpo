@@ -45,7 +45,9 @@ public class AnnotatedUtterance {
 	// div est spécifié dans ce champ
 	// Servira à repérer les divisions dans la transcription
 	public String type;
-	
+	public String theme;
+	public String themeId;
+
 	// organized structure
 	// Commentaires additionnels hors tiers
 	public ArrayList<String> coms;
@@ -325,6 +327,7 @@ public class AnnotatedUtterance {
 			if (TeiDocument.isElement(segChild)) {
 				Element segChildEl = (Element) segChild;
 				if (segChildName.equals("pause")) {
+					if (optionsTEI.outputFormat.equals(".txm")) speech += "<meta><emph>";
 					if (segChildEl.getAttribute("type").equals("short")) {
 						// nomarkerSpeech += genericPause;
 						speech += shortPause;
@@ -336,18 +339,20 @@ public class AnnotatedUtterance {
 						speech += veryLongPause;
 					} else if (segChildEl.getAttribute("type").equals("chrono")) {
 						String chronoPause = " " + (
-								(optionsTEI != null && optionsTEI.outputFormat == ".cha")
+								(optionsTEI != null && optionsTEI.outputFormat.equals(".cha"))
 								? String.format(Utils.specificPause, segChildEl.getAttribute("dur"))
 								: String.format(Utils.specificPauseCha, segChildEl.getAttribute("dur"))
 								) + " ";
 						// nomarkerSpeech += genericPause;
 						speech += chronoPause;
 					}
+					if (optionsTEI.outputFormat.equals(".txm")) speech += "</emph></meta>";
 				}
 
 				// Ajout des évènement (éléments incident & vocal):
 				// syntaxe = * type|subtype|desc1 desc2 ... descN
 				else if (segChildName.equals("incident")) {
+					if (optionsTEI.outputFormat.equals(".txm")) speech += "<meta><emph>";
 					String st = segChildEl.getAttribute("subtype");
 					String val = getIncidentDesc(segChildEl);
 					if (segChildEl.getAttribute("type").equals("pronounce")) {
@@ -413,7 +418,9 @@ public class AnnotatedUtterance {
 						ann += codes.rightCode + " ";
 						speech += ann;
 					}
+					if (optionsTEI.outputFormat.equals(".txm")) speech += "</emph></meta>";
 				} else if (segChildName.equals("vocal")) {
+					if (optionsTEI.outputFormat.equals(".txm")) speech += "<meta><emph>";
 					String vocal = "";
 					try {
 						vocal += segChildEl.getElementsByTagName("desc").item(0).getTextContent();
@@ -421,6 +428,7 @@ public class AnnotatedUtterance {
 						nomarkerSpeech += vocal + " ";
 						speech += codes.leftCode + vocal + "/VOC " + codes.rightCode;
 					}
+					if (optionsTEI.outputFormat.equals(".txm")) speech += "</emph></meta>";
 				} else if (segChildName.equals("seg")) {
 					processSeg(segChildEl.getChildNodes());
 				} else if (segChildName.equals("anchor") && !segChildEl.getAttribute("synch").startsWith("#au")) {

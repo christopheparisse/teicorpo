@@ -141,6 +141,7 @@ public class TeiFile {
 			// Liste d'éléments contenus dans la transcription (élément text)
 			Element body = (Element) text.getElementsByTagName("body").item(0);
 
+			/*
 			// TEST if there is one div and nothing else
 			// at top level there can be only elements nodes
 			NodeList bodyChildren = body.getChildNodes();
@@ -170,49 +171,20 @@ public class TeiFile {
 				// un seul div c'est l'épisode
 				// on cherche les infos program et air_date
 				// sinon on met type + substype dans program
-				String attr = TeiDocument.getDivHeadAttr(ep, "subtype");
-				if (Utils.isNotEmptyOrNull(attr))
-					sit = tf.transInfo.situations.get(attr);
-				String theme = tf.transInfo.situations.get(ep);
-				Div d = new Div(tf, ep, attr, theme);
-				divs.add(d); // la situation
-				for (AnnotatedUtterance u : d.utterances) {
-					if (u.tierTypes != null)
-						tierTypes.addAll(u.tierTypes);
-				}
-			} else {
-				String attr = TeiDocument.getDivHeadAttr(body, "subtype");
-				if (Utils.isNotEmptyOrNull(attr))
-					sit = tf.transInfo.situations.get(attr);
-				String theme = TeiDocument.getDivHeadAttr(body, "type");;
-				Div d = new Div(tf, body, attr, theme);
-				divs.add(d); // la situation
-				for (AnnotatedUtterance u : d.utterances) {
-					if (u.tierTypes != null)
-						tierTypes.addAll(u.tierTypes);
-				}
 			}
-		}
+			*/
 
-		/*
-		private void processDivAndAnnotation(NodeList bodyChildren, TeiFile tf) {
-			for (int i = 0; i < bodyChildren.getLength(); i++) {
-				if (Utils.isElement(bodyChildren.item(i))) {
-					Element elmt = (Element) bodyChildren.item(i);
-					if (elmt.getTagName().equals("div")) {
-						String id = Utils.getDivHeadAttr(elmt, "subtype");
-						String theme = tf.transInfo.situations.get(id);
-						// System.out.printf("BeforeDiv: %s %s %n", id, theme);
-						Div d = new Div(tf, elmt, id, theme);
-						divs.add(d); // la situation
-						for (AnnotatedUtterance u : d.utterances) {
-							tierTypes.addAll(u.tierTypes);
-						}
-					}
-				}
+			String attr = TeiDocument.getDivHeadAttr(body, "subtype");
+			if (Utils.isNotEmptyOrNull(attr))
+				sit = tf.transInfo.situations.get(attr);
+			String theme = TeiDocument.getDivHeadAttr(body, "type");;
+			Div d = new Div(tf, body, attr, theme);
+			divs.add(d); // la situation
+			for (AnnotatedUtterance u : d.utterances) {
+				if (u.tierTypes != null)
+					tierTypes.addAll(u.tierTypes);
 			}
 		}
-		*/
 	}
 
 	/**
@@ -290,7 +262,9 @@ public class TeiFile {
 							// Si c'est le premier u, on lui ajoute le type du
 							// div
 							if (first == true) {
-								utt.type = this.type + "\t" + this.themeId;
+								utt.type = this.type;
+								utt.theme = this.theme;
+								utt.themeId = this.themeId;
 								if (this.type.toLowerCase().startsWith("bg")) {
 									// Si le type est Bg, on indique qu'il
 									// s'agit d'un sous-div

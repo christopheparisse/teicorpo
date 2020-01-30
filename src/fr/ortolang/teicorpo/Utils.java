@@ -439,6 +439,12 @@ public class Utils {
         return null;
     }
 
+	public static Element convertStringToElement(String xmlStr) {
+    	// System.err.printf("CVT: %s%n", xmlStr);
+    	Document doc = convertStringToDocument(xmlStr);
+    	return (doc != null) ? doc.getDocumentElement() : null;
+	}
+
 	public static void createFile(Document domDoc, String outputFileName) {
 		Source source = new DOMSource(domDoc);
 		Result resultat = new StreamResult(outputFileName);
