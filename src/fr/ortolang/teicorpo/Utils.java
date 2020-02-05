@@ -426,12 +426,15 @@ public class Utils {
     }
 
     public static Document convertStringToDocument(String xmlStr) {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();  
-        DocumentBuilder builder;  
-        try 
-        {  
-            builder = factory.newDocumentBuilder();  
-            Document doc = builder.parse( new InputSource( new StringReader( xmlStr ) ) ); 
+        try
+        {
+
+			InputSource is = new InputSource();
+			is.setCharacterStream(new StringReader(xmlStr));
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder db = dbf.newDocumentBuilder();
+
+			Document doc = db.parse(is);
             return doc;
         } catch (Exception e) {  
             e.printStackTrace();  
@@ -440,8 +443,9 @@ public class Utils {
     }
 
 	public static Element convertStringToElement(String xmlStr) {
-    	// System.err.printf("CVT: %s%n", xmlStr);
+//    	System.out.printf("CVT: %s%n", xmlStr);
     	Document doc = convertStringToDocument(xmlStr);
+//		System.out.printf("%d%n", doc.getDocumentElement().getChildNodes().getLength());
     	return (doc != null) ? doc.getDocumentElement() : null;
 	}
 

@@ -218,9 +218,7 @@ public class TeiToTxm extends TeiConverter {
 			}
 			Element e = Utils.convertStringToElement("<segline>" + s + "</segline>");
 			if (e != null) {
-				Node imported = txmDoc.adoptNode(e.cloneNode(true)); // .importNode(e, true);
-				appendAllChildren(p, imported);
-				// p.appendChild(imported);
+				appendAllChildren(txmDoc, p, e);
 			} else {
 				p.setTextContent(s);
 			}
@@ -251,10 +249,14 @@ public class TeiToTxm extends TeiConverter {
 		return elt;
 	}
 
-	private void appendAllChildren(Element p, Node imported) {
-		NodeList nl = imported.getChildNodes();
-		for (int i = 0; i < nl.getLength(); i++) {
-			p.appendChild(nl.item(i));
+	private void appendAllChildren(Document doc, Element p, Element e) {
+		// add all children of e to p
+		NodeList ne = e.getChildNodes();
+		int szne = ne.getLength();
+		for (int i = 0; i < szne; i++) {
+			Node child = ne.item(i);
+			Node imported = doc.importNode(child, true);
+			p.appendChild(imported);
 		}
 	}
 
@@ -477,9 +479,8 @@ public class TeiToTxm extends TeiConverter {
 			// this is handled by the option outputFormat == "TXM"
 			Element e = Utils.convertStringToElement("<segline>" + speechContent + "</segline>");
 			if (e != null) {
-				Node imported = txmDoc.adoptNode(e.cloneNode(true)); // .importNode(e, true);
-				appendAllChildren(elt, imported);
-				// elt.appendChild(imported);
+//				System.out.printf("ZZZ1: %s%n", speechContent);
+				appendAllChildren(txmDoc, elt, e);
 			} else {
 				elt.setTextContent(speechContent);
 			}
