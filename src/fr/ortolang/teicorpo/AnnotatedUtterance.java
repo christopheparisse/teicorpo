@@ -483,8 +483,9 @@ public class AnnotatedUtterance {
 			} else if (segChild.getNodeName().equals("#text")) {
 				String content = segChild.getTextContent().trim();
 				if (Utils.isNotEmptyOrNull(content)) {
-					speech += content + " ";
-					nomarkerSpeech += content + " ";
+					String xe = Utils.setEntities(content) + " ";
+					speech += xe;
+					nomarkerSpeech += xe;
 					// Dans speeches, pour chaque énoncé (seg), il peut y
 					// avoir des marques temporelles
 					// On ajoute donc chaque énoncé sous cette forme

@@ -212,8 +212,8 @@ public class TeiToTxm extends TeiConverter {
 			p = txmDoc.createElement("p");
 			String s = "<meta><br/>[" + spkChoice(u) + "]</meta>";
 			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
-				s += "<meta>[TIME " + Double.toString(Double.parseDouble(startTime)) + " ]</meta>";
-				// elt.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
+				s += "<meta>[TIME " + printTime(startTime) + " ]</meta>";
+				// elt.setAttribute("end", printTime(Double.parseDouble(endTime));
 				// u.setTextContent(speechContent);
 			}
 			Element e = Utils.convertStringToElement("<segline>" + s + "</segline>");
@@ -228,8 +228,8 @@ public class TeiToTxm extends TeiConverter {
 		// début et un temps de fin
 		if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 			elt.setAttribute("who", spkChoice(u)); //.replaceAll("[ _]", "-"));
-			elt.setAttribute("start", Double.toString(Double.parseDouble(startTime)));
-			elt.setAttribute("end", Double.toString(Double.parseDouble(endTime)));
+			elt.setAttribute("start", printTime(startTime));
+			elt.setAttribute("end", printTime(endTime));
 			// u.setTextContent(speechContent);
 		} else {
 			elt.setAttribute("who", spkChoice(u)); //.replaceAll("[ _]", "-"));
@@ -247,6 +247,44 @@ public class TeiToTxm extends TeiConverter {
 			divhead.appendChild(elt);
 		}
 		return elt;
+	}
+
+	private String printTime(String time) {
+//		return Double.toString(Double.parseDouble(time));
+		double tm = Double.parseDouble(time);
+		// time is in seconds
+		double tmsec = Math.floor(tm);
+		// the decimals (milliseconds?)
+		String tmstr = Double.toString(tm);
+		int p = tmstr.indexOf(".");
+		String decstr;
+		if (p > 0) {
+			if (tmstr.length() >= p+4)
+				decstr = tmstr.substring(p, p+4);
+			else
+				decstr = tmstr.substring(p);
+		} else {
+			decstr = ".0";
+		}
+//		System.out.printf("k: %s %d %s%n",tmstr, p, decstr);
+		// the seconds and minutes and hours
+		double tmmn = Math.floor(tmsec / 60.);
+		double tmh = Math.floor(tmmn / 60.);
+		tmsec = tmsec - tmmn * 60.; // secodns without the minutes and the hours
+		tmmn = tmmn - tmh * 60.; // minutes without the hours
+		// creates the result
+		String formated = String.format("%d:%02d:%02d%s", (int)tmh, (int)tmmn, (int)tmsec, decstr);
+//		System.out.printf("printTime: %s [%s]%n", time, formated);
+		return formated;
+		/*
+		double intpart = Math.floor(value);
+		BigDecimal bd = new BigDecimal(value);
+		BigDecimal bdintpart = new BigDecimal(intpart);
+		bd = bd.setScale(15, RoundingMode.HALF_UP);
+		String decpart = (bd.subtract(bdintpart)).toString().substring(2);
+		if (decpart.equals("-15"))
+			decpart = "000000000000000";
+		 */
 	}
 
 	private void appendAllChildren(Document doc, Element p, Element e) {
@@ -482,6 +520,7 @@ public class TeiToTxm extends TeiConverter {
 //				System.out.printf("ZZZ1: %s%n", speechContent);
 				appendAllChildren(txmDoc, elt, e);
 			} else {
+				System.err.printf("Error: generateU (not an xml text): %s%n", speechContent);
 				elt.setTextContent(speechContent);
 			}
 			// but we can add the attributes information
