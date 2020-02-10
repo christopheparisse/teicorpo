@@ -168,6 +168,17 @@ public class TeiEdit extends GenericMain {
 				String name = cmd.substring(8);
 				TeiDocument.setDocumentName(teiDoc, name);
 			}
+			if (cmd.startsWith("access=")) {
+				String arg = cmd.substring(7);
+				int p = arg.indexOf("=");
+				if (p<1) {
+					System.out.printf("Parameter access: access=name-for-access=name-for-file (missing elements in: %)%n", cmd);
+					continue;
+				}
+				String access = arg.substring(0, p);
+				String name = arg.substring(p+1);
+				TeiDocument.setDocumentAccess(teiDoc, access, name);
+			}
 			if (cmd.startsWith("chgtime=")) {
 				String param = cmd.substring(8);
 				double difftime;

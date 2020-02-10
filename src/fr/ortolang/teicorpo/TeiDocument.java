@@ -454,23 +454,22 @@ public class TeiDocument {
         annotatedU.appendChild(sg);
     }
 
-    static void addToHead(Document docTEI, Element head, String name) {
-        // split name in two parts
-        String pname = Utils.pathname(name);
-        String bname = Utils.basename(name);
+    static void addToHead(Document docTEI, Element head, String access, String name) {
+        String fname = Utils.basename(name) + Utils.extname(name);
         Element pnote = docTEI.createElement("note");
-        pnote.setAttribute("type", "pathname");
-        pnote.setTextContent(pname);
+        pnote.setAttribute("type", "access");
+        pnote.setTextContent(access);
         head.appendChild(pnote);
         Element bnote = docTEI.createElement("note");
-        bnote.setAttribute("type", "basename");
-        bnote.setTextContent(bname);
+        bnote.setAttribute("type", "filename");
+        bnote.setTextContent(fname);
         head.appendChild(bnote);
     }
 
-    public static void setDocumentName(Document docTEI, String name) {
+    public static Element setDocumentAccess(Document docTEI, String access, String name) {
         NodeList revDesc = docTEI.getElementsByTagName("revisionDesc");
         NodeList llist = ((Element)revDesc.item(0)).getElementsByTagName("list");
+        // find (unique) list element or create it
         Element list;
         if (llist.getLength() == 0) {
             list = docTEI.createElement("list");
@@ -482,7 +481,7 @@ public class TeiDocument {
         NodeList lhead = list.getElementsByTagName("head");
         if (lhead.getLength() == 0) {
             Element head = docTEI.createElement("head");
-            addToHead(docTEI, head, name);
+            addToHead(docTEI, head, access, name);
             ((Element)list).appendChild(head);
         } else {
             Element head = (Element)lhead.item(0);
@@ -490,13 +489,18 @@ public class TeiDocument {
             for (int i=0; i < notes.getLength() ; i++) {
                 head.removeChild(notes.item(i));
             }
-            addToHead(docTEI, head, name);
+            addToHead(docTEI, head, access, name);
             // removes all child nodes
             /*
             while (head.hasChildNodes())
                 head.removeChild(head.getFirstChild());
             */
         }
+        return list;
+    }
+
+    public static void setDocumentName(Document docTEI, String name) {
+        Element list = setDocumentAccess(docTEI, Utils.pathname(name) + "/", name);
         Element item = docTEI.createElement("item");
         Element desc = docTEI.createElement("desc");
         item.setTextContent(name);
