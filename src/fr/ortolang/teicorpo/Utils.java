@@ -48,7 +48,7 @@ public class Utils {
 		return s.replaceAll("\\s+", " ").trim();
 	}
 
-	public static String cleanStringPlusEntities(String s){
+	public static String cleanStringPlusEntities(String s) {
 		return s.replaceAll(" {2,}", " ")
 				.replaceAll("\n", "").trim()
 				.replaceAll("&quot;", "\"") // 34 22
@@ -58,7 +58,7 @@ public class Utils {
 				.replaceAll("&gt;", ">"); // 62 3E
 	}
 
-	public static String cleanEntities(String s){
+	public static String cleanEntities(String s) {
 		return s.replaceAll("&quot;", "\"") // 34 22
 				.replaceAll("&amp;", "&") // 38 26
 				.replaceAll("&#39;", "'") // 39 27
@@ -66,7 +66,7 @@ public class Utils {
 				.replaceAll("&gt;", ">"); // 62 3E
 	}
 
-	public static String setEntities(String s){
+	public static String setEntities(String s) {
 		return s.replaceAll("\"", "&quot;") // 34 22
 				.replaceAll("&", "&amp;") // 38 26
 				.replaceAll("'", "&#39;") // 39 27

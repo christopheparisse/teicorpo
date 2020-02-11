@@ -184,8 +184,11 @@ public class AnnotatedUtterance {
 		speech = "";
 		NodeList us = u.getChildNodes();
 		processSeg(us);
-		speech = Utils.cleanStringPlusEntities(speech);
-		nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
+
+		if (!options.outputFormat.equals(".txm")) {
+			speech = Utils.cleanStringPlusEntities(speech);
+			nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
+		}
 		addAnnot();
 
 		return true;
@@ -225,8 +228,11 @@ public class AnnotatedUtterance {
 					speech = "";
 					NodeList us = annotUEl.getChildNodes();
 					processSeg(us);
-					speech = Utils.cleanStringPlusEntities(speech);
-					nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
+
+					if (!options.outputFormat.equals(".txm")) {
+						speech = Utils.cleanStringPlusEntities(speech);
+						nomarkerSpeech = Utils.cleanStringPlusEntities(nomarkerSpeech);
+					}
 					addAnnot();
 				} else if (nodeName.equals("spanGrp") && doSpan == true) {
 					// Ajout des tiers
@@ -477,13 +483,15 @@ public class AnnotatedUtterance {
 					morClan += lemma + "|" + ana + " ";
 				}
 				else {
-					speech += segChildEl.getTextContent() + " ";
-					nomarkerSpeech += segChildEl.getTextContent() + " ";
+					String s = Utils.setEntities(segChildEl.getTextContent());
+					speech += s + " ";
+					nomarkerSpeech += s + " ";
 				}
 			} else if (segChild.getNodeName().equals("#text")) {
 				String content = segChild.getTextContent().trim();
 				if (Utils.isNotEmptyOrNull(content)) {
 					String xe = Utils.setEntities(content) + " ";
+//					System.out.printf("%s%n%s%n", content, xe);
 					speech += xe;
 					nomarkerSpeech += xe;
 					// Dans speeches, pour chaque énoncé (seg), il peut y

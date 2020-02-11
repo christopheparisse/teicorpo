@@ -212,14 +212,15 @@ public class TeiToTxm extends TeiConverter {
 			p = txmDoc.createElement("p");
 			String s = "<meta><br/>[" + spkChoice(u) + "]</meta>";
 			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
-				s += "<meta>[TIME " + printTime(startTime) + " ]</meta>";
-				// elt.setAttribute("end", printTime(Double.parseDouble(endTime));
-				// u.setTextContent(speechContent);
+//				s += "<meta>[TIME " + printTime(startTime) + " ]</meta>";
+				s += "<meta><hi>" + printTime(startTime) + "</hi></meta>";
+				// print also endTime ?
 			}
 			Element e = Utils.convertStringToElement("<segline>" + s + "</segline>");
 			if (e != null) {
 				appendAllChildren(txmDoc, p, e);
 			} else {
+				System.err.printf("Error: generateUStart (not an xml text): %s%n", s);
 				p.setTextContent(s);
 			}
 		}
@@ -228,8 +229,8 @@ public class TeiToTxm extends TeiConverter {
 		// début et un temps de fin
 		if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 			elt.setAttribute("who", spkChoice(u)); //.replaceAll("[ _]", "-"));
-			elt.setAttribute("start", printTime(startTime));
-			elt.setAttribute("end", printTime(endTime));
+			elt.setAttribute("start", startTime);
+			elt.setAttribute("end", endTime);
 			// u.setTextContent(speechContent);
 		} else {
 			elt.setAttribute("who", spkChoice(u)); //.replaceAll("[ _]", "-"));
@@ -520,7 +521,7 @@ public class TeiToTxm extends TeiConverter {
 //				System.out.printf("ZZZ1: %s%n", speechContent);
 				appendAllChildren(txmDoc, elt, e);
 			} else {
-				System.err.printf("Error: generateU (not an xml text): %s%n", speechContent);
+				System.out.printf("Error: generateU (not an xml text): %s%n", speechContent);
 				elt.setTextContent(speechContent);
 			}
 			// but we can add the attributes information
