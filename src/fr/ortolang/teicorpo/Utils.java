@@ -52,24 +52,25 @@ public class Utils {
 		return s.replaceAll(" {2,}", " ")
 				.replaceAll("\n", "").trim()
 				.replaceAll("&quot;", "\"") // 34 22
-				.replaceAll("&amp;", "&") // 38 26
-				.replaceAll("&#39;", "\'") // 39 27
+	//			.replaceAll("&#39;", "\'") // 39 27
 				.replaceAll("&lt;", "<") // 60 3C
-				.replaceAll("&gt;", ">"); // 62 3E
+				.replaceAll("&gt;", ">") // 62 3E
+				.replaceAll("&amp;", "&"); // 38 26
 	}
 
 	public static String cleanEntities(String s) {
 		return s.replaceAll("&quot;", "\"") // 34 22
-				.replaceAll("&amp;", "&") // 38 26
-				.replaceAll("&#39;", "'") // 39 27
+	//			.replaceAll("&#39;", "'") // 39 27
 				.replaceAll("&lt;", "<") // 60 3C
-				.replaceAll("&gt;", ">"); // 62 3E
+				.replaceAll("&gt;", ">") // 62 3E
+				.replaceAll("&amp;", "&"); // 38 26
 	}
 
 	public static String setEntities(String s) {
-		return s.replaceAll("\"", "&quot;") // 34 22
+		return s
 				.replaceAll("&", "&amp;") // 38 26
-				.replaceAll("'", "&#39;") // 39 27
+				.replaceAll("\"", "&quot;") // 34 22
+	//			.replaceAll("'", "&#39;") // 39 27
 				.replaceAll("<", "&lt;") // 60 3C
 				.replaceAll(">", "&gt;"); // 62 3E
 	}
