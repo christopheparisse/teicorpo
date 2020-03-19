@@ -92,7 +92,7 @@ public class AnnotatedUtterance {
 			a.id = id;
 			nthid++;
 		} else {
-			a.id = id + nthid;
+			a.id = id + "-" + nthid;
 			nthid++;
 		}
 		speeches.add(a);
