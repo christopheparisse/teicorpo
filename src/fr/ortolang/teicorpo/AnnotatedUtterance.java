@@ -23,7 +23,6 @@ public class AnnotatedUtterance {
 	
 	// Identifiant
 	public String id;
-	private int nthid;
 	// Temps de début(chaîne de caractère, unité = secondes)
 	public String start;
 	//// Temps de fin(chaîne de caractère, unité = secondes)
@@ -88,13 +87,7 @@ public class AnnotatedUtterance {
 
 	private void addAnnot(String sync) {
 		Annot a = new Annot(speakerName, start, sync, speech, nomarkerSpeech);
-		if (nthid == 0) {
-			a.id = id;
-			nthid++;
-		} else {
-			a.id = id + "-" + nthid;
-			nthid++;
-		}
+		a.id = Utils.createNewId(); // id + "-" + nthid;
 		speeches.add(a);
 	}
 
@@ -107,7 +100,6 @@ public class AnnotatedUtterance {
 		morClan = "";
 		this.teiTimeline = teiTimeline;
 		id = u.getAttribute("xml:id");
-		nthid = 0;
 		speakerCode = "p";
 		speakerName = "p";
 		coms = new ArrayList<String>();
@@ -169,7 +161,6 @@ public class AnnotatedUtterance {
 		optionsTEI = options;
 		initU();
 		id = u.getAttribute("xml:id");
-		nthid = 0;
 		if (teiTimeline != null) {
 			start = teiTimeline.getTimeValue(u.getAttribute("start"));
 			end = teiTimeline.getTimeValue(u.getAttribute("end"));
@@ -199,7 +190,6 @@ public class AnnotatedUtterance {
 		optionsTEI = options;
 		initU();
 		id = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
-		nthid = 0;
 		if (teiTimeline != null) {
 			start = teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
 			end = teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));

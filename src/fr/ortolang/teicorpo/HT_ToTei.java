@@ -26,8 +26,6 @@ public class HT_ToTei {
 	static final String outputEncoding = "UTF-8";
 	/** Version tei **/
 
-	static int idNb = 0;
-
 	/** Document Tei à créer. */
 	Document docTEI;
 	/** Racine du document TEI. */
@@ -541,8 +539,7 @@ public class HT_ToTei {
 				if (Utils.isNotEmptyOrNull(annot.id)) {
 					TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", annot.id);
 				} else {
-					TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", "au" + idNb);
-					idNb++;
+					TeiDocument.setAttrAnnotationBloc(docTEI, annotUEl, "xml:id", Utils.createNewId());
 				}
 				// System.out.println("annot: "+annotType+ " "+annot.id + " "
 				// +annot.name);

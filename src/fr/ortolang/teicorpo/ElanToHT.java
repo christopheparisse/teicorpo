@@ -239,7 +239,7 @@ public class ElanToHT {
 				annot.name = name;
 				annot.dependantAnnotations = new ArrayList<Annot>();
 				annot.setContent(annotEl.getTextContent().trim());
-				annot.id = annotEl.getAttribute("ANNOTATION_ID");
+				annot.id = Utils.createNewId(); // annotEl.getAttribute("ANNOTATION_ID");
 				annot.start = this.getTimeValue("#" + annotEl.getAttribute("TIME_SLOT_REF1"));
 				annot.end = this.getTimeValue("#" + annotEl.getAttribute("TIME_SLOT_REF2"));
 				annot.timereftype = "time";
@@ -430,7 +430,7 @@ public class ElanToHT {
 			String end) {
 		Annot subAnnot = new Annot();
 		subAnnot.setContent(annotEl.getTextContent());
-		subAnnot.id = annotEl.getAttribute("ANNOTATION_ID");
+		subAnnot.id = Utils.createNewId(); // annotEl.getAttribute("ANNOTATION_ID");
 		subAnnot.name = subAnnotName;
 		if (annotEl.getTagName().equals("REF_ANNOTATION")) {
 			subAnnot.timereftype = "ref";

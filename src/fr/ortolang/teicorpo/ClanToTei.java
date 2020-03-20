@@ -573,7 +573,7 @@ public class ClanToTei extends ImportToTei {
 		Element incident = this.docTEI.createElement("incident");
 		Element desc = this.docTEI.createElement("desc");
 		desc.appendChild(incident);
-		desc.setAttribute("xml:id", "au" + utteranceId);
+		desc.setAttribute("xml:id", Utils.createId("au", utteranceId));
 		utteranceId++;
 		desc.setTextContent(cl.tail);
 		if (!startTime.isEmpty())
@@ -591,7 +591,7 @@ public class ClanToTei extends ImportToTei {
 	 */
 	public Element build_u_element(String startTime, String endTime, ChatLine cl, String[] tiers, String extension) {
 		Element annotatedU = TeiDocument.createAnnotationBloc(docTEI);
-		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "xml:id", "au" + utteranceId);
+		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "xml:id", Utils.createId("au", utteranceId));
 		utteranceId++;
 		// tiersNames.add(Utils.ANNOTATIONBLOC);
 		if (extension.equals("xmor") || extension.equals("mor"))

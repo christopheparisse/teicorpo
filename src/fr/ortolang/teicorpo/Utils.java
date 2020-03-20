@@ -25,7 +25,8 @@ public class Utils {
 	public static String EXT = ".tei_corpo.xml";
 	public static String EXT_PUBLISH = ".tei_corpo";
 	public static boolean teiStylePure = false;
-	
+	static int nthid = 0;
+
 	public static String shortPause = " # ";
 	public static String longPause = " ## ";
 	public static String veryLongPause = " ### ";
@@ -575,4 +576,13 @@ public class Utils {
 			return new PrintWriter(System.out, true);
 		}
     }
+
+    public static String createNewId() {
+    	nthid++;
+    	return "au" + Integer.toString(nthid);
+    }
+
+	public static String createId(String au, int utteranceId) {
+    	return au + Integer.toString(utteranceId);
+	}
 }

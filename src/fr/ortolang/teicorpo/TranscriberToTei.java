@@ -761,7 +761,7 @@ public class TranscriberToTei extends ImportToTei {
 	 *            l'identifiant.
 	 */
 	public void setU_Id(Element annotatedU) {
-		String IdU = "au" + utteranceId;
+		String IdU = Utils.createId("au", utteranceId);
 		TeiDocument.setAttrAnnotationBloc(this.docTEI, annotatedU, "xml:id", IdU);
 		utteranceId++;
 	}
