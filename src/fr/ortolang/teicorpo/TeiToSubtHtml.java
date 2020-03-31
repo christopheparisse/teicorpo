@@ -236,7 +236,7 @@ public class TeiToSubtHtml extends TeiConverter{
 
 	/**
 	 * Ecriture d'un énonce: lignes qui commencent par le symbole étoile *
-	 * @param loc	Locuteur
+	 * @param au	Locuteur
 	 * @param speechContent	Contenu de l'énoncé
 	 * @param startTime	Temps de début de l'énoncé
 	 * @param endTime	Temps de fin de l'énoncé
@@ -309,7 +309,7 @@ public class TeiToSubtHtml extends TeiConverter{
 		TierParams.printVersionMessage();
 		String usage = "Description: TeiToSubtHtml converts a TEI file to an subtilte HTML file%nUsage: TeiToSubtHtml [-options] <file.subt.html>%n";
 		TeiToSubtHtml ttc = new TeiToSubtHtml();
-		ttc.mainCommand(args, Utils.EXT, EXT, usage, 8);
+		ttc.mainCommand(args, Utils.EXT, EXT, usage, 4);
 	}
 
 	@Override

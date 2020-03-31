@@ -326,7 +326,8 @@ public abstract class ImportToTei extends GenericMain {
 	 * creation du premier div
 	 */
 	public Element setFirstDiv() {
-		Element settingDesc = (Element) docTEI.getElementsByTagName("settingDesc").item(0);
+		Element profileDesc = (Element) docTEI.getElementsByTagName("profileDesc").item(0);
+		Element settingDesc = TeiDocument.findOrCreate(docTEI, profileDesc, "settingDesc");
 		Element setting = docTEI.createElement("setting");
 
 		Element activity = docTEI.createElement("activity");
@@ -347,6 +348,27 @@ public abstract class ImportToTei extends GenericMain {
 
 		// Ajout des locuteurs dans les templates
 		Element particDesc = (Element) doc.getElementsByTagName("particDesc").item(0);
+		if (particDesc == null) {
+			Element note = doc.createElement("note");
+
+			Element noteType = doc.createElement("note");
+			noteType.setAttribute("type", "type");
+			noteType.setTextContent("-");
+			note.appendChild(noteType);
+
+			Element noteParent = doc.createElement("note");
+			noteParent.setAttribute("type", "parent");
+			noteParent.setTextContent("-");
+			note.appendChild(noteParent);
+			templateNote.appendChild(note);
+
+			Element noteCode = doc.createElement("note");
+			noteCode.setAttribute("type", "code");
+			noteCode.setTextContent("_");
+			note.appendChild(noteCode);
+
+			return;
+		}
 		NodeList persons = particDesc.getElementsByTagName("person");
 		for (int i = 0; i < persons.getLength(); i++) {
 			Element person = (Element) persons.item(i);

@@ -148,8 +148,10 @@ public class ImportConllToTei extends ImportToTei {
 			if (cn.words.size() < 1) continue;
 			try {
 				utt.setAttribute("who", cn.words.get(0).tiers[12]);
-				utt.setAttribute("from", addTimeToTimeline(cn.words.get(0).tiers[10]));
-				utt.setAttribute("to", addTimeToTimeline(cn.words.get(cn.words.size()-1).tiers[11]));
+				if (!cn.words.get(0).tiers[10].equals("_") && !cn.words.get(0).tiers[10].isEmpty())
+					utt.setAttribute("from", addTimeToTimeline(cn.words.get(0).tiers[10]));
+				if (!cn.words.get(0).tiers[11].equals("_") && !cn.words.get(0).tiers[11].isEmpty())
+					utt.setAttribute("to", addTimeToTimeline(cn.words.get(cn.words.size()-1).tiers[11]));
 				/*
 				for (ConllWord w : cn.words) {
 					Element word = docTEI.createElement("w");
@@ -164,7 +166,9 @@ public class ImportConllToTei extends ImportToTei {
 				if (cn.words != null) {
 					TaggedUtterance tu = new TaggedUtterance();
 					for (int w=0; w < cn.words.size(); w++) {
-						tu.addCONNLSNLP(cn.words.get(w).tiers, addTimeToTimeline(cn.words.get(w).tiers[10]), addTimeToTimeline(cn.words.get(w).tiers[11]));
+						String start = (cn.words.get(0).tiers[10].equals("_") && !cn.words.get(0).tiers[10].isEmpty()) ? "" : addTimeToTimeline(cn.words.get(w).tiers[10]);
+						String end = (cn.words.get(0).tiers[11].equals("_") && !cn.words.get(0).tiers[11].isEmpty()) ? "" : addTimeToTimeline(cn.words.get(w).tiers[11]);
+						tu.addCONNLSNLP(cn.words.get(w).tiers, start, end);
 					}
 					tu.createSpanConllU(syntaxGrp, docTEI);
 				}
@@ -182,7 +186,7 @@ public class ImportConllToTei extends ImportToTei {
 		TierParams.printVersionMessage();
 		ImportConllToTei ct = new ImportConllToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);
-		ct.mainCommand(args, EXT, Utils.EXT, "Description: ImportConllToTei converts a CONLL file to an TEI file%n", 9);
+		ct.mainCommand(args, EXT, Utils.EXT, "Description: ImportConllToTei converts a CONLL file to an TEI file%n", 8);
 	}
 
 	@Override

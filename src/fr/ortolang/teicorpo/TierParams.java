@@ -261,52 +261,24 @@ class TierParams {
 			return;
 		}
 		System.err.printf(mess);
-		System.err.println("         (without option or -i) name of the file or directory where are located the TEI files to be converted.");
-		if (!ext1.isEmpty())
-			System.err.println("            The files have for extension " + ext1);
-		System.err.println("         -o name of the output file or name of the output diretory for all results");
-		System.err.println("            -if this option is not specified, the output file will have the same name as the input");
-		System.err.println("               file but with the extension that matches the required format");
-		System.err.println("            -if this option is specified, the output file will have the exact name provided.");
-		System.err.println("            -if a directory is provided as input and no -o option is provided, result files");
-		System.err.println("               will be in the same directory as input files.");
-		System.err.println("            -otherwise option -o has to point to a directory.");
 
 		if (style == 4) {
+			System.err.println("         Parameters for import/export to and from the TEI\n");
 			System.err.println("         -from format_of_input_files: chat elan praat trs tei");
 			System.err.println("         -to format_of_output_files: chat elan praat trs tei iramuteq txm lexico letrameur srt subthtml\n");
-		}
-		
-		System.err.println("         -n level: imbrication level (1 means main lines, 2 means secondary lines)");
-		System.err.println("         -a name : the tier with this name is produced as output (generic characters are accepted)");
-		System.err.println("         -s name : the tier with this name is removed from output (generic characters are accepted)");
-		System.err.println("         -rawline : exports utterances with removing spoken language special codes");
-		System.err.println("         -normalize format : normalization is done from this format - possible options: clan ca");
-		System.err.println("         -target format : normalization is done towards this format - possible options: praat\n");
-
-		System.err.println("         -short : file extensions do not contain tei_corpo");
-		System.err.println("         -p parameter_file: contains parameters with the same format as the command line, one parameter per line.");
-		System.err.println("         --noerror : errors in the parameter are considered as warnings");
-		System.err.println("         --dtd - this option allows to validate the format of the XML files");
-		/*
-		System.err.println("            with this option specified, Transcriber dtd (Trans-14.dtd) must be in the same\n" +
-						   "            directory as the transcriber file. Downloading DTD for Transcriber : \n" +
-						   "            http://sourceforge.net/p/trans/git/ci/master/tree/etc/trans-14.dtd\n");
-		*/
-
-		if (style == 4) {
 			System.err.println("         -stdevent ascci standard format for events in text mode");
 			System.err.println("         -advevent advanced unicode format for event in text mode");
+			System.err.println("         -absolute : syntax of included tools/ library in html (for subthtml)");
 		}
 		if (style == 5) {
 			printImportPartitionMessage();
 		}
 		if (style == 3) {
-			System.err.println("         *** paramater for editing TEI files***");
+			System.err.println("         Editing TEI files\n");
 			System.err.printf ("         -c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
 		}
 		if (style == 2) {
-			System.err.println("         *** parameter for export to TXM/Iramuteq/Le Trameur ***");
+			System.err.println("         Parameters for export to TXM/Iramuteq/Le Trameur\n");
 			System.err.println("         -utt: utterance format (not words)");
 			System.err.println("         -spk: value used of speaker tag (spk/=speaker=alt, pers/=persName, role/=role)");
 			System.err.println("         -tv \"type:value:speaker\" type and value are obligatory. speaker is optional and can also be * for all speakers");
@@ -319,7 +291,7 @@ class TierParams {
 			System.err.println("         -mediacontrol: add startTime information");
 		}
 		if (style == 6) {
-			System.err.println("         *** parameters for export in Iramuteq ***");
+			System.err.println("         Parameters for export in Iramuteq\n");
 			System.err.println("         -raw : text is exported after removing all locutors or spoken language marking");
 			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
 			System.err.println("         -mv \"type:field\": type: value of metadata 'field' added to <u>, <w>, and <div> tags (field is an xpath expression)");
@@ -328,17 +300,41 @@ class TierParams {
 			System.err.println("         -append : do not erase destination file before processing - to be used with concat");
 		}
 		if (style == 7) {
+			System.err.println("         Compute the syntactic analysis of the TEI file\n");
 			System.err.println("         -syntaxformat : format of syntatic annotation (conll / ref / w)");
 			System.err.println("         -model name : model file for syntax");
 			System.err.println("         -program name : executable file for syntax");
 		}
 		if (style == 8) {
-			System.err.println("         ImportConllToTei connl_file -metadata connl_meta%n");
-			System.err.println("         -absolute : syntax of included tools/ library in html");
-		}
-		if (style == 9) {
+			System.err.println("         ImportConllToTei connl_file -metadata connl_meta\n");
 			System.err.println("         -metadata : xml metadata file");
 		}
+
+		System.err.println("\n         Options valid for all commands (whenever this makes sense)");
+		System.err.println("         Arguments without option or with -i: name of the file or directory where are located the TEI files to be converted.");
+		if (!ext1.isEmpty()) System.err.println("            The files have for extension " + ext1);
+		System.err.println("         -o name of the output file or name of the output diretory for all results");
+		System.err.println("            -if this option is not specified, the output file will have the same name as the input");
+		System.err.println("               file but with the extension that matches the required format");
+		System.err.println("            -if this option is specified, the output file will have the exact name provided.");
+		System.err.println("            -if a directory is provided as input and no -o option is provided, result files");
+		System.err.println("               will be in the same directory as input files.");
+		System.err.println("            -otherwise option -o has to point to a directory.");
+		System.err.println("         -n level: imbrication level (1 means main lines, 2 means secondary lines)");
+		System.err.println("         -a name : the tier with this name is produced as output (generic characters are accepted)");
+		System.err.println("         -s name : the tier with this name is removed from output (generic characters are accepted)");
+		System.err.println("         -rawline : exports utterances with removing spoken language special codes");
+		System.err.println("         -normalize format : normalization is done from this format - possible options: clan ca");
+		System.err.println("         -target format : normalization is done towards this format - possible options: praat\n");
+		System.err.println("         -short : file extensions do not contain tei_corpo");
+		System.err.println("         -p parameter_file: contains parameters with the same format as the command line, one parameter per line.");
+		System.err.println("         --noerror : errors in the parameter are considered as warnings");
+		System.err.println("         --dtd - this option allows to validate the format of the XML files");
+		/*
+		System.err.println("            with this option specified, Transcriber dtd (Trans-14.dtd) must be in the same\n" +
+						   "            directory as the transcriber file. Downloading DTD for Transcriber : \n" +
+						   "            http://sourceforge.net/p/trans/git/ci/master/tree/etc/trans-14.dtd\n");
+		*/
 		System.err.println("	     -usage or -help = display this message");
 		// System.exit(1);
 	}
