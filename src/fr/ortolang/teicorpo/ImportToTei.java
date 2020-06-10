@@ -70,12 +70,12 @@ public abstract class ImportToTei extends GenericMain {
 					Element currentU = (Element) annotUElmts.item(j);
 					// System.out.println(j + " " +
 					// currentU.getAttribute("type"));
-					String time = TeiDocument.getAttrAnnotationBloc(currentU, "start");
+					String time = TeiDocument.getAttrAnnotationBloc(currentU, "start"); // ERROR ?
 					// System.out.println("start: "+time);
 					if (Utils.isNotEmptyOrNull(time) && start == "") {
 						start = time;
 					}
-					time = TeiDocument.getAttrAnnotationBloc(currentU, "end");
+					time = TeiDocument.getAttrAnnotationBloc(currentU, "end"); // ERROR ?
 					// System.out.println("end: "+time);
 					if (Utils.isNotEmptyOrNull(time)) {
 						end = time;

@@ -116,6 +116,7 @@ public class ElanToHT {
 				Element ref = (Element) refs.item(j);
 				String nameRef = ref.getAttribute("ANNOTATION_REF");
 				String n = nameTier + "+" + nameRef;
+				// System.err.println("createRefInfo " + n);
 				ArrayList<Element> al = refInfo.get(n);
 				if (al != null)
 					al.add(ref);
@@ -139,7 +140,7 @@ public class ElanToHT {
 			tierInfo.type.lgq_type_id = tier.getAttribute("LINGUISTIC_TYPE_REF");
 			Element lgqTypeElement = getlgqType(tierInfo.type.lgq_type_id, lgqTypes);
 			if (lgqTypeElement == null) {
-				System.err.printf("No type for %s:%s (ignored)%n", tier.getAttribute("TIER_ID"), tierInfo.type.lgq_type_id);
+//				System.err.printf("No type for %s:%s (ignored)%n", tier.getAttribute("TIER_ID"), tierInfo.type.lgq_type_id);
 				continue;
 			}
 			String name = tier.getAttribute("TIER_ID");
@@ -213,6 +214,7 @@ public class ElanToHT {
 		// Parcours des tiers principaux
 		ArrayList<Element> mainTiers = getmainTiers();
 		for (Element tierElement : mainTiers) {
+//			System.err.printf("%s -- %s%n", tierElement.getAttribute("TIER_ID"), tierElement.getTagName());
 			ArrayList<Annot> annots = new ArrayList<Annot>();
 			ht.languages.add(tierElement.getAttribute("DEFAULT_LOCALE"));
 			String name = tierElement.getAttribute("TIER_ID");
@@ -239,7 +241,7 @@ public class ElanToHT {
 				annot.name = name;
 				annot.dependantAnnotations = new ArrayList<Annot>();
 				annot.setContent(annotEl.getTextContent().trim());
-				annot.id = Utils.createNewId(); // annotEl.getAttribute("ANNOTATION_ID");
+				annot.id = annotEl.getAttribute("ANNOTATION_ID"); // TODO problem here // Utils.createNewId(); // annotEl.getAttribute("ANNOTATION_ID");
 				annot.start = this.getTimeValue("#" + annotEl.getAttribute("TIME_SLOT_REF1"));
 				annot.end = this.getTimeValue("#" + annotEl.getAttribute("TIME_SLOT_REF2"));
 				annot.timereftype = "time";
@@ -263,12 +265,12 @@ public class ElanToHT {
 	public void buildSubTiers(String annotType, ArrayList<Annot> annots) {
 		ArrayList<String> dependantsTiersNames = ht.tiersInfo.get(annotType).dependantsNames;
 		for (String tName : dependantsTiersNames) {
-			// System.err.println(">buildSubTiers Tier: " + annotType + " dependent: " + tName);
+//			System.err.println(">buildSubTiers Tier: " + annotType + " dependent: " + tName);
 			if (ht.tiersInfo.get(tName).type.time_align) {
-				//System.err.println("Construction par alignement temporel");
+//				System.err.println("Construction par alignement temporel");
 				buildSubTimeAlignableTiers(annotType, annots, tName);
 			} else {
-				//System.err.println("Construction par référence symbolique");
+//				System.err.println("Construction par référence symbolique");
 				buildSubRefAlignableTiers(annotType, annots, tName);
 			}
 		}
@@ -411,16 +413,16 @@ public class ElanToHT {
 			*/
 			ArrayList<Annot> subAnnots = new ArrayList<Annot>();
 			String n = subAnnotName + "+" + annot.id;
+//			System.err.println("subAnnotName " + n);
 			ArrayList<Element> al = refInfo.get(n);
 			if (al != null) {
-				// System.err.printf("%s:%d%n", n, al.size());
+//				System.err.printf("%s:%d%n", n, al.size());
 				for (Element e: al) {
 					addNewAnnot(annot, e, subAnnots, subAnnotName, null, null);
 				}
 			}
 			if (ht.tiersInfo.get(subAnnotName).dependantsNames.size() > 0) {
-				// System.err.println(subAnnotName + " -> " +
-				//		ht.tiersInfo.get(subAnnotName).dependantsNames);
+//				System.err.println(subAnnotName + " -> " + ht.tiersInfo.get(subAnnotName).dependantsNames);
 				buildSubTiers(subAnnotName, subAnnots);
 			}
 		}
@@ -430,7 +432,7 @@ public class ElanToHT {
 			String end) {
 		Annot subAnnot = new Annot();
 		subAnnot.setContent(annotEl.getTextContent());
-		subAnnot.id = Utils.createNewId(); // annotEl.getAttribute("ANNOTATION_ID");
+		subAnnot.id = annotEl.getAttribute("ANNOTATION_ID"); // TODO problem here // Utils.createNewId(); // annotEl.getAttribute("ANNOTATION_ID");
 		subAnnot.name = subAnnotName;
 		if (annotEl.getTagName().equals("REF_ANNOTATION")) {
 			subAnnot.timereftype = "ref";

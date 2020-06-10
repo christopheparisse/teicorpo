@@ -22,12 +22,12 @@ public class AnnotatedUtterance {
 	public Codes codes;
 	
 	// Identifiant
-	public String id;
+	public String lastxmlid;
 	// Temps de début(chaîne de caractère, unité = secondes)
 	public String start;
 	//// Temps de fin(chaîne de caractère, unité = secondes)
 	public String end;
-	
+
 	// working elements (copied and organized in speeches)
 	// Code utilisé pour le locuteur
 	public String speakerCode;
@@ -73,7 +73,7 @@ public class AnnotatedUtterance {
 	 * Impression des utterances : liste des énoncés
 	 */
 	public String toString() {
-		String s = "Id[" + id + "] Type[" + type + "] Start[" + start + "] End[" + end + "] SpkName[" + speakerName + "]\n";
+		String s = "Id[" + lastxmlid + "] Type[" + type + "] Start[" + start + "] End[" + end + "] SpkName[" + speakerName + "]\n";
 		s += "Speeches[" + speeches.size() + "]\n";
 		for (Annot utt : speeches) {
 			s += "{" + utt.getContent(false) + "} {" + utt.getContent(true) + "}\n";
@@ -85,21 +85,25 @@ public class AnnotatedUtterance {
 		return s;
 	}
 
-	private void addAnnot(String sync) {
+	private void addAnnot(String sync, String xmlid) {
 		Annot a = new Annot(speakerName, start, sync, speech, nomarkerSpeech);
-		a.id = Utils.createNewId(); // id + "-" + nthid;
+		System.err.printf("addAnnot: %s %s (%s)%n", sync, xmlid, speech);
+		if (xmlid != null)
+			a.id = xmlid; // Utils.createNewId(); // id + "-" + nthid;
+		else
+			a.id = Utils.createNewId(); // id + "-" + nthid;
 		speeches.add(a);
 	}
 
 	private void addAnnot() {
-		addAnnot(end);
+		addAnnot(end, lastxmlid);
 	}
 
 	public boolean processP(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
 		optionsTEI = options;
 		morClan = "";
 		this.teiTimeline = teiTimeline;
-		id = u.getAttribute("xml:id");
+		lastxmlid = u.getAttribute("xml:id");
 		speakerCode = "p";
 		speakerName = "p";
 		coms = new ArrayList<String>();
@@ -160,13 +164,13 @@ public class AnnotatedUtterance {
 		this.teiTimeline = teiTimeline;
 		optionsTEI = options;
 		initU();
-		id = u.getAttribute("xml:id");
+		lastxmlid = u.getAttribute("xml:id");
 		if (teiTimeline != null) {
-			start = teiTimeline.getTimeValue(u.getAttribute("start"));
-			end = teiTimeline.getTimeValue(u.getAttribute("end"));
+			start = teiTimeline.getTimeValue(Utils.refID(u.getAttribute("start")));
+			end = teiTimeline.getTimeValue(Utils.refID(u.getAttribute("end")));
 		} else {
-			start = u.getAttribute("start");
-			end = u.getAttribute("end");
+			start = Utils.refID(u.getAttribute("start"));
+			end = Utils.refID(u.getAttribute("end"));
 		}
 		speakerCode = u.getAttribute("who");
 		if (!fillU(transInfo, options)) return false;
@@ -174,7 +178,7 @@ public class AnnotatedUtterance {
 		nomarkerSpeech = "";
 		speech = "";
 		NodeList us = u.getChildNodes();
-		processSeg(us);
+		processSeg(us, lastxmlid);
 
 		if (!options.outputFormat.equals(".txm")) {
 			speech = Utils.cleanStringPlusEntities(speech);
@@ -189,13 +193,14 @@ public class AnnotatedUtterance {
 		this.teiTimeline = teiTimeline;
 		optionsTEI = options;
 		initU();
-		id = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
+		lastxmlid = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
+		System.err.printf("pU: %s%n", lastxmlid);
 		if (teiTimeline != null) {
-			start = teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
-			end = teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
+			start = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start")));
+			end = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end")));
 		} else {
-			start = TeiDocument.getAttrAnnotationBloc(annotatedU, "start");
-			end = TeiDocument.getAttrAnnotationBloc(annotatedU, "end");
+			start = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
+			end = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
 		}
 		speakerCode = TeiDocument.getAttrAnnotationBloc(annotatedU, "who");
 		if (!fillU(transInfo, options)) return false;
@@ -217,7 +222,7 @@ public class AnnotatedUtterance {
 					nomarkerSpeech = "";
 					speech = "";
 					NodeList us = annotUEl.getChildNodes();
-					processSeg(us);
+					processSeg(us, lastxmlid);
 
 					if (!options.outputFormat.equals(".txm")) {
 						speech = Utils.cleanStringPlusEntities(speech);
@@ -313,7 +318,8 @@ public class AnnotatedUtterance {
 	    return textContent.toString();
 	}
 	
-	public void processSeg(NodeList us) {
+	public void processSeg(NodeList us, String xmlid) {
+		lastxmlid = xmlid;
 		for (int z = 0; z < us.getLength(); z++) {
 			Node segChild = us.item(z);
 			String segChildName = segChild.getNodeName();
@@ -426,7 +432,7 @@ public class AnnotatedUtterance {
 					}
 					if (optionsTEI.outputFormat.equals(".txm")) speech += "</emph></meta>";
 				} else if (segChildName.equals("seg")) {
-					processSeg(segChildEl.getChildNodes());
+					processSeg(segChildEl.getChildNodes(), xmlid);
 				} else if (segChildName.equals("anchor") && !segChildEl.getAttribute("synch").startsWith("#au")) {
 					String sync = "";
 					String syncval = segChildEl.getAttribute("synch");
@@ -436,7 +442,7 @@ public class AnnotatedUtterance {
 						sync = syncval;
 					}
 					// creer une ligne avec speech, nomarkerSpeech, addspeech
-					addAnnot(sync);
+					addAnnot(sync, xmlid);
 					// System.out.printf("anchor: %s %s %s %s%n", speakerName,
 					// start, sync, speech);
 					start = sync;

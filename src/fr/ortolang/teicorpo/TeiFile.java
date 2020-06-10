@@ -211,8 +211,8 @@ public class TeiFile {
 			this.theme = theme;
 			this.themeId = id;
 			this.type = TeiDocument.getDivHeadAttr(div, "type");
-			this.start = teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(div, "start"));
-			this.end = teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(div, "end"));
+			this.start = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getDivHeadAttr(div, "start")));
+			this.end = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getDivHeadAttr(div, "end")));
 			divElement = div;
 			// Noeuds contenus dans le div
 			NodeList ch = div.getChildNodes();

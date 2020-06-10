@@ -92,7 +92,7 @@ public class TeiToPartition {
 			}
 			String start = au.start;
 			String end = au.end;
-			String id = au.id;
+			String id = au.lastxmlid;
 			// String timeSG = (start.isEmpty() || end.isEmpty()) ? "ref" : "time"; // ref is impossible on u tags in ELAN
 			// si le nombre d'annotation de au.speeches > 1 il faudrait changer le statut des spans qui en dépendent
 			for (Annot a: au.speeches) {

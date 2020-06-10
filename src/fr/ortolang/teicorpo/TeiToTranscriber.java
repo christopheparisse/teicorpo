@@ -333,10 +333,10 @@ public class TeiToTranscriber extends TeiConverter {
 					section = trsDoc.createElement("Section");
 					episode.appendChild(section);
 					turns = new ArrayList<TranscriberTurn>();
-					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "start")));
+					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.refID(TeiDocument.getDivHeadAttr(d, "start"))));
 					if (shiftNextStart && !startTime.isEmpty())
 						startTime = Utils.printDouble(Double.parseDouble(startTime) + 0.001, 4);
-					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "end")));
+					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.refID(TeiDocument.getDivHeadAttr(d, "end"))));
 					setAttr(section, "startTime", startTime, true);
 					setAttr(section, "endTime", endTime, true);
 					sectionStartSet = true;
@@ -363,8 +363,8 @@ public class TeiToTranscriber extends TeiConverter {
 						episode.appendChild(section);
 						turns = new ArrayList<TranscriberTurn>();
 					}
-					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "start")));
-					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getDivHeadAttr(d, "end")));
+					String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.refID(TeiDocument.getDivHeadAttr(d, "start"))));
+					String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.refID(TeiDocument.getDivHeadAttr(d, "end"))));
 					if (shiftNextStart && !startTime.isEmpty())
 						startTime = Utils.printDouble(Double.parseDouble(startTime) + 0.001, 4);
 					if (sectionStartSet == false) {
@@ -491,13 +491,13 @@ public class TeiToTranscriber extends TeiConverter {
 	// Les turns seront modifiés et compactés dans addTurnsToSection
 	public void buildTurn(Element elt) {
 		String spk = cleanId(TeiDocument.getAttrAnnotationBloc(elt, "who"));
-		String startTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(elt, "start")));
+		String startTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(elt, "start"))));
 		if (shiftNextStart && !startTime.isEmpty()) {
 			// System.err.println(startTime);
 			startTime = Utils.printDouble(Double.parseDouble(startTime) + 0.001, 4);
 			shiftNextStart = false;
 		}
-		String endTime = timeSimplification(tf.teiTimeline.getTimeValue(TeiDocument.getAttrAnnotationBloc(elt, "end")));
+		String endTime = timeSimplification(tf.teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(elt, "end"))));
 		if (startTime == null || startTime.isEmpty() || endTime == null || endTime.isEmpty()) {
 			if (oldEndTime.isEmpty()) {
                 System.out.printf("Cannot process this line: no time reference.%n");
