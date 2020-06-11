@@ -65,12 +65,15 @@ public class TeiToElan extends GenericMain {
 	// Validation du document Tei par la dtd
 	boolean validation = false;
 
+	long tstart = 0;
+
 	// Constructeur à partir du nom du fichier TEI et du nom du fichier de
 	// sortie au format Elan
 	public boolean transform(String inputName, String outputName, TierParams optionsTei) {
 		ttp = new TeiToPartition();
 		if (optionsTei == null) optionsTei = new TierParams();
 		DocumentBuilderFactory factory = null;
+//		tstart = Utils.timeStamp("start", 0);
 		try {
 			File teiFile = new File(inputName);
 			factory = DocumentBuilderFactory.newInstance();
@@ -115,8 +118,11 @@ public class TeiToElan extends GenericMain {
 		}
 		this.inputName = inputName;
 		this.outputName = outputName;
+//		tstart = Utils.timeStamp("load", tstart);
 		outputWriter();
+//		tstart = Utils.timeStamp("outputWriter", tstart);
 		conversion();
+//		tstart = Utils.timeStamp("conversion", tstart);
 		return true;
 	}
 
@@ -143,10 +149,13 @@ public class TeiToElan extends GenericMain {
 		List<Element> cvList = buildControlledVocabularies();
 		// timeline
 		buildTimeline(time_order);
+//		tstart = Utils.timeStamp("timeline", tstart);
 		// Construction des tiers
 		buildTiers();
+//		tstart = Utils.timeStamp("tiers", tstart);
 		// Construction des types linguistiques
 		buildLgqTypes();
+//		tstart = Utils.timeStamp("types", tstart);
 		// Construction des contraintes Elan
 		buildConstraints();
 		// Addition des vocabulaires contrôlés
@@ -523,9 +532,12 @@ public class TeiToElan extends GenericMain {
 	// Tiers...
 	void buildTiers() {
 		// ttp.getTiers();
+		boolean norm =  ttp.optionsOutput.normalize.equals("none") ? false : true;
+		String origformat = ttp.originalFormat();
 		for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
 			Element tier = elanDoc.createElement("TIER");
 			String type = entry.getKey();
+//			tstart = Utils.timeStamp("bt:" + entry.getKey() + " " + entry.getValue().size(), tstart);
 			tier.setAttribute("TIER_ID", type);
 			String cvref;
 			if (ttp.newTiers.containsKey(type)) {
@@ -539,6 +551,7 @@ public class TeiToElan extends GenericMain {
 //				System.out.println(a.toString());
 				Element annot = elanDoc.createElement("ANNOTATION");
 				if (a.timereftype.equals("time")) {
+//					tstart = Utils.timeStamp("time:" + a.name, tstart);
 					Element align_annot = elanDoc.createElement("ALIGNABLE_ANNOTATION");
 					align_annot.setAttribute("ANNOTATION_ID", a.id);
 					align_annot.setAttribute("TIME_SLOT_REF1", timelineValueOf(a.start));
@@ -546,9 +559,12 @@ public class TeiToElan extends GenericMain {
 					annot.appendChild(align_annot);
 					Element annotationValue = elanDoc.createElement("ANNOTATION_VALUE");
 					String str = a.getContent(ttp.optionsOutput.rawLine);
-					// is it a top tier ?
-					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput) : str;
-					annotationValue.setTextContent(strNorm);
+//					tstart = Utils.timeStamp("time2:" + a.name, tstart);
+					if (norm != false)
+						// is it a top tier ?
+						str = (a.topParent == "-") ? NormalizeSpeech.parseText(str, origformat, ttp.optionsOutput) : str;
+					annotationValue.setTextContent(str);
+//					tstart = Utils.timeStamp("time3:" + a.name, tstart);
 					if (Utils.isNotEmptyOrNull(cvref)) {
 						Map<String, String> cvi = cvs.get(cvref);
 						String cve = cvi.get(a.getContent(ttp.optionsOutput.rawLine));
@@ -556,9 +572,11 @@ public class TeiToElan extends GenericMain {
 							align_annot.setAttribute("CVE_REF", cve);
 					}
 					align_annot.appendChild(annotationValue);
+//					tstart = Utils.timeStamp("time append:" + a.name, tstart);
 					annot.appendChild(align_annot);
 				} else if (a.timereftype.equals("ref")) {
 					Element ref_annot = elanDoc.createElement("REF_ANNOTATION");
+//					tstart = Utils.timeStamp("ref:" + a.name, tstart);
 					ref_annot.setAttribute("ANNOTATION_ID", a.id);
 					ref_annot.setAttribute("ANNOTATION_REF", a.link);
 					if (Utils.isNotEmptyOrNull(a.previous))
@@ -566,9 +584,12 @@ public class TeiToElan extends GenericMain {
 					annot.appendChild(ref_annot);
 					Element annotationValue = elanDoc.createElement("ANNOTATION_VALUE");
 					String str = a.getContent(ttp.optionsOutput.rawLine);
-					// is it a top tier ?
-					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput) : str;
-					annotationValue.setTextContent(strNorm);
+//					tstart = Utils.timeStamp("ref2:" + a.name, tstart);
+					if (norm != false)
+						// is it a top tier ?
+						str = (a.topParent == "-") ? NormalizeSpeech.parseText(str, origformat, ttp.optionsOutput) : str;
+					annotationValue.setTextContent(str);
+//					tstart = Utils.timeStamp("ref3:" + a.name, tstart);
 					if (Utils.isNotEmptyOrNull(cvref)) {
 						Map<String, String> cvi = cvs.get(cvref);
 						String cve = cvi.get(a.getContent(ttp.optionsOutput.rawLine));
@@ -576,8 +597,10 @@ public class TeiToElan extends GenericMain {
 							ref_annot.setAttribute("CVE_REF", cve);
 					}
 					ref_annot.appendChild(annotationValue);
+//					tstart = Utils.timeStamp("ref append:" + a.name, tstart);
 					annot.appendChild(ref_annot);
 				}
+//				tstart = Utils.timeStamp("final append:" + a.name, tstart);
 				tier.appendChild(annot);
 			}
 		}

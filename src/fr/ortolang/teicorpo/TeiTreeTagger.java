@@ -179,6 +179,7 @@ public class TeiTreeTagger extends GenericMain {
 		} catch (Exception e) {
 			return false;
 		}
+		String origformat = TeiToPartition.getOriginalFormat(teiDoc);
 		NodeList aBlocks = teiDoc.getElementsByTagName(TeiDocument.ANNOTATIONBLOC);
 		if (aBlocks != null && aBlocks.getLength() > 0) {
 			for (int i=0; i < aBlocks.getLength(); i++) {
@@ -205,7 +206,7 @@ public class TeiTreeTagger extends GenericMain {
 				for (int s = 0; s < au.speeches.size(); s++) {
 					utt += au.speeches.get(s).getContent(optionsOutput.rawLine);
 				}
-				String parsedUtt = NormalizeSpeech.parseText(utt, TeiToPartition.getOriginalFormat(teiDoc), optionsOutput);
+				String parsedUtt = NormalizeSpeech.parseText(utt, origformat, optionsOutput);
 				// decouper au.nomarkerSpeech
 				ArrayList<String> p = Tokenizer.splitTextTT(parsedUtt);
 				for (int ti = 0; ti < p.size(); ti++)

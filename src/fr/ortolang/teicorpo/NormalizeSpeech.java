@@ -40,16 +40,19 @@ public class NormalizeSpeech {
 		String target = (optionsOutput == null || optionsOutput.target.isEmpty()) ? optionsOutput.outputFormat : optionsOutput.target;
 //		System.out.printf("pT/%s/ /%s/ /%s/ /%s/%n", str, originalFormat, format, target);
 		if (format.equals("ca") && !target.equals(".cha")) {
+//			System.out.printf("ca !cha%n");
 			String s1 = convertSpecialCodes(str).replaceAll("\\s+", " ");
 			String s2 = ConventionsToChat.clean(s1);
 			String s3 = ConventionsToChat.chatToText(s2);
 			firstpass = ConventionsToChat.caToText(s3);
 			//System.out.printf("§%s§ §%s§ §%s§ §%s§ §%s§%n", str, s1, s2, s3, firstpass);
 		} else if (format.equals("clan") && !target.equals(".cha")) {
+//			System.out.printf("clan !cha%n");
 			String s1 = convertSpecialCodes(str).replaceAll("\\s+", " ");
 			String s2 = ConventionsToChat.clean(s1);
 			firstpass = ConventionsToChat.chatToText(s2);
 		} else if (format.equals("pfc")) {
+//			System.out.printf("pfc%n");
 			String s1 = convertSpecialCodes(str).replaceAll("\\s+", " ");
 			String s2 = ConventionsToChat.clean(s1);
 			String s4 = ConventionsToChat.chatToText(s2);
@@ -72,9 +75,11 @@ public class NormalizeSpeech {
 			firstpass = s5.replaceAll("' ", "'");
 			// System.out.printf("§%s§ §%s§ §%s§ §%s§ §%s§%n", s1, s2, s3, s4, s5);
 		} else {
+//			System.out.printf("other%n");
 			firstpass = str;
 		}
 		if (target.equals(".texgrid")) {
+//			System.out.printf("second%n");
 			secondpass = firstpass.replace("\"", "\"\"");
 		} else {
 			secondpass = firstpass;

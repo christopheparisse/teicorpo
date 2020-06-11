@@ -87,7 +87,7 @@ public class AnnotatedUtterance {
 
 	private void addAnnot(String sync, String xmlid) {
 		Annot a = new Annot(speakerName, start, sync, speech, nomarkerSpeech);
-		System.err.printf("addAnnot: %s %s (%s)%n", sync, xmlid, speech);
+//		System.err.printf("addAnnot: %s %s (%s)%n", sync, xmlid, speech);
 		if (xmlid != null)
 			a.id = xmlid; // Utils.createNewId(); // id + "-" + nthid;
 		else
@@ -194,7 +194,7 @@ public class AnnotatedUtterance {
 		optionsTEI = options;
 		initU();
 		lastxmlid = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
-		System.err.printf("pU: %s%n", lastxmlid);
+//		System.err.printf("pU: %s%n", lastxmlid);
 		if (teiTimeline != null) {
 			start = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start")));
 			end = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end")));

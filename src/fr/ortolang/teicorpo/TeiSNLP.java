@@ -136,6 +136,7 @@ public class TeiSNLP extends GenericMain {
 		}
 
 		int numAU = 0;
+		String origformat = TeiToPartition.getOriginalFormat(teiDoc);
 
 		NodeList aBlocks = teiDoc.getElementsByTagName(TeiDocument.ANNOTATIONBLOC);
 		if (aBlocks != null && aBlocks.getLength() > 0) {
@@ -162,7 +163,7 @@ public class TeiSNLP extends GenericMain {
 				for (int s = 0; s < au.speeches.size(); s++) {
 					utt += au.speeches.get(s).getContent(optionsOutput.rawLine);
 				}
-				String parsedUtt = NormalizeSpeech.parseText(utt, TeiToPartition.getOriginalFormat(teiDoc), optionsOutput);
+				String parsedUtt = NormalizeSpeech.parseText(utt, origformat, optionsOutput);
 				if (numAU % 100 == 0) System.out.printf("%d%n", numAU);
 				if (optionsOutput.syntaxformat.equals("conll") || optionsOutput.syntaxformat.equals("dep")) {
 					ConllUtt cu = snlp.parseCONLL(parsedUtt);

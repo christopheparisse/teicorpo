@@ -364,8 +364,4 @@ public class TeiFile {
 			}
 		}
 	}
-
-	public String originalFormat() {
-		return TeiToPartition.getOriginalFormat(teiDoc);
-	}
 }

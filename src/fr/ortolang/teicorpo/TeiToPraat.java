@@ -133,6 +133,7 @@ public class TeiToPraat extends GenericMain {
 			out.printf("        intervals: size = %d%n", entry.getValue().size());
 
 			int nk = 1;
+			String origformat = ttp.originalFormat();
 			for (Annot a : entry.getValue()) {
 				try {
 					if (a.start == null || a.start.isEmpty()) {
@@ -162,7 +163,7 @@ public class TeiToPraat extends GenericMain {
 					out.printf("            xmax = %s%n", printDouble(end));
 					String str = a.getContent(ttp.optionsOutput.rawLine);
 					// is it a top tier ?
-					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, ttp.originalFormat(), ttp.optionsOutput) : str;
+					String strNorm = (a.topParent == "-") ? NormalizeSpeech.parseText(str, origformat, ttp.optionsOutput) : str;
 					out.printf("            text = \"%s\"%n", strNorm);
 					nk++;
 				} catch(java.lang.NumberFormatException e) {

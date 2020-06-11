@@ -585,4 +585,10 @@ public class Utils {
 	public static String createId(String au, int utteranceId) {
     	return au + Integer.toString(utteranceId);
 	}
+
+	public static long timeStamp(String msg, long previous) {
+    	long actual = System.currentTimeMillis();
+    	System.err.printf("%s %dsec %dms%n", msg, (actual - previous) / 1000, actual - previous);
+    	return actual;
+	}
 }

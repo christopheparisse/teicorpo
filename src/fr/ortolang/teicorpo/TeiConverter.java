@@ -121,6 +121,7 @@ public abstract class TeiConverter extends GenericMain {
 		 * start;end__speech
 		 */
 		if (u.speeches == null) return;
+		String origformat = TeiToPartition.getOriginalFormat(tf.teiDoc);
 		for (int s = 0; s < u.speeches.size(); s++) {
 			String start = null;
 			String end = null;
@@ -158,7 +159,7 @@ public abstract class TeiConverter extends GenericMain {
 			}
 
 			String str = u.speeches.get(s).getContent(optionsOutput.rawLine);
-			String speech = NormalizeSpeech.parseText(str, tf.originalFormat(), optionsOutput);
+			String speech = NormalizeSpeech.parseText(str, origformat, optionsOutput);
 
 			// Ecriture de l'énoncé
 			writeSpeech(u, speech, start, end);
