@@ -27,7 +27,7 @@ public class TeiToTxm extends TeiConverter {
 	// Extension du fichier de sortie
 	final static String EXT = ".txm.xml";
 	
-	Element txm; // root of document
+	Element teiRoot; // root of document
 	Element texthead; // put all divs inside texthead
 	Element divhead; // put all utterances inside divhead
 	Map<String, String> locAges; // precomputed locuteur ages
@@ -63,8 +63,8 @@ public class TeiToTxm extends TeiConverter {
 			factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			txmDoc = builder.newDocument();
-			txm = txmDoc.createElement("txm");
-			txmDoc.appendChild(txm);
+			teiRoot = txmDoc.createElement("TEI");
+			txmDoc.appendChild(teiRoot);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -89,9 +89,11 @@ public class TeiToTxm extends TeiConverter {
 	 * convertir
 	 */
 	public void buildHeader() {
-		txm.setAttribute("file", inputName);
+		Element teiheader = txmDoc.createElement("teiHeader");
+		teiRoot.appendChild(teiheader);
+		teiRoot.setAttribute("file", inputName);
 		texthead = txmDoc.createElement("text");
-		txm.appendChild(texthead);
+		teiRoot.appendChild(texthead);
 	}
 
 	/**
