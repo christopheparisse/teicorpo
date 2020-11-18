@@ -97,13 +97,17 @@ public class TcofInsertMeta {
                         age = "10 ans ?";
                         fage = "10.0";
                     }
-                } else if (role.isEmpty()) {
+                } else {
                     if (age.isEmpty() || Double.parseDouble(fage) >= 16.0) {
                         if (firstadufound == false) {
                             firstadufound = true;
                             tag = "ADU";
                         } else {
                             tag = "ADU" + (i + 1);
+                        }
+                        if (age.isEmpty()) {
+                            age = "40 ans ?";
+                            fage = "40.2";
                         }
                     } else {
                         if (firstchifound == false) {
@@ -112,17 +116,6 @@ public class TcofInsertMeta {
                         } else {
                             tag = "CHI" + (i+1);
                         }
-                    }
-                } else {
-                    if (firstadufound == false) {
-                        firstadufound = true;
-                        tag = "ADU";
-                    } else {
-                        tag = "ADU" + (i+1);
-                    }
-                    if (age.isEmpty()) {
-                        age = "40 ans ?";
-                        fage = "40.2";
                     }
                 }
                 part.setAttribute("age", fage);

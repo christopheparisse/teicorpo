@@ -278,10 +278,10 @@ public class TeiDocument {
 
     public static void setDTDvalidation(DocumentBuilderFactory factory, boolean b) {
         try {
-            System.out.printf("validation:%s%n",b?"yes":"no");
+            if (b == true) System.out.printf("validation:%s%n",b?"yes":"no");
             factory.setValidating(b);
 //			factory.setNamespaceAware(true);
-             factory.setFeature("http://xml.org/sax/features/namespaces", b);
+            factory.setFeature("http://xml.org/sax/features/namespaces", b);
             factory.setFeature("http://xml.org/sax/features/validation", b);
             factory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar",	b);
             factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", b);
