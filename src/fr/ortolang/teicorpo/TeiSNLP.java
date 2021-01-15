@@ -109,6 +109,7 @@ public class TeiSNLP extends GenericMain {
 
 	// Conversion of teicorpo file
 	public boolean process() {
+		System.err.printf("Model SNLP: %s%n", optionsOutput.model);
 		snlp.init(optionsOutput.syntaxformat, optionsOutput.model);
 		
         // add informations about document structure

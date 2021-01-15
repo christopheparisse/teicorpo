@@ -78,13 +78,29 @@ public class NormalizeSpeech {
 //			System.out.printf("other%n");
 			firstpass = str;
 		}
+//		System.out.printf("second pass %s %s: %s%n", optionsOutput.outputFormat, target, firstpass);
 		if (target.equals(".texgrid")) {
 //			System.out.printf("second%n");
 			secondpass = firstpass.replace("\"", "\"\"");
+		} else if (target.equals(".cha")) {
+			if (optionsOutput.normlineending == true && !firstpass.endsWith(".") && !firstpass.endsWith("?") && !firstpass.endsWith("!") && !firstpass.endsWith("+...") && !firstpass.endsWith("+?.") && !firstpass.endsWith("+!.")) {
+				secondpass = firstpass + " .";
+			} else {
+				secondpass = firstpass;
+			}
 		} else {
 			secondpass = firstpass;
 		}
-//		System.out.printf("{%s} {%s}%n", firstpass, secondpass);
+		if (optionsOutput.outputFormat.equals("ttg")) {
+			String s = secondpass.replaceAll(" \\.", ".");
+			s = s.replaceAll(" \\?", "?");
+			s = s.replaceAll(" \\!", "!");
+			s = s.replaceAll(" \\+\\.\\.\\.", ".");
+			s = s.replaceAll(" \\+\\.\\!", "!");
+			secondpass = s.replaceAll(" \\+\\.\\?", "?");
+		}
+
+//		System.out.printf("{%s} {%s} %s %s%n", firstpass, secondpass, optionsOutput.outputFormat, target);
 		return secondpass.trim();
 	}
 

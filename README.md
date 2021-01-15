@@ -155,3 +155,4 @@ The Stanford parser, part of speech tagger, and other tools can be called to pro
   - 1.40.15 Bug correction
   - 1.40.18 New import function for CONLL (for Orfeo corpus) and TCOF metadata
   - 1.40.22 New metadata import function from CSV files
+  - 1.40.35 Various bug fixes and small new options

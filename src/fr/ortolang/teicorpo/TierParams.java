@@ -124,6 +124,7 @@ class TierParams {
 	Map<String, SpkVal> mv; // // list of values extracted from the metadata to be added in the result file
 	boolean utterance;
 	String spknamerole; // choose output out of speakers, names, roles
+	boolean normlineending; // normalize line ending with .
 
 	TierParams() {
 		noerror = false;
@@ -181,6 +182,7 @@ class TierParams {
 		ldt = new ArrayList<DescTier>();
 		utterance = false;
 		spknamerole = "spk";
+		normlineending = false;
 	}
 	void addCommand(String s) {
 		commands.add(s);
@@ -325,6 +327,7 @@ class TierParams {
 		System.err.println("         -s name : the tier with this name is removed from output (generic characters are accepted)");
 		System.err.println("         -rawline : exports utterances with removing spoken language special codes");
 		System.err.println("         -normalize format : normalization is done from this format - possible options: clan ca");
+		System.err.println("         -normlineending : normalization of the end of utterance marker");
 		System.err.println("         -target format : normalization is done towards this format - possible options: praat\n");
 		System.err.println("         -short : file extensions do not contain tei_corpo");
 		System.err.println("         -p parameter_file: contains parameters with the same format as the command line, one parameter per line.");
@@ -368,6 +371,7 @@ class TierParams {
 		System.err.println("         -s name : le locuteur/champ name est suprimé de la sortie (caractères génériques acceptés)");
 		System.err.println("         -rawline : exporte des énoncés sans marqueurs spéficiques de l'oral");
 		System.err.println("         -normalize format : normalisation réalisée à partir du format indiqué en paramètre - options possibles: clan");
+		System.err.println("         -normlineending : normalisation des marqueurs de fin d'énoncé");
 		System.err.println("         -target format : normalisation réalisée en direction du format indiqué en paramètre");
 		System.err.println("         -short : les extensions fichiers autres que TEI_CORPO ne contiennent pas tei_corpo");
 		System.err.println("         --noerror : considère les erreurs dans les paramètres comme des warnings");
@@ -744,6 +748,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-rawline")) {
 						options.rawLine = true;
+						continue;
+					} else if (argument.equals("-normlineending")) {
+						options.normlineending = true;
 						continue;
 					} else if (argument.equals("-writtentext") || argument.equals("-wr")) {
 						options.writtentext = true;

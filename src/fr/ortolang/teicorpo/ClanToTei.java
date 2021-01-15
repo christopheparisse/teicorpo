@@ -281,7 +281,10 @@ public class ClanToTei extends ImportToTei {
 	 */
 	public Element addNewDiv(Element parent, String type, String subj) {
 		Element setting = docTEI.createElement("setting");
-		setting.setTextContent(subj);
+		Element activity = docTEI.createElement("activity");
+		activity.setTextContent(subj);
+		setting.appendChild(activity);
+		setting.setAttribute("xml:id", "d" + descID);
 		descID++;
 		setting.setAttribute("xml:id", "d" + descID);
 		Element settingDesc = (Element) docTEI.getElementsByTagName("settingDesc").item(0);

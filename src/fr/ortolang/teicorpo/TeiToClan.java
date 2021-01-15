@@ -266,7 +266,7 @@ public class TeiToClan extends TeiConverter {
 		boolean eg = false;
 		for (Div d : divs) {
 			for (AnnotatedUtterance u : d.utterances) {
-				// u.print();
+				// System.err.printf("UU %s%n", u);
 				if (Utils.isNotEmptyOrNull(u.type)) {
 					if (Utils.isNotEmptyOrNull(u.theme))
 						eg = writeDiv(u.type, u.theme);
@@ -295,6 +295,9 @@ public class TeiToClan extends TeiConverter {
 		boolean eg = false;
 		String theme = tf.transInfo.situations.get(themeId);
 		// || type.toLowerCase().startsWith("situation")
+		// System.err.printf("##%s %s %s%n", type, themeId, theme, tf.transInfo.situations);
+		if (themeId == null) return false;
+		if (theme == null) return false;
 		if (type.toLowerCase().startsWith("g") && !theme.toLowerCase().equals(tf.trans.sit.toLowerCase())) {
 			out.println("@G:\t" + theme);
 		} else if (type.toLowerCase().startsWith("bg")) {
