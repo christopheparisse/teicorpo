@@ -86,17 +86,17 @@ public class ChatFile {
 		// find all types of information and preprocess it.
 		int sz = nbMainLines();
 		boolean inHeader = true;
-		Pattern pattern = Pattern.compile("[%*@](\\w*)[\\s:]?.*");
 		Set<String> idsMap= new HashSet<String>();;
 		for (int i=0; i<sz; i++) {
 			if (ml(i).startsWith("*")) {
 				inHeader = false;
-				Matcher matcher = pattern.matcher(ml(i));
-				if (matcher.matches()) {
-					if (!idsMap.contains(matcher.group(1))) {
-						idsMap.add(matcher.group(1));
+				ChatLine cl = new ChatLine(ml(i));
+				if (cl.head.length() > 1) {
+					String code = cl.head.substring(1);
+					if (!idsMap.contains(code)) {
+						idsMap.add(code);
 						ID nid = new ID();
-						nid.code = matcher.group(1);
+						nid.code = code;
 						if (nid.code.isEmpty())
 							nid.code = "UNK";
 						if (nid.code.equals("UNK"))
