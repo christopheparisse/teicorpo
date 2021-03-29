@@ -144,6 +144,22 @@ The Stanford parser, part of speech tagger, and other tools can be called to pro
 * the conll and dep parameters provide the result in conll format (columns x lines). The pos paramter provides the result in "ref" format (see TreeTagger)
 * as for TreeTagger, conll format can be converted to Praat and Elan, and ref format to TXM and Lexico.
 
+#### Specific options - Conversion of metadata from ORFEO and TCOF
+ORFEO (CEFC) and TCOF are two corpora found on Ortolang (www.ortolang.fr). They contains both transcriptions in a specific format (CONLL for ORFEO and
+Transcriber for TCOF) plus some metadata in XML format (TEI format for ORFEO and proprietary for TCOF). Both corpora can be converted using TEICORPO.
+
+##### ORFEO
+The command is :
+```
+java -cp teicorpo.jar fr.ortolang.teicorpo.ImportConllToTei conllfilename -metadata metadatafilename -o outputfilename
+```
+
+##### TCOF
+The command is :
+```
+java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInserMeta trsfilename -metadata metadatafilename -o outputfilename
+```
+
 ### History version
   - 1.00  Initial fully functional version
   - 1.40  Rename jar file. English version.
@@ -156,3 +172,4 @@ The Stanford parser, part of speech tagger, and other tools can be called to pro
   - 1.40.18 New import function for CONLL (for Orfeo corpus) and TCOF metadata
   - 1.40.22 New metadata import function from CSV files
   - 1.40.35 Various bug fixes and small new options
+  - 1.40.37 Bug fixes and help for new options

@@ -264,15 +264,22 @@ public class TcofInsertMeta {
     }
 
     private String normalizeAge(String age) {
-        Pattern pattern = Pattern.compile("(\\d+)[;.,](\\d+)[;.,](.*)");
+        System.out.printf("?AGE: %s%n", age);
+        Pattern pattern = Pattern.compile("(\\d+)[;.,](\\d+)[;.,](\\d+)");
         Matcher matcher = pattern.matcher(age);
         if (matcher.matches()) {
-            return matcher.group(1) + '.' + (matcher.group(2));
+            double year = Double.parseDouble(matcher.group(1));
+            double month = Double.parseDouble(matcher.group(2));
+            double day = Double.parseDouble(matcher.group(3));
+            return Double.toString(year + month * (1.0/12.0) + day * (1.0/365.0));
         }
         pattern = Pattern.compile("(\\d+)[;.,](\\d+)");
         matcher = pattern.matcher(age);
         if (matcher.matches()) {
-            return matcher.group(1) + '.' + (matcher.group(2));
+            System.out.printf("2 matches: (%s) (%s)%n", matcher.group(1), matcher.group(2));
+            double year = Double.parseDouble(matcher.group(1));
+            double month = Double.parseDouble(matcher.group(2));
+            return Double.toString(year + month * (1.0/12.0));
         }
         pattern = Pattern.compile("(\\d+)(.*)");
         matcher = pattern.matcher(age);
