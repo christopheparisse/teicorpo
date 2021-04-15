@@ -84,7 +84,7 @@ public class TeiToText extends TeiConverter {
 		ArrayList<TeiFile.Div> divs = tf.trans.divs;
 		for (Div d : divs) {
 			for (AnnotatedUtterance u : d.utterances) {
-				if (Utils.isNotEmptyOrNull(u.type)) { // gead of a div
+				if (Utils.isNotEmptyOrNull(u.type)) { // head of a div
 					if (u.start != null && !u.start.isEmpty() && tf.optionsOutput.raw != true && tf.optionsOutput.level != 1) {
 						float start = Float.parseFloat(u.start);
 						out.printf("%f:%f\t", start, start+1);
@@ -162,10 +162,16 @@ public class TeiToText extends TeiConverter {
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (tf.optionsOutput.raw == true) {
-			if (optionsOutput.tiernames)
-				out.println("[" + spkChoice(au) + "] " + speechContent);
-			else
+			if (optionsOutput.tiernames) {
+				out.print("[" + spkChoice(au) + "]");
+				if (optionsOutput.tierxmlid) {
+					out.println(" <" + au.lastxmlid + "> " + speechContent);
+				} else {
+					out.println(" " + speechContent);
+				}
+			} else {
 				out.println(speechContent);
+			}
 		} else {
 			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 				float start = Float.parseFloat(startTime);

@@ -115,6 +115,7 @@ class TierParams {
 	public boolean test;
 	boolean absolute;
 	boolean tiernames;
+	boolean tierxmlid;
     boolean tiernamescontent;
 	String metadata;
 	boolean writtentext;
@@ -171,6 +172,7 @@ class TierParams {
 		test = false;
 		tiernames = false;
 		tiernamescontent = false;
+		tierxmlid = false;
 		metadata = null;
 		outputTEIName = null;
 		baseName = "";
@@ -280,7 +282,7 @@ class TierParams {
 			System.err.printf ("         -c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
 		}
 		if (style == 2) {
-			System.err.println("         Parameters for export to TXM/Iramuteq/Le Trameur\n");
+			System.err.println("         Parameters for export to TXM/Iramuteq/Le Trameur/Text\n");
 			System.err.println("         -utt: utterance format (not words)");
 			System.err.println("         -spk: value used of speaker tag (spk/=speaker=alt, pers/=persName, role/=role)");
 			System.err.println("         -tv \"type:value:speaker\" type and value are obligatory. speaker is optional and can also be * for all speakers");
@@ -289,6 +291,7 @@ class TierParams {
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tiernamescontent : add all fields in tiernames as for other words");
+			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
 			System.err.println("         -mediacontrol: add startTime information");
 		}
@@ -494,6 +497,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-tiernames")) {
+						i++;
+						continue;
+					} else if (argument.equals("-tierxmlid")) {
 						i++;
 						continue;
 					} else if (argument.equals("-tiernamescontent")) {
@@ -763,6 +769,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-tiernames")) {
 						options.tiernames = true;
+						continue;
+					} else if (argument.equals("-tierxmlid")) {
+						options.tierxmlid = true;
 						continue;
 					} else if (argument.equals("-tiernamescontent")) {
 						options.tiernamescontent = true;
