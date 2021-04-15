@@ -104,6 +104,7 @@ public class Tokenizer {
 			} catch (IOException ioe) {
 				System.err.println("Erreur sur fichier : " + abbr);
 				ioe.printStackTrace();
+				System.exit(1);
 			}
 		}
 	}

@@ -102,6 +102,7 @@ public class TeiSNLP extends GenericMain {
 			});
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		process();
 		createOutput();

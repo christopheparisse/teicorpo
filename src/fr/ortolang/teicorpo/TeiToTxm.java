@@ -67,6 +67,7 @@ public class TeiToTxm extends TeiConverter {
 			txmDoc.appendChild(teiRoot);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

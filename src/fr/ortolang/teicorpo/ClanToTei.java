@@ -114,6 +114,7 @@ public class ClanToTei extends ImportToTei {
 			docTEI.appendChild(rootTEI);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		conversion(tp.options);
 		TeiDocument.setTranscriptionDesc(docTEI, "clan", "1.0", "standard CHAT format");
@@ -564,6 +565,7 @@ public class ClanToTei extends ImportToTei {
 				return i;
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		return i;
 	}
@@ -1262,6 +1264,7 @@ public class ClanToTei extends ImportToTei {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.exit(1);
 		}
 		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
 		Utils.createFile(docTEI, output);

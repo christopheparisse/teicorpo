@@ -31,6 +31,7 @@ public class modifMetaEslo {
 			this.rootMETA = this.docMETA.getDocumentElement();						
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		
 		modifNodeURL("dc:identifier");

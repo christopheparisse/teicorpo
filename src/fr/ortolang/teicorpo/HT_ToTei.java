@@ -107,6 +107,7 @@ public class HT_ToTei {
 			docTEI.appendChild(rootTEI);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		// Conversions
 		conversion();

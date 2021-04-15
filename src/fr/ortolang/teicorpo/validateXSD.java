@@ -42,6 +42,7 @@ public class validateXSD {
 		} catch (IOException e2) {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
+			System.exit(1);
 		}
 
 	    // create a SchemaFactory capable of understanding WXS schemas

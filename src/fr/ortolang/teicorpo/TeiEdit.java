@@ -96,6 +96,7 @@ public class TeiEdit extends GenericMain {
 			});
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		process();
 	}

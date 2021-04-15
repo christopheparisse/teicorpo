@@ -98,6 +98,7 @@ public class SNLP {
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				System.exit(1);
 			}
 		return s;
 	}
@@ -159,6 +160,7 @@ public class SNLP {
 		} catch (Exception e) {
 			System.err.printf("Error processing: %s%n", text);
 			e.printStackTrace();
+			System.exit(1);
 			return null;
 		}
 	}
@@ -193,6 +195,7 @@ public class SNLP {
 		} catch (Exception e) {
 			System.err.printf("Error processing: %s%n", text);
 			e.printStackTrace();
+			System.exit(1);
 			return 0;
 		}
 
@@ -317,7 +320,7 @@ public class SNLP {
 		} catch (Exception e) {
 			System.err.printf("Error processing: %s%n", text);
 			e.printStackTrace();
-			return;
+			System.exit(1);
 		}
 	}
 
@@ -364,6 +367,7 @@ public class SNLP {
 		} catch (Exception e) {
 			System.err.printf("Error processing: %s%n", text);
 			e.printStackTrace();
+			System.exit(1);
 			return null;
 		}
 	}

@@ -290,6 +290,7 @@ public class TeiDocument {
         catch (Exception e) {
             System.err.println("Votre fichier n'est pas conforme à la DTD passée en argument");
             e.printStackTrace();
+            System.exit(1);
         }
     }
 
@@ -309,6 +310,7 @@ public class TeiDocument {
             } catch (Exception e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
+                System.exit(1);
             }
         }
         Element note = docTEI.createElement("note");

@@ -81,6 +81,7 @@ public class TeiFile {
 			});
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

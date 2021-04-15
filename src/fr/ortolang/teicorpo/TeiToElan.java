@@ -138,6 +138,7 @@ public class TeiToElan extends GenericMain {
 			elanDoc.appendChild(annot_doc);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

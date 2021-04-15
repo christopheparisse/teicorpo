@@ -1093,6 +1093,7 @@ class TierParams {
 			test2 = (String)tf.xpath.evaluate(locplace2, tf.root, XPathConstants.STRING);
 		} catch (XPathExpressionException e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		System.err.printf("Test2 %s {%s}%n", locplace2, test2.toString());
 		*/

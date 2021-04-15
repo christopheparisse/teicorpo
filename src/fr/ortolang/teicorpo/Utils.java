@@ -422,6 +422,7 @@ public class Utils {
             	return output.replaceFirst("<.*?>", "");
         } catch (TransformerException e) {
             e.printStackTrace();
+			System.exit(1);
         }
          
         return null;
@@ -439,8 +440,9 @@ public class Utils {
 			Document doc = db.parse(is);
             return doc;
         } catch (Exception e) {  
-            e.printStackTrace();  
-        } 
+            e.printStackTrace();
+			System.exit(1);
+        }
         return null;
     }
 
@@ -464,6 +466,7 @@ public class Utils {
 			transformer.transform(source, resultat);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

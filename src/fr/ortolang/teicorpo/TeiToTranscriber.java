@@ -88,6 +88,7 @@ public class TeiToTranscriber extends TeiConverter {
 			this.trsDoc.appendChild(trans);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

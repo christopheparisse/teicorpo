@@ -140,6 +140,7 @@ public class TeiToDC_colaje {
 			dcDoc.appendChild(dcRoot);
 		}catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 
 		//Construction du document

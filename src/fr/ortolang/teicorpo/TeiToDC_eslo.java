@@ -138,6 +138,7 @@ public class TeiToDC_eslo{
 			dcDoc.appendChild(dcRoot);
 		}catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 
 		//Construction du document

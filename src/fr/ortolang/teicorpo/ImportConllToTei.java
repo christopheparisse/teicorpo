@@ -187,6 +187,7 @@ public class ImportConllToTei extends ImportToTei {
 		ImportConllToTei ct = new ImportConllToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);
 		ct.mainCommand(args, EXT, Utils.EXT, "Description: ImportConllToTei converts a CONLL file to an TEI file%n", 8);
+		System.exit(0);
 	}
 
 	@Override
@@ -199,6 +200,7 @@ public class ImportConllToTei extends ImportToTei {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.exit(1);
 		}
 		TeiDocument.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
 		Utils.createFile(docTEI, output);

@@ -298,6 +298,7 @@ public class TeiCorpo extends GenericMain {
 				+ "Output format TEI_CORPO by default%n";
 		TeiCorpo tc = new TeiCorpo();
 		tc.mainCommand(args, "", "", usageString, 4);
+		System.exit(0);
 	}
 
 	@Override
@@ -307,11 +308,12 @@ public class TeiCorpo extends GenericMain {
 			process(options.inputFormat, options.outputFormat, input, output, options);
 		} catch(FileNotFoundException e) {
 			System.err.println("Le fichier " + input + " n'existe pas.");
-			return;
+			System.exit(1);
 		} catch(Exception e) {
 			System.err.println("Impossible de traiter le fichier: " + input);
 			System.err.println("Erreur logicielle " + e.toString());
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 }

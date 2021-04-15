@@ -19,6 +19,7 @@ public class validateDTD {
 			System.out.println(validateXMLWithDTDAndDOM(xmlFileNameWithExternalDTD) ? args[0] + " is valid !" :  args[0] + " is NOT valid !");
 		} catch (Throwable e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

@@ -32,6 +32,7 @@ public class ClanToTeiTest {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.exit(1);
 		}
 		File in = new File(filehead + Utils.EXT + ".correct");
 		File out = new File(filehead + Utils.EXT);

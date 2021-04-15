@@ -62,6 +62,7 @@ public class MoissonnageEslo {
 			this.rootMoissonnage = this.docMetadatas.getDocumentElement();
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		// createMetaFiles();
 	}
@@ -85,6 +86,7 @@ public class MoissonnageEslo {
 			this.rootMoissonnage = this.docMetadatas.getDocumentElement();
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		// createMetaFiles();
 	}
@@ -109,6 +111,7 @@ public class MoissonnageEslo {
 			this.rootMoissonnage = this.docMetadatas.getDocumentElement();
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		// createMetaFiles();
 	}

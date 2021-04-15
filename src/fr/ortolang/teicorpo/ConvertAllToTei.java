@@ -10,6 +10,7 @@ public class ConvertAllToTei {
 			PraatToTei.main(args);
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 

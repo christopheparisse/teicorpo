@@ -106,6 +106,7 @@ public class TeiTreeTagger extends GenericMain {
 			});
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.exit(1);
 		}
 		process();
 		createOutput();
@@ -326,19 +327,19 @@ public class TeiTreeTagger extends GenericMain {
 	public void createOutput() {
 		File itest = new File(inputName);
 		File otest = new File(outputName);
-		String itname;
-		String otname;
+		String itname = "";
+		String otname = "";
 		try {
 			itname = itest.getCanonicalPath();
 			otname = otest.getCanonicalPath();
 		} catch (IOException e1) {
 			e1.printStackTrace();
-			return;
+			System.exit(1);
 		}
 		
 		if (itname.equals(otname) && !optionsOutput.commands.contains("replace")) {
 			System.err.println("Le fichier sortie est le même que le fichier entrée: utiliser le paramètre -c replace pour remplacer le fichier");
-			return;
+			System.exit(1);
 		}
 
 		Utils.createFile(teiDoc, outputName);
@@ -363,5 +364,6 @@ public class TeiTreeTagger extends GenericMain {
 				+ Utils.EXT + ">%n";
 		TeiTreeTagger ttt = new TeiTreeTagger();
 		ttt.mainCommand(args, Utils.EXT, TT_EXT + Utils.EXT, usageString, 7);
+		System.exit(0);
 	}
 }
