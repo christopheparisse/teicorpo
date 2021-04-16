@@ -290,10 +290,10 @@ class TierParams {
 			System.err.println("              For the two parameters above the pairs type+value are added to <u>, <w>, <div> tags for txm or lexico or le trameur");
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
-			System.err.println("         -tiernamescontent : add all fields in tiernames as for other words");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
 			System.err.println("         -mediacontrol: add startTime information");
+			System.err.println("         -tiernamescontent : for TXM: add all fields in tiernames as for other words");
 		}
 		if (style == 6) {
 			System.err.println("         Parameters for export in Iramuteq\n");
@@ -405,6 +405,8 @@ class TierParams {
 			System.err.println("         -section : ajoute un indicateur de section en fin de chaque énoncé (pour lexico/le trameur)");
 			System.err.println("         -syntax nom : choix pour la syntaxe à exporter");
 			System.err.println("         -sandhi : information spécifique intégrées pour l'analyse des liaisons");
+			System.err.println("         -tiernames : affiche le nom des locuteurs et des noms de tiers dans la transcription");
+			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 		}
 		if (style == 6) {
 			System.err.println("         -raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
@@ -414,6 +416,7 @@ class TierParams {
 			System.err.println("         -mv \"type:field\": type: value d'une metadata 'field' ajouté à <u>, <w>, and <div> tags (field is une expression xpath)");
 			System.err.println("         -concat : concaténation des fichiers résultats for iramuteq");
 			System.err.println("         -append : pas d'effacement préalable du fichier destination si concaténation");
+			System.err.println("         -tiernamescontent : pour TXM ajoute tous les champs dans les tags words");
 		}
 		if (style == 7) {
 			System.err.println("         -syntaxformat : format de l'export syntaxique (conll / ref / w)");

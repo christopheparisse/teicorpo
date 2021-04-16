@@ -58,11 +58,13 @@ Other parameters for exports towards Txm and Lexico
   * -section : add section marker at the end of an utterance (for Lexico/Le Trameur)
   * -sandhi : information specific for the study of liaisons
 
-Other parameters for exports towards text
+Other parameters for exports towards text files
   * -raw transcriptions are produced without speaker or any information
   * -iramuteq text files takes supplementary information for Iramuteq (headers)
   * -concat all output files are concatenated into a single output file
   * -append files are append to the original output file
+  * -tiernames : print the value of the locutors and tiernames in the transcriptions
+  * -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)
 
 Parameter for import from text
   * -normalize noparticipant : the first word of a paragraph is not considered as the name of the speaker
