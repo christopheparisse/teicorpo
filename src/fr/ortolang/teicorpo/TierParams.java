@@ -266,7 +266,7 @@ class TierParams {
 		}
 		System.err.printf(mess);
 
-		if (style == 4) {
+		if (style == 4 || style == -1) {
 			System.err.println("         Parameters for import/export to and from the TEI\n");
 			System.err.println("         -from format_of_input_files: chat elan praat trs tei");
 			System.err.println("         -to format_of_output_files: chat elan praat trs tei iramuteq txm lexico letrameur srt subthtml\n");
@@ -274,14 +274,14 @@ class TierParams {
 			System.err.println("         -advevent advanced unicode format for event in text mode");
 			System.err.println("         -absolute : syntax of included tools/ library in html (for subthtml)");
 		}
-		if (style == 5) {
+		if (style == 5 || style == -1) {
 			printImportPartitionMessage();
 		}
-		if (style == 3) {
+		if (style == 3 || style == -1) {
 			System.err.println("         Editing TEI files\n");
 			System.err.printf ("         -c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
 		}
-		if (style == 2) {
+		if (style == 2 || style == -1) {
 			System.err.println("         Parameters for export to TXM/Iramuteq/Le Trameur/Text\n");
 			System.err.println("         -utt: utterance format (not words)");
 			System.err.println("         -spk: value used of speaker tag (spk/=speaker=alt, pers/=persName, role/=role)");
@@ -295,7 +295,7 @@ class TierParams {
 			System.err.println("         -mediacontrol: add startTime information");
 			System.err.println("         -tiernamescontent : for TXM: add all fields in tiernames as for other words");
 		}
-		if (style == 6) {
+		if (style == 6 || style == -1) {
 			System.err.println("         Parameters for export in Iramuteq\n");
 			System.err.println("         -raw : text is exported after removing all locutors or spoken language marking");
 			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
@@ -304,13 +304,13 @@ class TierParams {
 			System.err.println("         -concat : concatenate result files for iramuteq");
 			System.err.println("         -append : do not erase destination file before processing - to be used with concat");
 		}
-		if (style == 7) {
+		if (style == 7 || style == -1) {
 			System.err.println("         Compute the syntactic analysis of the TEI file\n");
 			System.err.println("         -syntaxformat : format of syntatic annotation (conll / ref / w)");
 			System.err.println("         -model name : model file for syntax");
 			System.err.println("         -program name : executable file for syntax");
 		}
-		if (style == 8) {
+		if (style == 8 || style == -1) {
 			System.err.println("         ImportConllToTei connl_file -metadata connl_meta\n");
 			System.err.println("         -metadata : xml metadata file");
 		}
@@ -331,7 +331,8 @@ class TierParams {
 		System.err.println("         -rawline : exports utterances with removing spoken language special codes");
 		System.err.println("         -normalize format : normalization is done from this format - possible options: clan ca");
 		System.err.println("         -normlineending : normalization of the end of utterance marker");
-		System.err.println("         -target format : normalization is done towards this format - possible options: praat\n");
+		System.err.println("         -target format : normalization is done towards this format - possible options: praat, clan, ttg, perceo, dinlang\n");
+		System.err.println("         -model file : template file for conversion (ELAN)");
 		System.err.println("         -short : file extensions do not contain tei_corpo");
 		System.err.println("         -p parameter_file: contains parameters with the same format as the command line, one parameter per line.");
 		System.err.println("         --noerror : errors in the parameter are considered as warnings");
@@ -375,28 +376,29 @@ class TierParams {
 		System.err.println("         -rawline : exporte des énoncés sans marqueurs spéficiques de l'oral");
 		System.err.println("         -normalize format : normalisation réalisée à partir du format indiqué en paramètre - options possibles: clan");
 		System.err.println("         -normlineending : normalisation des marqueurs de fin d'énoncé");
-		System.err.println("         -target format : normalisation réalisée en direction du format indiqué en paramètre");
+		System.err.println("         -target format : normalisation réalisée en direction du format indiqué en paramètre (clan, praat, ttg, perceo, dinlang)");
 		System.err.println("         -short : les extensions fichiers autres que TEI_CORPO ne contiennent pas tei_corpo");
+		System.err.println("         -model fichier : fichier template pour la conversion (ELAN)");
 		System.err.println("         --noerror : considère les erreurs dans les paramètres comme des warnings");
 		System.err.println("         --dtd cette option permet de vérifier que les fichiers sont conformes à leur dtd");
 		/*
 		System.err.println("            si cette option est spécifiée, la dtd (Trans-14.dtd) doit se trouver dans le même repertoire que le fichier Transcriber\n"
 						+ "\t\tTéléchargement de la DTD de Transcriber : http://sourceforge.net/p/trans/git/ci/master/tree/etc/trans-14.dtd");
 		*/
-		if (style == 5) {
+		if (style == 5 || style == -1) {
 			printImportPartitionMessage();
 		}
-		if (style == 4) {
+		if (style == 4 || style == -1) {
 			System.err.println("         -from format des fichiers input");
 			System.err.println("         -to format des fichiers output");
 			System.err.println("         -stdevent format ascci standard des événements en mode texte");
 			System.err.println("         -advevent format unicode avancé des événements en mode texte");
 		}
-		if (style == 3) {
+		if (style == 3 || style == -1) {
 			System.err.println("         *** paramètre pour édition de fichier TEI***");
 			System.err.printf ("         -c commands:%n\t-c media=value%n\t-c mimetype=value%n\t-c docname=value%n\t-c chgtime=value%n\t-c replace%n");
 		}
-		if (style == 2) {
+		if (style == 2 || style == -1) {
 			System.err.println("         *** paramètre pour export dans TXM/Iramuteq/Le Trameur ***");
 			System.err.println("         -utt: format énoncé (pas des mots)");
 			System.err.println("         -spk: valeur pour le tag du locuteur (speaker=alt, persName, role)");
@@ -408,7 +410,7 @@ class TierParams {
 			System.err.println("         -tiernames : affiche le nom des locuteurs et des noms de tiers dans la transcription");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 		}
-		if (style == 6) {
+		if (style == 6 || style == -1) {
 			System.err.println("         -raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
 			System.err.println("         -iramuteq : headers for iramuteq");
 			System.err.println("         *** paramètre pour export dans Iramuteq ***");
@@ -418,17 +420,18 @@ class TierParams {
 			System.err.println("         -append : pas d'effacement préalable du fichier destination si concaténation");
 			System.err.println("         -tiernamescontent : pour TXM ajoute tous les champs dans les tags words");
 		}
-		if (style == 7) {
+		if (style == 7 || style == -1) {
 			System.err.println("         -syntaxformat : format de l'export syntaxique (conll / ref / w)");
 			System.err.println("         -model nom : fichier modèle pour la syntaxe");
 			System.err.println("         -program name : executable file for syntax");
 //			System.err.println("         -syntax nom : choix pour la syntaxe à générer");
 		}
-		if (style == 8) {
+		if (style == 8 || style == -1) {
 			System.err.println("         ImportConllToTei connl_file -metadata connl_meta%n");
 			System.err.println("         -absolute : syntaxe de l'inclusion de la librairie tools/ en html");
 		}
 		System.err.println("	     -usage ou -help = affichage ce message");
+		System.err.println("	     -usage=all : affiche tous les messages");
 		// System.exit(1);
 	}
 

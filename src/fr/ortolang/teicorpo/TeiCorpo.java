@@ -286,6 +286,11 @@ public class TeiCorpo extends GenericMain {
 			case "xml":
 			case "trjs":
 				return Utils.EXT;
+			case "ttg":
+			case "perceo":
+				return lcFormat;
+			case "dinlang":
+				return lcFormat;
 		}
 		return ".none";
 	}

@@ -91,13 +91,20 @@ public class NormalizeSpeech {
 		} else {
 			secondpass = firstpass;
 		}
-		if (optionsOutput.outputFormat.equals("ttg")) {
+		if (optionsOutput.target.equals("ttg") || optionsOutput.target.equals("slnp")) {
 			String s = secondpass.replaceAll(" \\.", ".");
 			s = s.replaceAll(" \\?", "?");
 			s = s.replaceAll(" \\!", "!");
 			s = s.replaceAll(" \\+\\.\\.\\.", ".");
 			s = s.replaceAll(" \\+\\.\\!", "!");
 			secondpass = s.replaceAll(" \\+\\.\\?", "?");
+		} else if (optionsOutput.target.equals("perceo")) {
+			String s = secondpass.replaceAll(" \\.", " ");
+			s = s.replaceAll(" \\?", " ");
+			s = s.replaceAll(" \\!", " ");
+			s = s.replaceAll(" \\+\\.\\.\\.", " ");
+			s = s.replaceAll(" \\+\\.\\!", " ");
+			secondpass = s.replaceAll(" \\+\\.\\?", " ");
 		}
 
 //		System.out.printf("{%s} {%s} %s %s%n", firstpass, secondpass, optionsOutput.outputFormat, target);

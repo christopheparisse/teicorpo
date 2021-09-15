@@ -249,7 +249,11 @@ public class TeiToPartition {
 		// stocker la référence du type ling de ce nom.
 		String truename;
 		if (!topparent.isEmpty() && !topparent.equals("-")) {
-			truename = topparent + "-" + type;
+			if (optionsOutput.target.equals("dinlang")) {
+				truename = type + "-" + topparent;
+			} else {
+				truename = topparent + "-" + type;
+			}
 			NewTier nt = new NewTier(truename, type, lingType, topparent);
 			// System.out.printf("-: %s %s %s %s %n", truename, type, lingType,
 			// topparent);

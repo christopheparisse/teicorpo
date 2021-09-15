@@ -13,7 +13,7 @@ public class ChatLine {
 			head = "";
 			tail = "";
 		} else {
-			Pattern pattern = Pattern.compile("([%*@][A-Za-zÀ-ÖØ-öø-ÿ_0-9]*)[\\s:]+(.*)");
+			Pattern pattern = Pattern.compile("([%*@][A-Za-zÀ-ÖØ-öø-ÿ_0-9_-]*)[\\s:]+(.*)");
 			Matcher matcher = pattern.matcher(line);
 			//System.out.println(line);
 			if (matcher.matches()) { // cas des lignes avec @ ou * et un :

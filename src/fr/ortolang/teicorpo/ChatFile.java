@@ -22,11 +22,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -91,8 +87,16 @@ public class ChatFile {
 			if (ml(i).startsWith("*")) {
 				inHeader = false;
 				ChatLine cl = new ChatLine(ml(i));
+				// System.out.printf("== * (%s)(%s)%n", cl.head, cl.tail);
 				if (cl.head.length() > 1) {
 					String code = cl.head.substring(1);
+					if (tparams.target.equals("dinlang")) {
+						// if in a list of special name, replace it
+						String oc = code;
+						// System.out.printf("IN *%n");
+						code = equivalence(code, tparams);
+						// System.out.printf("Changed (%s) --> (%s) %n", oc, code);
+					}
 					if (!idsMap.contains(code)) {
 						idsMap.add(code);
 						ID nid = new ID();
@@ -107,27 +111,34 @@ public class ChatFile {
 			}
 			if ( ml(i).toLowerCase().startsWith("@participants") ) {
 				String[] rls = ml(i).split("[:,]+");
-				for (String part: rls) {
-					String[] wds = part.trim().split("\\s+");
-					// System.out.printf("L=%s='%s'%n", part, wds[0]);
+				for (int k = 1; k < rls.length; k++) {
+					String[] wds = rls[k].trim().split("\\s+");
+					String trueCode = wds[0];
+					if (tparams.target.equals("dinlang")) {
+						// if in a list of special name, replace it
+						String oc = trueCode;
+						// System.out.printf("IN @participants%n");
+						trueCode = equivalence(trueCode, tparams);
+						// System.out.printf("Part Changed (%s) --> (%s) %n", oc, trueCode);
+					}
+					// System.out.printf("L=%s='%s'/'%s'%n", rls[k], wds[0], trueCode);
 					if (wds.length == 2) {
 						ID nid = new ID();
-						nid.code = wds[0];
+						nid.code = trueCode;
 						nid.role = wds[1];
 						ids.add(nid);
 						idsMap.add(wds[0]);
-						//System.out.printf("ID2: %s %s%n", nid.code, nid.role);
+						// System.out.printf("ID2: %s %s%n", nid.code, nid.role);
 					} else if (wds.length == 3) {
 						ID nid = new ID();
-						nid.code = wds[0];
+						nid.code = trueCode;
 						nid.name = wds[1];
 						nid.role = wds[2];
 						ids.add(nid);
 						idsMap.add(wds[0]);
-						//System.out.printf("ID3: %s %s %s%n", nid.code, nid.role, nid.name);
+						// System.out.printf("ID3: %s %s %s%n", nid.code, nid.role, nid.name);
 					} else {
-						if (!part.toLowerCase().equals("@participants"))
-							System.err.printf("Bad ID: %s%n", part);
+						System.err.printf("Bad ID: %s%n", rls[k]);
 					}
 				}
 			} else if ( ml(i).toLowerCase().startsWith("@media") ) {
@@ -144,12 +155,20 @@ public class ChatFile {
 			} else if ( ml(i).toLowerCase().startsWith("@id") ) {
 				String[] wds = ml(i).split("\\|");
 				if (wds.length < 3) {
-					System.err.println("erreur sur les IDs à " + ml(i));
+					System.err.println("error on IDs for " + ml(i));
 					continue;
 				}
 				boolean found = false;
+				String trueCode = wds[2];
+				if (tparams.target.equals("dinlang")) {
+					// if in a list of special name, replace it
+					String oc = trueCode;
+					// System.out.printf("IN @ID%n");
+					trueCode = equivalence(trueCode, tparams);
+					// System.out.printf("Changed (%s) --> (%s) %n", oc, trueCode);
+				}
 				for (ID id: ids) {
-					if ( id.code.equals(wds[2]) ) {
+					if ( id.code.equals(trueCode) ) {
 						found = true;
 						// dans l'@ID
 						if (wds.length > 0) {
@@ -173,7 +192,7 @@ public class ChatFile {
 					}
 				}
 				if (found == false) {
-					System.err.println("erreur sur ID " + ml(i) + "pas trouvé dans les participants - ajout direct");
+					System.err.println("error on ID " + ml(i) + "not found in participants - added to the list");
 					ID nid = new ID();
 					// dans l'@ID
 					if (wds.length > 0) {
@@ -183,7 +202,7 @@ public class ChatFile {
 						}
 					}
 					if (wds.length > 1) nid.corpus = wds[1];
-					if (wds.length > 2) nid.code = wds[2];
+					if (wds.length > 2) nid.code = trueCode;
 					if (wds.length > 3) nid.age = wds[3];
 					if (wds.length > 4) nid.sex = wds[4];
 					if (wds.length > 5) nid.group = wds[5];
@@ -192,7 +211,7 @@ public class ChatFile {
 					if (wds.length > 8) nid.education = wds[8];
 					if (wds.length > 9) nid.customfield = wds[9];
 					ids.add(nid);
-					idsMap.add(wds[2]);
+					idsMap.add(trueCode);
 				}
 			} else if ( ml(i).toLowerCase().startsWith("@location") ) {
 				location = ml(i);
@@ -576,7 +595,20 @@ public class ChatFile {
 		last.addTier( ml, n );
 	}
 */
-	void insertML(String ml) {
+	String equivalence(String part, TierParams tparams) {
+//		System.out.printf("EQUIVALENCE FOR [%s]%n", part);
+		for (Map.Entry<String, SpkVal> entry : tparams.tv.entrySet()) {
+			String key = entry.getKey();
+			if (key.equals(part)) {
+				// System.out.printf("FOUND>> [%s] [%s] [%s]%n", part, key, entry.getValue().genericvalue);
+				return entry.getValue().genericvalue;
+			}
+		}
+		// System.out.printf("NOT FOUND>> [%s]%n", part);
+		return part;
+	}
+
+	void insertML(String ml, TierParams tparams) {
 		if ( ml.startsWith("%") ) {
 			if (inMainLine == false) {
 				inMainLine = true;
@@ -584,11 +616,41 @@ public class ChatFile {
 			}
 			addT(ml);
 		} else {
-			if ( ml.startsWith("*") )
+			if ( ml.startsWith("*") ) {
 				inMainLine = true;
-			else
+//				System.out.printf("Dinlang (%s)%n", tparams.target);
+				if (tparams.target.equals("dinlang")) {
+					// extract name of participant
+//					System.out.printf("Dinlang passed%n");
+					ChatLine cl = new ChatLine(ml);
+					// if in a list of special name, replace it
+					String code = cl.head.substring(1);
+//					System.out.printf("IN insertML%n");
+					String dinlangName = equivalence(code, tparams);
+					// System.out.printf("Changed (%s) --> (%s) %n", code, dinlangName);
+					// split the line in a main line plus a secondary line
+					// get time is there is one
+					String patternStr = "(.*)(\\x15\\d+_\\d+\\x15)(.*)";
+					Pattern pattern = Pattern.compile(patternStr);
+					Matcher matcher = pattern.matcher(cl.tail);
+					if (matcher.find()) {
+						// add the main line with the time in it
+						addML("*" + dinlangName + ":\t0 " + matcher.group(2));
+						// add the secondary line
+						addT("%lng:\t" + matcher.group(1) + " " + matcher.group(3));
+					} else {
+						// add the main line (without time)
+						addML("*" + dinlangName + ":\t0");
+						// add the secondary line
+						addT("%lng:\t" + cl.tail);
+					}
+				} else {
+					addML(ml);
+				}
+			} else {
 				inMainLine = false;
-			addML(ml);
+				addML(ml);
+			}
 		}
 	}
 
@@ -598,7 +660,7 @@ public class ChatFile {
 			return;
 		}
 		if (tparams.inputFormat.equals(".srt")) {
-			loadSrt(fn);
+			loadSrt(fn, tparams);
 			return;
 		}
 		chatFilename = fn;
@@ -616,7 +678,7 @@ public class ChatFile {
 				} else {
 					// process previous line if not empty
 					if ( ! ml.equals("") ) {
-						insertML(ml);
+						insertML(ml, tparams);
 					}
 					ml = line;
 				}
@@ -634,7 +696,7 @@ public class ChatFile {
 		}
 		finally {
 			if ( !ml.equals("") )
-				insertML(ml);
+				insertML(ml, tparams);
 			if (reader != null) reader.close();
 		}
 	}
@@ -664,7 +726,7 @@ public class ChatFile {
 		}
 	}
 
-	void loadSrt(String fn) throws IOException {
+	void loadSrt(String fn, TierParams tparams) throws IOException {
 		chatFilename = fn;
 		String line = "";
 		String ml = "";
@@ -762,7 +824,7 @@ public class ChatFile {
 		}
 		finally {
 			if ( !ml.equals("") )
-				insertML(ml);
+				insertML(ml, tparams);
 			if (reader != null) reader.close();
 		}
 	}

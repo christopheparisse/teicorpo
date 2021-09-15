@@ -26,13 +26,11 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
-import javax.xml.xpath.XPathFactory;
+import javax.xml.xpath.*;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class TeiToElan extends GenericMain {
@@ -59,17 +57,40 @@ public class TeiToElan extends GenericMain {
 	// Document TEI à lire
 	public Document teiDoc;
 	// acces XpathTest
-	public XPathFactory xPathfactory;
-	public XPath xpath;
+	public XPathFactory teiXPathfactory;
+	public XPath teiXpath;
 
 	// Validation du document Tei par la dtd
 	boolean validation = false;
 
 	long tstart = 0;
 
+	// new timeline
+	Comparator<String> timeCompare = new Comparator<String>() {
+		@Override
+		public int compare(String s1, String s2) {
+			Double f1 = Double.parseDouble(s1);
+			Double f2 = Double.parseDouble(s2);
+			return f1 < f2 ? -1 : (f1 > f2 ? 1 : 0);
+		}
+	};
+	Map<String, String> newTimeline = new TreeMap<String, String>(timeCompare);
+	int lastIdTimeline = 0; // last id included in the map
+
+	private boolean setDefault = false;
+
+	static Element getFirstElementByTagName(Document doc, String name) throws Exception {
+		NodeList nl = doc.getElementsByTagName(name);
+		if (nl.getLength() < 1) {
+			System.err.printf("No element for %s%n", name);
+			throw new Exception("getFistElementByTagName");
+		}
+		return (Element)nl.item(0);
+	}
+
 	// Constructeur à partir du nom du fichier TEI et du nom du fichier de
 	// sortie au format Elan
-	public boolean transform(String inputName, String outputName, TierParams optionsTei) {
+	public boolean transform(String inputName, String outputName, TierParams optionsTei) throws Exception {
 		ttp = new TeiToPartition();
 		if (optionsTei == null) optionsTei = new TierParams();
 		DocumentBuilderFactory factory = null;
@@ -80,9 +101,9 @@ public class TeiToElan extends GenericMain {
 			TeiDocument.setDTDvalidation(factory, optionsTei.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			teiDoc = builder.parse(teiFile);
-			xPathfactory = XPathFactory.newInstance();
-			xpath = xPathfactory.newXPath();
-			xpath.setNamespaceContext(new NamespaceContext() {
+			teiXPathfactory = XPathFactory.newInstance();
+			teiXpath = teiXPathfactory.newXPath();
+			teiXpath.setNamespaceContext(new NamespaceContext() {
 				public String getNamespaceURI(String prefix) {
 					System.out.println("prefix called " + prefix);
 					if (prefix == null) {
@@ -108,9 +129,9 @@ public class TeiToElan extends GenericMain {
 					return null;
 				}
 			});
-			ttp.init(xpath, teiDoc, optionsTei);
+			ttp.init(teiXpath, teiDoc, optionsTei);
 		} catch(FileNotFoundException e) {
-			System.err.println("Le fichier " + inputName + " n'existe pas.");
+			System.err.println("The file " + inputName + " doesn't exist.");
 			return false;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -127,41 +148,67 @@ public class TeiToElan extends GenericMain {
 	}
 
 	// Ecriture du fichier de sortie
-	public void outputWriter() {
-		elanDoc = null;
-		DocumentBuilderFactory factory = null;
-		try {
-			factory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder builder = factory.newDocumentBuilder();
-			elanDoc = builder.newDocument();
-			annot_doc = elanDoc.createElement("ANNOTATION_DOCUMENT");
-			elanDoc.appendChild(annot_doc);
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.exit(1);
+	public void outputWriter() throws Exception {
+		if (!ttp.optionsOutput.model.isEmpty()) {
+			// use the model as a starting template
+			System.out.printf("Using template: %s%n", ttp.optionsOutput.model);
+			DocumentBuilderFactory templateFactory = null;
+			try {
+				File templateFile = new File(ttp.optionsOutput.model);
+				templateFactory = DocumentBuilderFactory.newInstance();
+				DocumentBuilder builder = templateFactory.newDocumentBuilder();
+				elanDoc = builder.parse(templateFile);
+			} catch(FileNotFoundException e) {
+				System.err.println("The template " + ttp.optionsOutput.model + " doesn't exist.");
+				return;
+			} catch (Exception e) {
+				e.printStackTrace();
+				return;
+			}
+			annot_doc = getFirstElementByTagName(elanDoc, "ANNOTATION_DOCUMENT");
+		} else {
+			// create a new file from scratch
+			elanDoc = null;
+			DocumentBuilderFactory factory = null;
+			try {
+				factory = DocumentBuilderFactory.newInstance();
+				DocumentBuilder builder = factory.newDocumentBuilder();
+				elanDoc = builder.newDocument();
+				annot_doc = elanDoc.createElement("ANNOTATION_DOCUMENT");
+				elanDoc.appendChild(annot_doc);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.exit(1);
+			}
 		}
 	}
 
 	// Conversion du fichier TEI vers Elan
-	public void conversion() {
+	public void conversion() throws Exception {
 		// Construction de l'en-tête
 		buildHeader();
-		// Construction des vocabulaires contrôlés
-		List<Element> cvList = buildControlledVocabularies();
+		if (!ttp.optionsOutput.model.isEmpty()) {
+			// Constructing controlled vocabbularies from the TEI file
+			List<Element> cvList = buildControlledVocabularies();
+			// Addition des vocabulaires contrôlés
+			for (Element e : cvList)
+				annot_doc.appendChild(e);
+		} // otherwise they are in the template
 		// timeline
 		buildTimeline(time_order);
 //		tstart = Utils.timeStamp("timeline", tstart);
 		// Construction des tiers
 		buildTiers();
 //		tstart = Utils.timeStamp("tiers", tstart);
-		// Construction des types linguistiques
-		buildLgqTypes();
+		if (!ttp.optionsOutput.model.isEmpty()) {
+			// Construction des types linguistiques
+			buildLgqTypes();
+		} // otherwise they are in the template
 //		tstart = Utils.timeStamp("types", tstart);
-		// Construction des contraintes Elan
-		buildConstraints();
-		// Addition des vocabulaires contrôlés
-		for (Element e : cvList)
-			annot_doc.appendChild(e);
+		if (!ttp.optionsOutput.model.isEmpty()) {
+			// Construction des contraintes Elan
+			buildConstraints();
+		} // otherwise they are in the template
 	}
 
 	/**
@@ -197,32 +244,46 @@ public class TeiToElan extends GenericMain {
 
 	// Information contenues dans l'élément annotation_doc et dans l'élément
 	// header
-	public void buildHeader() {
-		annot_doc.setAttribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
-		annot_doc.setAttribute("xsi:noNamespaceSchemaLocation", "http://www.mpi.nl/tools/elan/EAFv2.8.xsd");
-		Element header = elanDoc.createElement("HEADER");
-		// date
+	public void buildHeader() throws Exception {
+		// first compute date
 		String date = "";
 		try {
-			date = (String) this.xpath.compile("//appInfo/date/text()").evaluate(this.teiDoc, XPathConstants.STRING);
+			date = (String) this.teiXpath.compile("//appInfo/date/text()").evaluate(this.teiDoc, XPathConstants.STRING);
 		} catch (Exception e) {
 			date = "";
 		}
 		if (date.isEmpty()) {
 			date = getDate();
 		}
-		if (ttp.optionsOutput.test)
-			annot_doc.setAttribute("DATE", "2018-09-10");
-		else
-			annot_doc.setAttribute("DATE", date);
-		annot_doc.setAttribute("AUTHOR", "TEI_CORPO Converter");
-		annot_doc.setAttribute("FORMAT", "2.8");
-		annot_doc.setAttribute("VERSION", "2.8");
-		annot_doc.appendChild(header);
-		buildHeaderElement(header);
-		// Element timeleine
-		time_order = elanDoc.createElement("TIME_ORDER");
-		annot_doc.appendChild(time_order);
+		// then insert
+		if (!ttp.optionsOutput.model.isEmpty()) {
+			Element header = getFirstElementByTagName(elanDoc, "HEADER");
+			if (ttp.optionsOutput.test)
+				annot_doc.setAttribute("DATE", "2018-09-10");
+			else
+				annot_doc.setAttribute("DATE", date);
+			annot_doc.setAttribute("AUTHOR", "TEI_CORPO Converter");
+			annot_doc.setAttribute("FORMAT", "2.8");
+			annot_doc.setAttribute("VERSION", "2.8");
+			// Element timeline
+			time_order = getFirstElementByTagName(elanDoc, "TIME_ORDER");
+		} else {
+			annot_doc.setAttribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
+			annot_doc.setAttribute("xsi:noNamespaceSchemaLocation", "http://www.mpi.nl/tools/elan/EAFv2.8.xsd");
+			Element header = elanDoc.createElement("HEADER");
+			if (ttp.optionsOutput.test)
+				annot_doc.setAttribute("DATE", "2018-09-10");
+			else
+				annot_doc.setAttribute("DATE", date);
+			annot_doc.setAttribute("AUTHOR", "TEI_CORPO Converter");
+			annot_doc.setAttribute("FORMAT", "2.8");
+			annot_doc.setAttribute("VERSION", "2.8");
+			annot_doc.appendChild(header);
+			buildHeaderElement(header);
+			// Element timeline
+			time_order = elanDoc.createElement("TIME_ORDER");
+			annot_doc.appendChild(time_order);
+		}
 	}
 
 	// Complétion des informations du header
@@ -241,7 +302,7 @@ public class TeiToElan extends GenericMain {
 			// Attributs
 			// media_file + elements media
 			// besoin units et time
-			XPathExpression expr = this.xpath.compile("//recordingStmt/recording/media");
+			XPathExpression expr = this.teiXpath.compile("//recordingStmt/recording/media");
 			NodeList medias = (NodeList) expr.evaluate(this.teiDoc, XPathConstants.NODESET);
 			if (medias.getLength() > 0) {
 				header.setAttribute("MEDIA_FILE", "");
@@ -275,23 +336,9 @@ public class TeiToElan extends GenericMain {
 				}
 			}
 		} catch (Exception e) {
-			System.err.println("erreur dans le traitement du header");
+			System.err.println("Error in processing the header");
 		}
 	}
-
-	/* Nouvelle timeline */
-	Comparator<String> timeCompare = new Comparator<String>() {
-		@Override
-		public int compare(String s1, String s2) {
-			Double f1 = Double.parseDouble(s1);
-			Double f2 = Double.parseDouble(s2);
-			return f1 < f2 ? -1 : (f1 > f2 ? 1 : 0);
-		}
-	};
-	Map<String, String> newTimeline = new TreeMap<String, String>(timeCompare);
-	int lastIdTimeline = 0; // last id included in the map
-
-	private boolean setDefault = false;
 
 	String timelineValueOf(String time) {
 		if (time.isEmpty())
@@ -346,7 +393,7 @@ public class TeiToElan extends GenericMain {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.err.println("ERREUR dans le traitement de la timeline: " + e.toString());
+			System.err.println("Error in processing the timeline: " + e.toString());
 		}
 	}
 
@@ -441,7 +488,7 @@ public class TeiToElan extends GenericMain {
 	}
 
 	// Ajout des attributs des élement TIER
-	String setTierAtt(Element tier, String type) {
+	private String setTierAtt(Element tier, String type) {
 //		System.out.printf("setTierAtt(type): %s%n", type);
 		for (TierInfo ti : ttp.tierInfos) {
 			if (ti.tier_id.equals(type)) {
@@ -453,10 +500,9 @@ public class TeiToElan extends GenericMain {
 					tier.setAttribute("ANNOTATOR", ti.annotator);
 				if (Utils.isNotEmptyOrNull(ti.lang_ref))
 					tier.setAttribute("LANG_REF", ti.lang_ref);
-				if(Utils.isNotEmptyOrNull(ti.parent) &&
-						!ti.parent.equals("-")) {
+				if (Utils.isNotEmptyOrNull(ti.parent) && !ti.parent.equals("-")) {
 					tier.setAttribute("PARENT_REF", ti.parent);
-					System.out.printf("HH: %s %s %s %n", tier.getTagName(), type, ti.parent);
+					// System.out.printf("HH: %s %s %s %n", tier.getTagName(), type, ti.parent);
 					/*
 					// chercher dans newTiers le nouveau nom du parent
 					for (Map.Entry<String, NewTier> entry : ttp.newTiers.entrySet()) {
@@ -501,25 +547,27 @@ public class TeiToElan extends GenericMain {
 					tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
 					setDefault = true;
 				}
+				// System.out.printf("1KK: %s (%s)%n", ti.toString(), newTier.toString());
 				if (Utils.isNotEmptyOrNull(ti.parent)) {
-					//System.out.printf("WW: %s %s %s%n", newTier.oldID, ti.parent, type);
-					int p = type.indexOf("-");
-					if (p >= 1) {
-						tier.setAttribute("PARENT_REF", type.substring(0, p));
-					} else {
-						// valeur par defaut ?
-						tier.setAttribute("PARENT_REF", ti.parent);
-						// s'il n'y en a pas (même nom)
-						// chercher dans newTiers le nouveau nom du parent
-						for (Map.Entry<String, NewTier> entry : ttp.newTiers.entrySet()) {
-							//System.out.printf("++: %s %s %n", newTier.oldID, entry.getValue().newID);
-							if (entry.getValue().oldID.equals(ti.parent)) {
-								tier.setAttribute("PARENT_REF", entry.getValue().newID);
-								// on change l'ancien
-								//System.out.printf("KK: %s %s %n", newTier.oldID, entry.getValue().newID);
-							}
-						}
-					}
+					// System.out.printf("WW: %s %s %s%n", newTier.oldID, ti.parent, type);
+					tier.setAttribute("PARENT_REF", newTier.parent);
+//					int p = type.indexOf("-");
+//					if (p >= 1) {
+//						tier.setAttribute("PARENT_REF", type.substring(0, p));
+//					} else {
+//						// valeur par defaut ?
+//						tier.setAttribute("PARENT_REF", ti.parent);
+//						// s'il n'y en a pas (même nom)
+//						// chercher dans newTiers le nouveau nom du parent
+//						for (Map.Entry<String, NewTier> entry : ttp.newTiers.entrySet()) {
+//							//System.out.printf("++: %s %s %n", newTier.oldID, entry.getValue().newID);
+//							if (entry.getValue().oldID.equals(ti.parent)) {
+//								tier.setAttribute("PARENT_REF", entry.getValue().newID);
+//								// on change l'ancien
+//								System.out.printf("KK: %s %s %n", newTier.oldID, entry.getValue().newID);
+//							}
+//						}
+//					}
 				}
 				return ti.type.cv_ref;
 			}
@@ -535,19 +583,38 @@ public class TeiToElan extends GenericMain {
 		// ttp.getTiers();
 		boolean norm =  ttp.optionsOutput.normalize.equals("none") ? false : true;
 		String origformat = ttp.originalFormat();
+		NodeList nl = this.annot_doc.getChildNodes();
 		for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
-			Element tier = elanDoc.createElement("TIER");
 			String type = entry.getKey();
+			Element tier = null;
+			if (!ttp.optionsOutput.model.isEmpty()) {
+				// try do find a tier: "//TIER[TIER_ID='" + type + "']";
+				for (int i = 0; i < nl.getLength(); i++) {
+					Node elt = (Node) nl.item(i);
+					if (elt.getNodeName().equals("TIER") && ((Element)elt).getAttribute("TIER_ID").equals(type)) {
+						// System.out.printf("Existing Tier ENTRY: %s%n", type);
+						tier = (Element) elt;
+						break;
+					}
+				}
+			}
+
+			if (tier == null) {
+				// not found or no template: create new tier
+				tier = elanDoc.createElement("TIER");
+				// System.out.printf("New Tier ENTRY: %s%n", type);
+				tier.setAttribute("TIER_ID", type);
+				this.annot_doc.appendChild(tier);
+			}
+
 //			tstart = Utils.timeStamp("bt:" + entry.getKey() + " " + entry.getValue().size(), tstart);
-			tier.setAttribute("TIER_ID", type);
 			String cvref;
 			if (ttp.newTiers.containsKey(type)) {
-				// System.out.printf("HH: %s %s %n", type,
-				// ttp.newTiers.get(type));
+				// System.out.printf("0KK: %s %s (%s)%n", tier.getNodeName(), type, ttp.newTiers.get(type));
 				cvref = setTierAtt(tier, ttp.newTiers.get(type), type);
 			} else
+				// System.out.printf("0HH: %s %s%n", tier.getNodeName(), type);
 				cvref = setTierAtt(tier, type);
-			this.annot_doc.appendChild(tier);
 			for (Annot a : entry.getValue()) {
 //				System.out.println(a.toString());
 				Element annot = elanDoc.createElement("ANNOTATION");
@@ -623,7 +690,11 @@ public class TeiToElan extends GenericMain {
 
 	@Override
 	public void mainProcess(String input, String output, TierParams options) {
-		if (!transform(input, output, options)) return;
+		try {
+			if (!transform(input, output, options)) return;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 //		System.out.println("Reading " + input);
 		createOutput();
 //		System.out.println("New file created " + output);
