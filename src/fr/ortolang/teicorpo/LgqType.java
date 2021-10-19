@@ -11,7 +11,8 @@ public class LgqType{
 	public static String TIME_DIV = "Time_Subdivision";
 	public static String POINT = "Point";
 	public static String TIME_INT = "Time_Interval";
-	
+	public static String DEFAULT_LING_TYPE = "default-lt";
+
 //	String lgq_type_name; // LINGUISTIC_TYPE_REF  (dans le TIER pointe sur LINGUISTIC_TYPE_ID)
 	String lgq_type_id; // LINGUISTIC_TYPE_ID : id du type (nom utilisé dans ELAN)
 	String constraint;// CONSTRAINTS Liste fermée : Symbolic_Association, Symbolic_Subdivision, Time_Subdivision, Included_In, Point?
@@ -20,7 +21,7 @@ public class LgqType{
 	boolean time_align; //  TIME_ALIGNABLE : dépend de contrainte
 	
 	public LgqType() {
-		lgq_type_id = "";
+		lgq_type_id = DEFAULT_LING_TYPE;
 		constraint = "";
 		cv_ref = null;
 		graphic_ref = "false";

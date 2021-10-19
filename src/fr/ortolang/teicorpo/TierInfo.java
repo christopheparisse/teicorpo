@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TierInfo {
-	LgqType type; // Type linguistique LINGUISTIC_TYPE_REF (with other information)
+	LgqType linguistType; // Type linguistique LINGUISTIC_TYPE_REF (with other information)
 	String participant; // PARTICIPANT
 	String parent; // PARENT_REF
 	String annotator; // ANNOTATOR
@@ -16,7 +16,7 @@ public class TierInfo {
 
 	TierInfo() {
 		tier_id = "";
-		type = new LgqType();
+		linguistType = new LgqType();
 		dependantsNames = new ArrayList<String>();
 	}
 	
@@ -30,7 +30,7 @@ public class TierInfo {
 				+ " part:" + this.participant 
 				+ " parent:" + this.parent 
 				+ " annot:" + this.annotator 
-				+ " type:" + this.type.toString() 
+				+ " type:" + this.linguistType.toString()
 				+ " lang:" + this.lang
 				+ " lang_ref:" + this.lang_ref 
 				+ s;

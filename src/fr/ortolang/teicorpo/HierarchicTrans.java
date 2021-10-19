@@ -69,7 +69,7 @@ public class HierarchicTrans{
 					continue;
 			}
 			//System.out.printf("OK%n");
-			if(this.tiersInfo.get(tierName).type.constraint.equals(LgqType.ROOT)){
+			if(this.tiersInfo.get(tierName).linguistType.constraint.equals(LgqType.ROOT)) {
 				this.hierarchic_representation.put(tierName, entry.getValue());
 			}
 		}

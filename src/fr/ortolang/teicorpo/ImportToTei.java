@@ -360,13 +360,13 @@ public abstract class ImportToTei extends GenericMain {
 			noteParent.setAttribute("type", "parent");
 			noteParent.setTextContent("-");
 			note.appendChild(noteParent);
-			templateNote.appendChild(note);
 
 			Element noteCode = doc.createElement("note");
 			noteCode.setAttribute("type", "code");
 			noteCode.setTextContent("_");
 			note.appendChild(noteCode);
 
+			templateNote.appendChild(note);
 			return;
 		}
 		NodeList persons = particDesc.getElementsByTagName("person");
@@ -396,10 +396,17 @@ public abstract class ImportToTei extends GenericMain {
 		}
 	}
 
-	public static void addTemplateTiersNames(Document doc, Set<String> tiersNames) {
+	public static void addTemplateTiersNames(Document doc, Set<String> tiersNames, TierParams optionsTEI) {
 		if (tiersNames != null) {
 			for (String t : tiersNames) {
-				insertTemplate(doc, t, "Symbolic_Association", "annotationBlock");
+				if (optionsTEI.target.equals("dinlang") && t.equals("lng")) {
+					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "communication");
+				} else if (optionsTEI.target.equals("dinlang") && t.equals("act")) {
+					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "action");
+				} else {
+					System.err.printf("addTempl: %s%n", t);
+					insertTemplate(doc, t, "Symbolic_Association", "annotationBlock");
+				}
 			}
 		}
 	}
@@ -410,7 +417,13 @@ public abstract class ImportToTei extends GenericMain {
 			System.err.println("serious error: no template");
 			return;
 		}
-		
+		/*
+			<note>
+			<note type="code">act</note>
+			<note type="type">Symbolic_Association</note>
+			<note type="parent">annotationBlock</note>
+			</note>
+		 */
 		Element note = doc.createElement("note");
 
 		Element noteCode = doc.createElement("note");
@@ -427,6 +440,47 @@ public abstract class ImportToTei extends GenericMain {
 		noteParent.setAttribute("type", "parent");
 		noteParent.setTextContent(parent);
 		note.appendChild(noteParent);
+
+		templateNote.appendChild(note);
+	}
+
+	public static void insertTemplate(Document doc, String code, String type, String parent, String typename) {
+		Element templateNote = getTemplate(doc);
+		if (templateNote == null) {
+			System.err.println("serious error: no template");
+			return;
+		}
+		/*
+			<note>
+			<note type="code">code</note>
+			<note type="parent">parent</note>
+			<note type="type">Time_Subdivision</note>
+			<note type="subtype">typename</note>
+			<note type="graphicref">false</note>
+			<note type="timealign">true</note>
+			</note>
+		 */
+		Element note = doc.createElement("note");
+
+		Element noteCode = doc.createElement("note");
+		noteCode.setAttribute("type", "code");
+		noteCode.setTextContent(code);
+		note.appendChild(noteCode);
+
+		Element noteType = doc.createElement("note");
+		noteType.setAttribute("type", "type");
+		noteType.setTextContent(type);
+		note.appendChild(noteType);
+
+		Element noteParent = doc.createElement("note");
+		noteParent.setAttribute("type", "parent");
+		noteParent.setTextContent(parent);
+		note.appendChild(noteParent);
+
+		Element noteSubType = doc.createElement("note");
+		noteSubType.setAttribute("type", "subtype");
+		noteSubType.setTextContent(typename);
+		note.appendChild(noteSubType);
 
 		templateNote.appendChild(note);
 	}

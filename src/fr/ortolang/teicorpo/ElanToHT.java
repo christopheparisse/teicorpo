@@ -137,8 +137,8 @@ public class ElanToHT {
 		for (int i = 0; i < tiers.getLength(); i++) {
 			TierInfo tierInfo = new TierInfo();
 			Element tier = (Element) tiers.item(i);
-			tierInfo.type.lgq_type_id = tier.getAttribute("LINGUISTIC_TYPE_REF");
-			Element lgqTypeElement = getlgqType(tierInfo.type.lgq_type_id, lgqTypes);
+			tierInfo.linguistType.lgq_type_id = tier.getAttribute("LINGUISTIC_TYPE_REF");
+			Element lgqTypeElement = getlgqType(tierInfo.linguistType.lgq_type_id, lgqTypes);
 			if (lgqTypeElement == null) {
 //				System.err.printf("No type for %s:%s (ignored)%n", tier.getAttribute("TIER_ID"), tierInfo.type.lgq_type_id);
 				continue;
@@ -150,14 +150,14 @@ public class ElanToHT {
 			//System.err.println(lgqTypeElement.getAttribute("CONTROLLED_VOCABULARY_REF"));
 			tierInfo.parent = tier.getAttribute("PARENT_REF");
 			tierInfo.annotator = tier.getAttribute("ANNOTATOR");
-			tierInfo.type.time_align = Boolean.parseBoolean(lgqTypeElement.getAttribute("TIME_ALIGNABLE"));
+			tierInfo.linguistType.time_align = Boolean.parseBoolean(lgqTypeElement.getAttribute("TIME_ALIGNABLE"));
 			tierInfo.lang = tier.getAttribute("DEFAULT_LOCALE");
 			tierInfo.lang_ref = tier.getAttribute("LANG_REF");
 			if (!tier.hasAttribute("PARENT_REF")) {
-				tierInfo.type.constraint = "-";
+				tierInfo.linguistType.constraint = "-";
 				ht.mainTiersNames.add(name);
 			} else {
-				tierInfo.type.constraint = lgqTypeElement.getAttribute("CONSTRAINTS");
+				tierInfo.linguistType.constraint = lgqTypeElement.getAttribute("CONSTRAINTS");
 			}
 			// System.out.println(tierInfo.toString());
 			ht.tiersInfo.put(name, tierInfo);
@@ -221,7 +221,7 @@ public class ElanToHT {
 			TierInfo tierInfo = ht.tiersInfo.get(name);
 			String annotElName = "ALIGNABLE_ANNOTATION";
 			/// *** A utiliser que pour les subdiv? ***///
-			if (!tierInfo.type.time_align) {
+			if (!tierInfo.linguistType.time_align) {
 				annotElName = "REF_ANNOTATION";
 			}
 			NodeList annotsNodes = tierElement.getElementsByTagName(annotElName);
@@ -266,7 +266,7 @@ public class ElanToHT {
 		ArrayList<String> dependantsTiersNames = ht.tiersInfo.get(annotType).dependantsNames;
 		for (String tName : dependantsTiersNames) {
 //			System.err.println(">buildSubTiers Tier: " + annotType + " dependent: " + tName);
-			if (ht.tiersInfo.get(tName).type.time_align) {
+			if (ht.tiersInfo.get(tName).linguistType.time_align) {
 //				System.err.println("Construction par alignement temporel");
 				buildSubTimeAlignableTiers(annotType, annots, tName);
 			} else {
@@ -588,7 +588,7 @@ public class ElanToHT {
 		for (Map.Entry<String, TierInfo> entry : ef.ht.tiersInfo.entrySet()) {
 			System.out.println(entry.getKey());
 			TierInfo ti = entry.getValue();
-			System.out.println(ti.annotator + " " + ti.lang + " " + ti.parent + " " + ti.participant + " " + ti.type
+			System.out.println(ti.annotator + " " + ti.lang + " " + ti.parent + " " + ti.participant + " " + ti.linguistType
 					+ " " + ti.dependantsNames);
 		}
 

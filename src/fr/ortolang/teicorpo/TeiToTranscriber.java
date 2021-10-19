@@ -13,18 +13,8 @@ import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 import fr.ortolang.teicorpo.TeiFile.Div;
 
@@ -84,6 +74,7 @@ public class TeiToTranscriber extends TeiConverter {
 			factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			this.trsDoc = builder.newDocument();
+			// Add root element
 			this.trans = this.trsDoc.createElement("Trans");
 			this.trsDoc.appendChild(trans);
 		} catch (Exception e) {
@@ -122,9 +113,13 @@ public class TeiToTranscriber extends TeiConverter {
 		} else {
 			setAttr(trans, "xml:lang", tf.language[0], false);
 		}
-		
-		setAttr(trans, "version", tf.transInfo.version, false);
-		setAttr(trans, "version_date", tf.transInfo.date, false);
+
+		// check if tf.transInfo.version is an int
+		if (tf.transInfo.version.matches("0|[1-9]\\d*"))
+			setAttr(trans, "version", tf.transInfo.version, false);
+		else
+			setAttr(trans, "version", "1", false);
+		setAttr(trans, "version_date", tf.transInfo.versionDate, false);
 		setAttr(trans, "elapsed_time", tf.transInfo.timeDuration, false);
 	}
 
@@ -299,12 +294,12 @@ public class TeiToTranscriber extends TeiConverter {
 			String air_date = TeiDocument.getDivHeadAttr(ep, "air_date");
 			if (Utils.isNotEmptyOrNull(program))
 				episode.setAttribute("program", program);
-			else if (Utils.isNotEmptyOrNull(type))
-				episode.setAttribute("program", type);
+//			else if (Utils.isNotEmptyOrNull(type))
+//				episode.setAttribute("program", type);
 			if (Utils.isNotEmptyOrNull(air_date))
 				episode.setAttribute("air_date", air_date);
-			else if (Utils.isNotEmptyOrNull(subtype))
-				episode.setAttribute("air_date", subtype);
+//			else if (Utils.isNotEmptyOrNull(subtype))
+//				episode.setAttribute("air_date", subtype);
 			bodyChildren = ep.getChildNodes();
 		}
 		processDivAndAnnotation(bodyChildren, true);
@@ -789,7 +784,7 @@ public class TeiToTranscriber extends TeiConverter {
 
 	// Création du fichier de sortie
 	public void createOutput() {
-		Utils.createFile(trsDoc, outputName);
+		Utils.createFile(trsDoc, outputName, "trans-14.dtd");
 	}
 
 	/*

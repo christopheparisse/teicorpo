@@ -913,12 +913,12 @@ public class PraatToTei extends GenericMain {
 					// ldt.get(j).print());
 					DescTier a = optionsTEI.ldt.get(j);
 					if (a.workingTier.equalsIgnoreCase(value.participant)) {
-						value.type.lgq_type_id = value.participant;
-						value.type.constraint = DescTier.whichType(a.type);
-						if (value.type.constraint == LgqType.SYMB_ASSOC || value.type.constraint == LgqType.SYMB_DIV) {
-							value.type.time_align = false;
+						value.linguistType.lgq_type_id = value.participant;
+						value.linguistType.constraint = DescTier.whichType(a.type);
+						if (value.linguistType.constraint == LgqType.SYMB_ASSOC || value.linguistType.constraint == LgqType.SYMB_DIV) {
+							value.linguistType.time_align = false;
 						} else {
-							value.type.time_align = true;
+							value.linguistType.time_align = true;
 						}
 						value.parent = a.workingParent;
 						found = true;
@@ -927,8 +927,8 @@ public class PraatToTei extends GenericMain {
 					}
 				}
 				if (!found) {
-					value.type.constraint = LgqType.ROOT;
-					value.type.time_align = true;
+					value.linguistType.constraint = LgqType.ROOT;
+					value.linguistType.time_align = true;
 					// si element.getValue() == TextTier alors des points sinon
 					// des intervalles
 					if (verbose) System.out.println("TIER: " + element.getKey() + " : ROOT");

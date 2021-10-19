@@ -12,7 +12,6 @@ fr\ortolang\teicorpo\GenerateIndexHTML$3.class
 fr\ortolang\teicorpo\Media.class
 fr\ortolang\teicorpo\ChatFile.class
 fr\ortolang\teicorpo\TeiCorpo.class
-fr\ortolang\teicorpo\Test.class
 fr\ortolang\teicorpo\TeiToElan$2.class
 fr\ortolang\teicorpo\GenericMain.class
 fr\ortolang\teicorpo\PraatToTei.class
@@ -47,7 +46,6 @@ fr\ortolang\teicorpo\ConversionUI$3.class
 fr\ortolang\teicorpo\ImportToTei.class
 fr\ortolang\teicorpo\ElanToTei.class
 fr\ortolang\teicorpo\ConversionUI$Chooser.class
-fr\ortolang\teicorpo\Tests.class
 fr\ortolang\teicorpo\GenerateIndexHTML.class
 fr\ortolang\teicorpo\LowerCaseLexicon.class
 fr\ortolang\teicorpo\ConversionUI$2.class

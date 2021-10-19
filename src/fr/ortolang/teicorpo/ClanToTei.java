@@ -138,7 +138,7 @@ public class ClanToTei extends ImportToTei {
 		setDivTimes();
 		setStmt();
 		addTemplateDesc(docTEI);
-		addTemplateTiersNames(docTEI, tiersNames);
+		addTemplateTiersNames(docTEI, tiersNames, optionsTEI);
 		addTimeline();
 	}
 
@@ -555,7 +555,7 @@ public class ClanToTei extends ImportToTei {
 						tiers[j] = cf.t(i, j);
 					}
 					Element annotatedU = build_u_element(start, end, cl, tiers, extension);
-					set_AnnotU_element(tiers, annotatedU);
+					set_AnnotU_element(annotatedU, tiers, start, end);
 					div.appendChild(annotatedU);
 					i++;
 				}
@@ -622,7 +622,7 @@ public class ClanToTei extends ImportToTei {
 	 * @param tiers
 	 * @param u
 	 */
-	public void set_AnnotU_element(String[] tiers, Element u) {
+	public void set_AnnotU_element(Element u, String[] tiers, String startTime, String endTime) {
 		if (tiers.length > 0) {
 			for (String tier : tiers) {
 				ChatLine cl = new ChatLine(tier);
@@ -643,13 +643,24 @@ public class ClanToTei extends ImportToTei {
 					time.setAttribute("when", cl.tail);
 					u.appendChild(time);
 				} else {
-					this.tiersNames.add(cl.head.substring(1));
+					String spanType = cl.head.substring(1);
+					this.tiersNames.add(spanType);
 					Element span = docTEI.createElement("span");
-					spanGrp.setAttribute("type", cl.head.substring(1));
+					spanGrp.appendChild(span);
+					spanGrp.setAttribute("type", spanType);
+					if (optionsTEI.target.equals("dinlang") && (spanType.equals("lng") || spanType.equals("act"))) {
+						if (!startTime.equals("-1")) {
+							String startId = addTimeToTimeline(toSeconds(startTime));
+							TeiDocument.setAttrAnnotationBloc(docTEI, spanGrp, "start", startId);
+						}
+						if (!endTime.equals("-1")) {
+							String endId = addTimeToTimeline(toSeconds(endTime));
+							TeiDocument.setAttrAnnotationBloc(docTEI,spanGrp, "end", endId);
+						}
+					}
 					// Element seg = docTEI.createElement("seg");
 					// span.setAttribute("type", tierType);
 					span.setTextContent(cl.tail.replaceAll("\\s+", " "));
-					spanGrp.appendChild(span);
 					// span.appendChild(seg);
 				}
 			}

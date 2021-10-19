@@ -377,7 +377,7 @@ public class HT_ToTei {
 		 * 
 		 * }
 		 */
-		for (Map.Entry<String, TierInfo> entry : ht.tiersInfo.entrySet()) {
+		for (Entry<String, TierInfo> entry : ht.tiersInfo.entrySet()) {
 			Element note = docTEI.createElement("note");
 			TierInfo tierInfo = entry.getValue();
 			// code
@@ -395,17 +395,17 @@ public class HT_ToTei {
 			}
 			note.appendChild(noteParent);
 			// type
-			if (Utils.isNotEmptyOrNull(tierInfo.type.constraint)) {
+			if (Utils.isNotEmptyOrNull(tierInfo.linguistType.constraint)) {
 				Element noteType = docTEI.createElement("note");
 				noteType.setAttribute("type", "type");
-				noteType.setTextContent(tierInfo.type.constraint);
+				noteType.setTextContent(tierInfo.linguistType.constraint);
 				note.appendChild(noteType);
 			}
 			// subtype
-			if (Utils.isNotEmptyOrNull(tierInfo.type.lgq_type_id)) {
+			if (Utils.isNotEmptyOrNull(tierInfo.linguistType.lgq_type_id)) {
 				Element noteSubType = docTEI.createElement("note");
 				noteSubType.setAttribute("type", "subtype");
-				noteSubType.setTextContent(tierInfo.type.lgq_type_id);
+				noteSubType.setTextContent(tierInfo.linguistType.lgq_type_id);
 				note.appendChild(noteSubType);
 			}
 			// scribe
@@ -416,12 +416,12 @@ public class HT_ToTei {
 				note.appendChild(noteScribe);
 			}
 			// cv_id
-			if (Utils.isNotEmptyOrNull(tierInfo.type.cv_ref)) {
+			if (Utils.isNotEmptyOrNull(tierInfo.linguistType.cv_ref)) {
 				// System.out.println("Ajout de " + tierInfo.type.cv_ref + "
 				// dans " + entry.getKey());
 				Element noteCV_ID = docTEI.createElement("note");
 				noteCV_ID.setAttribute("type", "cv");
-				noteCV_ID.setTextContent(tierInfo.type.cv_ref);
+				noteCV_ID.setTextContent(tierInfo.linguistType.cv_ref);
 				note.appendChild(noteCV_ID);
 			}
 			// lang
@@ -441,18 +441,18 @@ public class HT_ToTei {
 				templateNote.appendChild(note);
 			}
 			// graphic_ref
-			if (Utils.isNotEmptyOrNull(tierInfo.type.graphic_ref)) {
+			if (Utils.isNotEmptyOrNull(tierInfo.linguistType.graphic_ref)) {
 				Element noteLang = docTEI.createElement("note");
 				noteLang.setAttribute("type", "graphicref");
-				noteLang.setTextContent(tierInfo.type.graphic_ref);
+				noteLang.setTextContent(tierInfo.linguistType.graphic_ref);
 				note.appendChild(noteLang);
 				templateNote.appendChild(note);
 			}
 			// time_align
-			if (Utils.isNotEmptyOrNull(tierInfo.type.time_align ? "true" : "false")) {
+			if (Utils.isNotEmptyOrNull(tierInfo.linguistType.time_align ? "true" : "false")) {
 				Element noteLang = docTEI.createElement("note");
 				noteLang.setAttribute("type", "timealign");
-				noteLang.setTextContent(tierInfo.type.time_align ? "true" : "false");
+				noteLang.setTextContent(tierInfo.linguistType.time_align ? "true" : "false");
 				note.appendChild(noteLang);
 				templateNote.appendChild(note);
 			}
@@ -605,7 +605,7 @@ public class HT_ToTei {
 					if (Utils.isNotEmptyOrNull(annot.id)) {
 						span.setAttribute("xml:id", annot.id);
 					}
-					if (!ht.tiersInfo.get(annot.name).type.time_align) {
+					if (!ht.tiersInfo.get(annot.name).linguistType.time_align) {
 						if (Utils.isNotEmptyOrNull(annot.link))
 							span.setAttribute("target", "#" + annot.link);
 					} else {

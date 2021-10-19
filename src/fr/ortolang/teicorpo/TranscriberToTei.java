@@ -120,7 +120,7 @@ public class TranscriberToTei extends ImportToTei {
 		this.setEncodingDesc();
 		this.setTextElement();
 		addTemplateDesc(docTEI);
-		addTemplateTiersNames(docTEI, tiersNames);
+		addTemplateTiersNames(docTEI, tiersNames, optionsTEI);
 		addTimeline();
 	}
 
@@ -180,14 +180,16 @@ public class TranscriberToTei extends ImportToTei {
 		}
 		Element recording = (Element) this.docTEI.getElementsByTagName("recording").item(0);
 		Element media = (Element) recording.getElementsByTagName("media").item(0);
-		if (attName == "audio_filename" && attValue != "") {
+		if (attName.equals("audio_filename") && !attValue.isEmpty()) {
+			media.setAttribute("url", attValue + ".wav");
+			media.setAttribute("mimeType", Utils.findMimeType(attValue + ".wav"));
+		} else if (attName.equals("elapsed_time")) {
+			recording.setAttribute("dur", attValue);
+		} else {
 			String sameMedia = this.inputTRS.getName();
 			sameMedia = sameMedia.substring(0, sameMedia.length() - 3) + "wav";
 			media.setAttribute("url", /* this.inputTRS.getParent() + "/" + */ sameMedia);
 			media.setAttribute("mimeType", Utils.findMimeType(sameMedia));
-			// utiliser ? attValue
-		} else if (attName == "elapsed_time") {
-			recording.setAttribute("dur", attValue);
 		}
 	}
 
@@ -221,11 +223,11 @@ public class TranscriberToTei extends ImportToTei {
 		for (int i = 0; i < map.getLength(); i++) {
 			String attName = map.item(i).getNodeName();
 			String attValue = map.item(i).getNodeValue();
-			if (attName == "audio_filename" && attValue != "") {
+			if (!attValue.isEmpty() && attName.equals("audio_filename")) {
 				this.addSourceDesc(attName, attValue);
-			} else if (attName == "xml:lang" && attValue != "") {
+			} else if (!attValue.isEmpty() && attName.equals("xml:lang")) {
 				this.rootTEI.setAttribute(attName, attValue);
-			} else if (attName == "version_date" && attValue != "") {
+			} else if (!attValue.isEmpty() && attName.equals("version_date")) {
 				this.addNotesElements(attName, attValue);
 			} else {
 				this.addNotesElements(attName, attValue);
@@ -294,7 +296,7 @@ public class TranscriberToTei extends ImportToTei {
 			if (optionsTEI.situation != null)
 					p.setTextContent(optionsTEI.situation);
 			else
-				p.setTextContent("no setting information");
+				p.setTextContent("");
 			setting.setAttribute("xml:id", "d0");
 		}
 	}

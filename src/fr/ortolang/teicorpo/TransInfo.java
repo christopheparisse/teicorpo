@@ -37,6 +37,8 @@ public class TransInfo {
 	public String transcriber;
 	// Version de la transcription
 	public String version;
+	// Date de version de la transcription
+	public String versionDate;
 	// Durée de la transcription
 	public String timeDuration;
 	// Heure du début de la transcription
@@ -68,8 +70,10 @@ public class TransInfo {
 		// la transcription
 		NodeList application = docTeiHeader.getElementsByTagName("application");
 		if (application != null && application.getLength() > 0) {
-			format = ((Element)application.item(0)).getAttribute("ident");
-			version = ((Element)application.item(0)).getAttribute("version");
+			String appformat = ((Element)application.item(0)).getAttribute("ident");
+			if (appformat == null) format = appformat;
+			String appversion = ((Element)application.item(0)).getAttribute("version");
+			if ((version == null || version.isEmpty()) && appversion != null) version = appversion;
 		}
 	}
 
@@ -84,6 +88,7 @@ public class TransInfo {
 		try {
 			title = fileDesc.getElementsByTagName("title").item(0).getTextContent();
 		} catch (Exception e) {
+			System.err.println("error on title: getFileDescInfo");
 		}
 
 		try {
@@ -92,9 +97,12 @@ public class TransInfo {
 			medianame = (new File(media.getAttribute("url"))).getName();
 			mediatype = media.getAttribute("mimeType");
 			Element date = (Element) recording.getElementsByTagName("date").item(0);
-			timeDuration = date.getAttribute("dur");
+			if (date != null)
+				timeDuration = date.getAttribute("dur");
 			// recordName = (new File(media.getAttribute("url"))).getName();
 		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println("error on recording: getFileDescInfo: " + e.toString());
 		}
 
 		NodeList recordingDate = fileDesc.getElementsByTagName("date");
@@ -109,31 +117,49 @@ public class TransInfo {
 		}
 
 		try {
+			// first item of notesStmt
 			Element notesStmt = (Element) fileDesc.getElementsByTagName("notesStmt").item(0);
-			Element addNotes = (Element) notesStmt.getElementsByTagName("note").item(0);
-			NodeList allNotes = addNotes.getElementsByTagName("note");
-			for (int i = 0; i < allNotes.getLength(); i++) {
-				if (TeiDocument.isElement(allNotes.item(i))) {
-					Element n = (Element) allNotes.item(i);
-					if (n.getAttribute("type").equals("scribe")) {
-						if (n.getTextContent().toLowerCase().contains("coder -")) {
-							transcriber = n.getTextContent().split("oder -")[1];
-						} else if (n.getTextContent().toLowerCase().contains("coder-")) {
-							transcriber = n.getTextContent().split("oder-")[1];
-						} else {
-							transcriber = n.getTextContent();
-						}
-					} else {
-						if (Utils.isNotEmptyOrNull(n.getTextContent())) {
-							// System.out.println("[" +
-							// n.getAttribute("type")+ "] " +
-							// n.getTextContent());
-							notes.add("[" + n.getAttribute("type") + "] " + n.getTextContent());
+			// list of main notes
+			NodeList mainNotes = notesStmt.getElementsByTagName("note");
+			for (int i = 0; i < mainNotes.getLength(); i++) {
+				Node nmi = mainNotes.item(i);
+				if (!TeiDocument.isElement(nmi)) continue;
+				// list of inner notes
+				Element emi = (Element) nmi;
+				if (emi.getAttribute("type") != null && emi.getAttribute("type").equals("COMMENTS_DESC")) {
+					// load comment desc
+					NodeList allNotes = emi.getElementsByTagName("note");
+					for (int j = 0; j < allNotes.getLength(); j++) {
+						if (TeiDocument.isElement(allNotes.item(j))) {
+							Element n = (Element) allNotes.item(j);
+							if (n.getAttribute("type").equals("scribe")) {
+								if (n.getTextContent().toLowerCase().contains("coder -")) {
+									transcriber = n.getTextContent().split("oder -")[1];
+								} else if (n.getTextContent().toLowerCase().contains("coder-")) {
+									transcriber = n.getTextContent().split("oder-")[1];
+								} else {
+									transcriber = n.getTextContent();
+								}
+							} else if (n.getAttribute("type").equals("version")) {
+								version = n.getTextContent();
+								if (version == null) version = "";
+							} else if (n.getAttribute("type").equals("version_date")) {
+								versionDate = n.getTextContent();
+								if (versionDate == null) versionDate = "";
+							} else {
+								if (Utils.isNotEmptyOrNull(n.getTextContent())) {
+									// System.out.println("[" +
+									// n.getAttribute("type")+ "] " +
+									// n.getTextContent());
+									notes.add("[" + n.getAttribute("type") + "] " + n.getTextContent());
+								}
+							}
 						}
 					}
 				}
 			}
 		} catch (Exception e) {
+			System.err.println("error on note: getFileDescInfo");
 		}
 	}
 

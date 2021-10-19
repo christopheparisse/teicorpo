@@ -6,17 +6,12 @@ import java.util.TreeMap;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpressionException;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 public class TeiToPartition {
 
 	// Liste des informations sur les tiers
 	ArrayList<TierInfo> tierInfos;
-	// Liste des types linguistiques
-	ArrayList<Element> lgqTypes;
 	// Liste des tiers
 	TreeMap<String, ArrayList<Annot>> tiers;
 	TreeMap<String, NewTier> newTiers;
@@ -47,7 +42,7 @@ public class TeiToPartition {
 	public static String getLgqConstraint(ArrayList<TierInfo> ti, String type) {
 		for (TierInfo tie : ti) {
 			if (tie.tier_id.equals(type))
-				return tie.type.constraint;
+				return tie.linguistType.constraint;
 		}
 		return "";
 	}
@@ -100,7 +95,7 @@ public class TeiToPartition {
 				String lgqt = "";
 				for (TierInfo ti : tierInfos) {
 					if (ti.tier_id.equals(choiceTag))
-						lgqt = ti.type.lgq_type_id == null ? "-" : ti.type.lgq_type_id;
+						lgqt = ti.linguistType.lgq_type_id == null ? LgqType.DEFAULT_LING_TYPE : ti.linguistType.lgq_type_id;
 				}
 				addElementToMap(tiers, choiceTag, a, lgqt, "-");
 			}
@@ -168,8 +163,7 @@ public class TeiToPartition {
 		int nth = 0;
 		for (int z = 0; z < spans.getLength(); z++) {
 			Node nodespan = spans.item(z);
-			// System.out.printf("%d %s %d %n", z, nodespan.getNodeName(),
-			// nodespan.getNodeType());
+			// System.err.printf("%d %s %d%n", z, nodespan.getNodeName(), nodespan.getNodeType());
 			if (!nodespan.getNodeName().equals("span"))
 				continue;
 			Element span = (Element) nodespan;
@@ -214,9 +208,16 @@ public class TeiToPartition {
 				// annot.previous);
 			} else {
 				annot.timereftype = "time";
-				String tstart = span.getAttribute("from");
-				String tend = span.getAttribute("to");
-				// System.out.printf("YY: %s %s %n", tstart, tend);
+				NamedNodeMap nnn = spanGrp.getAttributes();
+				/*
+				System.err.printf("YY0: [%d] {%s} %s%n", nnn.getLength(), span.getNodeName(), span.getTextContent());
+				for (int ii = 0; ii < nnn.getLength(); ii++) {
+					System.err.printf("YY00: %s %s%n", nnn.item(ii).getNodeName(), nnn.item(ii).getTextContent());
+				}
+				*/
+				String tstart = spanGrp.getAttribute("start");
+				String tend = spanGrp.getAttribute("end");
+				// System.err.printf("YY1: %s %s %n", tstart, tend);
 				if (Utils.isNotEmptyOrNull(tstart)) {
 					annot.start = timeline.getTimeValue(Utils.refID(tstart));
 				}
@@ -227,7 +228,7 @@ public class TeiToPartition {
 			String lgqt = "";
 			for (TierInfo ti : tierInfos) {
 				if (ti.tier_id.equals(typeSG))
-					lgqt = ti.type.lgq_type_id == null ? "-" : ti.type.lgq_type_id;
+					lgqt = ti.linguistType.lgq_type_id == null ? LgqType.DEFAULT_LING_TYPE : ti.linguistType.lgq_type_id;
 			}
 			//System.out.printf("Z %d time %s %s%n", nth, annot.start, annot.end);
 			addElementToMap(tiers, typeSG, annot, lgqt, name);
@@ -278,7 +279,7 @@ public class TeiToPartition {
 		for (int j = 0; j < notes.getLength(); j++) {
 			Element note = (Element) notes.item(j);
 			if (note.getAttribute("type").equals("TEMPLATE_DESC")) {
-				// System.out.println("trouvé les notes TEMPLATE");
+				// System.out.println("found the TEMPLATE notes");
 				NodeList templateChildren = note.getChildNodes();
 				for (int y = 0; y < templateChildren.getLength(); y++) {
 					TierInfo ti = new TierInfo();
@@ -294,13 +295,13 @@ public class TeiToPartition {
 						if (elt.getAttribute("type").equals("code")) {
 							ti.tier_id = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("graphicref")) {
-							ti.type.graphic_ref = elt.getTextContent();
+							ti.linguistType.graphic_ref = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("parent")) {
 							ti.parent = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("type")) {
-							ti.type.constraint = elt.getTextContent();
+							ti.linguistType.constraint = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("subtype")) {
-							ti.type.lgq_type_id = elt.getTextContent();
+							ti.linguistType.lgq_type_id = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("scribe")) {
 							ti.annotator = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("lang")) {
@@ -308,15 +309,15 @@ public class TeiToPartition {
 						} else if (elt.getAttribute("type").equals("langref")) {
 							ti.lang_ref = elt.getTextContent();
 						} else if (elt.getAttribute("type").equals("cv")) {
-							ti.type.cv_ref = elt.getTextContent();
+							ti.linguistType.cv_ref = elt.getTextContent();
 						}
 					}
-					if (!Utils.isNotEmptyOrNull(ti.type.lgq_type_id))
-						ti.type.lgq_type_id = ti.tier_id; // no ling type, the
+					if (!Utils.isNotEmptyOrNull(ti.linguistType.lgq_type_id) || ti.linguistType.lgq_type_id.equals("-"))
+						ti.linguistType.lgq_type_id = LgqType.DEFAULT_LING_TYPE; // no ling type, the
 															// ling are named as
 															// the tiers are.
-					if (ti.type.constraint == null)
-						ti.type.constraint = ""; // no ling type, the ling are
+					if (ti.linguistType.constraint == null)
+						ti.linguistType.constraint = ""; // no ling type, the ling are
 													// named as the tiers are.
 					// System.out.println(ti.toString());
 					// System.out.println(lgqType.getAttribute("LINGUISTIC_TYPE_REF"));

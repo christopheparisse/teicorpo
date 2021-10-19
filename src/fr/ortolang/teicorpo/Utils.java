@@ -462,6 +462,9 @@ public class Utils {
 			Transformer transformer = fabrique2.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
+//			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+
 			// Transformation
 			transformer.transform(source, resultat);
 		} catch (Exception e) {
@@ -470,6 +473,27 @@ public class Utils {
 		}
 	}
 
+	public static void createFile(Document domDoc, String outputFileName, String dtd) {
+		Source source = new DOMSource(domDoc);
+		Result resultat = new StreamResult(outputFileName);
+		try {
+			// Configuration du transformer
+			TransformerFactory fabrique2 = TransformerFactory.newInstance();
+			Transformer transformer = fabrique2.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
+			System.out.println("Create DTD : " + dtd);
+			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, dtd);
+//			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+
+			// Transformation
+			transformer.transform(source, resultat);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(1);
+		}
+	}
 
     public static List<String> loadTextFile(String filename) throws IOException {
 		List<String> ls = new ArrayList<String>();

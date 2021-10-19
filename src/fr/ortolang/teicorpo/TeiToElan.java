@@ -187,26 +187,35 @@ public class TeiToElan extends GenericMain {
 	public void conversion() throws Exception {
 		// Construction de l'en-tête
 		buildHeader();
-		if (!ttp.optionsOutput.model.isEmpty()) {
-			// Constructing controlled vocabbularies from the TEI file
-			List<Element> cvList = buildControlledVocabularies();
-			// Addition des vocabulaires contrôlés
-			for (Element e : cvList)
+		// Constructing controlled vocabularies from the TEI file
+		List<Element> cvList = buildControlledVocabularies();
+		// add controlled vocabularies
+		for (Element e : cvList) {
+			if (!ttp.optionsOutput.model.isEmpty()) {
+				String ID = e.getAttribute("CV_ID");
+				// if a model exist, all only cv which do not exist ? or replace old ones ?
+				Node n = annot_doc.getOwnerDocument().getElementById(ID);
+				if (n == null) {
+					annot_doc.appendChild(e);
+				} else {
+					// nothing or replace ? here it is replacing.
+					annot_doc.removeChild(n);
+					annot_doc.appendChild(e);
+				}
+			} else {
 				annot_doc.appendChild(e);
-		} // otherwise they are in the template
+			}
+		}
 		// timeline
 		buildTimeline(time_order);
 //		tstart = Utils.timeStamp("timeline", tstart);
-		// Construction des tiers
+		// Building the tiers
 		buildTiers();
 //		tstart = Utils.timeStamp("tiers", tstart);
-		if (!ttp.optionsOutput.model.isEmpty()) {
-			// Construction des types linguistiques
-			buildLgqTypes();
-		} // otherwise they are in the template
-//		tstart = Utils.timeStamp("types", tstart);
-		if (!ttp.optionsOutput.model.isEmpty()) {
-			// Construction des contraintes Elan
+		// Construction of linguistic types
+		buildLgqTypes();
+		if (ttp.optionsOutput.model.isEmpty()) {
+			// Construction of Elan constraints
 			buildConstraints();
 		} // otherwise they are in the template
 	}
@@ -409,26 +418,27 @@ public class TeiToElan extends GenericMain {
 		Set<String> namesLgqTypes = new HashSet<String>();
 		for (int j = 0; j < ttp.tierInfos.size(); j++) {
 			TierInfo ti = (TierInfo) ttp.tierInfos.get(j);
-			if (!namesLgqTypes.contains(ti.type.lgq_type_id)) {
-				namesLgqTypes.add(ti.type.lgq_type_id);
+			// if the type does not exist, and it is not already in the template
+			if (!namesLgqTypes.contains(ti.linguistType.lgq_type_id) && annot_doc.getOwnerDocument().getElementById(ti.linguistType.lgq_type_id) == null) {
+				namesLgqTypes.add(ti.linguistType.lgq_type_id);
 				Element lgqType = elanDoc.createElement("LINGUISTIC_TYPE");
-				lgqType.setAttribute("LINGUISTIC_TYPE_ID", ti.type.lgq_type_id);
-				if (!ti.type.constraint.equals("-"))
-					lgqType.setAttribute("CONSTRAINTS", ti.type.constraint);
-				if (LgqType.isTimeType(ti.type.constraint))
+				lgqType.setAttribute("LINGUISTIC_TYPE_ID", ti.linguistType.lgq_type_id);
+				if (!ti.linguistType.constraint.equals("-"))
+					lgqType.setAttribute("CONSTRAINTS", ti.linguistType.constraint);
+				if (LgqType.isTimeType(ti.linguistType.constraint))
 					lgqType.setAttribute("TIME_ALIGNABLE", "true");
 				else
 					lgqType.setAttribute("TIME_ALIGNABLE", "false");
-				if (Utils.isNotEmptyOrNull(ti.type.cv_ref))
-					lgqType.setAttribute("CONTROLLED_VOCABULARY_REF", ti.type.cv_ref);
+				if (Utils.isNotEmptyOrNull(ti.linguistType.cv_ref))
+					lgqType.setAttribute("CONTROLLED_VOCABULARY_REF", ti.linguistType.cv_ref);
 				lgqType.setAttribute("GRAPHIC_REFERENCES",
-						Utils.isNotEmptyOrNull(ti.type.graphic_ref) ? ti.type.graphic_ref : "false");
+						Utils.isNotEmptyOrNull(ti.linguistType.graphic_ref) ? ti.linguistType.graphic_ref : "false");
 				annot_doc.appendChild(lgqType);
 			}
 		}
 	}
 
-	// Elements constraint : toujours les mêmes dans les fichiers Elan
+	// Elements constraint : always the same values in Elan files
 	void buildConstraints() {
 		Element constraintTimeDiv = elanDoc.createElement("CONSTRAINT");
 		constraintTimeDiv.setAttribute("DESCRIPTION",
@@ -460,9 +470,10 @@ public class TeiToElan extends GenericMain {
 			NodeList keywordsList = textClass.getElementsByTagName("keywords");
 			for (int i = 0; i < keywordsList.getLength(); i++) {
 				Element keywords = (Element) keywordsList.item(i);
+				String ID = keywords.getAttribute("scheme");
 				HashMap<String, String> cvn = new HashMap<String, String>();
 				Element controlled_voc = elanDoc.createElement("CONTROLLED_VOCABULARY");
-				controlled_voc.setAttribute("CV_ID", keywords.getAttribute("scheme"));
+				controlled_voc.setAttribute("CV_ID", ID);
 				cvs.put(keywords.getAttribute("scheme"), cvn);
 				Element description = elanDoc.createElement("DESCRIPTION");
 				description.setTextContent(keywords.getAttribute("style"));
@@ -513,13 +524,13 @@ public class TeiToElan extends GenericMain {
 					}
 					*/
 				}
-				if (Utils.isNotEmptyOrNull(ti.type.lgq_type_id))
-					tier.setAttribute("LINGUISTIC_TYPE_REF", ti.type.lgq_type_id);
+				if (Utils.isNotEmptyOrNull(ti.linguistType.lgq_type_id))
+					tier.setAttribute("LINGUISTIC_TYPE_REF", ti.linguistType.lgq_type_id);
 				else {
 					tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
 					setDefault = true;
 				}
-				return ti.type.cv_ref;
+				return ti.linguistType.cv_ref;
 			}
 		}
 //		System.out.printf("setTierAtt(type): default%n");
@@ -569,7 +580,7 @@ public class TeiToElan extends GenericMain {
 //						}
 //					}
 				}
-				return ti.type.cv_ref;
+				return ti.linguistType.cv_ref;
 			}
 		}
 //		System.out.printf("setTierAtt(new): default%n");
@@ -585,13 +596,13 @@ public class TeiToElan extends GenericMain {
 		String origformat = ttp.originalFormat();
 		NodeList nl = this.annot_doc.getChildNodes();
 		for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
-			String type = entry.getKey();
+			String nameOfTier = entry.getKey();
 			Element tier = null;
 			if (!ttp.optionsOutput.model.isEmpty()) {
 				// try do find a tier: "//TIER[TIER_ID='" + type + "']";
 				for (int i = 0; i < nl.getLength(); i++) {
 					Node elt = (Node) nl.item(i);
-					if (elt.getNodeName().equals("TIER") && ((Element)elt).getAttribute("TIER_ID").equals(type)) {
+					if (elt.getNodeName().equals("TIER") && ((Element)elt).getAttribute("TIER_ID").equals(nameOfTier)) {
 						// System.out.printf("Existing Tier ENTRY: %s%n", type);
 						tier = (Element) elt;
 						break;
@@ -603,23 +614,24 @@ public class TeiToElan extends GenericMain {
 				// not found or no template: create new tier
 				tier = elanDoc.createElement("TIER");
 				// System.out.printf("New Tier ENTRY: %s%n", type);
-				tier.setAttribute("TIER_ID", type);
+				tier.setAttribute("TIER_ID", nameOfTier);
 				this.annot_doc.appendChild(tier);
 			}
 
 //			tstart = Utils.timeStamp("bt:" + entry.getKey() + " " + entry.getValue().size(), tstart);
 			String cvref;
-			if (ttp.newTiers.containsKey(type)) {
+			if (ttp.newTiers.containsKey(nameOfTier)) {
 				// System.out.printf("0KK: %s %s (%s)%n", tier.getNodeName(), type, ttp.newTiers.get(type));
-				cvref = setTierAtt(tier, ttp.newTiers.get(type), type);
+				cvref = setTierAtt(tier, ttp.newTiers.get(nameOfTier), nameOfTier);
 			} else
 				// System.out.printf("0HH: %s %s%n", tier.getNodeName(), type);
-				cvref = setTierAtt(tier, type);
+				cvref = setTierAtt(tier, nameOfTier);
 			for (Annot a : entry.getValue()) {
 //				System.out.println(a.toString());
 				Element annot = elanDoc.createElement("ANNOTATION");
 				if (a.timereftype.equals("time")) {
 //					tstart = Utils.timeStamp("time:" + a.name, tstart);
+					// System.err.printf("TIME: (%s) %s%n", type, a.toString());
 					Element align_annot = elanDoc.createElement("ALIGNABLE_ANNOTATION");
 					align_annot.setAttribute("ANNOTATION_ID", a.id);
 					align_annot.setAttribute("TIME_SLOT_REF1", timelineValueOf(a.start));

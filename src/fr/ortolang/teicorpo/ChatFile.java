@@ -127,7 +127,7 @@ public class ChatFile {
 						nid.code = trueCode;
 						nid.role = wds[1];
 						ids.add(nid);
-						idsMap.add(wds[0]);
+						idsMap.add(trueCode);
 						// System.out.printf("ID2: %s %s%n", nid.code, nid.role);
 					} else if (wds.length == 3) {
 						ID nid = new ID();
@@ -135,7 +135,7 @@ public class ChatFile {
 						nid.name = wds[1];
 						nid.role = wds[2];
 						ids.add(nid);
-						idsMap.add(wds[0]);
+						idsMap.add(trueCode);
 						// System.out.printf("ID3: %s %s %s%n", nid.code, nid.role, nid.name);
 					} else {
 						System.err.printf("Bad ID: %s%n", rls[k]);
