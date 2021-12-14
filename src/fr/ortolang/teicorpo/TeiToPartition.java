@@ -179,9 +179,7 @@ public class TeiToPartition {
 				annot.id = spid;
 			else
 				annot.id = "x" + idIncr++;
-			// System.out.printf("%d %d %s %s %s %s {%s} %s ", z,
-			// span.getNodeType(), typeSG, id, name, span.getTagName(),
-			// annot.content, annot.id);
+			//System.out.printf("%d %d %s %s %s %s {%s} %s ", z, span.getNodeType(), typeSG, id, name, span.getTagName(), annot.getContent(), annot.id);
 			// if (span.hasAttribute("target")){
 			if (!LgqType.isTimeType(getLgqConstraint(tierInfos, typeSG))) {
 				annot.timereftype = "ref";
@@ -196,7 +194,7 @@ public class TeiToPartition {
 				/*
 				 * add equivalence in time in case it is necessary
 				 */
-				// System.out.printf("++ %d %s %n", z, annot);
+				//System.out.printf("++ %d %s %n", z, annot);
 				if (timelength >= 0.0) {
 					Double refstart = ((double)nth) * timelength + Double.parseDouble(start);
 					Double refend = (((double)nth) + 1.0) * timelength + Double.parseDouble(start);
@@ -208,16 +206,16 @@ public class TeiToPartition {
 				// annot.previous);
 			} else {
 				annot.timereftype = "time";
-				NamedNodeMap nnn = spanGrp.getAttributes();
+				NamedNodeMap nnn = span.getAttributes();
 				/*
 				System.err.printf("YY0: [%d] {%s} %s%n", nnn.getLength(), span.getNodeName(), span.getTextContent());
 				for (int ii = 0; ii < nnn.getLength(); ii++) {
 					System.err.printf("YY00: %s %s%n", nnn.item(ii).getNodeName(), nnn.item(ii).getTextContent());
 				}
 				*/
-				String tstart = spanGrp.getAttribute("start");
-				String tend = spanGrp.getAttribute("end");
-				// System.err.printf("YY1: %s %s %n", tstart, tend);
+				String tstart = span.getAttribute("from");
+				String tend = span.getAttribute("to");
+				//System.err.printf("YY1: %s %s %n", tstart, tend);
 				if (Utils.isNotEmptyOrNull(tstart)) {
 					annot.start = timeline.getTimeValue(Utils.refID(tstart));
 				}
@@ -227,6 +225,7 @@ public class TeiToPartition {
 			}
 			String lgqt = "";
 			for (TierInfo ti : tierInfos) {
+				//System.out.printf("QQQ %s %s %s%n", ti.tier_id, typeSG, ti.linguistType.lgq_type_id);
 				if (ti.tier_id.equals(typeSG))
 					lgqt = ti.linguistType.lgq_type_id == null ? LgqType.DEFAULT_LING_TYPE : ti.linguistType.lgq_type_id;
 			}
@@ -312,13 +311,21 @@ public class TeiToPartition {
 							ti.linguistType.cv_ref = elt.getTextContent();
 						}
 					}
-					if (!Utils.isNotEmptyOrNull(ti.linguistType.lgq_type_id) || ti.linguistType.lgq_type_id.equals("-"))
-						ti.linguistType.lgq_type_id = LgqType.DEFAULT_LING_TYPE; // no ling type, the
-															// ling are named as
-															// the tiers are.
-					if (ti.linguistType.constraint == null)
+
+					//System.out.printf("QQQ: %s%n", ti.linguistType.toString());
+
+					if (Utils.isNotEmptyOrNull(ti.linguistType.constraint)) {
+						// if there is a constraint, respect it
+						if (Utils.isEmptyOrNull(ti.linguistType.lgq_type_id))
+							ti.linguistType.lgq_type_id = ti.tier_id == null ? ti.linguistType.constraint : ti.tier_id; // creates a new name
+					} else {
+						if (Utils.isEmptyOrNull(ti.linguistType.lgq_type_id) || ti.linguistType.lgq_type_id.equals("-")) ti.linguistType.lgq_type_id = LgqType.DEFAULT_LING_TYPE; // no ling type
 						ti.linguistType.constraint = ""; // no ling type, the ling are
-													// named as the tiers are.
+						// another option is that the ling are named as the tiers are.
+					}
+
+					//System.out.printf("QQQ2: %s%n", ti.linguistType.toString());
+
 					// System.out.println(ti.toString());
 					// System.out.println(lgqType.getAttribute("LINGUISTIC_TYPE_REF"));
 					tierInfos.add(ti);

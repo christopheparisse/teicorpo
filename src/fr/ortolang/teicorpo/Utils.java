@@ -40,6 +40,10 @@ public class Utils {
 		return s!= null && !s.isEmpty() && s != "";
 	}
 
+	public static boolean isEmptyOrNull(String s){
+		return s == null || s.isEmpty() || s == "";
+	}
+
 	public static String cleanString(String s){
 		return s.trim().replaceAll(" {2,}", " ").replaceAll("\n", "").trim();
 	}

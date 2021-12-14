@@ -1,0 +1,140 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0
+xmax = 3345.120116999999937
+tiers? <exists>
+size = 22
+item []:
+    item [1]:
+        class = "IntervalTier"
+        name = "Anita_Musso"
+        xmin = 0
+        xmax = 0
+        intervals: size = 871
+    item [2]:
+        class = "IntervalTier"
+        name = "Anita_Musso-CPOSTAG"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [3]:
+        class = "IntervalTier"
+        name = "Anita_Musso-DEPREL"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [4]:
+        class = "IntervalTier"
+        name = "Anita_Musso-DEPS"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [5]:
+        class = "IntervalTier"
+        name = "Anita_Musso-FEATS"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [6]:
+        class = "IntervalTier"
+        name = "Anita_Musso-FORM"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [7]:
+        class = "IntervalTier"
+        name = "Anita_Musso-HEAD"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [8]:
+        class = "IntervalTier"
+        name = "Anita_Musso-LEMMA"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [9]:
+        class = "IntervalTier"
+        name = "Anita_Musso-MISC"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [10]:
+        class = "IntervalTier"
+        name = "Anita_Musso-POSTAG"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [11]:
+        class = "IntervalTier"
+        name = "Anita_Musso-conll"
+        xmin = 0
+        xmax = 0
+        intervals: size = 7173
+    item [12]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff"
+        xmin = 0
+        xmax = 0
+        intervals: size = 418
+    item [13]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-CPOSTAG"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [14]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-DEPREL"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [15]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-DEPS"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [16]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-FEATS"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [17]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-FORM"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [18]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-HEAD"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [19]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-LEMMA"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [20]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-MISC"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [21]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-POSTAG"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945
+    item [22]:
+        class = "IntervalTier"
+        name = "Sonia_Branca-Rosoff-conll"
+        xmin = 0
+        xmax = 0
+        intervals: size = 2945

@@ -1,2 +1,7 @@
 test-vrac/
 .DS_Store
+*.mp4
+*.mp3
+*.m4a
+*.wav
+*.avi

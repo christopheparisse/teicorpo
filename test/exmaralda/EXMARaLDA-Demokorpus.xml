@@ -1,0 +1,124 @@
+<resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+    <identifier identifierType="DOI">10.25592/uhhfdm.8364</identifier>
+    <creators>
+        <creator>
+            <creatorName>Hamburger Zentrum für Sprachkorpora</creatorName>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en-US">EXMARaLDA Demo corpus 1.1</title>
+    </titles>
+    <publisher>Universität Hamburg</publisher>
+    <publicationYear>2020</publicationYear>
+    <dates>
+        <date dateType="Created">1970-01-07/2013-04-01</date>
+    </dates>
+    <subjects>
+        <subject>L1 data</subject>
+        <subject>EXMARaLDA</subject>
+        <subject>linguistics</subject>
+        <subject>German</subject>
+        <subject>English</subject>
+        <subject>French</subject>
+        <subject>Spanish</subject>
+        <subject>Turkish</subject>
+        <subject>Polish</subject>
+        <subject>Vietnamese</subject>
+        <subject>Swedish</subject>
+        <subject>Norwegian</subject>
+        <subject>Italian</subject>
+        <subject>Russian</subject>
+        <subject>Afrikaans</subject>
+        <subject>Portuguese</subject>
+    </subjects>
+    <language>eng</language>
+    <resourceType resourceTypeGeneral="Dataset">Collection</resourceType>
+    <sizes>
+        <size>69 speakers (23 female, 46 male)</size>
+        <size>26 communications</size>
+        <size>1.89 hours</size>
+        <size>113 minutes</size>
+        <size>26 recordings</size>
+        <size>26 transcriptions</size>
+        <size>19918 words</size>
+        <size>5.71 GB</size>
+    </sizes>
+    <formats>
+        <format>application/pdf</format>
+        <format>application/xml;format-variant=exmaralda-exb</format>
+        <format>application/xml;format-variant=exmaralda-exs</format>
+        <format>application/xml;format-variant=exmaralda-coma</format>
+        <format>application/zip</format>
+        <format>audio/wav</format>
+        <format>audio/mp3</format>
+        <format>video/mp4</format>
+        <format>video/mpg</format>
+    </formats>
+    <version>1.1</version>
+    <rightsList>
+        <rights>Open access: For research and teaching purposes.</rights>
+    </rightsList>
+    <descriptions>
+        <description xml:lang="en-US" descriptionType="Abstract">A selection of short audio and video recordings in various languages to be used for instruction or demonstration of the EXMARaLDA system.</description>
+        <description xml:lang="en-US" descriptionType="Abstract">The EXMARaLDA Demo Corpus is a small corpus which you can use to try out the functionality of the EXMARaLDA system.
+            Please note that this corpus is for demonstration purposes only and will be changed occasionally.
+            Further information can be found in a PDF document that describes the online and offline use of the EXMARaLDA Demo Corpus.</description>
+        <description xml:lang="en-US" descriptionType="Other">
+		&lt;p&gt;&lt;strong&gt;CLARIN Metadata summary for EXMARaLDA Demo corpus (CMDI-based)&lt;/strong&gt;&lt;/p&gt;
+    	
+    	&lt;p&gt;
+    	
+    		&lt;strong&gt;Title: &lt;/strong&gt;EXMARaLDA Demo corpus&lt;br/&gt;
+    	
+        	&lt;strong&gt;Description: &lt;/strong&gt;A selection of short audio and video recordings in various languages to be used for instruction or demonstration of the EXMARaLDA system.&lt;br/&gt;
+		
+			&lt;strong&gt;Publication date: &lt;/strong&gt;2020&lt;br/&gt;
+		
+			&lt;strong&gt;Data owner: &lt;/strong&gt;
+			Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de
+						&lt;br/&gt;
+					
+                		&lt;strong&gt;Contributors: &lt;/strong&gt;
+                	Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de (depositor), Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de (compiler), Wilfried Schütte, schuette@ids-mannheim.de (compiler), Dan Loehr, loehrd@georgetown.edu (compiler), Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de (compiler), Secil Yusun (data_inputter), Annette Schnieder (data_inputter), Andrea Rolle (data_inputter), Silke Merkel (data_inputter), Thomas Schmidt (data_inputter), Martina Schwalm (data_inputter), Peter M. Fischer (data_inputter), Kim-Chi Hamze (data_inputter), Franziska Watzke (data_inputter), Roman Stachowicz (data_inputter), Karolina Kaminska (data_inputter), Nicole Stäwen (data_inputter), Maria Görlich (data_inputter), Tara Al-Jaraf (data_inputter), Florian Fuchs (data_inputter), Heidemarie Sambale (data_inputter), Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de (developer), Thomas Schmidt (researcher), Kai Wörner (researcher), Hanna Hedeland (researcher), Deutsche Forschungsgemeinschaft (DFG) (sponsor)
+                			&lt;br/&gt;
+                		
+            	&lt;strong&gt;Project: &lt;/strong&gt;
+            	Z2 "Computer Assisted Methods for the creation and analysis of  multilingual data", German Research Foundation (DFG)
+            				&lt;br/&gt;
+            			
+            	&lt;strong&gt;Keywords: &lt;/strong&gt;
+            	L1 data, EXMARaLDA
+            				&lt;br/&gt;
+            			
+    	&lt;strong&gt;Languages: &lt;/strong&gt;
+    	&lt;a href="https://www.ethnologue.com/language/deu" target="_blank"&gt;German (deu)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/eng" target="_blank"&gt;English (eng)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/fra" target="_blank"&gt;French (fra)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/spa" target="_blank"&gt;Spanish (spa)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/tur" target="_blank"&gt;Turkish (tur)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/pol" target="_blank"&gt;Polish (pol)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/vie" target="_blank"&gt;Vietnamese (vie)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/swe" target="_blank"&gt;Swedish (swe)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/nor" target="_blank"&gt;Norwegian (nor)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/ita" target="_blank"&gt;Italian (ita)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/rus" target="_blank"&gt;Russian (rus)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/afr" target="_blank"&gt;Afrikaans (afr)&lt;/a&gt;, &lt;a href="https://www.ethnologue.com/language/por" target="_blank"&gt;Portuguese (por)&lt;/a&gt;
+    						&lt;br/&gt;
+    					
+            	&lt;strong&gt;Size: &lt;/strong&gt;
+            	69 speakers (23 female, 46 male), 26 communications, 1.89 hours, 113 minutes, 26 recordings, 26 transcriptions, 19918 words
+            					&lt;br/&gt;
+            				
+                		&lt;strong&gt;Annotation types: &lt;/strong&gt;
+                	transcription (manual): HIAT (simplified)HIATMimik und Gestik der Sprecher werden nur ansatzweise angedeutet. Abkürzungen: LA= linker Arm, RA= rechter Arm, LH= linke Hand, RH= rechte Hand, KO= Kopf, OK= Oberkörper., cs: code-switch, de: German translation, en: English translation, en: Englisch translation, k: free comment, akz: accentuation/stress, nv: non-verbal, sup: suprasegmental information, hd: Standard German translation
+                			&lt;br/&gt;
+                		
+            	&lt;strong&gt;Temporal Coverage: &lt;/strong&gt;
+            	1970-01-07/2013-04-01
+            	&lt;br/&gt;
+            
+            			&lt;strong&gt;Spatial Coverage: &lt;/strong&gt;
+            		Hamburg, DE; DE; Lisbon, PT; London, GB; St. Aegidien, DE; ES; IT; Mülheimer Straße 36, 46045 Oberhausen, DE; Finnentroper Str. 39, 57439 Attendorn, DE; Reeperbahn, 20359 Hamburg, DE; 21 Jump Street, 41610 Virginia, US; Theaterplatz 2, 01067 Dresden, DE; GB; Moscow, RU; VN; US; Reykjavik, IS; PL; Paris, FR; SE
+            				&lt;br/&gt;
+            			
+            	&lt;strong&gt;Genre: &lt;/strong&gt;
+            	discourse
+            				&lt;br/&gt;
+            			
+            	&lt;strong&gt;Modality: &lt;/strong&gt;
+            	spoken
+            				&lt;br/&gt;
+            			
+		&lt;/p&gt;
+    </description>
+    </descriptions>
+</resource>

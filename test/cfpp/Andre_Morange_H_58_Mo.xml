@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title> Andre_Morange_H_58_Mo </title>
+        <respStmt>
+          <resp> Responsables du corpus </resp>
+          <name> Sonia Branca-Rosoff </name>
+          <name> Florence Lefeuvre </name>
+          <name> Serge Fleury </name>
+          <name> Mat Pires </name>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="word"> 14652 </measure>
+      </extent>
+      <publicationStmt>
+        <publisher> projet Orfeo </publisher>
+        <pubPlace> http://projet-orfeo.fr </pubPlace>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/3.0"/>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note type="commentaireDate"/>
+        <note type="commentaireQualiteSon"/>
+      </notesStmt>
+      <sourceDesc>
+        <bibl> fichier <name> Andre_Morange_H_58_Mo </name> du corpus/projet <name> CFPP </name>
+        </bibl>
+        <recordingStmt>
+          <recording ana="#peu_bruité #audio/x-wav #NULL" dur="01:08:46" type="audio">
+            <date> 24/09/2008 </date>
+          </recording>
+        </recordingStmt>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <interpretation>
+          <p ana="automatique">Annotation automatique</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <abstract>
+        <p> interview sur la vie dans le quartier </p>
+      </abstract>
+      <langUsage>
+        <language ident="fr"> Français </language>
+      </langUsage>
+      <textClass>
+        <catRef corresp="type" target="entretien"/>
+        <catRef corresp="secteur" target="privé"/>
+        <catRef corresp="milieu" target="amical"/>
+        <catRef corresp="channel" target="face_à_face"/>
+        <catRef corresp="modality" target="oral"/>
+        <catRef corresp="nbLocuteurs" target="2+"/>
+      </textClass>
+      <settingDesc>
+        <place>
+          <p> France, Ile-de-France, Montreuil </p>
+        </place>
+      </settingDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="Sonia_Branca-Rosoff">
+            <sex> F </sex>
+            <age> 61+ </age>
+            <education> études supérieures </education>
+            <birth>
+              <placeName> USA, New York </placeName>
+            </birth>
+            <occupation> enseignant-chercheur </occupation>
+            <langKnowledge>
+              <langKnown level="langue_maternelle"> français </langKnown>
+            </langKnowledge>
+          </person>
+          <person xml:id="André_Morange">
+            <sex> M </sex>
+            <age> 21-60 </age>
+            <education> primaire </education>
+            <birth>
+              <placeName> France, Ile-de-France, Montreuil </placeName>
+            </birth>
+            <occupation> informaticien </occupation>
+            <langKnowledge>
+              <langKnown level="langue_maternelle"> français </langKnown>
+            </langKnowledge>
+          </person>
+          <person xml:id="Nasser">
+            <sex> M </sex>
+            <age> inconnu </age>
+            <education> inconnu </education>
+            <birth>
+              <placeName> inconnu </placeName>
+            </birth>
+            <occupation> inconnu </occupation>
+            <langKnowledge>
+              <langKnown level="langue_maternelle"> français </langKnown>
+            </langKnowledge>
+          </person>
+          <person xml:id="L4">
+            <sex> M </sex>
+            <age> inconnu </age>
+            <education> inconnu </education>
+            <birth>
+              <placeName> inconnu </placeName>
+            </birth>
+            <occupation> inconnu </occupation>
+            <langKnowledge>
+              <langKnown level="langue_maternelle"> français </langKnown>
+            </langKnowledge>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+</TEI>

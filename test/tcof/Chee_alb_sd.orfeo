@@ -1,0 +1,1670 @@
+# sent_id = cefc-tcof-Chee_alb_sd-1
+# text = au taquet au taquet on est on est à l'âge de Néandertal de
+1	au	à+le	PRE	PRE	_	6	periph	_	_	1.630000	1.660000	L2
+2	taquet	taquet	NOM	NOM	_	1	dep	_	_	1.670000	1.790000	L2
+3	au	à+le	PRE	PRE	_	6	periph	_	_	1.800000	1.820000	L2
+4	taquet	taquet	NOM	NOM	_	3	dep	_	_	1.830000	2.070000	L2
+5	on	on	CLS	CLS	_	6	subj	_	_	2.080000	2.280000	L2
+6	est	être	VRB	VRB	_	0	root	_	_	2.290000	2.450000	L2
+7	on	on	CLS	CLS	_	8	subj	_	_	2.460000	2.600000	L2
+8	est	être	VRB	VRB	_	6	para	_	_	2.610000	2.640000	L2
+9	à	à	PRE	PRE	_	8	dep	_	_	2.650000	2.730000	L2
+10	l'	le	DET	DET	_	11	spe	_	_	2.740000	2.830000	L2
+11	âge	âge	NOM	NOM	_	9	dep	_	_	2.840000	2.990000	L2
+12	de	de	PRE	PRE	_	11	dep	_	_	3.050000	3.120000	L2
+13	Néandertal	Néandertal	NOM	NOM	_	12	dep	_	_	3.170000	3.930000	L2
+14	de	de	PRE	PRE	_	13	dep	_	_	3.940000	4.270000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-2
+# text = on est à l'âge de la né-~ la Néandertal de la de la structure musicale
+1	on	on	CLS	CLS	_	2	subj	_	_	4.280000	4.380000	L2
+2	est	être	VRB	VRB	_	0	root	_	_	4.390000	4.410000	L2
+3	à	à	PRE	PRE	_	2	dep	_	_	4.460000	4.490000	L2
+4	l'	le	DET	DET	_	5	spe	_	_	4.500000	4.530000	L2
+5	âge	âge	NOM	NOM	_	3	dep	_	_	4.540000	4.630000	L2
+6	de	de	PRE	PRE	_	5	dep	_	_	4.670000	4.690000	L2
+7	la	le	DET	DET	_	8	spe	_	_	4.700000	4.750000	L2
+8	né-~	né-~	NOM	NOM	_	6	dep	_	_	4.760000	5.150000	L2
+9	la	le	DET	DET	_	10	spe	_	_	5.160000	5.210000	L2
+10	Néandertal	Néandertal	NOM	NOM	_	8	para	_	_	5.340000	5.920000	L2
+11	de	de	PRE	PRE	_	10	dep	_	_	5.930000	6.020000	L2
+12	la	le	DET	DET	_	11	dep	_	_	6.030000	6.130000	L2
+13	de	de	PRE	PRE	_	11	para	_	_	6.140000	6.260000	L2
+14	la	le	DET	DET	_	15	spe	_	_	6.270000	6.330000	L2
+15	structure	structure	NOM	NOM	_	13	dep	_	_	6.340000	6.730000	L2
+16	musicale	musical	ADJ	ADJ	_	15	dep	_	_	6.740000	7.250000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-3
+# text = mais c'est fou quoi
+1	mais	mais	COO	COO	_	3	mark	_	_	7.320000	7.370000	L2
+2	c'	ce	CLS	CLS	_	3	subj	_	_	7.380000	7.400000	L2
+3	est	être	VRB	VRB	_	0	root	_	_	7.480000	7.500000	L2
+4	fou	fou	ADJ	ADJ	_	3	dep	_	_	7.510000	7.560000	L2
+5	quoi	quoi	INT	INT	_	4	dm	_	_	7.570000	7.710000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-4
+# text = il y a des webzines ouais
+1	il	il	CLS	CLS	_	3	subj	_	_	7.720000	7.770000	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	7.780000	7.810000	L2
+3	a	avoir	VRB	VRB	_	0	root	_	_	7.820000	7.850000	L2
+4	des	de	PRE	PRE	_	3	dep	_	_	7.860000	7.970000	L2
+5	webzines	webzines	NOM	NOM	_	4	dep	_	_	7.980000	8.410000	L2
+6	ouais	ouais	INT	INT	_	5	dm	_	_	8.420000	8.580000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-5
+# text = c'est une chose
+1	c'	ce	CLS	CLS	_	2	subj	_	_	8.590000	8.610000	L2
+2	est	être	VRB	VRB	_	0	root	_	_	8.620000	8.640000	L2
+3	une	un	DET	DET	_	4	spe	_	_	8.700000	8.760000	L2
+4	chose	chose	NOM	NOM	_	2	dep	_	_	8.860000	9.070000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-6
+# text = mais il y a trop peu d'organisation
+1	mais	mais	COO	COO	_	4	mark	_	_	9.740000	9.810000	L2
+2	il	il	CLS	CLS	_	4	subj	_	_	9.820000	9.880000	L2
+3	y	y	CLI	CLI	_	4	dep	_	_	9.890000	9.910000	L2
+4	a	avoir	VRB	VRB	_	0	root	_	_	9.920000	9.950000	L2
+5	trop	trop	ADV	ADV	_	6	dep	_	_	9.960000	10.320000	L2
+6	peu	peu	ADV	ADV	_	4	dep	_	_	10.330000	10.470000	L2
+7	d'	de	PRE	PRE	_	4	dep	_	_	10.480000	10.500000	L2
+8	organisation	organisation	NOM	NOM	_	7	dep	_	_	10.510000	11.290000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-7
+# text = il y a trop peu de salles
+1	il	il	CLS	CLS	_	3	subj	_	_	11.360000	11.440000	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	11.450000	11.470000	L2
+3	a	avoir	VRB	VRB	_	0	root	_	_	11.480000	11.500000	L2
+4	trop	trop	ADV	ADV	_	5	dep	_	_	11.560000	11.790000	L2
+5	peu	peu	ADV	ADV	_	3	dep	_	_	11.800000	11.990000	L2
+6	de	de	PRE	PRE	_	3	dep	_	_	12.000000	12.020000	L2
+7	salles	salle	NOM	NOM	_	6	dep	_	_	12.120000	12.460000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-8
+# text = il y a trop peu de de de de de communication euh assez popularisées pour pour réussir à faire jouer le nombre de groupes qu'il y a sur sur la France quoi
+1	il	il	CLS	CLS	_	3	subj	_	_	12.470000	12.530000	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	12.540000	12.560000	L2
+3	a	avoir	VRB	VRB	_	14	aux	_	_	12.570000	12.610000	L2
+4	trop	trop	ADV	ADV	_	5	dep	_	_	12.620000	12.910000	L2
+5	peu	peu	ADV	ADV	_	3	dep	_	_	13.020000	13.250000	L2
+6	de	de	PRE	PRE	_	3	dep	_	_	13.260000	13.660000	L2
+7	de	de	PRE	PRE	_	6	para	_	_	14.440000	14.600000	L2
+8	de	de	PRE	PRE	_	7	para	_	_	14.610000	14.810000	L2
+9	de	de	PRE	PRE	_	8	para	_	_	14.820000	14.950000	L2
+10	de	de	PRE	PRE	_	9	para	_	_	14.960000	15.140000	L2
+11	communication	communication	NOM	NOM	_	10	dep	_	_	15.150000	16.240000	L2
+12	euh	euh	INT	INT	_	11	dm	_	_	16.250000	16.840000	L2
+13	assez	assez	ADV	ADV	_	14	dep	_	_	17.950001	18.180000	L2
+14	popularisées	populariser	VPP	VPP	_	0	root	_	_	18.230000	18.920000	L2
+15	pour	pour	PRE	PRE	_	14	dep	_	_	18.959999	19.230000	L2
+16	pour	pour	PRE	PRE	_	15	para	_	_	19.530001	19.620001	L2
+17	réussir	réussir	VNF	VNF	_	16	dep	_	_	19.719999	20.150000	L2
+18	à	à	PRE	PRE	_	17	dep	_	_	20.160000	20.260000	L2
+19	faire	faire	VNF	VNF	_	18	dep	_	_	20.270000	20.420000	L2
+20	jouer	jouer	VNF	VNF	_	19	dep	_	_	20.430000	20.629999	L2
+21	le	le	DET	DET	_	22	spe	_	_	20.639999	20.760000	L2
+22	nombre	nombre	NOM	NOM	_	20	dep	_	_	20.770000	21.120001	L2
+23	de	de	PRE	PRE	_	22	dep	_	_	21.129999	21.150000	L2
+24	groupes	groupe	NOM	NOM	_	23	dep	_	_	21.240000	21.450001	L2
+25	qu'	que	PRQ	PRQ	_	28	dep	_	_	21.600000	21.620001	L2
+26	il	il	CLS	CLS	_	28	subj	_	_	21.629999	21.680000	L2
+27	y	y	CLI	CLI	_	28	dep	_	_	21.690001	21.709999	L2
+28	a	avoir	VRB	VRB	_	22	dep	_	_	21.719999	21.879999	L2
+29	sur	sur	PRE	PRE	_	28	dep	_	_	21.920000	22.309999	L2
+30	sur	sur	PRE	PRE	_	29	para	_	_	22.370001	22.590000	L2
+31	la	le	DET	DET	_	32	spe	_	_	22.600000	22.700001	L2
+32	France	France	NOM	NOM	_	30	dep	_	_	22.709999	23.000000	L2
+33	quoi	quoi	INT	INT	_	32	dm	_	_	23.010000	23.150000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-9
+# text = tu regardes tu vas sur des petits webzines des trucs comme ça qui proposent par exemple euh
+1	tu	tu	CLS	CLS	_	2	subj	_	_	23.840000	23.889999	L2
+2	regardes	regarder	VRB	VRB	_	0	root	_	_	23.900000	24.110001	L2
+3	tu	tu	CLS	CLS	_	4	subj	_	_	24.120001	24.170000	L2
+4	vas	aller	VRB	VRB	_	2	para	_	_	24.180000	24.290001	L2
+5	sur	sur	PRE	PRE	_	4	dep	_	_	24.299999	24.400000	L2
+6	des	de	PRE	PRE	_	5	dep	_	_	24.410000	24.520000	L2
+7	petits	petit	ADJ	ADJ	_	8	dep	_	_	24.530001	24.620001	L2
+8	webzines	webzines	NOM	NOM	_	6	dep	_	_	24.629999	24.959999	L2
+9	des	de	PRE	PRE	_	6	para	_	_	24.969999	25.110001	L2
+10	trucs	truc	NOM	NOM	_	9	dep	_	_	25.120001	25.280001	L2
+11	comme	comme	PRE	PRE	_	10	dep	_	_	25.290001	25.360001	L2
+12	ça	ça	PRO	PRO	_	11	dep	_	_	25.410000	25.610001	L2
+13	qui	qui	PRQ	PRQ	_	14	dep	_	_	26.090000	26.230000	L2
+14	proposent	proposer	VRB	VRB	_	10	dep	_	_	26.240000	26.620001	L2
+15	par	par	PRE	PRE	_	14	dep	_	_	26.700001	26.799999	L2
+16	exemple	exemple	NOM	NOM	_	15	dep	_	_	26.809999	27.120001	L2
+17	euh	euh	INT	INT	_	16	dm	_	_	27.129999	27.350000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-10
+# text = genre tu as les tu as les petits webzines genre euh Scène Lorraine ou des trucs comme ça
+1	genre	genre	NOM	NOM	_	3	periph	_	_	27.360001	27.520000	L2
+2	tu	tu	CLS	CLS	_	3	subj	_	_	27.530001	27.580000	L2
+3	as	avoir	VRB	VRB	_	0	root	_	_	27.590000	27.709999	L2
+4	les	le	DET	DET	_	3	disflink	_	_	27.719999	27.799999	L2
+5	tu	tu	CLS	CLS	_	6	subj	_	_	27.809999	27.870001	L2
+6	as	avoir	VRB	VRB	_	3	para	_	_	27.879999	27.900000	L2
+7	les	le	DET	DET	_	9	spe	_	_	27.910000	28.000000	L2
+8	petits	petit	ADJ	ADJ	_	9	dep	_	_	28.059999	28.160000	L2
+9	webzines	webzines	NOM	NOM	_	6	dep	_	_	28.170000	28.559999	L2
+10	genre	genre	NOM	NOM	_	9	dep	_	_	28.570000	28.850000	L2
+11	euh	euh	INT	INT	_	10	dm	_	_	28.860001	28.900000	L2
+12	Scène	scène	NOM	NOM	_	10	para	_	_	29.049999	29.190001	L2
+13	Lorraine	Lorraine	NOM	NOM	_	12	dep	_	_	29.200001	29.510000	L2
+14	ou	ou	COO	COO	_	15	mark	_	_	29.520000	29.549999	L2
+15	des	de	PRE	PRE	_	12	para	_	_	29.559999	29.700001	L2
+16	trucs	truc	NOM	NOM	_	15	dep	_	_	29.709999	29.879999	L2
+17	comme	comme	PRE	PRE	_	16	dep	_	_	29.889999	29.969999	L2
+18	ça	ça	PRO	PRO	_	17	dep	_	_	30.030001	30.200001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-11
+# text = et tu as des gens qui viennent proposer des plans concerts et genre
+1	et	et	COO	COO	_	3	mark	_	_	30.490000	30.510000	L2
+2	tu	tu	CLS	CLS	_	3	subj	_	_	30.570000	30.620001	L2
+3	as	avoir	VRB	VRB	_	0	root	_	_	30.629999	30.650000	L2
+4	des	de	PRE	PRE	_	3	dep	_	_	30.660000	30.790001	L2
+5	gens	gens	NOM	NOM	_	4	dep	_	_	30.799999	30.900000	L2
+6	qui	qui	PRQ	PRQ	_	7	subj	_	_	30.910000	30.959999	L2
+7	viennent	venir	VRB	VRB	_	5	dep	_	_	30.969999	31.139999	L2
+8	proposer	proposer	VNF	VNF	_	7	dep	_	_	31.180000	31.510000	L2
+9	des	de	PRE	PRE	_	8	dep	_	_	31.520000	31.670000	L2
+10	plans	plan	NOM	NOM	_	9	dep	_	_	31.680000	31.879999	L2
+11	concerts	concert	NOM	NOM	_	10	dep	_	_	31.889999	32.430000	L2
+12	et	et	COO	COO	_	13	mark	_	_	32.439999	32.520000	L2
+13	genre	genre	NOM	NOM	_	11	para	_	_	32.529999	32.740002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-12
+# text = on est deux cents groupes à répondre pour le concert
+1	on	on	CLS	CLS	_	2	subj	_	_	32.750000	32.880001	L2
+2	est	être	VRB	VRB	_	0	root	_	_	32.889999	33.009998	L2
+3	deux	deux	NUM	NUM	_	5	spe	_	_	33.020000	33.110001	L2
+4	cents	cents	NUM	NUM	_	3	dep	_	_	33.230000	33.400002	L2
+5	groupes	groupe	NOM	NOM	_	2	dep	_	_	33.410000	33.619999	L2
+6	à	à	PRE	PRE	_	5	dep	_	_	33.630001	33.669998	L2
+7	répondre	répondre	VNF	VNF	_	6	dep	_	_	33.680000	34.090000	L2
+8	pour	pour	PRE	PRE	_	7	dep	_	_	34.099998	34.299999	L2
+9	le	le	DET	DET	_	10	spe	_	_	34.310001	34.330002	L2
+10	concert	concert	NOM	NOM	_	8	dep	_	_	34.340000	34.650002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-13
+# text = quoi hum hum
+1	quoi	quoi	INT	INT	_	0	root	_	_	34.720001	34.840000	L1
+2	hum	hum	INT	INT	_	1	dm	_	_	35.400002	35.509998	L1
+3	hum	hum	INT	INT	_	2	dm	_	_	35.520000	35.639999	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-14
+# text = donc ou alors sinon il y a plus que le principe du tremplin
+1	donc	donc	ADV	ADV	_	7	periph	_	_	35.849998	36.310001	L2
+2	ou	ou	COO	COO	_	7	mark	_	_	36.320000	36.450001	L2
+3	alors	alors	ADV	ADV	_	7	periph	_	_	36.459999	36.689999	L2
+4	sinon	sinon	ADV	ADV	_	7	periph	_	_	36.700001	36.970001	L2
+5	il	il	CLS	CLS	_	7	subj	_	_	36.980000	37.029999	L2
+6	y	y	CLI	CLI	_	7	dep	_	_	37.040001	37.060001	L2
+7	a	avoir	VRB	VRB	_	0	root	_	_	37.070000	37.110001	L2
+8	plus	plus	ADN	ADN	_	7	dep	_	_	37.150002	37.250000	L2
+9	que	que	ADN	ADN	_	7	dep	_	_	37.259998	37.279999	L2
+10	le	le	DET	DET	_	11	spe	_	_	37.290001	37.410000	L2
+11	principe	principe	NOM	NOM	_	7	dep	_	_	37.419998	37.720001	L2
+12	du	de+le	PRE	PRE	_	11	dep	_	_	37.730000	37.810001	L2
+13	tremplin	tremplin	NOM	NOM	_	12	dep	_	_	37.820000	38.259998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-15
+# text = mais le principe du tremplin est toujours euh
+1	mais	mais	COO	COO	_	6	mark	_	_	38.270000	38.349998	L2
+2	le	le	DET	DET	_	3	spe	_	_	38.360001	38.400002	L2
+3	principe	principe	NOM	NOM	_	6	subj	_	_	38.410000	38.709999	L2
+4	du	de+le	PRE	PRE	_	3	dep	_	_	38.720001	38.770000	L2
+5	tremplin	tremplin	NOM	NOM	_	4	dep	_	_	38.910000	39.380001	L2
+6	est	être	VRB	VRB	_	0	root	_	_	39.570000	39.590000	L2
+7	toujours	toujours	ADV	ADV	_	6	dep	_	_	39.720001	39.959999	L2
+8	euh	euh	INT	INT	_	7	dm	_	_	39.970001	39.990002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-16
+# text = c'est le challenge
+1	c'	ce	CLS	CLS	_	2	subj	_	_	40.779999	40.830002	L1
+2	est	être	VRB	VRB	_	0	root	_	_	40.840000	40.889999	L1
+3	le	le	DET	DET	_	4	spe	_	_	40.900002	40.980000	L1
+4	challenge	challenge	NOM	NOM	_	2	dep	_	_	40.990002	41.400002	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-17
+# text = quoi ouais c'est pas forcément le challenge
+1	quoi	quoi	INT	INT	_	4	dm	_	_	41.410000	41.580002	L2
+2	ouais	ouais	INT	INT	_	1	dm	_	_	42.029999	42.240002	L2
+3	c'	ce	CLS	CLS	_	4	subj	_	_	42.250000	42.270000	L2
+4	est	être	VRB	VRB	_	0	root	_	_	42.279999	42.349998	L2
+5	pas	pas	ADN	ADN	_	4	dep	_	_	42.360001	42.439999	L2
+6	forcément	forcément	ADV	ADV	_	4	dep	_	_	42.450001	42.840000	L2
+7	le	le	DET	DET	_	8	spe	_	_	42.849998	42.880001	L2
+8	challenge	challenge	NOM	NOM	_	4	dep	_	_	42.889999	43.200001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-18
+# text = c'est toujours du piston toujours toujours
+1	c'	ce	CLS	CLS	_	2	subj	_	_	43.209999	43.340000	L2
+2	est	être	VRB	VRB	_	0	root	_	_	43.349998	43.380001	L2
+3	toujours	toujours	ADV	ADV	_	2	dep	_	_	43.389999	43.639999	L2
+4	du	de+le	PRE	PRE	_	2	dep	_	_	43.650002	43.700001	L2
+5	piston	piston	NOM	NOM	_	4	dep	_	_	43.709999	44.060001	L2
+6	toujours	toujours	ADV	ADV	_	2	dep	_	_	44.240002	44.400002	L2
+7	toujours	toujours	ADV	ADV	_	6	para	_	_	44.410000	44.549999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-19
+# text = toujours hum hum
+1	toujours	toujours	ADV	ADV	_	0	root	_	_	44.639999	44.900002	L1
+2	hum	hum	INT	INT	_	1	dm	_	_	45.060001	45.189999	L1
+3	hum	hum	INT	INT	_	2	dm	_	_	45.200001	45.500000	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-20
+# text = je me suis renseigné sur les Eurockéennes je connais un petit peu des mecs qui bossent en tant que jury
+1	je	je	CLS	CLS	_	4	subj	_	_	45.750000	45.779999	L2
+2	me	me	CLI	CLI	_	4	dep	_	_	45.790001	45.810001	L2
+3	suis	être	VRB	VRB	_	4	aux	_	_	45.820000	45.900002	L2
+4	renseigné	renseigner	VPP	VPP	_	9	periph	_	_	45.910000	46.169998	L2
+5	sur	sur	PRE	PRE	_	4	dep	_	_	46.180000	46.310001	L2
+6	les	le	DET	DET	_	7	spe	_	_	46.320000	46.480000	L2
+7	Eurockéennes	Eurockéennes	NOM	NOM	_	5	dep	_	_	46.490002	46.990002	L2
+8	je	je	CLS	CLS	_	9	subj	_	_	47.000000	47.110001	L2
+9	connais	connaître	VRB	VRB	_	0	root	_	_	47.119999	47.250000	L2
+10	un	un	DET	DET	_	12	spe	_	_	47.259998	47.349998	L2
+11	petit	petit	ADJ	ADJ	_	12	dep	_	_	47.360001	47.470001	L2
+12	peu	peu	NOM	NOM	_	9	dep	_	_	47.480000	47.630001	L2
+13	des	de	PRE	PRE	_	12	dep	_	_	47.639999	47.689999	L2
+14	mecs	mec	NOM	NOM	_	13	dep	_	_	47.700001	47.950001	L2
+15	qui	qui	PRQ	PRQ	_	16	dep	_	_	47.959999	48.000000	L2
+16	bossent	bosser	VRB	VRB	_	14	dep	_	_	48.009998	48.250000	L2
+17	en tant que	en tant que	PRE	PRE	_	16	dep	_	_	48.259998	48.680000	L2
+18	jury	jury	NOM	NOM	_	17	dep	_	_	48.689999	48.840000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-21
+# text = et en général ils savent à l'avance avant même que le tremplin ait commencé
+1	et	et	COO	COO	_	5	mark	_	_	48.849998	49.009998	L2
+2	en	en	PRE	PRE	_	5	periph	_	_	49.790001	49.869999	L2
+3	général	général	NOM	NOM	_	2	dep	_	_	49.880001	50.209999	L2
+4	ils	il	CLS	CLS	_	5	subj	_	_	50.220001	50.279999	L2
+5	savent	savoir	VRB	VRB	_	0	root	_	_	50.330002	50.520000	L2
+6	à	à	PRE	PRE	_	5	dep	_	_	50.529999	50.560001	L2
+7	l'	le	DET	DET	_	8	spe	_	_	50.570000	50.599998	L2
+8	avance	avance	NOM	NOM	_	6	dep	_	_	50.610001	51.119999	L2
+9	avant	avant	PRE	PRE	_	6	para	_	_	51.130001	51.369999	L2
+10	même	même	ADV	ADV	_	9	dep	_	_	51.380001	51.590000	L2
+11	que	que	CSU	CSU	_	5	dep	_	_	51.599998	51.709999	L2
+12	le	le	DET	DET	_	13	spe	_	_	51.720001	51.740002	L2
+13	tremplin	tremplin	NOM	NOM	_	15	subj	_	_	51.820000	52.080002	L2
+14	ait	avoir	VRB	VRB	_	15	aux	_	_	52.090000	52.110001	L2
+15	commencé	commencer	VPP	VPP	_	11	dep	_	_	52.119999	52.639999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-22
+# text = ils savent déjà le groupe qui va gagner
+1	ils	il	CLS	CLS	_	2	subj	_	_	52.880001	52.930000	L2
+2	savent	savoir	VRB	VRB	_	0	root	_	_	53.009998	53.180000	L2
+3	déjà	déjà	ADV	ADV	_	2	dep	_	_	53.189999	53.650002	L2
+4	le	le	DET	DET	_	5	spe	_	_	53.660000	53.860001	L2
+5	groupe	groupe	NOM	NOM	_	2	dep	_	_	53.869999	54.070000	L2
+6	qui	qui	PRQ	PRQ	_	7	subj	_	_	54.160000	54.220001	L2
+7	va	aller	VRB	VRB	_	5	dep	_	_	54.230000	54.340000	L2
+8	gagner	gagner	VNF	VNF	_	7	dep	_	_	54.349998	54.700001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-23
+# text = tu crois pas que c'est ça justement qui unifie la scène française qui fait que elle se tape pas tous les groupes se tapent pas dans les pattes en fait
+1	tu	tu	CLS	CLS	_	2	subj	_	_	56.189999	56.250000	L1
+2	crois	croire	VRB	VRB	_	0	root	_	_	56.259998	56.410000	L1
+3	pas	pas	ADN	ADN	_	2	dep	_	_	56.419998	56.610001	L1
+4	que	que	CSU	CSU	_	2	dep	_	_	56.619999	56.639999	L1
+5	c'	ce	CLS	CLS	_	6	subj	_	_	56.650002	56.680000	L1
+6	est	être	VRB	VRB	_	4	dep	_	_	56.689999	56.810001	L1
+7	ça	ça	PRO	PRO	_	6	dep	_	_	56.820000	56.939999	L1
+8	justement	justement	ADV	ADV	_	6	dep	_	_	56.950001	57.439999	L1
+9	qui	qui	PRQ	PRQ	_	10	dep	_	_	57.450001	57.689999	L1
+10	unifie	unifier	VRB	VRB	_	6	dep	_	_	57.700001	58.189999	L1
+11	la	le	DET	DET	_	12	spe	_	_	58.200001	58.340000	L1
+12	scène	scène	NOM	NOM	_	10	dep	_	_	58.410000	58.520000	L1
+13	française	français	ADJ	ADJ	_	12	dep	_	_	58.529999	59.110001	L1
+14	qui	qui	PRQ	PRQ	_	15	subj	_	_	59.580002	59.700001	L1
+15	fait	faire	VRB	VRB	_	10	dep	_	_	59.709999	59.900002	L1
+16	que	que	CSU	CSU	_	15	dep	_	_	59.910000	60.189999	L1
+17	elle	il	CLS	CLS	_	19	subj	_	_	60.200001	60.270000	L1
+18	se	se	CLI	CLI	_	19	dep	_	_	60.279999	60.410000	L1
+19	tape	taper	VRB	VRB	_	16	dep	_	_	60.419998	60.610001	L1
+20	pas	pas	ADN	ADN	_	19	dep	_	_	60.619999	60.840000	L1
+21	tous	tout	ADJ	ADJ	_	23	dep	_	_	60.980000	61.090000	L1
+22	les	le	DET	DET	_	23	spe	_	_	61.099998	61.189999	L1
+23	groupes	groupe	NOM	NOM	_	19	dep	_	_	61.200001	61.340000	L1
+24	se	se	CLI	CLI	_	25	dep	_	_	61.349998	61.490002	L1
+25	tapent	taper	VRB	VRB	_	15	para	_	_	61.500000	61.790001	L1
+26	pas	pas	ADN	ADN	_	25	dep	_	_	61.799999	61.840000	L1
+27	dans	dans	PRE	PRE	_	25	dep	_	_	61.849998	61.980000	L1
+28	les	le	DET	DET	_	29	spe	_	_	61.990002	62.099998	L1
+29	pattes	patte	NOM	NOM	_	27	dep	_	_	62.110001	62.320000	L1
+30	en	en	PRE	PRE	_	25	dep	_	_	62.380001	62.480000	L1
+31	fait	fait	NOM	NOM	_	30	dep	_	_	62.490002	62.669998	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-24
+# text = ouais mais il y a il y a quand même il y a quand
+1	ouais	ouais	INT	INT	_	5	dm	_	_	63.419998	63.799999	L2
+2	mais	mais	COO	COO	_	5	mark	_	_	63.810001	63.880001	L2
+3	il	il	CLS	CLS	_	5	subj	_	_	63.889999	63.939999	L2
+4	y	y	CLI	CLI	_	5	dep	_	_	63.950001	63.970001	L2
+5	a	avoir	VRB	VRB	_	0	root	_	_	63.980000	64.000000	L2
+6	il	il	CLS	CLS	_	8	subj	_	_	64.010002	64.120003	L2
+7	y	y	CLI	CLI	_	8	dep	_	_	64.129997	64.150002	L2
+8	a	avoir	VRB	VRB	_	5	para	_	_	64.160004	64.250000	L2
+9	quand	quand	CSU	CSU	_	8	dep	_	_	64.260002	64.370003	L2
+10	même	même	ADV	ADV	_	13	periph	_	_	64.379997	64.559998	L2
+11	il	il	CLS	CLS	_	13	subj	_	_	64.570000	64.669998	L2
+12	y	y	CLI	CLI	_	13	dep	_	_	64.680000	64.699997	L2
+13	a	avoir	VRB	VRB	_	9	dep	_	_	64.709999	64.760002	L2
+14	quand	quand	CSU	CSU	_	9	para	_	_	64.769997	64.889999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-25
+# text = même
+1	même	même	ADV	ADV	_	0	root	_	_	64.900002	65.129997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-26
+# text = un
+1	un	un	DET	DET	_	0	root	_	_	65.139999	65.419998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-27
+# text = il y a
+1	il	il	CLS	CLS	_	3	subj	_	_	65.430000	65.480003	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	65.489998	65.510002	L2
+3	a	avoir	VRB	VRB	_	0	root	_	_	65.519997	65.559998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-28
+# text = quand même des fois euh il y a quand même quelques groupes qui se la jouent quand même énormément euh qui jouent vachement sur le côté compétition quoi tu vois
+1	quand	quand	CSU	CSU	_	0	root	_	_	65.570000	65.739998	L2
+2	même	même	ADV	ADV	_	3	dep	_	_	65.750000	65.910004	L2
+3	des	de	PRE	PRE	_	8	periph	_	_	65.919998	66.120003	L2
+4	fois	foi	NOM	NOM	_	3	dep	_	_	66.129997	66.489998	L2
+5	euh	euh	INT	INT	_	4	dm	_	_	67.489998	67.599998	L2
+6	il	il	CLS	CLS	_	8	subj	_	_	67.610001	67.669998	L2
+7	y	y	CLI	CLI	_	8	dep	_	_	67.680000	67.699997	L2
+8	a	avoir	VRB	VRB	_	1	dep	_	_	67.709999	67.739998	L2
+9	quand	quand	CSU	CSU	_	8	dep	_	_	67.750000	67.800003	L2
+10	même	même	ADV	ADV	_	11	dep	_	_	67.809998	68.110001	L2
+11	quelques	quelque	ADJ	ADJ	_	12	spe	_	_	68.349998	68.699997	L2
+12	groupes	groupe	NOM	NOM	_	9	dep	_	_	68.750000	69.059998	L2
+13	qui	qui	PRQ	PRQ	_	16	dep	_	_	69.070000	69.120003	L2
+14	se	se	CLI	CLI	_	16	dep	_	_	69.129997	69.180000	L2
+15	la	le	DET	DET	_	16	spe	_	_	69.430000	69.510002	L2
+16	jouent	jouent	NOM	NOM	_	12	para	_	_	69.519997	69.720001	L2
+17	quand	quand	PRQ	PRQ	_	9	para	_	_	69.779999	69.870003	L2
+18	même	même	ADV	ADV	_	17	morph	_	_	69.879997	70.059998	L2
+19	énormément	énormément	ADV	ADV	_	9	para	_	_	70.070000	70.889999	L2
+20	euh	euh	INT	INT	_	19	dm	_	_	70.900002	71.000000	L2
+21	qui	qui	PRQ	PRQ	_	22	dep	_	_	72.010002	72.080002	L2
+22	jouent	jouer	VRB	VRB	_	9	dep	_	_	72.089996	72.180000	L2
+23	vachement	vachement	ADV	ADV	_	22	dep	_	_	72.190002	72.570000	L2
+24	sur	sur	PRE	PRE	_	22	dep	_	_	72.580002	72.680000	L2
+25	le	le	DET	DET	_	26	spe	_	_	72.690002	72.779999	L2
+26	côté	côté	NOM	NOM	_	24	dep	_	_	72.790001	73.050003	L2
+27	compétition	compétition	NOM	NOM	_	26	dep	_	_	73.099998	73.760002	L2
+28	quoi	quoi	INT	INT	_	27	dm	_	_	73.830002	73.949997	L2
+29	tu	tu	CLS	CLS	_	30	subj	_	_	74.660004	74.709999	L2
+30	vois	voir	VRB	VRB	_	9	dep	_	_	74.720001	74.910004	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-29
+# text = mais après euh après c'est vrai qu'il y a une bonne grosse solidarité hein
+1	mais	mais	COO	COO	_	6	mark	_	_	75.250000	75.349998	L2
+2	après	après	PRE	PRE	_	6	periph	_	_	75.419998	75.779999	L2
+3	euh	euh	INT	INT	_	2	dm	_	_	75.790001	76.370003	L2
+4	après	après	PRE	PRE	_	6	periph	_	_	76.629997	76.900002	L2
+5	c'	ce	CLS	CLS	_	6	subj	_	_	76.910004	76.930000	L2
+6	est	être	VRB	VRB	_	0	root	_	_	76.940002	76.980003	L2
+7	vrai	vrai	ADJ	ADJ	_	6	dep	_	_	76.989998	77.120003	L2
+8	qu'	que	CSU	CSU	_	7	dep	_	_	77.199997	77.220001	L2
+9	il	il	CLS	CLS	_	11	subj	_	_	77.230003	77.330002	L2
+10	y	y	CLI	CLI	_	11	dep	_	_	77.339996	77.360001	L2
+11	a	avoir	VRB	VRB	_	8	dep	_	_	77.370003	77.389999	L2
+12	une	un	DET	DET	_	15	spe	_	_	77.400002	77.540001	L2
+13	bonne	bon	ADJ	ADJ	_	14	dep	_	_	77.550003	77.769997	L2
+14	grosse	gros	ADJ	ADJ	_	15	dep	_	_	77.779999	78.080002	L2
+15	solidarité	solidarité	NOM	NOM	_	11	dep	_	_	78.089996	78.669998	L2
+16	hein	hein	INT	INT	_	15	dm	_	_	78.680000	78.739998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-30
+# text = et ça c'est classe ouais
+1	et	et	COO	COO	_	4	mark	_	_	79.080002	79.169998	L2
+2	ça	ça	PRO	PRO	_	4	periph	_	_	79.180000	79.239998	L2
+3	c'	ce	CLS	CLS	_	4	subj	_	_	79.250000	79.349998	L2
+4	est	être	VRB	VRB	_	0	root	_	_	79.360001	79.410004	L2
+5	classe	classe	ADJ	ADJ	_	4	dep	_	_	79.419998	79.699997	L2
+6	ouais	ouais	INT	INT	_	5	dm	_	_	79.709999	79.790001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-31
+# text = ouais si tu parles d'unification
+1	ouais	ouais	INT	INT	_	2	dm	_	_	80.269997	80.349998	L2
+2	si	si	CSU	CSU	_	0	root	_	_	80.360001	80.430000	L2
+3	tu	tu	CLS	CLS	_	4	subj	_	_	80.440002	80.510002	L2
+4	parles	parler	VRB	VRB	_	2	dep	_	_	80.519997	80.750000	L2
+5	d'	de	PRE	PRE	_	4	dep	_	_	80.760002	80.809998	L2
+6	unification	unification	NOM	NOM	_	5	dep	_	_	80.820000	81.559998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-32
+# text = je sais pas par exemple aux Etats-Unis euh bon euh
+1	je	je	CLS	CLS	_	2	subj	_	_	81.620003	81.639999	L1
+2	sais	savoir	VRB	VRB	_	0	root	_	_	81.650002	81.720001	L1
+3	pas	pas	ADN	ADN	_	2	dep	_	_	81.730003	81.779999	L1
+4	par	par	PRE	PRE	_	2	dep	_	_	81.790001	81.900002	L1
+5	exemple	exemple	NOM	NOM	_	4	dep	_	_	81.910004	82.199997	L1
+6	aux	à+le	PRE	PRE	_	2	dep	_	_	82.209999	82.269997	L1
+7	Etats-Unis	Etats-Unis	NOM	NOM	_	6	dep	_	_	82.330002	83.150002	L1
+8	euh	euh	INT	INT	_	7	dm	_	_	83.160004	83.339996	L1
+9	bon	bon	INT	INT	_	8	dm	_	_	83.349998	83.830002	L1
+10	euh	euh	INT	INT	_	9	dm	_	_	83.839996	83.870003	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-33
+# text = il y a des groupes qui s'aiment pas forcément
+1	il	il	CLS	CLS	_	3	subj	_	_	83.879997	83.930000	L1
+2	y	y	CLI	CLI	_	3	dep	_	_	84.559998	84.650002	L1
+3	a	avoir	VRB	VRB	_	0	root	_	_	84.660004	84.769997	L1
+4	des	de	PRE	PRE	_	3	dep	_	_	84.779999	85.029999	L1
+5	groupes	groupe	NOM	NOM	_	4	dep	_	_	85.040001	85.230003	L1
+6	qui	qui	PRQ	PRQ	_	8	dep	_	_	85.239998	85.410004	L1
+7	s'	se	CLI	CLI	_	8	dep	_	_	85.419998	85.500000	L1
+8	aiment	aimer	VRB	VRB	_	5	dep	_	_	85.510002	85.629997	L1
+9	pas	pas	ADN	ADN	_	8	dep	_	_	85.639999	85.820000	L1
+10	forcément	forcément	ADV	ADV	_	8	dep	_	_	85.860001	86.349998	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-34
+# text = quoi bien sûr
+1	quoi	quoi	INT	INT	_	0	root	_	_	86.360001	86.570000	L2
+2	bien	bien	ADV	ADV	_	1	dm	_	_	87.019997	87.150002	L2
+3	sûr	sûr	ADJ	ADJ	_	2	morph	_	_	87.160004	87.480003	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-35
+# text = euh bon en France euh il y a pas la scène euh
+1	euh	euh	INT	INT	_	8	dm	_	_	87.980003	88.190002	L1
+2	bon	bon	INT	INT	_	1	dm	_	_	88.199997	88.389999	L1
+3	en	en	PRE	PRE	_	8	periph	_	_	88.400002	88.510002	L1
+4	France	France	NOM	NOM	_	3	dep	_	_	88.519997	89.550003	L1
+5	euh	euh	INT	INT	_	4	dm	_	_	89.620003	89.639999	L1
+6	il	il	CLS	CLS	_	8	subj	_	_	90.010002	90.089996	L1
+7	y	y	CLI	CLI	_	8	dep	_	_	90.099998	90.139999	L1
+8	a	avoir	VRB	VRB	_	0	root	_	_	90.150002	90.190002	L1
+9	pas	pas	ADN	ADN	_	8	dep	_	_	90.199997	90.379997	L1
+10	la	le	DET	DET	_	11	spe	_	_	90.389999	90.540001	L1
+11	scène	scène	NOM	NOM	_	8	dep	_	_	90.639999	91.230003	L1
+12	euh	euh	INT	INT	_	11	dm	_	_	91.239998	91.260002	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-36
+# text = qu'on aurait souhaité je pense
+1	qu'	que	CSU	CSU	_	0	root	_	_	91.680000	91.760002	L1
+2	on	on	CLS	CLS	_	4	subj	_	_	91.769997	91.949997	L1
+3	aurait	avoir	VRB	VRB	_	4	aux	_	_	91.959999	92.180000	L1
+4	souhaité	souhaiter	VPP	VPP	_	1	dep	_	_	92.190002	92.570000	L1
+5	je	je	CLS	CLS	_	6	subj	_	_	92.580002	92.669998	L1
+6	pense	penser	VRB	VRB	_	4	dm	_	_	92.680000	92.769997	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-37
+# text = ouais
+1	ouais	ouais	INT	INT	_	0	root	_	_	92.830002	92.940002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-38
+# text = et je pense que c'est peut être ça qui donne sa solidité
+1	et	et	COO	COO	_	3	mark	_	_	93.860001	93.949997	L1
+2	je	je	CLS	CLS	_	3	subj	_	_	93.959999	94.080002	L1
+3	pense	penser	VRB	VRB	_	0	root	_	_	94.089996	94.250000	L1
+4	que	que	CSU	CSU	_	3	dep	_	_	94.290001	94.309998	L1
+5	c'	ce	CLS	CLS	_	6	subj	_	_	94.320000	94.349998	L1
+6	est	être	VRB	VRB	_	4	dep	_	_	94.360001	94.430000	L1
+7	peut	pouvoir	VRB	VRB	_	6	para	_	_	94.440002	94.589996	L1
+8	être	être	VNF	VNF	_	7	dep	_	_	94.599998	94.690002	L1
+9	ça	ça	PRO	PRO	_	8	dep	_	_	94.699997	94.839996	L1
+10	qui	qui	PRQ	PRQ	_	11	dep	_	_	94.849998	95.019997	L1
+11	donne	donner	VRB	VRB	_	9	dep	_	_	95.029999	95.300003	L1
+12	sa	son	DET	DET	_	13	spe	_	_	95.389999	95.820000	L1
+13	solidité	solidité	NOM	NOM	_	11	dep	_	_	96.199997	96.639999	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-39
+# text = quoi ouais ouais ouais ouais et solidarité aussi
+1	quoi	quoi	INT	INT	_	7	dm	_	_	96.650002	96.769997	L2
+2	ouais	ouais	INT	INT	_	1	dm	_	_	95.919998	96.139999	L2
+3	ouais	ouais	INT	INT	_	2	para	_	_	97.839996	98.070000	L2
+4	ouais	ouais	INT	INT	_	3	para	_	_	98.080002	98.300003	L2
+5	ouais	ouais	INT	INT	_	4	para	_	_	98.309998	98.400002	L2
+6	et	et	COO	COO	_	7	mark	_	_	98.410004	98.470001	L2
+7	solidarité	solidarité	NOM	NOM	_	0	root	_	_	98.480003	99.120003	L2
+8	aussi	aussi	ADV	ADV	_	7	dep	_	_	99.160004	99.400002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-40
+# text = mais c'est super important
+1	mais	mais	COO	COO	_	3	mark	_	_	99.410004	99.559998	L2
+2	c'	ce	CLS	CLS	_	3	subj	_	_	99.570000	99.599998	L2
+3	est	être	VRB	VRB	_	0	root	_	_	99.610001	99.629997	L2
+4	super	super	ADJ	ADJ	_	5	dep	_	_	99.639999	99.879997	L2
+5	important	important	NOM	NOM	_	3	dep	_	_	99.889999	100.320000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-41
+# text = je pense qu'en France si tu veux t'en sortir
+1	je	je	CLS	CLS	_	2	subj	_	_	100.330002	100.349998	L2
+2	pense	penser	VRB	VRB	_	0	root	_	_	100.360001	100.529999	L2
+3	qu'	que	CSU	CSU	_	2	dep	_	_	100.540001	100.559998	L2
+4	en	en	PRE	PRE	_	3	dep	_	_	100.570000	100.589996	L2
+5	France	France	NOM	NOM	_	4	dep	_	_	100.690002	100.830002	L2
+6	si	si	CSU	CSU	_	2	dep	_	_	100.839996	100.860001	L2
+7	tu	tu	CLS	CLS	_	8	subj	_	_	100.870003	100.919998	L2
+8	veux	vouloir	VRB	VRB	_	6	dep	_	_	100.930000	101.010002	L2
+9	t'	te	CLI	CLI	_	11	dep	_	_	101.019997	101.050003	L2
+10	en	en	CLI	CLI	_	11	dep	_	_	101.059998	101.099998	L2
+11	sortir	sortir	VNF	VNF	_	8	dep	_	_	101.110001	101.370003	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-42
+# text = faut être solidaire je pense qu'il y a ça dans beaucoup de beaucoup d'endroits aussi
+1	faut	faillir	VRB	VRB	_	5	parenth	_	_	101.379997	101.540001	L2
+2	être	être	VNF	VNF	_	1	dep	_	_	101.550003	101.650002	L2
+3	solidaire	solidaire	ADJ	ADJ	_	2	dep	_	_	101.660004	101.989998	L2
+4	je	je	CLS	CLS	_	5	subj	_	_	102.080002	102.099998	L2
+5	pense	penser	VRB	VRB	_	0	root	_	_	102.110001	102.209999	L2
+6	qu'	que	CSU	CSU	_	5	dep	_	_	102.220001	102.260002	L2
+7	il	il	CLS	CLS	_	9	subj	_	_	102.269997	102.339996	L2
+8	y	y	CLI	CLI	_	9	dep	_	_	102.349998	102.379997	L2
+9	a	avoir	VRB	VRB	_	6	dep	_	_	102.389999	102.419998	L2
+10	ça	ça	PRO	PRO	_	9	dep	_	_	102.430000	102.550003	L2
+11	dans	dans	PRE	PRE	_	9	dep	_	_	102.559998	102.760002	L2
+12	beaucoup	beaucoup	PRO	PRO	_	11	dep	_	_	102.769997	102.900002	L2
+13	de	de	PRE	PRE	_	12	dep	_	_	102.910004	103.190002	L2
+14	beaucoup	beaucoup	PRO	PRO	_	13	dep	_	_	103.199997	103.410004	L2
+15	d'	de	PRE	PRE	_	14	dep	_	_	103.419998	103.449997	L2
+16	endroits	endroit	NOM	NOM	_	15	dep	_	_	103.459999	103.660004	L2
+17	aussi	aussi	ADV	ADV	_	9	dep	_	_	103.669998	103.970001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-43
+# text = et je pense qu'il faut être solidaire après le fait qu'il y ait pas énormément forcément de groupes qui soient forcément produits
+1	et	et	COO	COO	_	3	mark	_	_	104.790001	104.830002	L2
+2	je	je	CLS	CLS	_	3	subj	_	_	104.839996	104.940002	L2
+3	pense	penser	VRB	VRB	_	0	root	_	_	104.949997	105.089996	L2
+4	qu'	que	CSU	CSU	_	3	dep	_	_	105.099998	105.129997	L2
+5	il	il	CLS	CLS	_	6	subj	_	_	105.139999	105.209999	L2
+6	faut	faillir	VRB	VRB	_	4	dep	_	_	105.220001	105.309998	L2
+7	être	être	VNF	VNF	_	6	dep	_	_	105.320000	105.419998	L2
+8	solidaire	solidaire	ADJ	ADJ	_	7	dep	_	_	105.430000	105.879997	L2
+9	après	après	PRE	PRE	_	7	dep	_	_	105.889999	106.320000	L2
+10	le	le	DET	DET	_	11	spe	_	_	106.940002	106.959999	L2
+11	fait	fait	NOM	NOM	_	9	dep	_	_	106.970001	107.120003	L2
+12	qu'	que	PRQ	PRQ	_	15	dep	_	_	107.129997	107.150002	L2
+13	il	il	CLS	CLS	_	15	subj	_	_	107.160004	107.209999	L2
+14	y	y	CLI	CLI	_	15	dep	_	_	107.379997	107.470001	L2
+15	ait	avoir	VRB	VRB	_	11	dep	_	_	107.480003	107.500000	L2
+16	pas	pas	ADN	ADN	_	15	dep	_	_	107.510002	107.779999	L2
+17	énormément	énormément	ADV	ADV	_	15	dep	_	_	107.790001	108.330002	L2
+18	forcément	forcément	ADV	ADV	_	15	dep	_	_	108.339996	108.660004	L2
+19	de	de	PRE	PRE	_	15	dep	_	_	108.669998	108.690002	L2
+20	groupes	groupe	NOM	NOM	_	19	dep	_	_	108.699997	109.019997	L2
+21	qui	qui	PRQ	PRQ	_	24	dep	_	_	109.029999	109.080002	L2
+22	soient	être	VRB	VRB	_	24	aux	_	_	109.089996	109.190002	L2
+23	forcément	forcément	ADV	ADV	_	24	dep	_	_	109.199997	109.589996	L2
+24	produits	produire	VPP	VPP	_	20	dep	_	_	109.709999	110.129997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-44
+# text = euh ça veut
+1	euh	euh	INT	INT	_	3	dm	_	_	110.650002	110.849998	L2
+2	ça	ça	PRO	PRO	_	3	subj	_	_	110.860001	110.910004	L2
+3	veut	vouloir	VRB	VRB	_	0	root	_	_	110.919998	111.209999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-45
+# text = peut être dire aussi que il y a certains groupes qui le méritent plus que d'autres après moi
+1	peut	pouvoir	VRB	VRB	_	0	root	_	_	111.220001	111.300003	L2
+2	être	être	VNF	VNF	_	1	dep	_	_	111.309998	111.419998	L2
+3	dire	dire	VNF	VNF	_	2	dep	_	_	111.430000	111.580002	L2
+4	aussi	aussi	ADV	ADV	_	3	dep	_	_	111.589996	112.019997	L2
+5	que	que	CSU	CSU	_	3	dep	_	_	112.029999	112.209999	L2
+6	il	il	CLS	CLS	_	8	subj	_	_	112.220001	112.269997	L2
+7	y	y	CLI	CLI	_	8	dep	_	_	112.279999	112.300003	L2
+8	a	avoir	VRB	VRB	_	5	dep	_	_	112.309998	112.349998	L2
+9	certains	certain	DET	DET	_	10	spe	_	_	112.400002	112.639999	L2
+10	groupes	groupe	NOM	NOM	_	8	dep	_	_	112.650002	112.849998	L2
+11	qui	qui	PRQ	PRQ	_	13	dep	_	_	112.910004	112.959999	L2
+12	le	le	CLI	CLI	_	13	dep	_	_	112.970001	113.050003	L2
+13	méritent	mériter	VRB	VRB	_	10	dep	_	_	113.059998	113.339996	L2
+14	plus	plus	ADN	ADN	_	13	dep	_	_	113.349998	113.440002	L2
+15	que	que	ADN	ADN	_	13	dep	_	_	113.489998	113.610001	L2
+16	d'	de	PRE	PRE	_	13	dep	_	_	113.620003	113.639999	L2
+17	autres	autre	ADJ	ADJ	_	16	dep	_	_	113.650002	113.879997	L2
+18	après	après	PRE	PRE	_	8	dep	_	_	113.889999	114.050003	L2
+19	moi	moi	PRO	PRO	_	18	dep	_	_	114.059998	114.180000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-46
+# text = je prends l'exemple des Flying Donuts qui trouvent pas de label en ce moment pour sortir euh
+1	je	je	CLS	CLS	_	2	subj	_	_	114.239998	114.260002	L2
+2	prends	prendre	VRB	VRB	_	0	root	_	_	114.269997	114.370003	L2
+3	l'	le	DET	DET	_	4	spe	_	_	114.379997	114.410004	L2
+4	exemple	exemple	NOM	NOM	_	2	dep	_	_	114.419998	114.699997	L2
+5	des	de	PRE	PRE	_	4	dep	_	_	114.709999	114.760002	L2
+6	Flying	Flying	NOM	NOM	_	5	dep	_	_	114.769997	114.989998	L2
+7	Donuts	Donuts	NOM	NOM	_	6	dep	_	_	115.000000	115.309998	L2
+8	qui	qui	PRQ	PRQ	_	9	dep	_	_	115.980003	116.040001	L2
+9	trouvent	trouver	VRB	VRB	_	6	dep	_	_	116.050003	116.169998	L2
+10	pas	pas	ADN	ADN	_	9	dep	_	_	116.180000	116.309998	L2
+11	de	de	PRE	PRE	_	9	dep	_	_	116.320000	116.370003	L2
+12	label	label	NOM	NOM	_	11	dep	_	_	116.379997	116.650002	L2
+13	en	en	PRE	PRE	_	9	dep	_	_	116.660004	116.709999	L2
+14	ce	ce	DET	DET	_	15	spe	_	_	116.720001	116.809998	L2
+15	moment	moment	NOM	NOM	_	13	dep	_	_	116.820000	117.010002	L2
+16	pour	pour	PRE	PRE	_	9	dep	_	_	117.019997	117.169998	L2
+17	sortir	sortir	VNF	VNF	_	16	dep	_	_	117.180000	117.779999	L2
+18	euh	euh	INT	INT	_	17	dm	_	_	117.790001	117.919998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-47
+# text = non seulement le split avec I
+1	non	non	INT	INT	_	4	dm	_	_	117.930000	118.040001	L2
+2	seulement	seulement	ADV	ADV	_	4	periph	_	_	118.089996	118.330002	L2
+3	le	le	DET	DET	_	4	spe	_	_	118.339996	118.360001	L2
+4	split	split	NOM	NOM	_	0	root	_	_	118.400002	118.680000	L2
+5	avec	avec	PRE	PRE	_	4	dep	_	_	118.690002	118.910004	L2
+6	I	I	NOM	NOM	_	5	dep	_	_	118.959999	118.980003	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-48
+# text = am Afraid
+1	am	am	PRE	PRE	_	0	root	_	_	118.989998	119.120003	L2
+2	Afraid	Afraid	NOM	NOM	_	1	dep	_	_	119.129997	119.379997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-49
+# text = to depress
+1	to	to	DET	DET	_	2	spe	_	_	119.389999	119.459999	L2
+2	depress	depress	NOM	NOM	_	0	root	_	_	119.470001	119.769997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-50
+# text = qui est terrible
+1	qui	qui	PRQ	PRQ	_	2	subj	_	_	119.830002	119.879997	L2
+2	est	être	VRB	VRB	_	0	root	_	_	119.889999	119.910004	L2
+3	terrible	terrible	ADJ	ADJ	_	2	dep	_	_	119.919998	120.260002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-51
+# text = et leur album qu'ils ont enregistré quand même avec le mec qui a qui a produit Therapy qui a produit les Sheriff qui a produit plein plein d'énormes groupes un Anglais euh je comprends pas trop après peut-être qu'ils cherchent à avoir une bonne distribution et à ce moment-là il y a très peu de labels qui proposent de bonnes distributions en Europe en France beaucoup
+1	et	et	COO	COO	_	3	mark	_	_	121.260002	121.309998	L2
+2	leur	son	DET	DET	_	3	spe	_	_	121.320000	121.480003	L2
+3	album	album	NOM	NOM	_	36	periph	_	_	121.489998	121.830002	L2
+4	qu'	que	PRQ	PRQ	_	7	dep	_	_	121.839996	121.860001	L2
+5	ils	il	CLS	CLS	_	7	subj	_	_	121.870003	121.989998	L2
+6	ont	avoir	VRB	VRB	_	7	aux	_	_	122.000000	122.070000	L2
+7	enregistré	enregistrer	VPP	VPP	_	3	dep	_	_	122.080002	122.459999	L2
+8	quand	quand	CSU	CSU	_	7	dep	_	_	122.470001	122.519997	L2
+9	même	même	ADV	ADV	_	14	periph	_	_	122.529999	122.620003	L2
+10	avec	avec	PRE	PRE	_	14	periph	_	_	122.629997	122.839996	L2
+11	le	le	DET	DET	_	12	spe	_	_	122.849998	122.919998	L2
+12	mec	mec	NOM	NOM	_	10	dep	_	_	122.930000	123.129997	L2
+13	qui	qui	PRQ	PRQ	_	14	dep	_	_	123.250000	123.320000	L2
+14	a	avoir	VRB	VRB	_	8	dep	_	_	123.330002	123.540001	L2
+15	qui	qui	PRQ	PRQ	_	17	dep	_	_	123.639999	123.690002	L2
+16	a	avoir	VRB	VRB	_	17	aux	_	_	123.699997	123.720001	L2
+17	produit	produire	VPP	VPP	_	14	dep	_	_	123.820000	124.070000	L2
+18	Therapy	Therapy	NOM	NOM	_	17	dep	_	_	124.160004	124.480003	L2
+19	qui	qui	PRQ	PRQ	_	21	dep	_	_	124.550003	124.739998	L2
+20	a	avoir	VRB	VRB	_	21	aux	_	_	125.180000	125.209999	L2
+21	produit	produire	VPP	VPP	_	18	dep	_	_	125.309998	125.540001	L2
+22	les	le	DET	DET	_	23	spe	_	_	125.550003	125.669998	L2
+23	Sheriff	Sheriff	NOM	NOM	_	21	dep	_	_	125.680000	126.059998	L2
+24	qui	qui	PRQ	PRQ	_	26	subj	_	_	126.129997	126.180000	L2
+25	a	avoir	VRB	VRB	_	26	aux	_	_	126.300003	126.349998	L2
+26	produit	produire	VPP	VPP	_	23	dep	_	_	126.459999	126.779999	L2
+27	plein	plein	ADJ	ADJ	_	26	dep	_	_	126.790001	126.980003	L2
+28	plein	plein	ADJ	ADJ	_	27	para	_	_	126.989998	127.139999	L2
+29	d'	de	PRE	PRE	_	28	dep	_	_	127.150002	127.169998	L2
+30	énormes	énorme	ADJ	ADJ	_	31	dep	_	_	127.180000	127.500000	L2
+31	groupes	groupe	NOM	NOM	_	29	dep	_	_	127.510002	127.910004	L2
+32	un	un	DET	DET	_	33	spe	_	_	128.580002	128.710007	L2
+33	Anglais	anglais	NOM	NOM	_	23	para	_	_	128.720001	129.139999	L2
+34	euh	euh	INT	INT	_	33	dm	_	_	129.149994	129.169998	L2
+35	je	je	CLS	CLS	_	36	subj	_	_	129.179993	129.740005	L2
+36	comprends	comprendre	VRB	VRB	_	0	root	_	_	130.970001	131.199997	L2
+37	pas	pas	ADN	ADN	_	38	dep	_	_	131.210007	131.339996	L2
+38	trop	trop	ADV	ADV	_	36	dep	_	_	131.429993	131.619995	L2
+39	après	après	PRE	PRE	_	36	dep	_	_	131.630005	132.270004	L2
+40	peut-être	peut-être	ADV	ADV	_	36	dep	_	_	132.279999	132.460007	L2
+41	qu'	que	CSU	CSU	_	36	dep	_	_	132.470001	132.490005	L2
+42	ils	il	CLS	CLS	_	43	subj	_	_	132.500000	132.550003	L2
+43	cherchent	chercher	VRB	VRB	_	41	dep	_	_	132.559998	132.910004	L2
+44	à	à	PRE	PRE	_	43	dep	_	_	132.919998	132.990005	L2
+45	avoir	avoir	VNF	VNF	_	44	dep	_	_	133.000000	133.320007	L2
+46	une	un	DET	DET	_	48	spe	_	_	133.330002	133.500000	L2
+47	bonne	bon	ADJ	ADJ	_	48	dep	_	_	133.509995	133.690002	L2
+48	distribution	distribution	NOM	NOM	_	45	dep	_	_	133.699997	134.380005	L2
+49	et	et	COO	COO	_	55	mark	_	_	134.440002	134.479996	L2
+50	à	à	PRE	PRE	_	55	periph	_	_	134.490005	134.509995	L2
+51	ce	ce	DET	DET	_	52	spe	_	_	134.520004	134.559998	L2
+52	moment-là	moment-là	NOM	NOM	_	50	dep	_	_	134.570007	134.770004	L2
+53	il	il	CLS	CLS	_	55	subj	_	_	134.779999	134.850006	L2
+54	y	y	CLI	CLI	_	55	dep	_	_	134.860001	134.880005	L2
+55	a	avoir	VRB	VRB	_	45	para	_	_	134.889999	134.910004	L2
+56	très	très	ADV	ADV	_	57	dep	_	_	135.119995	135.279999	L2
+57	peu	peu	ADV	ADV	_	55	dep	_	_	135.289993	135.380005	L2
+58	de	de	PRE	PRE	_	55	dep	_	_	135.389999	135.410004	L2
+59	labels	label	NOM	NOM	_	58	dep	_	_	135.419998	135.729996	L2
+60	qui	qui	PRQ	PRQ	_	61	dep	_	_	135.740005	135.800003	L2
+61	proposent	proposer	VRB	VRB	_	59	dep	_	_	135.899994	136.190002	L2
+62	de	de	PRE	PRE	_	61	dep	_	_	136.199997	136.330002	L2
+63	bonnes	bon	ADJ	ADJ	_	64	dep	_	_	136.339996	136.520004	L2
+64	distributions	distribution	NOM	NOM	_	62	dep	_	_	136.529999	137.259995	L2
+65	en	en	PRE	PRE	_	61	dep	_	_	137.270004	137.419998	L2
+66	Europe	Europe	NOM	NOM	_	65	dep	_	_	137.429993	137.679993	L2
+67	en	en	PRE	PRE	_	65	para	_	_	137.690002	137.729996	L2
+68	France	France	NOM	NOM	_	67	dep	_	_	138.449997	138.580002	L2
+69	beaucoup	beaucoup	ADV	ADV	_	55	dep	_	_	138.669998	138.830002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-52
+# text = de c'est pas une question de mentalité aussi
+1	de	de	PRE	PRE	_	3	periph	_	_	139.089996	139.110001	L1
+2	c'	ce	CLS	CLS	_	3	subj	_	_	139.600006	139.630005	L1
+3	est	être	VRB	VRB	_	0	root	_	_	139.639999	140.020004	L1
+4	pas	pas	ADN	ADN	_	3	dep	_	_	140.110001	140.270004	L1
+5	une	un	DET	DET	_	6	spe	_	_	140.279999	140.350006	L1
+6	question	question	NOM	NOM	_	3	dep	_	_	140.360001	140.619995	L1
+7	de	de	PRE	PRE	_	6	dep	_	_	140.630005	140.699997	L1
+8	mentalité	mentalité	NOM	NOM	_	7	dep	_	_	140.710007	141.350006	L1
+9	aussi	aussi	ADV	ADV	_	3	dep	_	_	141.490005	141.770004	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-53
+# text = ouais ouais ouais ouais ouais ouais
+1	ouais	ouais	INT	INT	_	0	root	_	_	143.389999	143.820007	L2
+2	ouais	ouais	INT	INT	_	1	para	_	_	143.830002	144.089996	L2
+3	ouais	ouais	INT	INT	_	2	para	_	_	144.100006	144.380005	L2
+4	ouais	ouais	INT	INT	_	3	para	_	_	144.429993	144.710007	L2
+5	ouais	ouais	INT	INT	_	4	para	_	_	144.759995	144.970001	L2
+6	ouais	ouais	INT	INT	_	5	para	_	_	145.100006	145.320007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-54
+# text = si peut-être mais c'est aussi euh ouais c'est peut-être une question de mentalité peut-être que les gens ont peur de se lancer sur de la grosse distrib de peur d'arriver sur quelque chose qui qui devienne trop énorme et trop difficilement gérable
+1	si	si	CSU	CSU	_	10	periph	_	_	145.369995	145.479996	L2
+2	peut-être	peut-être	ADV	ADV	_	5	periph	_	_	145.490005	145.949997	L2
+3	mais	mais	COO	COO	_	5	mark	_	_	146.339996	146.470001	L2
+4	c'	ce	CLS	CLS	_	5	subj	_	_	146.479996	146.539993	L2
+5	est	être	VRB	VRB	_	1	dep	_	_	146.550003	146.580002	L2
+6	aussi	aussi	ADV	ADV	_	5	dep	_	_	146.589996	147.080002	L2
+7	euh	euh	INT	INT	_	6	dm	_	_	147.089996	147.479996	L2
+8	ouais	ouais	INT	INT	_	7	dm	_	_	147.490005	147.740005	L2
+9	c'	ce	CLS	CLS	_	10	subj	_	_	147.750000	147.770004	L2
+10	est	être	VRB	VRB	_	0	root	_	_	147.779999	147.830002	L2
+11	peut-être	peut-être	ADV	ADV	_	10	dep	_	_	147.839996	148.000000	L2
+12	une	un	DET	DET	_	13	spe	_	_	148.009995	148.100006	L2
+13	question	question	NOM	NOM	_	10	dep	_	_	148.110001	148.339996	L2
+14	de	de	PRE	PRE	_	13	dep	_	_	148.350006	148.369995	L2
+15	mentalité	mentalité	NOM	NOM	_	14	dep	_	_	148.380005	148.759995	L2
+16	peut-être	peut-être	ADV	ADV	_	10	dep	_	_	148.839996	148.979996	L2
+17	que	que	CSU	CSU	_	16	dep	_	_	148.990005	149.009995	L2
+18	les	le	DET	DET	_	19	spe	_	_	149.020004	149.130005	L2
+19	gens	gens	NOM	NOM	_	20	subj	_	_	149.139999	149.199997	L2
+20	ont	avoir	VRB	VRB	_	17	dep	_	_	149.210007	149.330002	L2
+21	peur	peur	NOM	NOM	_	20	dep	_	_	149.389999	149.550003	L2
+22	de	de	PRE	PRE	_	21	dep	_	_	149.559998	149.639999	L2
+23	se	se	CLI	CLI	_	24	dep	_	_	149.699997	149.770004	L2
+24	lancer	lancer	VNF	VNF	_	22	dep	_	_	149.779999	150.059998	L2
+25	sur	sur	PRE	PRE	_	24	dep	_	_	150.070007	150.259995	L2
+26	de	de	PRE	PRE	_	25	dep	_	_	150.270004	150.309998	L2
+27	la	le	DET	DET	_	29	spe	_	_	150.320007	150.389999	L2
+28	grosse	gros	ADJ	ADJ	_	29	dep	_	_	150.399994	150.600006	L2
+29	distrib	distrib	NOM	NOM	_	26	dep	_	_	151.020004	151.220001	L2
+30	de	de	PRE	PRE	_	29	dep	_	_	151.229996	151.360001	L2
+31	peur	peur	NOM	NOM	_	30	dep	_	_	151.369995	151.570007	L2
+32	d'	de	PRE	PRE	_	31	dep	_	_	151.580002	151.600006	L2
+33	arriver	arriver	VNF	VNF	_	32	dep	_	_	151.610001	152.000000	L2
+34	sur	sur	PRE	PRE	_	33	dep	_	_	152.009995	152.100006	L2
+35	quelque chose	quelque chose	PRO	PRO	_	34	dep	_	_	152.169998	152.419998	L2
+36	qui	qui	PRQ	PRQ	_	38	dep	_	_	152.520004	152.570007	L2
+37	qui	qui	PRQ	PRQ	_	38	subj	_	_	152.619995	152.669998	L2
+38	devienne	devenir	VRB	VRB	_	35	dep	_	_	153.270004	153.470001	L2
+39	trop	trop	ADV	ADV	_	40	dep	_	_	153.529999	153.710007	L2
+40	énorme	énorme	ADJ	ADJ	_	38	dep	_	_	153.720001	153.929993	L2
+41	et	et	COO	COO	_	43	mark	_	_	154.059998	154.130005	L2
+42	trop	trop	ADV	ADV	_	43	dep	_	_	154.139999	154.369995	L2
+43	difficilement	difficilement	ADV	ADV	_	44	dep	_	_	154.380005	154.899994	L2
+44	gérable	gérable	ADJ	ADJ	_	40	para	_	_	154.910004	155.350006	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-55
+# text = mais je pense qu'aussi il y a il y a il y a une histoire de de vouloir
+1	mais	mais	COO	COO	_	3	mark	_	_	156.139999	156.220001	L2
+2	je	je	CLS	CLS	_	3	subj	_	_	156.229996	156.360001	L2
+3	pense	penser	VRB	VRB	_	0	root	_	_	156.369995	156.529999	L2
+4	qu'	que	CSU	CSU	_	3	dep	_	_	156.570007	156.589996	L2
+5	aussi	aussi	ADV	ADV	_	8	periph	_	_	156.600006	156.759995	L2
+6	il	il	CLS	CLS	_	8	subj	_	_	156.850006	157.000000	L2
+7	y	y	CLI	CLI	_	8	dep	_	_	157.009995	157.050003	L2
+8	a	avoir	VRB	VRB	_	4	dep	_	_	157.059998	157.380005	L2
+9	il	il	CLS	CLS	_	11	subj	_	_	157.389999	157.470001	L2
+10	y	y	CLI	CLI	_	11	dep	_	_	157.479996	157.520004	L2
+11	a	avoir	VRB	VRB	_	8	para	_	_	157.529999	157.679993	L2
+12	il	il	CLS	CLS	_	14	subj	_	_	157.690002	157.740005	L2
+13	y	y	CLI	CLI	_	14	dep	_	_	157.750000	157.770004	L2
+14	a	avoir	VRB	VRB	_	11	para	_	_	157.779999	157.800003	L2
+15	une	un	DET	DET	_	16	spe	_	_	157.809998	158.009995	L2
+16	histoire	histoire	NOM	NOM	_	14	dep	_	_	158.020004	158.380005	L2
+17	de	de	PRE	PRE	_	16	dep	_	_	158.389999	158.570007	L2
+18	de	de	PRE	PRE	_	17	para	_	_	158.580002	158.669998	L2
+19	vouloir	se vouloir	VNF	VNF	_	18	dep	_	_	158.910004	159.350006	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-56
+# text = ou pas vouloir ou pas euh comment dire avoir une certaine euh
+1	ou	ou	COO	COO	_	2	mark	_	_	159.360001	159.429993	L2
+2	pas	pas	ADN	ADN	_	0	root	_	_	159.539993	160.139999	L2
+3	vouloir	se vouloir	VNF	VNF	_	2	dep	_	_	161.369995	161.649994	L2
+4	ou	ou	COO	COO	_	5	mark	_	_	161.660004	161.710007	L2
+5	pas	pas	ADN	ADN	_	3	dep	_	_	161.720001	162.089996	L2
+6	euh	euh	INT	INT	_	5	dm	_	_	162.100006	162.320007	L2
+7	comment	comment	PRQ	PRQ	_	8	dep	_	_	162.360001	162.539993	L2
+8	dire	dire	VNF	VNF	_	3	dep	_	_	162.550003	162.740005	L2
+9	avoir	avoir	VNF	VNF	_	8	dep	_	_	163.610001	164.000000	L2
+10	une	un	DET	DET	_	11	spe	_	_	164.009995	164.070007	L2
+11	certaine	certain	ADJ	ADJ	_	9	dep	_	_	164.199997	165.210007	L2
+12	euh	euh	INT	INT	_	11	dm	_	_	165.320007	165.339996	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-57
+# text = je te balance des euh au taquet là avoir euh
+1	je	je	CLS	CLS	_	3	subj	_	_	165.679993	165.720001	L2
+2	te	te	CLI	CLI	_	3	dep	_	_	165.729996	165.830002	L2
+3	balance	balancer	VRB	VRB	_	0	root	_	_	165.839996	166.110001	L2
+4	des	de	PRE	PRE	_	3	dep	_	_	166.149994	166.369995	L2
+5	euh	euh	INT	INT	_	4	dm	_	_	166.380005	166.429993	L2
+6	au	à+le	PRE	PRE	_	4	para	_	_	166.440002	166.490005	L2
+7	taquet	taquet	NOM	NOM	_	6	dep	_	_	166.500000	166.720001	L2
+8	là	là	ADV	ADV	_	7	dep	_	_	166.809998	166.869995	L2
+9	avoir	avoir	VNF	VNF	_	3	dep	_	_	167.729996	167.919998	L2
+10	euh	euh	INT	INT	_	9	dm	_	_	167.929993	167.949997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-58
+# text = c'est pas grave c'est pas grave
+1	c'	ce	CLS	CLS	_	2	subj	_	_	168.009995	168.029999	L1
+2	est	être	VRB	VRB	_	0	root	_	_	168.039993	168.059998	L1
+3	pas	pas	ADN	ADN	_	2	dep	_	_	168.070007	168.139999	L1
+4	grave	grave	ADJ	ADJ	_	2	dep	_	_	168.149994	168.619995	L1
+5	c'	ce	CLS	CLS	_	6	subj	_	_	168.630005	168.649994	L1
+6	est	être	VRB	VRB	_	2	para	_	_	168.710007	168.729996	L1
+7	pas	pas	ADN	ADN	_	6	dep	_	_	168.779999	168.830002	L1
+8	grave	grave	ADJ	ADJ	_	6	dep	_	_	168.919998	169.039993	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-59
+# text = putain comment on dit la prétention de vouloir euh être plus gros tu vois ce que je veux dire
+1	putain	putain	NOM	NOM	_	4	periph	_	_	169.679993	169.929993	L2
+2	comment	comment	PRQ	PRQ	_	4	dep	_	_	169.940002	170.089996	L2
+3	on	on	CLS	CLS	_	4	subj	_	_	170.100006	170.389999	L2
+4	dit	dire	VRB	VRB	_	0	root	_	_	170.539993	170.630005	L2
+5	la	le	DET	DET	_	6	spe	_	_	170.720001	170.899994	L2
+6	prétention	prétention	NOM	NOM	_	4	dep	_	_	170.910004	171.850006	L2
+7	de	de	PRE	PRE	_	6	dep	_	_	171.979996	172.000000	L2
+8	vouloir	se vouloir	VNF	VNF	_	7	dep	_	_	172.009995	172.429993	L2
+9	euh	euh	INT	INT	_	8	dm	_	_	172.479996	172.500000	L2
+10	être	être	VNF	VNF	_	8	dep	_	_	172.509995	172.589996	L2
+11	plus	plus	ADN	ADN	_	12	dep	_	_	172.750000	172.899994	L2
+12	gros	gros	ADJ	ADJ	_	10	dep	_	_	173.149994	173.250000	L2
+13	tu	tu	CLS	CLS	_	14	subj	_	_	173.259995	173.330002	L2
+14	vois	voir	VRB	VRB	_	6	dm	_	_	173.339996	173.580002	L2
+15	ce	ce	PRO	PRO	_	4	dep	_	_	173.589996	173.610001	L2
+16	que	que	PRQ	PRQ	_	18	dep	_	_	173.619995	173.639999	L2
+17	je	je	CLS	CLS	_	18	subj	_	_	173.649994	173.669998	L2
+18	veux	vouloir	VRB	VRB	_	15	dep	_	_	173.679993	173.779999	L2
+19	dire	dire	VNF	VNF	_	18	dep	_	_	173.789993	173.880005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-60
+# text = hum hum ouais ouais
+1	hum	hum	INT	INT	_	0	root	_	_	173.949997	174.419998	L1
+2	hum	hum	INT	INT	_	1	dm	_	_	174.429993	174.580002	L1
+3	ouais	ouais	INT	INT	_	2	dm	_	_	174.589996	174.660004	L1
+4	ouais	ouais	INT	INT	_	3	para	_	_	174.710007	174.809998	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-61
+# text = mais
+1	mais	mais	COO	COO	_	0	root	_	_	174.869995	174.929993	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-62
+# text = dans le sens positif
+1	dans	dans	PRE	PRE	_	0	root	_	_	174.940002	175.070007	L2
+2	le	le	DET	DET	_	3	spe	_	_	175.080002	175.100006	L2
+3	sens	sens	NOM	NOM	_	1	dep	_	_	175.179993	175.309998	L2
+4	positif	positif	ADJ	ADJ	_	3	dep	_	_	175.380005	175.889999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-63
+# text = quoi ouais ouais
+1	quoi	quoi	INT	INT	_	0	root	_	_	175.960007	176.039993	L1
+2	ouais	ouais	INT	INT	_	1	dm	_	_	176.779999	176.889999	L1
+3	ouais	ouais	INT	INT	_	2	para	_	_	176.899994	177.080002	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-64
+# text = mais
+1	mais	mais	COO	COO	_	0	root	_	_	177.660004	177.800003	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-65
+# text = le j~ mentalité de la prod
+1	le	le	DET	DET	_	3	spe	_	_	177.809998	178.130005	L1
+2	j~	j~	DET	DET	_	1	para	_	_	178.139999	178.259995	L1
+3	mentalité	mentalité	NOM	NOM	_	0	root	_	_	178.800003	179.460007	L1
+4	de	de	PRE	PRE	_	3	dep	_	_	179.470001	179.509995	L1
+5	la	le	DET	DET	_	6	spe	_	_	179.520004	179.649994	L1
+6	prod	production	NOM	NOM	_	4	dep	_	_	179.660004	179.979996	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-66
+# text = aussi mais il y a la la mentalité des gens finalement
+1	aussi	aussi	ADV	ADV	_	5	periph	_	_	179.990005	180.250000	L1
+2	mais	mais	COO	COO	_	5	mark	_	_	180.259995	180.360001	L1
+3	il	il	CLS	CLS	_	5	subj	_	_	180.369995	180.419998	L1
+4	y	y	CLI	CLI	_	5	dep	_	_	180.429993	180.470001	L1
+5	a	avoir	VRB	VRB	_	0	root	_	_	180.479996	180.500000	L1
+6	la	le	DET	DET	_	8	spe	_	_	180.509995	180.800003	L1
+7	la	le	DET	DET	_	6	para	_	_	180.809998	180.919998	L1
+8	mentalité	mentalité	NOM	NOM	_	5	dep	_	_	180.929993	181.470001	L1
+9	des	de	PRE	PRE	_	8	dep	_	_	181.479996	181.610001	L1
+10	gens	gens	NOM	NOM	_	9	dep	_	_	181.619995	181.789993	L1
+11	finalement	finalement	ADV	ADV	_	5	periph	_	_	181.800003	182.279999	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-67
+# text = parce que ça ça a aussi des répercussions aussi je pense sur les
+1	parce que	parce que	CSU	CSU	_	10	periph	_	_	183.039993	183.279999	L1
+2	ça	ça	PRO	PRO	_	4	periph	_	_	183.289993	183.580002	L1
+3	ça	ça	PRO	PRO	_	4	subj	_	_	183.690002	183.759995	L1
+4	a	avoir	VRB	VRB	_	1	dep	_	_	183.809998	183.830002	L1
+5	aussi	aussi	ADV	ADV	_	4	dep	_	_	183.839996	184.020004	L1
+6	des	de	PRE	PRE	_	4	dep	_	_	184.169998	184.350006	L1
+7	répercussions	répercussion	NOM	NOM	_	6	dep	_	_	184.360001	185.080002	L1
+8	aussi	aussi	ADV	ADV	_	4	dep	_	_	185.089996	185.240005	L1
+9	je	je	CLS	CLS	_	10	subj	_	_	185.250000	185.270004	L1
+10	pense	penser	VRB	VRB	_	0	root	_	_	185.279999	185.360001	L1
+11	sur	sur	PRE	PRE	_	10	dep	_	_	186.029999	186.110001	L1
+12	les	le	DET	DET	_	11	disflink	_	_	186.119995	186.279999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-68
+# text = ouais bien sûr ouais bien sûr
+1	ouais	ouais	INT	INT	_	5	dm	_	_	182.490005	182.600006	L2
+2	bien	bien	ADV	ADV	_	5	dep	_	_	182.610001	182.740005	L2
+3	sûr	sûr	ADJ	ADJ	_	2	morph	_	_	182.830002	182.979996	L2
+4	ouais	ouais	INT	INT	_	3	dm	_	_	185.460007	185.520004	L2
+5	bien	bien	ADV	ADV	_	0	root	_	_	185.529999	185.789993	L2
+6	sûr	sûr	ADJ	ADJ	_	5	morph	_	_	185.800003	185.970001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-69
+# text = les gens euh je pense que quand ils vont dans les concerts par rapport à je sais pas ne serait-ce qu'
+1	les	le	DET	DET	_	2	spe	_	_	187.539993	187.770004	L1
+2	gens	gens	NOM	NOM	_	5	periph	_	_	187.779999	188.059998	L1
+3	euh	euh	INT	INT	_	2	dm	_	_	188.070007	188.300003	L1
+4	je	je	CLS	CLS	_	5	subj	_	_	188.309998	188.410004	L1
+5	pense	penser	VRB	VRB	_	0	root	_	_	188.419998	188.649994	L1
+6	que	que	CSU	CSU	_	5	dep	_	_	188.660004	188.850006	L1
+7	quand	quand	CSU	CSU	_	20	periph	_	_	188.860001	189.070007	L1
+8	ils	il	CLS	CLS	_	9	subj	_	_	189.080002	189.160004	L1
+9	vont	aller	VRB	VRB	_	7	dep	_	_	189.169998	189.320007	L1
+10	dans	dans	PRE	PRE	_	9	dep	_	_	189.330002	189.449997	L1
+11	les	le	DET	DET	_	12	spe	_	_	189.460007	189.550003	L1
+12	concerts	concert	NOM	NOM	_	10	dep	_	_	189.559998	190.009995	L1
+13	par	par	PRE	PRE	_	12	dep	_	_	190.020004	190.240005	L1
+14	rapport	rapport	NOM	NOM	_	13	dep	_	_	190.250000	190.550003	L1
+15	à	à	PRE	PRE	_	14	dep	_	_	190.559998	190.940002	L1
+16	je	je	CLS	CLS	_	17	subj	_	_	190.949997	191.009995	L1
+17	sais	savoir	VRB	VRB	_	15	dep	_	_	191.020004	191.160004	L1
+18	pas	pas	ADN	ADN	_	17	dep	_	_	191.169998	191.369995	L1
+19	ne	ne	CLN	CLN	_	20	dep	_	_	191.380005	191.460007	L1
+20	serait-ce	serait-ce	VRB	VRB	_	6	dep	_	_	191.520004	191.660004	L1
+21	qu'	que	CSU	CSU	_	20	dep	_	_	191.710007	191.789993	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-70
+# text = à l'Allemagne
+1	à	à	PRE	PRE	_	0	root	_	_	191.800003	191.839996	L1
+2	l'	le	DET	DET	_	3	spe	_	_	191.850006	191.929993	L1
+3	Allemagne	Allemagne	NOM	NOM	_	1	dep	_	_	191.940002	192.500000	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-71
+# text = ouais ouais
+1	ouais	ouais	INT	INT	_	0	root	_	_	192.690002	192.740005	L2
+2	ouais	ouais	INT	INT	_	1	para	_	_	192.750000	192.830002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-72
+# text = c'est complètement différent
+1	c'	ce	CLS	CLS	_	2	subj	_	_	193.330002	193.350006	L1
+2	est	être	VRB	VRB	_	0	root	_	_	193.360001	193.410004	L1
+3	complètement	complètement	ADV	ADV	_	4	dep	_	_	193.419998	193.929993	L1
+4	différent	différent	ADJ	ADJ	_	2	dep	_	_	193.940002	194.389999	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-73
+# text = quoi
+1	quoi	quoi	INT	INT	_	0	root	_	_	194.399994	194.589996	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-74
+# text = ah ouais il y a il y a aussi ouais
+1	ah	ah	INT	INT	_	5	dm	_	_	194.699997	194.750000	L2
+2	ouais	ouais	INT	INT	_	1	dm	_	_	194.759995	195.000000	L2
+3	il	il	CLS	CLS	_	5	subj	_	_	195.009995	195.089996	L2
+4	y	y	CLI	CLI	_	5	dep	_	_	195.100006	195.130005	L2
+5	a	avoir	VRB	VRB	_	0	root	_	_	195.139999	195.179993	L2
+6	il	il	CLS	CLS	_	8	subj	_	_	195.190002	195.279999	L2
+7	y	y	CLI	CLI	_	8	dep	_	_	195.289993	195.309998	L2
+8	a	avoir	VRB	VRB	_	5	para	_	_	195.320007	195.339996	L2
+9	aussi	aussi	ADV	ADV	_	8	dep	_	_	195.350006	195.729996	L2
+10	ouais	ouais	INT	INT	_	9	dm	_	_	195.839996	195.970001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-75
+# text = il y a aussi
+1	il	il	CLS	CLS	_	3	subj	_	_	195.979996	196.050003	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	196.550003	196.580002	L2
+3	a	avoir	VRB	VRB	_	0	root	_	_	196.589996	196.610001	L2
+4	aussi	aussi	ADV	ADV	_	3	dep	_	_	196.619995	196.979996	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-76
+# text = le le
+1	le	le	DET	DET	_	0	root	_	_	197.020004	197.149994	L2
+2	le	le	DET	DET	_	1	para	_	_	197.190002	197.309998	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-77
+# text = du il y a aussi
+1	du	du	COO	COO	_	4	mark	_	_	197.669998	197.720001	L2
+2	il	il	CLS	CLS	_	4	subj	_	_	197.729996	197.779999	L2
+3	y	y	CLI	CLI	_	4	dep	_	_	197.990005	198.020004	L2
+4	a	avoir	VRB	VRB	_	0	root	_	_	198.699997	198.720001	L2
+5	aussi	aussi	ADV	ADV	_	4	dep	_	_	198.770004	198.970001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-78
+# text = beaucoup beaucoup de gens euh
+1	beaucoup	beaucoup	ADV	ADV	_	0	root	_	_	199.029999	199.240005	L2
+2	beaucoup	beaucoup	ADV	ADV	_	1	para	_	_	199.389999	199.559998	L2
+3	de	de	PRE	PRE	_	2	dep	_	_	199.570007	199.589996	L2
+4	gens	gens	NOM	NOM	_	3	dep	_	_	199.600006	199.839996	L2
+5	euh	euh	INT	INT	_	4	dm	_	_	199.850006	200.130005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-79
+# text = je sais pas si je peux parler de ouais au niveau des styles musicaux qui sont pas mal fermés dans un style par exemple ouais
+1	je	je	CLS	CLS	_	2	subj	_	_	200.440002	200.490005	L2
+2	sais	savoir	VRB	VRB	_	0	root	_	_	200.500000	200.639999	L2
+3	pas	pas	ADN	ADN	_	2	dep	_	_	200.649994	200.800003	L2
+4	si	si	CSU	CSU	_	2	dep	_	_	200.809998	200.860001	L2
+5	je	je	CLS	CLS	_	6	subj	_	_	200.869995	200.919998	L2
+6	peux	pouvoir	VRB	VRB	_	4	dep	_	_	200.929993	201.009995	L2
+7	parler	parler	VNF	VNF	_	6	dep	_	_	201.020004	201.210007	L2
+8	de	de	PRE	PRE	_	7	dep	_	_	201.220001	201.240005	L2
+9	ouais	ouais	INT	INT	_	8	dm	_	_	201.250000	201.300003	L2
+10	au	à+le	PRE	PRE	_	7	dep	_	_	201.309998	201.339996	L2
+11	niveau	niveau	NOM	NOM	_	10	dep	_	_	201.350006	201.529999	L2
+12	des	de	PRE	PRE	_	11	dep	_	_	201.539993	201.630005	L2
+13	styles	style	NOM	NOM	_	12	dep	_	_	201.770004	201.899994	L2
+14	musicaux	musical	ADJ	ADJ	_	13	dep	_	_	201.940002	202.330002	L2
+15	qui	qui	PRQ	PRQ	_	19	dep	_	_	202.339996	202.389999	L2
+16	sont	être	VRB	VRB	_	19	aux	_	_	202.399994	202.500000	L2
+17	pas	pas	ADN	ADN	_	18	dep	_	_	202.509995	202.589996	L2
+18	mal	mal	ADV	ADV	_	19	dep	_	_	202.600006	202.759995	L2
+19	fermés	fermer	VPP	VPP	_	13	dep	_	_	202.770004	203.169998	L2
+20	dans	dans	PRE	PRE	_	19	dep	_	_	203.179993	203.300003	L2
+21	un	un	DET	DET	_	22	spe	_	_	203.309998	203.330002	L2
+22	style	style	NOM	NOM	_	20	dep	_	_	203.419998	203.649994	L2
+23	par	par	PRE	PRE	_	7	dep	_	_	204.270004	204.360001	L2
+24	exemple	exemple	NOM	NOM	_	23	dep	_	_	204.369995	204.580002	L2
+25	ouais	ouais	INT	INT	_	24	dm	_	_	204.589996	204.690002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-80
+# text = moi j'écoute du ska uniquement
+1	moi	moi	PRO	PRO	_	3	periph	_	_	204.699997	204.850006	L2
+2	j'	je	CLS	CLS	_	3	subj	_	_	204.860001	204.929993	L2
+3	écoute	écouter	VRB	VRB	_	0	root	_	_	204.940002	205.119995	L2
+4	du	de+le	PRE	PRE	_	3	dep	_	_	205.220001	205.330002	L2
+5	ska	ska	NOM	NOM	_	4	dep	_	_	205.339996	205.800003	L2
+6	uniquement	uniquement	ADV	ADV	_	3	periph	_	_	205.809998	206.220001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-81
+# text = alors je vais pas aller dans un concert punk
+1	alors	alors	ADV	ADV	_	3	periph	_	_	206.279999	206.589996	L2
+2	je	je	CLS	CLS	_	3	subj	_	_	206.600006	206.619995	L2
+3	vais	aller	VRB	VRB	_	0	root	_	_	206.679993	206.830002	L2
+4	pas	pas	ADN	ADN	_	3	dep	_	_	206.839996	206.949997	L2
+5	aller	aller	VNF	VNF	_	3	dep	_	_	206.960007	207.080002	L2
+6	dans	dans	PRE	PRE	_	5	dep	_	_	207.089996	207.220001	L2
+7	un	un	DET	DET	_	8	spe	_	_	207.229996	207.289993	L2
+8	concert	concert	NOM	NOM	_	6	dep	_	_	207.300003	207.580002	L2
+9	punk	punk	NOM	NOM	_	8	dep	_	_	207.710007	207.970001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-82
+# text = moi j'écoute
+1	moi	moi	PRO	PRO	_	3	periph	_	_	208.110001	208.210007	L2
+2	j'	je	CLS	CLS	_	3	subj	_	_	208.220001	208.330002	L2
+3	écoute	écouter	VRB	VRB	_	0	root	_	_	208.339996	208.860001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-83
+# text = moi j'écoute du hardcore
+1	moi	moi	PRO	PRO	_	3	periph	_	_	208.869995	208.990005	L2
+2	j'	je	CLS	CLS	_	3	subj	_	_	209.000000	209.070007	L2
+3	écoute	écouter	VRB	VRB	_	0	root	_	_	209.080002	209.289993	L2
+4	du	de+le	PRE	PRE	_	3	dep	_	_	209.350006	209.440002	L2
+5	hardcore	hardcore	NOM	NOM	_	4	dep	_	_	209.449997	209.880005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-84
+# text = alors je vais pas aller voir encore une fois un concert punk
+1	alors	alors	ADV	ADV	_	3	periph	_	_	209.889999	210.309998	L2
+2	je	je	CLS	CLS	_	3	subj	_	_	210.889999	210.919998	L2
+3	vais	aller	VRB	VRB	_	0	root	_	_	210.929993	211.080002	L2
+4	pas	pas	ADN	ADN	_	3	dep	_	_	211.089996	211.289993	L2
+5	aller	aller	VNF	VNF	_	3	dep	_	_	211.300003	211.449997	L2
+6	voir	voir	VNF	VNF	_	5	dep	_	_	211.460007	211.750000	L2
+7	encore	encore	ADV	ADV	_	6	dep	_	_	211.759995	212.000000	L2
+8	une	un	DET	DET	_	9	spe	_	_	212.009995	212.059998	L2
+9	fois	foi	NOM	NOM	_	6	dep	_	_	212.070007	212.220001	L2
+10	un	un	DET	DET	_	11	spe	_	_	212.229996	212.259995	L2
+11	concert	concert	NOM	NOM	_	9	para	_	_	212.270004	212.509995	L2
+12	punk	punk	NOM	NOM	_	11	dep	_	_	212.520004	212.639999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-85
+# text = tu vas en Allemagne ou en Belgique
+1	tu	tu	CLS	CLS	_	2	subj	_	_	212.720001	212.830002	L2
+2	vas	aller	VRB	VRB	_	0	root	_	_	212.839996	212.929993	L2
+3	en	en	PRE	PRE	_	2	dep	_	_	212.940002	213.119995	L2
+4	Allemagne	Allemagne	NOM	NOM	_	3	dep	_	_	213.130005	213.529999	L2
+5	ou	ou	COO	COO	_	6	mark	_	_	213.539993	213.559998	L2
+6	en	en	PRE	PRE	_	3	para	_	_	213.570007	213.610001	L2
+7	Belgique	Belgique	NOM	NOM	_	6	dep	_	_	213.619995	213.990005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-86
+# text = ce qui est rigolo c'est que euh tu te retrouves dans un concert ska ou un concert
+1	ce	ce	PRO	PRO	_	6	periph	_	_	214.089996	214.139999	L2
+2	qui	qui	PRQ	PRQ	_	3	subj	_	_	214.199997	214.250000	L2
+3	est	être	VRB	VRB	_	1	dep	_	_	214.259995	214.279999	L2
+4	rigolo	rigolo	ADJ	ADJ	_	3	dep	_	_	214.289993	214.710007	L2
+5	c'	ce	CLS	CLS	_	6	subj	_	_	215.619995	215.639999	L2
+6	est	être	VRB	VRB	_	0	root	_	_	215.649994	215.699997	L2
+7	que	que	CSU	CSU	_	6	dep	_	_	215.710007	215.729996	L2
+8	euh	euh	INT	INT	_	7	dm	_	_	215.740005	215.759995	L2
+9	tu	tu	CLS	CLS	_	11	subj	_	_	215.809998	215.860001	L2
+10	te	te	CLI	CLI	_	11	dep	_	_	215.869995	216.539993	L2
+11	retrouves	retrouver	VRB	VRB	_	7	dep	_	_	216.740005	217.080002	L2
+12	dans	dans	PRE	PRE	_	11	dep	_	_	217.089996	217.169998	L2
+13	un	un	DET	DET	_	14	spe	_	_	217.179993	217.199997	L2
+14	concert	concert	NOM	NOM	_	12	dep	_	_	217.210007	217.520004	L2
+15	ska	ska	NOM	NOM	_	14	dep	_	_	217.660004	218.100006	L2
+16	ou	ou	COO	COO	_	18	mark	_	_	218.110001	218.130005	L2
+17	un	un	DET	DET	_	18	spe	_	_	218.139999	218.169998	L2
+18	concert	concert	NOM	NOM	_	15	para	_	_	218.179993	218.460007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-87
+# text = je sais pas quoi d'autre
+1	je	je	CLS	CLS	_	2	subj	_	_	218.600006	219.070007	L2
+2	sais	savoir	VRB	VRB	_	0	root	_	_	219.149994	219.229996	L2
+3	pas	pas	ADN	ADN	_	2	dep	_	_	219.240005	219.339996	L2
+4	quoi	quoi	PRQ	PRQ	_	2	dep	_	_	219.410004	219.490005	L2
+5	d'	de	PRE	PRE	_	4	dep	_	_	219.500000	219.559998	L2
+6	autre	autre	NOM	NOM	_	5	dep	_	_	219.570007	219.839996	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-88
+# text = tu verras aussi bien des punks
+1	tu	tu	CLS	CLS	_	2	subj	_	_	220.309998	220.399994	L2
+2	verras	voir	VRB	VRB	_	0	root	_	_	220.410004	220.550003	L2
+3	aussi	aussi	ADV	ADV	_	2	dep	_	_	220.559998	220.820007	L2
+4	bien	bien	ADV	ADV	_	2	dep	_	_	220.830002	221.130005	L2
+5	des	de	PRE	PRE	_	2	dep	_	_	221.270004	221.449997	L2
+6	punks	punk	NOM	NOM	_	5	dep	_	_	221.460007	221.639999	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-89
+# text = que
+1	que	que	PRQ	PRQ	_	0	root	_	_	221.649994	222.179993	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-90
+# text = des skins pas forcément fachos hein que des skins communistes euh que des que des hardcoreux que des enfin
+1	des	de	PRE	PRE	_	0	root	_	_	222.289993	222.479996	L2
+2	skins	skins	NOM	NOM	_	1	dep	_	_	222.550003	223.270004	L2
+3	pas	pas	ADN	ADN	_	5	dep	_	_	223.279999	223.449997	L2
+4	forcément	forcément	ADV	ADV	_	5	dep	_	_	223.740005	224.289993	L2
+5	fachos	facho	ADJ	ADJ	_	2	dep	_	_	224.300003	224.449997	L2
+6	hein	hein	INT	INT	_	5	dm	_	_	224.809998	224.940002	L2
+7	que	que	CSU	CSU	_	5	dep	_	_	224.949997	225.490005	L2
+8	des	de	PRE	PRE	_	7	dep	_	_	225.500000	225.550003	L2
+9	skins	skins	NOM	NOM	_	8	dep	_	_	225.949997	226.059998	L2
+10	communistes	communiste	ADJ	ADJ	_	9	dep	_	_	226.070007	226.619995	L2
+11	euh	euh	INT	INT	_	10	dm	_	_	226.710007	227.100006	L2
+12	que	que	CSU	CSU	_	7	para	_	_	227.639999	227.770004	L2
+13	des	de	PRE	PRE	_	12	dep	_	_	227.779999	228.380005	L2
+14	que	que	CSU	CSU	_	13	dep	_	_	228.440002	228.509995	L2
+15	des	de	PRE	PRE	_	13	para	_	_	228.520004	228.630005	L2
+16	hardcoreux	hardcoreux	NOM	NOM	_	15	dep	_	_	228.639999	229.160004	L2
+17	que	que	CSU	CSU	_	16	dep	_	_	229.169998	229.369995	L2
+18	des	de	PRE	PRE	_	16	dep	_	_	229.380005	229.429993	L2
+19	enfin	enfin	ADV	ADV	_	18	dm	_	_	229.440002	229.550003	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-91
+# text = le public il se mélange beaucoup plus
+1	le	le	DET	DET	_	2	spe	_	_	229.619995	229.850006	L2
+2	public	public	NOM	NOM	_	5	periph	_	_	229.929993	230.100006	L2
+3	il	il	CLS	CLS	_	5	subj	_	_	230.270004	230.320007	L2
+4	se	se	CLI	CLI	_	5	dep	_	_	230.389999	230.419998	L2
+5	mélange	mélanger	VRB	VRB	_	0	root	_	_	230.600006	230.839996	L2
+6	beaucoup	beaucoup	ADV	ADV	_	5	dep	_	_	230.899994	231.169998	L2
+7	plus	plus	ADV	ADV	_	5	dep	_	_	231.179993	231.470001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-92
+# text = donc à ce niveau là ouais il y a encore une espèce de mentalité assez assez fermée
+1	donc	donc	ADV	ADV	_	9	periph	_	_	231.529999	231.690002	L2
+2	à	à	PRE	PRE	_	9	periph	_	_	231.699997	231.729996	L2
+3	ce	ce	DET	DET	_	4	spe	_	_	231.839996	231.880005	L2
+4	niveau	niveau	NOM	NOM	_	2	dep	_	_	231.889999	232.050003	L2
+5	là	là	ADV	ADV	_	4	dep	_	_	232.059998	232.210007	L2
+6	ouais	ouais	INT	INT	_	5	dm	_	_	232.220001	232.440002	L2
+7	il	il	CLS	CLS	_	9	subj	_	_	232.500000	232.550003	L2
+8	y	y	CLI	CLI	_	9	dep	_	_	232.559998	232.580002	L2
+9	a	avoir	VRB	VRB	_	0	root	_	_	232.589996	232.610001	L2
+10	encore	encore	ADV	ADV	_	9	dep	_	_	232.619995	232.729996	L2
+11	une	un	DET	DET	_	12	spe	_	_	232.740005	232.789993	L2
+12	espèce	espèce	NOM	NOM	_	9	dep	_	_	232.800003	233.000000	L2
+13	de	de	PRE	PRE	_	12	dep	_	_	233.009995	233.130005	L2
+14	mentalité	mentalité	NOM	NOM	_	13	dep	_	_	233.139999	233.720001	L2
+15	assez	assez	ADV	ADV	_	16	dep	_	_	233.899994	234.020004	L2
+16	assez	assez	ADV	ADV	_	17	dep	_	_	234.070007	234.270004	L2
+17	fermée	fermé	ADJ	ADJ	_	14	dep	_	_	234.419998	234.699997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-93
+# text = je trouve
+1	je	je	CLS	CLS	_	2	subj	_	_	235.110001	235.130005	L2
+2	trouve	trouver	VRB	VRB	_	0	root	_	_	235.240005	235.509995	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-94
+# text = hum hum
+1	hum	hum	INT	INT	_	0	root	_	_	236.160004	236.309998	L1
+2	hum	hum	INT	INT	_	1	dm	_	_	236.320007	236.500000	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-95
+# text = et
+1	et	et	COO	COO	_	0	root	_	_	236.880005	236.899994	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-96
+# text = surtout
+1	surtout	surtout	ADV	ADV	_	0	root	_	_	236.910004	237.199997	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-97
+# text = au niveau de la scène plus encore
+1	au	à+le	PRE	PRE	_	0	root	_	_	237.210007	237.240005	L2
+2	niveau	niveau	NOM	NOM	_	1	dep	_	_	237.250000	237.449997	L2
+3	de	de	PRE	PRE	_	2	dep	_	_	237.460007	237.479996	L2
+4	la	le	DET	DET	_	5	spe	_	_	237.490005	237.619995	L2
+5	scène	scène	NOM	NOM	_	3	dep	_	_	237.679993	237.910004	L2
+6	plus	plus	ADN	ADN	_	7	dep	_	_	237.990005	238.229996	L2
+7	encore	encore	ADV	ADV	_	5	dep	_	_	238.350006	238.580002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-98
+# text = au niveau de la scène métal
+1	au	à+le	PRE	PRE	_	0	root	_	_	238.589996	238.619995	L2
+2	niveau	niveau	NOM	NOM	_	1	dep	_	_	238.630005	238.809998	L2
+3	de	de	PRE	PRE	_	2	dep	_	_	238.820007	238.839996	L2
+4	la	le	DET	DET	_	5	spe	_	_	238.850006	238.929993	L2
+5	scène	scène	NOM	NOM	_	3	dep	_	_	238.990005	239.160004	L2
+6	métal	métal	NOM	NOM	_	5	dep	_	_	239.169998	239.490005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-99
+# text = ben métal c'est quand même une culture un peu une culture à part
+1	ben	ben	INT	INT	_	4	dm	_	_	240.720001	240.899994	L1
+2	métal	métal	NOM	NOM	_	4	periph	_	_	240.910004	241.300003	L1
+3	c'	ce	CLS	CLS	_	4	subj	_	_	241.309998	241.330002	L1
+4	est	être	VRB	VRB	_	0	root	_	_	241.339996	241.429993	L1
+5	quand	quand	CSU	CSU	_	4	dep	_	_	241.440002	241.550003	L1
+6	même	même	ADV	ADV	_	5	morph	_	_	241.559998	241.679993	L1
+7	une	un	DET	DET	_	8	spe	_	_	241.690002	241.740005	L1
+8	culture	culture	NOM	NOM	_	4	dep	_	_	241.750000	242.179993	L1
+9	un peu	un peu	ADV	ADV	_	4	dep	_	_	242.190002	242.759995	L1
+10	une	un	DET	DET	_	11	spe	_	_	243.110001	243.279999	L1
+11	culture	culture	NOM	NOM	_	4	dep	_	_	243.289993	243.729996	L1
+12	à	à	PRE	PRE	_	11	dep	_	_	243.740005	243.899994	L1
+13	part	part	NOM	NOM	_	12	dep	_	_	243.910004	244.190002	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-100
+# text = quoi ouais ouais ouais ouais bah je sais pas par exemple
+1	quoi	quoi	INT	INT	_	8	dm	_	_	244.199997	244.300003	L2
+2	ouais	ouais	INT	INT	_	1	dm	_	_	244.360001	244.410004	L2
+3	ouais	ouais	INT	INT	_	2	para	_	_	244.419998	244.470001	L2
+4	ouais	ouais	INT	INT	_	3	para	_	_	244.479996	244.529999	L2
+5	ouais	ouais	INT	INT	_	4	para	_	_	244.539993	244.589996	L2
+6	bah	bah	INT	INT	_	5	dm	_	_	244.600006	244.649994	L2
+7	je	je	CLS	CLS	_	8	subj	_	_	244.660004	245.070007	L2
+8	sais	savoir	VRB	VRB	_	0	root	_	_	245.080002	245.339996	L2
+9	pas	pas	ADN	ADN	_	8	dep	_	_	245.460007	245.580002	L2
+10	par	par	PRE	PRE	_	8	dep	_	_	245.589996	245.699997	L2
+11	exemple	exemple	NOM	NOM	_	10	dep	_	_	245.710007	245.880005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-101
+# text = moi j'étais avec Headust à Colmar
+1	moi	moi	PRO	PRO	_	3	periph	_	_	245.889999	245.970001	L2
+2	j'	je	CLS	CLS	_	3	subj	_	_	246.020004	246.039993	L2
+3	étais	être	VRB	VRB	_	0	root	_	_	246.050003	246.190002	L2
+4	avec	avec	PRE	PRE	_	3	dep	_	_	246.199997	246.500000	L2
+5	Headust	Headust	NOM	NOM	_	4	dep	_	_	246.509995	246.740005	L2
+6	à	à	PRE	PRE	_	3	dep	_	_	246.750000	246.770004	L2
+7	Colmar	Colmar	NOM	NOM	_	6	dep	_	_	246.779999	247.259995	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-102
+# text = ils faisaient un concert là-bas
+1	ils	il	CLS	CLS	_	2	subj	_	_	248.229996	248.289993	L2
+2	faisaient	faire	VRB	VRB	_	0	root	_	_	248.300003	248.419998	L2
+3	un	un	DET	DET	_	4	spe	_	_	248.429993	248.449997	L2
+4	concert	concert	NOM	NOM	_	2	dep	_	_	248.460007	248.610001	L2
+5	là-bas	là-bas	ADV	ADV	_	2	dep	_	_	248.619995	248.820007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-103
+# text = et avec il y avait que des groupes de de hardcore à la Madball et tout ça tu vois
+1	et	et	COO	COO	_	5	mark	_	_	248.830002	248.889999	L2
+2	avec	avec	PRE	PRE	_	5	periph	_	_	248.899994	249.070007	L2
+3	il	il	CLS	CLS	_	5	subj	_	_	249.080002	249.130005	L2
+4	y	y	CLI	CLI	_	5	dep	_	_	249.139999	249.160004	L2
+5	avait	avoir	VRB	VRB	_	0	root	_	_	249.169998	249.309998	L2
+6	que	que	ADN	ADN	_	5	dep	_	_	249.320007	249.380005	L2
+7	des	de	PRE	PRE	_	5	dep	_	_	249.389999	249.529999	L2
+8	groupes	groupe	NOM	NOM	_	7	dep	_	_	249.589996	249.809998	L2
+9	de	de	PRE	PRE	_	8	dep	_	_	249.820007	250.270004	L2
+10	de	de	PRE	PRE	_	9	para	_	_	250.800003	250.919998	L2
+11	hardcore	hardcore	NOM	NOM	_	10	dep	_	_	250.929993	251.339996	L2
+12	à	à	PRE	PRE	_	10	para	_	_	251.350006	251.380005	L2
+13	la	le	DET	DET	_	14	spe	_	_	251.389999	251.479996	L2
+14	Madball	Madball	NOM	NOM	_	12	dep	_	_	251.490005	251.960007	L2
+15	et	et	COO	COO	_	17	mark	_	_	251.970001	252.059998	L2
+16	tout	tout	ADJ	ADJ	_	17	dep	_	_	252.070007	252.139999	L2
+17	ça	ça	PRO	PRO	_	14	para	_	_	252.149994	252.350006	L2
+18	tu	tu	CLS	CLS	_	19	subj	_	_	252.470001	252.529999	L2
+19	vois	voir	VRB	VRB	_	17	dm	_	_	252.570007	252.759995	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-104
+# text = hum hum
+1	hum	hum	INT	INT	_	0	root	_	_	252.889999	252.940002	L1
+2	hum	hum	INT	INT	_	1	dm	_	_	252.949997	253.000000	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-105
+# text = ils remplaçaient High On Fire qui devaient aller jouer
+1	ils	il	CLS	CLS	_	2	subj	_	_	253.149994	253.210007	L2
+2	remplaçaient	remplacer	VRB	VRB	_	0	root	_	_	253.220001	253.889999	L2
+3	High	High	NOM	NOM	_	2	dep	_	_	253.899994	254.139999	L2
+4	On	On	NOM	NOM	_	3	dep	_	_	254.149994	254.199997	L2
+5	Fire	Fire	NOM	NOM	_	4	dep	_	_	254.210007	254.550003	L2
+6	qui	qui	PRQ	PRQ	_	7	subj	_	_	254.649994	254.720001	L2
+7	devaient	devoir	VRB	VRB	_	5	dep	_	_	254.789993	254.869995	L2
+8	aller	aller	VNF	VNF	_	7	dep	_	_	254.880005	255.050003	L2
+9	jouer	jouer	VNF	VNF	_	8	dep	_	_	255.059998	255.289993	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-106
+# text = et eux ils ont joué ils faisaient un truc à la Nostromo Meshuggah euh tous les trucs comme ça
+1	et	et	COO	COO	_	5	mark	_	_	256.190002	256.399994	L2
+2	eux	moi	PRO	PRO	_	5	dep	_	_	256.410004	256.730011	L2
+3	ils	il	CLS	CLS	_	5	subj	_	_	256.739990	256.850006	L2
+4	ont	avoir	VRB	VRB	_	5	aux	_	_	256.859985	256.970001	L2
+5	joué	jouer	VPP	VPP	_	0	root	_	_	256.980011	257.200012	L2
+6	ils	il	CLS	CLS	_	7	subj	_	_	257.209991	257.260010	L2
+7	faisaient	faire	VRB	VRB	_	5	dep	_	_	257.269989	257.390015	L2
+8	un	un	DET	DET	_	9	spe	_	_	257.399994	257.420013	L2
+9	truc	truc	NOM	NOM	_	7	dep	_	_	257.429993	257.670013	L2
+10	à	à	PRE	PRE	_	9	dep	_	_	257.679993	257.700012	L2
+11	la	le	DET	DET	_	12	spe	_	_	257.709991	257.940002	L2
+12	Nostromo	Nostromo	NOM	NOM	_	10	dep	_	_	257.950012	258.720001	L2
+13	Meshuggah	Meshuggah	NOM	NOM	_	12	dep	_	_	258.730011	259.700012	L2
+14	euh	euh	INT	INT	_	13	dm	_	_	259.709991	259.739990	L2
+15	tous	tout	ADJ	ADJ	_	17	dep	_	_	259.750000	259.799988	L2
+16	les	le	DET	DET	_	17	spe	_	_	259.929993	260.000000	L2
+17	trucs	truc	NOM	NOM	_	12	para	_	_	260.010010	260.119995	L2
+18	comme	comme	PRE	PRE	_	17	dep	_	_	260.190002	260.359985	L2
+19	ça	ça	PRO	PRO	_	18	dep	_	_	260.450012	260.600006	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-107
+# text = et euh
+1	et	et	COO	COO	_	0	root	_	_	261.649994	261.809998	L2
+2	euh	euh	INT	INT	_	1	dm	_	_	261.820007	261.940002	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-108
+# text = le public
+1	le	le	DET	DET	_	2	spe	_	_	261.950012	262.049988	L2
+2	public	public	NOM	NOM	_	0	root	_	_	262.160004	262.429993	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-109
+# text = a super mal réagi
+1	a	avoir	VRB	VRB	_	0	root	_	_	262.440002	262.459991	L2
+2	super	super	ADJ	ADJ	_	3	dep	_	_	262.470001	262.769989	L2
+3	mal	mal	NOM	NOM	_	1	dep	_	_	262.779999	262.950012	L2
+4	réagi	réagir	VPP	VPP	_	3	dep	_	_	262.959991	263.359985	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-110
+# text = alors que finalement musicalement il y a vachement de tu vois
+1	alors	alors	ADV	ADV	_	2	morph	_	_	263.369995	263.549988	L2
+2	que	que	CSU	CSU	_	0	root	_	_	263.559998	263.630005	L2
+3	finalement	finalement	ADV	ADV	_	7	periph	_	_	263.679993	264.019989	L2
+4	musicalement	musicalement	ADV	ADV	_	7	periph	_	_	264.029999	264.779999	L2
+5	il	il	CLS	CLS	_	7	subj	_	_	264.790009	264.899994	L2
+6	y	y	CLI	CLI	_	7	dep	_	_	264.910004	264.929993	L2
+7	a	avoir	VRB	VRB	_	2	dep	_	_	264.940002	264.989990	L2
+8	vachement	vachement	ADV	ADV	_	7	dep	_	_	265.109985	265.519989	L2
+9	de	de	PRE	PRE	_	7	dep	_	_	265.529999	265.820007	L2
+10	tu	tu	CLS	CLS	_	11	subj	_	_	265.829987	265.880005	L2
+11	vois	voir	VRB	VRB	_	7	dm	_	_	265.890015	266.010010	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-111
+# text = de des similitudes
+1	de	de	PRE	PRE	_	0	root	_	_	266.019989	266.040009	L1
+2	des	de	PRE	PRE	_	1	para	_	_	266.220001	266.290009	L1
+3	similitudes	similitude	NOM	NOM	_	2	dep	_	_	266.299988	266.929993	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-112
+# text = quoi ouais c'est du hardcore métal à part que Headust
+1	quoi	quoi	INT	INT	_	4	dm	_	_	266.940002	267.049988	L2
+2	ouais	ouais	INT	INT	_	1	dm	_	_	267.109985	267.429993	L2
+3	c'	ce	CLS	CLS	_	4	subj	_	_	267.489990	267.519989	L2
+4	est	être	VRB	VRB	_	0	root	_	_	267.529999	267.549988	L2
+5	du	de+le	PRE	PRE	_	4	dep	_	_	267.559998	267.670013	L2
+6	hardcore	hardcore	NOM	NOM	_	5	dep	_	_	267.679993	267.980011	L2
+7	métal	métal	NOM	NOM	_	6	dep	_	_	267.989990	268.250000	L2
+8	à	à	PRE	PRE	_	4	dep	_	_	268.260010	268.329987	L2
+9	part	part	NOM	NOM	_	8	dep	_	_	268.339996	268.470001	L2
+10	que	que	PRQ	PRQ	_	11	dep	_	_	268.480011	268.500000	L2
+11	Headust	Headust	NOM	NOM	_	9	dep	_	_	268.510010	268.750000	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-113
+# text = ils sont plus techniques
+1	ils	il	CLS	CLS	_	2	subj	_	_	268.760010	268.809998	L2
+2	sont	être	VRB	VRB	_	0	root	_	_	268.820007	268.920013	L2
+3	plus	plus	ADN	ADN	_	4	dep	_	_	268.929993	269.070007	L2
+4	techniques	technique	ADJ	ADJ	_	2	dep	_	_	269.079987	269.489990	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-114
+# text = mais les gens ils ont regardé comme ça un peu de traviole
+1	mais	mais	COO	COO	_	6	mark	_	_	269.500000	269.600006	L2
+2	les	le	DET	DET	_	3	spe	_	_	269.609985	269.750000	L2
+3	gens	gens	NOM	NOM	_	6	periph	_	_	269.760010	269.920013	L2
+4	ils	il	CLS	CLS	_	6	subj	_	_	269.959991	270.079987	L2
+5	ont	avoir	VRB	VRB	_	6	aux	_	_	270.089996	270.119995	L2
+6	regardé	regarder	VPP	VPP	_	0	root	_	_	270.130005	270.519989	L2
+7	comme	comme	PRE	PRE	_	6	dep	_	_	270.529999	270.679993	L2
+8	ça	ça	PRO	PRO	_	7	dep	_	_	270.730011	270.839996	L2
+9	un peu	un peu	ADV	ADV	_	6	dep	_	_	270.899994	271.000000	L2
+10	de	de	PRE	PRE	_	9	dep	_	_	271.010010	271.029999	L2
+11	traviole	traviole	NOM	NOM	_	10	dep	_	_	271.079987	271.540009	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-115
+# text = et les groupes d'après avaient un niveau beaucoup moins élevé musicalement et euh et au niveau de l'invention et tout le monde était à bloc
+1	et	et	COO	COO	_	3	mark	_	_	271.950012	271.980011	L2
+2	les	le	DET	DET	_	3	spe	_	_	271.989990	272.100006	L2
+3	groupes	groupe	NOM	NOM	_	6	subj	_	_	272.109985	272.260010	L2
+4	d'	de	PRE	PRE	_	3	dep	_	_	272.269989	272.350006	L2
+5	après	après	PRE	PRE	_	6	dep	_	_	272.359985	272.700012	L2
+6	avaient	avoir	VRB	VRB	_	0	root	_	_	272.709991	272.859985	L2
+7	un	un	DET	DET	_	8	spe	_	_	272.869995	272.989990	L2
+8	niveau	niveau	NOM	NOM	_	6	dep	_	_	273.000000	273.230011	L2
+9	beaucoup	beaucoup	ADV	ADV	_	10	dep	_	_	273.239990	273.600006	L2
+10	moins	moins	ADV	ADV	_	11	dep	_	_	273.609985	273.839996	L2
+11	élevé	élever	VPP	VPP	_	8	dep	_	_	273.850006	274.179993	L2
+12	musicalement	musicalement	ADV	ADV	_	11	dep	_	_	274.359985	275.149994	L2
+13	et	et	COO	COO	_	23	mark	_	_	275.390015	275.410004	L2
+14	euh	euh	INT	INT	_	13	dm	_	_	275.420013	275.559998	L2
+15	et	et	COO	COO	_	13	para	_	_	275.829987	275.859985	L2
+16	au	à+le	PRE	PRE	_	23	periph	_	_	275.869995	275.890015	L2
+17	niveau	niveau	NOM	NOM	_	16	dep	_	_	275.899994	276.149994	L2
+18	de	de	PRE	PRE	_	17	dep	_	_	276.160004	276.179993	L2
+19	l'	le	DET	DET	_	20	spe	_	_	276.239990	276.260010	L2
+20	invention	invention	NOM	NOM	_	18	dep	_	_	276.269989	276.709991	L2
+21	et	et	COO	COO	_	23	mark	_	_	277.589996	277.640015	L2
+22	tout le monde	tout le monde	PRO	PRO	_	23	subj	_	_	277.649994	278.000000	L2
+23	était	être	VRB	VRB	_	11	para	_	_	278.010010	278.109985	L2
+24	à	à	PRE	PRE	_	23	dep	_	_	278.119995	278.220001	L2
+25	bloc	bloc	NOM	NOM	_	24	dep	_	_	278.230011	278.470001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-116
+# text = quoi mais finalement alors les gens viennent pas pour voir un groupe
+1	quoi	quoi	INT	INT	_	7	dm	_	_	278.529999	278.630005	L1
+2	mais	mais	COO	COO	_	7	mark	_	_	279.529999	279.700012	L1
+3	finalement	finalement	ADV	ADV	_	7	periph	_	_	279.709991	280.140015	L1
+4	alors	alors	ADV	ADV	_	7	periph	_	_	280.149994	280.399994	L1
+5	les	le	DET	DET	_	6	spe	_	_	280.410004	280.500000	L1
+6	gens	gens	NOM	NOM	_	7	subj	_	_	280.510010	280.720001	L1
+7	viennent	venir	VRB	VRB	_	0	root	_	_	280.730011	280.920013	L1
+8	pas	pas	ADN	ADN	_	7	dep	_	_	280.929993	281.079987	L1
+9	pour	pour	PRE	PRE	_	7	dep	_	_	281.089996	281.279999	L1
+10	voir	voir	VNF	VNF	_	9	dep	_	_	281.290009	281.470001	L1
+11	un	un	DET	DET	_	12	spe	_	_	281.480011	281.529999	L1
+12	groupe	groupe	NOM	NOM	_	10	dep	_	_	281.540009	281.750000	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-117
+# text = ils viennent pour voir un nom
+1	ils	il	CLS	CLS	_	2	subj	_	_	281.760010	281.829987	L1
+2	viennent	venir	VRB	VRB	_	0	root	_	_	281.839996	281.980011	L1
+3	pour	pour	PRE	PRE	_	2	dep	_	_	281.989990	282.220001	L1
+4	voir	voir	VNF	VNF	_	3	dep	_	_	282.230011	282.399994	L1
+5	un	un	DET	DET	_	6	spe	_	_	282.410004	282.450012	L1
+6	nom	nom	NOM	NOM	_	4	dep	_	_	282.540009	282.600006	L1
+
+# sent_id = cefc-tcof-Chee_alb_sd-118
+# text = quoi ouais et ils viennent aussi pour voir un style
+1	quoi	quoi	INT	INT	_	5	dm	_	_	282.609985	282.760010	L2
+2	ouais	ouais	INT	INT	_	1	dm	_	_	283.399994	283.739990	L2
+3	et	et	COO	COO	_	5	mark	_	_	283.750000	283.820007	L2
+4	ils	il	CLS	CLS	_	5	subj	_	_	283.829987	283.880005	L2
+5	viennent	venir	VRB	VRB	_	0	root	_	_	283.890015	284.089996	L2
+6	aussi	aussi	ADV	ADV	_	5	dep	_	_	284.100006	284.250000	L2
+7	pour	pour	PRE	PRE	_	5	dep	_	_	284.299988	284.410004	L2
+8	voir	voir	VNF	VNF	_	7	dep	_	_	284.420013	284.600006	L2
+9	un	un	DET	DET	_	10	spe	_	_	284.609985	284.640015	L2
+10	style	style	NOM	NOM	_	8	dep	_	_	284.850006	284.959991	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-119
+# text = ils viennent pour entendre des choses qui des fois aussi
+1	ils	il	CLS	CLS	_	2	subj	_	_	284.970001	285.049988	L2
+2	viennent	venir	VRB	VRB	_	0	root	_	_	285.459991	285.660004	L2
+3	pour	pour	PRE	PRE	_	2	dep	_	_	285.670013	285.809998	L2
+4	entendre	entendre	VNF	VNF	_	3	dep	_	_	285.820007	286.040009	L2
+5	des	de	PRE	PRE	_	4	dep	_	_	286.049988	286.149994	L2
+6	choses	chose	NOM	NOM	_	5	dep	_	_	286.160004	286.450012	L2
+7	qui	qui	PRQ	PRQ	_	4	dep	_	_	286.459991	286.510010	L2
+8	des	de	PRE	PRE	_	4	dep	_	_	286.600006	286.700012	L2
+9	fois	foi	NOM	NOM	_	8	dep	_	_	286.709991	286.839996	L2
+10	aussi	aussi	ADV	ADV	_	4	dep	_	_	286.850006	286.929993	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-120
+# text = ils ont déjà entendues
+1	ils	il	CLS	CLS	_	4	subj	_	_	287.059998	287.130005	L2
+2	ont	avoir	VRB	VRB	_	4	aux	_	_	287.250000	287.320007	L2
+3	déjà	déjà	ADV	ADV	_	4	dep	_	_	287.329987	287.519989	L2
+4	entendues	entendre	VPP	VPP	_	0	root	_	_	287.529999	287.850006	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-121
+# text = et c'est dommage parce que il y a il y a plus forcément l'instinct de découverte après si parce que tu peux y être amené au fur et à mesure quoi
+1	et	et	COO	COO	_	3	mark	_	_	288.890015	288.929993	L2
+2	c'	ce	CLS	CLS	_	3	subj	_	_	288.940002	288.970001	L2
+3	est	être	VRB	VRB	_	0	root	_	_	288.980011	289.029999	L2
+4	dommage	dommage	NOM	NOM	_	3	dep	_	_	289.040009	289.359985	L2
+5	parce que	parce que	CSU	CSU	_	3	dep	_	_	289.369995	290.230011	L2
+6	il	il	CLS	CLS	_	8	subj	_	_	290.980011	291.029999	L2
+7	y	y	CLI	CLI	_	8	dep	_	_	291.040009	291.059998	L2
+8	a	avoir	VRB	VRB	_	5	dep	_	_	291.070007	291.170013	L2
+9	il	il	CLS	CLS	_	11	subj	_	_	291.179993	291.239990	L2
+10	y	y	CLI	CLI	_	11	dep	_	_	291.250000	291.269989	L2
+11	a	avoir	VRB	VRB	_	8	para	_	_	291.279999	291.390015	L2
+12	plus	plus	ADN	ADN	_	11	dep	_	_	291.399994	291.519989	L2
+13	forcément	forcément	ADV	ADV	_	11	dep	_	_	291.529999	292.040009	L2
+14	l'	le	DET	DET	_	15	spe	_	_	292.049988	292.070007	L2
+15	instinct	instinct	NOM	NOM	_	11	dep	_	_	292.079987	292.239990	L2
+16	de	de	PRE	PRE	_	15	dep	_	_	292.250000	292.309998	L2
+17	découverte	découverte	NOM	NOM	_	16	dep	_	_	292.320007	292.600006	L2
+18	après	après	PRE	PRE	_	11	dep	_	_	292.609985	293.019989	L2
+19	si	si	CSU	CSU	_	5	para	_	_	293.029999	293.220001	L2
+20	parce que	parce que	CSU	CSU	_	19	dep	_	_	293.230011	293.399994	L2
+21	tu	tu	CLS	CLS	_	22	subj	_	_	293.410004	293.519989	L2
+22	peux	pouvoir	VRB	VRB	_	20	dep	_	_	293.670013	293.750000	L2
+23	y	y	CLI	CLI	_	24	dep	_	_	293.760010	293.839996	L2
+24	être	être	VNF	VNF	_	25	aux	_	_	293.850006	294.029999	L2
+25	amené	amener	VPP	VPP	_	22	dep	_	_	294.040009	294.269989	L2
+26	au fur et à mesure	au fur et à mesure	ADV	ADV	_	25	dep	_	_	294.279999	294.839996	L2
+27	quoi	quoi	INT	INT	_	26	dm	_	_	294.929993	295.070007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-122
+# text = mais c'est euh ouais
+1	mais	mais	COO	COO	_	3	mark	_	_	295.829987	296.019989	L2
+2	c'	ce	CLS	CLS	_	3	subj	_	_	296.089996	296.119995	L2
+3	est	être	VRB	VRB	_	0	root	_	_	296.130005	296.290009	L2
+4	euh	euh	INT	INT	_	3	dm	_	_	296.299988	296.619995	L2
+5	ouais	ouais	INT	INT	_	4	dm	_	_	296.630005	296.880005	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-123
+# text = il y en tout cas ils viennent ils viennent dans un souci de subjectivité quoi
+1	il	il	CLS	CLS	_	5	subj	_	_	296.890015	296.940002	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	296.950012	297.019989	L2
+3	en tout cas	en tout cas	ADV	ADV	_	5	periph	_	_	297.109985	297.420013	L2
+4	ils	il	CLS	CLS	_	5	subj	_	_	297.429993	297.690002	L2
+5	viennent	venir	VRB	VRB	_	0	root	_	_	297.700012	298.049988	L2
+6	ils	il	CLS	CLS	_	7	subj	_	_	298.059998	298.119995	L2
+7	viennent	venir	VRB	VRB	_	5	para	_	_	298.130005	298.309998	L2
+8	dans	dans	PRE	PRE	_	7	dep	_	_	298.320007	298.429993	L2
+9	un	un	DET	DET	_	10	spe	_	_	298.440002	298.459991	L2
+10	souci	souci	NOM	NOM	_	8	dep	_	_	298.510010	298.720001	L2
+11	de	de	PRE	PRE	_	10	dep	_	_	298.760010	298.779999	L2
+12	subjectivité	subjectivité	NOM	NOM	_	11	dep	_	_	298.790009	299.470001	L2
+13	quoi	quoi	INT	INT	_	12	dm	_	_	299.480011	299.570007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-124
+# text = il y a plus vraiment d'objectivité quand tu arrives dans un concert
+1	il	il	CLS	CLS	_	3	subj	_	_	299.760010	299.809998	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	299.820007	299.839996	L2
+3	a	avoir	VRB	VRB	_	0	root	_	_	299.850006	299.890015	L2
+4	plus	plus	ADN	ADN	_	5	dep	_	_	299.899994	300.040009	L2
+5	vraiment	vraiment	ADV	ADV	_	3	dep	_	_	300.049988	300.399994	L2
+6	d'	de	PRE	PRE	_	3	dep	_	_	300.410004	300.429993	L2
+7	objectivité	objectivité	NOM	NOM	_	6	dep	_	_	300.440002	301.000000	L2
+8	quand	quand	CSU	CSU	_	3	dep	_	_	301.010010	301.100006	L2
+9	tu	tu	CLS	CLS	_	10	subj	_	_	301.109985	301.160004	L2
+10	arrives	arriver	VRB	VRB	_	8	dep	_	_	301.170013	301.369995	L2
+11	dans	dans	PRE	PRE	_	10	dep	_	_	301.380005	301.459991	L2
+12	un	un	DET	DET	_	13	spe	_	_	301.470001	301.489990	L2
+13	concert	concert	NOM	NOM	_	11	dep	_	_	301.500000	301.820007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-125
+# text = c'est plus en général
+1	c'	ce	CLS	CLS	_	2	subj	_	_	301.910004	301.940002	L2
+2	est	être	VRB	VRB	_	0	root	_	_	301.950012	302.029999	L2
+3	plus	plus	ADN	ADN	_	4	dep	_	_	302.100006	302.220001	L2
+4	en	en	PRE	PRE	_	2	dep	_	_	302.290009	302.399994	L2
+5	général	général	NOM	NOM	_	4	dep	_	_	302.410004	302.820007	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-126
+# text = putain c'est vachement bien et tout euh
+1	putain	putain	NOM	NOM	_	3	periph	_	_	302.829987	302.980011	L2
+2	c'	ce	CLS	CLS	_	3	subj	_	_	303.019989	303.059998	L2
+3	est	être	VRB	VRB	_	0	root	_	_	303.070007	303.130005	L2
+4	vachement	vachement	ADV	ADV	_	3	dep	_	_	303.140015	303.510010	L2
+5	bien	bien	ADV	ADV	_	3	dep	_	_	303.519989	303.779999	L2
+6	et	et	COO	COO	_	7	mark	_	_	303.790009	303.829987	L2
+7	tout	tout	ADV	ADV	_	5	para	_	_	304.040009	304.119995	L2
+8	euh	euh	INT	INT	_	7	dm	_	_	304.130005	304.170013	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-127
+# text = il y a ça ça ça qui est bien
+1	il	il	CLS	CLS	_	3	subj	_	_	304.630005	304.679993	L2
+2	y	y	CLI	CLI	_	3	dep	_	_	304.690002	304.709991	L2
+3	a	avoir	VRB	VRB	_	0	root	_	_	304.809998	304.859985	L2
+4	ça	ça	PRO	PRO	_	3	dep	_	_	304.869995	304.920013	L2
+5	ça	ça	PRO	PRO	_	3	dep	_	_	304.929993	305.000000	L2
+6	ça	ça	PRO	PRO	_	5	para	_	_	305.100006	305.239990	L2
+7	qui	qui	PRQ	PRQ	_	8	subj	_	_	305.309998	305.359985	L2
+8	est	être	VRB	VRB	_	5	dep	_	_	305.369995	305.410004	L2
+9	bien	bien	ADV	ADV	_	8	dep	_	_	305.420013	305.649994	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-128
+# text = les gens viennent viennent avec leur propre idée de ce qu'il va y avoir sur scène
+1	les	le	DET	DET	_	2	spe	_	_	306.230011	306.339996	L2
+2	gens	gens	NOM	NOM	_	3	subj	_	_	306.350006	306.489990	L2
+3	viennent	venir	VRB	VRB	_	0	root	_	_	306.500000	307.250000	L2
+4	viennent	venir	VRB	VRB	_	3	para	_	_	307.260010	307.570007	L2
+5	avec	avec	PRE	PRE	_	4	dep	_	_	307.579987	307.809998	L2
+6	leur	son	DET	DET	_	8	spe	_	_	307.820007	307.899994	L2
+7	propre	propre	ADJ	ADJ	_	8	dep	_	_	308.059998	308.339996	L2
+8	idée	idée	NOM	NOM	_	5	dep	_	_	308.410004	308.730011	L2
+9	de	de	PRE	PRE	_	8	dep	_	_	308.739990	308.850006	L2
+10	ce	ce	PRO	PRO	_	9	dep	_	_	308.929993	308.950012	L2
+11	qu'	que	PRQ	PRQ	_	13	dep	_	_	309.019989	309.040009	L2
+12	il	il	CLS	CLS	_	13	subj	_	_	309.049988	309.119995	L2
+13	va	aller	VRB	VRB	_	10	dep	_	_	309.130005	309.299988	L2
+14	y	y	CLI	CLI	_	15	dep	_	_	309.309998	309.350006	L2
+15	avoir	avoir	VNF	VNF	_	13	dep	_	_	309.359985	309.640015	L2
+16	sur	sur	PRE	PRE	_	15	dep	_	_	309.709991	309.859985	L2
+17	scène	scène	NOM	NOM	_	16	dep	_	_	310.010010	310.220001	L2
+
+# sent_id = cefc-tcof-Chee_alb_sd-129
+# text = le processus de découverte est vachement
+1	le	le	DET	DET	_	2	spe	_	_	310.609985	310.709991	L1
+2	processus	processus	NOM	NOM	_	5	subj	_	_	310.720001	311.130005	L1
+3	de	de	PRE	PRE	_	2	dep	_	_	311.140015	311.230011	L1
+4	découverte	découverte	NOM	NOM	_	3	dep	_	_	311.239990	311.709991	L1
+5	est	être	VRB	VRB	_	0	root	_	_	311.720001	311.750000	L1
+6	vachement	vachement	ADV	ADV	_	5	dep	_	_	311.760010	311.970001	L1
+

@@ -1,0 +1,622 @@
+<?xml-stylesheet href="https://corpora.uni-hamburg.de/temp/cmdi2html.xsl" type="text/xsl"?>
+<!--Created on the basis of EXMARaLDA_DemoKorpus.coma by Coma2SpokenCorpusProfile.xsl on 2020-11-23T12:43:34.338+01:00-->
+<CMD xmlns="http://www.clarin.eu/cmd/" xmlns:xsi2="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cmd="http://www.clarin.eu/cmd/"
+    xsi2:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1422885449343/xsd"
+    CMDVersion="1.1">
+    <Header>
+        <MdCreator>HZSK</MdCreator>
+        <MdCreationDate>2020-11-23</MdCreationDate>
+        <MdSelfLink>https://corpora.uni-hamburg.de/repository/spoken-corpus:demo-1.1/CMDI</MdSelfLink>
+        <MdProfile>clarin.eu:cr1:p_1422885449343</MdProfile>
+        <MdCollectionDisplayName>Hamburger Zentrum für Sprachkorpora (HZSK)</MdCollectionDisplayName>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+            <ResourceProxy id="LDP-1E10CA2300-2D81-11EB-5214-09173F13E4C5">
+                <ResourceType>LandingPage</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/spoken-corpus:demo-1.1</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID69487ED6-9420-4860-E688-7AB74BBAE0EC">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Almal_is_n_freak/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDC9DB990B-E34B-3EA5-41AC-FFE8D4347196">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Anne_Will_Halbes_Wahlrecht/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID9086E9D2-4D76-90AA-269B-7AFD32D6DCBA">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Batatas_Fritas/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDDEFABF46-991B-650A-3700-E89F2D535801">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Beckhams/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDF6097C16-5984-9BD5-0F08-6CC7964CCED7">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Deutsche_Bahn_Rossau/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID4A9F3084-A5DB-4D66-07FA-3B6713F75C3A">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Fernando_Savater_Hermandad/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID647C115A-9240-527C-8A0C-5B3085790350">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Gasperini_Calcio/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDC6DE2B68-1F52-1A1E-D799-CA8E3EFE7093">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_HARDtalk/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDC5BFCD1A-6B0D-4785-517B-E4814FA3F388">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Hart_aber_fair/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDC7411DBF-F411-5BCE-2393-CEC91A1F0F96">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Helge_Schneider_Arbeitsamt/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID0D907392-4045-1807-4368-29F07151AEFB">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Helge_Schneider_Tropfsteinhoehle/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID3A9ECAF5-B341-8457-D4B0-38AD201D3C06">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Hubert_Fichte_Interview/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDD683963B-F453-4EDB-37AC-DA870FFA119A">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Joey_Learning_French/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDD87FADEB-5418-A17B-0114-BBEFB3B7872C">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_La_Toya_Jackson_Interpreting_is_fun/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID6B18232F-AFEF-3C56-9AC0-3036741F87EF">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Monty_Python_My_Theory/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID16B44B23-3A29-E8E0-C79E-B53262C019EE">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_NTVshniki/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDDB7C5561-866E-1EDD-D46A-245FE5C89AAC">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Nguyen_Ngoc_Ngan/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID1FCCAF64-082B-061E-1CB9-48A02FD00853">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Paul_McCartney_Interview/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDAACB2FA6-5C87-BDFF-BF86-1B979F77A60C">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Pear_Story/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDF602CEF7-9745-FF6F-2357-6CFD47DFF0ED">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Rudi_Voeller_Wutausbruch/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID038C6939-2BF9-80F4-FC61-C6B560926409">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Serif_Issi_Expertenauskunft/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID1B2C0144-860C-4230-51D1-0F40A46DCDEF">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Studio_Braun_English_Translator/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID6C42B229-5B20-3D68-3D7E-BDBBFF4195C3">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Studio_Braun_Forum_Waffenrecht/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="IDCD5D3784-638D-59E1-C4A4-84EC331B10F4">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Szymon_Majewski/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID0D01F6AF-57F3-858F-BA58-9A0D304D6A72">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Segolene_Royal_Debat/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="ID5A4CB4B9-6794-DA81-EA5A-28529366902F">
+                <ResourceType mimetype="application/xml+cmdi">Metadata</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/communication:demo-1.1_Telia-Telenor/CMDI</ResourceRef>
+            </ResourceProxy>
+            <ResourceProxy id="FIDD9FF4EC4-66DD-A6F7-1474-1BF8479B1E53">
+                <ResourceType mimetype="application/pdf">Resource</ResourceType>
+                <ResourceRef>https://corpora.uni-hamburg.de/repository/file:demo-1.1_Metadata_overview/PDF/Metadata.pdf</ResourceRef>
+            </ResourceProxy>
+        </ResourceProxyList>
+        <JournalFileProxyList></JournalFileProxyList>
+        <ResourceRelationList></ResourceRelationList>
+    </Resources>
+    <Components>
+        <SpokenCorpusProfile>
+            <GeneralInfo ComponentId="clarin.eu:cr1:c_1422885449330">
+                <Name xml:lang="eng">DEMO-KORPUS</Name>
+                <Title xml:lang="eng">EXMARaLDA Demo corpus 1.1</Title>
+                <Description xml:lang="eng"
+                    >A selection of short audio and video recordings in various languages to be used for instruction or demonstration of the EXMARaLDA system.</Description>
+                <Keyword xml:lang="eng">L1 data</Keyword>
+                <Keyword xml:lang="eng">EXMARaLDA</Keyword>
+                <ResourceClass>corpus</ResourceClass>
+                <PublicationDate>2020</PublicationDate>
+                <LifeCycleStatus>released</LifeCycleStatus>
+                <LegalOwner>Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de</LegalOwner>
+                <Availability xml:lang="eng"
+                    >Free to use for research and teaching purposes.</Availability>
+                <Version ComponentId="clarin.eu:cr1:c_1422885449338">
+                    <VersionNumber>1.1</VersionNumber>
+                </Version>
+                <Contact ComponentId="clarin.eu:cr1:c_1430905751602">
+                    <Address>Max-Brauer-Allee 60, D-22765 Hamburg</Address>
+                    <Email>corpora@uni-hamburg.de</Email>
+                    <Organisation xml:lang="deu">Hamburger Zentrum für Sprachkorpora</Organisation>
+                    <Organisation xml:lang="eng">Hamburg Centre for Language Corpora</Organisation>
+                    <Telephone>+49 40 42838-6425</Telephone>
+                    <Website>https://corpora.uni-hamburg.de</Website>
+                </Contact>
+                <License ComponentId="clarin.eu:cr1:c_1345561703649">
+                    <DistributionType>public</DistributionType>
+                    <LicenseName>HZSK-PUB</LicenseName>
+                    <LicenseURL>https://corpora.uni-hamburg.de/drupal/en/corpus-enquiries-licenses#HZSK-PUB</LicenseURL>
+                    <NonCommercialUsageOnly>true</NonCommercialUsageOnly>
+                </License>
+                <Project ComponentId="clarin.eu:cr1:c_1271859438125">
+                    <Title xml:lang="eng"
+                        >Z2 "Computer Assisted Methods for the creation and analysis of  multilingual data"</Title>
+                    <Title xml:lang="deu"
+                        >Z2 "Computergestützte Erfassungs- und Analysemethoden multilingualer  Daten"</Title>
+                   <Funder xml:lang="deu"
+                      >Deutsche Forschungsgemeinschaft (DFG)</Funder>
+                   <Funder xml:lang="eng"
+                      >German Research Foundation (DFG)</Funder>
+                </Project>
+                <Creators ComponentId="clarin.eu:cr1:c_1271859438134">
+                    <Creator ComponentId="clarin.eu:cr1:c_1271859438129">
+                        <Contact ComponentId="clarin.eu:cr1:c_1271859438113">
+                            <Person>Hamburger Zentrum für Sprachkorpora</Person>
+                            <Email>Max-Brauer-Allee 60 / D-22765 Hamburg</Email>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <Contributors ComponentId="clarin.eu:cr1:c_1422885449340">
+                    <Contributor Role="depositor"
+                        >Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de</Contributor>
+                    <Contributor Role="compiler"
+                        >Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de</Contributor>
+                    <Contributor Role="compiler"
+                        >Wilfried Schütte, schuette@ids-mannheim.de</Contributor>
+                    <Contributor Role="compiler">Dan Loehr, loehrd@georgetown.edu</Contributor>
+                    <Contributor Role="compiler"
+                        >Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de</Contributor>
+                    <Contributor Role="data_inputter">Secil Yusun</Contributor>
+                    <Contributor Role="data_inputter">Annette Schnieder</Contributor>
+                    <Contributor Role="data_inputter">Andrea Rolle</Contributor>
+                    <Contributor Role="data_inputter">Silke Merkel</Contributor>
+                    <Contributor Role="data_inputter">Thomas Schmidt</Contributor>
+                    <Contributor Role="data_inputter">Martina Schwalm</Contributor>
+                    <Contributor Role="data_inputter">Peter M. Fischer</Contributor>
+                    <Contributor Role="data_inputter">Kim-Chi Hamze</Contributor>
+                    <Contributor Role="data_inputter">Franziska Watzke</Contributor>
+                    <Contributor Role="data_inputter">Roman Stachowicz</Contributor>
+                    <Contributor Role="data_inputter">Karolina Kaminska</Contributor>
+                    <Contributor Role="data_inputter">Nicole Stäwen</Contributor>
+                    <Contributor Role="data_inputter">Maria Görlich</Contributor>
+                    <Contributor Role="data_inputter">Tara Al-Jaraf</Contributor>
+                    <Contributor Role="data_inputter">Florian Fuchs</Contributor>
+                    <Contributor Role="data_inputter">Heidemarie Sambale</Contributor>
+                    <Contributor Role="developer"
+                        >Hamburger Zentrum für Sprachkorpora, Max-Brauer-Allee 60 / D-22765 Hamburg, corpora@uni-hamburg.de</Contributor>
+                    <Contributor Role="researcher">Thomas Schmidt</Contributor>
+                    <Contributor Role="researcher">Kai Wörner</Contributor>
+                    <Contributor Role="researcher">Hanna Hedeland</Contributor>
+                    <Contributor Role="sponsor">Deutsche Forschungsgemeinschaft (DFG)</Contributor>
+                </Contributors>
+            </GeneralInfo>
+            <CorpusInfo ComponentId="clarin.eu:cr1:c_1422885449333">
+                <CorpusContext ComponentId="clarin.eu:cr1:c_1290431694491">
+                    <CorpusType>general corpus</CorpusType>
+                    <TemporalClassification>synchronic</TemporalClassification>
+                </CorpusContext>
+                <Coverage ComponentId="clarin.eu:cr1:c_1422885449339">
+                    <TimeCoverage>1970-01-07/2013-04-01</TimeCoverage>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Hamburg</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Lisbon</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>PT</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>London</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>GB</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>St. Aegidien</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>ES</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>IT</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Mülheimer Straße 36, 46045 Oberhausen</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Finnentroper Str. 39, 57439 Attendorn</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Reeperbahn, 20359 Hamburg</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>21 Jump Street, 41610 Virginia</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>US</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Theaterplatz 2, 01067 Dresden</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>DE</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>GB</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Moscow</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>RU</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>VN</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>US</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Reykjavik</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>IS</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>PL</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Address>Paris</Address>
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>FR</Code>
+                        </Country>
+                    </Location>
+                    <Location ComponentId="clarin.eu:cr1:c_1271859438112">
+                        <Country ComponentId="clarin.eu:cr1:c_1271859438104">
+                            <Code>SE</Code>
+                        </Country>
+                    </Location>
+                </Coverage>
+                <Multilinguality ComponentId="clarin.eu:cr1:c_1271859438121">
+                    <Multilinguality>Multilingual</Multilinguality>
+                </Multilinguality>
+                <SubjectLanguages ComponentId="clarin.eu:cr1:c_1271859438132">
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Deutsch</LanguageName>
+                            <LanguageName xml:lang="eng">German</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>deu</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Englisch</LanguageName>
+                            <LanguageName xml:lang="eng">English</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>eng</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Französisch</LanguageName>
+                            <LanguageName xml:lang="eng">French</LanguageName>
+                            <LanguageName xml:lang="fra">français; langue française</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>fra</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Spanisch</LanguageName>
+                            <LanguageName xml:lang="eng">Spanish</LanguageName>
+                            <LanguageName xml:lang="spa">español; castellano</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>spa</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Türkisch</LanguageName>
+                            <LanguageName xml:lang="eng">Turkish</LanguageName>
+                            <LanguageName xml:lang="tur">Türkçe</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>tur</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Polnisch</LanguageName>
+                            <LanguageName xml:lang="eng">Polish</LanguageName>
+                            <LanguageName xml:lang="pol">polski</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>pol</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Vietnamesisch</LanguageName>
+                            <LanguageName xml:lang="eng">Vietnamese</LanguageName>
+                            <LanguageName xml:lang="vie">Tiếng Việt</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>vie</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Schwedisch</LanguageName>
+                            <LanguageName xml:lang="eng">Swedish</LanguageName>
+                            <LanguageName xml:lang="swe">svenska</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>swe</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Norwegisch</LanguageName>
+                            <LanguageName xml:lang="eng">Norwegian</LanguageName>
+                            <LanguageName xml:lang="nor">norsk</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>nor</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Italienisch</LanguageName>
+                            <LanguageName xml:lang="eng">Italian</LanguageName>
+                            <LanguageName xml:lang="ita">italiano</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>ita</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Russisch</LanguageName>
+                            <LanguageName xml:lang="eng">Russian</LanguageName>
+                            <LanguageName xml:lang="rus">русский язык</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>rus</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Afrikaans</LanguageName>
+                            <LanguageName xml:lang="eng">Afrikaans</LanguageName>
+                            <LanguageName xml:lang="afr">Afrikaans</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>afr</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                    <SubjectLanguage ComponentId="clarin.eu:cr1:c_1271859438126">
+                        <Language ComponentId="clarin.eu:cr1:c_1271859438111">
+                            <LanguageName xml:lang="deu">Portugiesisch</LanguageName>
+                            <LanguageName xml:lang="eng">Portuguese</LanguageName>
+                            <LanguageName xml:lang="por">português</LanguageName>
+                            <ISO639 ComponentId="clarin.eu:cr1:c_1271859438110">
+                                <iso-639-3-code>por</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                </SubjectLanguages>
+                <Content ComponentId="clarin.eu:cr1:c_1422885449347">
+                    <Genre xml:lang="eng">discourse</Genre>
+                    <SubGenre xml:lang="eng">conversation</SubGenre>
+                    <SubGenre xml:lang="eng">television debate</SubGenre>
+                    <SubGenre xml:lang="eng">television sketch</SubGenre>
+                    <SubGenre xml:lang="eng">television interview</SubGenre>
+                    <SubGenre xml:lang="eng">telephone conversation sketch</SubGenre>
+                    <SubGenre xml:lang="eng">telephone interview</SubGenre>
+                    <SubGenre xml:lang="eng">telephone interview in television</SubGenre>
+                    <SubGenre xml:lang="eng">television interview</SubGenre>
+                    <SubGenre xml:lang="eng">television debate</SubGenre>
+                    <SubGenre xml:lang="eng">telephone conversation sketch</SubGenre>
+                    <SubGenre xml:lang="eng">conversation sketch</SubGenre>
+                    <SubGenre xml:lang="eng">interview</SubGenre>
+                    <SubGenre xml:lang="eng">television conversation</SubGenre>
+                    <SubGenre xml:lang="eng"
+                        >(partly simultaneously translated) television broadcast of acceptance speech</SubGenre>
+                    <SubGenre xml:lang="eng">interview sketch</SubGenre>
+                    <SubGenre xml:lang="eng">Interview</SubGenre>
+                    <SubGenre xml:lang="eng">television interview</SubGenre>
+                    <SubGenre xml:lang="eng">radio interview</SubGenre>
+                    <SubGenre xml:lang="eng">retelling of a story</SubGenre>
+                    <SubGenre xml:lang="eng">television interview</SubGenre>
+                    <SubGenre xml:lang="eng">advice by phone in television</SubGenre>
+                    <SubGenre xml:lang="eng">telephone conversation sketch</SubGenre>
+                    <SubGenre xml:lang="eng">telephone conversation sketch</SubGenre>
+                    <SubGenre xml:lang="eng">television conversation</SubGenre>
+                    <SubGenre xml:lang="eng">television debate</SubGenre>
+                    <SubGenre xml:lang="eng">radio conversation</SubGenre>
+                    <ModalityInfo ComponentId="clarin.eu:cr1:c_1359626292114">
+                        <Modalities>spoken</Modalities>
+                    </ModalityInfo>
+                </Content>
+                <AnnotationTypes ComponentId="clarin.eu:cr1:c_1422885449341">
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">transcription</AnnotationLevelType>
+                        <AnnotationMode>manual</AnnotationMode>
+                        <Descriptions ComponentId="clarin.eu:cr1:c_1290431694486">
+                            <Description>HIAT (simplified)</Description>
+                            <Description>HIAT</Description>
+                            <Description>Mimik und Gestik der Sprecher werden nur ansatzweise angedeutet. Abkürzungen: LA= linker Arm, RA= rechter Arm, LH= linke Hand, RH= rechte Hand, KO= Kopf, OK= Oberkörper.</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">cs</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>code-switch</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">de</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>German translation</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">en</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>English translation</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">en</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>Englisch translation</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">k</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>free comment</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">akz</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>accentuation/stress</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">nv</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>non-verbal</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">sup</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>suprasegmental information</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                    <AnnotationType ComponentId="clarin.eu:cr1:c_1422885449337">
+                        <AnnotationLevelType xml:lang="eng">hd</AnnotationLevelType>
+                        <Descriptions>
+                            <Description>Standard German translation</Description>
+                        </Descriptions>
+                    </AnnotationType>
+                </AnnotationTypes>
+                <Size ComponentId="clarin.eu:cr1:c_1271859438128">
+                    <TotalSize ComponentId="clarin.eu:cr1:c_1271859438114">
+                        <Number>26</Number>
+                        <SizeUnit xml:lang="eng">communications</SizeUnit>
+                        <SizeUnit xml:lang="deu">Kommunikationen</SizeUnit>
+                    </TotalSize>
+                    <TotalSize ComponentId="clarin.eu:cr1:c_1271859438114">
+                        <Number>1.89</Number>
+                        <SizeUnit xml:lang="eng">hours</SizeUnit>
+                        <SizeUnit xml:lang="deu">Stunden</SizeUnit>
+                    </TotalSize>
+                    <TotalSize ComponentId="clarin.eu:cr1:c_1271859438114">
+                        <Number>113</Number>
+                        <SizeUnit xml:lang="eng">minutes</SizeUnit>
+                        <SizeUnit xml:lang="deu">Minuten</SizeUnit>
+                    </TotalSize>
+                    <TotalSize ComponentId="clarin.eu:cr1:c_1271859438114">
+                        <Number>26</Number>
+                        <SizeUnit xml:lang="eng">recordings</SizeUnit>
+                        <SizeUnit xml:lang="deu">Aufnahmen</SizeUnit>
+                    </TotalSize>
+                    <TotalSize ComponentId="clarin.eu:cr1:c_1271859438114">
+                        <Number>26</Number>
+                        <SizeUnit xml:lang="eng">transcriptions</SizeUnit>
+                        <SizeUnit xml:lang="deu">Transkriptionen</SizeUnit>
+                    </TotalSize>
+                    <TotalSize ComponentId="clarin.eu:cr1:c_1271859438114">
+                        <Number>19918</Number>
+                        <SizeUnit xml:lang="eng">words</SizeUnit>
+                        <SizeUnit xml:lang="deu">Wörter</SizeUnit>
+                    </TotalSize>
+                </Size>
+            </CorpusInfo>
+            <SpeechCorpusInfo ComponentId="clarin.eu:cr1:c_1422885449346">
+                <DurationOfFullDatabase>1.89 h</DurationOfFullDatabase>
+                <NumberOfSpeakers>69</NumberOfSpeakers>
+                <SpeakerDemographics xml:lang="eng">23 female, 46 male</SpeakerDemographics>
+            </SpeechCorpusInfo>
+            <AssociatedFile ComponentId="clarin.eu:cr1:c_1374481371398"
+                ref="FIDD9FF4EC4-66DD-A6F7-1474-1BF8479B1E53">
+                <Name>Metadata overview</Name>
+                <MimeType ComponentId="clarin.eu:cr1:c_1271859438106">
+                    <MimeType>application/pdf</MimeType>
+                </MimeType>
+                <Keys ComponentId="clarin.eu:cr1:c_1302702320447">
+                    <Key Name="Language">English</Key>
+                    <Key Name="Type">Metadata overview</Key>
+                </Keys>
+            </AssociatedFile>
+            <Documentation ComponentId="clarin.eu:cr1:c_1342181139641">
+                <DocumentationType xml:lang="eng">website</DocumentationType>
+                <Url>https://corpora.uni-hamburg.de/repository/spoken-corpus:demo-1.1</Url>
+            </Documentation>
+        </SpokenCorpusProfile>
+    </Components>
+</CMD>

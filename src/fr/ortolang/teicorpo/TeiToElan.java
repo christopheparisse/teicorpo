@@ -500,7 +500,7 @@ public class TeiToElan extends GenericMain {
 
 	// Ajout des attributs des élement TIER
 	private String setTierAtt(Element tier, String type) {
-//		System.out.printf("setTierAtt(type): %s%n", type);
+		//System.out.printf("setTierAtt(type): %s%n", type);
 		for (TierInfo ti : ttp.tierInfos) {
 			if (ti.tier_id.equals(type)) {
 				if (Utils.isNotEmptyOrNull(ti.participant))
@@ -533,14 +533,14 @@ public class TeiToElan extends GenericMain {
 				return ti.linguistType.cv_ref;
 			}
 		}
-//		System.out.printf("setTierAtt(type): default%n");
+		//System.out.printf("setTierAtt(type): default%n");
 		tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
 		setDefault = true;
 		return "";
 	}
 
 	private String setTierAtt(Element tier, NewTier newTier, String type) {
-//		System.out.printf("setTierAtt(new): %s%n", newTier.toString());
+		//System.out.printf("setTierAtt(new): %s %s%n", newTier.toString(), type);
 		for (TierInfo ti : ttp.tierInfos) {
 			// System.out.printf("---: %s%n", ti.toString());
 			if (ti.tier_id.equals(newTier.oldID)) {
@@ -560,7 +560,7 @@ public class TeiToElan extends GenericMain {
 				}
 				// System.out.printf("1KK: %s (%s)%n", ti.toString(), newTier.toString());
 				if (Utils.isNotEmptyOrNull(ti.parent)) {
-					// System.out.printf("WW: %s %s %s%n", newTier.oldID, ti.parent, type);
+					//System.out.printf("WW: %s %s %s %s%n", newTier.oldID, ti.parent, type, tier.getAttribute("LINGUISTIC_TYPE_REF"));
 					tier.setAttribute("PARENT_REF", newTier.parent);
 //					int p = type.indexOf("-");
 //					if (p >= 1) {
@@ -583,7 +583,7 @@ public class TeiToElan extends GenericMain {
 				return ti.linguistType.cv_ref;
 			}
 		}
-//		System.out.printf("setTierAtt(new): default%n");
+		//System.out.printf("setTierAtt(new): default%n");
 		tier.setAttribute("LINGUISTIC_TYPE_REF", "default");
 		setDefault = true;
 		return "";
@@ -627,11 +627,11 @@ public class TeiToElan extends GenericMain {
 				// System.out.printf("0HH: %s %s%n", tier.getNodeName(), type);
 				cvref = setTierAtt(tier, nameOfTier);
 			for (Annot a : entry.getValue()) {
-//				System.out.println(a.toString());
+				//System.out.println(a.toString());
 				Element annot = elanDoc.createElement("ANNOTATION");
 				if (a.timereftype.equals("time")) {
 //					tstart = Utils.timeStamp("time:" + a.name, tstart);
-					// System.err.printf("TIME: (%s) %s%n", type, a.toString());
+					//System.err.printf("TIME: (%s) %s%n", a.timereftype, a.toString());
 					Element align_annot = elanDoc.createElement("ALIGNABLE_ANNOTATION");
 					align_annot.setAttribute("ANNOTATION_ID", a.id);
 					align_annot.setAttribute("TIME_SLOT_REF1", timelineValueOf(a.start));
@@ -657,6 +657,7 @@ public class TeiToElan extends GenericMain {
 				} else if (a.timereftype.equals("ref")) {
 					Element ref_annot = elanDoc.createElement("REF_ANNOTATION");
 //					tstart = Utils.timeStamp("ref:" + a.name, tstart);
+					//System.err.printf("REF: (%s) %s%n", a.timereftype, a.toString());
 					ref_annot.setAttribute("ANNOTATION_ID", a.id);
 					ref_annot.setAttribute("ANNOTATION_REF", a.link);
 					if (Utils.isNotEmptyOrNull(a.previous))

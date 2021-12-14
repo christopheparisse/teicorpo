@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>teicorpo</groupId>
     <artifactId>teicorpo</artifactId>
-    <version>1.4.43-SNAPSHOT</version>
+    <version>1.4.44-SNAPSHOT</version>
     <name>teicorpo</name>
     <description>tools for spoken language with the TEI format</description>
     <properties>
@@ -26,6 +26,18 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>fr.ortolang.teicorpo.TeiCorpo</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>
