@@ -21,7 +21,7 @@ public class LgqType{
 	boolean time_align; //  TIME_ALIGNABLE : dépend de contrainte
 	
 	public LgqType() {
-		lgq_type_id = "";
+		lgq_type_id = ""; // default-lt ?
 		constraint = "";
 		cv_ref = null;
 		graphic_ref = "false";

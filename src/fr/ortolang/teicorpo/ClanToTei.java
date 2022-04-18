@@ -26,7 +26,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 public class ClanToTei extends ImportToTei {
-	static String EXT = ".cha";
+	public static String EXT = ".cha";
 
 	// Variables d'instance
 	/** Structure de donnée contenant les informations du fichier Chat. */
@@ -53,14 +53,14 @@ public class ClanToTei extends ImportToTei {
 	 */
 	// initialise et construit le ChatFile et le docTEI
 	public void transform(String chatFileName, TierParams tp) throws Exception {
-//		System.err.printf("ClanToTei %s -- %s %n", chatFileName, tp);
+		System.err.printf("ClanToTei %s -- %s %n", chatFileName, tp);
 		chatFN = chatFileName;
 		if (tp == null) tp = new TierParams();
 		descID = 0;
 		utteranceId = 0;
 		whenId = 0;
 		optionsTEI = (tp != null) ? tp : new TierParams();
-//		System.err.printf("fmt: %s%n", optionsTEI.inputFormat);
+		System.err.printf("fmt: %s%n", optionsTEI.inputFormat);
 		if (optionsTEI.inputFormat.isEmpty()) optionsTEI.inputFormat = ".cha";
 		times = new ArrayList<String>();
 		tiersNames = new HashSet<String>();
@@ -75,9 +75,11 @@ public class ClanToTei extends ImportToTei {
 
 		try {
 			factory = DocumentBuilderFactory.newInstance();
+			System.err.printf("dtd: %s%n", optionsTEI.dtdValidation == true ? "TRUE" : "FALSE");
 			TeiDocument.setDTDvalidation(factory, optionsTEI.dtdValidation);
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			docTEI = builder.newDocument();
+			docTEI.setXmlStandalone(true);
 			this.xPathfactory = XPathFactory.newInstance();
 			this.xpath = xPathfactory.newXPath();
 			this.xpath.setNamespaceContext(new NamespaceContext() {
@@ -174,9 +176,8 @@ public class ClanToTei extends ImportToTei {
 		if (cf.birth != null) {
 			Element note = docTEI.createElement("note");
 			addNotes.appendChild(note);
-			ChatLine cl = new ChatLine(cf.birth);
-			note.setAttribute("type", "other");
-			note.setTextContent(cl.head + " " + cl.tail);
+			note.setAttribute("type", "birth");
+			note.setTextContent(Utils.getInfo(cf.birth));
 		}
 
 		if (!cf.comments.isEmpty() || !cf.otherInfo.isEmpty() || cf.transcriber != null) {
@@ -199,7 +200,7 @@ public class ClanToTei extends ImportToTei {
 				Element note = docTEI.createElement("note");
 				ChatLine cl = new ChatLine(info);
 				note.setAttribute("type", "other");
-				note.setTextContent(cl.head + " " + cl.tail);
+				note.setTextContent(cl.head + "\t" + cl.tail);
 				addNotes.appendChild(note);
 			}
 		}
@@ -648,14 +649,14 @@ public class ClanToTei extends ImportToTei {
 					Element span = docTEI.createElement("span");
 					spanGrp.appendChild(span);
 					spanGrp.setAttribute("type", spanType);
-					if (optionsTEI.target.equals("dinlang") && (spanType.equals("lng") || spanType.equals("act"))) {
+					if (optionsTEI.target.equals("dinlang") && (spanType.equals(Utils.languagingScript) || spanType.equals("act"))) {
 						if (!startTime.equals("-1")) {
 							String startId = addTimeToTimeline(toSeconds(startTime));
-							TeiDocument.setAttrAnnotationBloc(docTEI, spanGrp, "start", startId);
+							TeiDocument.setAttrAnnotationBloc(docTEI, span, "from", startId);
 						}
 						if (!endTime.equals("-1")) {
 							String endId = addTimeToTimeline(toSeconds(endTime));
-							TeiDocument.setAttrAnnotationBloc(docTEI,spanGrp, "end", endId);
+							TeiDocument.setAttrAnnotationBloc(docTEI,span, "to", endId);
 						}
 					}
 					// Element seg = docTEI.createElement("seg");
@@ -1260,7 +1261,7 @@ public class ClanToTei extends ImportToTei {
 
 	public static void main(String[] args) throws Exception {
 		EXT = ".cha";
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		ClanToTei tr = new ClanToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);
 		tr.mainCommand(args, EXT, Utils.EXT, "Description: ClanToTei converts a CLAN file to an TEI file%n", 0);

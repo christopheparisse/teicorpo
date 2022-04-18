@@ -1,0 +1,2881 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <desc>Fichier TEI obtenu à partir du fichier FOR_DIA.TextGrid</desc>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>tei_corpo</distributor>
+            </publicationStmt>
+            <notesStmt>
+                <note type="COMMENTS_DESC"/>
+                <note type="TEMPLATE_DESC">
+                    <note>
+                        <note type="code">syll</note>
+                        <note type="parent">-</note>
+                        <note type="type">-</note>
+                        <note type="graphicref">false</note>
+                        <note type="timealign">true</note>
+                    </note>
+                    <note>
+                        <note type="code">words</note>
+                        <note type="parent">-</note>
+                        <note type="type">-</note>
+                        <note type="graphicref">false</note>
+                        <note type="timealign">true</note>
+                    </note>
+                    <note>
+                        <note type="code">phones</note>
+                        <note type="parent">-</note>
+                        <note type="type">-</note>
+                        <note type="graphicref">false</note>
+                        <note type="timealign">true</note>
+                    </note>
+                    <note>
+                        <note type="code">ortho</note>
+                        <note type="parent">-</note>
+                        <note type="type">-</note>
+                        <note type="graphicref">false</note>
+                        <note type="timealign">true</note>
+                    </note>
+                    <note>
+                        <note type="code">spk</note>
+                        <note type="parent">-</note>
+                        <note type="type">-</note>
+                        <note type="graphicref">false</note>
+                        <note type="timealign">true</note>
+                    </note>
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <media mimeType="audio/x-wav" url="C:\devlopt\teicorpo\FOR_DIA.wav"/>
+                    </recording>
+                </recordingStmt>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting xml:id="d0">
+                    <activity/>
+                </setting>
+            </settingDesc>
+            <particDesc>
+                <listPerson>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="syll"/>
+                        </altGrp>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="words"/>
+                        </altGrp>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="phones"/>
+                        </altGrp>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="ortho"/>
+                        </altGrp>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="spk"/>
+                        </altGrp>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+        <encodingDesc style="0.9.1">
+            <appInfo>
+                <application ident="TeiCorpo" version="testing-version">
+                    <desc>Transcription converted with TeiCorpo and to TEI_CORPO</desc>
+                </application>
+            </appInfo>
+            <transcriptionDesc ident="praat" version="1.0">
+                <desc>Encoding: UTF-8</desc>
+            </transcriptionDesc>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>test document<desc>test</desc>
+                </item>
+                <head>
+                    <note type="access">C:\devlopt\teicorpo\test\data\sources\praat/</note>
+                    <note type="filename">FOR_DIA.tei_corpo.xml</note>
+                </head>
+                <item>C:\devlopt\teicorpo\test\data\sources\praat\FOR_DIA.tei_corpo.xml<desc>docname</desc>
+                </item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <timeline unit="s">
+            <when absolute="0" xml:id="T0"/>
+            <when interval="1.4197832108128883" since="#T0" xml:id="T1"/>
+            <when interval="1.4697832108128883" since="#T0" xml:id="T122"/>
+            <when interval="1.5597832108128884" since="#T0" xml:id="T2"/>
+            <when interval="1.6297832108128882" since="#T0" xml:id="T123"/>
+            <when interval="1.8897832108128885" since="#T0" xml:id="T3"/>
+            <when interval="2.2262535909348924" since="#T0" xml:id="T4"/>
+            <when interval="2.3562535909348923" since="#T0" xml:id="T124"/>
+            <when interval="2.426253590934892" since="#T0" xml:id="T5"/>
+            <when interval="2.506253590934892" since="#T0" xml:id="T125"/>
+            <when interval="2.6519883132912407" since="#T0" xml:id="T6"/>
+            <when interval="2.7905348668863943" since="#T0" xml:id="T7"/>
+            <when interval="2.8262535909348925" since="#T0" xml:id="T126"/>
+            <when interval="2.8662535909348925" since="#T0" xml:id="T127"/>
+            <when interval="2.9362535909348924" since="#T0" xml:id="T128"/>
+            <when interval="3.003423473630167" since="#T0" xml:id="T8"/>
+            <when interval="3.1462535909348923" since="#T0" xml:id="T129"/>
+            <when interval="3.6049182672871747" since="#T0" xml:id="T9"/>
+            <when interval="3.677167520505975" since="#T0" xml:id="T10"/>
+            <when interval="3.717167520505975" since="#T0" xml:id="T130"/>
+            <when interval="3.8309365113118603" since="#T0" xml:id="T131"/>
+            <when interval="3.897167520505975" since="#T0" xml:id="T11"/>
+            <when interval="3.967167520505975" since="#T0" xml:id="T132"/>
+            <when interval="4.177167520505975" since="#T0" xml:id="T12"/>
+            <when interval="4.290505567139687" since="#T0" xml:id="T133"/>
+            <when interval="4.457167520505974" since="#T0" xml:id="T13"/>
+            <when interval="4.5371675205059745" since="#T0" xml:id="T14"/>
+            <when interval="4.625044806308472" since="#T0" xml:id="T134"/>
+            <when interval="4.699386859457091" since="#T0" xml:id="T135"/>
+            <when interval="4.918616294572601" since="#T0" xml:id="T15"/>
+            <when interval="5.033616294572601" since="#T0" xml:id="T16"/>
+            <when interval="5.163616294572601" since="#T0" xml:id="T136"/>
+            <when interval="5.2736162945726015" since="#T0" xml:id="T17"/>
+            <when interval="5.373616294572601" since="#T0" xml:id="T137"/>
+            <when interval="5.473616294572601" since="#T0" xml:id="T18"/>
+            <when interval="5.533616294572601" since="#T0" xml:id="T138"/>
+            <when interval="5.563616294572601" since="#T0" xml:id="T139"/>
+            <when interval="5.7063837611974755" since="#T0" xml:id="T19"/>
+            <when interval="5.853616294572602" since="#T0" xml:id="T20"/>
+            <when interval="5.913616294572601" since="#T0" xml:id="T140"/>
+            <when interval="5.953616294572601" since="#T0" xml:id="T141"/>
+            <when interval="6.013616294572601" since="#T0" xml:id="T142"/>
+            <when interval="6.098369132344739" since="#T0" xml:id="T21"/>
+            <when interval="6.243616294572601" since="#T0" xml:id="T143"/>
+            <when interval="6.423616294572601" since="#T0" xml:id="T22"/>
+            <when interval="6.5236162945726015" since="#T0" xml:id="T111"/>
+            <when interval="6.5736162945726" since="#T0" xml:id="T144"/>
+            <when interval="6.673616294572601" since="#T0" xml:id="T23"/>
+            <when interval="6.723616294572601" since="#T0" xml:id="T145"/>
+            <when interval="6.803616294572601" since="#T0" xml:id="T24"/>
+            <when interval="6.893616294572601" since="#T0" xml:id="T146"/>
+            <when interval="6.943616294572601" since="#T0" xml:id="T147"/>
+            <when interval="7.063616294572601" since="#T0" xml:id="T25"/>
+            <when interval="7.103616294572602" since="#T0" xml:id="T148"/>
+            <when interval="7.173616294572602" since="#T0" xml:id="T26"/>
+            <when interval="7.243616294572601" since="#T0" xml:id="T149"/>
+            <when interval="7.583616294572601" since="#T0" xml:id="T27"/>
+            <when interval="7.871160880718055" since="#T0" xml:id="T28"/>
+            <when interval="7.901160880718055" since="#T0" xml:id="T150"/>
+            <when interval="8.011160880718055" since="#T0" xml:id="T29"/>
+            <when interval="8.071160880718054" since="#T0" xml:id="T112"/>
+            <when interval="8.195416219944667" since="#T0" xml:id="T30"/>
+            <when interval="8.271160880718055" since="#T0" xml:id="T151"/>
+            <when interval="8.381160880718054" since="#T0" xml:id="T152"/>
+            <when interval="8.521160880718055" since="#T0" xml:id="T31"/>
+            <when interval="8.691160880718055" since="#T0" xml:id="T32"/>
+            <when interval="8.781160880718055" since="#T0" xml:id="T33"/>
+            <when interval="8.831160880718055" since="#T0" xml:id="T153"/>
+            <when interval="8.957472413788663" since="#T0" xml:id="T34"/>
+            <when interval="9.05208957234145" since="#T0" xml:id="T154"/>
+            <when interval="9.221160880718054" since="#T0" xml:id="T35"/>
+            <when interval="9.598662280566932" since="#T0" xml:id="T36"/>
+            <when interval="9.648662280566933" since="#T0" xml:id="T155"/>
+            <when interval="9.708662280566934" since="#T0" xml:id="T37"/>
+            <when interval="9.798662280566933" since="#T0" xml:id="T113"/>
+            <when interval="9.868662280566934" since="#T0" xml:id="T38"/>
+            <when interval="10.008662280566932" since="#T0" xml:id="T156"/>
+            <when interval="10.078662280566933" since="#T0" xml:id="T157"/>
+            <when interval="10.146945264166565" since="#T0" xml:id="T39"/>
+            <when interval="10.228662280566933" since="#T0" xml:id="T158"/>
+            <when interval="10.338662280566933" since="#T0" xml:id="T114"/>
+            <when interval="10.368662280566934" since="#T0" xml:id="T40"/>
+            <when interval="10.408662280566933" since="#T0" xml:id="T159"/>
+            <when interval="10.478662280566933" since="#T0" xml:id="T41"/>
+            <when interval="10.558662280566933" since="#T0" xml:id="T160"/>
+            <when interval="10.738662280566933" since="#T0" xml:id="T161"/>
+            <when interval="10.798662280566933" since="#T0" xml:id="T42"/>
+            <when interval="11.204629929417372" since="#T0" xml:id="T43"/>
+            <when interval="11.265455245629878" since="#T0" xml:id="T162"/>
+            <when interval="11.465428371142991" since="#T0" xml:id="T44"/>
+            <when interval="11.668179425184679" since="#T0" xml:id="T45"/>
+            <when interval="11.77631332067358" since="#T0" xml:id="T163"/>
+            <when interval="11.918239058502762" since="#T0" xml:id="T46"/>
+            <when interval="12.134506849480562" since="#T0" xml:id="T47"/>
+            <when interval="12.235235750591297" since="#T0" xml:id="T164"/>
+            <when interval="12.365235750591296" since="#T0" xml:id="T48"/>
+            <when interval="12.922534740963346" since="#T0" xml:id="T49"/>
+            <when interval="13.02661148726399" since="#T0" xml:id="T165"/>
+            <when interval="13.162534740963347" since="#T0" xml:id="T50"/>
+            <when interval="13.262534740963346" since="#T0" xml:id="T166"/>
+            <when interval="13.435492779581393" since="#T0" xml:id="T167"/>
+            <when interval="13.526730753900154" since="#T0" xml:id="T51"/>
+            <when interval="13.651760570559194" since="#T0" xml:id="T52"/>
+            <when interval="13.812534740963347" since="#T0" xml:id="T53"/>
+            <when interval="13.842534740963346" since="#T0" xml:id="T168"/>
+            <when interval="13.872534740963346" since="#T0" xml:id="T169"/>
+            <when interval="13.922534740963346" since="#T0" xml:id="T170"/>
+            <when interval="14.00319573089812" since="#T0" xml:id="T54"/>
+            <when interval="14.082534740963347" since="#T0" xml:id="T171"/>
+            <when interval="14.192534740963346" since="#T0" xml:id="T55"/>
+            <when interval="14.282534740963346" since="#T0" xml:id="T115"/>
+            <when interval="14.342534740963346" since="#T0" xml:id="T172"/>
+            <when interval="14.392534740963345" since="#T0" xml:id="T56"/>
+            <when interval="14.442534740963346" since="#T0" xml:id="T173"/>
+            <when interval="14.512534740963346" since="#T0" xml:id="T57"/>
+            <when interval="14.582534740963347" since="#T0" xml:id="T174"/>
+            <when interval="14.612534740963346" since="#T0" xml:id="T175"/>
+            <when interval="14.692534740963346" since="#T0" xml:id="T58"/>
+            <when interval="14.752534740963346" since="#T0" xml:id="T176"/>
+            <when interval="14.832534740963347" since="#T0" xml:id="T59"/>
+            <when interval="14.872534740963346" since="#T0" xml:id="T177"/>
+            <when interval="15.002534740963346" since="#T0" xml:id="T178"/>
+            <when interval="15.152534740963347" since="#T0" xml:id="T60"/>
+            <when interval="15.41754606665803" since="#T0" xml:id="T61"/>
+            <when interval="15.58754606665803" since="#T0" xml:id="T116"/>
+            <when interval="15.680866032124259" since="#T0" xml:id="T179"/>
+            <when interval="15.782241559145103" since="#T0" xml:id="T62"/>
+            <when interval="15.924167296974284" since="#T0" xml:id="T180"/>
+            <when interval="16.14754606665803" since="#T0" xml:id="T63"/>
+            <when interval="16.32754606665803" since="#T0" xml:id="T64"/>
+            <when interval="16.376977984334054" since="#T0" xml:id="T181"/>
+            <when interval="16.43754606665803" since="#T0" xml:id="T182"/>
+            <when interval="16.65754606665803" since="#T0" xml:id="T65"/>
+            <when interval="16.77754606665803" since="#T0" xml:id="T66"/>
+            <when interval="16.82754606665803" since="#T0" xml:id="T183"/>
+            <when interval="16.91754606665803" since="#T0" xml:id="T67"/>
+            <when interval="16.96754606665803" since="#T0" xml:id="T184"/>
+            <when interval="17.12754606665803" since="#T0" xml:id="T185"/>
+            <when interval="17.268738494209742" since="#T0" xml:id="T68"/>
+            <when interval="18.161658334117924" since="#T0" xml:id="T69"/>
+            <when interval="18.28298665131773" since="#T0" xml:id="T70"/>
+            <when interval="18.391658334117924" since="#T0" xml:id="T117"/>
+            <when interval="18.531658334117925" since="#T0" xml:id="T186"/>
+            <when interval="18.611658334117926" since="#T0" xml:id="T71"/>
+            <when interval="18.671658334117925" since="#T0" xml:id="T187"/>
+            <when interval="18.851658334117925" since="#T0" xml:id="T72"/>
+            <when interval="18.971658334117926" since="#T0" xml:id="T188"/>
+            <when interval="19.031658334117925" since="#T0" xml:id="T189"/>
+            <when interval="19.221658334117926" since="#T0" xml:id="T73"/>
+            <when interval="19.281658334117925" since="#T0" xml:id="T190"/>
+            <when interval="19.381658334117926" since="#T0" xml:id="T74"/>
+            <when interval="19.471658334117926" since="#T0" xml:id="T191"/>
+            <when interval="19.631658334117926" since="#T0" xml:id="T75"/>
+            <when interval="19.881094638772527" since="#T0" xml:id="T76"/>
+            <when interval="19.931094638772528" since="#T0" xml:id="T192"/>
+            <when interval="20.003769937026" since="#T0" xml:id="T77"/>
+            <when interval="20.05109463877253" since="#T0" xml:id="T193"/>
+            <when interval="20.111094638772528" since="#T0" xml:id="T78"/>
+            <when interval="20.181094638772528" since="#T0" xml:id="T194"/>
+            <when interval="20.26058793881214" since="#T0" xml:id="T79"/>
+            <when interval="20.35109463877253" since="#T0" xml:id="T195"/>
+            <when interval="20.381094638772527" since="#T0" xml:id="T196"/>
+            <when interval="20.41109463877253" since="#T0" xml:id="T80"/>
+            <when interval="20.48109463877253" since="#T0" xml:id="T197"/>
+            <when interval="20.51109463877253" since="#T0" xml:id="T118"/>
+            <when interval="20.57109463877253" since="#T0" xml:id="T81"/>
+            <when interval="20.631094638772527" since="#T0" xml:id="T198"/>
+            <when interval="20.701094638772528" since="#T0" xml:id="T119"/>
+            <when interval="20.811094638772527" since="#T0" xml:id="T82"/>
+            <when interval="20.85109463877253" since="#T0" xml:id="T199"/>
+            <when interval="21.01109463877253" since="#T0" xml:id="T83"/>
+            <when interval="23.455446058400785" since="#T0" xml:id="T84"/>
+            <when interval="23.565446058400784" since="#T0" xml:id="T200"/>
+            <when interval="23.605446058400784" since="#T0" xml:id="T201"/>
+            <when interval="23.665446058400782" since="#T0" xml:id="T85"/>
+            <when interval="23.705446058400785" since="#T0" xml:id="T202"/>
+            <when interval="23.785446058400783" since="#T0" xml:id="T86"/>
+            <when interval="23.835446058400784" since="#T0" xml:id="T203"/>
+            <when interval="23.895446058400783" since="#T0" xml:id="T87"/>
+            <when interval="23.975446058400784" since="#T0" xml:id="T204"/>
+            <when interval="24.025446058400785" since="#T0" xml:id="T88"/>
+            <when interval="24.155446058400784" since="#T0" xml:id="T205"/>
+            <when interval="24.245446058400784" since="#T0" xml:id="T89"/>
+            <when interval="25.456337431211107" since="#T0" xml:id="T90"/>
+            <when interval="25.526337431211108" since="#T0" xml:id="T206"/>
+            <when interval="25.606337431211106" since="#T0" xml:id="T91"/>
+            <when interval="25.676337431211106" since="#T0" xml:id="T207"/>
+            <when interval="25.866337431211107" since="#T0" xml:id="T208"/>
+            <when interval="25.906337431211106" since="#T0" xml:id="T92"/>
+            <when interval="26.083265567235465" since="#T0" xml:id="T93"/>
+            <when interval="26.133265567235466" since="#T0" xml:id="T120"/>
+            <when interval="26.183265567235463" since="#T0" xml:id="T121"/>
+            <when interval="26.243265567235465" since="#T0" xml:id="T94"/>
+            <when interval="26.283265567235464" since="#T0" xml:id="T209"/>
+            <when interval="26.343265567235463" since="#T0" xml:id="T95"/>
+            <when interval="26.403265567235465" since="#T0" xml:id="T210"/>
+            <when interval="26.50688785167129" since="#T0" xml:id="T96"/>
+            <when interval="26.553265567235464" since="#T0" xml:id="T211"/>
+            <when interval="26.803265567235464" since="#T0" xml:id="T97"/>
+            <when interval="27.033675598728216" since="#T0" xml:id="T98"/>
+            <when interval="27.08810753992413" since="#T0" xml:id="T212"/>
+            <when interval="27.172587145774834" since="#T0" xml:id="T213"/>
+            <when interval="27.233412461987342" since="#T0" xml:id="T99"/>
+            <when interval="27.317892067838045" since="#T0" xml:id="T214"/>
+            <when interval="27.496988832241534" since="#T0" xml:id="T100"/>
+            <when interval="28.170871146595672" since="#T0" xml:id="T101"/>
+            <when interval="28.21087114659567" since="#T0" xml:id="T215"/>
+            <when interval="28.280871146595672" since="#T0" xml:id="T216"/>
+            <when interval="28.310871146595673" since="#T0" xml:id="T102"/>
+            <when interval="28.420871146595672" since="#T0" xml:id="T217"/>
+            <when interval="28.51734885401484" since="#T0" xml:id="T103"/>
+            <when interval="28.580871146595673" since="#T0" xml:id="T218"/>
+            <when interval="28.760871146595672" since="#T0" xml:id="T104"/>
+            <when interval="29.004522402898015" since="#T0" xml:id="T105"/>
+            <when interval="29.054522402898016" since="#T0" xml:id="T219"/>
+            <when interval="29.09452240289802" since="#T0" xml:id="T220"/>
+            <when interval="29.154522402898017" since="#T0" xml:id="T106"/>
+            <when interval="29.254522402898015" since="#T0" xml:id="T221"/>
+            <when interval="29.324522402898015" since="#T0" xml:id="T107"/>
+            <when interval="29.354522402898016" since="#T0" xml:id="T222"/>
+            <when interval="29.43452240289802" since="#T0" xml:id="T108"/>
+            <when interval="29.464522402898016" since="#T0" xml:id="T223"/>
+            <when interval="29.614522402898018" since="#T0" xml:id="T224"/>
+            <when interval="29.784522402898016" since="#T0" xml:id="T109"/>
+            <when interval="39.18934240362812" since="#T0" xml:id="T110"/>
+        </timeline>
+        <body>
+            <div subtype="d0" type="Situation">
+                <head>
+                    <note type="start">#T0</note>
+                    <note type="end">#T110</note>
+                </head>
+                <annotationBlock end="#T1" start="#T0" who="syll" xml:id="au1">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T1" start="#T0" who="words" xml:id="au111">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T1" start="#T0" who="phones" xml:id="au211">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T1" start="#T0" who="ortho" xml:id="au435">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T1" start="#T0" who="spk" xml:id="au484">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T2" start="#T1" who="syll" xml:id="au2">
+                    <u>
+                        <seg>ma</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T3" start="#T1" who="words" xml:id="au112">
+                    <u>
+                        <seg>maman</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T122" start="#T1" who="phones" xml:id="au212">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T3" start="#T1" who="ortho" xml:id="au436">
+                    <u>
+                        <seg>maman</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T9" start="#T1" who="spk" xml:id="au485">
+                    <u>
+                        <seg>L1</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T2" start="#T122" who="phones" xml:id="au213">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T3" start="#T2" who="syll" xml:id="au3">
+                    <u>
+                        <seg>ma~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T123" start="#T2" who="phones" xml:id="au214">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T3" start="#T123" who="phones" xml:id="au215">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T4" start="#T3" who="syll" xml:id="au4">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T4" start="#T3" who="words" xml:id="au113">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T4" start="#T3" who="phones" xml:id="au216">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T4" start="#T3" who="ortho" xml:id="au437">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T5" start="#T4" who="syll" xml:id="au5">
+                    <u>
+                        <seg>Z@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T5" start="#T4" who="words" xml:id="au114">
+                    <u>
+                        <seg>je</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T124" start="#T4" who="phones" xml:id="au217">
+                    <u>
+                        <seg>Z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T9" start="#T4" who="ortho" xml:id="au438">
+                    <u>
+                        <seg>je veux un croissant</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T5" start="#T124" who="phones" xml:id="au218">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T6" start="#T5" who="syll" xml:id="au6">
+                    <u>
+                        <seg>v2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T6" start="#T5" who="words" xml:id="au115">
+                    <u>
+                        <seg>veux</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T125" start="#T5" who="phones" xml:id="au219">
+                    <u>
+                        <seg>v</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T6" start="#T125" who="phones" xml:id="au220">
+                    <u>
+                        <seg>2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T7" start="#T6" who="syll" xml:id="au7">
+                    <u>
+                        <seg>9~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T7" start="#T6" who="words" xml:id="au116">
+                    <u>
+                        <seg>un</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T7" start="#T6" who="phones" xml:id="au221">
+                    <u>
+                        <seg>9~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T8" start="#T7" who="syll" xml:id="au8">
+                    <u>
+                        <seg>kRwa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T9" start="#T7" who="words" xml:id="au117">
+                    <u>
+                        <seg>croissant</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T126" start="#T7" who="phones" xml:id="au222">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T127" start="#T126" who="phones" xml:id="au223">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T128" start="#T127" who="phones" xml:id="au224">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T8" start="#T128" who="phones" xml:id="au225">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T9" start="#T8" who="syll" xml:id="au9">
+                    <u>
+                        <seg>sa~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T129" start="#T8" who="phones" xml:id="au226">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T9" start="#T129" who="phones" xml:id="au227">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T10" start="#T9" who="syll" xml:id="au10">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T10" start="#T9" who="words" xml:id="au118">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T10" start="#T9" who="phones" xml:id="au228">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T10" start="#T9" who="ortho" xml:id="au439">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T11" start="#T10" who="syll" xml:id="au11">
+                    <u>
+                        <seg>paR</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T12" start="#T10" who="words" xml:id="au119">
+                    <u>
+                        <seg>pardon</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T130" start="#T10" who="phones" xml:id="au229">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T13" start="#T10" who="ortho" xml:id="au440">
+                    <u>
+                        <seg>pardon je</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T15" start="#T10" who="spk" xml:id="au486">
+                    <u>
+                        <seg>L2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T131" start="#T130" who="phones" xml:id="au230">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T11" start="#T131" who="phones" xml:id="au231">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T12" start="#T11" who="syll" xml:id="au12">
+                    <u>
+                        <seg>do~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T132" start="#T11" who="phones" xml:id="au232">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T12" start="#T132" who="phones" xml:id="au233">
+                    <u>
+                        <seg>o~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T13" start="#T12" who="syll" xml:id="au13">
+                    <u>
+                        <seg>Z@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T13" start="#T12" who="words" xml:id="au120">
+                    <u>
+                        <seg>je</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T133" start="#T12" who="phones" xml:id="au234">
+                    <u>
+                        <seg>Z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T13" start="#T133" who="phones" xml:id="au235">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T14" start="#T13" who="syll" xml:id="au14">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T14" start="#T13" who="words" xml:id="au121">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T14" start="#T13" who="phones" xml:id="au236">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T14" start="#T13" who="ortho" xml:id="au441">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T15" start="#T14" who="syll" xml:id="au15">
+                    <u>
+                        <seg>kwa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T15" start="#T14" who="words" xml:id="au122">
+                    <u>
+                        <seg>quoi</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T134" start="#T14" who="phones" xml:id="au237">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T15" start="#T14" who="ortho" xml:id="au442">
+                    <u>
+                        <seg>quoi</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T135" start="#T134" who="phones" xml:id="au238">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T15" start="#T135" who="phones" xml:id="au239">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T16" start="#T15" who="syll" xml:id="au16">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T16" start="#T15" who="words" xml:id="au123">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T16" start="#T15" who="phones" xml:id="au240">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T16" start="#T15" who="ortho" xml:id="au443">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T16" start="#T15" who="spk" xml:id="au487">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T17" start="#T16" who="syll" xml:id="au17">
+                    <u>
+                        <seg>Z@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T17" start="#T16" who="words" xml:id="au124">
+                    <u>
+                        <seg>je</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T136" start="#T16" who="phones" xml:id="au241">
+                    <u>
+                        <seg>Z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T27" start="#T16" who="ortho" xml:id="au444">
+                    <u>
+                        <seg>je voudrais un croissant s' il te plaît maman</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T27" start="#T16" who="spk" xml:id="au488">
+                    <u>
+                        <seg>L1</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T17" start="#T136" who="phones" xml:id="au242">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T18" start="#T17" who="syll" xml:id="au18">
+                    <u>
+                        <seg>vu</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T19" start="#T17" who="words" xml:id="au125">
+                    <u>
+                        <seg>voudrais</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T137" start="#T17" who="phones" xml:id="au243">
+                    <u>
+                        <seg>v</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T18" start="#T137" who="phones" xml:id="au244">
+                    <u>
+                        <seg>u</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T19" start="#T18" who="syll" xml:id="au19">
+                    <u>
+                        <seg>dRE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T138" start="#T18" who="phones" xml:id="au245">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T139" start="#T138" who="phones" xml:id="au246">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T19" start="#T139" who="phones" xml:id="au247">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T20" start="#T19" who="syll" xml:id="au20">
+                    <u>
+                        <seg>9~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T20" start="#T19" who="words" xml:id="au126">
+                    <u>
+                        <seg>un</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T20" start="#T19" who="phones" xml:id="au248">
+                    <u>
+                        <seg>9~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T21" start="#T20" who="syll" xml:id="au21">
+                    <u>
+                        <seg>kRwa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T22" start="#T20" who="words" xml:id="au127">
+                    <u>
+                        <seg>croissant</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T140" start="#T20" who="phones" xml:id="au249">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T141" start="#T140" who="phones" xml:id="au250">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T142" start="#T141" who="phones" xml:id="au251">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T21" start="#T142" who="phones" xml:id="au252">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T22" start="#T21" who="syll" xml:id="au22">
+                    <u>
+                        <seg>sa~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T143" start="#T21" who="phones" xml:id="au253">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T22" start="#T143" who="phones" xml:id="au254">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T23" start="#T22" who="syll" xml:id="au23">
+                    <u>
+                        <seg>sil</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T111" start="#T22" who="words" xml:id="au128">
+                    <u>
+                        <seg>s'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T111" start="#T22" who="phones" xml:id="au255">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T23" start="#T111" who="words" xml:id="au129">
+                    <u>
+                        <seg>il</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T144" start="#T111" who="phones" xml:id="au256">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T23" start="#T144" who="phones" xml:id="au257">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T24" start="#T23" who="syll" xml:id="au24">
+                    <u>
+                        <seg>t@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T24" start="#T23" who="words" xml:id="au130">
+                    <u>
+                        <seg>te</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T145" start="#T23" who="phones" xml:id="au258">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T24" start="#T145" who="phones" xml:id="au259">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T25" start="#T24" who="syll" xml:id="au25">
+                    <u>
+                        <seg>plE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T25" start="#T24" who="words" xml:id="au131">
+                    <u>
+                        <seg>plaît</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T146" start="#T24" who="phones" xml:id="au260">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T147" start="#T146" who="phones" xml:id="au261">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T25" start="#T147" who="phones" xml:id="au262">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T26" start="#T25" who="syll" xml:id="au26">
+                    <u>
+                        <seg>ma</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T27" start="#T25" who="words" xml:id="au132">
+                    <u>
+                        <seg>maman</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T148" start="#T25" who="phones" xml:id="au263">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T26" start="#T148" who="phones" xml:id="au264">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T27" start="#T26" who="syll" xml:id="au27">
+                    <u>
+                        <seg>ma~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T149" start="#T26" who="phones" xml:id="au265">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T27" start="#T149" who="phones" xml:id="au266">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T28" start="#T27" who="syll" xml:id="au28">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T28" start="#T27" who="words" xml:id="au133">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T28" start="#T27" who="phones" xml:id="au267">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T28" start="#T27" who="ortho" xml:id="au445">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T28" start="#T27" who="spk" xml:id="au489">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T29" start="#T28" who="syll" xml:id="au29">
+                    <u>
+                        <seg>bo~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T29" start="#T28" who="words" xml:id="au134">
+                    <u>
+                        <seg>bon</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T150" start="#T28" who="phones" xml:id="au268">
+                    <u>
+                        <seg>b</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T31" start="#T28" who="ortho" xml:id="au446">
+                    <u>
+                        <seg>bon d' accord</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T48" start="#T28" who="spk" xml:id="au490">
+                    <u>
+                        <seg>L2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T29" start="#T150" who="phones" xml:id="au269">
+                    <u>
+                        <seg>o~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T30" start="#T29" who="syll" xml:id="au30">
+                    <u>
+                        <seg>da</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T112" start="#T29" who="words" xml:id="au135">
+                    <u>
+                        <seg>d'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T112" start="#T29" who="phones" xml:id="au270">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T31" start="#T112" who="words" xml:id="au136">
+                    <u>
+                        <seg>accord</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T30" start="#T112" who="phones" xml:id="au271">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T31" start="#T30" who="syll" xml:id="au31">
+                    <u>
+                        <seg>kOR</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T151" start="#T30" who="phones" xml:id="au272">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T152" start="#T151" who="phones" xml:id="au273">
+                    <u>
+                        <seg>O</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T31" start="#T152" who="phones" xml:id="au274">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T32" start="#T31" who="syll" xml:id="au32">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T32" start="#T31" who="words" xml:id="au137">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T32" start="#T31" who="phones" xml:id="au275">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T32" start="#T31" who="ortho" xml:id="au447">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T33" start="#T32" who="syll" xml:id="au33">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T34" start="#T32" who="words" xml:id="au138">
+                    <u>
+                        <seg>allons</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T33" start="#T32" who="phones" xml:id="au276">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T35" start="#T32" who="ortho" xml:id="au448">
+                    <u>
+                        <seg>allons-y</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T34" start="#T33" who="syll" xml:id="au34">
+                    <u>
+                        <seg>lo~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T153" start="#T33" who="phones" xml:id="au277">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T34" start="#T153" who="phones" xml:id="au278">
+                    <u>
+                        <seg>o~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T35" start="#T34" who="syll" xml:id="au35">
+                    <u>
+                        <seg>zi</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T35" start="#T34" who="words" xml:id="au139">
+                    <u>
+                        <seg>y</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T154" start="#T34" who="phones" xml:id="au279">
+                    <u>
+                        <seg>z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T35" start="#T154" who="phones" xml:id="au280">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T36" start="#T35" who="syll" xml:id="au36">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T36" start="#T35" who="words" xml:id="au140">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T36" start="#T35" who="phones" xml:id="au281">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T36" start="#T35" who="ortho" xml:id="au449">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T37" start="#T36" who="syll" xml:id="au37">
+                    <u>
+                        <seg>mE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T37" start="#T36" who="words" xml:id="au141">
+                    <u>
+                        <seg>mais</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T155" start="#T36" who="phones" xml:id="au282">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T42" start="#T36" who="ortho" xml:id="au450">
+                    <u>
+                        <seg>mais c' est toi qui le demande</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T37" start="#T155" who="phones" xml:id="au283">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T38" start="#T37" who="syll" xml:id="au38">
+                    <u>
+                        <seg>sE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T113" start="#T37" who="words" xml:id="au142">
+                    <u>
+                        <seg>c'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T113" start="#T37" who="phones" xml:id="au284">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T38" start="#T113" who="words" xml:id="au143">
+                    <u>
+                        <seg>est</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T38" start="#T113" who="phones" xml:id="au285">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T39" start="#T38" who="syll" xml:id="au39">
+                    <u>
+                        <seg>twa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T39" start="#T38" who="words" xml:id="au144">
+                    <u>
+                        <seg>toi</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T156" start="#T38" who="phones" xml:id="au286">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T157" start="#T156" who="phones" xml:id="au287">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T39" start="#T157" who="phones" xml:id="au288">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T40" start="#T39" who="syll" xml:id="au40">
+                    <u>
+                        <seg>kil</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T114" start="#T39" who="words" xml:id="au145">
+                    <u>
+                        <seg>qui</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T158" start="#T39" who="phones" xml:id="au289">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T114" start="#T158" who="phones" xml:id="au290">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T40" start="#T114" who="words" xml:id="au146">
+                    <u>
+                        <seg>le</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T40" start="#T114" who="phones" xml:id="au291">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T41" start="#T40" who="syll" xml:id="au41">
+                    <u>
+                        <seg>d@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T42" start="#T40" who="words" xml:id="au147">
+                    <u>
+                        <seg>demande</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T159" start="#T40" who="phones" xml:id="au292">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T41" start="#T159" who="phones" xml:id="au293">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T42" start="#T41" who="syll" xml:id="au42">
+                    <u>
+                        <seg>ma~d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T160" start="#T41" who="phones" xml:id="au294">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T161" start="#T160" who="phones" xml:id="au295">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T42" start="#T161" who="phones" xml:id="au296">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T43" start="#T42" who="syll" xml:id="au43">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T43" start="#T42" who="words" xml:id="au148">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T43" start="#T42" who="phones" xml:id="au297">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T43" start="#T42" who="ortho" xml:id="au451">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T44" start="#T43" who="syll" xml:id="au44">
+                    <u>
+                        <seg>pO</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T44" start="#T43" who="words" xml:id="au149">
+                    <u>
+                        <seg>po</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T162" start="#T43" who="phones" xml:id="au298">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T44" start="#T43" who="ortho" xml:id="au452">
+                    <u>
+                        <seg>po</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T44" start="#T162" who="phones" xml:id="au299">
+                    <u>
+                        <seg>O</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T45" start="#T44" who="syll" xml:id="au45">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T45" start="#T44" who="words" xml:id="au150">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T45" start="#T44" who="phones" xml:id="au300">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T45" start="#T44" who="ortho" xml:id="au453">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T46" start="#T45" who="syll" xml:id="au46">
+                    <u>
+                        <seg>li</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T46" start="#T45" who="words" xml:id="au151">
+                    <u>
+                        <seg>li</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T163" start="#T45" who="phones" xml:id="au301">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T46" start="#T45" who="ortho" xml:id="au454">
+                    <u>
+                        <seg>li</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T46" start="#T163" who="phones" xml:id="au302">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T47" start="#T46" who="syll" xml:id="au47">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T47" start="#T46" who="words" xml:id="au152">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T47" start="#T46" who="phones" xml:id="au303">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T47" start="#T46" who="ortho" xml:id="au455">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T48" start="#T47" who="syll" xml:id="au48">
+                    <u>
+                        <seg>ma~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T48" start="#T47" who="words" xml:id="au153">
+                    <u>
+                        <seg>ma~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T164" start="#T47" who="phones" xml:id="au304">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T48" start="#T47" who="ortho" xml:id="au456">
+                    <u>
+                        <seg>ma~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T48" start="#T164" who="phones" xml:id="au305">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T49" start="#T48" who="syll" xml:id="au49">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T49" start="#T48" who="words" xml:id="au154">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T49" start="#T48" who="phones" xml:id="au306">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T49" start="#T48" who="ortho" xml:id="au457">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T49" start="#T48" who="spk" xml:id="au491">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T50" start="#T49" who="syll" xml:id="au50">
+                    <u>
+                        <seg>bo~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T51" start="#T49" who="words" xml:id="au155">
+                    <u>
+                        <seg>bonjour</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T165" start="#T49" who="phones" xml:id="au307">
+                    <u>
+                        <seg>b</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T51" start="#T49" who="ortho" xml:id="au458">
+                    <u>
+                        <seg>bonjour</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T60" start="#T49" who="spk" xml:id="au492">
+                    <u>
+                        <seg>L1</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T50" start="#T165" who="phones" xml:id="au308">
+                    <u>
+                        <seg>o~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T51" start="#T50" who="syll" xml:id="au51">
+                    <u>
+                        <seg>ZuR</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T166" start="#T50" who="phones" xml:id="au309">
+                    <u>
+                        <seg>Z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T167" start="#T166" who="phones" xml:id="au310">
+                    <u>
+                        <seg>u</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T51" start="#T167" who="phones" xml:id="au311">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T52" start="#T51" who="syll" xml:id="au52">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T52" start="#T51" who="words" xml:id="au156">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T52" start="#T51" who="phones" xml:id="au312">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T52" start="#T51" who="ortho" xml:id="au459">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T53" start="#T52" who="syll" xml:id="au53">
+                    <u>
+                        <seg>9~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T53" start="#T52" who="words" xml:id="au157">
+                    <u>
+                        <seg>un</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T53" start="#T52" who="phones" xml:id="au313">
+                    <u>
+                        <seg>9~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T60" start="#T52" who="ortho" xml:id="au460">
+                    <u>
+                        <seg>un croissant s' il te plaît madame</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T54" start="#T53" who="syll" xml:id="au54">
+                    <u>
+                        <seg>kRwa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T55" start="#T53" who="words" xml:id="au158">
+                    <u>
+                        <seg>croissant</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T168" start="#T53" who="phones" xml:id="au314">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T169" start="#T168" who="phones" xml:id="au315">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T170" start="#T169" who="phones" xml:id="au316">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T54" start="#T170" who="phones" xml:id="au317">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T55" start="#T54" who="syll" xml:id="au55">
+                    <u>
+                        <seg>sa~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T171" start="#T54" who="phones" xml:id="au318">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T55" start="#T171" who="phones" xml:id="au319">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T56" start="#T55" who="syll" xml:id="au56">
+                    <u>
+                        <seg>sil</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T115" start="#T55" who="words" xml:id="au159">
+                    <u>
+                        <seg>s'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T115" start="#T55" who="phones" xml:id="au320">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T56" start="#T115" who="words" xml:id="au160">
+                    <u>
+                        <seg>il</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T172" start="#T115" who="phones" xml:id="au321">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T56" start="#T172" who="phones" xml:id="au322">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T57" start="#T56" who="syll" xml:id="au57">
+                    <u>
+                        <seg>t@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T57" start="#T56" who="words" xml:id="au161">
+                    <u>
+                        <seg>te</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T173" start="#T56" who="phones" xml:id="au323">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T57" start="#T173" who="phones" xml:id="au324">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T58" start="#T57" who="syll" xml:id="au58">
+                    <u>
+                        <seg>plE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T58" start="#T57" who="words" xml:id="au162">
+                    <u>
+                        <seg>plaît</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T174" start="#T57" who="phones" xml:id="au325">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T175" start="#T174" who="phones" xml:id="au326">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T58" start="#T175" who="phones" xml:id="au327">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T59" start="#T58" who="syll" xml:id="au59">
+                    <u>
+                        <seg>ma</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T60" start="#T58" who="words" xml:id="au163">
+                    <u>
+                        <seg>madame</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T176" start="#T58" who="phones" xml:id="au328">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T59" start="#T176" who="phones" xml:id="au329">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T60" start="#T59" who="syll" xml:id="au60">
+                    <u>
+                        <seg>dam</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T177" start="#T59" who="phones" xml:id="au330">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T178" start="#T177" who="phones" xml:id="au331">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T60" start="#T178" who="phones" xml:id="au332">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T61" start="#T60" who="syll" xml:id="au61">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T61" start="#T60" who="words" xml:id="au164">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T61" start="#T60" who="phones" xml:id="au333">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T61" start="#T60" who="ortho" xml:id="au461">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T61" start="#T60" who="spk" xml:id="au493">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T62" start="#T61" who="syll" xml:id="au62">
+                    <u>
+                        <seg>sil</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T116" start="#T61" who="words" xml:id="au165">
+                    <u>
+                        <seg>s'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T116" start="#T61" who="phones" xml:id="au334">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T63" start="#T61" who="ortho" xml:id="au462">
+                    <u>
+                        <seg>s' il vous</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T83" start="#T61" who="spk" xml:id="au494">
+                    <u>
+                        <seg>L2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T62" start="#T116" who="words" xml:id="au166">
+                    <u>
+                        <seg>il</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T179" start="#T116" who="phones" xml:id="au335">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T62" start="#T179" who="phones" xml:id="au336">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T63" start="#T62" who="syll" xml:id="au63">
+                    <u>
+                        <seg>vu</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T63" start="#T62" who="words" xml:id="au167">
+                    <u>
+                        <seg>vous</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T180" start="#T62" who="phones" xml:id="au337">
+                    <u>
+                        <seg>v</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T63" start="#T180" who="phones" xml:id="au338">
+                    <u>
+                        <seg>u</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T64" start="#T63" who="syll" xml:id="au64">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T64" start="#T63" who="words" xml:id="au168">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T64" start="#T63" who="phones" xml:id="au339">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T64" start="#T63" who="ortho" xml:id="au463">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T65" start="#T64" who="syll" xml:id="au65">
+                    <u>
+                        <seg>plE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T65" start="#T64" who="words" xml:id="au169">
+                    <u>
+                        <seg>plaît</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T181" start="#T64" who="phones" xml:id="au340">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T65" start="#T64" who="ortho" xml:id="au464">
+                    <u>
+                        <seg>plaît</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T182" start="#T181" who="phones" xml:id="au341">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T65" start="#T182" who="phones" xml:id="au342">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T66" start="#T65" who="syll" xml:id="au66">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T66" start="#T65" who="words" xml:id="au170">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T66" start="#T65" who="phones" xml:id="au343">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T66" start="#T65" who="ortho" xml:id="au465">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T67" start="#T66" who="syll" xml:id="au67">
+                    <u>
+                        <seg>ma</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T68" start="#T66" who="words" xml:id="au171">
+                    <u>
+                        <seg>madame</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T183" start="#T66" who="phones" xml:id="au344">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T68" start="#T66" who="ortho" xml:id="au466">
+                    <u>
+                        <seg>madame</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T67" start="#T183" who="phones" xml:id="au345">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T68" start="#T67" who="syll" xml:id="au68">
+                    <u>
+                        <seg>dam</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T184" start="#T67" who="phones" xml:id="au346">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T185" start="#T184" who="phones" xml:id="au347">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T68" start="#T185" who="phones" xml:id="au348">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T69" start="#T68" who="syll" xml:id="au69">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T69" start="#T68" who="words" xml:id="au172">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T69" start="#T68" who="phones" xml:id="au349">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T69" start="#T68" who="ortho" xml:id="au467">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T70" start="#T69" who="syll" xml:id="au70">
+                    <u>
+                        <seg>e</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T70" start="#T69" who="words" xml:id="au173">
+                    <u>
+                        <seg>et</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T70" start="#T69" who="phones" xml:id="au350">
+                    <u>
+                        <seg>e</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T75" start="#T69" who="ortho" xml:id="au468">
+                    <u>
+                        <seg>et s'il te plaît maman</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T71" start="#T70" who="syll" xml:id="au71">
+                    <u>
+                        <seg>sil</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T117" start="#T70" who="words" xml:id="au174">
+                    <u>
+                        <seg>s'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T117" start="#T70" who="phones" xml:id="au351">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T71" start="#T117" who="words" xml:id="au175">
+                    <u>
+                        <seg>il</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T186" start="#T117" who="phones" xml:id="au352">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T71" start="#T186" who="phones" xml:id="au353">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T72" start="#T71" who="syll" xml:id="au72">
+                    <u>
+                        <seg>t@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T72" start="#T71" who="words" xml:id="au176">
+                    <u>
+                        <seg>te</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T187" start="#T71" who="phones" xml:id="au354">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T72" start="#T187" who="phones" xml:id="au355">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T73" start="#T72" who="syll" xml:id="au73">
+                    <u>
+                        <seg>plE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T73" start="#T72" who="words" xml:id="au177">
+                    <u>
+                        <seg>plaît</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T188" start="#T72" who="phones" xml:id="au356">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T189" start="#T188" who="phones" xml:id="au357">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T73" start="#T189" who="phones" xml:id="au358">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T74" start="#T73" who="syll" xml:id="au74">
+                    <u>
+                        <seg>ma</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T75" start="#T73" who="words" xml:id="au178">
+                    <u>
+                        <seg>maman</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T190" start="#T73" who="phones" xml:id="au359">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T74" start="#T190" who="phones" xml:id="au360">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T75" start="#T74" who="syll" xml:id="au75">
+                    <u>
+                        <seg>ma~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T191" start="#T74" who="phones" xml:id="au361">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T75" start="#T191" who="phones" xml:id="au362">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T76" start="#T75" who="syll" xml:id="au76">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T76" start="#T75" who="words" xml:id="au179">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T76" start="#T75" who="phones" xml:id="au363">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T76" start="#T75" who="ortho" xml:id="au469">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T77" start="#T76" who="syll" xml:id="au77">
+                    <u>
+                        <seg>sa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T77" start="#T76" who="words" xml:id="au180">
+                    <u>
+                        <seg>ça</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T192" start="#T76" who="phones" xml:id="au364">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T83" start="#T76" who="ortho" xml:id="au470">
+                    <u>
+                        <seg>ça fait cent fois que je te le dis</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T77" start="#T192" who="phones" xml:id="au365">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T78" start="#T77" who="syll" xml:id="au78">
+                    <u>
+                        <seg>fE</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T78" start="#T77" who="words" xml:id="au181">
+                    <u>
+                        <seg>fait</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T193" start="#T77" who="phones" xml:id="au366">
+                    <u>
+                        <seg>f</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T78" start="#T193" who="phones" xml:id="au367">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T79" start="#T78" who="syll" xml:id="au79">
+                    <u>
+                        <seg>sa~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T79" start="#T78" who="words" xml:id="au182">
+                    <u>
+                        <seg>cent</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T194" start="#T78" who="phones" xml:id="au368">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T79" start="#T194" who="phones" xml:id="au369">
+                    <u>
+                        <seg>a~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T80" start="#T79" who="syll" xml:id="au80">
+                    <u>
+                        <seg>fwa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T80" start="#T79" who="words" xml:id="au183">
+                    <u>
+                        <seg>fois</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T195" start="#T79" who="phones" xml:id="au370">
+                    <u>
+                        <seg>f</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T196" start="#T195" who="phones" xml:id="au371">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T80" start="#T196" who="phones" xml:id="au372">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T81" start="#T80" who="syll" xml:id="au81">
+                    <u>
+                        <seg>k@Z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T118" start="#T80" who="words" xml:id="au184">
+                    <u>
+                        <seg>que</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T197" start="#T80" who="phones" xml:id="au373">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T118" start="#T197" who="phones" xml:id="au374">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T81" start="#T118" who="words" xml:id="au185">
+                    <u>
+                        <seg>je</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T81" start="#T118" who="phones" xml:id="au375">
+                    <u>
+                        <seg>Z</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T82" start="#T81" who="syll" xml:id="au82">
+                    <u>
+                        <seg>t@l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T119" start="#T81" who="words" xml:id="au186">
+                    <u>
+                        <seg>te</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T198" start="#T81" who="phones" xml:id="au376">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T119" start="#T198" who="phones" xml:id="au377">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T82" start="#T119" who="words" xml:id="au187">
+                    <u>
+                        <seg>le</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T82" start="#T119" who="phones" xml:id="au378">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T83" start="#T82" who="syll" xml:id="au83">
+                    <u>
+                        <seg>di</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T83" start="#T82" who="words" xml:id="au188">
+                    <u>
+                        <seg>dis</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T199" start="#T82" who="phones" xml:id="au379">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T83" start="#T199" who="phones" xml:id="au380">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T84" start="#T83" who="syll" xml:id="au84">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T84" start="#T83" who="words" xml:id="au189">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T84" start="#T83" who="phones" xml:id="au381">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T84" start="#T83" who="ortho" xml:id="au471">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T84" start="#T83" who="spk" xml:id="au495">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T85" start="#T84" who="syll" xml:id="au85">
+                    <u>
+                        <seg>vwa</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T86" start="#T84" who="words" xml:id="au190">
+                    <u>
+                        <seg>voilà</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T200" start="#T84" who="phones" xml:id="au382">
+                    <u>
+                        <seg>v</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T89" start="#T84" who="ortho" xml:id="au472">
+                    <u>
+                        <seg>voilà mon petit</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T89" start="#T84" who="spk" xml:id="au496">
+                    <u>
+                        <seg>L3</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T201" start="#T200" who="phones" xml:id="au383">
+                    <u>
+                        <seg>w</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T85" start="#T201" who="phones" xml:id="au384">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T86" start="#T85" who="syll" xml:id="au86">
+                    <u>
+                        <seg>la</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T202" start="#T85" who="phones" xml:id="au385">
+                    <u>
+                        <seg>l</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T86" start="#T202" who="phones" xml:id="au386">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T87" start="#T86" who="syll" xml:id="au87">
+                    <u>
+                        <seg>mo~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T87" start="#T86" who="words" xml:id="au191">
+                    <u>
+                        <seg>mon</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T203" start="#T86" who="phones" xml:id="au387">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T87" start="#T203" who="phones" xml:id="au388">
+                    <u>
+                        <seg>o~</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T88" start="#T87" who="syll" xml:id="au88">
+                    <u>
+                        <seg>p@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T89" start="#T87" who="words" xml:id="au192">
+                    <u>
+                        <seg>petit</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T204" start="#T87" who="phones" xml:id="au389">
+                    <u>
+                        <seg>p</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T88" start="#T204" who="phones" xml:id="au390">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T89" start="#T88" who="syll" xml:id="au89">
+                    <u>
+                        <seg>ti</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T205" start="#T88" who="phones" xml:id="au391">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T89" start="#T205" who="phones" xml:id="au392">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T90" start="#T89" who="syll" xml:id="au90">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T90" start="#T89" who="words" xml:id="au193">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T90" start="#T89" who="phones" xml:id="au393">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T90" start="#T89" who="ortho" xml:id="au473">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T90" start="#T89" who="spk" xml:id="au497">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T91" start="#T90" who="syll" xml:id="au91">
+                    <u>
+                        <seg>Ok</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T92" start="#T90" who="words" xml:id="au194">
+                    <u>
+                        <seg>octave</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T206" start="#T90" who="phones" xml:id="au394">
+                    <u>
+                        <seg>O</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T92" start="#T90" who="ortho" xml:id="au474">
+                    <u>
+                        <seg>Octave</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T97" start="#T90" who="spk" xml:id="au498">
+                    <u>
+                        <seg>L2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T91" start="#T206" who="phones" xml:id="au395">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T92" start="#T91" who="syll" xml:id="au92">
+                    <u>
+                        <seg>tav</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T207" start="#T91" who="phones" xml:id="au396">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T208" start="#T207" who="phones" xml:id="au397">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T92" start="#T208" who="phones" xml:id="au398">
+                    <u>
+                        <seg>v</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T93" start="#T92" who="syll" xml:id="au93">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T93" start="#T92" who="words" xml:id="au195">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T93" start="#T92" who="phones" xml:id="au399">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T93" start="#T92" who="ortho" xml:id="au475">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T94" start="#T93" who="syll" xml:id="au94">
+                    <u>
+                        <seg>kEs</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T120" start="#T93" who="words" xml:id="au196">
+                    <u>
+                        <seg>qu'</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T120" start="#T93" who="phones" xml:id="au400">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T97" start="#T93" who="ortho" xml:id="au476">
+                    <u>
+                        <seg>qu' est ce que tu dis</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T121" start="#T120" who="words" xml:id="au197">
+                    <u>
+                        <seg>est</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T121" start="#T120" who="phones" xml:id="au401">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T94" start="#T121" who="words" xml:id="au198">
+                    <u>
+                        <seg>ce</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T94" start="#T121" who="phones" xml:id="au402">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T95" start="#T94" who="syll" xml:id="au95">
+                    <u>
+                        <seg>k@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T95" start="#T94" who="words" xml:id="au199">
+                    <u>
+                        <seg>que</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T209" start="#T94" who="phones" xml:id="au403">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T95" start="#T209" who="phones" xml:id="au404">
+                    <u>
+                        <seg>@</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T96" start="#T95" who="syll" xml:id="au96">
+                    <u>
+                        <seg>ty</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T96" start="#T95" who="words" xml:id="au200">
+                    <u>
+                        <seg>tu</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T210" start="#T95" who="phones" xml:id="au405">
+                    <u>
+                        <seg>t</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T96" start="#T210" who="phones" xml:id="au406">
+                    <u>
+                        <seg>y</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T97" start="#T96" who="syll" xml:id="au97">
+                    <u>
+                        <seg>di</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T97" start="#T96" who="words" xml:id="au201">
+                    <u>
+                        <seg>dis</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T211" start="#T96" who="phones" xml:id="au407">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T97" start="#T211" who="phones" xml:id="au408">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T98" start="#T97" who="syll" xml:id="au98">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T98" start="#T97" who="words" xml:id="au202">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T98" start="#T97" who="phones" xml:id="au409">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T98" start="#T97" who="ortho" xml:id="au477">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T98" start="#T97" who="spk" xml:id="au499">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T99" start="#T98" who="syll" xml:id="au99">
+                    <u>
+                        <seg>mER</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T100" start="#T98" who="words" xml:id="au203">
+                    <u>
+                        <seg>merci</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T212" start="#T98" who="phones" xml:id="au410">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T100" start="#T98" who="ortho" xml:id="au478">
+                    <u>
+                        <seg>merci</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T100" start="#T98" who="spk" xml:id="au500">
+                    <u>
+                        <seg>L1</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T213" start="#T212" who="phones" xml:id="au411">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T99" start="#T213" who="phones" xml:id="au412">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T100" start="#T99" who="syll" xml:id="au100">
+                    <u>
+                        <seg>si</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T214" start="#T99" who="phones" xml:id="au413">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T100" start="#T214" who="phones" xml:id="au414">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T101" start="#T100" who="syll" xml:id="au101">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T101" start="#T100" who="words" xml:id="au204">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T101" start="#T100" who="phones" xml:id="au415">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T101" start="#T100" who="ortho" xml:id="au479">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T101" start="#T100" who="spk" xml:id="au501">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T102" start="#T101" who="syll" xml:id="au102">
+                    <u>
+                        <seg>mER</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T103" start="#T101" who="words" xml:id="au205">
+                    <u>
+                        <seg>merci</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T215" start="#T101" who="phones" xml:id="au416">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T104" start="#T101" who="ortho" xml:id="au480">
+                    <u>
+                        <seg>merci qui</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T104" start="#T101" who="spk" xml:id="au502">
+                    <u>
+                        <seg>L2</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T216" start="#T215" who="phones" xml:id="au417">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T102" start="#T216" who="phones" xml:id="au418">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T103" start="#T102" who="syll" xml:id="au103">
+                    <u>
+                        <seg>si</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T217" start="#T102" who="phones" xml:id="au419">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T103" start="#T217" who="phones" xml:id="au420">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T104" start="#T103" who="syll" xml:id="au104">
+                    <u>
+                        <seg>ki</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T104" start="#T103" who="words" xml:id="au206">
+                    <u>
+                        <seg>qui</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T218" start="#T103" who="phones" xml:id="au421">
+                    <u>
+                        <seg>k</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T104" start="#T218" who="phones" xml:id="au422">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T105" start="#T104" who="syll" xml:id="au105">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T105" start="#T104" who="words" xml:id="au207">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T105" start="#T104" who="phones" xml:id="au423">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T105" start="#T104" who="ortho" xml:id="au481">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T105" start="#T104" who="spk" xml:id="au503">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T106" start="#T105" who="syll" xml:id="au106">
+                    <u>
+                        <seg>mER</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T107" start="#T105" who="words" xml:id="au208">
+                    <u>
+                        <seg>merci</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T219" start="#T105" who="phones" xml:id="au424">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T109" start="#T105" who="ortho" xml:id="au482">
+                    <u>
+                        <seg>merci Madame</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T109" start="#T105" who="spk" xml:id="au504">
+                    <u>
+                        <seg>L1</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T220" start="#T219" who="phones" xml:id="au425">
+                    <u>
+                        <seg>E</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T106" start="#T220" who="phones" xml:id="au426">
+                    <u>
+                        <seg>R</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T107" start="#T106" who="syll" xml:id="au107">
+                    <u>
+                        <seg>si</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T221" start="#T106" who="phones" xml:id="au427">
+                    <u>
+                        <seg>s</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T107" start="#T221" who="phones" xml:id="au428">
+                    <u>
+                        <seg>i</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T108" start="#T107" who="syll" xml:id="au108">
+                    <u>
+                        <seg>ma</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T109" start="#T107" who="words" xml:id="au209">
+                    <u>
+                        <seg>madame</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T222" start="#T107" who="phones" xml:id="au429">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T108" start="#T222" who="phones" xml:id="au430">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T109" start="#T108" who="syll" xml:id="au109">
+                    <u>
+                        <seg>dam</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T223" start="#T108" who="phones" xml:id="au431">
+                    <u>
+                        <seg>d</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T224" start="#T223" who="phones" xml:id="au432">
+                    <u>
+                        <seg>a</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T109" start="#T224" who="phones" xml:id="au433">
+                    <u>
+                        <seg>m</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T110" start="#T109" who="syll" xml:id="au110">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T110" start="#T109" who="words" xml:id="au210">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T110" start="#T109" who="phones" xml:id="au434">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T110" start="#T109" who="ortho" xml:id="au483">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+                <annotationBlock end="#T110" start="#T109" who="spk" xml:id="au505">
+                    <u>
+                        <seg>_</seg>
+                    </u>
+                </annotationBlock>
+            </div>
+        </body>
+    </text>
+</TEI>

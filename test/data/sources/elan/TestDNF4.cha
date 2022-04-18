@@ -1,0 +1,505 @@
+@UTF8
+@Window:	0_0_0_0_18269_1_19545_0_19545_0
+@Begin
+@Languages:	fra
+@Participants:	MOT Mother, FAT Father, LUC Lucien Boy, GAB Gabriel Boy,
+	OBS1 Observer Investigator, OBS2 Observer Investigator
+@ID:	fra|French_dinners|MOT||female|||Mother|||
+@ID:	fra|French_dinners|FAT||male|||Father|||
+@ID:	fra|French_dinners|LUC|9;00.00|male|||Boy|||
+@ID:	fra|French_dinners|GAB|4;00.00|male|||Boy|||
+@ID:	fra|French_dinners|OBS1||female|||Investigator|||
+@ID:	fra|French_dinners|OBS2||female|||Investigator|||
+@Media:	TestDNF4, video
+@Date:	17-NOV-2011
+@Location:	home.
+@Comment:	Coder - Françoise BOURDOUX (march 2012) - non corrigée
+@Situation:	MOT, LUC et GAB, rejoints un peu plus tard par FAT sont filmés chez eux par OBS1 et OBS2 durant la préparation du repas et le repas
+@G:	MOT fait réciter ses leçons à LUC (tous les deux debouts) dans l'espace entre la cuisine et le séjour, juste avant de préparer le repas
+*MOT:	ok et entre l' Afrique et l' Amérique_du_Sud qu' est+ce+qu' y+a comme océan ? 0_5036
+%act:	MOT fait des gestes de la main sur la table pour illustrer la carte de géographie
+*LUC:	euh et quoi ? 5036_9340
+%com:	presqu' inaudible
+*MOT:	et l' Amérique l' Amérique_du_Sud .
+%sit:	OBS2 passe derrière MOT et LUC pour aller filmer de l'autre côté de la pièce
+*LUC:	y+a l' océan +... 9340_12076
+*LUC:	+, Atlantique . 12076_16670
+*MOT:	Atlantique c'est le même <qu' y+a> [//] aussi qui borde nos côtes en France . 16670_20380
+*MOT:	et après de l' autre côté d(e) l' Amérique donc on a l' Amérique_du_Sud après au desus qu' est+ce+qu' y+a ? 20295_25650
+%act:	MOT fait des gestes de la main sur la table pour illustrer la carte de géographie
+*LUC:	xxx l' Amérique_du_Nord . 25650_29613
+*MOT:	d'accord [=! hoche la tête] . 29613_30550
+*MOT:	l' Amérique_du_Nord et de l' autre côté qu' est+ce+qu' on a comme océan ? 30550_35425
+*MOT:	qui est aussi lié avec le Japon ? 35425_37461
+*LUC:	+< l' océan Pacifique .
+*MOT:	voilà l' océan Pacifique . 37461_39065
+%com:	on entend de la musique en arrière fond à partir de maintenant
+*MOT:	ok . 39065_40895
+*MOT:	euh 0 [=! bruit de bouche] après l' Europe à l' est de l' Europe qu' est+ce+que nous avons ? 40895_45611
+*LUC:	l' Asie . 45611_46650
+*MOT:	l' Asie .
+*MOT:	l' Asie (.) et hum en+dessous on a plein d(e) petites îles . 46650_55241
+%act:	MOT fait des gestes de la main sur la table pour illustrer la carte de géographie
+%sit:	LUC se retourne et jette un coup d'oeil vers la caméra de OBS1
+*MOT:	dont le Japon la Corée et+cetera . 55241_57563
+*MOT:	et encore en+dessous . 57563_58760
+*LUC:	+< l' Océanie .
+*MOT:	l' Océanie très bien . 58760_61175
+*MOT:	l' Océanie y+a quoi par exemple comme pays dedans ? 61175_63315
+*MOT:	qu' est+ce+que tu sais ? 63315_66511
+*MOT:	quand on regarde le [//] la coupe du monde de rugby ? 66511_70478
+*LUC:	xxx [=! signe non de la tête] . 70478_73490
+*MOT:	+< mais si .
+*LUC:	0 [=! signe non de la tête] . 73490_76495
+*MOT:	mais si tu sais Lucien . 76495_77676
+*MOT:	qui vient de très loin . 77676_78841
+*MOT:	l' Australie . 78841_81171
+*LUC:	ah . 81171_82131
+*MOT:	hum entre l' Océanie et l' Afrique on a un océan qu' est+ce+que c'est ? 82131_89070
+%act:	MOT fait des gestes de la main sur la table pour illustrer la carte de géographie
+*LUC:	l' océan quoi ? 89070_91578
+*MOT:	entre la [//] l' Océanie et l' Afrique y+a un océan . 91578_95131
+*LUC:	y+a l' océan indien . 95131_97096
+*MOT:	l' océan indien . 97096_97978
+*MOT:	et l' Océanie elle est traversée par un tropique c'est lequel ? 97978_101755
+%act:	MOT fait un geste de la main
+*LUC:	euh le tropique+du+sud . 101755_104325
+*MOT:	ouais parfait . 104325_105663
+*MOT:	et en+dessous encore le tropique+du+sud qu' est+ce+qu' on a ? 105663_109186
+*LUC:	xxx le cer(cle) euh non oui le cercle +... 109186_114906
+*MOT:	ouais .
+*LUC:	+, polaire sud . 114906_118216
+*MOT:	ben pas sud comment i(l) s' appelle ? 118216_123535
+*LUC:	le cercle polaire xxx .
+*MOT:	+< au nord on a l' Arctique et au sud on a +...
+%act:	MOT fait des gestes de la main
+*LUC:	Antarctique . 123535_126816
+*MOT:	+< l' Antarctique très bien .
+%act:	MOT se gratte la tête
+*LUC:	le cercle+polaire+antarctique . 126816_130441
+*MOT:	+< bon [/] bon ça marche .
+*MOT:	c'est tout c(e)+que t(u) avais à voir ? 130441_134051
+*LUC:	oui .
+*MOT:	faudrait presqu' i(l) vous donne une [/] une carte sans rien et+puis vous +/. 134051_141130
+*LUC:	oui c' est+c(e)+qu' i(l) va nous donner demain .
+*MOT:	oui mais là pour s' entraîner aussi . 141130_142770
+%act:	MOT fait un geste de la main
+*LUC:	oui . 142770_145455
+*MOT:	bon tu ranges tes affaires bonhomme .
+*LUC:	0 [=! sourit] . 145455_149436
+%act:	LUC regarde la caméra de OBS1
+@G:	MOT, aidée de LUC, vide le lave vaisselle - discussion sur le déjeuner à la cantine
+*MOT:	alors .
+*MOT:	j(e) vais débarrasser tu m' aides après à +..? 149436_154190
+*MOT:	tu fais les [/] les couverts bonhomme puis après t(u) iras prendre une p(e)tite douche ou un p(e)tit bain . 154190_159128
+%sit:	LUC range ses affaires
+*MOT:	0 . 159128_165921
+%act:	MOT commence à vider le lave vaisselle
+*MOT:	0 . 165921_179865
+%act:	MOT pose les assiettes sur le plan de travail
+*MOT:	tu [/] tu fais les couverts loulou ? 179865_182133
+*MOT:	hop . 182133_185886
+%act:	MOT sort le panier à couverts du lave vaisselle et le pose sur le plan de travail afin que LUC range les couverts
+*MOT:	0 . 185886_191365
+%act:	MOT range les assiettes dans l'armoire
+*MOT:	alors xxx . 191365_197016
+%act:	MOT pose les assiettes probablement destinées au repas du soir sur le bord du plan de travail (ne les range pas comme les autres dans l' armoire)
+*MOT:	0 . 197016_203438
+%act:	MOT range les assiettes dans l'armoire
+*MOT:	0 . 203438_211510
+%act:	MOT range un plat dans un tiroir
+*LUC:	ça tu mets où déjà ? 211510_213488
+%act:	LUC montre un objet à MOT
+*MOT:	euh en+d(essous) [/] celui d' en+d(e)ssous . 213488_215790
+*MOT:	qu' est+ce+que vous avez mangé Lucien à la cantine ? 215790_221961
+*LUC:	on a mangé hum +... 221961_225611
+%act:	LUC range les couverts dans le tiroir
+*LUC:	du poulet avec de [/] de la purée . 225611_230396
+*MOT:	purée d(e) pommes+de+terre ? 230396_232181
+%act:	MOT range un poêlon dans un tiroir
+*LUC:	oui . 232181_233766
+*MOT:	ouais .
+*LUC:	hum +... 233766_240006
+*MOT:	y avait une entrée ?
+*LUC:	d(e) la salade . 240006_242301
+*MOT:	ouais .
+*LUC:	et en dessert un fromage blanc avec du sucre . 242301_250211
+*MOT:	d'accord ça allait ? 250211_251591
+*MOT:	t(u) as tout mangé ? 251591_252491
+*LUC:	j' ai même repris trois fois du poulet . 252491_255741
+*MOT:	ah t(u) étais au deuxième service alors ? 255741_257746
+%act:	MOT range un plat dans un tiroir
+*LUC:	oui (en)fin c'était pas du poulet c'était des boulettes de viande . 257746_261933
+*LUC:	j(e) crois . 261933_263713
+*MOT:	ah . 263713_265271
+*LUC:	xxx . 265271_267323
+*MOT:	d'accord .
+*MOT:	c'était [/] c'était tout rond ? 267323_270551
+*LUC:	euh presque rond . 270551_273660
+%act:	LUC remet le panier à couverts dans le lave vaisselle
+*MOT:	presque rond ? 273660_274906
+*MOT:	ah ça [/] ça [/] ça ressemblait à [//] aux [/] aux boulettes tu sais les boulettes de kefta qu' on avait mangées au Maroc là ? 274906_282118
+*LUC:	de quoi ? 282118_285463
+*MOT:	les boulettes de kefta .
+%act:	MOT ferme le tiroir
+*LUC:	+< ah bien plus gros .
+*MOT:	ah . 285463_286988
+*MOT:	bien plus gros ? 286988_287970
+*MOT:	avec de la viande hachée ? 287970_295673
+%act:	MOT commence à vider l'autre tiroir du lave vaisselle
+*MOT:	c'est pas propre ça . 295673_298135
+%com:	MOT parle plus bas car elle se parle à elle même
+*LUC:	+< euh +...
+*LUC:	non . 298135_299438
+*MOT:	non ?
+*MOT:	<c'est pas des> [/] c'est pas des +..? 299438_303236
+*MOT:	+, des paupiettes que vous avez mangé ? 303236_305355
+*LUC:	non . 305355_306628
+*MOT:	non .
+*MOT:	non ben j(e) sais pas . 306628_308646
+*MOT:	c'est [//] c'était bon ? 308646_309746
+%act:	MOT sort les bols du lave vaisselle et les empile sur le plan de travail
+*LUC:	oui . 309746_310646
+*MOT:	0 . 310646_316213
+%act:	MOT sort les bols du lave vaisselle et les empile sur le plan de travail
+*MOT:	0 . 316213_322030
+%act:	MOT secoue une boîte encore un peu mouillée au+dessus de l'évier
+%sit:	LUC est toujours en train de ranger les couverts
+*LUC:	mince . 322030_323751
+%act:	LUC a fait tomber un couvert
+*MOT:	attention .
+*MOT:	0 . 323751_328685
+%act:	MOT range les bols dans l' armoire
+*MOT:	et euh aux échecs t(u) as été +..? 328685_340946
+*MOT:	t(u) étais avec qui alors aujourd'hui ? 340946_343095
+*LUC:	Ismaël . 343095_344593
+*MOT:	ah Ismaël <il est> [/] il est pas dans ta classe lui . 344593_347696
+*LUC:	non .
+*MOT:	il est en quelle classe ? 347696_349268
+%act:	MOT sort les verres du lave vaisselle
+*LUC:	+< xxx .
+*LUC:	euh +... 349268_352973
+*LUC:	j(e) crois c@l e@l un . 352973_357603
+%sit:	MOT range les verres dans l'armoire
+*MOT:	en c@l e@l un ouh@i . 357603_359163
+*MOT:	ben alors ça +/. 359163_360846
+*LUC:	+< ou en c@l e@l deux .
+*MOT:	en c@l eàl deux . 360846_362155
+*MOT:	et alors ça a donné quoi ? 362155_364020
+*LUC:	hé j(e) vais m' y remettre . 364020_366695
+%act:	LUC quitte l'espace cuisine
+*MOT:	hein tu lui as mis un math ? 366695_368276
+%com:	MOT n'a pas bien compris ce qu'a dit LUC
+*MOT:	bon ben parfait . 368276_372076
+*MOT:	tiens regarde viens [/] viens m' aider là Lulu sur les verres . 372076_378461
+*MOT:	tu les mets là . 378461_384763
+%act:	MOT pose des verres sur le plan de travail
+%sit:	LUC prend les verres pour les ranger dans l'armoire
+*MOT:	hop . 384763_388813
+*MOT:	voilou@f . 388813_395896
+*MOT:	ah ben attends <on va peut+être se> [//] bon on les sortira après on mettra l(e) couvert après . 395896_402056
+%act:	MOT range des verres dans l'armoire puis la ferme
+*MOT:	attends j(e) mets juste ça dans la machine et+puis après on +... 402056_405911
+*MOT:	tu m' aides un+peu ? 405911_407883
+%act:	MOT remplit le lave vaisselle
+%sit:	LUC debout sans bouger la regarde
+*MOT:	puis t(u) iras +//. 407883_410865
+*MOT:	tu veux prendre la douche ou le bain Lucien ?
+*LUC:	la douche . 410865_411600
+*MOT:	d'accord . 411600_412408
+*MOT:	ben on va faire des p(e)tites carottes . 412408_419156
+%sit:	LUC ouvre et referme un tiroir
+*LUC:	râpées ? 419156_421236
+*MOT:	euh non . 421236_423928
+*MOT:	non je [//] j' ai d(e) l' avocat là . 423928_426146
+*MOT:	en [/] en entrée non on va les faire euh à la poêle merde . 426146_432720
+%act:	MOT est en train de remplir le lave vaisselle et semble avoir fait tomber de l'eau par terre
+*MOT:	à chaque fois . 432720_434156
+%act:	MOT essuie le sol
+*MOT:	0 . 434156_442208
+%act:	MOT remplit toujours le lave vaisselle
+%sit:	LUC change de place dans la pièce et sautillant un peu
+*MOT:	0 . 442208_449771
+*LUC:	qu' est+ce+qu' y+a d' autre à faire ? 449771_451678
+*MOT:	ben attends <je f(ais)> [///] je mets juste ça dans la machine . 451678_454440
+*MOT:	et on va +... 454440_458413
+*MOT:	ben ben xxx commence à mettre le couvert si tu veux . 458413_461518
+*LUC:	quoi ? 461518_463153
+*MOT:	hein ? 463153_464015
+*LUC:	0 . 464015_473751
+%act:	LUC revient vers la cuisine en agitant une épée jouet puis se faufile derrière MOT
+*MOT:	ah non ça c'est propre . 473751_481071
+%act:	MOT regarde une passoire qu'elle a prise dans l'évier
+%sit:	LUC ouvre le tiroir à couverts
+*MOT:	voilou@f . 481071_483991
+*LUC:	on mange avec Antoine ? 483991_484968
+*MOT:	ouais .
+*MOT:	j(e) pense qu' i(l) va rentrer (.) sais pas i(l) m' a pas dit mais j(e) pense qu' i(l) s(e)ra là vers sept heures et demi . 484968_491623
+%act:	MOT se lave les mains
+*LUC:	0 . 491623_498371
+%act:	LUC prend les couverts pour mettre la table
+*MOT:	demain soir on va manger chez [/] chez euh Geoffroy et Suzanna . 498371_506096
+*LUC:	ok . 506096_507121
+*MOT:	mais on ira +/. 507121_509881
+*LUC:	+< avec nous ?
+*MOT:	ah oui ouais . 509881_512066
+%act:	MOT essuie ses mains
+*LUC:	+< ok .
+*MOT:	y+a [/] y+a Aurèle . 512066_513750
+*MOT:	ah on ira pas trop tard et+puis +... 513750_517360
+%sit:	LUC passe devant la caméra en agitant les couverts qu'il tient en mains puis prend les assiettes sur le plan de travail
+*MOT:	et+puis on rentrera pas trop tard non plus . 517360_522655
+%act:	MOT sort des carottes du frigo
+%sit:	CHI quitte l'espace cuisine, suivi de OBS2, pour aller dresser la table
+*MOT:	0 . 522521_531336
+%act:	MOT pose les carottes puis un autre aliment non identifié sur le plan de travail
+*MOT:	0 . 531336_538170
+%act:	MOT sort un sachet du frigo et le pose dans l'évier
+*MOT:	(a)ttends t(u) es pas trop fan toi de l' avocat ? 538170_545516
+%act:	MOT sort des tomates cerises en grappe du sachet et les rince à l'eau
+*MOT:	Lucien ? 545516_546688
+*MOT:	quoi ? 546688_548018
+*LUC:	xxx . 548018_550388
+*MOT:	0 [=! petit rire] .
+%act:	MOT regarde OBS1 en souriant
+%com:	c'est contextuellement suite à la réaction de MOT et à ce qu'elle dit ensuite qu'on sait que LUC vient de répondre quelque chose, inaudible sur le film
+*MOT:	0 [=! rit] oh toi n' exagère pas non plus . 550388_554348
+*MOT:	ben <i(ls) sont> [/] i(l)s sont pas gros . 554348_560808
+%act:	MOT jette le sachet à la poubelle
+*LUC:	non merci . 560808_562543
+*MOT:	non mais <un petit> [/] un petit puis y+a des tomates euh . 562543_565753
+*MOT:	des petites tomates euh +... 565753_568660
+*MOT:	+, cerises . 568660_570193
+*MOT:	ben alors+qu' est+ce+que j(e) fais je les pèle et tu les coupes toi ? 570193_575720
+%act:	MOT coupe les fanes des carottes au dessus de l'évier et pose les carottes sur une palnche à découper
+*MOT:	hein ? 575720_577423
+*LUC:	d'accord . 577423_578375
+*MOT:	0 . 578375_584333
+%act:	MOT coupe les fanes des carottes au dessus de l'évier et pose les carottes sur une planche à découper
+*MOT:	bon Gabriel on l' entend plus c'est [/] c'est mauvais signe 0 [=! sourit] . 584333_590441
+%act:	MOT se retourne vers OBS1 et la regarde en souriant
+*MOT:	0 [=! petit rire] . 590441_592353
+*OBS1:	0 [=! petit rire] .
+@G:	discussion entre MOT et OBS2 sur les repas de cantine
+*MOT:	i(l) nous prépare euh +/. 592353_597100
+*OBS1:	vous faites toujours attention à c(e)+qu' i(l)s ont mangé l(e) midi ?
+*OBS1:	+, pour faire le repas du soir . 597100_599886
+*MOT:	+< ouais alors souvent je leur demande .
+%act:	MOT arrête de s'occuper des carottes et se tourne vers OBS1 pour lui répondre
+*MOT:	<je leur demande> [=! hoche la tête] avant [/] avant+d(e) préparer . 599886_604685
+*OBS1:	hum .
+*MOT:	mais alors parfois <c'est assez indescriptible> [=! rit] .
+*OBS1:	ouais d'accord comme avec les boulettes tout+à+l' heure . 604685_606178
+*MOT:	voilà on sait pas trop en fait là réellement c(e)+que c'était la viande . 606178_610008
+%act:	MOT fait un geste de la main
+*MOT:	et euh et euh mais i(ls) [/] i(ls) [/] <i(ls) sont> [/] i(ls) sont pas tous les deux à la même école . 610008_615753
+*MOT:	mais i(l)s ont l(e) même menu . 615753_617360
+*MOT:	c'est toutes les écoles du vingtième . 617360_619061
+%act:	MOT fait un geste de la main
+*MOT:	donc en+général <j' arrive à recouper> [=! petit rire] . 619061_622820
+%act:	MOT fait un geste des mains
+*MOT:	et je sais à peu près . 622820_624345
+*MOT:	en+tout+cas quand c'est bon genre des pâtes et tout ça on l(e) sait tout+d(e)+suite . 624345_627826
+*MOT:	et après quand c'est moyen des fois <i(l)s arrivent pas à> [/] i(l)s arrivent même pas trop à me +... 627826_632330
+%sit:	LUC revient dans la pièce
+*MOT:	à me dire exactement . 632330_633888
+%sit:	LUC remplit la cruche avec de l'eau du robinet
+*MOT:	mais voilà par exemple si i(l)s ont mangé une omelette +... 633888_636941
+*MOT:	+, j' essaie de pas refaire la même chose le soir c'est juste ça quoi voilà . 636941_640160
+%act:	MOT fait un geste des bras puis s'écarte un peu pour laisser passer LUC et le regarde
+*MOT:	mais sinon ça arrive hein des fois qu' i(ls) mangent la même chose . 640160_643723
+%act:	MOT fait un geste des bras
+*MOT:	0 . 643723_652141
+%act:	MOT ouvre puis referme un tiroir et prend des ustensiles qui sont rangés dans un bac sur le plan de travail et les pose à côté de la planche à découper
+*MOT:	www . 652141_665333
+*MOT:	www . 665333_667801
+*MOT:	www . 667801_674258
+*MOT:	www . 674258_680696
+*MOT:	www . 680696_683110
+*MOT:	www . 683110_688321
+@G:	MOT, suivie de OBS1, va voir GAB qui est dans son bain
+*MOT:	0 .
+%com:	cette partie du film n'est pas transcrite - à découper en G ??
+@G:	repas
+*MOT:	allez les gars . 3503610_3506653
+%act:	MOT quitte la cuisine et marche vers la table du diner
+*LUC:	ça va j' arrive . 3506653_3509035
+*LUC:	xxx . 3509035_3517028
+%sit:	MOT mélange la vinaigrette dans un petit bol
+%com:	à table, des demi avocat sont présentés "nature" dans un bol
+*MOT:	alors elle est un+peu moins bien mélangée . 3517028_3519421
+*MOT:	xxx . 3519421_3521816
+*MOT:	Gabriel . 3521816_3523296
+%act:	MOT se retourne vers GAB
+*MOT:	on [/] on [//] j(e) te l(e) prépare le [//] l' avocat j' enlève la peau ou pas ? 3523296_3526566
+%xpnt:	show l'avocat de l'index
+%sit:	GAB se lève pour regarder ce que MOT lui montre
+*GAB:	oh [=! soupire] oui . 3526566_3528321
+*MOT:	oui .
+*GAB:	oh xxx . 3528321_3530926
+%act:	GAB, debout, s'appuie sur ses deux coudes posés sur la table
+*GAB:	est+ce+que on va mettre d(e) la sauce ? 3530926_3533958
+%act:	GAB montre la sauce
+%sit:	MOT commence à peler l'avocat
+*LUC:	+< 0 [=! tousse] xxx .
+%com:	en arrière fond, LUC parle probablement à OBS2 qui le filme
+*MOT:	ben oui tiens regarde il arrive . 3533958_3536036
+%act:	MOT coupe l'avocat en deux et tourne la tête vers la cuisine
+%com:	MOT pense que FAT rentre mais ce n'est pas le cas
+*LUC:	+< xxx .
+*MOT:	attends [/] attends j' enlève la peau d'abord . 3536036_3539295
+%act:	MOT enlève la peau de l'avocat
+%sit:	GAB a pris une cuillère de sauce, il est prêt à la verser sur l'avocat
+*GAB:	il arrive . 3539295_3543470
+*MOT:	allez Lucien tu ranges ton jeu là coco .
+*LUC:	+< 0 [=! tousse] .
+*MOT:	et peut+être que i(l) faudrait que on invite Adriano aussi là . 3543470_3549588
+%act:	MOT coupe l'avocat en petits dés dans le bol de GAB
+*GAB:	+< xxx je mets d(e) la sauce .
+%act:	GAB regarde MOT
+*LUC:	pourquoi ? 3549588_3552005
+*MOT:	+< +, bientôt .
+*MOT:	ben comme t(u) étais allé chez lui .
+%act:	MOT coupe l'avocat en petits dés dans le bol de GAB
+*GAB:	xxx je mets d(e) la sauce . 3552005_3553815
+*MOT:	attends une seconde je le coupe . 3553815_3555938
+*LUC:	+< xxx .
+*GAB:	d'accord . 3555938_3557506
+%act:	GAB tient toujours la cuillère de sauce, prêt à la verser sur l'avocat
+*GAB:	je mets la sauce après ? 3557506_3559541
+*MOT:	oui après . 3559541_3560300
+*MOT:	allez Lucien s' il+te+plaît . 3560300_3570430
+%act:	MOT pèle la deuxième moitié d'avocat et le coupe en petits morceaux dans le bol de GAB
+*LUC:	d'accord [/] d'accord .
+%com:	doute sur cet énoncé
+*MOT:	vas+y tu mets la sauce dessus . 3570430_3575961
+%act:	MOT approche un peu l'assiette de GAB
+%sit:	GAB vers la sauce sur l'avocat
+*LUC:	oui .
+%com:	petit cri de satisfaction, LUC est probablement en train de jouer à un jeu
+*MOT:	vas+y mets encore une cuillère . 3575961_3578036
+*GAB:	(en)core . 3578036_3579868
+%act:	GAB verse de la sauce sur l'avocat
+*MOT:	ah v(oi)là l(e) père . 3579868_3583315
+%act:	MOT se retourne vers la cuisine
+*MOT:	voilà c'est bon . 3583315_3585763
+%sit:	GAB met encore une cuillère de sauce
+*MOT:	<c'est bon> [/] c'est bon . 3585763_3587261
+*FAT:	+< salut .
+%act:	FAT arrive par la cuisine
+*MOT:	ah [=! crie] pèpèp@i ! 3587261_3588618
+%sit:	GAB approche la cuillère de sa bouche, il s'apprête à la lécher
+*MOT:	t(u) en as une de cuillère . 3588618_3590225
+*MOT:	ça va ? 3590225_3592996
+%add:	à FAT
+%act:	MOT repousse le petit bol blanc de vinaigrette sur la table puis se retourne vers FAT dans la cuisine
+*FAT:	xxx (.) xxx . 3592996_3599780
+*MOT:	hé ben ouais .
+%act:	MOT rejoint FAT dans la cuisine (hors champ)
+%com:	on n'entend pas ce que dit FAT il n'est pas encore équipé de micro
+*GAB:	0 . 3599780_3606233
+%act:	GAB s'est assis seul à table et mange
+*FAT:	xxx .
+*MOT:	on est en plein +//.
+%com:	on entend de l'au qui coule, c'est probablement MOT (hors champ) qui se rince les mains
+*MOT:	en plein démarrage . 3606233_3608333
+*FAT:	+< <en plein> [/] en plein dîner .
+*FAT:	0 [=! petit rire] . 3608333_3619380
+%sit:	MOT s'essuie les mains et embrasse FAT
+*OBS2:	bonsoir .
+*FAT:	bonsoir .
+*MOT:	Rachel et Camille .
+%act:	MOT quitte la cuisine puis se retourne vers FAT
+*OBS2:	xxx . 3619380_3621683
+*MOT:	+< ah oui alors t(u) as le petit +//.
+%act:	MOT montre son boîtier micro à FAT
+*FAT:	xxx . 3621683_3625305
+*MOT:	+< faut mettre le p(e)tit micro tu le mets derrière là .
+%act:	MOT montre à FAT comment elle a fait
+*OBS2:	xxx . 3625305_3631543
+%act:	OBS donne le matériel à FAT pour qu'il s'équipe
+%sit:	MOT se tourne un peu pour montrer à FAT
+*MOT:	fait chaud non ?
+%act:	MOT regarde la température de la pièce sur le thermostat
+*MOT:	ah ouais purée fait hyper chaud . 3631543_3633746
+%act:	MOT remonte une de ses manches et se dirige vers la cuisine
+*GAB:	+< 0 .
+%act:	GAB est toujours assis seul à table, il mange son entrée
+*MOT:	j(e) vais baisser le chauffage . 3633746_3637013
+%act:	MOT passe dans la cuisine à côté de OBS2 et FAT
+*OBS2:	xxx . 3637013_3642858
+%act:	OBS2 aide FAT à s'équiper
+%sit:	GAB regarde vers FAT
+*MOT:	voilou@f . 3642858_3644118
+*MOT:	allez les gars . 3644118_3652143
+%sit:	FAT vérifie que son micro est bien fixé
+%act:	MOT repasse par la cuisine vers la table
+*MOT:	à+table . 3652143_3655276
+*MOT:	ah ben ça+y+est Gaby il a direct attaqué lui .
+*MOT:	allez Lucien s' il+te+plaît . 3655276_3659978
+%com:	sur un ton un peu excédé
+%act:	MOT mélange ce qu'il reste dans l'assiette de GAB
+*GAB:	0 [=! bruits de bouche] .
+*LUC:	+< xxx .
+*MOT:	viens t' asseoir . 3659978_3661981
+*MOT:	hop [=! chuchote] . 3661981_3667656
+%act:	MOT s'assied à table
+%sit:	GAB regarde la caméra de OBS1
+*MOT:	tu manges à la fourchette toi ton avocat ? 3667656_3672646
+%act:	MOT regarde GAB et déplie sa serviette en tissu
+*MOT:	tiens regarde . 3672646_3675740
+%act:	MOT pose sa serviette en tissu sur ses genoux et déplie la très grande serviette de GAB
+*MOT:	tu mets ta serviette loulou . 3675740_3677091
+%add:	à GAB
+*MOT:	0 . 3677091_3683315
+%act:	MOT met sa serviette à GAB
+*MOT:	allez bonhomme . 3683315_3688583
+%add:	à LUC
+%sit:	LUC se relève face à la caméra de OBS1 et rejoint la table
+*MOT:	un+petit+peu . 3688583_3690403
+%com:	LUC étant dos à la caméra, on ne voit pas s'il fait une grimace à MOT signifiant qu'il ne veut pas manger; on n'entend pas non plus qu'il dit quelque chose
+*MOT:	la moitié . 3690403_3692675
+%sit:	LUC s'assied à table en face de MOT
+*MOT:	allez . 3692675_3695768
+%act:	MOT fait un mouvement de la tête
+*MOT:	puis tu prendras des tomates . 3695768_3697790
+%act:	MOT pousse le plat de tomates cerises un peu vers LUC
+*MOT:	tiens donne le moi j(e) vais l(e) couper en deux si tu veux . 3697790_3700248
+%act:	MOT tend le bras main ouverte vers LUC
+*MOT:	arrête . 3700248_3701590
+%com:	LUC est dos à la caméra, on ne voit pas son visage ni les mimiques qu'il est probablement en train de faire - voir F4-dinner1-C2 ??
+*FAT:	bonjour ça va ? 3701590_3706603
+%act:	FAT arrive près de la table
+%sit:	LUC regarde FAT; GAB mange toujours sans lever la tête
+*MOT:	+< hé vous dites bonsoir les gars .
+%act:	MOT prend le bol de LUC et coupe et pèle l'avocat
+*FAT:	et ce devoir de sciences alors tu l' as eu ? 3706603_3710090
+%act:	FAT embrasse LUC puis GAB
+*LUC:	oui . 3710090_3712051
+*MOT:	ouais .
+*FAT:	et il était fait ?
+*MOT:	aujourd'hui . 3712051_3713275
+*LUC:	+< xxx .
+*FAT:	ouais ça s' est bien passé ? 3713275_3715081
+*LUC:	oui . 3715081_3716140
+*GAB:	moi j' ai direct attaqué . 3716140_3718820
+*MOT:	on a direct attaqué . 3718820_3720368
+*FAT:	+< direct attaqué .
+*FAT:	<t(u) as direct attaqué> [=! petit rire] bon ben super . 3720368_3723253
+%act:	FAT s'assied à table
+%com:	configuration de la petite table carrée de la famille = GAB est face à FAT, MOT face à LUC
+*MOT:	i(l) dit que c'était noté sur euh . 3723253_3726603
+*MOT:	combien cinquante c'est ça ? 3726603_3727928
+%add:	à LUC
+%act:	MOT tend son bol à LUC
+*GAB:	moi [=! crie] <j' ai dé(jà)> [/] j' ai déjà ter(miné) [/] terminé . 3727928_3732453
+*FAT:	cinquante .
+%act:	FAT regarde LUC avec étonnement
+*MOT:	ben oui mais nous on n' a même pas commencé nous . 3732453_3735430
+%act:	MOT regarde GAB et fait un geste des mains
+*FAT:	+< xxx .
+%com:	inaudible
+*FAT:	et t(u) as tout réussi ? 3735430_3737828
+*LUC:	non . 3737828_3740670
+*FAT:	non ?
+@End

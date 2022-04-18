@@ -329,7 +329,7 @@ public class HT_ToTei {
 		encodingDesc.appendChild(appInfo);
 		Element application = docTEI.createElement("application");
 		application.setAttribute("ident", "TeiCorpo");
-		application.setAttribute("version", Version.versionSoft);
+		application.setAttribute("version", Version.versionSoft(options.test));
 		Element desc = this.docTEI.createElement("desc");
 		application.appendChild(desc);
 		desc.setTextContent("Transcription converted with TeiCorpo and to TEI_CORPO");

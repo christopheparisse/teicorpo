@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="0.9.1" xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <publicationStmt>
+                    <distributor>tei_corpo</distributor>
+                    <distributor>tei_corpo</distributor>
+                </publicationStmt>
+                <title>Fichier TEI obtenu à partir du fichier Transcriber DOC_FR_2020_CHOIX_5.trs</title>
+            </titleStmt>
+            <notesStmt>
+                <note type="COMMENTS_DESC">
+                    <note type="version">1.4.41</note>
+                </note>
+                <note type="TEMPLATE_DESC">
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">default</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">L1</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">L2</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">Observateur</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">SD</note>
+                    </note>
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <media mimeType="audio/x-wav" url="DOC_FR_2020_CHOIX_5.audio.wav"/>
+                        <date dur="239.424"/>
+                    </recording>
+                </recordingStmt>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting xml:id="d0">
+                    <activity/>
+                </setting>
+            </settingDesc>
+            <particDesc>
+                <listPerson>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="default"/>
+                        </altGrp>
+                        <persName>default</persName>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="L1"/>
+                        </altGrp>
+                        <persName>Mélanie</persName>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="L2"/>
+                        </altGrp>
+                        <persName>Eloise</persName>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="Observateur"/>
+                        </altGrp>
+                        <persName>Rou</persName>
+                    </person>
+                    <person age="40.0">
+                        <altGrp>
+                            <alt type="SD"/>
+                        </altGrp>
+                        <persName>Mélanie</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+        <encodingDesc style="0.9.1">
+            <appInfo>
+                <application ident="TeiCorpo" version="testing-version">
+                    <desc>Transcription converted with TeiCorpo to TEI_CORPO - Soft: testing-version</desc>
+                </application>
+            </appInfo>
+            <transcriptionDesc ident="transcriber" version="1.4.41">
+                <desc>no information on TRS format</desc>
+            </transcriptionDesc>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>test document<desc>test</desc>
+                </item>
+                <head>
+                    <note type="access">C:\devlopt\teicorpo\test\data\sources\transcriber/</note>
+                    <note type="filename">DOC_FR_2020_CHOIX_5.tei_corpo.xml</note>
+                </head>
+                <item>C:\devlopt\teicorpo\test\data\sources\transcriber\DOC_FR_2020_CHOIX_5.tei_corpo.xml<desc>docname</desc>
+                </item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <timeline unit="s">
+            <when absolute="0" xml:id="T0"/>
+            <when interval="2.750" since="#T0" xml:id="T1"/>
+            <when interval="2.800" since="#T0" xml:id="T3"/>
+            <when interval="4.050" since="#T0" xml:id="T2"/>
+            <when interval="42.800" since="#T0" xml:id="T5"/>
+            <when interval="54.500" since="#T0" xml:id="T6"/>
+            <when interval="59.900" since="#T0" xml:id="T4"/>
+            <when interval="102.825" since="#T0" xml:id="T8"/>
+            <when interval="104.495" since="#T0" xml:id="T9"/>
+            <when interval="105.260" since="#T0" xml:id="T7"/>
+            <when interval="110.022" since="#T0" xml:id="T11"/>
+            <when interval="113.620" since="#T0" xml:id="T12"/>
+            <when interval="115.153" since="#T0" xml:id="T13"/>
+            <when interval="124.109" since="#T0" xml:id="T14"/>
+            <when interval="132.570" since="#T0" xml:id="T15"/>
+            <when interval="133.450" since="#T0" xml:id="T10"/>
+            <when interval="133.500" since="#T0" xml:id="T17"/>
+            <when interval="143.550" since="#T0" xml:id="T18"/>
+            <when interval="144.214" since="#T0" xml:id="T16"/>
+            <when interval="153.039" since="#T0" xml:id="T20"/>
+            <when interval="173.100" since="#T0" xml:id="T21"/>
+            <when interval="174.697" since="#T0" xml:id="T22"/>
+            <when interval="175.967" since="#T0" xml:id="T19"/>
+            <when interval="176.350" since="#T0" xml:id="T24"/>
+            <when interval="176.993" since="#T0" xml:id="T23"/>
+            <when interval="183.370" since="#T0" xml:id="T26"/>
+            <when interval="185.750" since="#T0" xml:id="T27"/>
+            <when interval="186.675" since="#T0" xml:id="T28"/>
+            <when interval="189.642" since="#T0" xml:id="T29"/>
+            <when interval="191.550" since="#T0" xml:id="T25"/>
+            <when interval="193.770" since="#T0" xml:id="T31"/>
+            <when interval="194.214" since="#T0" xml:id="T30"/>
+            <when interval="195.076" since="#T0" xml:id="T32"/>
+            <when interval="195.123" since="#T0" xml:id="T34"/>
+            <when interval="199.175" since="#T0" xml:id="T33"/>
+            <when interval="203.200" since="#T0" xml:id="T36"/>
+            <when interval="205.474" since="#T0" xml:id="T37"/>
+            <when interval="212.558" since="#T0" xml:id="T38"/>
+            <when interval="213.116" since="#T0" xml:id="T35"/>
+            <when interval="214.075" since="#T0" xml:id="T40"/>
+            <when interval="216.795" since="#T0" xml:id="T41"/>
+            <when interval="217.764" since="#T0" xml:id="T39"/>
+            <when interval="218.621" since="#T0" xml:id="T43"/>
+            <when interval="224.447" since="#T0" xml:id="T44"/>
+            <when interval="225.460" since="#T0" xml:id="T42"/>
+            <when interval="226.560" since="#T0" xml:id="T46"/>
+            <when interval="227.810" since="#T0" xml:id="T45"/>
+            <when interval="227.926" since="#T0" xml:id="T48"/>
+            <when interval="228.126" since="#T0" xml:id="T47"/>
+            <when interval="228.482" since="#T0" xml:id="T50"/>
+            <when interval="229.695" since="#T0" xml:id="T49"/>
+            <when interval="231.580" since="#T0" xml:id="T51"/>
+            <when interval="233.425" since="#T0" xml:id="T52"/>
+            <when interval="233.475" since="#T0" xml:id="T54"/>
+            <when interval="233.818" since="#T0" xml:id="T55"/>
+            <when interval="235.293" since="#T0" xml:id="T53"/>
+            <when interval="236.532" since="#T0" xml:id="T57"/>
+            <when interval="236.709" since="#T0" xml:id="T58"/>
+            <when interval="238.378" since="#T0" xml:id="T56"/>
+            <when interval="238.456" since="#T0" xml:id="T60"/>
+            <when interval="239.243" since="#T0" xml:id="T59"/>
+            <when interval="239.424" since="#T0" xml:id="T61"/>
+        </timeline>
+        <body>
+            <div subtype="d0" type="Situation">
+                <head>
+                    <note type="air_date">d0</note>
+                    <note type="program">Situation</note>
+                </head>
+                <div type="report">
+                    <head>
+                        <note type="start">#T1</note>
+                        <note type="end">#T61</note>
+                    </head>
+                    <annotationBlock end="#T2" start="#T1" who="L1" xml:id="au0">
+                        <u>
+                            <seg>&lt;alors moi moi j'ai choisi euh je voudrais aller voir Split [anglais] donc:: je sais [Se] pas si tu as vu la bande annonce c'est euh du coup des amis qui qui sont euh je je sais plus où elles sortent mais qu'elles sortent et euh {rire} et au moment donnée de remonter dans la voiture il y a [ja] un inconnu qui arrive et :: qui les il leur fait respirer quelque chose qui fait qu'elles s'endorment mais perdent de connaissance et euh du coup à ce moment là il les&lt; enlève donc euh c'est pas un film d'horreur c'est d'accord mais c'est un peu un film quand même un petit thriller du coup euh:: il les enlève et elles sont séparées euh:: et en fait euh ben ce seul homme qui qui les a enlevés il a euh un nombre atypique de personnalités&lt; {rire} et il a énormément de personnalités et ça fait qu'au début euh en fait y'a l'une des deux filles auxquelles il s'intéresse le plus sûr que c'est plus le personnage principal et du coup elle s'intéresse vraiment aux ces personnalités et elle finit par comprendre qu'il est pas qu'il n'a pas qu'une personnalité par exemple il y a une femme un petit garçon euh:: il est aussi euh:: par exemple un homme qui qui aurait convenu entre guillemets à son aspect corps physique et mais il a vraiment énormément de de personnalités est en fait l'intrigue c'est que il y a une dernière personnalité et on s'est pas vraiment en quoi il consiste du coup c'est [cas ] </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T2" start="#T1" who="L2" xml:id="au1">
+                        <u>
+                            <anchor synch="#T3"/>
+                            <seg>{rire}&gt; </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T4" start="#T5" who="L2" xml:id="au2">
+                        <u>
+                            <seg>d'accord&gt; </seg>
+                            <anchor synch="#T6"/>
+                            <seg>{rire} atypique&gt; </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T7" start="#T8" who="L1" xml:id="au3">
+                        <u>
+                            <anchor synch="#T9"/>
+                            <seg>{rire}&gt; c'est interesssant </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T7" start="#T8" who="L2" xml:id="au4">
+                        <u>
+                            <seg>hum c'est interesssant &lt;{rire} ça va vous êtes bien mais moi j'aurais voulu voir Bienvenue chez les Ch'tis il est français il a .. français je tiens mes origines {rire} mais donc c'est quand euh un belge un policier belge un policier donc qui vient du nord {rire} de la France et qui parle ch'ti et franchement c'est:: c'est ça a l'air excellent parce que toi aussi t'as des origines ch'tis je le sens </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T10" start="#T11" who="L1" xml:id="au5">
+                        <u>
+                            <seg>c'est pas le même genre pas du tout </seg>
+                            <anchor synch="#T12"/>
+                            <seg>en effet </seg>
+                            <anchor synch="#T13"/>
+                            <seg>ouais je vois ça </seg>
+                            <anchor synch="#T14"/>
+                            <seg>eh </seg>
+                            <anchor synch="#T15"/>
+                            <seg>c'est vrai tu le sens </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T16" start="#T17" who="L1" xml:id="au6">
+                        <u>
+                            <anchor synch="#T18"/>
+                            <seg>français&gt; </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T16" start="#T17" who="L2" xml:id="au7">
+                        <u>
+                            <seg>c'est vraiment les:: comment dire les:: déjà les deux personnages qui sont interprétés il y a Kad Merad et Dany Boon vraiment c'est les figures du &lt;cinéma français euh hum et ils découvrent leurs différences on va dire de culture et euh le fait par exemple que:: un chat c'est pas un chat c'est un chat [ko] ou un chien [akija] a tout ça {rire} ça me rappelle vraiment comment euh par exemple mes grands parents mes grands parents parlent encore ou comme tu {rire} tu m'as dit tu m'avais dit euh quelqu'un euh au collège qui t'aborde qui parle Ch'ti tu comprends pas du tout et justement je trouve que ce film nous offra des signes un petit peu et c'est un bon moyen de se détendre </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T19" start="#T20" who="L1" xml:id="au8">
+                        <u>
+                            <seg>hum ouais </seg>
+                            <anchor synch="#T21"/>
+                            <seg/>
+                            <anchor synch="#T22"/>
+                            <seg>c'est vrais c'est sûr </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T23" start="#T24" who="SD" xml:id="au9">
+                        <u>
+                            <seg>0.643 </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T25" start="#T23" who="L1" xml:id="au10">
+                        <u>
+                            <seg>c'est vrai que pour se détendre ton film il col- il colle peut-être mieux </seg>
+                            <anchor synch="#T27"/>
+                            <seg>&lt;psychologiquement au sens psychologie </seg>
+                            <anchor synch="#T29"/>
+                            <seg>en même temps </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T25" start="#T23" who="L2" xml:id="au11">
+                        <u>
+                            <anchor synch="#T26"/>
+                            <seg>mais le tien il a l'air pas mal intéressant mais :: </seg>
+                            <anchor synch="#T28"/>
+                            <seg>oui c'est ça&gt; je vais peut être un petit peu &lt;hum{ton pour montrer le rôle de spectateur} mais ça peut être tu sais qui l'a produit </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T30" start="#T31" who="SD" xml:id="au12">
+                        <u>
+                            <seg>0.444 </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T32" start="#T30" who="L1" xml:id="au13">
+                        <u>
+                            <seg>je sais pas du tout </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T33" start="#T34" who="L2" xml:id="au14">
+                        <u>
+                            <seg>si c'est un inconnu:: un typique tel </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T35" start="#T33" who="L1" xml:id="au15">
+                        <u>
+                            <seg>tout ce que je sais que l'acteur qui joue dedans c'est le même qui joue le faune dans le Narnia&lt;{rire} ça va tout à fait changer:: le personnage ah ouais ça c'est sûr </seg>
+                            <anchor synch="#T38"/>
+                            <seg>hum hum </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T35" start="#T33" who="L2" xml:id="au16">
+                        <u>
+                            <anchor synch="#T36"/>
+                            <seg>{rire} &gt; </seg>
+                            <anchor synch="#T37"/>
+                            <seg>ça va pas du tout le même personnage ça me dit ça&gt; mais rien que la la fiche a l'air intéressant justement parce que tu me parles il y a plusieurs personnalités et y a un miroir cassé donc euh y briser intérieurement {rire} </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T39" start="#T40" who="L1" xml:id="au17">
+                        <u>
+                            <seg>exactement et donc </seg>
+                            <anchor synch="#T41"/>
+                            <seg>{rire} </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T42" start="#T43" who="L1" xml:id="au18">
+                        <u>
+                            <seg>et ouais du coup je me disais c'est bien aussi un film pour le soir même si c'est pas:: un film d'horreur &lt;regarde ça dans le noir tout ça regarder dans l'ambiance ans </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T42" start="#T43" who="L2" xml:id="au19">
+                        <u>
+                            <anchor synch="#T44"/>
+                            <seg>mais je comprends&gt; </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T45" start="#T46" who="L2" xml:id="au20">
+                        <u>
+                            <seg>j'aimerais bien le voir en plus </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T47" start="#T48" who="SD" xml:id="au21">
+                        <u>
+                            <seg>0.200 </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T49" start="#T47" who="L1" xml:id="au22">
+                        <u>
+                            <anchor synch="#T50"/>
+                            <seg>je n'ai pas entendu parler </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T49" start="#T47" who="L2" xml:id="au23">
+                        <u>
+                            <seg>on avait entendu parler </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T51" start="#T49" who="SD" xml:id="au24">
+                        <u>
+                            <seg>1.885 </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T52" start="#T51" who="L1" xml:id="au25">
+                        <u>
+                            <seg>j'aimerais bien le voir </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T53" start="#T54" who="L1" xml:id="au26">
+                        <u>
+                            <anchor synch="#T55"/>
+                            <seg>{rire}&gt; </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T53" start="#T54" who="L2" xml:id="au27">
+                        <u>
+                            <seg>on va le voir ça &lt;{rire} j'ai vraiment envie de le voir </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T56" start="#T57" who="Observateur" xml:id="au28">
+                        <u>
+                            <seg>on va voir le split dans ce cas là </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T56" start="#T57" who="SD" xml:id="au29">
+                        <u>
+                            <anchor synch="#T58"/>
+                            <seg>1.669 </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T59" start="#T56" who="L1" xml:id="au30">
+                        <u>
+                            <anchor synch="#T60"/>
+                            <seg/>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T59" start="#T56" who="L2" xml:id="au31">
+                        <u>
+                            <seg>OK </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T61" start="#T59" who="SD" xml:id="au32">
+                        <u>
+                            <seg>0.181 </seg>
+                        </u>
+                    </annotationBlock>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

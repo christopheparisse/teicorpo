@@ -211,11 +211,11 @@ public abstract class ImportToTei extends GenericMain {
 		encodingDesc.appendChild(appInfo);
 		Element application = this.docTEI.createElement("application");
 		application.setAttribute("ident", "TeiCorpo");
-		application.setAttribute("version", Version.versionSoft);
+		application.setAttribute("version", Version.versionSoft(optionsTEI.test));
 		appInfo.appendChild(application);
 		Element desc = this.docTEI.createElement("desc");
 		application.appendChild(desc);
-		desc.setTextContent("Transcription converted with TeiCorpo to TEI_CORPO - Soft: " + Version.versionSoft);
+		desc.setTextContent("Transcription converted with TeiCorpo to TEI_CORPO - Soft: " + Version.versionSoft(optionsTEI.test));
 	}
 
 	/**
@@ -399,7 +399,7 @@ public abstract class ImportToTei extends GenericMain {
 	public static void addTemplateTiersNames(Document doc, Set<String> tiersNames, TierParams optionsTEI) {
 		if (tiersNames != null) {
 			for (String t : tiersNames) {
-				if (optionsTEI.target.equals("dinlang") && t.equals("lng")) {
+				if (optionsTEI.target.equals("dinlang") && t.equals(Utils.languagingScript)) {
 					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "communication");
 				} else if (optionsTEI.target.equals("dinlang") && t.equals("act")) {
 					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "action");

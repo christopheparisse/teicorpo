@@ -359,7 +359,7 @@ public class TeiTreeTagger extends GenericMain {
 
 	// Programme principal
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usageString = "Description: TeiTreeTagger allows to apply the TreeTagger software (Helmut Schmid) on a TEI file.%nUsage: TeiTreeTagger -c command [-options] <"
 				+ Utils.EXT + ">%n";
 		TeiTreeTagger ttt = new TeiTreeTagger();

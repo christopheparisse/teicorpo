@@ -863,7 +863,7 @@ public class TranscriberToTei extends ImportToTei {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws Exception {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		TranscriberToTei tr = new TranscriberToTei();
 		tr.mainCommand(args, ".trs", Utils.EXT, "Description: TranscriberToTei converts a Transcriber file to an TEI file%n", 2);
 		// if (!(Utils.validFileFormat(input, ".trs") || Utils.validFileFormat(input, ".trs.xml") || Utils.validFileFormat(input, ".xml"))) {

@@ -1,0 +1,2680 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <publicationStmt>
+                    <distributor>tei_corpo</distributor>
+                </publicationStmt>
+                <title>
+                    <desc>Fichier TEI obtenu à partir du fichier CLAN C:\devlopt\teicorpo\test\data\sources\elan\TestDNF4.cha</desc>
+                </title>
+            </titleStmt>
+            <notesStmt>
+                <note type="COMMENTS_DESC">
+                    <note type="scribe">Coder - Françoise BOURDOUX (march 2012) - non corrigée</note>
+                </note>
+                <note type="TEMPLATE_DESC">
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">MOT</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">FAT</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">LUC</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">GAB</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">OBS1</note>
+                    </note>
+                    <note>
+                        <note type="type">-</note>
+                        <note type="parent">-</note>
+                        <note type="code">OBS2</note>
+                    </note>
+                    <note>
+                        <note type="code">com</note>
+                        <note type="type">Symbolic_Association</note>
+                        <note type="parent">annotationBlock</note>
+                    </note>
+                    <note>
+                        <note type="code">add</note>
+                        <note type="type">Symbolic_Association</note>
+                        <note type="parent">annotationBlock</note>
+                    </note>
+                    <note>
+                        <note type="code">act</note>
+                        <note type="type">Symbolic_Association</note>
+                        <note type="parent">annotationBlock</note>
+                    </note>
+                    <note>
+                        <note type="code">xpnt</note>
+                        <note type="type">Symbolic_Association</note>
+                        <note type="parent">annotationBlock</note>
+                    </note>
+                    <note>
+                        <note type="code">sit</note>
+                        <note type="type">Symbolic_Association</note>
+                        <note type="parent">annotationBlock</note>
+                    </note>
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <media dur-iso="3740.67" mimeType="video/mp4" url="TestDNF4.mp4"/>
+                    </recording>
+                </recordingStmt>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <listPlace>
+                    <place>
+                        <placeName>home.</placeName>
+                    </place>
+                </listPlace>
+                <setting xml:id="d0">
+                    <date>17-NOV-2011</date>
+                    <activity>MOT, LUC et GAB, rejoints un peu plus tard par FAT sont filmés chez eux par OBS1 et OBS2 durant la préparation du repas et le repas</activity>
+                </setting>
+                <setting xml:id="d1">
+                    <activity>MOT fait réciter ses leçons à LUC (tous les deux debouts) dans l'espace entre la cuisine et le séjour, juste avant de préparer le repas</activity>
+                </setting>
+                <setting xml:id="d2">
+                    <activity>MOT, aidée de LUC, vide le lave vaisselle - discussion sur le déjeuner à la cantine</activity>
+                </setting>
+                <setting xml:id="d3">
+                    <activity>discussion entre MOT et OBS2 sur les repas de cantine</activity>
+                </setting>
+                <setting xml:id="d4">
+                    <activity>MOT, suivie de OBS1, va voir GAB qui est dans son bain</activity>
+                </setting>
+                <setting xml:id="d5">
+                    <activity>repas</activity>
+                </setting>
+            </settingDesc>
+            <langUsage>
+                <language ident="fra">fra</language>
+            </langUsage>
+            <particDesc>
+                <listPerson>
+                    <person role="Mother" sex="2" source="French_dinners">
+                        <altGrp>
+                            <alt type="MOT"/>
+                        </altGrp>
+                        <langKnowledge>
+                            <langKnown tag="fra">fra</langKnown>
+                        </langKnowledge>
+                        <age value="40.0">40.0</age>
+                    </person>
+                    <person role="Father" sex="1" source="French_dinners">
+                        <altGrp>
+                            <alt type="FAT"/>
+                        </altGrp>
+                        <langKnowledge>
+                            <langKnown tag="fra">fra</langKnown>
+                        </langKnowledge>
+                        <age value="40.0">40.0</age>
+                    </person>
+                    <person role="Boy" sex="1" source="French_dinners">
+                        <persName>Lucien</persName>
+                        <altGrp>
+                            <alt type="LUC"/>
+                        </altGrp>
+                        <langKnowledge>
+                            <langKnown tag="fra">fra</langKnown>
+                        </langKnowledge>
+                        <age value="9.0">9;00.00</age>
+                    </person>
+                    <person role="Boy" sex="1" source="French_dinners">
+                        <persName>Gabriel</persName>
+                        <altGrp>
+                            <alt type="GAB"/>
+                        </altGrp>
+                        <langKnowledge>
+                            <langKnown tag="fra">fra</langKnown>
+                        </langKnowledge>
+                        <age value="4.0">4;00.00</age>
+                    </person>
+                    <person role="Investigator" sex="2" source="French_dinners">
+                        <persName>Observer</persName>
+                        <altGrp>
+                            <alt type="OBS1"/>
+                        </altGrp>
+                        <langKnowledge>
+                            <langKnown tag="fra">fra</langKnown>
+                        </langKnowledge>
+                        <age value="40.0">40.0</age>
+                    </person>
+                    <person role="Investigator" sex="2" source="French_dinners">
+                        <persName>Observer</persName>
+                        <altGrp>
+                            <alt type="OBS2"/>
+                        </altGrp>
+                        <langKnowledge>
+                            <langKnown tag="fra">fra</langKnown>
+                        </langKnowledge>
+                        <age value="40.0">40.0</age>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+        <encodingDesc style="0.9.1">
+            <appInfo>
+                <application ident="TeiCorpo" version="testing-version">
+                    <desc>Transcription converted with TeiCorpo to TEI_CORPO - Soft: testing-version</desc>
+                </application>
+            </appInfo>
+            <transcriptionDesc ident="clan" version="1.0">
+                <desc>standard CHAT format</desc>
+            </transcriptionDesc>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>test document<desc>test</desc>
+                </item>
+                <head>
+                    <note type="access">C:\devlopt\teicorpo\test\data\sources\elan/</note>
+                    <note type="filename">TestDNF4.tei_corpo.xml</note>
+                </head>
+                <item>C:\devlopt\teicorpo\test\data\sources\elan\TestDNF4.tei_corpo.xml<desc>docname</desc>
+                </item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <timeline unit="s">
+            <when absolute="0" xml:id="T0"/>
+            <when interval="5.036" since="#T0" xml:id="T1"/>
+            <when interval="6.691" since="#T0" xml:id="T2"/>
+            <when interval="9.34" since="#T0" xml:id="T3"/>
+            <when interval="12.076" since="#T0" xml:id="T4"/>
+            <when interval="16.67" since="#T0" xml:id="T5"/>
+            <when interval="20.295" since="#T0" xml:id="T7"/>
+            <when interval="20.38" since="#T0" xml:id="T6"/>
+            <when interval="25.65" since="#T0" xml:id="T8"/>
+            <when interval="29.613" since="#T0" xml:id="T9"/>
+            <when interval="30.55" since="#T0" xml:id="T10"/>
+            <when interval="35.425" since="#T0" xml:id="T11"/>
+            <when interval="36.64" since="#T0" xml:id="T12"/>
+            <when interval="37.461" since="#T0" xml:id="T13"/>
+            <when interval="39.065" since="#T0" xml:id="T14"/>
+            <when interval="40.895" since="#T0" xml:id="T15"/>
+            <when interval="45.611" since="#T0" xml:id="T16"/>
+            <when interval="46.071" since="#T0" xml:id="T17"/>
+            <when interval="46.65" since="#T0" xml:id="T18"/>
+            <when interval="55.241" since="#T0" xml:id="T19"/>
+            <when interval="57.563" since="#T0" xml:id="T20"/>
+            <when interval="58.158" since="#T0" xml:id="T21"/>
+            <when interval="58.76" since="#T0" xml:id="T22"/>
+            <when interval="61.175" since="#T0" xml:id="T23"/>
+            <when interval="63.315" since="#T0" xml:id="T24"/>
+            <when interval="66.511" since="#T0" xml:id="T25"/>
+            <when interval="70.478" since="#T0" xml:id="T26"/>
+            <when interval="71.606" since="#T0" xml:id="T27"/>
+            <when interval="73.49" since="#T0" xml:id="T28"/>
+            <when interval="76.495" since="#T0" xml:id="T29"/>
+            <when interval="77.676" since="#T0" xml:id="T30"/>
+            <when interval="78.841" since="#T0" xml:id="T31"/>
+            <when interval="81.171" since="#T0" xml:id="T32"/>
+            <when interval="82.131" since="#T0" xml:id="T33"/>
+            <when interval="89.07" since="#T0" xml:id="T34"/>
+            <when interval="91.578" since="#T0" xml:id="T35"/>
+            <when interval="95.131" since="#T0" xml:id="T36"/>
+            <when interval="97.096" since="#T0" xml:id="T37"/>
+            <when interval="97.978" since="#T0" xml:id="T38"/>
+            <when interval="101.755" since="#T0" xml:id="T39"/>
+            <when interval="104.325" since="#T0" xml:id="T40"/>
+            <when interval="105.663" since="#T0" xml:id="T41"/>
+            <when interval="109.186" since="#T0" xml:id="T42"/>
+            <when interval="113.266" since="#T0" xml:id="T43"/>
+            <when interval="114.906" since="#T0" xml:id="T44"/>
+            <when interval="118.216" since="#T0" xml:id="T45"/>
+            <when interval="119.863" since="#T0" xml:id="T46"/>
+            <when interval="120.961" since="#T0" xml:id="T47"/>
+            <when interval="123.535" since="#T0" xml:id="T48"/>
+            <when interval="124.519" since="#T0" xml:id="T49"/>
+            <when interval="126.816" since="#T0" xml:id="T50"/>
+            <when interval="128.132" since="#T0" xml:id="T51"/>
+            <when interval="130.441" since="#T0" xml:id="T52"/>
+            <when interval="132.934" since="#T0" xml:id="T53"/>
+            <when interval="134.051" since="#T0" xml:id="T54"/>
+            <when interval="138.013" since="#T0" xml:id="T55"/>
+            <when interval="141.13" since="#T0" xml:id="T56"/>
+            <when interval="142.77" since="#T0" xml:id="T57"/>
+            <when interval="143.439" since="#T0" xml:id="T58"/>
+            <when interval="145.455" since="#T0" xml:id="T59"/>
+            <when interval="146.781" since="#T0" xml:id="T60"/>
+            <when interval="149.436" since="#T0" xml:id="T61"/>
+            <when interval="154.19" since="#T0" xml:id="T62"/>
+            <when interval="159.128" since="#T0" xml:id="T63"/>
+            <when interval="165.921" since="#T0" xml:id="T64"/>
+            <when interval="179.865" since="#T0" xml:id="T65"/>
+            <when interval="182.133" since="#T0" xml:id="T66"/>
+            <when interval="185.886" since="#T0" xml:id="T67"/>
+            <when interval="191.365" since="#T0" xml:id="T68"/>
+            <when interval="197.016" since="#T0" xml:id="T69"/>
+            <when interval="203.438" since="#T0" xml:id="T70"/>
+            <when interval="211.51" since="#T0" xml:id="T71"/>
+            <when interval="213.488" since="#T0" xml:id="T72"/>
+            <when interval="215.79" since="#T0" xml:id="T73"/>
+            <when interval="221.961" since="#T0" xml:id="T74"/>
+            <when interval="225.611" since="#T0" xml:id="T75"/>
+            <when interval="230.396" since="#T0" xml:id="T76"/>
+            <when interval="232.181" since="#T0" xml:id="T77"/>
+            <when interval="232.859" since="#T0" xml:id="T78"/>
+            <when interval="233.766" since="#T0" xml:id="T79"/>
+            <when interval="235.638" since="#T0" xml:id="T80"/>
+            <when interval="240.006" since="#T0" xml:id="T81"/>
+            <when interval="241.281" since="#T0" xml:id="T82"/>
+            <when interval="242.301" since="#T0" xml:id="T83"/>
+            <when interval="250.211" since="#T0" xml:id="T84"/>
+            <when interval="251.591" since="#T0" xml:id="T85"/>
+            <when interval="252.491" since="#T0" xml:id="T86"/>
+            <when interval="255.741" since="#T0" xml:id="T87"/>
+            <when interval="257.746" since="#T0" xml:id="T88"/>
+            <when interval="261.933" since="#T0" xml:id="T89"/>
+            <when interval="263.713" since="#T0" xml:id="T90"/>
+            <when interval="265.271" since="#T0" xml:id="T91"/>
+            <when interval="266.15" since="#T0" xml:id="T92"/>
+            <when interval="267.323" since="#T0" xml:id="T93"/>
+            <when interval="270.551" since="#T0" xml:id="T94"/>
+            <when interval="273.66" since="#T0" xml:id="T95"/>
+            <when interval="274.906" since="#T0" xml:id="T96"/>
+            <when interval="282.118" since="#T0" xml:id="T97"/>
+            <when interval="282.902" since="#T0" xml:id="T98"/>
+            <when interval="284.078" since="#T0" xml:id="T99"/>
+            <when interval="285.463" since="#T0" xml:id="T100"/>
+            <when interval="286.988" since="#T0" xml:id="T101"/>
+            <when interval="287.97" since="#T0" xml:id="T102"/>
+            <when interval="295.673" since="#T0" xml:id="T103"/>
+            <when interval="297.149" since="#T0" xml:id="T104"/>
+            <when interval="298.135" since="#T0" xml:id="T105"/>
+            <when interval="298.693" since="#T0" xml:id="T106"/>
+            <when interval="299.438" since="#T0" xml:id="T107"/>
+            <when interval="303.236" since="#T0" xml:id="T108"/>
+            <when interval="305.355" since="#T0" xml:id="T109"/>
+            <when interval="305.898" since="#T0" xml:id="T110"/>
+            <when interval="306.628" since="#T0" xml:id="T111"/>
+            <when interval="308.646" since="#T0" xml:id="T112"/>
+            <when interval="309.746" since="#T0" xml:id="T113"/>
+            <when interval="310.646" since="#T0" xml:id="T114"/>
+            <when interval="316.213" since="#T0" xml:id="T115"/>
+            <when interval="322.03" since="#T0" xml:id="T116"/>
+            <when interval="322.765" since="#T0" xml:id="T117"/>
+            <when interval="323.751" since="#T0" xml:id="T118"/>
+            <when interval="328.685" since="#T0" xml:id="T119"/>
+            <when interval="340.946" since="#T0" xml:id="T120"/>
+            <when interval="343.095" since="#T0" xml:id="T121"/>
+            <when interval="344.593" since="#T0" xml:id="T122"/>
+            <when interval="346.959" since="#T0" xml:id="T123"/>
+            <when interval="347.696" since="#T0" xml:id="T124"/>
+            <when interval="348.69" since="#T0" xml:id="T125"/>
+            <when interval="349.268" since="#T0" xml:id="T126"/>
+            <when interval="352.973" since="#T0" xml:id="T127"/>
+            <when interval="357.603" since="#T0" xml:id="T128"/>
+            <when interval="359.163" since="#T0" xml:id="T129"/>
+            <when interval="359.808" since="#T0" xml:id="T130"/>
+            <when interval="360.846" since="#T0" xml:id="T131"/>
+            <when interval="362.155" since="#T0" xml:id="T132"/>
+            <when interval="364.02" since="#T0" xml:id="T133"/>
+            <when interval="366.695" since="#T0" xml:id="T134"/>
+            <when interval="368.276" since="#T0" xml:id="T135"/>
+            <when interval="372.076" since="#T0" xml:id="T136"/>
+            <when interval="378.461" since="#T0" xml:id="T137"/>
+            <when interval="384.763" since="#T0" xml:id="T138"/>
+            <when interval="388.813" since="#T0" xml:id="T139"/>
+            <when interval="395.896" since="#T0" xml:id="T140"/>
+            <when interval="402.056" since="#T0" xml:id="T141"/>
+            <when interval="405.911" since="#T0" xml:id="T142"/>
+            <when interval="407.883" since="#T0" xml:id="T143"/>
+            <when interval="408.758" since="#T0" xml:id="T144"/>
+            <when interval="410.865" since="#T0" xml:id="T145"/>
+            <when interval="411.6" since="#T0" xml:id="T146"/>
+            <when interval="412.408" since="#T0" xml:id="T147"/>
+            <when interval="419.156" since="#T0" xml:id="T148"/>
+            <when interval="421.236" since="#T0" xml:id="T149"/>
+            <when interval="423.928" since="#T0" xml:id="T150"/>
+            <when interval="426.146" since="#T0" xml:id="T151"/>
+            <when interval="432.72" since="#T0" xml:id="T152"/>
+            <when interval="434.156" since="#T0" xml:id="T153"/>
+            <when interval="442.208" since="#T0" xml:id="T154"/>
+            <when interval="449.771" since="#T0" xml:id="T155"/>
+            <when interval="451.678" since="#T0" xml:id="T156"/>
+            <when interval="454.44" since="#T0" xml:id="T157"/>
+            <when interval="458.413" since="#T0" xml:id="T158"/>
+            <when interval="461.518" since="#T0" xml:id="T159"/>
+            <when interval="463.153" since="#T0" xml:id="T160"/>
+            <when interval="464.015" since="#T0" xml:id="T161"/>
+            <when interval="473.751" since="#T0" xml:id="T162"/>
+            <when interval="481.071" since="#T0" xml:id="T163"/>
+            <when interval="483.991" since="#T0" xml:id="T164"/>
+            <when interval="484.573" since="#T0" xml:id="T165"/>
+            <when interval="484.968" since="#T0" xml:id="T166"/>
+            <when interval="491.623" since="#T0" xml:id="T167"/>
+            <when interval="498.371" since="#T0" xml:id="T168"/>
+            <when interval="506.096" since="#T0" xml:id="T169"/>
+            <when interval="507.121" since="#T0" xml:id="T170"/>
+            <when interval="508.501" since="#T0" xml:id="T171"/>
+            <when interval="509.881" since="#T0" xml:id="T172"/>
+            <when interval="511.091" since="#T0" xml:id="T173"/>
+            <when interval="512.066" since="#T0" xml:id="T174"/>
+            <when interval="513.75" since="#T0" xml:id="T175"/>
+            <when interval="517.36" since="#T0" xml:id="T176"/>
+            <when interval="522.521" since="#T0" xml:id="T178"/>
+            <when interval="522.655" since="#T0" xml:id="T177"/>
+            <when interval="531.336" since="#T0" xml:id="T179"/>
+            <when interval="538.17" since="#T0" xml:id="T180"/>
+            <when interval="545.516" since="#T0" xml:id="T181"/>
+            <when interval="546.688" since="#T0" xml:id="T182"/>
+            <when interval="548.018" since="#T0" xml:id="T183"/>
+            <when interval="549.203" since="#T0" xml:id="T184"/>
+            <when interval="550.388" since="#T0" xml:id="T185"/>
+            <when interval="554.348" since="#T0" xml:id="T186"/>
+            <when interval="560.808" since="#T0" xml:id="T187"/>
+            <when interval="562.543" since="#T0" xml:id="T188"/>
+            <when interval="565.753" since="#T0" xml:id="T189"/>
+            <when interval="568.66" since="#T0" xml:id="T190"/>
+            <when interval="570.193" since="#T0" xml:id="T191"/>
+            <when interval="575.72" since="#T0" xml:id="T192"/>
+            <when interval="577.423" since="#T0" xml:id="T193"/>
+            <when interval="578.375" since="#T0" xml:id="T194"/>
+            <when interval="584.333" since="#T0" xml:id="T195"/>
+            <when interval="590.441" since="#T0" xml:id="T196"/>
+            <when interval="591.205" since="#T0" xml:id="T197"/>
+            <when interval="592.353" since="#T0" xml:id="T198"/>
+            <when interval="593.775" since="#T0" xml:id="T199"/>
+            <when interval="597.1" since="#T0" xml:id="T200"/>
+            <when interval="598.486" since="#T0" xml:id="T201"/>
+            <when interval="599.886" since="#T0" xml:id="T202"/>
+            <when interval="601.65" since="#T0" xml:id="T203"/>
+            <when interval="602.406" since="#T0" xml:id="T204"/>
+            <when interval="604.685" since="#T0" xml:id="T205"/>
+            <when interval="606.178" since="#T0" xml:id="T206"/>
+            <when interval="610.008" since="#T0" xml:id="T207"/>
+            <when interval="615.753" since="#T0" xml:id="T208"/>
+            <when interval="617.36" since="#T0" xml:id="T209"/>
+            <when interval="619.061" since="#T0" xml:id="T210"/>
+            <when interval="622.82" since="#T0" xml:id="T211"/>
+            <when interval="624.345" since="#T0" xml:id="T212"/>
+            <when interval="627.826" since="#T0" xml:id="T213"/>
+            <when interval="632.33" since="#T0" xml:id="T214"/>
+            <when interval="633.888" since="#T0" xml:id="T215"/>
+            <when interval="636.941" since="#T0" xml:id="T216"/>
+            <when interval="640.16" since="#T0" xml:id="T217"/>
+            <when interval="643.723" since="#T0" xml:id="T218"/>
+            <when interval="652.141" since="#T0" xml:id="T219"/>
+            <when interval="665.333" since="#T0" xml:id="T220"/>
+            <when interval="667.801" since="#T0" xml:id="T221"/>
+            <when interval="674.258" since="#T0" xml:id="T222"/>
+            <when interval="680.696" since="#T0" xml:id="T223"/>
+            <when interval="683.11" since="#T0" xml:id="T224"/>
+            <when interval="685.714" since="#T0" xml:id="T225"/>
+            <when interval="688.321" since="#T0" xml:id="T226"/>
+            <when interval="3503.61" since="#T0" xml:id="T227"/>
+            <when interval="3506.653" since="#T0" xml:id="T228"/>
+            <when interval="3509.035" since="#T0" xml:id="T229"/>
+            <when interval="3517.028" since="#T0" xml:id="T230"/>
+            <when interval="3519.421" since="#T0" xml:id="T231"/>
+            <when interval="3521.816" since="#T0" xml:id="T232"/>
+            <when interval="3523.296" since="#T0" xml:id="T233"/>
+            <when interval="3526.566" since="#T0" xml:id="T234"/>
+            <when interval="3527.442" since="#T0" xml:id="T235"/>
+            <when interval="3528.321" since="#T0" xml:id="T236"/>
+            <when interval="3530.926" since="#T0" xml:id="T237"/>
+            <when interval="3533.023" since="#T0" xml:id="T238"/>
+            <when interval="3533.958" since="#T0" xml:id="T239"/>
+            <when interval="3535.342" since="#T0" xml:id="T240"/>
+            <when interval="3536.036" since="#T0" xml:id="T241"/>
+            <when interval="3539.295" since="#T0" xml:id="T242"/>
+            <when interval="3540.275" since="#T0" xml:id="T243"/>
+            <when interval="3542.725" since="#T0" xml:id="T244"/>
+            <when interval="3543.47" since="#T0" xml:id="T245"/>
+            <when interval="3547.084" since="#T0" xml:id="T246"/>
+            <when interval="3549.588" since="#T0" xml:id="T247"/>
+            <when interval="3550.014" since="#T0" xml:id="T248"/>
+            <when interval="3550.582" since="#T0" xml:id="T249"/>
+            <when interval="3552.005" since="#T0" xml:id="T250"/>
+            <when interval="3553.815" since="#T0" xml:id="T251"/>
+            <when interval="3555.223" since="#T0" xml:id="T252"/>
+            <when interval="3555.938" since="#T0" xml:id="T253"/>
+            <when interval="3557.506" since="#T0" xml:id="T254"/>
+            <when interval="3559.541" since="#T0" xml:id="T255"/>
+            <when interval="3560.3" since="#T0" xml:id="T256"/>
+            <when interval="3565.82" since="#T0" xml:id="T257"/>
+            <when interval="3570.43" since="#T0" xml:id="T258"/>
+            <when interval="3574.11" since="#T0" xml:id="T259"/>
+            <when interval="3575.961" since="#T0" xml:id="T260"/>
+            <when interval="3578.036" since="#T0" xml:id="T261"/>
+            <when interval="3579.868" since="#T0" xml:id="T262"/>
+            <when interval="3583.315" since="#T0" xml:id="T263"/>
+            <when interval="3585.763" since="#T0" xml:id="T264"/>
+            <when interval="3586.657" since="#T0" xml:id="T265"/>
+            <when interval="3587.261" since="#T0" xml:id="T266"/>
+            <when interval="3588.618" since="#T0" xml:id="T267"/>
+            <when interval="3590.225" since="#T0" xml:id="T268"/>
+            <when interval="3592.996" since="#T0" xml:id="T269"/>
+            <when interval="3595.708" since="#T0" xml:id="T270"/>
+            <when interval="3599.78" since="#T0" xml:id="T271"/>
+            <when interval="3600.854" since="#T0" xml:id="T272"/>
+            <when interval="3602.465" since="#T0" xml:id="T273"/>
+            <when interval="3606.233" since="#T0" xml:id="T274"/>
+            <when interval="3607.038" since="#T0" xml:id="T275"/>
+            <when interval="3608.333" since="#T0" xml:id="T276"/>
+            <when interval="3609.911" since="#T0" xml:id="T277"/>
+            <when interval="3612.278" since="#T0" xml:id="T278"/>
+            <when interval="3614.645" since="#T0" xml:id="T279"/>
+            <when interval="3619.38" since="#T0" xml:id="T280"/>
+            <when interval="3619.911" since="#T0" xml:id="T281"/>
+            <when interval="3621.683" since="#T0" xml:id="T282"/>
+            <when interval="3622.361" since="#T0" xml:id="T283"/>
+            <when interval="3625.305" since="#T0" xml:id="T284"/>
+            <when interval="3627.384" since="#T0" xml:id="T285"/>
+            <when interval="3631.543" since="#T0" xml:id="T286"/>
+            <when interval="3633.143" since="#T0" xml:id="T287"/>
+            <when interval="3633.746" since="#T0" xml:id="T288"/>
+            <when interval="3637.013" since="#T0" xml:id="T289"/>
+            <when interval="3642.858" since="#T0" xml:id="T290"/>
+            <when interval="3644.118" since="#T0" xml:id="T291"/>
+            <when interval="3652.143" since="#T0" xml:id="T292"/>
+            <when interval="3652.767" since="#T0" xml:id="T293"/>
+            <when interval="3655.276" since="#T0" xml:id="T294"/>
+            <when interval="3657.622" since="#T0" xml:id="T295"/>
+            <when interval="3658.404" since="#T0" xml:id="T296"/>
+            <when interval="3659.978" since="#T0" xml:id="T297"/>
+            <when interval="3661.981" since="#T0" xml:id="T298"/>
+            <when interval="3667.656" since="#T0" xml:id="T299"/>
+            <when interval="3672.646" since="#T0" xml:id="T300"/>
+            <when interval="3675.74" since="#T0" xml:id="T301"/>
+            <when interval="3677.091" since="#T0" xml:id="T302"/>
+            <when interval="3683.315" since="#T0" xml:id="T303"/>
+            <when interval="3688.583" since="#T0" xml:id="T304"/>
+            <when interval="3690.403" since="#T0" xml:id="T305"/>
+            <when interval="3692.675" since="#T0" xml:id="T306"/>
+            <when interval="3695.768" since="#T0" xml:id="T307"/>
+            <when interval="3697.79" since="#T0" xml:id="T308"/>
+            <when interval="3700.248" since="#T0" xml:id="T309"/>
+            <when interval="3701.59" since="#T0" xml:id="T310"/>
+            <when interval="3703.38" since="#T0" xml:id="T311"/>
+            <when interval="3706.603" since="#T0" xml:id="T312"/>
+            <when interval="3710.09" since="#T0" xml:id="T313"/>
+            <when interval="3710.54" since="#T0" xml:id="T314"/>
+            <when interval="3710.99" since="#T0" xml:id="T315"/>
+            <when interval="3712.051" since="#T0" xml:id="T316"/>
+            <when interval="3712.573" since="#T0" xml:id="T317"/>
+            <when interval="3713.275" since="#T0" xml:id="T318"/>
+            <when interval="3715.081" since="#T0" xml:id="T319"/>
+            <when interval="3716.14" since="#T0" xml:id="T320"/>
+            <when interval="3718.82" since="#T0" xml:id="T321"/>
+            <when interval="3719.66" since="#T0" xml:id="T322"/>
+            <when interval="3720.368" since="#T0" xml:id="T323"/>
+            <when interval="3723.253" since="#T0" xml:id="T324"/>
+            <when interval="3726.603" since="#T0" xml:id="T325"/>
+            <when interval="3727.928" since="#T0" xml:id="T326"/>
+            <when interval="3730.188" since="#T0" xml:id="T327"/>
+            <when interval="3732.453" since="#T0" xml:id="T328"/>
+            <when interval="3734.728" since="#T0" xml:id="T329"/>
+            <when interval="3735.43" since="#T0" xml:id="T330"/>
+            <when interval="3737.828" since="#T0" xml:id="T331"/>
+            <when interval="3739.249" since="#T0" xml:id="T332"/>
+            <when interval="3740.67" since="#T0" xml:id="T333"/>
+        </timeline>
+        <body>
+            <div subtype="d0" type="Situation">
+                <head>
+                    <note type="start">#T0</note>
+                    <note type="end">#T333</note>
+                </head>
+                <div subtype="d1" type="G">
+                    <head>
+                        <note type="start">#T0</note>
+                        <note type="end">#T60</note>
+                    </head>
+                    <annotationBlock end="#T1" start="#T0" who="MOT" xml:id="au0">
+                        <u>
+                            <seg>ok et entre l' Afrique et l' Amérique_du_Sud qu' est+ce+qu' y+a comme océan ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait des gestes de la main sur la table pour illustrer la carte de géographie</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T2" start="#T1" who="LUC" xml:id="au1">
+                        <u>
+                            <seg>euh et quoi ? </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>presqu' inaudible</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T3" start="#T2" who="MOT" xml:id="au2">
+                        <u>
+                            <seg>et l' Amérique l' Amérique_du_Sud . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>OBS2 passe derrière MOT et LUC pour aller filmer de l'autre côté de la pièce</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T4" start="#T3" who="LUC" xml:id="au3">
+                        <u>
+                            <seg>y+a l' océan +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T5" start="#T4" who="LUC" xml:id="au4">
+                        <u>
+                            <seg>+, Atlantique . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T6" start="#T5" who="MOT" xml:id="au5">
+                        <u>
+                            <seg>Atlantique c'est le même &lt;qu' y+a&gt; [//] aussi qui borde nos côtes en France . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T8" start="#T7" who="MOT" xml:id="au6">
+                        <u>
+                            <seg>et après de l' autre côté d(e) l' Amérique donc on a l' Amérique_du_Sud après au desus qu' est+ce+qu' y+a ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait des gestes de la main sur la table pour illustrer la carte de géographie</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T9" start="#T8" who="LUC" xml:id="au7">
+                        <u>
+                            <seg>xxx l' Amérique_du_Nord . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T10" start="#T9" who="MOT" xml:id="au8">
+                        <u>
+                            <seg>d'accord [=! hoche la tête] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T11" start="#T10" who="MOT" xml:id="au9">
+                        <u>
+                            <seg>l' Amérique_du_Nord et de l' autre côté qu' est+ce+qu' on a comme océan ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T12" start="#T11" who="MOT" xml:id="au10">
+                        <u>
+                            <seg>qui est aussi lié avec le Japon ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T13" start="#T12" who="LUC" xml:id="au11">
+                        <u>
+                            <seg>+&lt; l' océan Pacifique . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T14" start="#T13" who="MOT" xml:id="au12">
+                        <u>
+                            <seg>voilà l' océan Pacifique . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>on entend de la musique en arrière fond à partir de maintenant</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T15" start="#T14" who="MOT" xml:id="au13">
+                        <u>
+                            <seg>ok . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T16" start="#T15" who="MOT" xml:id="au14">
+                        <u>
+                            <seg>euh 0 [=! bruit de bouche] après l' Europe à l' est de l' Europe qu' est+ce+que nous avons ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T17" start="#T16" who="LUC" xml:id="au15">
+                        <u>
+                            <seg>l' Asie . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T18" start="#T17" who="MOT" xml:id="au16">
+                        <u>
+                            <seg>l' Asie . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T19" start="#T18" who="MOT" xml:id="au17">
+                        <u>
+                            <seg>l' Asie <pause type="short"/>et hum en+dessous on a plein d(e) petites îles . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait des gestes de la main sur la table pour illustrer la carte de géographie</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC se retourne et jette un coup d'oeil vers la caméra de OBS1</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T20" start="#T19" who="MOT" xml:id="au18">
+                        <u>
+                            <seg>dont le Japon la Corée et+cetera . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T21" start="#T20" who="MOT" xml:id="au19">
+                        <u>
+                            <seg>et encore en+dessous . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T22" start="#T21" who="LUC" xml:id="au20">
+                        <u>
+                            <seg>+&lt; l' Océanie . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T23" start="#T22" who="MOT" xml:id="au21">
+                        <u>
+                            <seg>l' Océanie très bien . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T24" start="#T23" who="MOT" xml:id="au22">
+                        <u>
+                            <seg>l' Océanie y+a quoi par exemple comme pays dedans ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T25" start="#T24" who="MOT" xml:id="au23">
+                        <u>
+                            <seg>qu' est+ce+que tu sais ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T26" start="#T25" who="MOT" xml:id="au24">
+                        <u>
+                            <seg>quand on regarde le [//] la coupe du monde de rugby ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T27" start="#T26" who="LUC" xml:id="au25">
+                        <u>
+                            <seg>xxx [=! signe non de la tête] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T28" start="#T27" who="MOT" xml:id="au26">
+                        <u>
+                            <seg>+&lt; mais si . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T29" start="#T28" who="LUC" xml:id="au27">
+                        <u>
+                            <seg>0 [=! signe non de la tête] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T30" start="#T29" who="MOT" xml:id="au28">
+                        <u>
+                            <seg>mais si tu sais Lucien . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T31" start="#T30" who="MOT" xml:id="au29">
+                        <u>
+                            <seg>qui vient de très loin . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T32" start="#T31" who="MOT" xml:id="au30">
+                        <u>
+                            <seg>l' Australie . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T33" start="#T32" who="LUC" xml:id="au31">
+                        <u>
+                            <seg>ah . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T34" start="#T33" who="MOT" xml:id="au32">
+                        <u>
+                            <seg>hum entre l' Océanie et l' Afrique on a un océan qu' est+ce+que c'est ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait des gestes de la main sur la table pour illustrer la carte de géographie</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T35" start="#T34" who="LUC" xml:id="au33">
+                        <u>
+                            <seg>l' océan quoi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T36" start="#T35" who="MOT" xml:id="au34">
+                        <u>
+                            <seg>entre la [//] l' Océanie et l' Afrique y+a un océan . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T37" start="#T36" who="LUC" xml:id="au35">
+                        <u>
+                            <seg>y+a l' océan indien . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T38" start="#T37" who="MOT" xml:id="au36">
+                        <u>
+                            <seg>l' océan indien . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T39" start="#T38" who="MOT" xml:id="au37">
+                        <u>
+                            <seg>et l' Océanie elle est traversée par un tropique c'est lequel ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste de la main</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T40" start="#T39" who="LUC" xml:id="au38">
+                        <u>
+                            <seg>euh le tropique+du+sud . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T41" start="#T40" who="MOT" xml:id="au39">
+                        <u>
+                            <seg>ouais parfait . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T42" start="#T41" who="MOT" xml:id="au40">
+                        <u>
+                            <seg>et en+dessous encore le tropique+du+sud qu' est+ce+qu' on a ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T43" start="#T42" who="LUC" xml:id="au41">
+                        <u>
+                            <seg>xxx le cer(cle) euh non oui le cercle +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T44" start="#T43" who="MOT" xml:id="au42">
+                        <u>
+                            <seg>ouais . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T45" start="#T44" who="LUC" xml:id="au43">
+                        <u>
+                            <seg>+, polaire sud . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T46" start="#T45" who="MOT" xml:id="au44">
+                        <u>
+                            <seg>ben pas sud comment i(l) s' appelle ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T47" start="#T46" who="LUC" xml:id="au45">
+                        <u>
+                            <seg>le cercle polaire xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T48" start="#T47" who="MOT" xml:id="au46">
+                        <u>
+                            <seg>+&lt; au nord on a l' Arctique et au sud on a +... </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait des gestes de la main</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T49" start="#T48" who="LUC" xml:id="au47">
+                        <u>
+                            <seg>Antarctique . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T50" start="#T49" who="MOT" xml:id="au48">
+                        <u>
+                            <seg>+&lt; l' Antarctique très bien . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT se gratte la tête</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T51" start="#T50" who="LUC" xml:id="au49">
+                        <u>
+                            <seg>le cercle+polaire+antarctique . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T52" start="#T51" who="MOT" xml:id="au50">
+                        <u>
+                            <seg>+&lt; bon [/] bon ça marche . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T53" start="#T52" who="MOT" xml:id="au51">
+                        <u>
+                            <seg>c'est tout c(e)+que t(u) avais à voir ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T54" start="#T53" who="LUC" xml:id="au52">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T55" start="#T54" who="MOT" xml:id="au53">
+                        <u>
+                            <seg>faudrait presqu' i(l) vous donne une [/] une carte sans rien et+puis vous +/. </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T56" start="#T55" who="LUC" xml:id="au54">
+                        <u>
+                            <seg>oui c' est+c(e)+qu' i(l) va nous donner demain . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T57" start="#T56" who="MOT" xml:id="au55">
+                        <u>
+                            <seg>oui mais là pour s' entraîner aussi . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste de la main</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T58" start="#T57" who="LUC" xml:id="au56">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T59" start="#T58" who="MOT" xml:id="au57">
+                        <u>
+                            <seg>bon tu ranges tes affaires bonhomme . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T60" start="#T59" who="LUC" xml:id="au58">
+                        <u>
+                            <seg>0 [=! sourit] . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC regarde la caméra de OBS1</span>
+                        </spanGrp>
+                    </annotationBlock>
+                </div>
+                <div subtype="d2" type="G">
+                    <head>
+                        <note type="start">#T60</note>
+                        <note type="end">#T198</note>
+                    </head>
+                    <annotationBlock end="#T61" start="#T60" who="MOT" xml:id="au59">
+                        <u>
+                            <seg>alors . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T62" start="#T61" who="MOT" xml:id="au60">
+                        <u>
+                            <seg>j(e) vais débarrasser tu m' aides après à +..? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T63" start="#T62" who="MOT" xml:id="au61">
+                        <u>
+                            <seg>tu fais les [/] les couverts bonhomme puis après t(u) iras prendre une p(e)tite douche ou un p(e)tit bain . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>LUC range ses affaires</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T64" start="#T63" who="MOT" xml:id="au62">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT commence à vider le lave vaisselle</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T65" start="#T64" who="MOT" xml:id="au63">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pose les assiettes sur le plan de travail</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T66" start="#T65" who="MOT" xml:id="au64">
+                        <u>
+                            <seg>tu [/] tu fais les couverts loulou ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T67" start="#T66" who="MOT" xml:id="au65">
+                        <u>
+                            <seg>hop . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort le panier à couverts du lave vaisselle et le pose sur le plan de travail afin que LUC range les couverts</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T68" start="#T67" who="MOT" xml:id="au66">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range les assiettes dans l'armoire</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T69" start="#T68" who="MOT" xml:id="au67">
+                        <u>
+                            <seg>alors xxx . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pose les assiettes probablement destinées au repas du soir sur le bord du plan de travail (ne les range pas comme les autres dans l' armoire)</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T70" start="#T69" who="MOT" xml:id="au68">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range les assiettes dans l'armoire</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T71" start="#T70" who="MOT" xml:id="au69">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range un plat dans un tiroir</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T72" start="#T71" who="LUC" xml:id="au70">
+                        <u>
+                            <seg>ça tu mets où déjà ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC montre un objet à MOT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T73" start="#T72" who="MOT" xml:id="au71">
+                        <u>
+                            <seg>euh en+d(essous) [/] celui d' en+d(e)ssous . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T74" start="#T73" who="MOT" xml:id="au72">
+                        <u>
+                            <seg>qu' est+ce+que vous avez mangé Lucien à la cantine ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T75" start="#T74" who="LUC" xml:id="au73">
+                        <u>
+                            <seg>on a mangé hum +... </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC range les couverts dans le tiroir</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T76" start="#T75" who="LUC" xml:id="au74">
+                        <u>
+                            <seg>du poulet avec de [/] de la purée . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T77" start="#T76" who="MOT" xml:id="au75">
+                        <u>
+                            <seg>purée d(e) pommes+de+terre ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range un poêlon dans un tiroir</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T78" start="#T77" who="LUC" xml:id="au76">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T79" start="#T78" who="MOT" xml:id="au77">
+                        <u>
+                            <seg>ouais . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T80" start="#T79" who="LUC" xml:id="au78">
+                        <u>
+                            <seg>hum +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T81" start="#T80" who="MOT" xml:id="au79">
+                        <u>
+                            <seg>y avait une entrée ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T82" start="#T81" who="LUC" xml:id="au80">
+                        <u>
+                            <seg>d(e) la salade . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T83" start="#T82" who="MOT" xml:id="au81">
+                        <u>
+                            <seg>ouais . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T84" start="#T83" who="LUC" xml:id="au82">
+                        <u>
+                            <seg>et en dessert un fromage blanc avec du sucre . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T85" start="#T84" who="MOT" xml:id="au83">
+                        <u>
+                            <seg>d'accord ça allait ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T86" start="#T85" who="MOT" xml:id="au84">
+                        <u>
+                            <seg>t(u) as tout mangé ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T87" start="#T86" who="LUC" xml:id="au85">
+                        <u>
+                            <seg>j' ai même repris trois fois du poulet . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T88" start="#T87" who="MOT" xml:id="au86">
+                        <u>
+                            <seg>ah t(u) étais au deuxième service alors ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range un plat dans un tiroir</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T89" start="#T88" who="LUC" xml:id="au87">
+                        <u>
+                            <seg>oui (en)fin c'était pas du poulet c'était des boulettes de viande . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T90" start="#T89" who="LUC" xml:id="au88">
+                        <u>
+                            <seg>j(e) crois . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T91" start="#T90" who="MOT" xml:id="au89">
+                        <u>
+                            <seg>ah . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T92" start="#T91" who="LUC" xml:id="au90">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T93" start="#T92" who="MOT" xml:id="au91">
+                        <u>
+                            <seg>d'accord . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T94" start="#T93" who="MOT" xml:id="au92">
+                        <u>
+                            <seg>c'était [/] c'était tout rond ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T95" start="#T94" who="LUC" xml:id="au93">
+                        <u>
+                            <seg>euh presque rond . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC remet le panier à couverts dans le lave vaisselle</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T96" start="#T95" who="MOT" xml:id="au94">
+                        <u>
+                            <seg>presque rond ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T97" start="#T96" who="MOT" xml:id="au95">
+                        <u>
+                            <seg>ah ça [/] ça [/] ça ressemblait à [//] aux [/] aux boulettes tu sais les boulettes de kefta qu' on avait mangées au Maroc là ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T98" start="#T97" who="LUC" xml:id="au96">
+                        <u>
+                            <seg>de quoi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T99" start="#T98" who="MOT" xml:id="au97">
+                        <u>
+                            <seg>les boulettes de kefta . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT ferme le tiroir</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T100" start="#T99" who="LUC" xml:id="au98">
+                        <u>
+                            <seg>+&lt; ah bien plus gros . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T101" start="#T100" who="MOT" xml:id="au99">
+                        <u>
+                            <seg>ah . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T102" start="#T101" who="MOT" xml:id="au100">
+                        <u>
+                            <seg>bien plus gros ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T103" start="#T102" who="MOT" xml:id="au101">
+                        <u>
+                            <seg>avec de la viande hachée ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT commence à vider l'autre tiroir du lave vaisselle</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T104" start="#T103" who="MOT" xml:id="au102">
+                        <u>
+                            <seg>c'est pas propre ça . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>MOT parle plus bas car elle se parle à elle même</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T105" start="#T104" who="LUC" xml:id="au103">
+                        <u>
+                            <seg>+&lt; euh +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T106" start="#T105" who="LUC" xml:id="au104">
+                        <u>
+                            <seg>non . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T107" start="#T106" who="MOT" xml:id="au105">
+                        <u>
+                            <seg>non ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T108" start="#T107" who="MOT" xml:id="au106">
+                        <u>
+                            <seg>&lt;c'est pas des&gt; [/] c'est pas des +..? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T109" start="#T108" who="MOT" xml:id="au107">
+                        <u>
+                            <seg>+, des paupiettes que vous avez mangé ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T110" start="#T109" who="LUC" xml:id="au108">
+                        <u>
+                            <seg>non . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T111" start="#T110" who="MOT" xml:id="au109">
+                        <u>
+                            <seg>non . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T112" start="#T111" who="MOT" xml:id="au110">
+                        <u>
+                            <seg>non ben j(e) sais pas . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T113" start="#T112" who="MOT" xml:id="au111">
+                        <u>
+                            <seg>c'est [//] c'était bon ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort les bols du lave vaisselle et les empile sur le plan de travail</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T114" start="#T113" who="LUC" xml:id="au112">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T115" start="#T114" who="MOT" xml:id="au113">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort les bols du lave vaisselle et les empile sur le plan de travail</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T116" start="#T115" who="MOT" xml:id="au114">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT secoue une boîte encore un peu mouillée au+dessus de l'évier</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC est toujours en train de ranger les couverts</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T117" start="#T116" who="LUC" xml:id="au115">
+                        <u>
+                            <seg>mince . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC a fait tomber un couvert</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T118" start="#T117" who="MOT" xml:id="au116">
+                        <u>
+                            <seg>attention . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T119" start="#T118" who="MOT" xml:id="au117">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range les bols dans l' armoire</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T120" start="#T119" who="MOT" xml:id="au118">
+                        <u>
+                            <seg>et euh aux échecs t(u) as été +..? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T121" start="#T120" who="MOT" xml:id="au119">
+                        <u>
+                            <seg>t(u) étais avec qui alors aujourd'hui ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T122" start="#T121" who="LUC" xml:id="au120">
+                        <u>
+                            <seg>Ismaël . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T123" start="#T122" who="MOT" xml:id="au121">
+                        <u>
+                            <seg>ah Ismaël &lt;il est&gt; [/] il est pas dans ta classe lui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T124" start="#T123" who="LUC" xml:id="au122">
+                        <u>
+                            <seg>non . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T125" start="#T124" who="MOT" xml:id="au123">
+                        <u>
+                            <seg>il est en quelle classe ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort les verres du lave vaisselle</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T126" start="#T125" who="LUC" xml:id="au124">
+                        <u>
+                            <seg>+&lt; xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T127" start="#T126" who="LUC" xml:id="au125">
+                        <u>
+                            <seg>euh +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T128" start="#T127" who="LUC" xml:id="au126">
+                        <u>
+                            <seg>j(e) crois c@l e@l un . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>MOT range les verres dans l'armoire</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T129" start="#T128" who="MOT" xml:id="au127">
+                        <u>
+                            <seg>en c@l e@l un ouh@i . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T130" start="#T129" who="MOT" xml:id="au128">
+                        <u>
+                            <seg>ben alors ça +/. </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T131" start="#T130" who="LUC" xml:id="au129">
+                        <u>
+                            <seg>+&lt; ou en c@l e@l deux . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T132" start="#T131" who="MOT" xml:id="au130">
+                        <u>
+                            <seg>en c@l eàl deux . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T133" start="#T132" who="MOT" xml:id="au131">
+                        <u>
+                            <seg>et alors ça a donné quoi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T134" start="#T133" who="LUC" xml:id="au132">
+                        <u>
+                            <seg>hé j(e) vais m' y remettre . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC quitte l'espace cuisine</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T135" start="#T134" who="MOT" xml:id="au133">
+                        <u>
+                            <seg>hein tu lui as mis un math ? </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>MOT n'a pas bien compris ce qu'a dit LUC</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T136" start="#T135" who="MOT" xml:id="au134">
+                        <u>
+                            <seg>bon ben parfait . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T137" start="#T136" who="MOT" xml:id="au135">
+                        <u>
+                            <seg>tiens regarde viens [/] viens m' aider là Lulu sur les verres . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T138" start="#T137" who="MOT" xml:id="au136">
+                        <u>
+                            <seg>tu les mets là . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pose des verres sur le plan de travail</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC prend les verres pour les ranger dans l'armoire</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T139" start="#T138" who="MOT" xml:id="au137">
+                        <u>
+                            <seg>hop . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T140" start="#T139" who="MOT" xml:id="au138">
+                        <u>
+                            <seg>voilou@f . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T141" start="#T140" who="MOT" xml:id="au139">
+                        <u>
+                            <seg>ah ben attends &lt;on va peut+être se&gt; [//] bon on les sortira après on mettra l(e) couvert après . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT range des verres dans l'armoire puis la ferme</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T142" start="#T141" who="MOT" xml:id="au140">
+                        <u>
+                            <seg>attends j(e) mets juste ça dans la machine et+puis après on +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T143" start="#T142" who="MOT" xml:id="au141">
+                        <u>
+                            <seg>tu m' aides un+peu ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT remplit le lave vaisselle</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC debout sans bouger la regarde</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T144" start="#T143" who="MOT" xml:id="au142">
+                        <u>
+                            <seg>puis t(u) iras +//. </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T145" start="#T144" who="MOT" xml:id="au143">
+                        <u>
+                            <seg>tu veux prendre la douche ou le bain Lucien ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T146" start="#T145" who="LUC" xml:id="au144">
+                        <u>
+                            <seg>la douche . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T147" start="#T146" who="MOT" xml:id="au145">
+                        <u>
+                            <seg>d'accord . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T148" start="#T147" who="MOT" xml:id="au146">
+                        <u>
+                            <seg>ben on va faire des p(e)tites carottes . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>LUC ouvre et referme un tiroir</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T149" start="#T148" who="LUC" xml:id="au147">
+                        <u>
+                            <seg>râpées ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T150" start="#T149" who="MOT" xml:id="au148">
+                        <u>
+                            <seg>euh non . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T151" start="#T150" who="MOT" xml:id="au149">
+                        <u>
+                            <seg>non je [//] j' ai d(e) l' avocat là . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T152" start="#T151" who="MOT" xml:id="au150">
+                        <u>
+                            <seg>en [/] en entrée non on va les faire euh à la poêle merde . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT est en train de remplir le lave vaisselle et semble avoir fait tomber de l'eau par terre</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T153" start="#T152" who="MOT" xml:id="au151">
+                        <u>
+                            <seg>à chaque fois . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT essuie le sol</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T154" start="#T153" who="MOT" xml:id="au152">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT remplit toujours le lave vaisselle</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC change de place dans la pièce et sautillant un peu</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T155" start="#T154" who="MOT" xml:id="au153">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T156" start="#T155" who="LUC" xml:id="au154">
+                        <u>
+                            <seg>qu' est+ce+qu' y+a d' autre à faire ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T157" start="#T156" who="MOT" xml:id="au155">
+                        <u>
+                            <seg>ben attends &lt;je f(ais)&gt; [///] je mets juste ça dans la machine . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T158" start="#T157" who="MOT" xml:id="au156">
+                        <u>
+                            <seg>et on va +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T159" start="#T158" who="MOT" xml:id="au157">
+                        <u>
+                            <seg>ben ben xxx commence à mettre le couvert si tu veux . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T160" start="#T159" who="LUC" xml:id="au158">
+                        <u>
+                            <seg>quoi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T161" start="#T160" who="MOT" xml:id="au159">
+                        <u>
+                            <seg>hein ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T162" start="#T161" who="LUC" xml:id="au160">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC revient vers la cuisine en agitant une épée jouet puis se faufile derrière MOT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T163" start="#T162" who="MOT" xml:id="au161">
+                        <u>
+                            <seg>ah non ça c'est propre . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT regarde une passoire qu'elle a prise dans l'évier</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC ouvre le tiroir à couverts</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T164" start="#T163" who="MOT" xml:id="au162">
+                        <u>
+                            <seg>voilou@f . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T165" start="#T164" who="LUC" xml:id="au163">
+                        <u>
+                            <seg>on mange avec Antoine ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T166" start="#T165" who="MOT" xml:id="au164">
+                        <u>
+                            <seg>ouais . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T167" start="#T166" who="MOT" xml:id="au165">
+                        <u>
+                            <seg>j(e) pense qu' i(l) va rentrer <pause type="short"/>sais pas i(l) m' a pas dit mais j(e) pense qu' i(l) s(e)ra là vers sept heures et demi . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT se lave les mains</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T168" start="#T167" who="LUC" xml:id="au166">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>LUC prend les couverts pour mettre la table</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T169" start="#T168" who="MOT" xml:id="au167">
+                        <u>
+                            <seg>demain soir on va manger chez [/] chez euh Geoffroy et Suzanna . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T170" start="#T169" who="LUC" xml:id="au168">
+                        <u>
+                            <seg>ok . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T171" start="#T170" who="MOT" xml:id="au169">
+                        <u>
+                            <seg>mais on ira +/. </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T172" start="#T171" who="LUC" xml:id="au170">
+                        <u>
+                            <seg>+&lt; avec nous ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T173" start="#T172" who="MOT" xml:id="au171">
+                        <u>
+                            <seg>ah oui ouais . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT essuie ses mains</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T174" start="#T173" who="LUC" xml:id="au172">
+                        <u>
+                            <seg>+&lt; ok . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T175" start="#T174" who="MOT" xml:id="au173">
+                        <u>
+                            <seg>y+a [/] y+a Aurèle . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T176" start="#T175" who="MOT" xml:id="au174">
+                        <u>
+                            <seg>ah on ira pas trop tard et+puis +... </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>LUC passe devant la caméra en agitant les couverts qu'il tient en mains puis prend les assiettes sur le plan de travail</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T177" start="#T176" who="MOT" xml:id="au175">
+                        <u>
+                            <seg>et+puis on rentrera pas trop tard non plus . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort des carottes du frigo</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>CHI quitte l'espace cuisine, suivi de OBS2, pour aller dresser la table</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T179" start="#T178" who="MOT" xml:id="au176">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pose les carottes puis un autre aliment non identifié sur le plan de travail</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T180" start="#T179" who="MOT" xml:id="au177">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort un sachet du frigo et le pose dans l'évier</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T181" start="#T180" who="MOT" xml:id="au178">
+                        <u>
+                            <seg>(a)ttends t(u) es pas trop fan toi de l' avocat ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT sort des tomates cerises en grappe du sachet et les rince à l'eau</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T182" start="#T181" who="MOT" xml:id="au179">
+                        <u>
+                            <seg>Lucien ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T183" start="#T182" who="MOT" xml:id="au180">
+                        <u>
+                            <seg>quoi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T184" start="#T183" who="LUC" xml:id="au181">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T185" start="#T184" who="MOT" xml:id="au182">
+                        <u>
+                            <seg>0 [=! petit rire] . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT regarde OBS1 en souriant</span>
+                        </spanGrp>
+                        <spanGrp type="com">
+                            <span>c'est contextuellement suite à la réaction de MOT et à ce qu'elle dit ensuite qu'on sait que LUC vient de répondre quelque chose, inaudible sur le film</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T186" start="#T185" who="MOT" xml:id="au183">
+                        <u>
+                            <seg>0 [=! rit] oh toi n' exagère pas non plus . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T187" start="#T186" who="MOT" xml:id="au184">
+                        <u>
+                            <seg>ben &lt;i(ls) sont&gt; [/] i(l)s sont pas gros . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT jette le sachet à la poubelle</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T188" start="#T187" who="LUC" xml:id="au185">
+                        <u>
+                            <seg>non merci . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T189" start="#T188" who="MOT" xml:id="au186">
+                        <u>
+                            <seg>non mais &lt;un petit&gt; [/] un petit puis y+a des tomates euh . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T190" start="#T189" who="MOT" xml:id="au187">
+                        <u>
+                            <seg>des petites tomates euh +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T191" start="#T190" who="MOT" xml:id="au188">
+                        <u>
+                            <seg>+, cerises . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T192" start="#T191" who="MOT" xml:id="au189">
+                        <u>
+                            <seg>ben alors+qu' est+ce+que j(e) fais je les pèle et tu les coupes toi ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT coupe les fanes des carottes au dessus de l'évier et pose les carottes sur une palnche à découper</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T193" start="#T192" who="MOT" xml:id="au190">
+                        <u>
+                            <seg>hein ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T194" start="#T193" who="LUC" xml:id="au191">
+                        <u>
+                            <seg>d'accord . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T195" start="#T194" who="MOT" xml:id="au192">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT coupe les fanes des carottes au dessus de l'évier et pose les carottes sur une planche à découper</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T196" start="#T195" who="MOT" xml:id="au193">
+                        <u>
+                            <seg>bon Gabriel on l' entend plus c'est [/] c'est mauvais signe 0 [=! sourit] . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT se retourne vers OBS1 et la regarde en souriant</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T197" start="#T196" who="MOT" xml:id="au194">
+                        <u>
+                            <seg>0 [=! petit rire] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T198" start="#T197" who="OBS1" xml:id="au195">
+                        <u>
+                            <seg>0 [=! petit rire] . </seg>
+                        </u>
+                    </annotationBlock>
+                </div>
+                <div subtype="d3" type="G">
+                    <head>
+                        <note type="start">#T198</note>
+                        <note type="end">#T225</note>
+                    </head>
+                    <annotationBlock end="#T199" start="#T198" who="MOT" xml:id="au196">
+                        <u>
+                            <seg>i(l) nous prépare euh +/. </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T200" start="#T199" who="OBS1" xml:id="au197">
+                        <u>
+                            <seg>vous faites toujours attention à c(e)+qu' i(l)s ont mangé l(e) midi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T201" start="#T200" who="OBS1" xml:id="au198">
+                        <u>
+                            <seg>+, pour faire le repas du soir . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T202" start="#T201" who="MOT" xml:id="au199">
+                        <u>
+                            <seg>+&lt; ouais alors souvent je leur demande . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT arrête de s'occuper des carottes et se tourne vers OBS1 pour lui répondre</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T203" start="#T202" who="MOT" xml:id="au200">
+                        <u>
+                            <seg>&lt;je leur demande&gt; [=! hoche la tête] avant [/] avant+d(e) préparer . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T204" start="#T203" who="OBS1" xml:id="au201">
+                        <u>
+                            <seg>hum . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T205" start="#T204" who="MOT" xml:id="au202">
+                        <u>
+                            <seg>mais alors parfois &lt;c'est assez indescriptible&gt; [=! rit] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T206" start="#T205" who="OBS1" xml:id="au203">
+                        <u>
+                            <seg>ouais d'accord comme avec les boulettes tout+à+l' heure . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T207" start="#T206" who="MOT" xml:id="au204">
+                        <u>
+                            <seg>voilà on sait pas trop en fait là réellement c(e)+que c'était la viande . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste de la main</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T208" start="#T207" who="MOT" xml:id="au205">
+                        <u>
+                            <seg>et euh et euh mais i(ls) [/] i(ls) [/] &lt;i(ls) sont&gt; [/] i(ls) sont pas tous les deux à la même école . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T209" start="#T208" who="MOT" xml:id="au206">
+                        <u>
+                            <seg>mais i(l)s ont l(e) même menu . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T210" start="#T209" who="MOT" xml:id="au207">
+                        <u>
+                            <seg>c'est toutes les écoles du vingtième . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste de la main</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T211" start="#T210" who="MOT" xml:id="au208">
+                        <u>
+                            <seg>donc en+général &lt;j' arrive à recouper&gt; [=! petit rire] . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste des mains</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T212" start="#T211" who="MOT" xml:id="au209">
+                        <u>
+                            <seg>et je sais à peu près . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T213" start="#T212" who="MOT" xml:id="au210">
+                        <u>
+                            <seg>en+tout+cas quand c'est bon genre des pâtes et tout ça on l(e) sait tout+d(e)+suite . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T214" start="#T213" who="MOT" xml:id="au211">
+                        <u>
+                            <seg>et après quand c'est moyen des fois &lt;i(l)s arrivent pas à&gt; [/] i(l)s arrivent même pas trop à me +... </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>LUC revient dans la pièce</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T215" start="#T214" who="MOT" xml:id="au212">
+                        <u>
+                            <seg>à me dire exactement . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>LUC remplit la cruche avec de l'eau du robinet</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T216" start="#T215" who="MOT" xml:id="au213">
+                        <u>
+                            <seg>mais voilà par exemple si i(l)s ont mangé une omelette +... </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T217" start="#T216" who="MOT" xml:id="au214">
+                        <u>
+                            <seg>+, j' essaie de pas refaire la même chose le soir c'est juste ça quoi voilà . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste des bras puis s'écarte un peu pour laisser passer LUC et le regarde</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T218" start="#T217" who="MOT" xml:id="au215">
+                        <u>
+                            <seg>mais sinon ça arrive hein des fois qu' i(ls) mangent la même chose . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un geste des bras</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T219" start="#T218" who="MOT" xml:id="au216">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT ouvre puis referme un tiroir et prend des ustensiles qui sont rangés dans un bac sur le plan de travail et les pose à côté de la planche à découper</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T220" start="#T219" who="MOT" xml:id="au217">
+                        <u>
+                            <seg>www . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T221" start="#T220" who="MOT" xml:id="au218">
+                        <u>
+                            <seg>www . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T222" start="#T221" who="MOT" xml:id="au219">
+                        <u>
+                            <seg>www . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T223" start="#T222" who="MOT" xml:id="au220">
+                        <u>
+                            <seg>www . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T224" start="#T223" who="MOT" xml:id="au221">
+                        <u>
+                            <seg>www . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T225" start="#T224" who="MOT" xml:id="au222">
+                        <u>
+                            <seg>www . </seg>
+                        </u>
+                    </annotationBlock>
+                </div>
+                <div subtype="d4" type="G">
+                    <head>
+                        <note type="start">#T225</note>
+                        <note type="end">#T226</note>
+                    </head>
+                    <annotationBlock end="#T226" start="#T225" who="MOT" xml:id="au223">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>cette partie du film n'est pas transcrite - à découper en G ??</span>
+                        </spanGrp>
+                    </annotationBlock>
+                </div>
+                <div subtype="d5" type="G">
+                    <head>
+                        <note type="start">#T227</note>
+                        <note type="end">#T333</note>
+                    </head>
+                    <annotationBlock end="#T228" start="#T227" who="MOT" xml:id="au224">
+                        <u>
+                            <seg>allez les gars . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT quitte la cuisine et marche vers la table du diner</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T229" start="#T228" who="LUC" xml:id="au225">
+                        <u>
+                            <seg>ça va j' arrive . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T230" start="#T229" who="LUC" xml:id="au226">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>MOT mélange la vinaigrette dans un petit bol</span>
+                        </spanGrp>
+                        <spanGrp type="com">
+                            <span>à table, des demi avocat sont présentés "nature" dans un bol</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T231" start="#T230" who="MOT" xml:id="au227">
+                        <u>
+                            <seg>alors elle est un+peu moins bien mélangée . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T232" start="#T231" who="MOT" xml:id="au228">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T233" start="#T232" who="MOT" xml:id="au229">
+                        <u>
+                            <seg>Gabriel . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT se retourne vers GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T234" start="#T233" who="MOT" xml:id="au230">
+                        <u>
+                            <seg>on [/] on [//] j(e) te l(e) prépare le [//] l' avocat j' enlève la peau ou pas ? </seg>
+                        </u>
+                        <spanGrp type="xpnt">
+                            <span>show l'avocat de l'index</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>GAB se lève pour regarder ce que MOT lui montre</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T235" start="#T234" who="GAB" xml:id="au231">
+                        <u>
+                            <seg>oh [=! soupire] oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T236" start="#T235" who="MOT" xml:id="au232">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T237" start="#T236" who="GAB" xml:id="au233">
+                        <u>
+                            <seg>oh xxx . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB, debout, s'appuie sur ses deux coudes posés sur la table</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T238" start="#T237" who="GAB" xml:id="au234">
+                        <u>
+                            <seg>est+ce+que on va mettre d(e) la sauce ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB montre la sauce</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>MOT commence à peler l'avocat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T239" start="#T238" who="LUC" xml:id="au235">
+                        <u>
+                            <seg>+&lt; 0 [=! tousse] xxx . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>en arrière fond, LUC parle probablement à OBS2 qui le filme</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T240" start="#T239" who="MOT" xml:id="au236">
+                        <u>
+                            <seg>ben oui tiens regarde il arrive . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT coupe l'avocat en deux et tourne la tête vers la cuisine</span>
+                        </spanGrp>
+                        <spanGrp type="com">
+                            <span>MOT pense que FAT rentre mais ce n'est pas le cas</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T241" start="#T240" who="LUC" xml:id="au237">
+                        <u>
+                            <seg>+&lt; xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T242" start="#T241" who="MOT" xml:id="au238">
+                        <u>
+                            <seg>attends [/] attends j' enlève la peau d'abord . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT enlève la peau de l'avocat</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>GAB a pris une cuillère de sauce, il est prêt à la verser sur l'avocat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T243" start="#T242" who="GAB" xml:id="au239">
+                        <u>
+                            <seg>il arrive . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T244" start="#T243" who="MOT" xml:id="au240">
+                        <u>
+                            <seg>allez Lucien tu ranges ton jeu là coco . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T245" start="#T244" who="LUC" xml:id="au241">
+                        <u>
+                            <seg>+&lt; 0 [=! tousse] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T246" start="#T245" who="MOT" xml:id="au242">
+                        <u>
+                            <seg>et peut+être que i(l) faudrait que on invite Adriano aussi là . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT coupe l'avocat en petits dés dans le bol de GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T247" start="#T246" who="GAB" xml:id="au243">
+                        <u>
+                            <seg>+&lt; xxx je mets d(e) la sauce . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB regarde MOT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T248" start="#T247" who="LUC" xml:id="au244">
+                        <u>
+                            <seg>pourquoi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T249" start="#T248" who="MOT" xml:id="au245">
+                        <u>
+                            <seg>+&lt; +, bientôt . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T250" start="#T249" who="MOT" xml:id="au246">
+                        <u>
+                            <seg>ben comme t(u) étais allé chez lui . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT coupe l'avocat en petits dés dans le bol de GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T251" start="#T250" who="GAB" xml:id="au247">
+                        <u>
+                            <seg>xxx je mets d(e) la sauce . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T252" start="#T251" who="MOT" xml:id="au248">
+                        <u>
+                            <seg>attends une seconde je le coupe . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T253" start="#T252" who="LUC" xml:id="au249">
+                        <u>
+                            <seg>+&lt; xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T254" start="#T253" who="GAB" xml:id="au250">
+                        <u>
+                            <seg>d'accord . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB tient toujours la cuillère de sauce, prêt à la verser sur l'avocat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T255" start="#T254" who="GAB" xml:id="au251">
+                        <u>
+                            <seg>je mets la sauce après ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T256" start="#T255" who="MOT" xml:id="au252">
+                        <u>
+                            <seg>oui après . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T257" start="#T256" who="MOT" xml:id="au253">
+                        <u>
+                            <seg>allez Lucien s' il+te+plaît . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pèle la deuxième moitié d'avocat et le coupe en petits morceaux dans le bol de GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T258" start="#T257" who="LUC" xml:id="au254">
+                        <u>
+                            <seg>d'accord [/] d'accord . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>doute sur cet énoncé</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T259" start="#T258" who="MOT" xml:id="au255">
+                        <u>
+                            <seg>vas+y tu mets la sauce dessus . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT approche un peu l'assiette de GAB</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>GAB vers la sauce sur l'avocat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T260" start="#T259" who="LUC" xml:id="au256">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>petit cri de satisfaction, LUC est probablement en train de jouer à un jeu</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T261" start="#T260" who="MOT" xml:id="au257">
+                        <u>
+                            <seg>vas+y mets encore une cuillère . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T262" start="#T261" who="GAB" xml:id="au258">
+                        <u>
+                            <seg>(en)core . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB verse de la sauce sur l'avocat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T263" start="#T262" who="MOT" xml:id="au259">
+                        <u>
+                            <seg>ah v(oi)là l(e) père . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT se retourne vers la cuisine</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T264" start="#T263" who="MOT" xml:id="au260">
+                        <u>
+                            <seg>voilà c'est bon . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>GAB met encore une cuillère de sauce</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T265" start="#T264" who="MOT" xml:id="au261">
+                        <u>
+                            <seg>&lt;c'est bon&gt; [/] c'est bon . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T266" start="#T265" who="FAT" xml:id="au262">
+                        <u>
+                            <seg>+&lt; salut . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>FAT arrive par la cuisine</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T267" start="#T266" who="MOT" xml:id="au263">
+                        <u>
+                            <seg>ah [=! crie] pèpèp@i ! </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>GAB approche la cuillère de sa bouche, il s'apprête à la lécher</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T268" start="#T267" who="MOT" xml:id="au264">
+                        <u>
+                            <seg>t(u) en as une de cuillère . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T269" start="#T268" who="MOT" xml:id="au265">
+                        <u>
+                            <seg>ça va ? </seg>
+                        </u>
+                        <spanGrp type="add">
+                            <span>à FAT</span>
+                        </spanGrp>
+                        <spanGrp type="act">
+                            <span>MOT repousse le petit bol blanc de vinaigrette sur la table puis se retourne vers FAT dans la cuisine</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T270" start="#T269" who="FAT" xml:id="au266">
+                        <u>
+                            <seg>xxx <pause type="short"/>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T271" start="#T270" who="MOT" xml:id="au267">
+                        <u>
+                            <seg>hé ben ouais . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT rejoint FAT dans la cuisine (hors champ)</span>
+                        </spanGrp>
+                        <spanGrp type="com">
+                            <span>on n'entend pas ce que dit FAT il n'est pas encore équipé de micro</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T272" start="#T271" who="GAB" xml:id="au268">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB s'est assis seul à table et mange</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T273" start="#T272" who="FAT" xml:id="au269">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T274" start="#T273" who="MOT" xml:id="au270">
+                        <u>
+                            <seg>on est en plein +//. </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>on entend de l'au qui coule, c'est probablement MOT (hors champ) qui se rince les mains</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T275" start="#T274" who="MOT" xml:id="au271">
+                        <u>
+                            <seg>en plein démarrage . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T276" start="#T275" who="FAT" xml:id="au272">
+                        <u>
+                            <seg>+&lt; &lt;en plein&gt; [/] en plein dîner . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T277" start="#T276" who="FAT" xml:id="au273">
+                        <u>
+                            <seg>0 [=! petit rire] . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>MOT s'essuie les mains et embrasse FAT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T278" start="#T277" who="OBS2" xml:id="au274">
+                        <u>
+                            <seg>bonsoir . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T279" start="#T278" who="FAT" xml:id="au275">
+                        <u>
+                            <seg>bonsoir . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T280" start="#T279" who="MOT" xml:id="au276">
+                        <u>
+                            <seg>Rachel et Camille . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT quitte la cuisine puis se retourne vers FAT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T281" start="#T280" who="OBS2" xml:id="au277">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T282" start="#T281" who="MOT" xml:id="au278">
+                        <u>
+                            <seg>+&lt; ah oui alors t(u) as le petit +//. </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT montre son boîtier micro à FAT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T283" start="#T282" who="FAT" xml:id="au279">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T284" start="#T283" who="MOT" xml:id="au280">
+                        <u>
+                            <seg>+&lt; faut mettre le p(e)tit micro tu le mets derrière là . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT montre à FAT comment elle a fait</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T285" start="#T284" who="OBS2" xml:id="au281">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>OBS donne le matériel à FAT pour qu'il s'équipe</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>MOT se tourne un peu pour montrer à FAT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T286" start="#T285" who="MOT" xml:id="au282">
+                        <u>
+                            <seg>fait chaud non ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT regarde la température de la pièce sur le thermostat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T287" start="#T286" who="MOT" xml:id="au283">
+                        <u>
+                            <seg>ah ouais purée fait hyper chaud . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT remonte une de ses manches et se dirige vers la cuisine</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T288" start="#T287" who="GAB" xml:id="au284">
+                        <u>
+                            <seg>+&lt; 0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>GAB est toujours assis seul à table, il mange son entrée</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T289" start="#T288" who="MOT" xml:id="au285">
+                        <u>
+                            <seg>j(e) vais baisser le chauffage . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT passe dans la cuisine à côté de OBS2 et FAT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T290" start="#T289" who="OBS2" xml:id="au286">
+                        <u>
+                            <seg>xxx . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>OBS2 aide FAT à s'équiper</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>GAB regarde vers FAT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T291" start="#T290" who="MOT" xml:id="au287">
+                        <u>
+                            <seg>voilou@f . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T292" start="#T291" who="MOT" xml:id="au288">
+                        <u>
+                            <seg>allez les gars . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>FAT vérifie que son micro est bien fixé</span>
+                        </spanGrp>
+                        <spanGrp type="act">
+                            <span>MOT repasse par la cuisine vers la table</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T293" start="#T292" who="MOT" xml:id="au289">
+                        <u>
+                            <seg>à+table . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T294" start="#T293" who="MOT" xml:id="au290">
+                        <u>
+                            <seg>ah ben ça+y+est Gaby il a direct attaqué lui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T295" start="#T294" who="MOT" xml:id="au291">
+                        <u>
+                            <seg>allez Lucien s' il+te+plaît . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>sur un ton un peu excédé</span>
+                        </spanGrp>
+                        <spanGrp type="act">
+                            <span>MOT mélange ce qu'il reste dans l'assiette de GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T296" start="#T295" who="GAB" xml:id="au292">
+                        <u>
+                            <seg>0 [=! bruits de bouche] . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T297" start="#T296" who="LUC" xml:id="au293">
+                        <u>
+                            <seg>+&lt; xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T298" start="#T297" who="MOT" xml:id="au294">
+                        <u>
+                            <seg>viens t' asseoir . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T299" start="#T298" who="MOT" xml:id="au295">
+                        <u>
+                            <seg>hop [=! chuchote] . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT s'assied à table</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>GAB regarde la caméra de OBS1</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T300" start="#T299" who="MOT" xml:id="au296">
+                        <u>
+                            <seg>tu manges à la fourchette toi ton avocat ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT regarde GAB et déplie sa serviette en tissu</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T301" start="#T300" who="MOT" xml:id="au297">
+                        <u>
+                            <seg>tiens regarde . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pose sa serviette en tissu sur ses genoux et déplie la très grande serviette de GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T302" start="#T301" who="MOT" xml:id="au298">
+                        <u>
+                            <seg>tu mets ta serviette loulou . </seg>
+                        </u>
+                        <spanGrp type="add">
+                            <span>à GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T303" start="#T302" who="MOT" xml:id="au299">
+                        <u>
+                            <seg>0 . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT met sa serviette à GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T304" start="#T303" who="MOT" xml:id="au300">
+                        <u>
+                            <seg>allez bonhomme . </seg>
+                        </u>
+                        <spanGrp type="add">
+                            <span>à LUC</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC se relève face à la caméra de OBS1 et rejoint la table</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T305" start="#T304" who="MOT" xml:id="au301">
+                        <u>
+                            <seg>un+petit+peu . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>LUC étant dos à la caméra, on ne voit pas s'il fait une grimace à MOT signifiant qu'il ne veut pas manger; on n'entend pas non plus qu'il dit quelque chose</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T306" start="#T305" who="MOT" xml:id="au302">
+                        <u>
+                            <seg>la moitié . </seg>
+                        </u>
+                        <spanGrp type="sit">
+                            <span>LUC s'assied à table en face de MOT</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T307" start="#T306" who="MOT" xml:id="au303">
+                        <u>
+                            <seg>allez . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT fait un mouvement de la tête</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T308" start="#T307" who="MOT" xml:id="au304">
+                        <u>
+                            <seg>puis tu prendras des tomates . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT pousse le plat de tomates cerises un peu vers LUC</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T309" start="#T308" who="MOT" xml:id="au305">
+                        <u>
+                            <seg>tiens donne le moi j(e) vais l(e) couper en deux si tu veux . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT tend le bras main ouverte vers LUC</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T310" start="#T309" who="MOT" xml:id="au306">
+                        <u>
+                            <seg>arrête . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>LUC est dos à la caméra, on ne voit pas son visage ni les mimiques qu'il est probablement en train de faire - voir F4-dinner1-C2 ??</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T311" start="#T310" who="FAT" xml:id="au307">
+                        <u>
+                            <seg>bonjour ça va ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>FAT arrive près de la table</span>
+                        </spanGrp>
+                        <spanGrp type="sit">
+                            <span>LUC regarde FAT; GAB mange toujours sans lever la tête</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T312" start="#T311" who="MOT" xml:id="au308">
+                        <u>
+                            <seg>+&lt; hé vous dites bonsoir les gars . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT prend le bol de LUC et coupe et pèle l'avocat</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T313" start="#T312" who="FAT" xml:id="au309">
+                        <u>
+                            <seg>et ce devoir de sciences alors tu l' as eu ? </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>FAT embrasse LUC puis GAB</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T314" start="#T313" who="LUC" xml:id="au310">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T315" start="#T314" who="MOT" xml:id="au311">
+                        <u>
+                            <seg>ouais . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T316" start="#T315" who="FAT" xml:id="au312">
+                        <u>
+                            <seg>et il était fait ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T317" start="#T316" who="MOT" xml:id="au313">
+                        <u>
+                            <seg>aujourd'hui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T318" start="#T317" who="LUC" xml:id="au314">
+                        <u>
+                            <seg>+&lt; xxx . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T319" start="#T318" who="FAT" xml:id="au315">
+                        <u>
+                            <seg>ouais ça s' est bien passé ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T320" start="#T319" who="LUC" xml:id="au316">
+                        <u>
+                            <seg>oui . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T321" start="#T320" who="GAB" xml:id="au317">
+                        <u>
+                            <seg>moi j' ai direct attaqué . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T322" start="#T321" who="MOT" xml:id="au318">
+                        <u>
+                            <seg>on a direct attaqué . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T323" start="#T322" who="FAT" xml:id="au319">
+                        <u>
+                            <seg>+&lt; direct attaqué . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T324" start="#T323" who="FAT" xml:id="au320">
+                        <u>
+                            <seg>&lt;t(u) as direct attaqué&gt; [=! petit rire] bon ben super . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>FAT s'assied à table</span>
+                        </spanGrp>
+                        <spanGrp type="com">
+                            <span>configuration de la petite table carrée de la famille = GAB est face à FAT, MOT face à LUC</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T325" start="#T324" who="MOT" xml:id="au321">
+                        <u>
+                            <seg>i(l) dit que c'était noté sur euh . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T326" start="#T325" who="MOT" xml:id="au322">
+                        <u>
+                            <seg>combien cinquante c'est ça ? </seg>
+                        </u>
+                        <spanGrp type="add">
+                            <span>à LUC</span>
+                        </spanGrp>
+                        <spanGrp type="act">
+                            <span>MOT tend son bol à LUC</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T327" start="#T326" who="GAB" xml:id="au323">
+                        <u>
+                            <seg>moi [=! crie] &lt;j' ai dé(jà)&gt; [/] j' ai déjà ter(miné) [/] terminé . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T328" start="#T327" who="FAT" xml:id="au324">
+                        <u>
+                            <seg>cinquante . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>FAT regarde LUC avec étonnement</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T329" start="#T328" who="MOT" xml:id="au325">
+                        <u>
+                            <seg>ben oui mais nous on n' a même pas commencé nous . </seg>
+                        </u>
+                        <spanGrp type="act">
+                            <span>MOT regarde GAB et fait un geste des mains</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T330" start="#T329" who="FAT" xml:id="au326">
+                        <u>
+                            <seg>+&lt; xxx . </seg>
+                        </u>
+                        <spanGrp type="com">
+                            <span>inaudible</span>
+                        </spanGrp>
+                    </annotationBlock>
+                    <annotationBlock end="#T331" start="#T330" who="FAT" xml:id="au327">
+                        <u>
+                            <seg>et t(u) as tout réussi ? </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T332" start="#T331" who="LUC" xml:id="au328">
+                        <u>
+                            <seg>non . </seg>
+                        </u>
+                    </annotationBlock>
+                    <annotationBlock end="#T333" start="#T332" who="FAT" xml:id="au329">
+                        <u>
+                            <seg>non ? </seg>
+                        </u>
+                    </annotationBlock>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -637,12 +637,12 @@ public class ChatFile {
 						// add the main line with the time in it
 						addML("*" + dinlangName + ":\t0 " + matcher.group(2));
 						// add the secondary line
-						addT("%lng:\t" + matcher.group(1) + " " + matcher.group(3));
+						addT("%" + Utils.languagingScript + ":\t" + matcher.group(1) + " " + matcher.group(3));
 					} else {
 						// add the main line (without time)
 						addML("*" + dinlangName + ":\t0");
 						// add the secondary line
-						addT("%lng:\t" + cl.tail);
+						addT("%" + Utils.languagingScript + ":\t" + cl.tail);
 					}
 				} else {
 					addML(ml);

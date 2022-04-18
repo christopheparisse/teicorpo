@@ -784,7 +784,7 @@ public class TeiToTranscriber extends TeiConverter {
 
 	// Création du fichier de sortie
 	public void createOutput() {
-		Utils.createFile(trsDoc, outputName, "trans-14.dtd");
+		Utils.createFileDtd(trsDoc, outputName, "trans-14.dtd");
 	}
 
 	/*
@@ -802,7 +802,7 @@ public class TeiToTranscriber extends TeiConverter {
 
 	// Programme principal
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 
 		String usageString = "Description: TeiToTranscriber converts a TEI file to a Transcriber file .%nUsage: TeiToTranscriber [-options] <file"
 				+ Utils.EXT + ">%n";

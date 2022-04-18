@@ -165,13 +165,4 @@ java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInserMeta trsfilename -metadata m
 ### History version
   - 1.00  Initial fully functional version
   - 1.40  Rename jar file. English version.
-  - 1.40.2 Corrections of bugs for CLAN import/export. English version improved.
-  - 1.40.3 Bug correction
-  - 1.40.4 Inclusion of Stanford Natural Language Processing program
-  - 1.40.5 Add text and srt input format
-  - 1.40.6 Bug correction (conversion to praat and elan) and modification of argument name in &lt;ref&gt; syntactic information
-  - 1.40.15 Bug correction
-  - 1.40.18 New import function for CONLL (for Orfeo corpus) and TCOF metadata
-  - 1.40.22 New metadata import function from CSV files
-  - 1.40.35 Various bug fixes and small new options
-  - 1.40.37 Bug fixes and help for new options
+  - 1.45.00 Jar includes main class. Automatic tests added to the software generation.

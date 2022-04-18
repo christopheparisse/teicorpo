@@ -306,7 +306,7 @@ public class TeiToSubtHtml extends TeiConverter{
 	}
 
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usage = "Description: TeiToSubtHtml converts a TEI file to an subtilte HTML file%nUsage: TeiToSubtHtml [-options] <file.subt.html>%n";
 		TeiToSubtHtml ttc = new TeiToSubtHtml();
 		ttc.mainCommand(args, Utils.EXT, EXT, usage, 4);

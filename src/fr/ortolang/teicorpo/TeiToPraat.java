@@ -181,7 +181,7 @@ public class TeiToPraat extends GenericMain {
 	}
 
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usage = "Description: TeiToPraat converts a TEI file to a PRAAT file%nUsage: TeiToPraat [-options] <file"
 				+ Utils.EXT + ">%n";
 		TeiToPraat tte = new TeiToPraat();

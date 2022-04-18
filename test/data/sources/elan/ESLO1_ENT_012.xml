@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crdo:item xmlns:crdo="http://crdo.risc.cnrs.fr/schemas"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"  
+			xmlns:dcterms="http://purl.org/dc/terms/"
+			xmlns:olac="http://www.language-archives.org/OLAC/1.1/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			crdo:datestamp="2013-04-09" 
+			crdo:id="ESLO1_ENT_012">
+	<dc:title xml:lang="fr">ESLO - ESLO1_ENT_012</dc:title>
+	<dc:subject olac:code="text_and_corpus_linguistics" xsi:type="olac:linguistic-field"/>
+	<dc:subject xsi:type="olac:language" olac:code="fra">Français</dc:subject>
+	<dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+	<dc:type xsi:type="olac:discourse-type" olac:code="dialogue"/>
+	<dc:source>Bande magnétique 012</dc:source>
+	<dcterms:spatial xml:lang="fr">Orléans</dcterms:spatial>
+	<dcterms:spatial xsi:type="dcterms:TGN">7008337</dcterms:spatial>
+	<dcterms:spatial xsi:type="dcterms:Point">east=1.90; north=47.90</dcterms:spatial>
+	<dc:creator>Université d'Orléans/LLL UMR7270</dc:creator>
+	<dc:publisher>Université d'Orléans/LLL UMR7270</dc:publisher>
+	<dc:contributor olac:code="depositor" xsi:type="olac:role">Université d'Orléans/LLL UMR7270</dc:contributor>
+	<dc:contributor olac:code="researcher" xsi:type="olac:role">Université d'Orléans/LLL UMR7270</dc:contributor>
+	<dcterms:rights>Copyright (c) 2012 Université d'Orléans/LLL</dcterms:rights>
+	<dcterms:accessRights>Freely available for non-commercial use. This file is licensed under a Creative Commons License.</dcterms:accessRights>
+	<dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/3.0/</dcterms:license>
+	<dcterms:created xsi:type="dcterms:W3CDTF">1969-04-15</dcterms:created>
+	<dc:language xsi:type="olac:language" olac:code="fra"/>
+	<dc:identifier xsi:type="dcterms:URI">http://eslo.tge-adonis.fr/CorpusEslo/UploadsEslo/EnregistrementsStockes/ESLO1_ENT_012.wav</dc:identifier>
+	<dc:type xsi:type="dcterms:DCMIType">Sound</dc:type>
+	<dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LANGUESDEFRANCE</dcterms:isPartOf>
+	<dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+	<dcterms:extent>76</dcterms:extent>
+</crdo:item>

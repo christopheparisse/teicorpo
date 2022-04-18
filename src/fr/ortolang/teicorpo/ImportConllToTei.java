@@ -183,7 +183,7 @@ public class ImportConllToTei extends ImportToTei {
 
 	public static void main(String[] args) throws Exception {
 		EXT = ".orfeo";
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		ImportConllToTei ct = new ImportConllToTei();
 		//System.err.printf("EXT(M): %s%n", EXT);
 		ct.mainCommand(args, EXT, Utils.EXT, "Description: ImportConllToTei converts a CONLL file to an TEI file%n", 8);

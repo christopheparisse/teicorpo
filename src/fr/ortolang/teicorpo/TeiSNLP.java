@@ -248,7 +248,7 @@ public class TeiSNLP extends GenericMain {
 
 	// Programme principal
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usageString = "Description: TeiSNLP allows to apply the Standford Natural Language Parser on a TEI file.%nUsage: TeiSNLP -c command [-options] <"
 				+ Utils.EXT + ">%n";
 		TeiSNLP ttt = new TeiSNLP();

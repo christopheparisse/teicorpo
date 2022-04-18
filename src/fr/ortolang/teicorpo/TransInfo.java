@@ -52,8 +52,9 @@ public class TransInfo {
 	public ArrayList<String> notes = new ArrayList<String>();
 	// Liste ordonnée des situations
 	public ArrayList<String> situationList = new ArrayList<String>();
+	public String birth;
 
-	public TransInfo(Element docTeiHeader) {
+    public TransInfo(Element docTeiHeader) {
 		if (docTeiHeader == null) return;
 		// Récupération des informations relatives au fichier
 		NodeList fileDesc = docTeiHeader.getElementsByTagName("fileDesc");
@@ -140,6 +141,9 @@ public class TransInfo {
 								} else {
 									transcriber = n.getTextContent();
 								}
+							} else if (n.getAttribute("type").equals("birth")) {
+								birth = n.getTextContent();
+								if (birth == null) birth = "";
 							} else if (n.getAttribute("type").equals("version")) {
 								version = n.getTextContent();
 								if (version == null) version = "";

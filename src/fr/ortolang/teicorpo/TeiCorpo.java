@@ -296,7 +296,7 @@ public class TeiCorpo extends GenericMain {
 	}
 
 	public static void main(String[] args) throws Exception {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usageString = "Description: TeiCorpo converts one file from one format to another%n"
 				+ "Usage: TeiCorpo [-options] <file>%n"
 				+ "Known formats: TEI_CORPO, Clan, Elan, Praat, Transcriber%n"

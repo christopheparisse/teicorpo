@@ -23,6 +23,8 @@ public abstract class GenericMain {
 	public abstract void mainProcess(String input, String output, TierParams options) throws FileNotFoundException;
 	
 	public void mainCommand(String[] args, String extensionIn, String extensionOut, String usageString, int style) throws IOException {
+		// System.setProperty("line.separator", "\n");
+		// System.out.printf("mainCommand:Generic: (%s) -> (%s)%n", extensionIn, extensionOut);
 		TierParams options = new TierParams();
 //		System.err.printf("EXTIN: %s%n", extensionIn);
 		// Parcours des arguments
@@ -74,13 +76,8 @@ public abstract class GenericMain {
 						String name = file.getName();
 						if (file.isFile() && (name.toLowerCase().endsWith(options.inputFormat))) {
 							mainProcess(file.getAbsolutePath(), options.output, options);
-						} else if (file.isDirectory()) {
-							List <String> li = options.input;
-							List <String> newli = new ArrayList<String>();
-							newli.add(file.getAbsolutePath());
-							options.input = newli;
-							processFiles(options);
-							options.input = li;
+						} else {
+							fileIsDirectory(options, file);
 						}
 					}
 				} else {
@@ -137,13 +134,8 @@ public abstract class GenericMain {
 								System.out.printf("Dir: %s --> %s%n", file.getAbsolutePath(), outputDir + outputFileName);
 							}
 							mainProcess(file.getAbsolutePath(), outputDir + outputFileName, options);
-						} else if (file.isDirectory()) {
-							List <String> li = options.input;
-							List <String> newli = new ArrayList<String>();
-							newli.add(file.getAbsolutePath());
-							options.input = newli;
-							processFiles(options);
-							options.input = li;
+						} else {
+							fileIsDirectory(options, file);
 						}
 					}
 				}
@@ -196,6 +188,17 @@ public abstract class GenericMain {
 				}
 				mainProcess(input, output, options);
 			}
+		}
+	}
+
+	private void fileIsDirectory(TierParams options, File file) throws IOException {
+		if (file.isDirectory()) {
+			List<String> li = options.input;
+			List <String> newli = new ArrayList<String>();
+			newli.add(file.getAbsolutePath());
+			options.input = newli;
+			processFiles(options);
+			options.input = li;
 		}
 	}
 }

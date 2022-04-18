@@ -102,18 +102,26 @@ public class TeiFile {
 			Element e = (Element) lu.item(0);
 			if (e != null && e.hasChildNodes()) {
 				NodeList nl = e.getChildNodes();
-				language = new String[nl.getLength()];
-				// read all nodes (== all languages)
+				int nblang = 0;
 				for (int i=0; i < nl.getLength(); i++) {
-					if (nl.item(i).getNodeType() == Node.ELEMENT_NODE) {
-						Element el = (Element)nl.item(i);
-						String ident = el.getAttribute("ident");
-						if (ident.isEmpty())
-							ident = el.getTextContent();
-						if (!ident.isEmpty())
-							language[i] = ident;
-						else
-							language[i] = "unknown";
+					if (nl.item(i).getNodeType() == Node.ELEMENT_NODE) nblang++;
+				}
+				if (nblang > 0) {
+					language = new String[nblang];
+					int idxlang = 0;
+					// read all nodes (== all languages)
+					for (int i=0; i < nl.getLength(); i++) {
+						if (nl.item(i).getNodeType() == Node.ELEMENT_NODE) {
+							Element el = (Element)nl.item(i);
+							String ident = el.getAttribute("ident");
+							if (ident.isEmpty())
+								ident = el.getTextContent();
+							if (!ident.isEmpty())
+								language[idxlang] = ident;
+							else
+								language[idxlang] = "unknown";
+							idxlang++;
+						}
 					}
 				}
 			}

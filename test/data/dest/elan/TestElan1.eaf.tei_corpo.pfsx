@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences version="1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
+    <pref key="FrameSize">
+        <Object class="java.awt.Dimension">1677,1372</Object>
+    </pref>
+    <pref key="MultiTierViewer.TierSortingMode">
+        <Int>1</Int>
+    </pref>
+    <pref key="LayoutManager.SelectedTabIndex">
+        <Int>7</Int>
+    </pref>
+    <pref key="LayoutManager.VisibleMultiTierViewer">
+        <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
+    </pref>
+    <pref key="MultiTierViewer.ActiveTierName">
+        <String>BRI</String>
+    </pref>
+    <pref key="SelectionEndTime">
+        <Long>0</Long>
+    </pref>
+    <pref key="SignalViewer.ZoomLevel">
+        <Float>46.0</Float>
+    </pref>
+    <pref key="LayoutManager.CurrentMode">
+        <Int>1</Int>
+    </pref>
+    <prefGroup key="CommentViewer.Columns">
+        <pref key="Acteur">
+            <Int>75</Int>
+        </pref>
+        <pref key="Date de modification">
+            <Int>75</Int>
+        </pref>
+        <pref key="Initiales">
+            <Int>75</Int>
+        </pref>
+        <pref key="Commentaire">
+            <Int>75</Int>
+        </pref>
+        <pref key="Start Time">
+            <Int>75</Int>
+        </pref>
+        <pref key="Destinataire">
+            <Int>0</Int>
+        </pref>
+        <pref key="Expéditeur">
+            <Int>0</Int>
+        </pref>
+        <pref key="Date de création">
+            <Int>75</Int>
+        </pref>
+        <pref key="End Time">
+            <Int>75</Int>
+        </pref>
+        <pref key="Thread">
+            <Int>75</Int>
+        </pref>
+    </prefGroup>
+    <prefList key="CommentViewer.Columns.Order">
+        <String>Start Time</String>
+        <String>End Time</String>
+        <String>Acteur</String>
+        <String>Initiales</String>
+        <String>Commentaire</String>
+        <String>Thread</String>
+        <String>Expéditeur</String>
+        <String>Destinataire</String>
+        <String>Date de création</String>
+        <String>Date de modification</String>
+    </prefList>
+    <pref key="ActiveRecognizerName">
+        <String>AAM-LR Phone level audio segmentation</String>
+    </pref>
+    <pref key="FrameLocation">
+        <Object class="java.awt.Point">522,29</Object>
+    </pref>
+    <pref key="TimeLineViewer.ZoomLevel">
+        <Float>46.0</Float>
+    </pref>
+    <pref key="SelectionBeginTime">
+        <Long>0</Long>
+    </pref>
+    <prefGroup key="AAM-LR Phone level audio segmentation">
+        <pref key="base_url">
+            <String>http://lux17.mpi.nl/aamlr/</String>
+        </pref>
+        <pref key="source_audio">
+            <String>/corpusformat/elan/6-Lindsay_and_Brian.wav</String>
+        </pref>
+    </prefGroup>
+    <pref key="TimeScaleBeginTime">
+        <Long>0</Long>
+    </pref>
+    <pref key="MediaTime">
+        <Long>0</Long>
+    </pref>
+    <prefGroup key="TierColors">
+        <pref key="SpL source of information">
+            <Object class="java.awt.Color">160,0,0</Object>
+        </pref>
+        <pref key="SpL third party">
+            <Object class="java.awt.Color">0,160,0</Object>
+        </pref>
+        <pref key="SpR third party">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="SpR hands">
+            <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="SpR affiliation_discordance">
+            <Object class="java.awt.Color">0,90,0</Object>
+        </pref>
+        <pref key="SpL alignment">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="SpL affiliation_discordance">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="SpL nose mouth">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+        <pref key="SpL gaze direction">
+            <Object class="java.awt.Color">0,0,160</Object>
+        </pref>
+        <pref key="SpR shoulders">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="SpL comments">
+            <Object class="java.awt.Color">90,0,0</Object>
+        </pref>
+        <pref key="SpR stance words">
+            <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="SpR eyebrows">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="SpR source of information">
+            <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="SpR evaluation">
+            <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="SpR silent utterance">
+            <Object class="java.awt.Color">160,90,0</Object>
+        </pref>
+        <pref key="SpL epistemic stance">
+            <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="SpL affective stance">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="SpR epistemic stance">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="SpR trunk">
+            <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="SpR comments">
+            <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="CAM">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="SpL head">
+            <Object class="java.awt.Color">90,90,0</Object>
+        </pref>
+        <pref key="SpR multimodal stance">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="LIN">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="SpL shrug">
+            <Object class="java.awt.Color">0,0,90</Object>
+        </pref>
+        <pref key="SpL evaluation">
+            <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="SpR head">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="SpR shrug">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="BRI">
+            <Object class="java.awt.Color">90,90,160</Object>
+        </pref>
+        <pref key="SpL shoulders">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="SpR gaze direction">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+        <pref key="SpL eyebrows ">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="SpR nose mouth">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="SpL stance words">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="SpL hands">
+            <Object class="java.awt.Color">160,90,0</Object>
+        </pref>
+        <pref key="SpR affective stance">
+            <Object class="java.awt.Color">0,90,160</Object>
+        </pref>
+    </prefGroup>
+    <prefList key="MultiTierViewer.TierOrder">
+        <String>BRI</String>
+        <String>CAM</String>
+        <String>LIN</String>
+        <String>SpL affective stance</String>
+        <String>SpL affiliation_discordance</String>
+        <String>SpL alignment</String>
+        <String>SpL comments</String>
+        <String>SpL epistemic stance</String>
+        <String>SpL evaluation</String>
+        <String>SpL gaze direction</String>
+        <String>SpL hands</String>
+        <String>SpL head</String>
+        <String>SpL nose mouth</String>
+        <String>SpL shoulders</String>
+        <String>SpL shrug</String>
+        <String>SpL source of information</String>
+        <String>SpL stance words</String>
+        <String>SpL third party</String>
+        <String>SpR affective stance</String>
+        <String>SpR affiliation_discordance</String>
+        <String>SpR comments</String>
+        <String>SpR epistemic stance</String>
+        <String>SpR evaluation</String>
+        <String>SpR eyebrows</String>
+        <String>SpR gaze direction</String>
+        <String>SpR hands</String>
+        <String>SpR head</String>
+        <String>SpR multimodal stance</String>
+        <String>SpR nose mouth</String>
+        <String>SpR shoulders</String>
+        <String>SpR shrug</String>
+        <String>SpR silent utterance</String>
+        <String>SpR source of information</String>
+        <String>SpR stance words</String>
+        <String>SpR stance words-SpR stance words-SpR sw labels</String>
+        <String>SpR third party</String>
+        <String>SpR trunk</String>
+        <String>SpL eyebrows </String>
+    </prefList>
+    <pref key="LayoutManager.SplitPaneDividerLocation">
+        <Int>1</Int>
+    </pref>
+    <prefList key="CommentViewer.Columns.Hidden">
+        <String>Destinataire</String>
+        <String>Expéditeur</String>
+    </prefList>
+</preferences>

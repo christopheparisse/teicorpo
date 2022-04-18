@@ -17,6 +17,10 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.bootstrap.DOMImplementationRegistry;
+import org.w3c.dom.ls.DOMImplementationLS;
+import org.w3c.dom.ls.LSOutput;
+import org.w3c.dom.ls.LSSerializer;
 import org.xml.sax.InputSource;
 
 public class Utils {
@@ -35,6 +39,8 @@ public class Utils {
 	public static String longPauseCha = " (..) ";
 	public static String veryLongPauseCha = " (...) ";
 	public static String specificPauseCha = "(%s)";
+
+	public static String languagingScript = "script";
 
 	public static boolean isNotEmptyOrNull(String s){
 		return s!= null && !s.isEmpty() && s != "";
@@ -134,12 +140,12 @@ public class Utils {
 	public static String getInfo(String line){
 		if (isNotEmptyOrNull(line)){
 			try{
-				String [] tab = line.split("\t");
+				String [] tab = line.split("[\t:]+");
 				String info = "";
 				for (int i = 1; i< tab.length; i++){
 					info += tab[i] + " ";
 				}
-				return info.substring(0, info.length()-1);
+				return info.trim();
 			}
 			catch(StringIndexOutOfBoundsException e){}
 		}
@@ -148,7 +154,7 @@ public class Utils {
 
 	public static String getInfoType(String line){
 		try{
-			return line.split("\t")[0].split(":")[0];
+			return line.split("[\t:]+")[0];
 		}
 		catch(Exception e){
 			return "";
@@ -458,7 +464,13 @@ public class Utils {
 	}
 
 	public static void createFile(Document domDoc, String outputFileName) {
-		Source source = new DOMSource(domDoc);
+		//System.out.println("createFile with Transformer to " + outputFileName);
+		createFileTransformer(domDoc, outputFileName);
+		//System.out.println("createFile with LSS to " + outputFileName);
+		//createFileLSS(domDoc, outputFileName);
+	}
+
+	public static void createFileTransformer(Document domDoc, String outputFileName) {
 		Result resultat = new StreamResult(outputFileName);
 		try {
 			// Configuration du transformer
@@ -467,9 +479,10 @@ public class Utils {
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
 			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
-//			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
 			// Transformation
+			Source source = new DOMSource(domDoc);
 			transformer.transform(source, resultat);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -477,7 +490,41 @@ public class Utils {
 		}
 	}
 
-	public static void createFile(Document domDoc, String outputFileName, String dtd) {
+	/**
+	 * Writes a DOM Document to the given OutputStream using the "UTF-8"
+	 * encoding. The XML declaration is omitted.
+	 *
+	 * @param domDoc
+	 *            A Document node.
+	 * @param outputFileName
+	 *            The destination filename.
+	 */
+	public static void createFileLSS(Document domDoc, String outputFileName) {
+		DOMImplementationRegistry domRegistry = null;
+		try {
+			FileOutputStream outStream = new FileOutputStream(outputFileName);
+			domRegistry = DOMImplementationRegistry.newInstance();
+			// Fortify Mod: Broaden try block to capture all potential exceptions
+			// } catch (Exception e) {
+			//    LOGR.warning(e.getMessage());
+			// }
+			DOMImplementationLS impl = (DOMImplementationLS) domRegistry
+					.getDOMImplementation("LS");
+			LSSerializer writer = impl.createLSSerializer();
+			writer.getDomConfig().setParameter("xml-declaration", true);
+			writer.getDomConfig().setParameter("format-pretty-print", true);
+			writer.setNewLine("\n");
+			LSOutput output = impl.createLSOutput();
+			output.setEncoding("UTF-8");
+			output.setByteStream(outStream);
+			writer.write(domDoc, output);
+			outStream.close();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+	}
+
+	public static void createFileDtd(Document domDoc, String outputFileName, String dtd) {
 		Source source = new DOMSource(domDoc);
 		Result resultat = new StreamResult(outputFileName);
 		try {
@@ -489,7 +536,7 @@ public class Utils {
 			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
 			System.out.println("Create DTD : " + dtd);
 			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, dtd);
-//			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
 			// Transformation
 			transformer.transform(source, resultat);

@@ -276,7 +276,7 @@ public class TeiEdit extends GenericMain {
 
 	// Programme principal
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 
 		String usageString = "Description: TeiEdit allows to modify elements from a TEI file.%nUsage: TeiEdit -c command [-options] <"
 				+ Utils.EXT + ">%n";

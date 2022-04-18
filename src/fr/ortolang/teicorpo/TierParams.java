@@ -255,8 +255,8 @@ class TierParams {
 		return TierParams.test(s, style);
 	}
 
-	public static void printVersionMessage() {
-    	System.out.println("TeiCorpo (version "+ Version.versionSoft +") " + Version.versionDate + " Version TEI_CORPO: " + Version.versionTEI);
+	public static void printVersionMessage(boolean test) {
+    	System.out.println("TeiCorpo (version "+ Version.versionSoft(test) +") " + Version.versionDate(test) + " Version TEI_CORPO: " + Version.versionTEI);
 	}
 	
 	public static void printUsageMessage(String mess, String ext1, String ext2, int style) {

@@ -8,7 +8,7 @@ public class ElanToTei extends GenericMain {
 	/** Encodage des fichiers de sortie et d'entrée. */
 	static final String outputEncoding = "UTF-8";
 	/** Extension Elan **/
-	static String EXT = ".eaf";
+	public static String EXT = ".eaf";
 
 	ElanToHT ElanToHT;
 	HT_ToTei ht;
@@ -31,7 +31,7 @@ public class ElanToTei extends GenericMain {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws Exception {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		ElanToTei tr = new ElanToTei();
 		tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanToTei converts a ELAN file to an TEI file%n", 0);
 	}

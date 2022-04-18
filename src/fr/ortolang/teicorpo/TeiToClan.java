@@ -26,7 +26,7 @@ public class TeiToClan extends TeiConverter {
 	// Encodage du fichier de sortie
 	final static String outputEncoding = "UTF-8";
 	// Extension du fichier de sortie
-	final static String EXT = ".cha";
+	public static String EXT = ".cha";
 
 	/**
 	 * Convertit le fichier TEI donné en argument en un fichier Chat.
@@ -83,6 +83,7 @@ public class TeiToClan extends TeiConverter {
 			tf.language[0] = currentLocale.getLanguage();
 		}
 		out.print("@Languages:\t");
+		// System.out.printf("LANGUAGES: (%d)%n", tf.language.length);
 		for (int i=0; i < tf.language.length-1; i++) {
 			out.print(tf.language[i] + ", ");
 		}
@@ -161,10 +162,16 @@ public class TeiToClan extends TeiConverter {
 		out.printf(participantsIDS);
 		// Ajouts lignes "birth of" et "birthplace of", doivent immédiatement
 		// suivre les lignes @ID
+		if (getTransInfo().birth != null && !getTransInfo().birth.isEmpty()) {
+			writeProperty("Birth of CHI", getTransInfo().birth);
+		}
 		for (String note : getTransInfo().notes) {
-			if (note.toLowerCase().startsWith("birth of")) {
+			// System.out.printf("lecture des births: (%s)%n", note);
+			if (note.toLowerCase().startsWith("@birth of")) {
+				// System.out.println("Impression des birth of");
 				writeProperty(Utils.getInfoType(note), Utils.getInfo(note));
-			} else if (note.toLowerCase().startsWith("birthplace of")) {
+			} else if (note.toLowerCase().startsWith("@birthplace of")) {
+				// System.out.println("Impression des birthplace");
 				writeProperty(Utils.getInfoType(note), Utils.getInfo(note));
 			}
 		}
@@ -210,6 +217,7 @@ public class TeiToClan extends TeiConverter {
 		writeProperty("Time Duration", teiHeader.timeDuration);
 		// Autres info dans notes
 		for (String note : teiHeader.notes) {
+			// System.out.printf("lecture des autres notes: (%s)%n", note);
 			if (note.toLowerCase().substring(1).startsWith("number")) {
 				writeProperty("Number", Utils.getInfo2(note));
 			} else if (note.toLowerCase().substring(1).startsWith("tape location")) {
@@ -505,7 +513,7 @@ public class TeiToClan extends TeiConverter {
 	}
 
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usageString = "Description: TeiToClan converts a TEI file to a CLAN file%nUsage: TeiToClan [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToClan ttc = new TeiToClan();

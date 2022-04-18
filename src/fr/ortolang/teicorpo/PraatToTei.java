@@ -844,7 +844,7 @@ public class PraatToTei extends GenericMain {
 			 */
 			HierarchicTrans ht = new HierarchicTrans();
 			ht.initial_format = "Praat";
-			ht.metaInf.version = Version.versionSoft;
+			ht.metaInf.version = Version.versionSoft(options.test);
 			ht.metaInf.time_units = "s";
 			/*
 			 * construire tiers info
@@ -985,7 +985,7 @@ public class PraatToTei extends GenericMain {
 	}
 
 	public static void main(String[] args) throws Exception {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usageString = "Description: PraatToTei converts a PRAAT file to an TEI file%n";
 		PraatToTei ptt = new PraatToTei();
 		ptt.mainCommand(args, EXT, Utils.EXT, usageString, 5);

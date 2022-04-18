@@ -38,7 +38,7 @@ public class TeiToElan extends GenericMain {
 	TeiToPartition ttp = null;
 
 	// Extension du fichier de sortie: .eaf
-	final static String EXT = ".eaf";
+	public static String EXT = ".eaf";
 
 	// Nom du fichier teiml à convertir
 	String inputName;
@@ -627,11 +627,11 @@ public class TeiToElan extends GenericMain {
 				// System.out.printf("0HH: %s %s%n", tier.getNodeName(), type);
 				cvref = setTierAtt(tier, nameOfTier);
 			for (Annot a : entry.getValue()) {
-				//System.out.println(a.toString());
+				System.out.println(a.toString());
 				Element annot = elanDoc.createElement("ANNOTATION");
 				if (a.timereftype.equals("time")) {
 //					tstart = Utils.timeStamp("time:" + a.name, tstart);
-					//System.err.printf("TIME: (%s) %s%n", a.timereftype, a.toString());
+					System.err.printf("TIME: (%s) %s%n", a.timereftype, a.toString());
 					Element align_annot = elanDoc.createElement("ALIGNABLE_ANNOTATION");
 					align_annot.setAttribute("ANNOTATION_ID", a.id);
 					align_annot.setAttribute("TIME_SLOT_REF1", timelineValueOf(a.start));
@@ -657,7 +657,7 @@ public class TeiToElan extends GenericMain {
 				} else if (a.timereftype.equals("ref")) {
 					Element ref_annot = elanDoc.createElement("REF_ANNOTATION");
 //					tstart = Utils.timeStamp("ref:" + a.name, tstart);
-					//System.err.printf("REF: (%s) %s%n", a.timereftype, a.toString());
+					System.err.printf("REF: (%s) %s%n", a.timereftype, a.toString());
 					ref_annot.setAttribute("ANNOTATION_ID", a.id);
 					ref_annot.setAttribute("ANNOTATION_REF", a.link);
 					if (Utils.isNotEmptyOrNull(a.previous))
@@ -693,7 +693,7 @@ public class TeiToElan extends GenericMain {
 	}
 
 	public static void main(String args[]) throws IOException {
-		TierParams.printVersionMessage();
+		TierParams.printVersionMessage(false);
 		String usage = "Description: TeiToElan converts a TEI file to a ELAN file%nUsage: TeiToElan [-options] <file"
 				+ Utils.EXT + ">%n";
 		TeiToElan tte = new TeiToElan();

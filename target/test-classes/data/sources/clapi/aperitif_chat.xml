@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>aperitif_chat</title>
+        <respStmt>
+          <resp>Responsables du corpus</resp>
+          <name>Clapi</name>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="word">7500</measure>
+      </extent>
+      <publicationStmt>
+        <publisher>projet Orfeo</publisher>
+        <pubPlace>http://projet-orfeo.fr</pubPlace>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/3.0"/>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note type="commentaireDate"/>
+        <note type="commentaireQualiteSon"/>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>fichier <name>aperitif_chat</name> du corpus/projet <name>CLAPI</name>
+            </bibl>
+        <recordingStmt>
+          <recording type="audio" dur="00:31:55" ana="#problème_enregistrement #NULL #bip">
+            <date>21/11/2009</date>
+          </recording>
+        </recordingStmt>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <interpretation>
+          <p ana="automatique">Annotation automatique</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <abstract>
+        <p>conversation entre quatre amis durant un apéritif</p>
+      </abstract>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <catRef target="repas" corresp="type"/>
+        <catRef target="privé" corresp="secteur"/>
+        <catRef target="amical" corresp="milieu"/>
+        <catRef target="face_à_face" corresp="channel"/>
+        <catRef corresp="modality" target="oral"/>
+        <catRef corresp="nbLocuteurs" target="2+"/>
+      </textClass>
+      <settingDesc>
+        <place>
+          <p>France, Rhône-Alpes, Région Lyonnaise</p>
+        </place>
+      </settingDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="JUL">
+            <sex>F</sex>
+            <birth from="1979" to="1989">
+              <placeName>inconnu</placeName>
+            </birth>
+            <education>études supérieures</education>
+            <occupation>En scolarité </occupation>
+            <residence>
+              <country key="">FRANCE</country>
+              <settlement key="10190">Lyon</settlement>
+            </residence>
+            <langKnowledge>
+              <langKnown level="langue_maternelle">français</langKnown>
+            </langKnowledge>
+          </person>
+          <person xml:id="CLA">
+            <sex>F</sex>
+            <birth from="1979" to="1989">
+              <placeName>inconnu</placeName>
+            </birth>
+            <education>études supérieures</education>
+            <occupation>En scolarité </occupation>
+            <residence>
+              <country key="">FRANCE</country>
+              <settlement key="10190">Lyon</settlement>
+            </residence>
+            <langKnowledge>
+              <langKnown level="langue_maternelle">français</langKnown>
+            </langKnowledge>
+          </person>
+          <person xml:id="LAU">
+            <sex>M</sex>
+            <birth from="1979" to="1989">
+              <placeName>inconnu</placeName>
+            </birth>
+            <education>études supérieures</education>
+            <occupation>En activité </occupation>
+            <residence>
+              <country key="">FRANCE</country>
+              <settlement key="10190">Lyon</settlement>
+            </residence>
+            <langKnowledge>
+              <langKnown level="langue_maternelle">français</langKnown>
+            </langKnowledge>
+          </person>
+          <person xml:id="JEA">
+            <sex>M</sex>
+            <birth from="1979" to="1989">
+              <placeName>inconnu</placeName>
+            </birth>
+            <education>études supérieures</education>
+            <occupation>En scolarité </occupation>
+            <residence>
+              <country key="">FRANCE</country>
+              <settlement key="10190">Lyon</settlement>
+            </residence>
+            <langKnowledge>
+              <langKnown level="langue_maternelle">français</langKnown>
+            </langKnowledge>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+</TEI>

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>teicorpo</groupId>
     <artifactId>teicorpo</artifactId>
-    <version>1.4.44-SNAPSHOT</version>
+    <version>1.41.01-SNAPSHOT</version>
     <name>teicorpo</name>
     <description>tools for spoken language with the TEI format</description>
     <properties>
@@ -40,6 +40,15 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration>
+                    <includes>
+                        <include>**/Test*.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -51,7 +60,8 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>edu.stanford.nlp</groupId>

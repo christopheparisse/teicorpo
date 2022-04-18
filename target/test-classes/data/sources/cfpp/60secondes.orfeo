@@ -1,0 +1,328 @@
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-1
+# text = bon je reviens sur cette euh ce problème qui est un problème euh
+1	bon	bon	INT	INT	_	3	dm	_	_	0.040000	0.090000	Anita_Musso
+2	je	je	CLS	CLS	_	3	subj	_	_	0.100000	0.170000	Anita_Musso
+3	reviens	revenir	VRB	VRB	_	0	root	_	_	0.180000	0.410000	Anita_Musso
+4	sur	sur	PRE	PRE	_	3	dep	_	_	0.420000	0.620000	Anita_Musso
+5	cette	ce	DET	DET	_	8	spe	_	_	0.630000	0.980000	Anita_Musso
+6	euh	euh	INT	INT	_	5	dm	_	_	0.990000	1.020000	Anita_Musso
+7	ce	ce	DET	DET	_	5	para	_	_	1.030000	1.190000	Anita_Musso
+8	problème	problème	NOM	NOM	_	4	dep	_	_	1.200000	1.630000	Anita_Musso
+9	qui	qui	PRQ	PRQ	_	10	subj	_	_	1.640000	1.890000	Anita_Musso
+10	est	être	VRB	VRB	_	8	dep	_	_	1.900000	1.920000	Anita_Musso
+11	un	un	DET	DET	_	12	spe	_	_	1.930000	2.070000	Anita_Musso
+12	problème	problème	NOM	NOM	_	10	dep	_	_	2.080000	2.790000	Anita_Musso
+13	euh	euh	INT	INT	_	12	dm	_	_	2.800000	2.830000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-2
+# text = voilà de d'être chez moi
+1	voilà	voilà	VRB	VRB	_	0	root	_	_	2.840000	3.100000	Anita_Musso
+2	de	de	PRE	PRE	_	1	dep	_	_	3.110000	3.320000	Anita_Musso
+3	d'	de	PRE	PRE	_	2	para	_	_	3.330000	3.470000	Anita_Musso
+4	être	être	VNF	VNF	_	3	dep	_	_	3.480000	3.600000	Anita_Musso
+5	chez	chez	PRE	PRE	_	4	dep	_	_	3.610000	3.810000	Anita_Musso
+6	moi	moi	PRO	PRO	_	5	dep	_	_	3.820000	4.200000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-3
+# text = combien de fois
+1	combien	combien	PRQ	PRQ	_	0	root	_	_	4.210000	4.470000	Anita_Musso
+2	de	de	PRE	PRE	_	1	dep	_	_	4.480000	4.500000	Anita_Musso
+3	fois	foi	NOM	NOM	_	2	dep	_	_	4.510000	4.630000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-4
+# text = ça m'est arrivé bon ben là
+1	ça	ça	PRO	PRO	_	4	subj	_	_	4.640000	4.770000	Anita_Musso
+2	m'	me	CLI	CLI	_	4	dep	_	_	4.780000	4.850000	Anita_Musso
+3	est	être	VRB	VRB	_	4	aux	_	_	4.860000	4.880000	Anita_Musso
+4	arrivé	arriver	VPP	VPP	_	0	root	_	_	4.890000	5.360000	Anita_Musso
+5	bon ben	bon ben	INT	INT	_	4	dm	_	_	5.890000	6.150000	Anita_Musso
+6	là	là	ADV	ADV	_	4	dep	_	_	6.160000	6.280000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-5
+# text = tu vas boulevard Voltaire
+1	tu	tu	CLS	CLS	_	2	subj	_	_	6.290000	6.420000	Anita_Musso
+2	vas	aller	VRB	VRB	_	0	root	_	_	6.430000	6.550000	Anita_Musso
+3	boulevard	boulevard	NOM	NOM	_	2	dep	_	_	6.560000	6.890000	Anita_Musso
+4	Voltaire	voltaire	NOM	NOM	_	3	dep	_	_	6.900000	7.330000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-6
+# text = c'est pas loin euh
+1	c'	ce	CLS	CLS	_	2	subj	_	_	7.340000	7.410000	Anita_Musso
+2	est	être	VRB	VRB	_	0	root	_	_	7.420000	7.460000	Anita_Musso
+3	pas	pas	ADN	ADN	_	2	dep	_	_	7.470000	7.610000	Anita_Musso
+4	loin	loin	ADV	ADV	_	2	dep	_	_	7.650000	8.170000	Anita_Musso
+5	euh	euh	INT	INT	_	4	dm	_	_	8.180000	8.380000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-7
+# text = tu tu j'y vais à pieds je suis chez moi je me conditionne dans mon appartement me disant
+1	tu	tu	CLS	CLS	_	5	subj	_	_	8.390000	8.730000	Anita_Musso
+2	tu	tu	CLS	CLS	_	1	para	_	_	8.740000	8.890000	Anita_Musso
+3	j'	je	CLS	CLS	_	5	subj	_	_	8.930000	9.120000	Anita_Musso
+4	y	y	CLI	CLI	_	5	dep	_	_	9.130000	9.190000	Anita_Musso
+5	vais	aller	VRB	VRB	_	9	periph	_	_	9.200000	9.320000	Anita_Musso
+6	à	à	PRE	PRE	_	5	dep	_	_	9.330000	9.410000	Anita_Musso
+7	pieds	pied	NOM	NOM	_	6	dep	_	_	9.420000	9.670000	Anita_Musso
+8	je	je	CLS	CLS	_	9	subj	_	_	9.680000	9.820000	Anita_Musso
+9	suis	être	VRB	VRB	_	0	root	_	_	9.830000	10.030000	Anita_Musso
+10	chez	chez	PRE	PRE	_	9	dep	_	_	10.040000	10.190000	Anita_Musso
+11	moi	moi	PRO	PRO	_	10	dep	_	_	10.200000	10.550000	Anita_Musso
+12	je	je	CLS	CLS	_	14	subj	_	_	10.560000	10.720000	Anita_Musso
+13	me	me	CLI	CLI	_	14	dep	_	_	10.730000	10.780000	Anita_Musso
+14	conditionne	conditionner	VRB	VRB	_	9	para	_	_	10.790000	11.440000	Anita_Musso
+15	dans	dans	PRE	PRE	_	14	dep	_	_	11.450000	11.570000	Anita_Musso
+16	mon	son	DET	DET	_	17	spe	_	_	11.580000	11.750000	Anita_Musso
+17	appartement	appartement	NOM	NOM	_	15	dep	_	_	11.760000	12.370000	Anita_Musso
+18	me	me	CLI	CLI	_	19	dep	_	_	12.380000	12.470000	Anita_Musso
+19	disant	dire	VPR	VPR	_	14	dep	_	_	12.480000	12.830000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-8
+# text = j'y vais à pieds
+1	j'	je	CLS	CLS	_	3	subj	_	_	13.530000	13.750000	Anita_Musso
+2	y	y	CLI	CLI	_	3	dep	_	_	13.760000	13.830000	Anita_Musso
+3	vais	aller	VRB	VRB	_	0	root	_	_	13.840000	14.000000	Anita_Musso
+4	à	à	PRE	PRE	_	3	dep	_	_	14.010000	14.060000	Anita_Musso
+5	pieds	pied	NOM	NOM	_	4	dep	_	_	14.070000	14.400000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-9
+# text = moi ma voiture elle est garée dans la rue j'ai un stationnement résident
+1	moi	moi	PRO	PRO	_	6	periph	_	_	14.410000	14.800000	Anita_Musso
+2	ma	son	DET	DET	_	3	spe	_	_	14.810000	14.970000	Anita_Musso
+3	voiture	voiture	NOM	NOM	_	6	periph	_	_	14.980000	15.330000	Anita_Musso
+4	elle	il	CLS	CLS	_	6	subj	_	_	15.340000	15.410000	Anita_Musso
+5	est	être	VRB	VRB	_	6	aux	_	_	15.420000	15.480000	Anita_Musso
+6	garée	garer	VPP	VPP	_	11	periph	_	_	15.490000	15.730000	Anita_Musso
+7	dans	dans	PRE	PRE	_	6	dep	_	_	15.740000	15.940000	Anita_Musso
+8	la	le	DET	DET	_	9	spe	_	_	15.950000	16.070000	Anita_Musso
+9	rue	rue	NOM	NOM	_	7	dep	_	_	16.080000	16.280001	Anita_Musso
+10	j'	je	CLS	CLS	_	11	subj	_	_	16.290001	16.379999	Anita_Musso
+11	ai	avoir	VRB	VRB	_	0	root	_	_	16.389999	16.410000	Anita_Musso
+12	un	un	DET	DET	_	13	spe	_	_	16.420000	16.500000	Anita_Musso
+13	stationnement	stationnement	NOM	NOM	_	11	dep	_	_	16.510000	17.090000	Anita_Musso
+14	résident	résident	NOM	NOM	_	13	dep	_	_	17.100000	17.700001	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-10
+# text = je passe devant
+1	je	je	CLS	CLS	_	2	subj	_	_	18.350000	18.700001	Anita_Musso
+2	passe	passer	VRB	VRB	_	0	root	_	_	18.709999	18.940001	Anita_Musso
+3	devant	devoir	VPR	VPR	_	2	dep	_	_	18.950001	19.379999	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-11
+# text = je ne peux pas m'empêcher d'ouvrir euh la porte de monter dedans
+1	je	je	CLS	CLS	_	3	subj	_	_	19.389999	19.590000	Anita_Musso
+2	ne	ne	CLN	CLN	_	3	dep	_	_	19.600000	19.670000	Anita_Musso
+3	peux	pouvoir	VRB	VRB	_	0	root	_	_	19.680000	19.809999	Anita_Musso
+4	pas	pas	ADN	ADN	_	3	dep	_	_	19.820000	19.969999	Anita_Musso
+5	m'	me	CLI	CLI	_	6	dep	_	_	19.980000	20.040001	Anita_Musso
+6	empêcher	empêcher	VNF	VNF	_	3	dep	_	_	20.049999	20.540001	Anita_Musso
+7	d'	de	PRE	PRE	_	6	dep	_	_	20.549999	20.620001	Anita_Musso
+8	ouvrir	ouvrir	VNF	VNF	_	7	dep	_	_	20.629999	21.420000	Anita_Musso
+9	euh	euh	INT	INT	_	8	dm	_	_	21.430000	21.490000	Anita_Musso
+10	la	le	DET	DET	_	11	spe	_	_	21.500000	21.610001	Anita_Musso
+11	porte	porte	NOM	NOM	_	8	dep	_	_	21.620001	22.110001	Anita_Musso
+12	de	de	PRE	PRE	_	11	dep	_	_	22.120001	22.139999	Anita_Musso
+13	monter	monter	VNF	VNF	_	12	dep	_	_	22.150000	22.440001	Anita_Musso
+14	dedans	dedans	ADV	ADV	_	13	dep	_	_	22.520000	23.299999	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-12
+# text = et et d'aller euh à euh voilà cinq minutes en voiture
+1	et	et	COO	COO	_	8	mark	_	_	23.680000	23.740000	Anita_Musso
+2	et	et	COO	COO	_	1	para	_	_	23.750000	23.870001	Anita_Musso
+3	d'	de	PRE	PRE	_	8	periph	_	_	23.879999	23.930000	Anita_Musso
+4	aller	aller	VNF	VNF	_	3	dep	_	_	23.940001	24.360001	Anita_Musso
+5	euh	euh	INT	INT	_	4	dm	_	_	24.370001	24.389999	Anita_Musso
+6	à	à	PRE	PRE	_	4	dep	_	_	24.400000	24.879999	Anita_Musso
+7	euh	euh	INT	INT	_	6	dm	_	_	24.889999	25.180000	Anita_Musso
+8	voilà	voilà	VRB	VRB	_	0	root	_	_	25.190001	25.530001	Anita_Musso
+9	cinq	cinq	NUM	NUM	_	10	spe	_	_	25.540001	25.719999	Anita_Musso
+10	minutes	minute	NOM	NOM	_	8	dep	_	_	25.730000	26.080000	Anita_Musso
+11	en	en	PRE	PRE	_	10	dep	_	_	26.090000	26.160000	Anita_Musso
+12	voiture	voiture	NOM	NOM	_	11	dep	_	_	26.170000	26.680000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-13
+# text = ce qui me mettrait peut-être euh un petit quart d'heure à pieds
+1	ce	ce	PRO	PRO	_	0	root	_	_	26.690001	26.750000	Anita_Musso
+2	qui	qui	PRQ	PRQ	_	4	dep	_	_	26.760000	26.879999	Anita_Musso
+3	me	me	CLI	CLI	_	4	dep	_	_	26.889999	27.049999	Anita_Musso
+4	mettrait	mettre	VRB	VRB	_	1	dep	_	_	27.059999	27.350000	Anita_Musso
+5	peut-être	peut-être	ADV	ADV	_	4	dep	_	_	27.360001	27.860001	Anita_Musso
+6	euh	euh	INT	INT	_	5	dm	_	_	27.870001	27.940001	Anita_Musso
+7	un	un	DET	DET	_	9	spe	_	_	28.209999	28.370001	Anita_Musso
+8	petit	petit	ADJ	ADJ	_	9	dep	_	_	28.379999	28.520000	Anita_Musso
+9	quart	quart	NOM	NOM	_	4	dep	_	_	28.530001	28.719999	Anita_Musso
+10	d'	de	PRE	PRE	_	9	dep	_	_	28.730000	28.750000	Anita_Musso
+11	heure	heure	NOM	NOM	_	10	dep	_	_	28.760000	28.879999	Anita_Musso
+12	à	à	PRE	PRE	_	9	dep	_	_	28.889999	28.969999	Anita_Musso
+13	pieds	pied	NOM	NOM	_	12	dep	_	_	28.980000	29.219999	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-14
+# text = donc au dernier moment je prends ma voiture
+1	donc	donc	ADV	ADV	_	6	periph	_	_	29.650000	29.840000	Anita_Musso
+2	au	à+le	PRE	PRE	_	6	periph	_	_	29.850000	29.900000	Anita_Musso
+3	dernier	dernier	ADJ	ADJ	_	4	dep	_	_	29.910000	30.190001	Anita_Musso
+4	moment	moment	NOM	NOM	_	2	dep	_	_	30.200001	30.490000	Anita_Musso
+5	je	je	CLS	CLS	_	6	subj	_	_	30.500000	30.670000	Anita_Musso
+6	prends	prendre	VRB	VRB	_	0	root	_	_	30.680000	30.830000	Anita_Musso
+7	ma	son	DET	DET	_	8	spe	_	_	30.840000	30.940001	Anita_Musso
+8	voiture	voiture	NOM	NOM	_	6	dep	_	_	30.950001	31.180000	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-15
+# text = mais pour l'instant c'est une vraie question hein pour l'instant
+1	mais	mais	COO	COO	_	6	mark	_	_	31.260000	31.360001	Sonia_Branca-Rosoff
+2	pour	pour	PRE	PRE	_	6	periph	_	_	31.370001	31.490000	Sonia_Branca-Rosoff
+3	l'	le	DET	DET	_	4	spe	_	_	31.500000	31.530001	Sonia_Branca-Rosoff
+4	instant	instant	NOM	NOM	_	2	dep	_	_	31.590000	32.009998	Sonia_Branca-Rosoff
+5	c'	ce	CLS	CLS	_	6	subj	_	_	32.189999	32.290001	Sonia_Branca-Rosoff
+6	est	être	VRB	VRB	_	0	root	_	_	32.299999	32.400002	Sonia_Branca-Rosoff
+7	une	un	DET	DET	_	9	spe	_	_	32.410000	32.560001	Sonia_Branca-Rosoff
+8	vraie	vrai	ADJ	ADJ	_	9	dep	_	_	32.570000	32.669998	Sonia_Branca-Rosoff
+9	question	question	NOM	NOM	_	6	dep	_	_	32.759998	33.180000	Sonia_Branca-Rosoff
+10	hein	hein	INT	INT	_	9	dm	_	_	33.259998	33.330002	Sonia_Branca-Rosoff
+11	pour	pour	PRE	PRE	_	6	dep	_	_	33.470001	33.549999	Sonia_Branca-Rosoff
+12	l'	le	DET	DET	_	13	spe	_	_	33.630001	33.650002	Sonia_Branca-Rosoff
+13	instant	instant	NOM	NOM	_	11	dep	_	_	33.700001	33.970001	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-16
+# text = c'est quand même en termes de temps rentable aussi de prendre la voiture
+1	c'	ce	CLS	CLS	_	2	subj	_	_	34.020000	34.130001	Sonia_Branca-Rosoff
+2	est	être	VRB	VRB	_	0	root	_	_	34.139999	34.160000	Sonia_Branca-Rosoff
+3	quand	quand	CSU	CSU	_	2	dep	_	_	34.320000	34.400002	Sonia_Branca-Rosoff
+4	même	même	ADV	ADV	_	9	periph	_	_	34.410000	34.740002	Sonia_Branca-Rosoff
+5	en termes de	en termes de	PRE	PRE	_	9	periph	_	_	34.750000	35.410000	Sonia_Branca-Rosoff
+6	temps	temps	NOM	NOM	_	5	dep	_	_	35.509998	35.790001	Sonia_Branca-Rosoff
+7	rentable	rentable	ADJ	ADJ	_	6	dep	_	_	35.799999	36.529999	Sonia_Branca-Rosoff
+8	aussi	aussi	ADV	ADV	_	9	dep	_	_	36.540001	36.770000	Sonia_Branca-Rosoff
+9	de	de	PRE	PRE	_	3	dep	_	_	36.779999	36.869999	Sonia_Branca-Rosoff
+10	prendre	prendre	VNF	VNF	_	9	dep	_	_	36.880001	37.110001	Sonia_Branca-Rosoff
+11	la	le	DET	DET	_	12	spe	_	_	37.119999	37.169998	Sonia_Branca-Rosoff
+12	voiture	voiture	NOM	NOM	_	10	dep	_	_	37.180000	37.689999	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-17
+# text = c'est ça va plus vite qu'
+1	c'	ce	CLS	CLS	_	2	subj	_	_	37.919998	38.040001	Sonia_Branca-Rosoff
+2	est	être	VRB	VRB	_	0	root	_	_	38.049999	38.279999	Sonia_Branca-Rosoff
+3	ça	ça	PRO	PRO	_	4	subj	_	_	38.290001	38.439999	Sonia_Branca-Rosoff
+4	va	aller	VRB	VRB	_	2	dep	_	_	38.450001	38.650002	Sonia_Branca-Rosoff
+5	plus	plus	ADN	ADN	_	6	dep	_	_	38.660000	38.840000	Sonia_Branca-Rosoff
+6	vite	vite	ADV	ADV	_	4	dep	_	_	38.849998	39.099998	Sonia_Branca-Rosoff
+7	qu'	que	CSU	CSU	_	4	dep	_	_	39.110001	39.150002	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-18
+# text = à pieds
+1	à	à	PRE	PRE	_	0	root	_	_	39.160000	39.220001	Sonia_Branca-Rosoff
+2	pieds	pied	NOM	NOM	_	1	dep	_	_	39.380001	39.500000	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-19
+# text = sur le coup je me dis je vais mettre cinq minutes
+1	sur	sur	PRE	PRE	_	6	periph	_	_	39.880001	40.130001	Anita_Musso
+2	le	le	DET	DET	_	3	spe	_	_	40.139999	40.310001	Anita_Musso
+3	coup	coup	NOM	NOM	_	1	dep	_	_	40.320000	40.740002	Anita_Musso
+4	je	je	CLS	CLS	_	6	subj	_	_	41.040001	41.240002	Anita_Musso
+5	me	me	CLI	CLI	_	6	dep	_	_	41.250000	41.369999	Anita_Musso
+6	dis	dire	VRB	VRB	_	0	root	_	_	41.380001	41.529999	Anita_Musso
+7	je	je	CLS	CLS	_	8	subj	_	_	41.540001	41.639999	Anita_Musso
+8	vais	aller	VRB	VRB	_	6	dep	_	_	41.650002	41.750000	Anita_Musso
+9	mettre	mettre	VNF	VNF	_	8	dep	_	_	41.759998	41.980000	Anita_Musso
+10	cinq	cinq	NUM	NUM	_	11	spe	_	_	41.990002	42.299999	Anita_Musso
+11	minutes	minute	NOM	NOM	_	9	dep	_	_	42.310001	42.880001	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-20
+# text = mais
+1	mais	mais	COO	COO	_	0	root	_	_	43.049999	43.509998	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-21
+# text = le temps de me garer de tourner de faire des ronds pour pas mal me garer
+1	le	le	DET	DET	_	2	spe	_	_	43.520000	43.750000	Anita_Musso
+2	temps	temps	NOM	NOM	_	0	root	_	_	43.759998	44.000000	Anita_Musso
+3	de	de	PRE	PRE	_	2	dep	_	_	44.009998	44.169998	Anita_Musso
+4	me	me	CLI	CLI	_	5	dep	_	_	44.180000	44.220001	Anita_Musso
+5	garer	garer	VNF	VNF	_	3	dep	_	_	44.230000	44.669998	Anita_Musso
+6	de	de	PRE	PRE	_	5	dep	_	_	44.680000	44.939999	Anita_Musso
+7	tourner	se tourner	VNF	VNF	_	6	dep	_	_	44.950001	45.560001	Anita_Musso
+8	de	de	PRE	PRE	_	7	dep	_	_	45.570000	45.700001	Anita_Musso
+9	faire	faire	VNF	VNF	_	8	dep	_	_	45.709999	46.080002	Anita_Musso
+10	des	de	PRE	PRE	_	9	dep	_	_	46.090000	46.290001	Anita_Musso
+11	ronds	rond	NOM	NOM	_	10	dep	_	_	46.299999	46.619999	Anita_Musso
+12	pour	pour	PRE	PRE	_	9	dep	_	_	46.630001	46.820000	Anita_Musso
+13	pas	pas	ADN	ADN	_	14	dep	_	_	46.970001	47.150002	Anita_Musso
+14	mal	mal	ADV	ADV	_	12	dep	_	_	47.160000	47.369999	Anita_Musso
+15	me	me	CLI	CLI	_	16	dep	_	_	47.380001	47.480000	Anita_Musso
+16	garer	garer	VNF	VNF	_	9	dep	_	_	47.490002	47.880001	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-22
+# text = tout je sais que je suis perdante
+1	tout	tout	ADV	ADV	_	3	periph	_	_	47.919998	48.150002	Anita_Musso
+2	je	je	CLS	CLS	_	3	subj	_	_	48.160000	48.330002	Anita_Musso
+3	sais	savoir	VRB	VRB	_	0	root	_	_	48.340000	48.639999	Anita_Musso
+4	que	que	CSU	CSU	_	3	dep	_	_	48.650002	48.669998	Anita_Musso
+5	je	je	CLS	CLS	_	6	subj	_	_	48.680000	48.810001	Anita_Musso
+6	suis	être	VRB	VRB	_	4	dep	_	_	48.820000	49.020000	Anita_Musso
+7	perdante	perdant	NOM	NOM	_	6	dep	_	_	49.029999	49.369999	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-23
+# text = je le sais que je suis perdante
+1	je	je	CLS	CLS	_	3	subj	_	_	49.930000	50.119999	Anita_Musso
+2	le	le	CLI	CLI	_	3	dep	_	_	50.130001	50.200001	Anita_Musso
+3	sais	savoir	VRB	VRB	_	0	root	_	_	50.209999	50.410000	Anita_Musso
+4	que	que	CSU	CSU	_	3	dep	_	_	50.419998	50.439999	Anita_Musso
+5	je	je	CLS	CLS	_	6	subj	_	_	50.450001	50.590000	Anita_Musso
+6	suis	être	VRB	VRB	_	4	dep	_	_	50.599998	50.820000	Anita_Musso
+7	perdante	perdant	NOM	NOM	_	6	dep	_	_	50.830002	51.049999	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-24
+# text = et pourtant en en fait vous êtes maintenant perdante
+1	et	et	COO	COO	_	7	mark	_	_	50.049999	50.410000	Sonia_Branca-Rosoff
+2	pourtant	pourtant	ADV	ADV	_	7	periph	_	_	50.419998	51.009998	Sonia_Branca-Rosoff
+3	en	en	PRE	PRE	_	7	periph	_	_	51.020000	51.049999	Sonia_Branca-Rosoff
+4	en	en	PRE	PRE	_	3	para	_	_	51.110001	51.259998	Sonia_Branca-Rosoff
+5	fait	fait	NOM	NOM	_	4	dep	_	_	51.270000	51.439999	Sonia_Branca-Rosoff
+6	vous	vous	CLS	CLS	_	7	subj	_	_	51.610001	51.779999	Sonia_Branca-Rosoff
+7	êtes	être	VRB	VRB	_	0	root	_	_	51.790001	51.869999	Sonia_Branca-Rosoff
+8	maintenant	maintenant	ADV	ADV	_	7	dep	_	_	51.990002	52.270000	Sonia_Branca-Rosoff
+9	perdante	perdant	NOM	NOM	_	7	dep	_	_	52.369999	52.930000	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-25
+# text = mais
+1	mais	mais	COO	COO	_	0	root	_	_	52.970001	53.180000	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-26
+# text = quand même il y a
+1	quand	quand	CSU	CSU	_	0	root	_	_	53.189999	53.330002	Sonia_Branca-Rosoff
+2	même	même	ADV	ADV	_	5	periph	_	_	53.590000	53.700001	Sonia_Branca-Rosoff
+3	il	il	CLS	CLS	_	5	subj	_	_	53.709999	53.779999	Sonia_Branca-Rosoff
+4	y	y	CLI	CLI	_	5	dep	_	_	53.790001	53.849998	Sonia_Branca-Rosoff
+5	a	avoir	VRB	VRB	_	1	dep	_	_	53.860001	53.919998	Sonia_Branca-Rosoff
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-27
+# text = le
+1	le	le	DET	DET	_	0	root	_	_	54.020000	54.099998	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-28
+# text = il y a le oui il y a un côté de facilité de passer devant sa voiture et de se dire bon ben
+1	il	il	CLS	CLS	_	3	subj	_	_	54.630001	54.680000	Anita_Musso
+2	y	y	CLI	CLI	_	3	dep	_	_	54.689999	54.730000	Anita_Musso
+3	a	avoir	VRB	VRB	_	0	root	_	_	54.740002	54.779999	Anita_Musso
+4	le	le	DET	DET	_	3	dep	_	_	54.790001	55.119999	Anita_Musso
+5	oui	oui	INT	INT	_	4	dm	_	_	55.459999	55.759998	Anita_Musso
+6	il	il	CLS	CLS	_	8	subj	_	_	55.770000	55.790001	Anita_Musso
+7	y	y	CLI	CLI	_	8	dep	_	_	55.799999	55.880001	Anita_Musso
+8	a	avoir	VRB	VRB	_	3	para	_	_	55.889999	55.910000	Anita_Musso
+9	un	un	DET	DET	_	10	spe	_	_	55.980000	56.029999	Anita_Musso
+10	côté	côté	NOM	NOM	_	8	dep	_	_	56.040001	56.439999	Anita_Musso
+11	de	de	PRE	PRE	_	10	dep	_	_	56.450001	56.580002	Anita_Musso
+12	facilité	facilité	NOM	NOM	_	11	dep	_	_	56.590000	57.360001	Anita_Musso
+13	de	de	PRE	PRE	_	12	dep	_	_	57.369999	57.410000	Anita_Musso
+14	passer	passer	VNF	VNF	_	13	dep	_	_	57.419998	57.720001	Anita_Musso
+15	devant	devant	PRE	PRE	_	14	dep	_	_	57.730000	57.869999	Anita_Musso
+16	sa	son	DET	DET	_	17	spe	_	_	57.880001	58.020000	Anita_Musso
+17	voiture	voiture	NOM	NOM	_	15	dep	_	_	58.029999	58.480000	Anita_Musso
+18	et	et	COO	COO	_	19	mark	_	_	58.490002	58.560001	Anita_Musso
+19	de	de	PRE	PRE	_	14	para	_	_	58.570000	58.700001	Anita_Musso
+20	se	se	CLI	CLI	_	21	dep	_	_	58.709999	58.779999	Anita_Musso
+21	dire	dire	VNF	VNF	_	19	dep	_	_	58.790001	59.020000	Anita_Musso
+22	bon ben	bon ben	INT	INT	_	21	dm	_	_	59.029999	59.279999	Anita_Musso
+
+# sent_id = cefc-cfpp-Anita_MUSSO_F_46_11e-29
+# text = je la prends
+1	je	je	CLS	CLS	_	3	subj	_	_	59.290001	59.419998	Anita_Musso
+2	la	le	CLI	CLI	_	3	dep	_	_	59.430000	59.540001	Anita_Musso
+3	prends	prendre	VRB	VRB	_	0	root	_	_	59.549999	60.009998	Anita_Musso
