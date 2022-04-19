@@ -236,11 +236,11 @@ class TierParams {
 	}
 	boolean isDoDisplay(String s, int level) {
 		if (doDisplay.size() < 1) return true;
-		return testDisplay(s,doDisplay, level);
+		return testDisplay(s, doDisplay, level);
 	}
 	boolean isDontDisplay(String s, int level) {
 		if (dontDisplay.size() < 1) return false;
-		return testDisplay(s,dontDisplay, level);
+		return testDisplay(s, dontDisplay, level);
 	}
 	private boolean testDisplay(String s, Set<String> style, int level) {
 		if (level >= 3) {
