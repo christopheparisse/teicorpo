@@ -179,10 +179,10 @@ public class TeiToPartition {
 				annot.id = spid;
 			else
 				annot.id = "x" + idIncr++;
-			System.out.printf("%d %d %s %s %s %s {%s} %s %n", z, span.getNodeType(), typeSG, id, name, span.getTagName(), annot.getContent(), annot.id);
+			// System.out.printf("%d %d %s %s %s %s {%s} %s %n", z, span.getNodeType(), typeSG, id, name, span.getTagName(), annot.getContent(), annot.id);
 			// if (span.hasAttribute("target")){
 			if (!LgqType.isTimeType(getLgqConstraint(tierInfos, typeSG))) {
-				System.out.printf("%s is ref%n", typeSG);
+				// System.out.printf("%s is ref%n", typeSG);
 				annot.timereftype = "ref";
 				String tg = span.getAttribute("target");
 				if (!tg.isEmpty())
@@ -206,7 +206,7 @@ public class TeiToPartition {
 				// System.out.printf("ref %s (%s) %n", annot.link,
 				// annot.previous);
 			} else {
-				System.out.printf("%s is time%n", typeSG);
+				// System.out.printf("%s is time%n", typeSG);
 				annot.timereftype = "time";
 				NamedNodeMap nnn = span.getAttributes();
 				/*

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.ortolang.teicorpo.TestFromClan
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.525 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.657 sec
