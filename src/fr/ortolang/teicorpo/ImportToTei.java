@@ -400,9 +400,9 @@ public abstract class ImportToTei extends GenericMain {
 		if (tiersNames != null) {
 			for (String t : tiersNames) {
 				if (optionsTEI.target.equals("dinlang") && t.equals(Utils.languagingScript)) {
-					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "communication");
+					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "prod-audible");
 				} else if (optionsTEI.target.equals("dinlang") && t.equals("act")) {
-					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "action");
+					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "info");
 				} else {
 					System.err.printf("addTempl: %s%n", t);
 					insertTemplate(doc, t, "Symbolic_Association", "annotationBlock");
