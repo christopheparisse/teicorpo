@@ -419,7 +419,7 @@ public class TeiToElan extends GenericMain {
 		for (int j = 0; j < ttp.tierInfos.size(); j++) {
 			TierInfo ti = (TierInfo) ttp.tierInfos.get(j);
 			// if the type does not exist, and it is not already in the template
-			if (!namesLgqTypes.contains(ti.linguistType.lgq_type_id) && annot_doc.getOwnerDocument().getElementById(ti.linguistType.lgq_type_id) == null) {
+			if (!namesLgqTypes.contains(ti.linguistType.lgq_type_id) && getElementByAttribute(annot_doc.getOwnerDocument(), "LINGUISTIC_TYPE", "LINGUISTIC_TYPE_ID", ti.linguistType.lgq_type_id) == null) {
 				System.out.printf("Creating linguistic type: %s for %s%n", ti.linguistType.lgq_type_id, ti.tier_id);
 				namesLgqTypes.add(ti.linguistType.lgq_type_id);
 				Element lgqType = elanDoc.createElement("LINGUISTIC_TYPE");
@@ -437,6 +437,16 @@ public class TeiToElan extends GenericMain {
 				annot_doc.appendChild(lgqType);
 			}
 		}
+	}
+
+	private Element getElementByAttribute(Document ownerDocument, String tagname, String attrname, String attrcontent) {
+		NodeList nl = ownerDocument.getElementsByTagName(tagname);
+		for (int i = 0; i < nl.getLength(); i++) {
+			Node n = nl.item(i);
+			Element e = (Element) nl.item(i);
+			if (e.getAttribute(attrname).equals(attrcontent)) return e;
+		}
+		return null;
 	}
 
 	// Elements constraint : always the same values in Elan files
