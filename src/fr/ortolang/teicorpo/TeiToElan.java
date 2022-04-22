@@ -420,6 +420,7 @@ public class TeiToElan extends GenericMain {
 			TierInfo ti = (TierInfo) ttp.tierInfos.get(j);
 			// if the type does not exist, and it is not already in the template
 			if (!namesLgqTypes.contains(ti.linguistType.lgq_type_id) && annot_doc.getOwnerDocument().getElementById(ti.linguistType.lgq_type_id) == null) {
+				System.out.printf("Creating linguistic type: %s for %s%n", ti.linguistType.lgq_type_id, ti.tier_id);
 				namesLgqTypes.add(ti.linguistType.lgq_type_id);
 				Element lgqType = elanDoc.createElement("LINGUISTIC_TYPE");
 				lgqType.setAttribute("LINGUISTIC_TYPE_ID", ti.linguistType.lgq_type_id);

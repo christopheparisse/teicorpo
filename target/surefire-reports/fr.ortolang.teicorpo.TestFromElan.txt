@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: fr.ortolang.teicorpo.TestFromElan
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec <<< FAILURE!
-test(fr.ortolang.teicorpo.TestFromElan)  Time elapsed: 0.075 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec <<< FAILURE!
+test(fr.ortolang.teicorpo.TestFromElan)  Time elapsed: 0.072 sec  <<< FAILURE!
 java.lang.AssertionError: The files differ!
 	at org.junit.Assert.fail(Assert.java:89)
 	at fr.ortolang.teicorpo.RunTeiCorpo.runcpx(RunTeiCorpo.java:39)

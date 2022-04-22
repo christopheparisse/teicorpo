@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromTranscriber" time="0.11" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromTranscriber" time="0.123" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-86"/>
@@ -57,7 +57,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="fr.ortolang.teicorpo.TestFromTranscriber" name="test" time="0.11">
+  <testcase classname="fr.ortolang.teicorpo.TestFromTranscriber" name="test" time="0.123">
     <failure message="The files differ!" type="java.lang.AssertionError">java.lang.AssertionError: The files differ!
 	at org.junit.Assert.fail(Assert.java:89)
 	at fr.ortolang.teicorpo.RunTeiCorpo.runcpx(RunTeiCorpo.java:39)

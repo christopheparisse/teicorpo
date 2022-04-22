@@ -59,6 +59,29 @@ public class Utils {
 		return s.replaceAll("\\s+", " ").trim();
 	}
 
+	public enum OS {
+		WINDOWS, LINUX, MAC, SOLARIS
+	};// Operating systems.
+
+	private static OS os = null;
+
+	public static OS getOS() {
+		if (os == null) {
+			String operSys = System.getProperty("os.name").toLowerCase();
+			if (operSys.contains("win")) {
+				os = OS.WINDOWS;
+			} else if (operSys.contains("nix") || operSys.contains("nux")
+					|| operSys.contains("aix")) {
+				os = OS.LINUX;
+			} else if (operSys.contains("mac")) {
+				os = OS.MAC;
+			} else if (operSys.contains("sunos")) {
+				os = OS.SOLARIS;
+			}
+		}
+		return os;
+	}
+
 	public static String cleanStringPlusEntities(String s) {
 		return s.replaceAll(" {2,}", " ")
 				.replaceAll("\n", "").trim()
@@ -471,7 +494,7 @@ public class Utils {
 	}
 
 	public static void createFileTransformer(Document domDoc, String outputFileName) {
-		Result resultat = new StreamResult(outputFileName);
+		StreamResult resultat = new StreamResult(outputFileName);
 		try {
 			// Configuration du transformer
 			TransformerFactory fabrique2 = TransformerFactory.newInstance();
@@ -484,6 +507,11 @@ public class Utils {
 			// Transformation
 			Source source = new DOMSource(domDoc);
 			transformer.transform(source, resultat);
+			// resultat.getOutputStream().close();
+			if (Utils.getOS() == OS.WINDOWS) {
+				File fof = new File(outputFileName);
+				EOLUtils.convertToUnixEOL(fof);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.exit(1);
@@ -523,7 +551,24 @@ public class Utils {
 			System.err.println(e.getMessage());
 		}
 	}
-
+/*
+	public static void normalizeLF(String filename) {
+		String fileString;
+//..
+//read from the file
+//..
+//for windows
+		fileString = fileString.replaceAll("\\r\\n", "\n");
+		fileString = fileString.replaceAll("\\r", "\n");
+//..
+//write to file in binary mode.. something like:
+		DataOutputStream os = new DataOutputStream(new FileOutputStream("fname.txt"));
+		os.write(fileString.getBytes());
+//..
+//send file
+//..
+	}
+*/
 	public static void createFileDtd(Document domDoc, String outputFileName, String dtd) {
 		Source source = new DOMSource(domDoc);
 		Result resultat = new StreamResult(outputFileName);

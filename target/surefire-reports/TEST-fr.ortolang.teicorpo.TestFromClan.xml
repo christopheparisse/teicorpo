@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromClan" time="0.175" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromClan" time="0.185" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-86"/>
@@ -57,7 +57,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="fr.ortolang.teicorpo.TestFromClan" name="test" time="0.175">
+  <testcase classname="fr.ortolang.teicorpo.TestFromClan" name="test" time="0.185">
     <failure message="The files differ!" type="java.lang.AssertionError">java.lang.AssertionError: The files differ!
 	at org.junit.Assert.fail(Assert.java:89)
 	at fr.ortolang.teicorpo.RunTeiCorpo.runcpx(RunTeiCorpo.java:39)
@@ -102,13 +102,13 @@ Working Directory = /Users/cp/devlopt/teicorpo
 Clan to TEI
 File: /Users/cp/devlopt/teicorpo/test/data/sources/clan/TestClan1.cha --&gt; /Users/cp/devlopt/teicorpo/test/data/dest/clan/TestClan1.cha.tei_corpo.xml
 Clan: source: /Users/cp/devlopt/teicorpo/test/data/sources/clan/TestClan1.cha
-Clan: target: /var/folders/sk/v5gzr4dx7mnfqfggq4v7bs8r0000gn/T/teitempfile6580323192554360242.tei_corpo.xml
+Clan: target: /var/folders/sk/v5gzr4dx7mnfqfggq4v7bs8r0000gn/T/teitempfile8527523921860806359.tei_corpo.xml
 Moved to: /Users/cp/devlopt/teicorpo/test/data/dest/clan/TestClan1.cha.tei_corpo.xml
 Comparing files:
 	/Users/cp/devlopt/teicorpo/test/data/dest/clan/TestClan1.cha.tei_corpo.xml
 and	/Users/cp/devlopt/teicorpo/test/data/dest/clan/TestClan1.cha.tei_corpo.xml.correct
 </system-out>
-    <system-err>ClanToTei /Users/cp/devlopt/teicorpo/test/data/sources/clan/TestClan1.cha -- fr.ortolang.teicorpo.TierParams@1460a8c0 
+    <system-err>ClanToTei /Users/cp/devlopt/teicorpo/test/data/sources/clan/TestClan1.cha -- fr.ortolang.teicorpo.TierParams@4f638935 
 fmt: .cha
 dtd: FALSE
 addTempl: mod

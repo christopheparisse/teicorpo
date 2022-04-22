@@ -314,16 +314,27 @@ public class TeiToPartition {
 						}
 					}
 
-					//System.out.printf("QQQ: %s%n", ti.linguistType.toString());
+					System.out.printf("QQQ: (%s) %s%n", ti.tier_id, ti.linguistType.toString());
 
 					if (Utils.isNotEmptyOrNull(ti.linguistType.constraint)) {
 						// if there is a constraint, respect it
-						if (Utils.isEmptyOrNull(ti.linguistType.lgq_type_id))
-							ti.linguistType.lgq_type_id = ti.tier_id == null ? ti.linguistType.constraint : ti.tier_id; // creates a new name
+						if (Utils.isEmptyOrNull(ti.linguistType.lgq_type_id)) {
+							if (optionsOutput.target.equals("dinlang") && Utils.isEmptyOrNull(ti.linguistType.lgq_type_id)) {
+								ti.linguistType.lgq_type_id = "lng-aud";
+								ti.linguistType.constraint = "";
+							} else {
+								ti.linguistType.lgq_type_id = ti.tier_id == null ? ti.linguistType.constraint : ti.tier_id; // creates a new name
+							}
+						}
 					} else {
-						if (Utils.isEmptyOrNull(ti.linguistType.lgq_type_id) || ti.linguistType.lgq_type_id.equals("-")) ti.linguistType.lgq_type_id = LgqType.DEFAULT_LING_TYPE; // no ling type
-						ti.linguistType.constraint = ""; // no ling type, the ling are
-						// another option is that the ling are named as the tiers are.
+						if (optionsOutput.target.equals("dinlang") && Utils.isEmptyOrNull(ti.linguistType.lgq_type_id)) {
+							ti.linguistType.lgq_type_id = "lng-aud";
+							ti.linguistType.constraint = "";
+						} else {
+							if (Utils.isEmptyOrNull(ti.linguistType.lgq_type_id) || ti.linguistType.lgq_type_id.equals("-")) ti.linguistType.lgq_type_id = LgqType.DEFAULT_LING_TYPE; // no ling type
+							ti.linguistType.constraint = ""; // no ling type, the ling are
+							// another option is that the ling are named as the tiers are.
+						}
 					}
 
 					//System.out.printf("QQQ2: %s%n", ti.linguistType.toString());
