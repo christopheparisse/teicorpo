@@ -3,3 +3,15 @@
 
 # These files are checked out using CRLF locally
 *.bat eol=crlf
+
+# These files should be with LF
+*.xml eol=lf
+*.eaf eol=lf
+*.cha eol=lf
+*.trs eol=lf
+*.textgrid eol=lf
+*.Textgrid eol=lf
+*.orfeo eol=lf
+*.correct eol=lf
+*.cmdi eol=lf
+*.psfx eol=lf
