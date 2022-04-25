@@ -52,7 +52,7 @@
             <sourceDesc>
                 <recordingStmt>
                     <recording>
-                        <media mimeType="audio/x-wav" url="/Users/cp/devlopt/teicorpo/FOR_DIA.wav"/>
+                        <media mimeType="audio/x-wav" url="FOR_DIA.wav"/>
                     </recording>
                 </recordingStmt>
             </sourceDesc>
@@ -108,10 +108,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">/Users/cp/devlopt/teicorpo/test/data/sources/praat/</note>
-                    <note type="filename">FOR_DIA.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>/Users/cp/devlopt/teicorpo/test/data/sources/praat/FOR_DIA.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

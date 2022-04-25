@@ -133,7 +133,7 @@ public class ClanToTei extends ImportToTei {
 	// IOException{
 	public void conversion(String extension) throws DOMException, IOException {
 		buildTEI(chatFN);
-		buildHeader("Fichier TEI obtenu à partir du fichier CLAN " + chatFN, false);
+		buildHeader("Fichier TEI obtenu à partir du fichier CLAN " + Utils.lastname(chatFN), false);
 		setFileDescComplement();
 		buildText(extension);
 		setDurDate();
@@ -1278,7 +1278,7 @@ public class ClanToTei extends ImportToTei {
 			e.printStackTrace();
 			System.exit(1);
 		}
-		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
+		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output), options);
 		Utils.createFile(docTEI, output);
 	}
 

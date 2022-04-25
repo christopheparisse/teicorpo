@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="TEI_CORPO Converter" DATE="2018-09-10" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///Users/amina-old/Documents/Recherche/ANR/Corpus Amina/Amina CORPUS Final/PRAAT Amina/Seven Girls/KAB_AM_NARR_01.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./KAB_AM_NARR_01.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="KAB_AM_NARR_01.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./KAB_AM_NARR_01.wav"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:5c5dc27b-4d79-48da-9027-81916048492d</PROPERTY>
         <PROPERTY NAME="lastUsedAnnotationId">17323</PROPERTY>
     </HEADER>

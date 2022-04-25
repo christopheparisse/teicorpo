@@ -202,7 +202,7 @@ public class ImportConllToTei extends ImportToTei {
 			e.printStackTrace();
 			System.exit(1);
 		}
-		TeiDocument.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output));
+		TeiDocument.setDocumentName(docTEI, options.test ? "testfile" : Utils.lastname(output), options);
 		Utils.createFile(docTEI, output);
 	}
 

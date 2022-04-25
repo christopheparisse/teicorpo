@@ -167,7 +167,7 @@ public class TeiEdit extends GenericMain {
 			}
 			if (cmd.startsWith("docname=")) {
 				String name = cmd.substring(8);
-				TeiDocument.setDocumentName(teiDoc, name);
+				TeiDocument.setDocumentName(teiDoc, name, optionsOutput);
 			}
 			if (cmd.startsWith("access=")) {
 				String arg = cmd.substring(7);
@@ -178,7 +178,7 @@ public class TeiEdit extends GenericMain {
 				}
 				String access = arg.substring(0, p);
 				String name = arg.substring(p+1);
-				TeiDocument.setDocumentAccess(teiDoc, access, name);
+				TeiDocument.setDocumentAccess(teiDoc, access, name, optionsOutput);
 			}
 			if (cmd.startsWith("chgtime=")) {
 				String param = cmd.substring(8);

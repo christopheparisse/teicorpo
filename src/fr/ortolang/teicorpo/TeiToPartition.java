@@ -314,7 +314,7 @@ public class TeiToPartition {
 						}
 					}
 
-					System.out.printf("QQQ: (%s) %s%n", ti.tier_id, ti.linguistType.toString());
+					// System.out.printf("QQQ: (%s) %s%n", ti.tier_id, ti.linguistType.toString());
 
 					if (Utils.isNotEmptyOrNull(ti.linguistType.constraint)) {
 						// if there is a constraint, respect it

@@ -208,7 +208,10 @@ public class HT_ToTei {
 		Element recording = (Element) docTEI.getElementsByTagName("recording").item(0);
 		for (Media m : ht.metaInf.medias) {
 			Element media = docTEI.createElement("media");
-			media.setAttribute("url", m.url);
+			if (options.test)
+				media.setAttribute("url", Utils.basename(m.url) + Utils.extname(m.url));
+			else
+				media.setAttribute("url", m.url);
 			if (!m.type.isEmpty())
 				media.setAttribute("mimeType", m.type);
 			else

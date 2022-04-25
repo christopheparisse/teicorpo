@@ -873,7 +873,7 @@ public class TranscriberToTei extends ImportToTei {
 	public void mainProcess(String input, String output, TierParams options) {
 		// System.out.println("Lecture de " + input);
 		transform(new File(input), options);
-		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output));
+		TeiDocument.setDocumentName(docTEI, options.outputTEIName != null ? options.outputTEIName : Utils.lastname(output), options);
 		Utils.createFile(docTEI, output);
 		// System.out.println("New file created " + output);
 	}

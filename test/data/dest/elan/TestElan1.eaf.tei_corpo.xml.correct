@@ -383,8 +383,8 @@
             <sourceDesc>
                 <recordingStmt>
                     <recording>
-                        <media mimeType="video/quicktime" url="file:///corpusformat/elan/6-Lindsay_and_Brian.mov"/>
-                        <media mimeType="audio/x-wav" url="file:///corpusformat/elan/6-Lindsay_and_Brian.wav"/>
+                        <media mimeType="video/quicktime" url="6-Lindsay_and_Brian.mov"/>
+                        <media mimeType="audio/x-wav" url="6-Lindsay_and_Brian.wav"/>
                     </recording>
                 </recordingStmt>
             </sourceDesc>
@@ -782,10 +782,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">C:\devlopt\teicorpo\test\data\sources\elan/</note>
-                    <note type="filename">TestElan1.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>C:\devlopt\teicorpo\test\data\sources\elan\TestElan1.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

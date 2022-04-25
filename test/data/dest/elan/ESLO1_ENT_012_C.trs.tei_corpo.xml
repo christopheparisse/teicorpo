@@ -203,10 +203,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">C:\devlopt\teicorpo\test\data\sources\elan/</note>
-                    <note type="filename">ESLO1_ENT_012_C.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>C:\devlopt\teicorpo\test\data\sources\elan\ESLO1_ENT_012_C.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

@@ -247,7 +247,10 @@ public abstract class ImportToTei extends GenericMain {
 		recording.appendChild(media);
 		if (optionsTEI.mediaName != null) {
 			media.setAttribute("mimeType", Utils.findMimeType(optionsTEI.mediaName));
-			media.setAttribute("url", optionsTEI.mediaName);
+			if (optionsTEI.test)
+				media.setAttribute("url", Utils.basename(optionsTEI.mediaName) + Utils.extname(optionsTEI.mediaName));
+			else
+				media.setAttribute("url", optionsTEI.mediaName);
 		}
 	}
 

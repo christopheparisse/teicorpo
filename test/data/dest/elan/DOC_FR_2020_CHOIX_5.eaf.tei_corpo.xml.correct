@@ -64,7 +64,7 @@
             <sourceDesc>
                 <recordingStmt>
                     <recording>
-                        <media mimeType="unknown" url="file:///E:/博士课程/DOC语录库/DOC/DOC_FR_2020_CHOIX/DOC_FR_2020_CHOIX_5.audio.m4a"/>
+                        <media mimeType="unknown" url="DOC_FR_2020_CHOIX_5.audio.m4a"/>
                     </recording>
                 </recordingStmt>
             </sourceDesc>
@@ -124,10 +124,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">C:\devlopt\teicorpo\test\data\sources\elan/</note>
-                    <note type="filename">DOC_FR_2020_CHOIX_5.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>C:\devlopt\teicorpo\test\data\sources\elan\DOC_FR_2020_CHOIX_5.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

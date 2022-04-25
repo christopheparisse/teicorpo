@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="TEI_CORPO Converter" DATE="2018-09-10" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///corpusformat/elan/6-Lindsay_and_Brian.mov" MIME_TYPE="video/quicktime" RELATIVE_MEDIA_URL="./6-Lindsay_and_Brian.mov"/>
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///corpusformat/elan/6-Lindsay_and_Brian.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./6-Lindsay_and_Brian.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="6-Lindsay_and_Brian.mov" MIME_TYPE="video/quicktime" RELATIVE_MEDIA_URL="./6-Lindsay_and_Brian.mov"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="6-Lindsay_and_Brian.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./6-Lindsay_and_Brian.wav"/>
         <PROPERTY NAME="@Time Duration: ">
             18:35
         </PROPERTY>

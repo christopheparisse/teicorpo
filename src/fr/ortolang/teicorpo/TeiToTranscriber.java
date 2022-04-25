@@ -106,12 +106,13 @@ public class TeiToTranscriber extends TeiConverter {
 		else
 			setAttr(trans, "audio_filename", "", false);
 		setAttr(trans, "scribe", tf.transInfo.transcriber, false);
-		if (tf.language == null || tf.language.length <= 0) {
-			tf.language = new String[1];
+		// takes language from root information
+		String lg = tf.root.getAttribute("xml:lang");
+		if (Utils.isNotEmptyOrNull(lg)) {
+			setAttr(trans, "xml:lang", lg, false);
+		} else {
 			Locale currentLocale = Locale.getDefault();
 			setAttr(trans, "xml:lang", currentLocale.getLanguage(), false);
-		} else {
-			setAttr(trans, "xml:lang", tf.language[0], false);
 		}
 
 		// check if tf.transInfo.version is an int
