@@ -72,7 +72,7 @@
         <String>SD</String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>1</Int>
+        <Int>2</Int>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="fr.ortolang.teicorpo.TestFromElan" time="0.932" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="fr.ortolang.teicorpo.TestFromElan" time="0.953" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-86"/>
@@ -57,5 +57,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="fr.ortolang.teicorpo.TestFromElan" name="test" time="0.932"/>
+  <testcase classname="fr.ortolang.teicorpo.TestFromElan" name="test" time="0.953"/>
 </testsuite>

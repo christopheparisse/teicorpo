@@ -105,10 +105,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">C:\devlopt\teicorpo\test\data\sources\transcriber/</note>
-                    <note type="filename">DOC_FR_2020_CHOIX_5.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>C:\devlopt\teicorpo\test\data\sources\transcriber\DOC_FR_2020_CHOIX_5.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

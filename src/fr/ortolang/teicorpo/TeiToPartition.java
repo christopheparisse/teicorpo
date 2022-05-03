@@ -178,7 +178,7 @@ public class TeiToPartition {
 			if (!spid.isEmpty())
 				annot.id = spid;
 			else
-				annot.id = "x" + idIncr++;
+				annot.id = id; // "x" + idIncr++;
 			// System.out.printf("%d %d %s %s %s %s {%s} %s %n", z, span.getNodeType(), typeSG, id, name, span.getTagName(), annot.getContent(), annot.id);
 			// if (span.hasAttribute("target")){
 			if (!LgqType.isTimeType(getLgqConstraint(tierInfos, typeSG))) {

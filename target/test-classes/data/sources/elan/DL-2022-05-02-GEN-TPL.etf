@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2022-05-02T15:26:14+01:00"
+    FORMAT="3.0" VERSION="3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds"/>
+    <TIME_ORDER/>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Rmq"/>
+    <TIER LINGUISTIC_TYPE_REF="LOC-SIGN" PARTICIPANT="mère" TIER_ID="M"/>
+    <TIER LINGUISTIC_TYPE_REF="act-aud" PARTICIPANT="mère" TIER_ID="act-aud-M"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-aud" PARTICIPANT="mère" TIER_ID="lng-aud-M"/>
+    <TIER LINGUISTIC_TYPE_REF="act-vis" PARTICIPANT="mère" TIER_ID="act-vis-M"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-vis" PARTICIPANT="mère" TIER_ID="lng-vis-M"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-aud-M"
+        PARTICIPANT="mère" TIER_ID="interloc-lng-aud-M"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-vis-M"
+        PARTICIPANT="mère" TIER_ID="interloc-lng-vis-M"/>
+    <TIER LINGUISTIC_TYPE_REF="LOC-SIGN" PARTICIPANT="père" TIER_ID="P"/>
+    <TIER LINGUISTIC_TYPE_REF="act-aud" PARTICIPANT="père" TIER_ID="act-aud-P"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-aud" PARTICIPANT="père" TIER_ID="lng-aud-P"/>
+    <TIER LINGUISTIC_TYPE_REF="act-vis" PARTICIPANT="père" TIER_ID="act-vis-P"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-vis" PARTICIPANT="père" TIER_ID="lng-vis-P"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-aud-P"
+        PARTICIPANT="père" TIER_ID="interloc-lng-aud-P"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-vis-P"
+        PARTICIPANT="père" TIER_ID="interloc-lng-vis-P"/>
+    <TIER LINGUISTIC_TYPE_REF="LOC-SIGN" PARTICIPANT="aîné" TIER_ID="Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="act-aud" PARTICIPANT="aîné" TIER_ID="act-aud-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-aud" PARTICIPANT="aîné" TIER_ID="lng-aud-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="act-vis" PARTICIPANT="aîné" TIER_ID="act-vis-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-vis" PARTICIPANT="aîné" TIER_ID="lng-vis-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-aud-Ea"
+        PARTICIPANT="aîné" TIER_ID="interloc-lng-aud-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-vis-Ea"
+        PARTICIPANT="aîné" TIER_ID="interloc-lng-vis-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="LOC-SIGN" PARTICIPANT="deuxième" TIER_ID="Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="act-aud" PARTICIPANT="deuxième" TIER_ID="act-aud-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-aud" PARTICIPANT="deuxième" TIER_ID="lng-aud-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="act-vis" PARTICIPANT="deuxième" TIER_ID="act-vis-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-vis" PARTICIPANT="deuxième" TIER_ID="lng-vis-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-aud-Eb"
+        PARTICIPANT="deuxième" TIER_ID="interloc-lng-aud-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-vis-Eb"
+        PARTICIPANT="deuxième" TIER_ID="interloc-lng-vis-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="LOC-SIGN" PARTICIPANT="troisième" TIER_ID="Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="act-aud" PARTICIPANT="troisième" TIER_ID="act-aud-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-aud" PARTICIPANT="troisième" TIER_ID="lng-aud-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="act-vis" PARTICIPANT="troisième" TIER_ID="act-vis-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="lng-vis" PARTICIPANT="troisième" TIER_ID="lng-vis-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-aud-Ec"
+        PARTICIPANT="troisième" TIER_ID="interloc-lng-aud-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="lng-vis-Ec"
+        PARTICIPANT="troisième" TIER_ID="interloc-lng-vis-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="PF" TIER_ID="part1"/>
+    <TIER LINGUISTIC_TYPE_REF="PF" TIER_ID="part2"/>
+    <TIER LINGUISTIC_TYPE_REF="thème" TIER_ID="thème1"/>
+    <TIER LINGUISTIC_TYPE_REF="thème" TIER_ID="thème2"/>
+    <TIER LINGUISTIC_TYPE_REF="PRES" TIER_ID="PRES-aud"/>
+    <TIER LINGUISTIC_TYPE_REF="PRES" TIER_ID="PRES-vis"/>
+    <TIER LINGUISTIC_TYPE_REF="regard" PARTICIPANT="mère" TIER_ID="reg-M"/>
+    <TIER LINGUISTIC_TYPE_REF="regard" PARTICIPANT="père" TIER_ID="reg-P"/>
+    <TIER LINGUISTIC_TYPE_REF="regard" PARTICIPANT="aîné" TIER_ID="reg-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="regard" PARTICIPANT="deuxième" TIER_ID="reg-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="regard" PARTICIPANT="troisième" TIER_ID="reg-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-vis-M"
+        PARTICIPANT="mère" TIER_ID="interact-act-vis-M"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-aud-M"
+        PARTICIPANT="mère" TIER_ID="interact-act-aud-M"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-vis-P"
+        PARTICIPANT="père" TIER_ID="interact-act-vis-P"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-aud-P"
+        PARTICIPANT="père" TIER_ID="interact-act-aud-P"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-vis-Ea"
+        PARTICIPANT="aîné" TIER_ID="interact-act-vis-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-aud-Ea"
+        PARTICIPANT="aîné" TIER_ID="interact-act-aud-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-vis-Eb"
+        PARTICIPANT="deuxième" TIER_ID="interact-act-vis-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-aud-Eb"
+        PARTICIPANT="deuxième" TIER_ID="interact-act-aud-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-vis-Ec"
+        PARTICIPANT="troisième" TIER_ID="interact-act-vis-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="INTERLOC" PARENT_REF="act-aud-Ec"
+        PARTICIPANT="troisième" TIER_ID="interact-act-aud-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-audible" PARENT_REF="lng-aud-M"
+        PARTICIPANT="mère" TIER_ID="script-lng-aud-M"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-visible" PARENT_REF="lng-vis-M"
+        PARTICIPANT="mère" TIER_ID="script-lng-vis-M"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-audible" PARENT_REF="lng-aud-P"
+        PARTICIPANT="père" TIER_ID="script-lng-aud-P"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-visible" PARENT_REF="lng-vis-P"
+        PARTICIPANT="père" TIER_ID="script-lng-vis-P"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-audible" PARENT_REF="lng-aud-Ea"
+        PARTICIPANT="aîné" TIER_ID="script-lng-aud-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-visible" PARENT_REF="lng-vis-Ea"
+        PARTICIPANT="aîné" TIER_ID="script-lng-vis-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-audible" PARENT_REF="lng-aud-Eb"
+        PARTICIPANT="deuxième" TIER_ID="script-lng-aud-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-visible" PARENT_REF="lng-vis-Eb"
+        PARTICIPANT="deuxième" TIER_ID="script-lng-vis-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-audible" PARENT_REF="lng-aud-Ec"
+        PARTICIPANT="troisième" TIER_ID="script-lng-aud-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="prod-visible" PARENT_REF="lng-vis-Ec"
+        PARTICIPANT="troisième" TIER_ID="script-lng-vis-Ec"/>
+    <TIER LINGUISTIC_TYPE_REF="traduction" PARENT_REF="lng-vis-M"
+        PARTICIPANT="mère" TIER_ID="trad-lng-vis-M"/>
+    <TIER LINGUISTIC_TYPE_REF="traduction" PARENT_REF="lng-vis-P"
+        PARTICIPANT="père" TIER_ID="trad-lng-vis-P"/>
+    <TIER LINGUISTIC_TYPE_REF="traduction" PARENT_REF="lng-vis-Ea"
+        PARTICIPANT="aîné" TIER_ID="trad-lng-vis-Ea"/>
+    <TIER LINGUISTIC_TYPE_REF="traduction" PARENT_REF="lng-vis-Eb"
+        PARTICIPANT="deuxième" TIER_ID="trad-lng-vis-Eb"/>
+    <TIER LINGUISTIC_TYPE_REF="traduction" PARENT_REF="lng-vis-Ec"
+        PARTICIPANT="troisième" TIER_ID="trad-lng-vis-Ec"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="COMB-PART"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="PRES" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="dans-hors-champ"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="LOC-SIGN" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="prod-audible" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="prod-visible" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        CONTROLLED_VOCABULARY_REF="COMB-PART" GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="PRES audibles" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        CONTROLLED_VOCABULARY_REF="COMB-PART" GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="PRES visibles" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="act"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="act-aud" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="lng-aud"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="lng-aud" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        CONTROLLED_VOCABULARY_REF="COMB-PART" GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="INTERLOC" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="COMB-PART"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="PF" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="thème" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="regard" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Included_In"
+        CONTROLLED_VOCABULARY_REF="dans-hors-champ"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="dans-hors-champ" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="act"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="act-vis" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="lng-vis"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="lng-vis" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="traduction" TIME_ALIGNABLE="true"/>
+    <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
+        LANG_ID="und" LANG_LABEL="undetermined (und)"/>
+    <CONSTRAINT
+        DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT
+        DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT
+        DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+    <CONTROLLED_VOCABULARY CV_ID="act">
+        <DESCRIPTION LANG_REF="und">est ce une action dinatoire ou non ?</DESCRIPTION>
+        <CV_ENTRY_ML CVE_ID="cveid_5551a9da-6951-4a57-a14d-d8349f2f154c">
+            <CVE_VALUE DESCRIPTION="activité dinatoire" LANG_REF="und">din</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_7fd463d7-2e54-41bd-b4e5-feb4dc92fd60">
+            <CVE_VALUE DESCRIPTION="activité non dinatoire" LANG_REF="und">non-din</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_ebcc5099-66ff-437d-bc72-e6e49e47525a">
+            <CVE_VALUE
+                DESCRIPTION="activité dinatoire et non dinatoire en même temps" LANG_REF="und">din/non-din</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_542d2799-e823-4902-b1cb-e1fd0056a7fa">
+            <CVE_VALUE DESCRIPTION="indéterminé" LANG_REF="und">ind</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6ef1b7ea-c294-40ad-8399-d05f8751ffac">
+            <CVE_VALUE DESCRIPTION="pas d'action" LANG_REF="und">--</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="dans-hors-champ">
+        <DESCRIPTION LANG_REF="und">indiquer à quel moment on ne peut pas coder ou on ne peut pas voir la personne à coder</DESCRIPTION>
+        <CV_ENTRY_ML CVE_ID="cveid0">
+            <CVE_VALUE
+                DESCRIPTION="on peut voir et entendre la personne à la camera" LANG_REF="und">DansChamp</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid1">
+            <CVE_VALUE
+                DESCRIPTION="on peut l’entendre mais elle est hors champ de la caméra et toujours dans la pièce" LANG_REF="und">HorsChamp</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid4">
+            <CVE_VALUE
+                DESCRIPTION="elle est sortie de la pièce mais on l'entend" LANG_REF="und">HorsPieceAudible</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid5">
+            <CVE_VALUE
+                DESCRIPTION="elle est sortie de la pièce et on ne l'entend plus" LANG_REF="und">HorsPieceNonAudible</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="COMB-PART">
+        <DESCRIPTION LANG_REF="und">combinaisons de participants</DESCRIPTION>
+        <CV_ENTRY_ML CVE_ID="cveid_f86469b9-3ce6-4b4a-add1-ffeae23e9f97">
+            <CVE_VALUE LANG_REF="und">1-M</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_aaf626d4-5448-4f3b-8ab1-9abeae234e80">
+            <CVE_VALUE LANG_REF="und">1-P</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_07751ec3-cb4e-4c0f-bbd3-589ae4ebe326">
+            <CVE_VALUE DESCRIPTION="aîné" LANG_REF="und">1-Ea</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_4b53dac3-f25b-4ca6-9651-814b2ca237bf">
+            <CVE_VALUE DESCRIPTION="second" LANG_REF="und">1-Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_4c7f4227-e5c3-40ec-aee6-a92ab2f39fd1">
+            <CVE_VALUE DESCRIPTION="troisième" LANG_REF="und">1-Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_16d15833-3b48-43b5-92cc-e2c14e50554f">
+            <CVE_VALUE LANG_REF="und">2-M+P</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6e3c1c09-4dc2-4d29-ae88-95f17a499f2f">
+            <CVE_VALUE LANG_REF="und">2-M+Ea</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6e4acfdf-4b0d-45ca-83c9-230576a87ef6">
+            <CVE_VALUE LANG_REF="und">2-M+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_bbb1c9ff-b5e2-4558-8372-718f4d69afa9">
+            <CVE_VALUE LANG_REF="und">2-M+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_1c62bac5-7ef6-4a87-a983-edc54c6804f1">
+            <CVE_VALUE LANG_REF="und">2-P+Ea</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_87801a23-1cfa-4d40-a648-3ab5c0b55d28">
+            <CVE_VALUE LANG_REF="und">2-P+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6bcdf994-0c3c-429b-8312-c157421b7389">
+            <CVE_VALUE LANG_REF="und">2-P+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_b323e3f2-b58f-4359-8e5b-0dacefe276f5">
+            <CVE_VALUE LANG_REF="und">2-Ea+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_08a5b58d-511f-47d8-bcdf-759f6fcbe097">
+            <CVE_VALUE LANG_REF="und">2-Ea+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_d7e8df7a-0f28-4b6a-8de5-1f1d1a391b0d">
+            <CVE_VALUE LANG_REF="und">2-Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_e5507c74-f85a-4a8f-a640-610eeedf8877">
+            <CVE_VALUE LANG_REF="und">3-M+P+Ea</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_5bf5c5fb-0ec5-474b-bd17-d5b2808f7f5d">
+            <CVE_VALUE LANG_REF="und">3-M+P+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_fae2177c-ef55-4c75-9484-8b37fd543b64">
+            <CVE_VALUE LANG_REF="und">3-M+P+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_8842f059-862d-4cbe-a1a5-5c7b5dec904a">
+            <CVE_VALUE LANG_REF="und">3-M+Ea+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_f3065f82-0eb0-42cb-8e90-02fb9d62a2be">
+            <CVE_VALUE LANG_REF="und">3-M+Ea+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_b225bb31-a6cd-47ea-94c0-2224ae2713b7">
+            <CVE_VALUE LANG_REF="und">3-M+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_5bc5ce12-f67d-49c0-a33c-9bb51ea9d8fc">
+            <CVE_VALUE LANG_REF="und">3-P+Ea+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_797bd617-8ee8-473c-a677-627e8a4390fb">
+            <CVE_VALUE LANG_REF="und">3-P+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_e7a4950b-0dc1-4fe9-bbdc-32f7a16d423a">
+            <CVE_VALUE LANG_REF="und">3-Ea+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_1c4ebdae-03f6-4ec1-86c6-e75b254bb116">
+            <CVE_VALUE LANG_REF="und">4-M+P+Ea+Eb</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_d08d3f6a-f459-4a33-b129-a2680035fdb9">
+            <CVE_VALUE LANG_REF="und">4-M+P+Ea+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_44d97c65-70d0-4ab2-8765-b2c838a1a4b7">
+            <CVE_VALUE LANG_REF="und">4-M+P+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_0999ee49-097a-4528-8287-dbcfdca0a389">
+            <CVE_VALUE LANG_REF="und">4-M+Ea+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_273d6b1e-9e4c-444a-a967-cd4dc508a8aa">
+            <CVE_VALUE LANG_REF="und">4-P+Ea+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6dc4933c-ae04-4f49-bad2-3998472217fb">
+            <CVE_VALUE LANG_REF="und">5-M+P+Ea+Eb+Ec</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_4c80b429-18c5-4545-8bb0-2f524b6dd902">
+            <CVE_VALUE DESCRIPTION="persone en particulier" LANG_REF="und">0-nobody</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_2a535643-f250-467e-8c69-5d1b1cfa0d60">
+            <CVE_VALUE DESCRIPTION="non annotable / indéterminé" LANG_REF="und">nona</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_13e88caa-5fda-47e8-a0ba-0b69720bebff">
+            <CVE_VALUE DESCRIPTION="Vers et pour soi-même" LANG_REF="und">0-self</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_3471977d-5f8d-4846-af53-5a2ae154a0c2">
+            <CVE_VALUE DESCRIPTION="Parler à toute la famille" LANG_REF="und">everybody</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="lng-vis">
+        <DESCRIPTION LANG_REF="und">langue utilisée pour le languaging visuel</DESCRIPTION>
+        <CV_ENTRY_ML CVE_ID="cveid_b8dae72c-24d0-4867-a51f-d6e69c53613b">
+            <CVE_VALUE
+                DESCRIPTION="geste (mains, tête, buste, etc.) ou LSF" LANG_REF="und">gest-lsf</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_44483719-2f9b-4f39-b5ff-060ad89f3ba3">
+            <CVE_VALUE DESCRIPTION="pas de languaging" LANG_REF="und">--</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_52d015c5-5a49-4960-ac9d-ecacefc8ca12">
+            <CVE_VALUE DESCRIPTION="incertain" LANG_REF="und">ind</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="lng-aud">
+        <DESCRIPTION LANG_REF="und">langue utilisée pour le languaging auditif</DESCRIPTION>
+        <CV_ENTRY_ML CVE_ID="cveid_82a75658-d2be-40ce-8f32-3f23d340510d">
+            <CVE_VALUE DESCRIPTION="français" LANG_REF="und">fra</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_bfe38cfa-4298-425a-be9f-75a8f0e4fc92">
+            <CVE_VALUE DESCRIPTION="English" LANG_REF="und">eng</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_3d30f8a9-9d8b-4a49-9f8b-44bf0de1356b">
+            <CVE_VALUE DESCRIPTION="pas de languaging" LANG_REF="und">--</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_1999e19d-0a40-4f6f-a24d-dbea5331de26">
+            <CVE_VALUE DESCRIPTION="indéterminé" LANG_REF="und">ind</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+</ANNOTATION_DOCUMENT>

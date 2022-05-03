@@ -5,10 +5,12 @@ import java.util.ArrayList;
 import org.w3c.dom.NodeList;
 
 public class Annot {
-	String id;
+    String id;
 	String name;
 	String start;
 	String end;
+	String startStamp;
+	String endStamp;
 	ArrayList<Annot> dependantAnnotations;
 	private String content;
 	String link;
@@ -41,6 +43,8 @@ public class Annot {
 		timereftype = "";
 		cleanedContent = null;
 		topParent = "";
+		startStamp = "---";
+		endStamp = "---";
 	}
 
 	public Annot(String tierName, String value) {
@@ -140,6 +144,7 @@ public class Annot {
 			s += "START = (" + start + "); END = (" + end + "); ";
 		} else {
 			s += "); START = (" + start + "); END = (" + end + "); ";
+			s += "STARTSTAMP = (" + startStamp + "); ENDSTAMP = (" + endStamp + "); ";
 		}
 		s += "CONTENT = (" + content.trim() + ")";
 		int i = 0;
@@ -164,6 +169,7 @@ public class Annot {
 			s += "; LINK: " + link;
 		} else {
 			s += "; START: " + start + "; END: " + end;
+			s += "; STARTSTAMP = " + startStamp + "; ENDSTAMP = " + endStamp;
 		}
 		s += "; CONTENT: " + content;
 		return s;
@@ -175,6 +181,7 @@ public class Annot {
 			s += "; LINK = " + link;
 		} else {
 			s += "; START = " + start + "; END = " + end;
+			s += "; STARTSTAMP = " + startStamp + "; ENDSTAMP = " + endStamp;
 		}
 		s += "; CONTENT = " + content;
 		int i = 0;

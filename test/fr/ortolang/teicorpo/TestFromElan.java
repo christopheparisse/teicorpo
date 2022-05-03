@@ -113,15 +113,34 @@ public class TestFromElan {
 				"/test/data/dest/elan/" + "TestDNF4.cha.tei_corpo.xml",
 				"Test of Elan To Tei"
 		);
-		System.out.printf("%nTEI (from CHAT + template + dinlang) Elan%n");
-		String [] argsup = { "dinlang", "template..." };
-		RunTeiCorpo.runcpx(
+		System.out.printf("%nTEI (from CHAT) to Elan%n");
+		RunTeiCorpo.run(
 				wd,
 				"tei",
 				"elan",
 				"/test/data/dest/elan/" + "TestDNF4.cha.tei_corpo.xml",
 				"/test/data/dest/elan/" + "TestDNF4.cha.tei_corpo.eaf",
-				"Test of TEI (from Elan) to Elan",
+				"Test of TEI (from Elan) to Elan"
+		);
+		System.out.printf("%nClan to TEI (for Dinlang)%n");
+		String [] argsup = {  "-raw", "-target", "dinlang", "-model", wd + "/test/data/sources/elan/" + "DL-2022-05-02-GEN-TPL.etf",  "-tv", "FAT:lng-aud-P", "-tv", "MOT:lng-aud-M", "-tv", "LUC:lng-aud-Ea", "-tv", "GAB:lng-aud-Eb", "-a", "*script*", "-a", "=1" };
+		RunTeiCorpo.runcpx(
+				wd,
+				"clan",
+				"tei",
+				"/test/data/sources/elan/" + "TestDNF4.cha",
+				"/test/data/dest/elan/" + "TestDNF4D.cha.tei_corpo.xml",
+				"Test of Elan To Tei (for Dinlang)",
+				argsup
+		);
+		System.out.printf("%nTEI (from CHAT + template 2022-05-02 + Dinlang) Elan%n");
+		RunTeiCorpo.runcpx(
+				wd,
+				"tei",
+				"elan",
+				"/test/data/dest/elan/" + "TestDNF4D.cha.tei_corpo.xml",
+				"/test/data/dest/elan/" + "TestDNF4D.cha.tei_corpo.eaf",
+				"Test of TEI (from CHAT + DINLANG + template 2022-05-02) to Elan",
 				argsup
 		);
 		// MANQUE ORFEO, SNLP, Stanza

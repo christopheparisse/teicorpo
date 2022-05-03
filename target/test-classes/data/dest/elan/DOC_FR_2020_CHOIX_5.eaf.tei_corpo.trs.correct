@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Trans SYSTEM "trans-14.dtd">
-<Trans audio_filename="DOC_FR_2020_CHOIX_5.audio" version="1" xml:lang="fr">
+<Trans audio_filename="DOC_FR_2020_CHOIX_5.audio" version="1" xml:lang="en">
     <Speakers>
         <Speaker id="default" name="default"/>
         <Speaker id="L1" name="Mélanie"/>

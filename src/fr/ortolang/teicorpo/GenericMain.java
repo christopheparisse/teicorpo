@@ -23,6 +23,7 @@ public abstract class GenericMain {
 	public abstract void mainProcess(String input, String output, TierParams options) throws FileNotFoundException;
 	
 	public void mainCommand(String[] args, String extensionIn, String extensionOut, String usageString, int style) throws IOException {
+		System.out.printf("mainCommand: (%s)%n", String.join(" ", args));
 		// System.setProperty("line.separator", "\n");
 		// System.out.printf("mainCommand:Generic: (%s) -> (%s)%n", extensionIn, extensionOut);
 		TierParams options = new TierParams();

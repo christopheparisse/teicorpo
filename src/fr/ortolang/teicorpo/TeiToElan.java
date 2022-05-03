@@ -66,16 +66,8 @@ public class TeiToElan extends GenericMain {
 	long tstart = 0;
 
 	// new timeline
-	Comparator<String> timeCompare = new Comparator<String>() {
-		@Override
-		public int compare(String s1, String s2) {
-			Double f1 = Double.parseDouble(s1);
-			Double f2 = Double.parseDouble(s2);
-			return f1 < f2 ? -1 : (f1 > f2 ? 1 : 0);
-		}
-	};
-	Map<String, String> newTimeline = new TreeMap<String, String>(timeCompare);
-	int lastIdTimeline = 0; // last id included in the map
+	Map<String, String> elanTimeline = new TreeMap<String, String>();
+	// not to be used any more - int lastIdTimeline = 0; // last id included in the map
 
 	private boolean setDefault = false;
 
@@ -349,7 +341,8 @@ public class TeiToElan extends GenericMain {
 		}
 	}
 
-	String timelineValueOf(String time) {
+	/*
+	String nottobeusedtimelineValueOf(String time) {
 		if (time.isEmpty())
 			return "";
 		String nt = newTimeline.get(time);
@@ -362,6 +355,13 @@ public class TeiToElan extends GenericMain {
 			return nt;
 		}
 	}
+	*/
+	String createTimeStamp(String id, String time) {
+		String newid = id + time;
+		if (elanTimeline.get(newid) == null)
+			elanTimeline.put(newid, time);
+		return newid;
+	}
 
 	// Remplissage de la timeline à partir de la timeline au format TEI : copie
 	// exacte: mêmes identifiants et valeurs
@@ -369,8 +369,10 @@ public class TeiToElan extends GenericMain {
 		try {
 			// initializes all values in the timeline
 			for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
+				// System.out.printf("ENTRY: %s%n", entry.getKey());
 				for (Annot a : entry.getValue()) {
 					if (a.timereftype.equals("time")) {
+						// System.out.printf("ITEM: %s%n", a.toString());
 						if (!Utils.isNotEmptyOrNull(a.start)) continue;
 						if (!Utils.isNotEmptyOrNull(a.end)) continue;
 						Double start = Double.parseDouble(a.start) * 1000.0;
@@ -379,15 +381,16 @@ public class TeiToElan extends GenericMain {
 						String e = Integer.toString((int) Math.round(end));
 						a.start = s;
 						a.end = e;
-						timelineValueOf(s);
-						timelineValueOf(e);
+						a.startStamp = createTimeStamp(a.id, s);
+						a.endStamp = createTimeStamp(a.id, e);
+						// System.out.printf("ITEM2: %s%n", a.toString());
 					}
 					// else if (a.timereftype.equals("ref")){}
 				}
 			}
 			// write the timeline
 			// Get a set of the entries
-			Set set = newTimeline.entrySet();
+			Set set = elanTimeline.entrySet();
 			// Get an iterator
 			Iterator it = set.iterator();
 			// write elements
@@ -396,8 +399,8 @@ public class TeiToElan extends GenericMain {
 				// System.out.print("Key is: "+me.getKey() + " & ");
 				// System.out.println("Value is: "+me.getValue());
 				Element time_slot = elanDoc.createElement("TIME_SLOT");
-				time_slot.setAttribute("TIME_SLOT_ID", (String) me.getValue());
-				time_slot.setAttribute("TIME_VALUE", (String) me.getKey());
+				time_slot.setAttribute("TIME_SLOT_ID", (String) me.getKey());
+				time_slot.setAttribute("TIME_VALUE", (String) me.getValue());
 				time_order.appendChild(time_slot);
 			}
 		} catch (Exception e) {
@@ -645,8 +648,8 @@ public class TeiToElan extends GenericMain {
 					// System.out.printf("TIME: (%s) %s%n", a.timereftype, a.toString());
 					Element align_annot = elanDoc.createElement("ALIGNABLE_ANNOTATION");
 					align_annot.setAttribute("ANNOTATION_ID", a.id);
-					align_annot.setAttribute("TIME_SLOT_REF1", timelineValueOf(a.start));
-					align_annot.setAttribute("TIME_SLOT_REF2", timelineValueOf(a.end));
+					align_annot.setAttribute("TIME_SLOT_REF1", createTimeStamp(a.id, a.start));
+					align_annot.setAttribute("TIME_SLOT_REF2", createTimeStamp(a.id, a.end));
 					annot.appendChild(align_annot);
 					Element annotationValue = elanDoc.createElement("ANNOTATION_VALUE");
 					String str = a.getContent(ttp.optionsOutput.rawLine);

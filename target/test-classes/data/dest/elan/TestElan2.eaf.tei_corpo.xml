@@ -83,7 +83,7 @@
             <sourceDesc>
                 <recordingStmt>
                     <recording>
-                        <media mimeType="audio/x-wav" url="file:///Users/amina-old/Documents/Recherche/ANR/Corpus Amina/Amina CORPUS Final/PRAAT Amina/Seven Girls/KAB_AM_NARR_01.wav"/>
+                        <media mimeType="audio/x-wav" url="KAB_AM_NARR_01.wav"/>
                     </recording>
                 </recordingStmt>
             </sourceDesc>
@@ -154,10 +154,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">C:\devlopt\teicorpo\test\data\sources\elan/</note>
-                    <note type="filename">TestElan2.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>C:\devlopt\teicorpo\test\data\sources\elan\TestElan2.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

@@ -6,7 +6,7 @@
                     <distributor>tei_corpo</distributor>
                 </publicationStmt>
                 <title>
-                    <desc>Fichier TEI obtenu à partir du fichier CLAN C:\devlopt\teicorpo\test\data\sources\clan\testclan2.cha</desc>
+                    <desc>Fichier TEI obtenu à partir du fichier CLAN testclan2.cha</desc>
                 </title>
             </titleStmt>
             <notesStmt>
@@ -60,7 +60,7 @@
             <sourceDesc>
                 <recordingStmt>
                     <recording>
-                        <media dur-iso="127.233" mimeType="audio/mp3" url="testclan2.mp3"/>
+                        <media dur-iso="127.233" mimeType="audio/x-wav" url="testclan2.wav"/>
                     </recording>
                 </recordingStmt>
             </sourceDesc>
@@ -151,10 +151,10 @@
                 <item>test document<desc>test</desc>
                 </item>
                 <head>
-                    <note type="access">C:\devlopt\teicorpo\test\data\sources\clan/</note>
-                    <note type="filename">testclan2.tei_corpo.xml</note>
+                    <note type="access">test</note>
+                    <note type="filename">test</note>
                 </head>
-                <item>C:\devlopt\teicorpo\test\data\sources\clan\testclan2.tei_corpo.xml<desc>docname</desc>
+                <item>test<desc>docname</desc>
                 </item>
             </list>
         </revisionDesc>

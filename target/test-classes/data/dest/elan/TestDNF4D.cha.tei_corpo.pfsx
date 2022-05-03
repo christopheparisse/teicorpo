@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences version="1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
+    <prefList key="CommentViewer.Columns.Order">
+        <String>Start Time</String>
+        <String>End Time</String>
+        <String>Acteur</String>
+        <String>Initiales</String>
+        <String>Commentaire</String>
+        <String>Thread</String>
+        <String>Expéditeur</String>
+        <String>Destinataire</String>
+        <String>Date de création</String>
+        <String>Date de modification</String>
+    </prefList>
+    <pref key="FrameSize">
+        <Object class="java.awt.Dimension">1062,824</Object>
+    </pref>
+    <pref key="FrameLocation">
+        <Object class="java.awt.Point">312,216</Object>
+    </pref>
+    <pref key="LayoutManager.SelectedTabIndex">
+        <Int>6</Int>
+    </pref>
+    <pref key="LayoutManager.VisibleMultiTierViewer">
+        <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
+    </pref>
+    <pref key="SelectionBeginTime">
+        <Long>0</Long>
+    </pref>
+    <pref key="MultiTierViewer.ActiveTierName">
+        <String>Rmq</String>
+    </pref>
+    <pref key="TimeScaleBeginTime">
+        <Long>160</Long>
+    </pref>
+    <pref key="MediaTime">
+        <Long>0</Long>
+    </pref>
+    <pref key="SelectionEndTime">
+        <Long>0</Long>
+    </pref>
+    <prefGroup key="TierColors">
+        <pref key="PRES-vis">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="lng-vis-M">
+            <Object class="java.awt.Color">0,160,0</Object>
+        </pref>
+        <pref key="act-vis-Ec">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="part1">
+            <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="act-vis-Eb">
+            <Object class="java.awt.Color">0,0,160</Object>
+        </pref>
+        <pref key="lng-vis-P">
+            <Object class="java.awt.Color">90,90,160</Object>
+        </pref>
+        <pref key="act-vis-Ea">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="part2">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="M">
+            <Object class="java.awt.Color">160,90,0</Object>
+        </pref>
+        <pref key="P">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="reg-Ec">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="lng-aud-M">
+            <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="PRES-aud">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="reg-Eb">
+            <Object class="java.awt.Color">0,160,0</Object>
+        </pref>
+        <pref key="lng-aud-P">
+            <Object class="java.awt.Color">90,0,0</Object>
+        </pref>
+        <pref key="reg-Ea">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="act-aud-P">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="act-aud-M">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="reg-M">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="reg-P">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="act-aud-Ea">
+            <Object class="java.awt.Color">160,0,0</Object>
+        </pref>
+        <pref key="act-aud-Eb">
+            <Object class="java.awt.Color">0,0,90</Object>
+        </pref>
+        <pref key="act-aud-Ec">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="act-vis-P">
+            <Object class="java.awt.Color">0,90,160</Object>
+        </pref>
+        <pref key="act-vis-M">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+        <pref key="thème2">
+            <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="thème1">
+            <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="OBS1">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="OBS2">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="Rmq">
+            <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="lng-aud-Ea">
+            <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="lng-aud-Ec">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="lng-aud-Eb">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="lng-vis-Ea">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="Ea">
+            <Object class="java.awt.Color">0,90,0</Object>
+        </pref>
+        <pref key="Eb">
+            <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="lng-vis-Ec">
+            <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="Ec">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="lng-vis-Eb">
+            <Object class="java.awt.Color">90,90,0</Object>
+        </pref>
+    </prefGroup>
+    <prefList key="MultiTierViewer.TierOrder">
+        <String>Rmq</String>
+        <String>M</String>
+        <String>act-aud-M</String>
+        <String>lng-aud-M</String>
+        <String>act-vis-M</String>
+        <String>lng-vis-M</String>
+        <String>interloc-lng-aud-M</String>
+        <String>interloc-lng-vis-M</String>
+        <String>P</String>
+        <String>act-aud-P</String>
+        <String>lng-aud-P</String>
+        <String>act-vis-P</String>
+        <String>lng-vis-P</String>
+        <String>interloc-lng-aud-P</String>
+        <String>interloc-lng-vis-P</String>
+        <String>Ea</String>
+        <String>act-aud-Ea</String>
+        <String>lng-aud-Ea</String>
+        <String>act-vis-Ea</String>
+        <String>lng-vis-Ea</String>
+        <String>interloc-lng-aud-Ea</String>
+        <String>interloc-lng-vis-Ea</String>
+        <String>Eb</String>
+        <String>act-aud-Eb</String>
+        <String>lng-aud-Eb</String>
+        <String>act-vis-Eb</String>
+        <String>lng-vis-Eb</String>
+        <String>interloc-lng-aud-Eb</String>
+        <String>interloc-lng-vis-Eb</String>
+        <String>Ec</String>
+        <String>act-aud-Ec</String>
+        <String>lng-aud-Ec</String>
+        <String>act-vis-Ec</String>
+        <String>lng-vis-Ec</String>
+        <String>interloc-lng-aud-Ec</String>
+        <String>interloc-lng-vis-Ec</String>
+        <String>part1</String>
+        <String>part2</String>
+        <String>thème1</String>
+        <String>thème2</String>
+        <String>PRES-aud</String>
+        <String>PRES-vis</String>
+        <String>reg-M</String>
+        <String>reg-P</String>
+        <String>reg-Ea</String>
+        <String>reg-Eb</String>
+        <String>reg-Ec</String>
+        <String>interact-act-vis-M</String>
+        <String>interact-act-aud-M</String>
+        <String>interact-act-vis-P</String>
+        <String>interact-act-aud-P</String>
+        <String>interact-act-vis-Ea</String>
+        <String>interact-act-aud-Ea</String>
+        <String>interact-act-vis-Eb</String>
+        <String>interact-act-aud-Eb</String>
+        <String>interact-act-vis-Ec</String>
+        <String>interact-act-aud-Ec</String>
+        <String>script-lng-aud-M</String>
+        <String>script-lng-vis-M</String>
+        <String>script-lng-aud-P</String>
+        <String>script-lng-vis-P</String>
+        <String>script-lng-aud-Ea</String>
+        <String>script-lng-vis-Ea</String>
+        <String>script-lng-aud-Eb</String>
+        <String>script-lng-vis-Eb</String>
+        <String>script-lng-aud-Ec</String>
+        <String>script-lng-vis-Ec</String>
+        <String>trad-lng-vis-M</String>
+        <String>trad-lng-vis-P</String>
+        <String>trad-lng-vis-Ea</String>
+        <String>trad-lng-vis-Eb</String>
+        <String>trad-lng-vis-Ec</String>
+        <String>OBS1</String>
+        <String>OBS2</String>
+        <String>script-OBS1</String>
+        <String>script-OBS2</String>
+    </prefList>
+    <pref key="LayoutManager.SplitPaneDividerLocation">
+        <Int>2</Int>
+    </pref>
+    <pref key="LayoutManager.CurrentMode">
+        <Int>1</Int>
+    </pref>
+    <prefGroup key="CommentViewer.Columns">
+        <pref key="Acteur">
+            <Int>75</Int>
+        </pref>
+        <pref key="Date de modification">
+            <Int>75</Int>
+        </pref>
+        <pref key="Initiales">
+            <Int>75</Int>
+        </pref>
+        <pref key="Commentaire">
+            <Int>75</Int>
+        </pref>
+        <pref key="Start Time">
+            <Int>75</Int>
+        </pref>
+        <pref key="Destinataire">
+            <Int>0</Int>
+        </pref>
+        <pref key="Expéditeur">
+            <Int>0</Int>
+        </pref>
+        <pref key="Date de création">
+            <Int>75</Int>
+        </pref>
+        <pref key="End Time">
+            <Int>75</Int>
+        </pref>
+        <pref key="Thread">
+            <Int>75</Int>
+        </pref>
+    </prefGroup>
+    <prefList key="CommentViewer.Columns.Hidden">
+        <String>Destinataire</String>
+        <String>Expéditeur</String>
+    </prefList>
+</preferences>
