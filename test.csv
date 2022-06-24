@@ -1,0 +1,13 @@
+﻿"Annotation1-1"	"BeginTime"	"EndTime"	"Duration"	"TierName"	"TierType"	"TierParticipant"	"Annotation2-1"	"BeginTime"	"EndTime"	"Duration"	"TierName"	"TierType"	"TierParticipant"	"TranscriptionName"
+
+<empty>	0.000	0.530	0.530	default	default-lt	unknown	<empty>	0.000	0.280	0.280	main	default-lt	unknown	"aa.eaf"
+<empty>	0.000	0.530	0.530	default	default-lt	unknown	MAIN	0.280	1.340	1.060	main	default-lt	unknown	"aa.eaf"
+ESSAI	0.530	2.540	2.010	default	default-lt	unknown	MAIN	0.280	1.340	1.060	main	default-lt	unknown	"aa.eaf"
+ESSAI	0.530	2.540	2.010	default	default-lt	unknown	<empty>	1.340	2.310	0.970	main	default-lt	unknown	"aa.eaf"
+ESSAI	0.530	2.540	2.010	default	default-lt	unknown	MAIN2	2.310	3.420	1.110	main	default-lt	unknown	"aa.eaf"
+<empty>	2.540	3.270	0.730	default	default-lt	unknown	MAIN2	2.310	3.420	1.110	main	default-lt	unknown	"aa.eaf"
+ESSAI2	3.270	4.380	1.110	default	default-lt	unknown	MAIN2	2.310	3.420	1.110	main	default-lt	unknown	"aa.eaf"
+ESSAI2	3.270	4.380	1.110	default	default-lt	unknown	<empty>	3.420	4.950	1.530	main	default-lt	unknown	"aa.eaf"
+<empty>	4.380	5.910	1.530	default	default-lt	unknown	<empty>	3.420	4.950	1.530	main	default-lt	unknown	"aa.eaf"
+<empty>	4.380	5.910	1.530	default	default-lt	unknown	MAIN3	4.950	6.740	1.790	main	default-lt	unknown	"aa.eaf"
+ESSAI3	5.910	7.430	1.520	default	default-lt	unknown	MAIN3	4.950	6.740	1.790	main	default-lt	unknown	"aa.eaf"

@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="FR">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>new</title>
+</titleStmt>
+<publicationStmt></publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC">
+</note>
+<note type="METADATA_DESC">
+<note>
+<note type="property">Titre</note>
+<note type="type">DublinCore</note>
+<note type="value">new</note>
+<note type="info">Titre du document</note>
+</note>
+<note>
+<note type="property">Créateur</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Créateur du document</note>
+</note>
+<note>
+<note type="property">Sujet</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Sujet et mots-clefs</note>
+</note>
+<note>
+<note type="property">Description</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Description du document</note>
+</note>
+<note>
+<note type="property">Editeur</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Editeur du document</note>
+</note>
+<note>
+<note type="property">-</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">-</note>
+</note>
+<note>
+<note type="property">Date</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Date d'un événement dans le cycle de vie du document</note>
+</note>
+<note>
+<note type="property">Type de ressource</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Nature ou genre du contenu</note>
+</note>
+<note>
+<note type="property">Format</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Format du document</note>
+</note>
+<note>
+<note type="property">Identifiant de la ressource</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Identificateur non ambigu</note>
+</note>
+<note>
+<note type="property">Source</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Ressource dont dérive le document</note>
+</note>
+<note>
+<note type="property">Langue</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Langue du document</note>
+</note>
+<note>
+<note type="property">Relation</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Lien vers une ressource liée</note>
+</note>
+<note>
+<note type="property">Couverture</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Portée du document</note>
+</note>
+<note>
+<note type="property">-</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">-</note>
+</note>
+</note>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">CHE</note>
+<note type="contentType"></note>
+<note type="parent">none</note>
+<note type="description"></note>
+</note>
+<note>
+<note type="code">CAM</note>
+<note type="contentType"></note>
+<note type="parent">none</note>
+<note type="description"></note>
+</note>
+<note>
+<note type="code">ortho</note>
+<note type="type">Symbolic Association</note>
+<note type="parent">main</note>
+<note type="contentType"></note>
+<note type="description">Orthographic line</note>
+</note>
+<note>
+<note type="code">phono</note>
+<note type="type">Symbolic Association</note>
+<note type="parent">main</note>
+<note type="contentType"></note>
+<note type="description">Phonetic line</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt><recording>
+<media url="D:/Documents/Thèse/Récits/Corpus récits francophones mars 2022/Chelsy et Camille_01.03.2022.mp4" mimeType="video/mp4" />
+<date dur="792.47">01.03.2022</date>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<settingDesc>
+<place>
+<placeName>Crapel</placeName>
+</place>
+</settingDesc>
+<langUsage><language ident="FR">FR</language></langUsage><particDesc><listPerson>
+<person
+sex="9"
+>
+<persName>Chelsy</persName>
+<altGrp><alt type="CHE" /></altGrp></person><person
+sex="9"
+>
+<persName>Camille</persName>
+<altGrp><alt type="CAM" /></altGrp></person></listPerson></particDesc>
+</profileDesc>
+<encodingDesc version="0.9.1" subversion="trjs">
+<appInfo>
+<application ident="TRJS" />
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>original TRJS</item>
+<item>lastsave: Sun Mar 20 2022 21:27:32 GMT+0100 (heure normale d’Europe centrale)</item>
+<item>url: C:/Users/cacho/Dropbox/Thèse/Constitution corpus/Récit/Corpus natifs mars '22/Transcription Chelsy et Camille.trjs</item>
+<item>name: new</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="51.06" since="#T0" xml:id="T1"/>
+<when interval="58.48492" since="#T0" xml:id="T2"/>
+<when interval="62.257748" since="#T0" xml:id="T3"/>
+<when interval="62.463175" since="#T0" xml:id="T4"/>
+<when interval="68.85413" since="#T0" xml:id="T5"/>
+<when interval="72.475627" since="#T0" xml:id="T6"/>
+<when interval="74.791922" since="#T0" xml:id="T7"/>
+<when interval="76.324744" since="#T0" xml:id="T8"/>
+<when interval="80.164339" since="#T0" xml:id="T9"/>
+<when interval="82.357327" since="#T0" xml:id="T10"/>
+<when interval="87.583185" since="#T0" xml:id="T11"/>
+<when interval="94.948711" since="#T0" xml:id="T12"/>
+<when interval="95.293325" since="#T0" xml:id="T13"/>
+<when interval="97.581772" since="#T0" xml:id="T14"/>
+<when interval="99.347906" since="#T0" xml:id="T15"/>
+<when interval="100.000092" since="#T0" xml:id="T16"/>
+<when interval="105.511422" since="#T0" xml:id="T17"/>
+<when interval="109.622033" since="#T0" xml:id="T18"/>
+<when interval="115.48832" since="#T0" xml:id="T19"/>
+<when interval="116.493381" since="#T0" xml:id="T20"/>
+<when interval="122.026511" since="#T0" xml:id="T21"/>
+<when interval="129.420145" since="#T0" xml:id="T22"/>
+<when interval="139.262327" since="#T0" xml:id="T23"/>
+<when interval="143.548" since="#T0" xml:id="T25"/>
+<when interval="143.548027" since="#T0" xml:id="T24"/>
+<when interval="152.943156" since="#T0" xml:id="T26"/>
+<when interval="153.97" since="#T0" xml:id="T28"/>
+<when interval="153.970355" since="#T0" xml:id="T27"/>
+<when interval="156.539002" since="#T0" xml:id="T29"/>
+<when interval="156.717005" since="#T0" xml:id="T30"/>
+<when interval="163.911485" since="#T0" xml:id="T31"/>
+<when interval="172.68200000000002" since="#T0" xml:id="T33"/>
+<when interval="172.682387" since="#T0" xml:id="T32"/>
+<when interval="176.54" since="#T0" xml:id="T35"/>
+<when interval="176.541013" since="#T0" xml:id="T34"/>
+<when interval="177.528" since="#T0" xml:id="T37"/>
+<when interval="177.541013" since="#T0" xml:id="T38"/>
+<when interval="184.645" since="#T0" xml:id="T36"/>
+<when interval="187.179" since="#T0" xml:id="T39"/>
+<when interval="195.067" since="#T0" xml:id="T40"/>
+<when interval="205.70564" since="#T0" xml:id="T41"/>
+<when interval="209.874228" since="#T0" xml:id="T42"/>
+<when interval="213.099" since="#T0" xml:id="T44"/>
+<when interval="213.099787" since="#T0" xml:id="T43"/>
+<when interval="216.089" since="#T0" xml:id="T46"/>
+<when interval="216.089578" since="#T0" xml:id="T45"/>
+<when interval="222.308" since="#T0" xml:id="T48"/>
+<when interval="222.30834" since="#T0" xml:id="T47"/>
+<when interval="228.91505" since="#T0" xml:id="T49"/>
+<when interval="233.596375" since="#T0" xml:id="T50"/>
+<when interval="237.099286" since="#T0" xml:id="T51"/>
+<when interval="242.367185" since="#T0" xml:id="T52"/>
+<when interval="247.286845" since="#T0" xml:id="T53"/>
+<when interval="251.713" since="#T0" xml:id="T54"/>
+<when interval="253.50900000000001" since="#T0" xml:id="T56"/>
+<when interval="254.194966" since="#T0" xml:id="T57"/>
+<when interval="259.461" since="#T0" xml:id="T55"/>
+<when interval="260.678695" since="#T0" xml:id="T58"/>
+<when interval="265.526034" since="#T0" xml:id="T59"/>
+<when interval="268.979227" since="#T0" xml:id="T60"/>
+<when interval="271.135882" since="#T0" xml:id="T61"/>
+<when interval="271.484903" since="#T0" xml:id="T62"/>
+<when interval="273.629675" since="#T0" xml:id="T64"/>
+<when interval="275.699" since="#T0" xml:id="T63"/>
+<when interval="276.983" since="#T0" xml:id="T65"/>
+<when interval="281.703616" since="#T0" xml:id="T66"/>
+<when interval="283.945214" since="#T0" xml:id="T67"/>
+<when interval="289.412117" since="#T0" xml:id="T69"/>
+<when interval="289.647" since="#T0" xml:id="T68"/>
+<when interval="289.98037" since="#T0" xml:id="T70"/>
+<when interval="294.505071" since="#T0" xml:id="T71"/>
+<when interval="299.719763" since="#T0" xml:id="T73"/>
+<when interval="300.267529" since="#T0" xml:id="T74"/>
+<when interval="303.013" since="#T0" xml:id="T72"/>
+<when interval="307.870157" since="#T0" xml:id="T75"/>
+<when interval="309.346" since="#T0" xml:id="T77"/>
+<when interval="309.966" since="#T0" xml:id="T78"/>
+<when interval="312.12" since="#T0" xml:id="T79"/>
+<when interval="312.121" since="#T0" xml:id="T76"/>
+<when interval="322.826137" since="#T0" xml:id="T80"/>
+<when interval="323.834208" since="#T0" xml:id="T81"/>
+<when interval="324.418496" since="#T0" xml:id="T82"/>
+<when interval="325.864154" since="#T0" xml:id="T83"/>
+<when interval="327.184255" since="#T0" xml:id="T85"/>
+<when interval="328.669975" since="#T0" xml:id="T84"/>
+<when interval="329.787481" since="#T0" xml:id="T87"/>
+<when interval="331.187162" since="#T0" xml:id="T86"/>
+<when interval="344.661" since="#T0" xml:id="T89"/>
+<when interval="346.612943" since="#T0" xml:id="T88"/>
+<when interval="348.314" since="#T0" xml:id="T91"/>
+<when interval="349.895" since="#T0" xml:id="T92"/>
+<when interval="350.125035" since="#T0" xml:id="T90"/>
+<when interval="350.378" since="#T0" xml:id="T93"/>
+<when interval="351.125" since="#T0" xml:id="T96"/>
+<when interval="351.125328" since="#T0" xml:id="T95"/>
+<when interval="351.377" since="#T0" xml:id="T94"/>
+<when interval="359.797427" since="#T0" xml:id="T97"/>
+<when interval="360.201975" since="#T0" xml:id="T98"/>
+<when interval="360.497978" since="#T0" xml:id="T99"/>
+<when interval="364.16" since="#T0" xml:id="T100"/>
+<when interval="364.284975" since="#T0" xml:id="T101"/>
+<when interval="364.626478" since="#T0" xml:id="T102"/>
+<when interval="366.520417" since="#T0" xml:id="T104"/>
+<when interval="367.229449" since="#T0" xml:id="T103"/>
+<when interval="371.17" since="#T0" xml:id="T106"/>
+<when interval="371.170453" since="#T0" xml:id="T105"/>
+<when interval="373.687" since="#T0" xml:id="T108"/>
+<when interval="374.244999" since="#T0" xml:id="T109"/>
+<when interval="376.717389" since="#T0" xml:id="T110"/>
+<when interval="377.108" since="#T0" xml:id="T107"/>
+<when interval="377.13806" since="#T0" xml:id="T111"/>
+<when interval="378.899656" since="#T0" xml:id="T112"/>
+<when interval="388.313672" since="#T0" xml:id="T113"/>
+<when interval="393.272019" since="#T0" xml:id="T114"/>
+<when interval="395.115472" since="#T0" xml:id="T115"/>
+<when interval="395.935136" since="#T0" xml:id="T116"/>
+<when interval="396.893269" since="#T0" xml:id="T118"/>
+<when interval="396.935136" since="#T0" xml:id="T119"/>
+<when interval="401.909" since="#T0" xml:id="T117"/>
+<when interval="404.305567" since="#T0" xml:id="T121"/>
+<when interval="405.300219" since="#T0" xml:id="T122"/>
+<when interval="408.862" since="#T0" xml:id="T120"/>
+<when interval="411.303115" since="#T0" xml:id="T123"/>
+<when interval="418.248796" since="#T0" xml:id="T124"/>
+<when interval="423.22219" since="#T0" xml:id="T125"/>
+<when interval="427.031252" since="#T0" xml:id="T126"/>
+<when interval="427.988292" since="#T0" xml:id="T128"/>
+<when interval="428.735129" since="#T0" xml:id="T127"/>
+<when interval="433.030998" since="#T0" xml:id="T130"/>
+<when interval="435.123566" since="#T0" xml:id="T129"/>
+<when interval="438.06474" since="#T0" xml:id="T132"/>
+<when interval="439.538" since="#T0" xml:id="T131"/>
+<when interval="442.239556" since="#T0" xml:id="T134"/>
+<when interval="444.721308" since="#T0" xml:id="T135"/>
+<when interval="445.429" since="#T0" xml:id="T133"/>
+<when interval="450.20328" since="#T0" xml:id="T136"/>
+<when interval="451.25309" since="#T0" xml:id="T137"/>
+<when interval="451.560094" since="#T0" xml:id="T138"/>
+<when interval="455.566159" since="#T0" xml:id="T140"/>
+<when interval="455.970826" since="#T0" xml:id="T139"/>
+<when interval="460.087772" since="#T0" xml:id="T141"/>
+<when interval="461.015167" since="#T0" xml:id="T142"/>
+<when interval="467.151131" since="#T0" xml:id="T143"/>
+<when interval="471.577721" since="#T0" xml:id="T144"/>
+<when interval="477.681559" since="#T0" xml:id="T145"/>
+<when interval="479.366211" since="#T0" xml:id="T146"/>
+<when interval="479.946799" since="#T0" xml:id="T147"/>
+<when interval="483.032003" since="#T0" xml:id="T148"/>
+<when interval="486.255663" since="#T0" xml:id="T149"/>
+<when interval="494.227768" since="#T0" xml:id="T150"/>
+<when interval="497.985331" since="#T0" xml:id="T151"/>
+<when interval="500.521875" since="#T0" xml:id="T152"/>
+<when interval="506.463918" since="#T0" xml:id="T153"/>
+<when interval="509.049361" since="#T0" xml:id="T155"/>
+<when interval="510.003618" since="#T0" xml:id="T154"/>
+<when interval="513.454" since="#T0" xml:id="T156"/>
+<when interval="513.947067" since="#T0" xml:id="T157"/>
+<when interval="515.596" since="#T0" xml:id="T159"/>
+<when interval="515.597963" since="#T0" xml:id="T158"/>
+<when interval="518.033" since="#T0" xml:id="T161"/>
+<when interval="518.044424" since="#T0" xml:id="T162"/>
+<when interval="518.517" since="#T0" xml:id="T163"/>
+<when interval="518.517876" since="#T0" xml:id="T160"/>
+<when interval="523.21232" since="#T0" xml:id="T164"/>
+<when interval="524.608988" since="#T0" xml:id="T165"/>
+<when interval="527.773506" since="#T0" xml:id="T166"/>
+<when interval="538.313195" since="#T0" xml:id="T167"/>
+<when interval="541.325" since="#T0" xml:id="T169"/>
+<when interval="542.566168" since="#T0" xml:id="T170"/>
+<when interval="542.844" since="#T0" xml:id="T168"/>
+<when interval="548.533166" since="#T0" xml:id="T171"/>
+<when interval="552.622" since="#T0" xml:id="T173"/>
+<when interval="552.62233" since="#T0" xml:id="T172"/>
+<when interval="559.012" since="#T0" xml:id="T174"/>
+<when interval="559.012221" since="#T0" xml:id="T175"/>
+<when interval="560.636" since="#T0" xml:id="T177"/>
+<when interval="561.669" since="#T0" xml:id="T178"/>
+<when interval="564.949863" since="#T0" xml:id="T176"/>
+<when interval="568.462" since="#T0" xml:id="T180"/>
+<when interval="569.725124" since="#T0" xml:id="T181"/>
+<when interval="573.883" since="#T0" xml:id="T182"/>
+<when interval="574.144" since="#T0" xml:id="T179"/>
+<when interval="576.261417" since="#T0" xml:id="T184"/>
+<when interval="581.256219" since="#T0" xml:id="T185"/>
+<when interval="582.617" since="#T0" xml:id="T183"/>
+<when interval="584.344951" since="#T0" xml:id="T186"/>
+<when interval="586.960052" since="#T0" xml:id="T187"/>
+<when interval="590.923532" since="#T0" xml:id="T188"/>
+<when interval="594.415215" since="#T0" xml:id="T189"/>
+<when interval="598.359534" since="#T0" xml:id="T191"/>
+<when interval="599.323571" since="#T0" xml:id="T192"/>
+<when interval="601.561" since="#T0" xml:id="T190"/>
+<when interval="605.751295" since="#T0" xml:id="T193"/>
+<when interval="610.401335" since="#T0" xml:id="T195"/>
+<when interval="611.611" since="#T0" xml:id="T196"/>
+<when interval="611.835" since="#T0" xml:id="T194"/>
+<when interval="614.049489" since="#T0" xml:id="T198"/>
+<when interval="616.291812" since="#T0" xml:id="T197"/>
+<when interval="617.452176" since="#T0" xml:id="T199"/>
+<when interval="617.522191" since="#T0" xml:id="T200"/>
+<when interval="618.015231" since="#T0" xml:id="T201"/>
+<when interval="619.869426" since="#T0" xml:id="T202"/>
+<when interval="624.583376" since="#T0" xml:id="T204"/>
+<when interval="628.650666" since="#T0" xml:id="T205"/>
+<when interval="628.835" since="#T0" xml:id="T203"/>
+<when interval="634.454321" since="#T0" xml:id="T206"/>
+<when interval="637.371446" since="#T0" xml:id="T207"/>
+<when interval="641.163596" since="#T0" xml:id="T208"/>
+<when interval="644.914" since="#T0" xml:id="T210"/>
+<when interval="644.91571" since="#T0" xml:id="T209"/>
+<when interval="646.493" since="#T0" xml:id="T212"/>
+<when interval="647.610922" since="#T0" xml:id="T211"/>
+<when interval="648.062" since="#T0" xml:id="T214"/>
+<when interval="648.06269" since="#T0" xml:id="T213"/>
+<when interval="652.216308" since="#T0" xml:id="T215"/>
+<when interval="656.764154" since="#T0" xml:id="T216"/>
+<when interval="658.245938" since="#T0" xml:id="T218"/>
+<when interval="660.025074" since="#T0" xml:id="T217"/>
+<when interval="665.058147" since="#T0" xml:id="T219"/>
+<when interval="665.70965" since="#T0" xml:id="T220"/>
+<when interval="667.498" since="#T0" xml:id="T222"/>
+<when interval="667.498841" since="#T0" xml:id="T221"/>
+<when interval="668.931757" since="#T0" xml:id="T223"/>
+<when interval="675.078816" since="#T0" xml:id="T224"/>
+<when interval="677.124552" since="#T0" xml:id="T226"/>
+<when interval="678.192369" since="#T0" xml:id="T227"/>
+<when interval="679.265" since="#T0" xml:id="T225"/>
+<when interval="686.22986" since="#T0" xml:id="T228"/>
+<when interval="687.037" since="#T0" xml:id="T230"/>
+<when interval="687.037195" since="#T0" xml:id="T229"/>
+<when interval="689.315" since="#T0" xml:id="T232"/>
+<when interval="689.315267" since="#T0" xml:id="T231"/>
+<when interval="691.555" since="#T0" xml:id="T233"/>
+<when interval="696.134" since="#T0" xml:id="T234"/>
+<when interval="697.438862" since="#T0" xml:id="T236"/>
+<when interval="699.554401" since="#T0" xml:id="T237"/>
+<when interval="700.722" since="#T0" xml:id="T235"/>
+<when interval="702.203" since="#T0" xml:id="T239"/>
+<when interval="702.203828" since="#T0" xml:id="T238"/>
+<when interval="704.326" since="#T0" xml:id="T240"/>
+</timeline>
+<body>
+<annotationBlock start="#T1" end="#T1" who="CHE" xml:id="u0" >
+<u>tu commences</u>
+</annotationBlock>
+<annotationBlock start="#T1" end="#T2" who="CAM" xml:id="u1" >
+<u>bof c&#39;est si tu veux de toute façon je sais pas si c&#39;était particulier pour moi mais</u>
+</annotationBlock>
+<annotationBlock start="#T2" end="#T3" who="CHE" xml:id="u2" >
+<u>tu as fait une terminale quoi déjà</u>
+</annotationBlock>
+<annotationBlock start="#T3" end="#T4" who="CAM" xml:id="u3" >
+<u>ES j&#39;étais pas une L j&#39;étais pas une petite L moi</u>
+</annotationBlock>
+<annotationBlock start="#T4" end="#T5" who="CAM" xml:id="u4" >
+<u>non bah du coup je suis arrivée à la fac</u>
+</annotationBlock>
+<annotationBlock start="#T5" end="#T6" who="CAM" xml:id="u5" >
+<u>euh bah d&#39;un côté je trouvais ça cool parce que</u>
+</annotationBlock>
+<annotationBlock start="#T6" end="#T7" who="CAM" xml:id="u6" >
+<u>je sais pas j&#39;étais</u>
+</annotationBlock>
+<annotationBlock start="#T7" end="#T8" who="CHE" xml:id="u7" >
+<u>plus une enfant</u>
+</annotationBlock>
+<annotationBlock start="#T8" end="#T9" who="CAM" xml:id="u8" >
+<u>ouais tu es seule et d’un côté tu te dis ça y est je suis autonome</u>
+</annotationBlock>
+<annotationBlock start="#T9" end="#T10" who="CAM" xml:id="u9" >
+<u>puis après tu te rends compte que bon pas trop</u>
+</annotationBlock>
+<annotationBlock start="#T10" end="#T10" who="CHE" xml:id="u10" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T10" end="#T11" who="CAM" xml:id="u11" >
+<u>en fait quand même c’est la galère mais mouais ç- bah ç- ça allait</u>
+</annotationBlock>
+<annotationBlock start="#T11" end="#T12" who="CAM" xml:id="u12" >
+<u>puis après j’ai rencontré des gens beaucoup de gens quand même dans la licence bah tu sais j’ai rencontré Lyess</u>
+</annotationBlock>
+<annotationBlock start="#T12" end="#T13" who="CHE" xml:id="u13" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T13" end="#T14" who="CAM" xml:id="u14" >
+<u>donc euh tout de suite ça m’a mise dans euh</u>
+</annotationBlock>
+<annotationBlock start="#T14" end="#T15" who="CHE" xml:id="u15" >
+<u>tu l&#39;as rencontré à la fac</u>
+</annotationBlock>
+<annotationBlock start="#T15" end="#T16" who="CAM" xml:id="u16" >
+<u>oui</u>
+</annotationBlock>
+<annotationBlock start="#T16" end="#T16" who="CHE" xml:id="u17" >
+<u>ah je savais pas</u>
+</annotationBlock>
+<annotationBlock start="#T16" end="#T17" who="CAM" xml:id="u18" >
+<u>bah oui pendant un cours le le le cours d’anglais là voilà</u>
+</annotationBlock>
+<annotationBlock start="#T17" end="#T17" who="CHE" xml:id="u19" >
+<u>oh</u>
+</annotationBlock>
+<annotationBlock start="#T17" end="#T18" who="CAM" xml:id="u20" >
+<u>hm hm donc ça a vraiment enfin d’un côté ça a vraiment changé</u>
+</annotationBlock>
+<annotationBlock start="#T18" end="#T19" who="CAM" xml:id="u21" >
+<u>parce que vraiment passer de mon lycée à Pont-à-Mousson où c’était toujours les mêmes gens et cætera à Nancy</u>
+</annotationBlock>
+<annotationBlock start="#T19" end="#T20" who="CHE" xml:id="u22" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T20" end="#T21" who="CAM" xml:id="u23" >
+<u>où je rencontre des nouvelles personnes par contre j’ai pas déménagé c’est pour ça le train euh toujours le train</u>
+</annotationBlock>
+<annotationBlock start="#T21" end="#T22" who="CHE" xml:id="u24" >
+<u>ouais j’ai connu ça aussi en bah du coup en terminale enfin au lycée j’étais au lycée pas loin de chez moi</u>
+</annotationBlock>
+<annotationBlock start="#T22" end="#T23" who="CHE" xml:id="u25" >
+<u>donc je prenais juste le bus bah de chez moi j’avais quoi dix ouais une dizaine de kilomètres et après devoir euh</u>
+</annotationBlock>
+<annotationBlock start="#T23" end="#T24" who="CHE" xml:id="u26" >
+<u>devoir monter jusqu’à Nancy enfin c’est pas non plus super loin mais euh</u>
+</annotationBlock>
+<annotationBlock start="#T25" end="#T26" who="CHE" xml:id="u27" >
+<u>mais du coup j’avais ma voiture et au début je voulais pas je voulais pas faire les trajets Toul Nancy en voiture</u>
+</annotationBlock>
+<annotationBlock start="#T26" end="#T27" who="CAM" xml:id="u28" >
+<u>hm</u>
+</annotationBlock>
+<annotationBlock start="#T28" end="#T29" who="CHE" xml:id="u29" >
+<u>parce que bah pour des raisons évidentes de il y a de la place nulle part</u>
+</annotationBlock>
+<annotationBlock start="#T29" end="#T30" who="CAM" xml:id="u30" >
+<u>oui oui oui oui</u>
+</annotationBlock>
+<annotationBlock start="#T30" end="#T31" who="CHE" xml:id="u31" >
+<u>et du coup bah j&#39;ai pris le bus et c&#39;est vrai que être dépendant du bus c&#39;est chiant enfin</u>
+</annotationBlock>
+<annotationBlock start="#T31" end="#T32" who="CAM" xml:id="u32" >
+<u>bah surtout que je crois que tu nous avais déjà parlé ou Méline et que genre pour arriver à huit heures c&#39;était chaud ou des trucs comme ça</u>
+</annotationBlock>
+<annotationBlock start="#T33" end="#T34" who="CHE" xml:id="u33" >
+<u>ouais ouais ouais puis en plus le peu qu&#39;il y ait un peu d&#39;embouteillage sur le</u>
+</annotationBlock>
+<annotationBlock start="#T35" end="#T36" who="CHE" xml:id="u34" >
+<u>bah ça c&#39;est pareil avec la voiture mais si tu prends celui de cinq minutes trop en avance tu es trop en avance mais s&#39;il y a des embouteillages tu es bien</u>
+</annotationBlock>
+<annotationBlock start="#T37" end="#T38" who="CAM" xml:id="u35" >
+<u>oui oui</u>
+</annotationBlock>
+<annotationBlock start="#T36" end="#T39" who="CHE" xml:id="u36" >
+<u>mais ouais enfin c&#39;est vrai que c&#39;est chiant</u>
+</annotationBlock>
+<annotationBlock start="#T39" end="#T40" who="CHE" xml:id="u37" >
+<u>après se retrouver lâchée enfin un peu lâchée dans une grande ville c&#39;est c&#39;est pas mal</u>
+</annotationBlock>
+<annotationBlock start="#T40" end="#T41" who="CHE" xml:id="u38" >
+<u>enfin on a pas trop l&#39;habitude du coup enfin tu vois avant le avant le avant la fac je me disais waouh mais ça va être trop bien quand je vais être à la fac</u>
+</annotationBlock>
+<annotationBlock start="#T41" end="#T42" who="CHE" xml:id="u39" >
+<u>je vais avoir des heures de trou je vais pouvoir aller faire les magasins et tout</u>
+</annotationBlock>
+<annotationBlock start="#T42" end="#T43" who="CHE" xml:id="u40" >
+<u>puis finalement vu la masse de travail que tu as euh c&#39;est c&#39;est juste pas possible</u>
+</annotationBlock>
+<annotationBlock start="#T44" end="#T45" who="CAM" xml:id="u41" >
+<u>oui des des des magasins oui oui oui c&#39;est euh</u>
+</annotationBlock>
+<annotationBlock start="#T46" end="#T47" who="CHE" xml:id="u42" >
+<u>mais sinon euh sinon bah pareil c&#39;était assez facile la transition</u>
+</annotationBlock>
+<annotationBlock start="#T48" end="#T49" who="CHE" xml:id="u43" >
+<u>euh beh du coup j&#39;étais aussi chez mes parents à part en fin de L2 je crois euh</u>
+</annotationBlock>
+<annotationBlock start="#T49" end="#T50" who="CHE" xml:id="u44" >
+<u>mon copain qui habitait sur Metz est venu à Nancy du coup il a pris un appart</u>
+</annotationBlock>
+<annotationBlock start="#T50" end="#T51" who="CHE" xml:id="u45" >
+<u>du coup j&#39;étais les weekends chez lui ou quand je commençais trop tôt</u>
+</annotationBlock>
+<annotationBlock start="#T51" end="#T52" who="CHE" xml:id="u46" >
+<u>tu vois quand je commençais à huit heures je m&#39;arrangeais pour dormir le la veille chez lui pour être pas très loin</u>
+</annotationBlock>
+<annotationBlock start="#T52" end="#T53" who="CHE" xml:id="u47" >
+<u>du coup là c&#39;était pratique j&#39;étais à genre vingt minutes à pied de la fac</u>
+</annotationBlock>
+<annotationBlock start="#T53" end="#T54" who="CHE" xml:id="u48" >
+<u>du coup là c&#39;était pratique mais sinon euh sinon ouais c&#39;était</u>
+</annotationBlock>
+<annotationBlock start="#T54" end="#T55" who="CHE" xml:id="u49" >
+<u>bah j&#39;ai eu la chance d&#39;avoir Méline parce que enfin franchement j&#39;aurais été euh j&#39;aurais été un peu larguée mais euh</u>
+</annotationBlock>
+<annotationBlock start="#T56" end="#T57" who="CAM" xml:id="u50" >
+<u>hum</u>
+</annotationBlock>
+<annotationBlock start="#T55" end="#T58" who="CAM" xml:id="u51" >
+<u>ouais c&#39;était son ton soutien euh moral psychologique::</u>
+</annotationBlock>
+<annotationBlock start="#T58" end="#T59" who="CHE" xml:id="u52" >
+<u>ah ouais clairement tout euh ouais ouais tout soutien quoi</u>
+</annotationBlock>
+<annotationBlock start="#T59" end="#T60" who="CHE" xml:id="u53" >
+<u>Méline je comprends pas Méline je stresse</u>
+</annotationBlock>
+<annotationBlock start="#T60" end="#T61" who="CAM" xml:id="u54" >
+<u>bah tu sais moi j&#39;avais Sophie dès là L1</u>
+</annotationBlock>
+<annotationBlock start="#T61" end="#T62" who="CHE" xml:id="u55" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T62" end="#T63" who="CAM" xml:id="u56" >
+<u>beh de toute façon vous étiez là vous étiez témoins de notre rencontre alors euh voilà mais t&#39;as bien vu que</u>
+</annotationBlock>
+<annotationBlock start="#T64" end="#T65" who="CHE" xml:id="u57" >
+<u>oui c&#39;est vrai qu&#39;on a assisté à la rencontre</u>
+</annotationBlock>
+<annotationBlock start="#T65" end="#T66" who="CAM" xml:id="u58" >
+<u>dès qu&#39;il y avait un truc que je comprenais pas j&#39;étais là Sophie qu&#39;est-ce qu&#39;on est censé faire qu&#39;est-ce qu&#39;il se passe</u>
+</annotationBlock>
+<annotationBlock start="#T66" end="#T67" who="CHE" xml:id="u59" >
+<u>ben j&#39;étais un peu pareille avec Méline</u>
+</annotationBlock>
+<annotationBlock start="#T67" end="#T68" who="CAM" xml:id="u60" >
+<u>mais sinon ouais le la grande ville Nancy ça t&#39;a pas:: je sais pas</u>
+</annotationBlock>
+<annotationBlock start="#T69" end="#T70" who="CHE" xml:id="u61" >
+<u>non</u>
+</annotationBlock>
+<annotationBlock start="#T68" end="#T71" who="CAM" xml:id="u62" >
+<u>parce que après moi je sais que j&#39;ai eu droit à en fait ma mère connaît Nancy vu qu&#39;elle y travaille</u>
+</annotationBlock>
+<annotationBlock start="#T71" end="#T72" who="CAM" xml:id="u63" >
+<u>et ma soeur elle euh elle a fait ses études à la fac puis elle était doctorante en plus donc elle m&#39;a elle m&#39;a fait visiter la fac avant</u>
+</annotationBlock>
+<annotationBlock start="#T73" end="#T74" who="CHE" xml:id="u64" >
+<u>ah ouais ok</u>
+</annotationBlock>
+<annotationBlock start="#T72" end="#T75" who="CAM" xml:id="u65" >
+<u>donc quand je suis arrivée tu vois je connaissais déjà donc j&#39;ai pas non plus eu ce truc de beh j&#39;arrive dans un endroit je connais pas du tout</u>
+</annotationBlock>
+<annotationBlock start="#T75" end="#T76" who="CAM" xml:id="u66" >
+<u>tu sais le jour de la rentrée où tu peux stresser parce que parce que tu as jamais vu mais euh</u>
+</annotationBlock>
+<annotationBlock start="#T77" end="#T78" who="CHE" xml:id="u67" >
+<u>ouais ouais</u>
+</annotationBlock>
+<annotationBlock start="#T79" end="#T80" who="CHE" xml:id="u68" >
+<u>et genre euh ben je sais pas toi mais au début de voir le oui enfin le campus aussi gros je me suis dit waouh je vais jamais m&#39;en sortir dans les salles</u>
+</annotationBlock>
+<annotationBlock start="#T80" end="#T81" who="CHE" xml:id="u69" >
+<u>et puis c&#39;est venu tout seul</u>
+</annotationBlock>
+<annotationBlock start="#T82" end="#T83" who="CAM" xml:id="u70" >
+<u>maintenant ça va</u>
+</annotationBlock>
+<annotationBlock start="#T83" end="#T84" who="CHE" xml:id="u71" >
+<u>enfin encore une fois heureusement qu&#39;il y avait Méline parce que</u>
+</annotationBlock>
+<annotationBlock start="#T85" end="#T86" who="CAM" xml:id="u72" >
+<u>oui oui oui oui oui le premier jour où euh tu sais pas</u>
+</annotationBlock>
+<annotationBlock start="#T87" end="#T88" who="CHE" xml:id="u73" >
+<u>parce que clairement moi l&#39;emploi du temps j&#39;ai jamais su que ce soti là L1 la L2 la L3 même le master j&#39;ai jamais su euh où j&#39;étais ni j&#39;ai jamais connu mon emploi du temps j&#39;ai jamais appris du coup ça c&#39;était un peu</u>
+</annotationBlock>
+<annotationBlock start="#T89" end="#T90" who="CAM" xml:id="u74" >
+<u>bah je je sais que ouais parce que dans notre conversation c&#39;est toujours on est en quelle salle euh voilà</u>
+</annotationBlock>
+<annotationBlock start="#T91" end="#T92" who="CHE" xml:id="u75" >
+<u>ouais on est où</u>
+</annotationBlock>
+<annotationBlock start="#T93" end="#T94" who="CAM" xml:id="u76" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T93" end="#T95" who="CHE" xml:id="u77" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T96" end="#T97" who="CAM" xml:id="u78" >
+<u>bah après euh moi je crois que la grandeur de tu sais du campus je me suis dit waouh c&#39;est super grand et tout</u>
+</annotationBlock>
+<annotationBlock start="#T97" end="#T98" who="CHE" xml:id="u79" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T99" end="#T100" who="CAM" xml:id="u80" >
+<u>puis maintenant bah je suis habituée et puis je j&#39;ai l&#39;impression que c&#39;est petit comparé à d&#39;autres universités</u>
+</annotationBlock>
+<annotationBlock start="#T101" end="#T102" who="CHE" xml:id="u81" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T100" end="#T103" who="CAM" xml:id="u82" >
+<u>je me dis juste bah en fait non c&#39;est petit ça va</u>
+</annotationBlock>
+<annotationBlock start="#T104" end="#T105" who="CHE" xml:id="u83" >
+<u>ouais tu te dis fin- que final- enfin du moment où on a pris nos habitudes j&#39;ai trouvé que ça allait</u>
+</annotationBlock>
+<annotationBlock start="#T106" end="#T107" who="CAM" xml:id="u84" >
+<u>enfin parce que maintenant on connaît genre on sait le bâtiment A le bâtiment J on fait vraiment la distinction et on sait qu&#39;il y en a où on va jamais</u>
+</annotationBlock>
+<annotationBlock start="#T108" end="#T109" who="CHE" xml:id="u85" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T110" end="#T111" who="CHE" xml:id="u86" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T107" end="#T112" who="CAM" xml:id="u87" >
+<u>et toi tu sais ça ben::</u>
+</annotationBlock>
+<annotationBlock start="#T112" end="#T113" who="CHE" xml:id="u88" >
+<u>mais tu sais aussi ce qui m&#39;a:: ce qui m&#39;a paru un peu:: bizarre genre un peu difficulté de la fac par rapport au lycée</u>
+</annotationBlock>
+<annotationBlock start="#T113" end="#T114" who="CHE" xml:id="u89" >
+<u>c&#39;est euh les cours vraiment les intitulés des cours</u>
+</annotationBlock>
+<annotationBlock start="#T114" end="#T115" who="CAM" xml:id="u90" >
+<u>oui ça a rien à voir</u>
+</annotationBlock>
+<annotationBlock start="#T115" end="#T116" who="CHE" xml:id="u91" >
+<u>mais::</u>
+</annotationBlock>
+<annotationBlock start="#T116" end="#T117" who="CAM" xml:id="u92" >
+<u>tu sais pas dans quoi tu vas bah après c&#39;est parce que c&#39;est plus:: spécial</u>
+</annotationBlock>
+<annotationBlock start="#T118" end="#T119" who="CHE" xml:id="u93" >
+<u>ouais tu sais pas dans quoi tu vas</u>
+</annotationBlock>
+<annotationBlock start="#T117" end="#T120" who="CAM" xml:id="u94" >
+<u>parce que tu sais euh bah depuis même depuis la la la primaire tu fais français maths et histoire voilà</u>
+</annotationBlock>
+<annotationBlock start="#T121" end="#T122" who="CHE" xml:id="u95" >
+<u>plus spécifique</u>
+</annotationBlock>
+<annotationBlock start="#T120" end="#T123" who="CAM" xml:id="u96" >
+<u>et là d&#39;un coup tu arrives dans des trucs euh</u>
+</annotationBlock>
+<annotationBlock start="#T123" end="#T124" who="CHE" xml:id="u97" >
+<u>ouais dans des cours bien précis des trucs ouais j&#39;ai trouvé ça j&#39;ai trouvé ça un peu compliqué</u>
+</annotationBlock>
+<annotationBlock start="#T124" end="#T125" who="CHE" xml:id="u98" >
+<u>même par rapport au choix d&#39;orientation du coup parce que tu te dis je veux faire telle licence</u>
+</annotationBlock>
+<annotationBlock start="#T125" end="#T126" who="CHE" xml:id="u99" >
+<u>et quand tu regardes la plaquette des de la licence ben il y a ça ça ça comme cours</u>
+</annotationBlock>
+<annotationBlock start="#T126" end="#T127" who="CHE" xml:id="u100" >
+<u>tu sais pas toujours à quoi ça correspond</u>
+</annotationBlock>
+<annotationBlock start="#T128" end="#T129" who="CAM" xml:id="u101" >
+<u>oui tu sais pas ouais ouais parce que toi quand tu es entrée dans la licence tu savais pas quel métier tu voulais faire ou::</u>
+</annotationBlock>
+<annotationBlock start="#T130" end="#T131" who="CHE" xml:id="u102" >
+<u>non pas vraiment moi de base j&#39;étais partie pour euh faire un master MEEF être professeure des écoles</u>
+</annotationBlock>
+<annotationBlock start="#T132" end="#T133" who="CAM" xml:id="u103" >
+<u>oui bah oui du coup c&#39;est les enfants toujours tu voulais être prof avec des enfants ouais c&#39;était ça ouais</u>
+</annotationBlock>
+<annotationBlock start="#T134" end="#T135" who="CHE" xml:id="u104" >
+<u>ouais ouais ouais</u>
+</annotationBlock>
+<annotationBlock start="#T133" end="#T136" who="CAM" xml:id="u105" >
+<u>non parce que moi du coup je suis vraiment rentrée à la fac en me disant je veux être prof de FLE</u>
+</annotationBlock>
+<annotationBlock start="#T136" end="#T137" who="CHE" xml:id="u106" >
+<u>ah ouais</u>
+</annotationBlock>
+<annotationBlock start="#T137" end="#T138" who="CAM" xml:id="u107" >
+<u>hm</u>
+</annotationBlock>
+<annotationBlock start="#T138" end="#T139" who="CHE" xml:id="u108" >
+<u>ah ouais que moi prof de FLE au lycée je savais même pas ce que c&#39;était</u>
+</annotationBlock>
+<annotationBlock start="#T140" end="#T141" who="CAM" xml:id="u109" >
+<u>bah après j&#39;avais peut-être pas le mot FLE tu vois mais j&#39;étais là prof de français pour les étrangers</u>
+</annotationBlock>
+<annotationBlock start="#T141" end="#T142" who="CHE" xml:id="u110" >
+<u>ah ouais ok</u>
+</annotationBlock>
+<annotationBlock start="#T142" end="#T143" who="CAM" xml:id="u111" >
+<u>mais ouais du coup beh en fait beh c&#39;est ma soeur elle m&#39;a dit beh tu peux faire euh le master FLE</u>
+</annotationBlock>
+<annotationBlock start="#T143" end="#T144" who="CAM" xml:id="u112" >
+<u>j&#39;étais là ok bah faut faire quoi faut faire enfin tu sais du coup je me suis renseignée</u>
+</annotationBlock>
+<annotationBlock start="#T144" end="#T145" who="CAM" xml:id="u113" >
+<u>au lycée ils étaient là ah ben faut faire euh peut-être une double licence français et anglais</u>
+</annotationBlock>
+<annotationBlock start="#T145" end="#T146" who="CAM" xml:id="u114" >
+<u>j&#39;étais là jamais de ma vie je fais ça</u>
+</annotationBlock>
+<annotationBlock start="#T146" end="#T147" who="CHE" xml:id="u115" >
+<u>ok</u>
+</annotationBlock>
+<annotationBlock start="#T147" end="#T148" who="CAM" xml:id="u116" >
+<u>et puis j&#39;en ai reparlé à ma soeur elle me dit bah non tu fais sciences du langage</u>
+</annotationBlock>
+<annotationBlock start="#T148" end="#T149" who="CAM" xml:id="u117" >
+<u>et je suis arrivée en sciences du langage</u>
+</annotationBlock>
+<annotationBlock start="#T149" end="#T150" who="CHE" xml:id="u118" >
+<u>moi j&#39;ai fait sciences du langage parce que la soeur d&#39;une copine était en master MEEF quand euh nous on rentrait à la fac</u>
+</annotationBlock>
+<annotationBlock start="#T150" end="#T151" who="CHE" xml:id="u119" >
+<u>et euh et du coup elle était passée par une licence sciences du langage</u>
+</annotationBlock>
+<annotationBlock start="#T151" end="#T152" who="CHE" xml:id="u120" >
+<u>du coup je lui avais un peu demandé comment ça s&#39;était passé et tout</u>
+</annotationBlock>
+<annotationBlock start="#T152" end="#T153" who="CHE" xml:id="u121" >
+<u>et euh et du coup bah par rapport à l&#39;intitulé des cours elle m&#39;avait un peu expliqué ce qu&#39;il y avait dedans</u>
+</annotationBlock>
+<annotationBlock start="#T153" end="#T154" who="CHE" xml:id="u122" >
+<u>donc c&#39;est vrai que pour se projeter c&#39;était un peu plus facile mais euh</u>
+</annotationBlock>
+<annotationBlock start="#T155" end="#T156" who="CAM" xml:id="u123" >
+<u>hm ouais parce que en plus du coup y&#39;a pas de L1 sciences de l&#39;éducation</u>
+</annotationBlock>
+<annotationBlock start="#T156" end="#T157" who="CHE" xml:id="u124" >
+<u>non</u>
+</annotationBlock>
+<annotationBlock start="#T156" end="#T158" who="CAM" xml:id="u125" >
+<u>mais s&#39;il y avait eu L1 sciences de l&#39;éducation</u>
+</annotationBlock>
+<annotationBlock start="#T159" end="#T160" who="CHE" xml:id="u126" >
+<u>bah je pense que je serais partie en L1 sciences de l&#39;éducation du coup</u>
+</annotationBlock>
+<annotationBlock start="#T161" end="#T162" who="CAM" xml:id="u127" >
+<u>ouais</u>
+</annotationBlock>
+<annotationBlock start="#T163" end="#T164" who="CHE" xml:id="u128" >
+<u>et euh et peut-être que j&#39;aurais regretté peut-être</u>
+</annotationBlock>
+<annotationBlock start="#T164" end="#T165" who="CAM" xml:id="u129" >
+<u>ouais parce que tu es bien dans ton truc</u>
+</annotationBlock>
+<annotationBlock start="#T165" end="#T166" who="CHE" xml:id="u130" >
+<u>parce que tu sais que je m&#39;étais inscrite en L3 sciences de l&#39;éduc</u>
+</annotationBlock>
+<annotationBlock start="#T166" end="#T167" who="CHE" xml:id="u131" >
+<u>je m&#39;y étais inscrite et euh et finalement euh finalement bah j&#39;avais envoyé ma candidature et tout et au dernier moment euh</u>
+</annotationBlock>
+<annotationBlock start="#T167" end="#T168" who="CHE" xml:id="u132" >
+<u>je me suis dit bah non en fait je je reste en sciences du langage parce que</u>
+</annotationBlock>
+<annotationBlock start="#T169" end="#T170" who="CAM" xml:id="u133" >
+<u>je reste avec Méline</u>
+</annotationBlock>
+<annotationBlock start="#T168" end="#T171" who="CHE" xml:id="u134" >
+<u>ouais je reste déjà je reste avec Méline et euh je reste en sciences du langage parce que</u>
+</annotationBlock>
+<annotationBlock start="#T171" end="#T172" who="CHE" xml:id="u135" >
+<u>je me suis tu vois à un moment j&#39;ai fait un petit point et je me suis projetée</u>
+</annotationBlock>
+<annotationBlock start="#T173" end="#T174" who="CHE" xml:id="u136" >
+<u>je me suis dit mais est-ce que tu tu as envie de faire le enfin un métier je veux dire qui</u>
+</annotationBlock>
+<annotationBlock start="#T175" end="#T176" who="CHE" xml:id="u137" >
+<u>qui est fixe tu vois dans le sens où je peux pas changer pas quand je veux mais</u>
+</annotationBlock>
+<annotationBlock start="#T177" end="#T178" who="CAM" xml:id="u138" >
+<u>hm</u>
+</annotationBlock>
+<annotationBlock start="#T176" end="#T179" who="CHE" xml:id="u139" >
+<u>y&#39;a pas de possibilité d&#39;avoir un autre public d&#39;avoir peut-être des adultes d&#39;enseigner bah comme là le FLE en entreprise ou enfin</u>
+</annotationBlock>
+<annotationBlock start="#T180" end="#T181" who="CAM" xml:id="u140" >
+<u>ouais ouais ouais</u>
+</annotationBlock>
+<annotationBlock start="#T182" end="#T183" who="CAM" xml:id="u141" >
+<u>oui c&#39;est vrai qu&#39;en FLE tu es vachement plus libre tu as ce truc au moins de bon j&#39;en ai marre des adultes je peux faire un tr- oui c&#39;est vrai</u>
+</annotationBlock>
+<annotationBlock start="#T184" end="#T185" who="CHE" xml:id="u142" >
+<u>ouais c&#39;est ouais c&#39;est diver- c&#39;est diversifié de ouais</u>
+</annotationBlock>
+<annotationBlock start="#T183" end="#T186" who="CAM" xml:id="u143" >
+<u>alors que oui en MEEF euh</u>
+</annotationBlock>
+<annotationBlock start="#T186" end="#T187" who="CHE" xml:id="u144" >
+<u>et je me suis dit en fait euh le truc qui me</u>
+</annotationBlock>
+<annotationBlock start="#T187" end="#T188" who="CHE" xml:id="u145" >
+<u>je pensais aussi j&#39;ai beaucoup pensé à mes anciennes maîtresses au primaire</u>
+</annotationBlock>
+<annotationBlock start="#T188" end="#T189" who="CHE" xml:id="u146" >
+<u>et je me suis dit ça doit être quand même compliqué enfin d&#39;un côté tu dois être fière</u>
+</annotationBlock>
+<annotationBlock start="#T189" end="#T190" who="CHE" xml:id="u147" >
+<u>de voir tes de voir tes élèves évoluer mais d&#39;un autre côté bah toi tu stagnes en fait</u>
+</annotationBlock>
+<annotationBlock start="#T191" end="#T192" who="CAM" xml:id="u148" >
+<u>hm</u>
+</annotationBlock>
+<annotationBlock start="#T190" end="#T193" who="CHE" xml:id="u149" >
+<u>toujours le même métier toujours la même classe parce que bien souvent quand tu arrives dans une école</u>
+</annotationBlock>
+<annotationBlock start="#T193" end="#T194" who="CHE" xml:id="u150" >
+<u>tu peux pas te permettre de dire bah euh toi la maîtresse euh tu bouges c&#39;est moi qui prends cette classe-là</u>
+</annotationBlock>
+<annotationBlock start="#T195" end="#T196" who="CAM" xml:id="u151" >
+<u>oui oui oui oui oui</u>
+</annotationBlock>
+<annotationBlock start="#T194" end="#T197" who="CHE" xml:id="u152" >
+<u>donc du coup tu es un peu mise euh là où il y a de la place</u>
+</annotationBlock>
+<annotationBlock start="#T198" end="#T199" who="CAM" xml:id="u153" >
+<u>oui et puis quand quand oui et puis quand tu arrives ouais tu as vraiment pas le choix</u>
+</annotationBlock>
+<annotationBlock start="#T200" end="#T201" who="CHE" xml:id="u154" >
+<u>ouais c&#39;est ça</u>
+</annotationBlock>
+<annotationBlock start="#T199" end="#T202" who="CAM" xml:id="u155" >
+<u>et puis après quand tu évoluies quand tu évolues</u>
+</annotationBlock>
+<annotationBlock start="#T202" end="#T203" who="CAM" xml:id="u156" >
+<u>tu tu ouais c&#39;est tu sais les les petits derniers tu dis ouais bah vous vous prenez les trucs qu&#39;on veut pas euh ouais voilà c&#39;est ça oui</u>
+</annotationBlock>
+<annotationBlock start="#T204" end="#T205" who="CHE" xml:id="u157" >
+<u>ouais ouais ouais ouais c&#39;est ça euh qui restent ouais c&#39;est ça</u>
+</annotationBlock>
+<annotationBlock start="#T203" end="#T206" who="CHE" xml:id="u158" >
+<u>et du coup je me suis dit waouh ça doit peut-être être un peu euh un peu ennuyant comme</u>
+</annotationBlock>
+<annotationBlock start="#T206" end="#T207" who="CAM" xml:id="u159" >
+<u>ouais bah oui oui oui c&#39;est en fait c&#39;est plus oui c&#39;est ça c&#39;est plus fixe</u>
+</annotationBlock>
+<annotationBlock start="#T207" end="#T208" who="CHE" xml:id="u160" >
+<u>après euh travailler avec les enfants c&#39;est jamais trop ennuyant hein mais euh</u>
+</annotationBlock>
+<annotationBlock start="#T208" end="#T209" who="CAM" xml:id="u161" >
+<u>je vois bien avec les adultes que bon</u>
+</annotationBlock>
+<annotationBlock start="#T210" end="#T211" who="CHE" xml:id="u162" >
+<u>ouais c&#39;est déjà du travail</u>
+</annotationBlock>
+<annotationBlock start="#T212" end="#T213" who="CAM" xml:id="u163" >
+<u>c&#39;est déjà bien alors euh avec des enfants</u>
+</annotationBlock>
+<annotationBlock start="#T214" end="#T215" who="CHE" xml:id="u164" >
+<u>ouais bah je pense que tu je sais pas comment tu le prends toi dans ton dans ton stage</u>
+</annotationBlock>
+<annotationBlock start="#T215" end="#T216" who="CHE" xml:id="u165" >
+<u>mais euh avec les enfants j&#39;ai l&#39;impression qu&#39;il y a plus de police tu sais</u>
+</annotationBlock>
+<annotationBlock start="#T216" end="#T217" who="CHE" xml:id="u166" >
+<u>fais pas ci fais ça arrête de parler concentre-toi</u>
+</annotationBlock>
+<annotationBlock start="#T218" end="#T219" who="CAM" xml:id="u167" >
+<u>alors pour l&#39;instant ça va c&#39;est ce que je me disais que justement j&#39;aimais bien les adultes parce que j&#39;avais moins à faire la police</u>
+</annotationBlock>
+<annotationBlock start="#T219" end="#T220" who="CHE" xml:id="u168" >
+<u>ok</u>
+</annotationBlock>
+<annotationBlock start="#T220" end="#T221" who="CAM" xml:id="u169" >
+<u>sauf que là ça commence un peu à::</u>
+</annotationBlock>
+<annotationBlock start="#T222" end="#T223" who="CHE" xml:id="u170" >
+<u>ah ouais</u>
+</annotationBlock>
+<annotationBlock start="#T223" end="#T224" who="CAM" xml:id="u171" >
+<u>bah y&#39;en a deux ils suivent moins euh bon je du coup bon c&#39;est un peu tu sais</u>
+</annotationBlock>
+<annotationBlock start="#T224" end="#T225" who="CAM" xml:id="u172" >
+<u>non ne va pas sur ton téléphone puis cinq minutes après ne va pas sur ton téléphone</u>
+</annotationBlock>
+<annotationBlock start="#T226" end="#T227" who="CHE" xml:id="u173" >
+<u>ah oui ok</u>
+</annotationBlock>
+<annotationBlock start="#T225" end="#T228" who="CAM" xml:id="u174" >
+<u>range ton téléphone et bon bah puis surtout enfin genre moi je suis là j&#39;ai vingt-trois ans il en a quarante</u>
+</annotationBlock>
+<annotationBlock start="#T228" end="#T229" who="CHE" xml:id="u175" >
+<u>ah ouais</u>
+</annotationBlock>
+<annotationBlock start="#T230" end="#T231" who="CAM" xml:id="u176" >
+<u>donc tu es tu ranges ton téléphone</u>
+</annotationBlock>
+<annotationBlock start="#T232" end="#T233" who="CHE" xml:id="u177" >
+<u>ah ouais ça doit être compliqué</u>
+</annotationBlock>
+<annotationBlock start="#T233" end="#T234" who="CAM" xml:id="u178" >
+<u>pff ouais bah après c&#39;est ça c&#39;est que quand tu es je pense avec des enfants tu as plus vraiment ce statut de</u>
+</annotationBlock>
+<annotationBlock start="#T234" end="#T235" who="CAM" xml:id="u179" >
+<u>je suis l&#39;adulte tu m&#39;écoutes alors que là c&#39;est bah je suis la prof</u>
+</annotationBlock>
+<annotationBlock start="#T236" end="#T237" who="CHE" xml:id="u180" >
+<u>ouais ouais je pense</u>
+</annotationBlock>
+<annotationBlock start="#T235" end="#T238" who="CAM" xml:id="u181" >
+<u>peut-être que j&#39;ai l&#39;âge de ta fille mais</u>
+</annotationBlock>
+<annotationBlock start="#T239" end="#T240" who="CAM" xml:id="u182" >
+<u>mais tu m&#39;écoutes quand même</u>
+</annotationBlock>
+<annotationBlock start="#T239" end="#T240" who="CHE" xml:id="u183" >
+<u>mais tu m&#39;écoutes quand même</u>
+</annotationBlock>
+</body>
+</text>
+</TEI>

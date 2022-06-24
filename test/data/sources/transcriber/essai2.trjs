@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI SYSTEM "http://ct3.ortolang.fr/tei-corpo/tei_corpo.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>new</title>
+</titleStmt>
+<publicationStmt></publicationStmt>
+<notesStmt>
+<note type="COMMENTS_DESC">
+</note>
+<note type="METADATA_DESC">
+<note>
+<note type="property">Titre</note>
+<note type="type">DublinCore</note>
+<note type="value">new</note>
+<note type="info">Titre du document</note>
+</note>
+<note>
+<note type="property">Créateur</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Créateur du document</note>
+</note>
+<note>
+<note type="property">Sujet</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Sujet et mots-clefs</note>
+</note>
+<note>
+<note type="property">Description</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Description du document</note>
+</note>
+<note>
+<note type="property">Editeur</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Editeur du document</note>
+</note>
+<note>
+<note type="property">-</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">-</note>
+</note>
+<note>
+<note type="property">Date</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Date d'un événement dans le cycle de vie du document</note>
+</note>
+<note>
+<note type="property">Type de ressource</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Nature ou genre du contenu</note>
+</note>
+<note>
+<note type="property">Format</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Format du document</note>
+</note>
+<note>
+<note type="property">Identifiant de la ressource</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Identificateur non ambigu</note>
+</note>
+<note>
+<note type="property">Source</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Ressource dont dérive le document</note>
+</note>
+<note>
+<note type="property">Langue</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Langue du document</note>
+</note>
+<note>
+<note type="property">Relation</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Lien vers une ressource liée</note>
+</note>
+<note>
+<note type="property">Couverture</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">Portée du document</note>
+</note>
+<note>
+<note type="property">-</note>
+<note type="type">DublinCore</note>
+<note type="value"></note>
+<note type="info">-</note>
+</note>
+</note>
+<note type="TEMPLATE_DESC">
+<note>
+<note type="code">SPK1</note>
+<note type="contentType"></note>
+<note type="parent">none</note>
+<note type="description"></note>
+</note>
+<note>
+<note type="code">SPK2</note>
+<note type="contentType"></note>
+<note type="parent">none</note>
+<note type="description"></note>
+</note>
+<note>
+<note type="code">SPK3</note>
+<note type="contentType"></note>
+<note type="parent">none</note>
+<note type="description"></note>
+</note>
+<note>
+<note type="code">S4</note>
+<note type="contentType"></note>
+<note type="parent">none</note>
+<note type="description"></note>
+</note>
+<note>
+<note type="code">ortho</note>
+<note type="type">Symbolic Association</note>
+<note type="parent">main</note>
+<note type="contentType"></note>
+<note type="description">Orthographic line</note>
+</note>
+<note>
+<note type="code">phono</note>
+<note type="type">Symbolic Association</note>
+<note type="parent">main</note>
+<note type="contentType"></note>
+<note type="description">Phonetic line</note>
+</note>
+</note>
+</notesStmt>
+<sourceDesc>
+<recordingStmt><recording>
+<media url="/Users/loufallon/Desktop/Transcription/audios/LECTURES AUX ENFANTS/ Discussion_13 ✅/Discussion_13.wav" mimeType="audio/wav" />
+<date dur=""></date>
+</recording>
+</recordingStmt>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<settingDesc>
+<place>
+<placeName></placeName>
+</place>
+</settingDesc>
+<langUsage><language ident="eng">eng</language></langUsage><particDesc><listPerson>
+<person
+sex="9"
+>
+<persName>ThomasX</persName>
+<altGrp><alt type="S4" /></altGrp></person><person
+sex="9"
+>
+<persName>Céline</persName>
+<altGrp><alt type="SPK1" /></altGrp></person><person
+sex="9"
+>
+<persName>Louis</persName>
+<altGrp><alt type="SPK3" /></altGrp></person><person
+xml:id="xxx"
+>
+<persName>Thomas</persName>
+<altGrp><alt type="SPK2" /></altGrp></person></listPerson></particDesc>
+</profileDesc>
+<encodingDesc version="0.9.1" subversion="trjs">
+<appInfo>
+<application ident="TRJS" />
+</appInfo>
+</encodingDesc>
+<revisionDesc>
+<list>
+<item>original TRJS</item>
+<item>lastsave: Fri May 06 2022 13:28:35 GMT+0200 (heure d’été d’Europe centrale)</item>
+<item>url: .//test//Essai.trjs</item>
+<item>name: new</item>
+</list>
+</revisionDesc>
+</teiHeader>
+<text>
+<timeline unit="s">
+<when absolute="0" xml:id="T0"/>
+<when interval="5.653604" since="#T0" xml:id="T1"/>
+<when interval="6.278095" since="#T0" xml:id="T2"/>
+</timeline>
+<body>
+<annotationBlock start="#T0" end="#T1" who="SPK1" xml:id="u0" >
+<u>dekopezpko</u>
+</annotationBlock>
+<annotationBlock start="#T1" end="#T2" who="S4" xml:id="u1" >
+<u>nezem</u>
+</annotationBlock>
+</body>
+</text>
+</TEI>

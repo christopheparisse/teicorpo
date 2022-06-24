@@ -3,8 +3,8 @@ package fr.ortolang.teicorpo;
 public class Version {
 
 	public static String versionTEI = "0.9.1";
-	private static String versionSoftStr = "1.41.03"; // full version with Elan, Clan, Transcriber and Praat
-	private static String versionDateStr = "03/05/2022 12:00";
+	private static String versionSoftStr = "1.41.04"; // full version with Elan, Clan, Transcriber and Praat
+	private static String versionDateStr = "21/06/2022 18:00";
 
 	public static String versionSoft(boolean isTest) {
 		return isTest ? "testing-version" : versionSoftStr;

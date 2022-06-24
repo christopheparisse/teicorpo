@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="fr.ortolang.teicorpo.TestFromElan" time="0.953" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromElan" time="0.019" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-86"/>
@@ -30,7 +30,7 @@
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="12.3.1"/>
+    <property name="os.version" value="12.4"/>
     <property name="library.jansi.path" value="/Users/cp/apache-maven/lib/jansi-native"/>
     <property name="user.home" value="/Users/cp"/>
     <property name="user.timezone" value="Europe/Paris"/>
@@ -57,5 +57,55 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="fr.ortolang.teicorpo.TestFromElan" name="test" time="0.953"/>
+  <testcase classname="fr.ortolang.teicorpo.TestFromElan" name="test" time="0.019">
+    <failure message="The files differ!" type="java.lang.AssertionError">java.lang.AssertionError: The files differ!
+	at org.junit.Assert.fail(Assert.java:89)
+	at fr.ortolang.teicorpo.RunTeiCorpo.runcpx(RunTeiCorpo.java:39)
+	at fr.ortolang.teicorpo.RunTeiCorpo.run(RunTeiCorpo.java:13)
+	at fr.ortolang.teicorpo.TestFromElan.test(TestFromElan.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>ElanToTei
+Working Directory = /Users/cp/devlopt/teicorpo
+
+Elan to TEI
+mainCommand: (-from elan /Users/cp/devlopt/teicorpo/test/data/sources/elan/TestElan1.eaf -to tei -o /Users/cp/devlopt/teicorpo/test/data/dest/elan/TestElan1.eaf.tei_corpo.xml -v -test)
+File: /Users/cp/devlopt/teicorpo/test/data/sources/elan/TestElan1.eaf --&gt; /Users/cp/devlopt/teicorpo/test/data/dest/elan/TestElan1.eaf.tei_corpo.xml
+Moved to: /Users/cp/devlopt/teicorpo/test/data/dest/elan/TestElan1.eaf.tei_corpo.xml
+Comparing files:
+	/Users/cp/devlopt/teicorpo/test/data/dest/elan/TestElan1.eaf.tei_corpo.xml
+and	/Users/cp/devlopt/teicorpo/test/data/dest/elan/TestElan1.eaf.tei_corpo.xml.correct
+</system-out>
+  </testcase>
 </testsuite>

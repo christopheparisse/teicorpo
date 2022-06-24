@@ -26,10 +26,14 @@ public class ElanToHT {
 	// acces XpathTest
 	public XPathFactory xPathfactory;
 	public XPath xpath;
+
+	public boolean partialInfoOnly;
 	
 	public HashMap <String, ArrayList <Element>> refInfo;
+	public int initialTimelineLength;
 
-	public ElanToHT(File eafFile) throws IOException {
+	public ElanToHT(File eafFile, boolean partialInfo) throws IOException {
+		partialInfoOnly = partialInfo;
 		ht = new HierarchicTrans();
 		this.eafFile = eafFile;
 		ht.fileName = eafFile.getName();
@@ -79,18 +83,18 @@ public class ElanToHT {
 		});
 		*/
 		refInfo = new HashMap<String, ArrayList<Element>>();
-		createRefInfo();
+		if (partialInfoOnly != false) createRefInfo();
 		// Récupération des informations sur le fichier
 		ht.metaInf = new MetaInf_elan(docEAF, eafFile);
 		ht.initial_format = "Elan";
 		// Construction de la timeline
 		buildTimeline();
 		// Récupération des voc contrôlés
-		getCvs();
+		if (partialInfoOnly != false) getCvs();
 		// Récupération des noms de tiers principaux
 		getTiersInfo();
 		// Construction de l'arborescence de la transcription
-		buildTiers();
+		if (partialInfoOnly != false) buildTiers();
 	}
 
 	public void buildTimeline() {
@@ -104,6 +108,7 @@ public class ElanToHT {
 			ht.timeline.put(id, time_val);
 			ht.times.add(time_val);
 		}
+		initialTimelineLength = time_slots.getLength();
 	}
 	
 	public void createRefInfo() {
@@ -572,7 +577,7 @@ public class ElanToHT {
 	}
 
 	public static void main(String args[]) throws IOException {
-		ElanToHT ef = new ElanToHT(new File(args[0]));
+		ElanToHT ef = new ElanToHT(new File(args[0]), false);
 		for (Map.Entry<String, ArrayList<Annot>> entry : ef.ht.hierarchic_representation.entrySet()) {
 			System.out.println("******************  " + entry.getKey().toUpperCase() + "  ******************");
 			// System.out.println(ef.tiersInfo.get(entry.getKey()).dependantsNames);

@@ -104,7 +104,7 @@
         <String>ft@SP</String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>1</Int>
+        <Int>2</Int>
     </pref>
     <prefList key="CommentViewer.Columns.Hidden">
         <String>Destinataire</String>

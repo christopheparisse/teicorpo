@@ -14,7 +14,7 @@ public class ElanToTei extends GenericMain {
 	HT_ToTei ht;
 
 	public void transform(String inputFile, String outputName, TierParams options) throws IOException {
-		ElanToHT = new ElanToHT(new File(inputFile));
+		ElanToHT = new ElanToHT(new File(inputFile), false);
 		ht = new HT_ToTei(ElanToHT.ht, options);
 		TeiDocument.setTranscriptionDesc(ht.docTEI, "elan", "0.1", "no information on format");
 
