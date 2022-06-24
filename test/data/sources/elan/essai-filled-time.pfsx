@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1075,840</Object>
+        <Object class="java.awt.Dimension">1506,1097</Object>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
@@ -14,10 +14,10 @@
         <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
     </pref>
     <pref key="MultiTierViewer.ActiveTierName">
-        <String>tdep</String>
+        <String>other</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>6740</Long>
+        <Long>7120</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
@@ -73,7 +73,7 @@
         <Object class="java.awt.Point">345,25</Object>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>4950</Long>
+        <Long>6290</Long>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
@@ -84,9 +84,12 @@
         <Long>0</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>1990</Long>
+        <Long>7120</Long>
     </pref>
     <prefGroup key="TierColors">
+        <pref key="other">
+            <Object class="java.awt.Color">160,0,0</Object>
+        </pref>
         <pref key="default">
             <Object class="java.awt.Color">0,160,90</Object>
         </pref>
@@ -99,6 +102,7 @@
         <String>inc</String>
         <String>main</String>
         <String>tdep</String>
+        <String>other</String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
         <Int>2</Int>

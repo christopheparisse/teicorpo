@@ -2,13 +2,13 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1056,767</Object>
+        <Object class="java.awt.Dimension">1764,770</Object>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
-        <Int>7</Int>
+        <Int>0</Int>
     </pref>
     <pref key="LayoutManager.VisibleMultiTierViewer">
         <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
@@ -16,8 +16,11 @@
     <pref key="MultiTierViewer.ActiveTierName">
         <String>default</String>
     </pref>
+    <pref key="LayoutManager.MediaAreaHeight">
+        <Int>71</Int>
+    </pref>
     <pref key="SelectionEndTime">
-        <Long>0</Long>
+        <Long>6904</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
@@ -70,28 +73,38 @@
         <String>AAM-LR Phone level audio segmentation</String>
     </pref>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">317,25</Object>
+        <Object class="java.awt.Point">400,882</Object>
+    </pref>
+    <pref key="TimeLineViewer.ZoomLevel">
+        <Float>199.0</Float>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>0</Long>
+        <Long>6894</Long>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
             <String>http://lux17.mpi.nl/aamlr/</String>
         </pref>
     </prefGroup>
+    <prefList key="MultiTierViewer.HiddenTiers">
+        <String>inc</String>
+        <String>tdep</String>
+    </prefList>
     <pref key="TimeScaleBeginTime">
         <Long>0</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>3530</Long>
+        <Long>6894</Long>
     </pref>
     <prefGroup key="TierColors">
         <pref key="default">
-            <Object class="java.awt.Color">0,160,90</Object>
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="other">
+            <Object class="java.awt.Color">160,90,160</Object>
         </pref>
         <pref key="main">
-            <Object class="java.awt.Color">0,90,160</Object>
+            <Object class="java.awt.Color">160,0,0</Object>
         </pref>
     </prefGroup>
     <prefList key="MultiTierViewer.TierOrder">
@@ -99,6 +112,7 @@
         <String>inc</String>
         <String>main</String>
         <String>tdep</String>
+        <String>other</String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
         <Int>2</Int>
