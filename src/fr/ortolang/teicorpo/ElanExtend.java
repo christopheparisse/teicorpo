@@ -95,13 +95,6 @@ public class ElanExtend extends GenericMain {
             String name = processedTier.getAttribute("TIER_ID");
             // is the tier time aligned
             TierInfo tierInfo = this.elanToHT.ht.tiersInfo.get(name);
-            if (!tierInfo.parent.isEmpty()) {
-                if (options.verbose) System.out.printf("Tier with a parent: %s => %s%n", name, tierInfo.parent);
-            } else {
-                if (options.verbose) System.out.printf("MAIN Tier: %s%n", name);
-            }
-            // System.out.printf("nb tiers %d%n", tiers.getLength());
-            if (options.raw && !tierInfo.parent.isEmpty()) continue;
             if (tierInfo.linguistType.time_align && !tierInfo.parent.isEmpty()) {
                 // if a tier is a descendant you have to divide empty fields that overlap some limits in the parent
                 // get the same list for the parent

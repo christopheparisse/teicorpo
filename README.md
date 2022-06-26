@@ -162,6 +162,17 @@ The command is :
 java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInserMeta trsfilename -metadata metadatafilename -o outputfilename
 ```
 
+##### DINLANG
+Specific conversions from CLAN to TEI and then TEI to ELAN for the DINLANG ANR Project
+```
+java -cp teicorpo.jar fr.ortolang.teicorpo.TeiCorpo -from chat -to elan \
+  -tv FAT:aud-P -tv MOT:aud-M -tv LUC:aud-Ea -tv GAB:aud-Eb \
+  -target dinlang -model "Elan-Template.etf" input-file.cha
+```
+  - -target dinlang --> indicate to use the special features for the dinlang project
+  -tv SCODE:tcode --> SCODE is the name of the tier in CLAN files - tcode is the name of the tier in ELAN files
+  -model template.etf --> the ELAN resulting file includes the ELAN template
+
 ### History version
   - 1.00  Initial fully functional version
   - 1.40  Rename jar file. English version.
