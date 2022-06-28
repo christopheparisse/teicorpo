@@ -29,6 +29,8 @@ public class ElanExtend extends GenericMain {
             System.out.println("Process only main tiers");
         initLastAnnotAndTemplate();
         extendEAFAlignedAnnotation(elanToHT, options);
+        if (options.raw == true)
+            extendEAFDependentTiers(elanToHT, options);
         Utils.createFile(elanToHT.docEAF, outputName);
     }
 
@@ -116,11 +118,70 @@ public class ElanExtend extends GenericMain {
                 // find the empty in the new annotations
                 // get the new set of annotations updated from the procedure above
                 NodeList timeAnnots = processedTier.getElementsByTagName("ALIGNABLE_ANNOTATION");
+                NodeList parentAnnots = ptier.getElementsByTagName("ALIGNABLE_ANNOTATION");
                 for (int a = 0; a < timeAnnots.getLength(); a++) {
                     Element annotEl = (Element) timeAnnots.item(a);
                     if (annotEl.getTextContent().equals("<empty>")) {
-                        // now see if this has to be split
-                        ;
+                        // now see if this annotation has to be split
+                        String anRef1 = annotEl.getAttribute("TIME_SLOT_REF1");
+                        String anRef2 = annotEl.getAttribute("TIME_SLOT_REF2");
+                        String anRef1Time = elanToHT.ht.timeline.get(anRef1);
+                        String anRef2Time = elanToHT.ht.timeline.get(anRef2);
+                        int iAnRef1Time = Integer.parseInt(anRef1Time);
+                        int iAnRef2Time = Integer.parseInt(anRef2Time);
+                        for (int p = 0; p < parentAnnots.getLength(); p++) {
+                            String pRef1 = ((Element)(parentAnnots.item(p))).getAttribute("TIME_SLOT_REF1");
+                            String pRef1Time = elanToHT.ht.timeline.get(pRef1);
+                            int ipRef1Time = Integer.parseInt(pRef1Time);
+                            String intermRefTime = anRef1Time;
+                            Element intermAnnot = annotEl;
+                            if (ipRef1Time > iAnRef1Time && ipRef1Time < iAnRef2Time) {
+                                // cut at ipRef1Time
+                                lastUsedAnnotation = createNewAnnotation(elanToHT, lastUsedAnnotation, annotEl, null, pRef1Time, anRef2Time);
+                                intermRefTime = pRef1Time;
+                                a++;
+                                intermAnnot = (Element)timeAnnots.item(a); // new element at 'a'
+                            }
+                            String pRef2 = ((Element)(parentAnnots.item(p))).getAttribute("TIME_SLOT_REF2");
+                            String pRef2Time = elanToHT.ht.timeline.get(pRef2);
+                            int ipRef2Time = Integer.parseInt(pRef2Time);
+                            if (ipRef2Time > Integer.parseInt(intermRefTime) && ipRef2Time < iAnRef2Time) {
+                                // cut at ipRef2Time
+                                lastUsedAnnotation = createNewAnnotation(elanToHT, lastUsedAnnotation, intermAnnot, null, pRef2Time, anRef2Time);
+                                a++;
+                            }
+                        }
+                    }
+                }
+                // add all the parent annotation that are after the last annotation
+                int m = timeAnnots.getLength()-1; // where to add
+                Element lastElement = ((Element) timeAnnots.item(m));
+                String anRefLast = lastElement.getAttribute("TIME_SLOT_REF2");
+                String anRefLastTime = elanToHT.ht.timeline.get(anRefLast);
+                int iAnRefLastTime = Integer.parseInt(anRefLastTime);
+                // these two will increase with the new annotation (as well as 'm').
+                String intermRefTime = anRefLastTime;
+                Element intermAnnot = lastElement;
+                for (int p = 0; p < parentAnnots.getLength(); p++) {
+                    String pRef1 = ((Element)(parentAnnots.item(p))).getAttribute("TIME_SLOT_REF1");
+                    String pRef1Time = elanToHT.ht.timeline.get(pRef1);
+                    int ipRef1Time = Integer.parseInt(pRef1Time);
+                    if (ipRef1Time > iAnRefLastTime) {
+                        // cut at ipRef1Time
+                        lastUsedAnnotation = createNewAnnotation(elanToHT, lastUsedAnnotation, intermAnnot, null, intermRefTime, pRef1Time);
+                        intermRefTime = pRef1Time;
+                        m++;
+                        intermAnnot = (Element)timeAnnots.item(m); // new element at 'm'
+                    }
+                    String pRef2 = ((Element)(parentAnnots.item(p))).getAttribute("TIME_SLOT_REF2");
+                    String pRef2Time = elanToHT.ht.timeline.get(pRef2);
+                    int ipRef2Time = Integer.parseInt(pRef2Time);
+                    if (ipRef2Time > iAnRefLastTime) {
+                        // cut at ipRef2Time
+                        lastUsedAnnotation = createNewAnnotation(elanToHT, lastUsedAnnotation, intermAnnot, null, intermRefTime, pRef2Time);
+                        intermRefTime = pRef1Time;
+                        m++;
+                        intermAnnot = (Element) timeAnnots.item(m); // new element at 'm'
                     }
                 }
             }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ANNOTATION_DOCUMENT AUTHOR="TEI_CORPO Converter"
-    DATE="2022-06-24T18:42:04+01:00" FORMAT="3.0" VERSION="3.0"
+    DATE="2022-06-28T20:08:17+01:00" FORMAT="3.0" VERSION="3.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR
             MEDIA_URL="file:///C:/devlopt/teicorpo/test/elan/rosita.mp4" MIME_TYPE="video/mp4"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:127eed2b-aced-427c-b2a9-21f3d5aaa1c9</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">16</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">18</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="280"/>
@@ -37,6 +37,10 @@
         <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="7120"/>
         <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="7225"/>
         <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="7430"/>
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="7650"/>
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="7840"/>
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="8440"/>
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="8660"/>
     </TIME_ORDER>
     <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="default">
         <ANNOTATION>
@@ -57,6 +61,12 @@
                 <ANNOTATION_VALUE>ESSAI3</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17"
+                TIME_SLOT_REF1="ts30" TIME_SLOT_REF2="ts32">
+                <ANNOTATION_VALUE>ESSAI4</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
     </TIER>
     <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="main">
         <ANNOTATION>
@@ -75,6 +85,12 @@
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6"
                 TIME_SLOT_REF1="ts18" TIME_SLOT_REF2="ts24">
                 <ANNOTATION_VALUE>MAIN3</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a18"
+                TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts31">
+                <ANNOTATION_VALUE>MAIN4</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>

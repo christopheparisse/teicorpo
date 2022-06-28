@@ -27,7 +27,7 @@ public class ElanToHT {
 	public XPathFactory xPathfactory;
 	public XPath xpath;
 
-	public boolean partialInfoOnly;
+	public boolean partialInfoOnly = false;
 	
 	public HashMap <String, ArrayList <Element>> refInfo;
 	public int initialTimelineLength;
@@ -83,18 +83,18 @@ public class ElanToHT {
 		});
 		*/
 		refInfo = new HashMap<String, ArrayList<Element>>();
-		if (partialInfoOnly != false) createRefInfo();
+		if (partialInfoOnly == false) createRefInfo();
 		// Récupération des informations sur le fichier
 		ht.metaInf = new MetaInf_elan(docEAF, eafFile);
 		ht.initial_format = "Elan";
 		// Construction de la timeline
 		buildTimeline();
 		// Récupération des voc contrôlés
-		if (partialInfoOnly != false) getCvs();
+		if (partialInfoOnly == false) getCvs();
 		// Récupération des noms de tiers principaux
 		getTiersInfo();
 		// Construction de l'arborescence de la transcription
-		if (partialInfoOnly != false) buildTiers();
+		if (partialInfoOnly == false) buildTiers();
 	}
 
 	public void buildTimeline() {
