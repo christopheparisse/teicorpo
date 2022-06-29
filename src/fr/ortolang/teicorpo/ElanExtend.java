@@ -155,6 +155,7 @@ public class ElanExtend extends GenericMain {
                 }
                 // add all the parent annotation that are after the last annotation
                 int m = timeAnnots.getLength()-1; // where to add
+                if (m<1) continue;
                 Element lastElement = ((Element) timeAnnots.item(m));
                 String anRefLast = lastElement.getAttribute("TIME_SLOT_REF2");
                 String anRefLastTime = elanToHT.ht.timeline.get(anRefLast);
@@ -222,11 +223,11 @@ public class ElanExtend extends GenericMain {
         // String cveref = (annotEl2 != null) ? annotEl2.getAttribute("CVE_REF") : annotEl1.getAttribute("CVE_REF");
         // if (!cveref.isEmpty()) alAnnot.setAttribute("CVE_REF", cveref);
 //        nthEmpty++;
-//        alValue.setTextContent("<empty" + nthEmpty + ">");
+//        alValue.setTextContent("--" + nthEmpty + "");
 //        if (nthEmpty == 83) {
 //            System.out.printf("XX83XX %s %s %s %s %d%n", newId1, newId2, el1Ref2Time, el2Ref1Time, el1Ref2Time.compareTo(el2Ref1Time));
 //        }
-        alValue.setTextContent("<empty>");
+        alValue.setTextContent("--");
         annot.appendChild(alAnnot);
         alAnnot.appendChild(alValue);
         if (annotEl2 != null) {
@@ -262,7 +263,7 @@ public class ElanExtend extends GenericMain {
     public static void main(String[] args) throws Exception {
         TierParams.printVersionMessage(false);
         ElanExtend tr = new ElanExtend();
-        tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanExtend fill the empty parts of an ELAN file with /empty/ elements.%nUse option -raw if you also to process the dependent tiers.", 0);
+        tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanExtend fill the empty parts of an ELAN file with -- elements.%nUse option -raw if you also to process the dependent tiers.", 0);
     }
 
     @Override
