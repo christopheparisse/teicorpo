@@ -129,7 +129,7 @@ public class TeiToPartition {
 	public void spanGrpCase(TreeMap<String, ArrayList<Annot>> tiers, Element spanGrp, String id, String name,
 			String timeref, String start, String end) {
 		String typeSG = spanGrp.getAttribute("type");
-		//System.err.printf("Test2 spanGrpCase %s%n", typeSG);
+//		System.err.printf("Test2 spanGrpCase %s ID %s%n", typeSG, id);
 		if (optionsOutput != null) {
 			if (optionsOutput.level == 1)
 				return;
@@ -178,8 +178,8 @@ public class TeiToPartition {
 			if (!spid.isEmpty())
 				annot.id = spid;
 			else
-				annot.id = id; // "x" + idIncr++;
-			// System.out.printf("%d %d %s %s %s %s {%s} %s %n", z, span.getNodeType(), typeSG, id, name, span.getTagName(), annot.getContent(), annot.id);
+				annot.id = "x" + idIncr++; // was id; ??? why cannot be the same id as the link ?
+//			System.out.printf("%d %d %s %s %s %s {%s} %s %n", z, span.getNodeType(), typeSG, id, name, span.getTagName(), annot.getContent(), annot.id);
 			// if (span.hasAttribute("target")){
 			if (!LgqType.isTimeType(getLgqConstraint(tierInfos, typeSG))) {
 				// System.out.printf("%s is ref%n", typeSG);
@@ -203,8 +203,7 @@ public class TeiToPartition {
 					annot.start = Double.toString(refstart);
 					annot.end = Double.toString(refend);
 				}
-				// System.out.printf("ref %s (%s) %n", annot.link,
-				// annot.previous);
+//				System.out.printf("ref %s (%s) %n", annot.link, annot.previous);
 			} else {
 				// System.out.printf("%s is time%n", typeSG);
 				annot.timereftype = "time";

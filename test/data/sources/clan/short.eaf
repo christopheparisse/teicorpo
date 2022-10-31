@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="TEI_CORPO Converter" DATE="2022-10-31T18:50:11+01:00" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="" MIME_TYPE="" RELATIVE_MEDIA_URL="./"/>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="au03665" TIME_VALUE="3665"/>
+        <TIME_SLOT TIME_SLOT_ID="au0835" TIME_VALUE="835"/>
+        <TIME_SLOT TIME_SLOT_ID="au13665" TIME_VALUE="3665"/>
+        <TIME_SLOT TIME_SLOT_ID="au14345" TIME_VALUE="4345"/>
+        <TIME_SLOT TIME_SLOT_ID="au24345" TIME_VALUE="4345"/>
+        <TIME_SLOT TIME_SLOT_ID="au26883" TIME_VALUE="6883"/>
+        <TIME_SLOT TIME_SLOT_ID="au36883" TIME_VALUE="6883"/>
+        <TIME_SLOT TIME_SLOT_ID="au37688" TIME_VALUE="7688"/>
+    </TIME_ORDER>
+    <TIER LINGUISTIC_TYPE_REF="CHI" PARTICIPANT="Lily" TIER_ID="CHI">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="au0" TIME_SLOT_REF1="au0835" TIME_SLOT_REF2="au03665">
+                <ANNOTATION_VALUE>I did .</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="au2" TIME_SLOT_REF1="au24345" TIME_SLOT_REF2="au26883">
+                <ANNOTATION_VALUE>I did find yyy .</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="gra" PARENT_REF="CHI" TIER_ID="CHI-gra">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x2" ANNOTATION_REF="au0">
+                <ANNOTATION_VALUE>1|2|SUBJ 2|0|ROOT 3|2|PUNCT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x8" ANNOTATION_REF="au2">
+                <ANNOTATION_VALUE>1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="mod" PARENT_REF="CHI" TIER_ID="CHI-mod">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x4" ANNOTATION_REF="au0">
+                <ANNOTATION_VALUE>ˈaɪ ˈdɪd</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x10" ANNOTATION_REF="au2">
+                <ANNOTATION_VALUE>ˈaɪ ˈdɪd ˈfaɪnd *</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="mor" PARENT_REF="CHI" TIER_ID="CHI-mor">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x1" ANNOTATION_REF="au0">
+                <ANNOTATION_VALUE>pro:sub|I v|do&amp;PAST .</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x7" ANNOTATION_REF="au2">
+                <ANNOTATION_VALUE>pro:sub|I mod|do&amp;PAST v|find .</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="pho" PARENT_REF="CHI" TIER_ID="CHI-pho">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x3" ANNOTATION_REF="au0">
+                <ANNOTATION_VALUE>haɪ ˈdɪd</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x9" ANNOTATION_REF="au2">
+                <ANNOTATION_VALUE>aɪ ˈdid faɪn wæ̃nrəoriz</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="MOT" TIER_ID="MOT">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="au1" TIME_SLOT_REF1="au13665" TIME_SLOT_REF2="au14345">
+                <ANNOTATION_VALUE>you did ?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="au3" TIME_SLOT_REF1="au36883" TIME_SLOT_REF2="au37688">
+                <ANNOTATION_VALUE>okay .</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="gra" PARENT_REF="MOT" TIER_ID="MOT-gra">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x6" ANNOTATION_REF="au1">
+                <ANNOTATION_VALUE>1|2|SUBJ 2|0|ROOT 3|2|PUNCT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x12" ANNOTATION_REF="au3">
+                <ANNOTATION_VALUE>1|0|INCROOT 2|1|PUNCT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="mor" PARENT_REF="MOT" TIER_ID="MOT-mor">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x5" ANNOTATION_REF="au1">
+                <ANNOTATION_VALUE>pro:per|you v|do&amp;PAST ?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="x11" ANNOTATION_REF="au3">
+                <ANNOTATION_VALUE>co|okay .</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="CHI" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="MOT" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="mor" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="mod" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="pho" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="gra" TIME_ALIGNABLE="false"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

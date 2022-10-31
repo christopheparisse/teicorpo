@@ -671,7 +671,7 @@ public class TeiToElan extends GenericMain {
 				} else if (a.timereftype.equals("ref")) {
 					Element ref_annot = elanDoc.createElement("REF_ANNOTATION");
 //					tstart = Utils.timeStamp("ref:" + a.name, tstart);
-					//System.out.printf("REF: (%s) %s%n", a.timereftype, a.toString());
+//					System.out.printf("REF: (%s) %s%n", a.timereftype, a.toString());
 					ref_annot.setAttribute("ANNOTATION_ID", a.id);
 					ref_annot.setAttribute("ANNOTATION_REF", a.link);
 					if (Utils.isNotEmptyOrNull(a.previous))

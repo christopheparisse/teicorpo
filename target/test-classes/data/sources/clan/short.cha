@@ -1,0 +1,24 @@
+@UTF8
+@Window:	0_0_0_0_-1_-1_626_0_626_0
+@Begin
+@Languages:	eng
+@Participants:	CHI Lily Target_Child, MOT Mother
+@ID:	eng|Providence|CHI|3;01.21|female|||Target_Child|||
+@ID:	eng|Providence|MOT|27;|female|||Mother|||
+*CHI:	I did . 835_3665
+%mor:	pro:sub|I v|do&PAST .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+%pho:	haɪ ˈdɪd
+%mod:	ˈaɪ ˈdɪd
+*MOT:	you did ? 3665_4345
+%mor:	pro:per|you v|do&PAST ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	I did find yyy . 4345_6883
+%mor:	pro:sub|I mod|do&PAST v|find .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+%pho:	aɪ ˈdid faɪn wæ̃nrəoriz
+%mod:	ˈaɪ ˈdɪd ˈfaɪnd *
+*MOT:	okay . 6883_7688
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

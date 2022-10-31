@@ -176,4 +176,6 @@ java -cp teicorpo.jar fr.ortolang.teicorpo.TeiCorpo -from chat -to elan \
 ### History version
   - 1.00  Initial fully functional version
   - 1.40  Rename jar file. English version.
-  - 1.45.00 Jar includes main class. Automatic tests added to the software generation.
+  - 1.41.00 Jar includes main class. Automatic tests added to the software generation.
+  - 1.41.05 Dinlang version
+  - 1.41.06 Bug from CLAN to TEI to ELAN (bad ELAN REF)

@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1677,1372</Object>
+        <Object class="java.awt.Dimension">1440,875</Object>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
@@ -86,7 +86,7 @@
             <String>http://lux17.mpi.nl/aamlr/</String>
         </pref>
         <pref key="source_audio">
-            <String>/corpusformat/elan/6-Lindsay_and_Brian.wav</String>
+            <String>6-Lindsay_and_Brian.wav</String>
         </pref>
     </prefGroup>
     <pref key="TimeScaleBeginTime">
@@ -99,11 +99,11 @@
         <pref key="SpL source of information">
             <Object class="java.awt.Color">160,0,0</Object>
         </pref>
-        <pref key="SpL third party">
-            <Object class="java.awt.Color">0,160,0</Object>
-        </pref>
         <pref key="SpR third party">
             <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="SpL third party">
+            <Object class="java.awt.Color">0,160,0</Object>
         </pref>
         <pref key="SpR hands">
             <Object class="java.awt.Color">160,90,90</Object>
@@ -117,14 +117,14 @@
         <pref key="SpL affiliation_discordance">
             <Object class="java.awt.Color">160,0,90</Object>
         </pref>
-        <pref key="SpL nose mouth">
-            <Object class="java.awt.Color">160,90,160</Object>
+        <pref key="SpR shoulders">
+            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
         <pref key="SpL gaze direction">
             <Object class="java.awt.Color">0,0,160</Object>
         </pref>
-        <pref key="SpR shoulders">
-            <Object class="java.awt.Color">160,0,90</Object>
+        <pref key="SpL nose mouth">
+            <Object class="java.awt.Color">160,90,160</Object>
         </pref>
         <pref key="SpL comments">
             <Object class="java.awt.Color">90,0,0</Object>
@@ -159,14 +159,14 @@
         <pref key="SpR comments">
             <Object class="java.awt.Color">90,160,0</Object>
         </pref>
+        <pref key="SpR multimodal stance">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
         <pref key="CAM">
             <Object class="java.awt.Color">90,160,160</Object>
         </pref>
         <pref key="SpL head">
             <Object class="java.awt.Color">90,90,0</Object>
-        </pref>
-        <pref key="SpR multimodal stance">
-            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
         <pref key="LIN">
             <Object class="java.awt.Color">90,0,160</Object>
@@ -192,11 +192,11 @@
         <pref key="SpR gaze direction">
             <Object class="java.awt.Color">160,90,160</Object>
         </pref>
-        <pref key="SpL eyebrows ">
-            <Object class="java.awt.Color">0,160,90</Object>
-        </pref>
         <pref key="SpR nose mouth">
             <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="SpL eyebrows ">
+            <Object class="java.awt.Color">0,160,90</Object>
         </pref>
         <pref key="SpL stance words">
             <Object class="java.awt.Color">0,160,160</Object>
@@ -249,7 +249,7 @@
         <String>SpL eyebrows </String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>1</Int>
+        <Int>2</Int>
     </pref>
     <prefList key="CommentViewer.Columns.Hidden">
         <String>Destinataire</String>
