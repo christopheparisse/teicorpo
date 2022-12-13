@@ -1,5 +1,5 @@
 # TEI-CORPO
-Conversion tool from Elan, Clan, Transcriber and Praat files to TEI files and back
+Conversion tool from Elan, Clan, Transcriber and Praat files to TEI files and back.
 
 ### Java library and Swing user interface
 

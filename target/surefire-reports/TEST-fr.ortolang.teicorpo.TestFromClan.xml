@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="fr.ortolang.teicorpo.TestFromClan" time="1.392" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="fr.ortolang.teicorpo.TestFromClan" time="2.077" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-86"/>
@@ -30,7 +30,7 @@
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="12.4"/>
+    <property name="os.version" value="13.0.1"/>
     <property name="library.jansi.path" value="/Users/cp/apache-maven/lib/jansi-native"/>
     <property name="user.home" value="/Users/cp"/>
     <property name="user.timezone" value="Europe/Paris"/>
@@ -57,5 +57,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="fr.ortolang.teicorpo.TestFromClan" name="test" time="1.392"/>
+  <testcase classname="fr.ortolang.teicorpo.TestFromClan" name="test" time="2.077"/>
 </testsuite>

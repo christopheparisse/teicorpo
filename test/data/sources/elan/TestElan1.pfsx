@@ -70,7 +70,10 @@
         <String>AAM-LR Phone level audio segmentation</String>
     </pref>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">186,215</Object>
+        <Object class="java.awt.Point">87,104</Object>
+    </pref>
+    <pref key="TimeLineViewer.ZoomLevel">
+        <Float>11.000001</Float>
     </pref>
     <pref key="SelectionBeginTime">
         <Long>0</Long>
@@ -84,7 +87,7 @@
         </pref>
     </prefGroup>
     <pref key="TimeScaleBeginTime">
-        <Long>160</Long>
+        <Long>0</Long>
     </pref>
     <pref key="MediaTime">
         <Long>0</Long>
@@ -111,14 +114,14 @@
         <pref key="SpL affiliation_discordance">
             <Object class="java.awt.Color">160,90,90</Object>
         </pref>
-        <pref key="SpL gaze direction">
-            <Object class="java.awt.Color">160,160,90</Object>
+        <pref key="SpR shoulders">
+            <Object class="java.awt.Color">160,90,160</Object>
         </pref>
         <pref key="SpL nose mouth">
             <Object class="java.awt.Color">160,0,160</Object>
         </pref>
-        <pref key="SpR shoulders">
-            <Object class="java.awt.Color">160,90,160</Object>
+        <pref key="SpL gaze direction">
+            <Object class="java.awt.Color">160,160,90</Object>
         </pref>
         <pref key="SpL comments">
             <Object class="java.awt.Color">90,160,90</Object>
@@ -129,11 +132,11 @@
         <pref key="SpR eyebrows">
             <Object class="java.awt.Color">160,160,90</Object>
         </pref>
-        <pref key="SpR source of information">
-            <Object class="java.awt.Color">90,160,0</Object>
-        </pref>
         <pref key="SpR evaluation">
             <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="SpR source of information">
+            <Object class="java.awt.Color">90,160,0</Object>
         </pref>
         <pref key="SpR silent utterance">
             <Object class="java.awt.Color">160,90,0</Object>
@@ -153,10 +156,10 @@
         <pref key="SpR comments">
             <Object class="java.awt.Color">90,90,160</Object>
         </pref>
-        <pref key="SpL head">
+        <pref key="SpR multimodal stance">
             <Object class="java.awt.Color">0,160,0</Object>
         </pref>
-        <pref key="SpR multimodal stance">
+        <pref key="SpL head">
             <Object class="java.awt.Color">0,160,0</Object>
         </pref>
         <pref key="CAM">
@@ -177,11 +180,11 @@
         <pref key="SpR head">
             <Object class="java.awt.Color">0,0,160</Object>
         </pref>
-        <pref key="BRI">
-            <Object class="java.awt.Color">0,160,160</Object>
-        </pref>
         <pref key="SpL shoulders">
             <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="BRI">
+            <Object class="java.awt.Color">0,160,160</Object>
         </pref>
         <pref key="SpR gaze direction">
             <Object class="java.awt.Color">0,160,160</Object>
@@ -212,7 +215,6 @@
         <String>SpL comments</String>
         <String>SpL epistemic stance</String>
         <String>SpL evaluation</String>
-        <String>SpL eyebrows </String>
         <String>SpL gaze direction</String>
         <String>SpL hands</String>
         <String>SpL head</String>
@@ -241,9 +243,10 @@
         <String>SpR stance words-SpR sw labels</String>
         <String>SpR third party</String>
         <String>SpR trunk</String>
+        <String>SpL eyebrows </String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>1</Int>
+        <Int>2</Int>
     </pref>
     <prefList key="CommentViewer.Columns.Hidden">
         <String>Destinataire</String>

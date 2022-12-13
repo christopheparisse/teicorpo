@@ -94,7 +94,15 @@ public class TransInfo {
 
 		try {
 			Element recording = (Element) fileDesc.getElementsByTagName("recording").item(0);
+			if (recording == null) {
+				System.err.println("no recording element");
+				return;
+			}
 			Element media = (Element) recording.getElementsByTagName("media").item(0);
+			if (media == null) {
+				System.err.println("no media element");
+				return;
+			}
 			medianame = (new File(media.getAttribute("url"))).getName();
 			mediatype = media.getAttribute("mimeType");
 			Element date = (Element) recording.getElementsByTagName("date").item(0);
