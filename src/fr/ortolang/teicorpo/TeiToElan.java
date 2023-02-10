@@ -140,7 +140,7 @@ public class TeiToElan extends GenericMain {
 	}
 
 	// Ecriture du fichier de sortie
-	public void outputWriter() throws Exception {
+	public boolean outputWriter() throws Exception {
 		if (!ttp.optionsOutput.model.isEmpty()) {
 			// use the model as a starting template
 			System.out.printf("Using template: %s%n", ttp.optionsOutput.model);
@@ -152,10 +152,10 @@ public class TeiToElan extends GenericMain {
 				elanDoc = builder.parse(templateFile);
 			} catch(FileNotFoundException e) {
 				System.err.println("The template " + ttp.optionsOutput.model + " doesn't exist.");
-				return;
+				return false;
 			} catch (Exception e) {
 				e.printStackTrace();
-				return;
+				return false;
 			}
 			annot_doc = getFirstElementByTagName(elanDoc, "ANNOTATION_DOCUMENT");
 		} else {
@@ -173,6 +173,7 @@ public class TeiToElan extends GenericMain {
 				System.exit(1);
 			}
 		}
+		return true;
 	}
 
 	// Conversion du fichier TEI vers Elan

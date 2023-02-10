@@ -116,6 +116,9 @@ class TierParams {
 	boolean absolute;
 	boolean tiernames;
 	boolean tierxmlid;
+	boolean partmetadataInFilename;
+	int minlength;
+	int maxlength;
     boolean tiernamescontent;
 	String metadata;
 	boolean writtentext;
@@ -173,6 +176,9 @@ class TierParams {
 		tiernames = false;
 		tiernamescontent = false;
 		tierxmlid = false;
+		partmetadataInFilename = false;
+		minlength = 0;
+		maxlength = 0;
 		metadata = null;
 		outputTEIName = null;
 		baseName = "";
@@ -291,6 +297,9 @@ class TierParams {
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
+			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
+			System.err.println("         -minlength value : minimum length of output utterance");
+			System.err.println("         -maxlength value : maximum length of output utterance");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
 			System.err.println("         -mediacontrol: add startTime information");
 			System.err.println("         -tiernamescontent : for TXM: add all fields in tiernames as for other words");
@@ -409,6 +418,7 @@ class TierParams {
 			System.err.println("         -sandhi : information spécifique intégrées pour l'analyse des liaisons");
 			System.err.println("         -tiernames : affiche le nom des locuteurs et des noms de tiers dans la transcription");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
+			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
 		}
 		if (style == 6 || style == -1) {
 			System.err.println("         -raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
@@ -506,6 +516,15 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-tierxmlid")) {
+						i++;
+						continue;
+					} else if (argument.equals("-partmeta")) {
+						i++;
+						continue;
+					} else if (argument.equals("-minlength")) {
+						i++;
+						continue;
+					} else if (argument.equals("-maxlength")) {
 						i++;
 						continue;
 					} else if (argument.equals("-tiernamescontent")) {
@@ -714,6 +733,48 @@ class TierParams {
 						}
 						i++;
 						options.purpose = args[i];
+					} else if (argument.equals("-minlength")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -minlength is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						int k;
+						try {
+							k = Integer.parseInt(args[i]);
+						} catch(Exception e) {
+							System.err.println("the parameter -minlength is not followed by a number.");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							if (!options.noerror) return false; else break;
+						}
+						if (k<1 || k>10000) {
+							System.err.println("the parameter -minlength must be between 1 and 10000");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						options.minlength = k;
+					} else if (argument.equals("-maxlength")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -maxlength is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						int k;
+						try {
+							k = Integer.parseInt(args[i]);
+						} catch(Exception e) {
+							System.err.println("the parameter -minlength is not followed by a number.");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							if (!options.noerror) return false; else break;
+						}
+						if (k<1 || k>1000000) {
+							System.err.println("the parameter -maxlength must be between 1 and 1000000");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						options.maxlength = k;
 					} else if (argument.equals("-tv")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -tv is not followed by a value");
@@ -778,6 +839,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-tierxmlid")) {
 						options.tierxmlid = true;
+						continue;
+					} else if (argument.equals("-partmeta")) {
+						options.partmetadataInFilename = true;
 						continue;
 					} else if (argument.equals("-tiernamescontent")) {
 						options.tiernamescontent = true;

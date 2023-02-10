@@ -67,7 +67,7 @@ public class TeiToTranscriber extends TeiConverter {
 	}
 
 	// Création du document trs
-	public void outputWriter() {
+	public boolean outputWriter() {
 		this.trsDoc = null;
 		DocumentBuilderFactory factory = null;
 		try {
@@ -81,6 +81,7 @@ public class TeiToTranscriber extends TeiConverter {
 			e.printStackTrace();
 			System.exit(1);
 		}
+		return true;
 	}
 
 	// Conversion du fichier teiml

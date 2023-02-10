@@ -89,7 +89,7 @@ public class AnonymousVideo extends TeiConverter {
 	/**
 	 * Ecriture de l'output
 	 */
-	public void outputWriter() {
+	public boolean outputWriter() {
 		outTemporary = null;
 		try {
 			FileOutputStream of = new FileOutputStream(FILESTEMPORARY);
@@ -99,6 +99,7 @@ public class AnonymousVideo extends TeiConverter {
 			System.err.println("cannot create temporary file");
 			System.exit(1);
 		}
+		return true;
 	}
 
 	/**

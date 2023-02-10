@@ -46,8 +46,8 @@ public class TeiToWtc extends TeiConverter {
 	}
 
 	@Override
-	public void outputWriter() {
-
+	public boolean outputWriter() {
+		return true;
 	}
 
 	/**

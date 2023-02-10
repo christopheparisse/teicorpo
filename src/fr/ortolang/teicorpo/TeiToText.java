@@ -4,11 +4,8 @@
  */
 package fr.ortolang.teicorpo;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 //import java.io.FilenameFilter;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -24,27 +21,73 @@ public class TeiToText extends TeiConverter {
 	final static String EXT = ".txt";
 
 	/**
-	 * Convertit le fichier TEI donné en argument en un fichier Srt.
+	 * Convertit le fichier TEI donné en argument en un fichier texte.
 	 * 
 	 * @param inputName
 	 *            Nom du fichier d'entrée (fichier TEI, a donc l'extenstion
 	 *            .teiml)
 	 * @param outputName
-	 *            Nom du fichier de sortie (fichier SRT, a donc l'extenson .txt)
+	 *            Nom du fichier de sortie (fichier TXT, a donc l'extenson .txt)
 	 */
 	public void transform(String inputName, String outputName, TierParams optionsTei) {
 		init(inputName, outputName, optionsTei);
 		if (this.tf == null)
 			return;
-		outputWriter();
+		if (outputWriter() == false) {
+			System.out.printf("Participant not found in %s%nFile ignored.%n", inputName);
+			return;
+		}
 		conversion();
 	}
 
 	/**
 	 * Ecriture de l'output
 	 */
-	public void outputWriter() {
-		out = Utils.openOutputStream(outputName, tf.optionsOutput.concat, outputEncoding);
+	public boolean outputWriter() {
+		String newOutputName = outputName;
+		if (tf.optionsOutput.partmetadataInFilename == true) {
+			String part = Utils.getOnlyElement(tf.optionsOutput.doDisplay);
+			if (part == null) {
+				System.err.printf("For option partmeta, the option -a must be set exactly once.%n");
+				System.exit(1);
+			}
+			String pathn = Utils.pathname(outputName);
+			String partname = tf.transInfo.getParticipantName(part);
+			String partage = tf.transInfo.getParticipantAge(part);
+			// String partrole = tf.transInfo.getParticipantRole(part);
+			// System.out.printf("PART: (%s) [%s] {%s}%n", part, partname, partage);
+			// tf.transInfo.print();
+			if (partname.isEmpty()) {
+				System.out.printf("Warning: no participant name in file %s%n", outputName);
+				System.out.printf("Output name wont be changed. It would be better to edit the original file%n");
+			} else {
+				if (partage.isEmpty()) {
+					partage = "XX.XX";
+				} else {
+					float age = Float.parseFloat(partage);
+					float age100 = age * 100;
+					Integer ageround100 = Math.round(age100);
+					float ageround = ageround100.floatValue() / 100;
+					// System.out.printf("%s %f %f %d %f%n", partage, age, age100, ageround100, ageround);
+					partage = Float.toString(ageround);
+				}
+				newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + ".txt";
+				// test if file exists and if yes create a new name
+				int addnum = 1;
+				while (true) {
+					File f = new File(newOutputName);
+					if (f.exists()) {
+						newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "-(" + addnum + ").txt";
+						addnum++;
+					} else {
+						break;
+					}
+				}
+				System.out.printf("export\t%s\t%s%n", outputName, newOutputName);
+			}
+		}
+		out = Utils.openOutputStream(newOutputName, tf.optionsOutput.concat, outputEncoding);
+		return true;
 	}
 
 	/**
@@ -137,6 +180,15 @@ public class TeiToText extends TeiConverter {
 				return;
 		}
 		*/
+
+		// test if length of line is limited to a certain length
+		if (tf.optionsOutput.minlength > 0 || tf.optionsOutput.maxlength > 0) {
+			// split speechContent
+			String[] wds = speechContent.split("[ \t\r\n\\.\\!\\?]");
+			if (wds.length < tf.optionsOutput.minlength) return;
+			if (tf.optionsOutput.maxlength != 0 && wds.length > tf.optionsOutput.maxlength) return;
+		}
+
 		// Si le temps de début n'est pas renseigné, on mettra par défaut le
 		// temps de fin (s'il est renseigné) moins une seconde.
 		if (!Utils.isNotEmptyOrNull(startTime)) {
@@ -162,9 +214,9 @@ public class TeiToText extends TeiConverter {
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (tf.optionsOutput.raw == true) {
-			if (optionsOutput.tiernames) {
+			if (tf.optionsOutput.tiernames && tf.optionsOutput.partmetadataInFilename != true) {
 				out.print("[" + spkChoice(au) + "]");
-				if (optionsOutput.tierxmlid) {
+				if (tf.optionsOutput.tierxmlid) {
 					out.println(" <" + au.lastxmlid + "> " + speechContent);
 				} else {
 					out.println(" " + speechContent);
@@ -241,11 +293,18 @@ public class TeiToText extends TeiConverter {
 		String usage = "Description: TeiToText converts a TEI file to a Text file (txt)%nUsage: TeiToText [-options] <file."
 				+ Utils.EXT + ">%n";
 		TeiToText ttc = new TeiToText();
-		ttc.mainCommand(args, Utils.EXT, EXT, usage, 6);
+		ttc.mainCommand(args, Utils.EXT, EXT, usage, 2);
 	}
 
 	@Override
 	public void mainProcess(String input, String output, TierParams options) {
+		if (options.partmetadataInFilename == true && options.raw != true) {
+			options.raw = true;
+			System.err.printf("Raw is set automatically to true when using option partmeta%n");
+		}
+//		if (options.partmetadataInFilename == true) {
+//			System.out.printf("Option partmeta is set. Filter export lines to save the file conversions.%n");
+//		}
 		transform(input, output, options);
 		if (tf != null) {
 			if (options.verbose) System.out.println("Txt: Reading " + input);

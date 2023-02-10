@@ -215,24 +215,35 @@ public class TransInfo {
 		}
 	}
 
-	// Récupération du nom d'un participant à partir de son identifiant (code)
-	public String getParticipantName(String participantID) {
+	// get participant class from the participant's ID (code)
+	public TeiParticipant getParticipant(String participantID) {
+		String lowpID = participantID.toLowerCase();
 		for (TeiParticipant p : this.participants) {
-			if (participantID.equals(p.id) && p.name != null && !p.name.isEmpty()) {
-				return p.name;
+			if (p.id == null) continue;
+			if (lowpID.equals(p.id.toLowerCase())) {
+				return p;
 			}
 		}
-		return participantID;
+		return null;
 	}
 
-	// Récupération du nom d'un role à partir de son identifiant (code)
+	// get participant's name from the participant's ID (code)
+	public String getParticipantName(String participantID) {
+		TeiParticipant p = getParticipant(participantID);
+		if (p == null || p.name == null || p.name.isEmpty()) return "";
+		return p.name;
+	}
+	// get participant's role from the participant's ID (code)
 	public String getParticipantRole(String participantID) {
-		for (TeiParticipant p : this.participants) {
-			if (participantID.equals(p.id) && p.role != null && !p.role.isEmpty()) {
-				return p.role;
-			}
-		}
-		return participantID;
+		TeiParticipant p = getParticipant(participantID);
+		if (p == null || p.role == null || p.role.isEmpty()) return "";
+		return p.role;
+	}
+	// get participant's age from the participant's ID (code)
+	public String getParticipantAge(String participantID) {
+		TeiParticipant p = getParticipant(participantID);
+		if (p == null || p.age == null || p.age.isEmpty()) return "";
+		return p.age;
 	}
 
 	/**

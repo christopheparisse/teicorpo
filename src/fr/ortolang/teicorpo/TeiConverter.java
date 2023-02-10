@@ -44,7 +44,7 @@ public abstract class TeiConverter extends GenericMain {
 	}
 
 	// Initialisation du fichier de sortie
-	public abstract void outputWriter();
+	public abstract boolean outputWriter();
 
 	// Conversion des données
 	public abstract void conversion();

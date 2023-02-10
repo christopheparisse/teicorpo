@@ -59,8 +59,9 @@ public class TeiToPraat extends GenericMain {
 	}
 
 	// Ecriture du fichier de sortie
-	public void outputWriter() {
+	public boolean outputWriter() {
 		out = Utils.openOutputStream(outputName, false, outputEncoding);
+		return true;
 	}
 
 	// Conversion du fichier TEI vers Elan
@@ -104,7 +105,9 @@ public class TeiToPraat extends GenericMain {
 		for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
 			out.printf("    item [%d]:%n", nth++);
 			out.println("        class = \"IntervalTier\"");
-			String sp = (ttp.optionsOutput.spknamerole.equals("pers")) ? transInfo.getParticipantName(entry.getKey()) : entry.getKey();
+			String sn = transInfo.getParticipantName(entry.getKey());
+			if (sn.isEmpty()) sn = entry.getKey();
+			String sp = (ttp.optionsOutput.spknamerole.equals("pers")) ? sn : entry.getKey();
 			out.printf("        name = \"%s\"%n", sp);
 			out.println("        xmin = 0");
 

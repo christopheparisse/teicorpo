@@ -153,9 +153,10 @@ public class AnnotatedUtterance {
 				return false;
 		}
 		// System.err.printf(speakerCode +  "  = code%n");
-		if (transInfo != null)
-			speakerName = transInfo.getParticipantName(speakerCode);
-		else
+		if (transInfo != null) {
+			String sn = transInfo.getParticipantName(speakerCode);
+			speakerName = sn.isEmpty() ? speakerCode : sn;
+		} else
 			speakerName = speakerCode;
 		return true;
 	}

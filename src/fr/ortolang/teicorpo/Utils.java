@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -629,7 +630,7 @@ public class Utils {
 				double y = Double.parseDouble(mm.group(1));
 				double m = Double.parseDouble(mm.group(2));
 				double d = Double.parseDouble(mm.group(3));
-				return Double.toString(Math.floor((y + (m*30.5 + d)/365.0) * 10) / 10);
+				return Double.toString(Math.floor((y + (m*30.5 + d)/365.0) * 100) / 100);
 			}
 			// case y;m
 			pp = Pattern.compile("(\\d+);(\\d+)");
@@ -638,7 +639,7 @@ public class Utils {
 			if (bb) {
 				double y = Double.parseDouble(mm.group(1));
 				double m = Double.parseDouble(mm.group(2));
-				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 10) / 10);
+				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 100) / 100);
 			}
 			// case y;m.
 			pp = Pattern.compile("(\\d+);(\\d+)\\.");
@@ -647,7 +648,7 @@ public class Utils {
 			if (bb) {
 				double y = Double.parseDouble(mm.group(1));
 				double m = Double.parseDouble(mm.group(2));
-				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 10) / 10);
+				return Double.toString(Math.floor((y + (m*30.5)/365.0) * 100) / 100);
 			}
 			// case y;
 			pp = Pattern.compile("(\\d+);");
@@ -655,16 +656,16 @@ public class Utils {
 			bb = mm.matches();
 			if (bb) {
 				double y = Double.parseDouble(mm.group(1));
-				return Double.toString(Math.floor(y * 10) / 10);
+				return Double.toString(Math.floor(y * 100) / 100);
 			}
 			double d = Double.parseDouble(age);
 			if (d < 0.0 || d > 120.0) {
 				System.err.println("age hors limites: (" + age + ")");
-				return "40.1";
+				return "40.10";
 			}
 		} catch (Exception e) {
 			System.err.println("age anormal: " + age);
-			return "40.1";
+			return "40.10";
 		}
 		return age;
 	}
@@ -714,4 +715,17 @@ public class Utils {
     	System.err.printf("%s %dsec %dms%n", msg, (actual - previous) / 1000, actual - previous);
     	return actual;
 	}
+
+	public static <E> E getOnlyElement(Iterable<E> iterable) {
+		Iterator<E> iterator = iterable.iterator();
+		if (!iterator.hasNext()) {
+			return null;
+		}
+		E element = iterator.next();
+		if (iterator.hasNext()) {
+			return null;
+		}
+		return element;
+	}
+
 }

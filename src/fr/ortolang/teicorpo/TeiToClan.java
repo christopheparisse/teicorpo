@@ -48,7 +48,7 @@ public class TeiToClan extends TeiConverter {
 	/**
 	 * Ecriture de l'output
 	 */
-	public void outputWriter() {
+	public boolean outputWriter() {
 		out = null;
 		try {
 			FileOutputStream of = new FileOutputStream(outputName);
@@ -57,6 +57,7 @@ public class TeiToClan extends TeiConverter {
 		} catch (Exception e) {
 			out = new PrintWriter(System.out, true);
 		}
+		return true;
 	}
 
 	/**

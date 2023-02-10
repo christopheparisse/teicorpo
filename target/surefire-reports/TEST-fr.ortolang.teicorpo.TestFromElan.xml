@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromElan" time="0.069" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="fr.ortolang.teicorpo.TestFromElan" time="0.043" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="17.0.2+8-86"/>
-    <property name="sun.boot.library.path" value="/Users/cp/jdk-17.0.2.jdk/Contents/Home/lib"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-19.0.1.jdk/Contents/Home/lib"/>
     <property name="maven.multiModuleProjectDirectory" value="/Users/cp/devlopt/teicorpo"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -15,58 +15,57 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/cp/devlopt/teicorpo"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="17.0.2+8-86"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
     <property name="os.arch" value="aarch64"/>
-    <property name="java.io.tmpdir" value="/var/folders/sk/v5gzr4dx7mnfqfggq4v7bs8r0000gn/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/fr/jhr15dt55dx06hl13hkff_200000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="stderr.encoding" value="UTF-8"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="classworlds.conf" value="/Users/cp/apache-maven/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/cp/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="maven.conf" value="/Users/cp/apache-maven/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="61.0"/>
+    <property name="java.class.version" value="63.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="13.0.1"/>
+    <property name="os.version" value="13.1"/>
     <property name="library.jansi.path" value="/Users/cp/apache-maven/lib/jansi-native"/>
     <property name="user.home" value="/Users/cp"/>
     <property name="user.timezone" value="Europe/Paris"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="17"/>
+    <property name="java.specification.version" value="19"/>
     <property name="user.name" value="cp"/>
     <property name="java.class.path" value="/Users/cp/apache-maven/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="java.vm.specification.version" value="19"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
-    <property name="java.home" value="/Users/cp/jdk-17.0.2.jdk/Contents/Home"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-19.0.1.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="17.0.2"/>
+    <property name="java.version" value="19.0.1"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.stderr.encoding" value="UTF-8"/>
     <property name="maven.home" value="/Users/cp/apache-maven"/>
     <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.version.date" value="2022-10-18"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="fr.ortolang.teicorpo.TestFromElan" name="test" time="0.069">
+  <testcase classname="fr.ortolang.teicorpo.TestFromElan" name="test" time="0.043">
     <failure message="The files differ!" type="java.lang.AssertionError">java.lang.AssertionError: The files differ!
 	at org.junit.Assert.fail(Assert.java:89)
 	at fr.ortolang.teicorpo.RunTeiCorpo.runcpx(RunTeiCorpo.java:39)
 	at fr.ortolang.teicorpo.RunTeiCorpo.run(RunTeiCorpo.java:13)
 	at fr.ortolang.teicorpo.TestFromElan.test(TestFromElan.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
@@ -86,10 +85,8 @@
 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)

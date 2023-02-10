@@ -56,7 +56,7 @@ public class TeiToTxm extends TeiConverter {
 	}
 
 	@Override
-	public void outputWriter() {
+	public boolean outputWriter() {
 		txmDoc = null;
 		DocumentBuilderFactory factory = null;
 		try {
@@ -69,6 +69,7 @@ public class TeiToTxm extends TeiConverter {
 			e.printStackTrace();
 			System.exit(1);
 		}
+		return true;
 	}
 
 	@Override
