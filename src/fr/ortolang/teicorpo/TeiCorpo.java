@@ -288,9 +288,10 @@ public class TeiCorpo extends GenericMain {
 				return Utils.EXT;
 			case "ttg":
 			case "perceo":
-				return lcFormat;
+				return lcFormat; // idem
 			case "dinlang":
-				return lcFormat;
+			case "stanza":
+				return lcFormat; // idem
 		}
 		return ".none";
 	}

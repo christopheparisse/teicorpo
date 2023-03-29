@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>teicorpo</groupId>
     <artifactId>teicorpo</artifactId>
-    <version>1.41.07-SNAPSHOT</version>
+    <version>1.41.09-SNAPSHOT</version>
     <name>teicorpo</name>
     <description>tools for spoken language with the TEI format</description>
     <properties>

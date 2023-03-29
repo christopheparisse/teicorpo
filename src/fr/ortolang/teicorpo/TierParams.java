@@ -340,7 +340,7 @@ class TierParams {
 		System.err.println("         -rawline : exports utterances with removing spoken language special codes");
 		System.err.println("         -normalize format : normalization is done from this format - possible options: clan ca");
 		System.err.println("         -normlineending : normalization of the end of utterance marker");
-		System.err.println("         -target format : normalization is done towards this format - possible options: praat, clan, ttg, perceo, dinlang\n");
+		System.err.println("         -target format : normalization is done towards this format - possible options: praat, clan, ttg, perceo, dinlang, stanza\n");
 		System.err.println("         -model file : template file for conversion (ELAN)");
 		System.err.println("         -short : file extensions do not contain tei_corpo");
 		System.err.println("         -p parameter_file: contains parameters with the same format as the command line, one parameter per line.");
@@ -385,7 +385,7 @@ class TierParams {
 		System.err.println("         -rawline : exporte des énoncés sans marqueurs spéficiques de l'oral");
 		System.err.println("         -normalize format : normalisation réalisée à partir du format indiqué en paramètre - options possibles: clan");
 		System.err.println("         -normlineending : normalisation des marqueurs de fin d'énoncé");
-		System.err.println("         -target format : normalisation réalisée en direction du format indiqué en paramètre (clan, praat, ttg, perceo, dinlang)");
+		System.err.println("         -target format : normalisation réalisée en direction du format indiqué en paramètre (clan, praat, ttg, perceo, dinlang, stanza)");
 		System.err.println("         -short : les extensions fichiers autres que TEI_CORPO ne contiennent pas tei_corpo");
 		System.err.println("         -model fichier : fichier template pour la conversion (ELAN)");
 		System.err.println("         --noerror : considère les erreurs dans les paramètres comme des warnings");

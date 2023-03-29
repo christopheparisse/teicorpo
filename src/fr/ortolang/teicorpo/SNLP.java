@@ -331,7 +331,7 @@ public class SNLP {
 		if (sg != null) {
 			s = conllUWriter.printSemanticGraph(sg);
 		} else {
-			s = conllUWriter.printPOSAnnotations(sentence);
+			s = conllUWriter.printPOSAnnotations(sentence, false);
 		}
 		return s;
 	}

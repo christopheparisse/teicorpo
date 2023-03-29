@@ -55,6 +55,7 @@ public class TeiToText extends TeiConverter {
 			String partname = tf.transInfo.getParticipantName(part);
 			String partage = tf.transInfo.getParticipantAge(part);
 			// String partrole = tf.transInfo.getParticipantRole(part);
+			String partEducation = tf.transInfo.getParticipantEducation(part);
 			// System.out.printf("PART: (%s) [%s] {%s}%n", part, partname, partage);
 			// tf.transInfo.print();
 			if (partname.isEmpty()) {
@@ -71,13 +72,13 @@ public class TeiToText extends TeiConverter {
 					// System.out.printf("%s %f %f %d %f%n", partage, age, age100, ageround100, ageround);
 					partage = Float.toString(ageround);
 				}
-				newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + ".txt";
+				newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + ".txt";
 				// test if file exists and if yes create a new name
 				int addnum = 1;
 				while (true) {
 					File f = new File(newOutputName);
 					if (f.exists()) {
-						newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "-(" + addnum + ").txt";
+						newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + "-(" + addnum + ").txt";
 						addnum++;
 					} else {
 						break;
@@ -211,27 +212,49 @@ public class TeiToText extends TeiConverter {
 		} else if (tf.optionsOutput.locutor == true) {
 			out.printf("-%s: ", spkChoice(au));
 		}
+		String speechContentTarget;
+		if (optionsOutput.target.equals("stanza")) {
+			speechContent = speechContent.replace("  ", " ");
+			if (speechContent.endsWith(" .")) {
+				speechContentTarget = speechContent.substring(0, speechContent.length()-2) + ".";
+			} else if (speechContent.endsWith(" ?")) {
+				speechContentTarget = speechContent.substring(0, speechContent.length()-2) + "?";
+			} else if (speechContent.endsWith(" !")) {
+				speechContentTarget = speechContent.substring(0, speechContent.length()-2) + "!";
+			} else if (speechContent.endsWith(" /.")) {
+				speechContentTarget = speechContent.substring(0, speechContent.length()-3) + ".";
+			} else if (speechContent.endsWith(" ...")) {
+				speechContentTarget = speechContent.substring(0, speechContent.length()-4) + ".";
+			} else if (speechContent.indexOf(".") < 0) {
+				speechContentTarget = speechContent + ".";
+			} else {
+				speechContentTarget = speechContent;
+			}
+		} else {
+			speechContentTarget = speechContent;
+		}
+		//System.out.printf("(%s) [%s]%n", speechContent, speechContentTarget);
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
 		if (tf.optionsOutput.raw == true) {
 			if (tf.optionsOutput.tiernames && tf.optionsOutput.partmetadataInFilename != true) {
 				out.print("[" + spkChoice(au) + "]");
 				if (tf.optionsOutput.tierxmlid) {
-					out.println(" <" + au.lastxmlid + "> " + speechContent);
+					out.println(" <" + au.lastxmlid + "> " + speechContentTarget);
 				} else {
-					out.println(" " + speechContent);
+					out.println(" " + speechContentTarget);
 				}
 			} else {
-				out.println(speechContent);
+				out.println(speechContentTarget);
 			}
 		} else {
 			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 				float start = Float.parseFloat(startTime);
 				float end = Float.parseFloat(endTime);
 				out.printf("%f:%f\t", start, end);
-				out.println(spkChoice(au) + "\t" + speechContent);
+				out.println(spkChoice(au) + "\t" + speechContentTarget);
 			} else {
-				out.println("\t\t" + spkChoice(au) + "\t" + speechContent);
+				out.println("\t\t" + spkChoice(au) + "\t" + speechContentTarget);
 			}
 		}
 	}

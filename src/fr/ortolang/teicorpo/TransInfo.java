@@ -239,6 +239,12 @@ public class TransInfo {
 		if (p == null || p.role == null || p.role.isEmpty()) return "";
 		return p.role;
 	}
+	// get participant's education from the participant's ID (code)
+	public String getParticipantEducation(String participantID) {
+		TeiParticipant p = getParticipant(participantID);
+		if (p == null || p.education == null || p.education.isEmpty()) return "";
+		return p.education;
+	}
 	// get participant's age from the participant's ID (code)
 	public String getParticipantAge(String participantID) {
 		TeiParticipant p = getParticipant(participantID);
