@@ -11,6 +11,7 @@ public class ElanExtend extends GenericMain {
 
     /** Encodage des fichiers de sortie et d'entrée. */
     static final String outputEncoding = "UTF-8";
+    static final String emptyText = "--";
     /** Extension Elan **/
     public static String EXT = ".eaf";
 
@@ -28,21 +29,20 @@ public class ElanExtend extends GenericMain {
         else
             System.out.println("Process only main tiers");
         initLastAnnotAndTemplate();
-        extendEAFAlignedAnnotation(elanToHT, options);
-        if (options.raw == true)
-            extendEAFDependentTiers(elanToHT, options);
+        extendEAFAlignedAnnotation(options);
+        if (options.raw == true) extendEAFDependentTiers(options);
         Utils.createFile(elanToHT.docEAF, outputName);
     }
 
-    // now change the docEAF
-    private void extendEAFAlignedAnnotation(ElanToHT elanToHT, TierParams options) {
+    // add emptyText to the content of the main tiers
+    private void extendEAFAlignedAnnotation(TierParams options) {
         // find all the tier that are time aligned
-        NodeList tiers = this.elanToHT.docEAF.getElementsByTagName("TIER");
+        NodeList tiers = elanToHT.docEAF.getElementsByTagName("TIER");
         for (int itiers = 0; itiers < tiers.getLength(); itiers++) {
             Element processedTier = (Element) tiers.item(itiers);
             String name = processedTier.getAttribute("TIER_ID");
             // is the tier time aligned
-            TierInfo tierInfo = this.elanToHT.ht.tiersInfo.get(name);
+            TierInfo tierInfo = elanToHT.ht.tiersInfo.get(name);
             if (!tierInfo.parent.isEmpty()) {
                 if (options.verbose) System.out.printf("Tier with a parent: %s => %s%n", name, tierInfo.parent);
             } else {
@@ -65,6 +65,7 @@ public class ElanExtend extends GenericMain {
                     iTimeAnnots++;
                     // System.out.printf("after initial insertion tiers %d at %d%n", timeAnnots.getLength(), iTimeAnnots);
                 }
+                // for all annotations
                 for (; iTimeAnnots < timeAnnots.getLength() - 1; iTimeAnnots++) {
                     Element annotEl1 = (Element) timeAnnots.item(iTimeAnnots);
                     Element annotEl2 = (Element) timeAnnots.item(iTimeAnnots+1);
@@ -85,18 +86,75 @@ public class ElanExtend extends GenericMain {
                         // System.out.printf("after insertion nb tiers %d at %d%n", timeAnnots.getLength(), iTimeAnnots);
                     }
                 }
+    /*
+                // when the tier is filled and contains no empty parts, we have to call the filling for all descendants
+                // for all annotations
+                if (options.raw != true) continue;
+                for (iTimeAnnots = 0; iTimeAnnots < timeAnnots.getLength(); iTimeAnnots++) {
+                    Element annotEl = (Element) timeAnnots.item(iTimeAnnots);
+                    String elRef1 = annotEl.getAttribute("TIME_SLOT_REF1");
+                    String elRef2 = annotEl.getAttribute("TIME_SLOT_REF2");
+                    String elRef1Time = elanToHT.ht.timeline.get(elRef1);
+                    String elRef2Time = elanToHT.ht.timeline.get(elRef2);
+                    // find all the immediate children tiers and extend the part of the child
+                    for (int deptiers = 0; deptiers < tiers.getLength(); deptiers++) {
+                        Element depTier = (Element) tiers.item(deptiers);
+                        String depName = depTier.getAttribute("TIER_ID");
+                        // is the tier time aligned and a child of the current tier
+                        TierInfo depTierInfo = this.elanToHT.ht.tiersInfo.get(name);
+                        if (tierInfo.parent.isEmpty()) continue; // Not time aligned
+                        if (!tierInfo.parent.equals(name)) continue; // Not dependant tier
+                        System.out.printf("dep Tier element: %s (%s) %s %s%n", depName, name, elRef1Time, elRef2Time);
+                        extendEAFDependentTiersElement(options, depTier, depName, elRef1Time, elRef2Time);
+                    }
+                }
+    */
             }
         }
     }
-    // now change the docEAF
-    private void extendEAFDependentTiers(ElanToHT elanToHT, TierParams options) {
+
+    // extend the element of the dependant tiers with emptyText
+    private void extendEAFDependentTiersElement(TierParams options, Element depTier, String depName, String elLeftTime, String elRightTime) {
+        Element processedTier = findTier(depName);
+        if (processedTier == null) {
+            // error ?
+            System.out.printf("Tier not found: %s. This should not happen !%n", depName);
+            return;
+        }
+        NodeList timeAnnots = processedTier.getElementsByTagName("ALIGNABLE_ANNOTATION");
+        // find the first annotation which is at elLeftTime or after it.
+        for (int iTimeAnnots = 0; iTimeAnnots < timeAnnots.getLength() - 1; iTimeAnnots++) {
+            Element annotEl1 = (Element) timeAnnots.item(iTimeAnnots);
+
+            Element annotEl2 = (Element) timeAnnots.item(iTimeAnnots+1);
+            String el1Ref2 = annotEl1.getAttribute("TIME_SLOT_REF2");
+            String el2Ref1 = annotEl2.getAttribute("TIME_SLOT_REF1");
+            String el1Ref2Time = elanToHT.ht.timeline.get(el1Ref2);
+            String el2Ref1Time = elanToHT.ht.timeline.get(el2Ref1);
+            if (Integer.parseInt(el1Ref2Time) > Integer.parseInt(el2Ref1Time)) {
+//                    if (el1Ref2Time.compareTo(el2Ref1Time) > 0) {
+                System.err.printf("Inversion time error on %s (%s) %s[%s] %s (%s) %s[%s]%n", el1Ref2, el1Ref2Time, annotEl1.getAttribute("ANNOTATION_ID"), annotEl1.getTextContent().trim(),
+                        el2Ref1, el2Ref1Time, annotEl2.getAttribute("ANNOTATION_ID"), annotEl2.getTextContent().trim());
+                continue;
+            }
+            // System.out.printf("el %s %s %s %s%n", el1Ref2, el1Ref2Time, el2Ref1, el2Ref1Time);
+            if (!el1Ref2Time.equals(el2Ref1Time)) {
+                lastUsedAnnotation = createNewAnnotation(elanToHT, lastUsedAnnotation, annotEl1, annotEl2, el1Ref2Time, el2Ref1Time);
+                iTimeAnnots++;
+                // System.out.printf("after insertion nb tiers %d at %d%n", timeAnnots.getLength(), iTimeAnnots);
+            }
+        }
+    }
+
+    // extend the dependant tiers with emptyText . this is bugged, it should not be used (it fills part independently from the parent, which is bad).
+    private void extendEAFDependentTiers(TierParams options) {
         // find all the tier that are time aligned
-        NodeList tiers = this.elanToHT.docEAF.getElementsByTagName("TIER");
+        NodeList tiers = elanToHT.docEAF.getElementsByTagName("TIER");
         for (int itiers = 0; itiers < tiers.getLength(); itiers++) {
             Element processedTier = (Element) tiers.item(itiers);
             String name = processedTier.getAttribute("TIER_ID");
             // is the tier time aligned
-            TierInfo tierInfo = this.elanToHT.ht.tiersInfo.get(name);
+            TierInfo tierInfo = elanToHT.ht.tiersInfo.get(name);
             if (tierInfo.linguistType.time_align && !tierInfo.parent.isEmpty()) {
                 // if a tier is a descendant you have to divide empty fields that overlap some limits in the parent
                 // get the same list for the parent
@@ -121,7 +179,7 @@ public class ElanExtend extends GenericMain {
                 NodeList parentAnnots = ptier.getElementsByTagName("ALIGNABLE_ANNOTATION");
                 for (int a = 0; a < timeAnnots.getLength(); a++) {
                     Element annotEl = (Element) timeAnnots.item(a);
-                    if (annotEl.getTextContent().equals("<empty>")) {
+                    if (annotEl.getTextContent().equals(emptyText)) {
                         // now see if this annotation has to be split
                         String anRef1 = annotEl.getAttribute("TIME_SLOT_REF1");
                         String anRef2 = annotEl.getAttribute("TIME_SLOT_REF2");
@@ -223,11 +281,11 @@ public class ElanExtend extends GenericMain {
         // String cveref = (annotEl2 != null) ? annotEl2.getAttribute("CVE_REF") : annotEl1.getAttribute("CVE_REF");
         // if (!cveref.isEmpty()) alAnnot.setAttribute("CVE_REF", cveref);
 //        nthEmpty++;
-//        alValue.setTextContent("--" + nthEmpty + "");
+//        alValue.setTextContent(emptyText + nthEmpty + "");
 //        if (nthEmpty == 83) {
 //            System.out.printf("XX83XX %s %s %s %s %d%n", newId1, newId2, el1Ref2Time, el2Ref1Time, el1Ref2Time.compareTo(el2Ref1Time));
 //        }
-        alValue.setTextContent("--");
+        alValue.setTextContent(emptyText);
         annot.appendChild(alAnnot);
         alAnnot.appendChild(alValue);
         if (annotEl2 != null) {
@@ -253,6 +311,16 @@ public class ElanExtend extends GenericMain {
         return newId;
     }
 
+    private Element findTier(String tierName) {
+        NodeList tiers = elanToHT.docEAF.getElementsByTagName("TIER");
+        for (int itiers = 0; itiers < tiers.getLength(); itiers++) {
+            Element processedTier = (Element) tiers.item(itiers);
+            String name = processedTier.getAttribute("TIER_ID");
+            if (name.equals(tierName)) return processedTier;
+        }
+        return null;
+    }
+
     /**
      * Main program: add empty slots to an ELAN file.
      *
@@ -263,7 +331,7 @@ public class ElanExtend extends GenericMain {
     public static void main(String[] args) throws Exception {
         TierParams.printVersionMessage(false);
         ElanExtend tr = new ElanExtend();
-        tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanExtend fill the empty parts of an ELAN file with -- elements.%nUse option -raw if you also to process the dependent tiers.", 0);
+        tr.mainCommand(args, EXT, Utils.EXT, "Description: ElanExtend fill the empty parts of an ELAN file with -- elements.%nUse option -raw if you also to process the dependent tiers.", 10);
     }
 
     @Override
