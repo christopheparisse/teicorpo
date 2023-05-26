@@ -40,6 +40,11 @@ public class TeiToLexico extends TeiConverter {
 			return;
 		outputWriter();
 		conversion();
+		closeWriter();
+	}
+
+	private void closeWriter() {
+		out.close();
 	}
 
 	/**

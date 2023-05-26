@@ -43,6 +43,11 @@ public class TeiToClan extends TeiConverter {
 		if (this.tf == null) return;
 		outputWriter();
 		conversion();
+		closeWriter();
+	}
+
+	private void closeWriter() {
+		out.close();
 	}
 
 	/**

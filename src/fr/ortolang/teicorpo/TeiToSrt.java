@@ -46,6 +46,11 @@ public class TeiToSrt extends TeiConverter {
 		optionsOutput = optionsTei;
 		outputWriter();
 		conversion();
+		closeWriter();
+	}
+
+	private void closeWriter() {
+		out.close();
 	}
 
 	/**

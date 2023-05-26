@@ -55,7 +55,12 @@ public class TeiToPraat extends GenericMain {
 		this.outputName = outputName;
 		outputWriter();
 		conversion();
+		closeWriter();
 		return true;
+	}
+
+	private void closeWriter() {
+		out.close();
 	}
 
 	// Ecriture du fichier de sortie
