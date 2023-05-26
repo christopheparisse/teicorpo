@@ -42,6 +42,11 @@ public class TeiToText extends TeiConverter {
 			return;
 		}
 		conversion();
+		closeWriter();
+	}
+
+	private void closeWriter() {
+		out.close();
 	}
 
 	/**
