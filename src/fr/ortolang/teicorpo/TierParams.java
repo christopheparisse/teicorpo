@@ -117,6 +117,7 @@ class TierParams {
 	boolean tiernames;
 	boolean tierxmlid;
 	boolean partmetadataInFilename;
+	boolean csv;
 	int minlength;
 	int maxlength;
     boolean tiernamescontent;
@@ -177,6 +178,7 @@ class TierParams {
 		tiernamescontent = false;
 		tierxmlid = false;
 		partmetadataInFilename = false;
+		csv = false;
 		minlength = 0;
 		maxlength = 0;
 		metadata = null;
@@ -298,6 +300,7 @@ class TierParams {
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
+			System.err.println("         -csv : writes the output in tabular format. One line per utterance: participant, age, text (or more if partmeta is set)");
 			System.err.println("         -minlength value : minimum length of output utterance");
 			System.err.println("         -maxlength value : maximum length of output utterance");
 			System.err.println("         -sandhi : specific information for the analyse of liaisons");
@@ -419,6 +422,12 @@ class TierParams {
 			System.err.println("         -tiernames : affiche le nom des locuteurs et des noms de tiers dans la transcription");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
+			System.err.println("         -csv : writes the output in tabular format. One line per utterance: participant, age, text (or more if partmeta is set)");
+			System.err.println("         -minlength value : minimum length of output utterance");
+			System.err.println("         -maxlength value : maximum length of output utterance");
+			System.err.println("         -sandhi : specific information for the analyse of liaisons");
+			System.err.println("         -mediacontrol: add startTime information");
+			System.err.println("         -tiernamescontent : for TXM: add all fields in tiernames as for other words");
 		}
 		if (style == 6 || style == -1) {
 			System.err.println("         -raw : exporte le texte sans aucune marqueurs de locuteur ni marqueurs spéficiques de l'oral");
@@ -519,6 +528,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-partmeta")) {
+						i++;
+						continue;
+					} else if (argument.equals("-csv")) {
 						i++;
 						continue;
 					} else if (argument.equals("-minlength")) {
@@ -842,6 +854,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-partmeta")) {
 						options.partmetadataInFilename = true;
+						continue;
+					} else if (argument.equals("-csv")) {
+						options.csv = true;
 						continue;
 					} else if (argument.equals("-tiernamescontent")) {
 						options.tiernamescontent = true;

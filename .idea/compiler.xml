@@ -9,8 +9,5 @@
         <module name="teicorpo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="teicorpo" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

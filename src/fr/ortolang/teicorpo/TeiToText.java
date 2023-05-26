@@ -20,6 +20,10 @@ public class TeiToText extends TeiConverter {
 	// Extension du fichier de sortie
 	final static String EXT = ".txt";
 
+	// for the tabular output or the metadata in the filename
+	String partage = "X";
+	String partEducation = "X";
+
 	/**
 	 * Convertit le fichier TEI donné en argument en un fichier texte.
 	 * 
@@ -53,9 +57,9 @@ public class TeiToText extends TeiConverter {
 			}
 			String pathn = Utils.pathname(outputName);
 			String partname = tf.transInfo.getParticipantName(part);
-			String partage = tf.transInfo.getParticipantAge(part);
+			partage = tf.transInfo.getParticipantAge(part);
 			// String partrole = tf.transInfo.getParticipantRole(part);
-			String partEducation = tf.transInfo.getParticipantEducation(part);
+			partEducation = tf.transInfo.getParticipantEducation(part);
 			// System.out.printf("PART: (%s) [%s] {%s}%n", part, partname, partage);
 			// tf.transInfo.print();
 			if (partname.isEmpty()) {
@@ -72,19 +76,22 @@ public class TeiToText extends TeiConverter {
 					// System.out.printf("%s %f %f %d %f%n", partage, age, age100, ageround100, ageround);
 					partage = Float.toString(ageround);
 				}
-				newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + ".txt";
-				// test if file exists and if yes create a new name
-				int addnum = 1;
-				while (true) {
-					File f = new File(newOutputName);
-					if (f.exists()) {
-						newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + "-(" + addnum + ").txt";
-						addnum++;
-					} else {
-						break;
+				if (tf.optionsOutput.csv != true) {
+					newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + ".txt";
+					// test if file exists and if yes create a new name
+					int addnum = 1;
+					while (true) {
+						File f = new File(newOutputName);
+						if (f.exists()) {
+							newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + "-(" + addnum + ").txt";
+							addnum++;
+						} else {
+							break;
+						}
 					}
+					System.out.printf("export\t%s\t%s%n", outputName, newOutputName);
 				}
-				System.out.printf("export\t%s\t%s%n", outputName, newOutputName);
+				// else just keep partage for the tabular output
 			}
 		}
 		out = Utils.openOutputStream(newOutputName, tf.optionsOutput.concat, outputEncoding);
@@ -236,7 +243,9 @@ public class TeiToText extends TeiConverter {
 		//System.out.printf("(%s) [%s]%n", speechContent, speechContentTarget);
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
-		if (tf.optionsOutput.raw == true) {
+		if (tf.optionsOutput.csv == true) {
+			out.print(spkChoice(au) + "\t" + partage + "\t" + speechContentTarget +"\n");
+		} else if (tf.optionsOutput.raw == true) {
 			if (tf.optionsOutput.tiernames && tf.optionsOutput.partmetadataInFilename != true) {
 				out.print("[" + spkChoice(au) + "]");
 				if (tf.optionsOutput.tierxmlid) {
