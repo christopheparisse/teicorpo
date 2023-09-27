@@ -75,6 +75,7 @@ public class TeiToPartition {
 			Element annotGrp = (Element) annotationGrps.item(i);
 			AnnotatedUtterance au = new AnnotatedUtterance();
 			au.processAnnotatedU(annotGrp, this.timeline, null, optionsOutput, false);
+			// System.out.printf("processAU: %s%n", au.toString());
 			NodeList annotGrpElmts = annotGrp.getChildNodes();
 			String choiceTag = au.speakerChoice(optionsOutput);
 			if (!Utils.isNotEmptyOrNull(choiceTag))
@@ -85,9 +86,6 @@ public class TeiToPartition {
 				if (!optionsOutput.isDoDisplay(choiceTag, 1))
 					continue;
 			}
-			String start = au.start;
-			String end = au.end;
-			String id = au.lastxmlid;
 			// String timeSG = (start.isEmpty() || end.isEmpty()) ? "ref" : "time"; // ref is impossible on u tags in ELAN
 			// si le nombre d'annotation de au.speeches > 1 il faudrait changer le statut des spans qui en dépendent
 			for (Annot a: au.speeches) {
@@ -107,7 +105,7 @@ public class TeiToPartition {
 						String at = annotElmt.getAttribute("type");
 						if (at != null && at.equals("TurnInformation"))
 							continue;
-						spanGrpCase(tiers, annotElmt, id, choiceTag, "time", start, end);
+						spanGrpCase(tiers, annotElmt, au.lastxmlid, choiceTag, "time", au.start, au.startStamp, au.end, au.endStamp);
 					}
 				}
 			}
@@ -127,7 +125,7 @@ public class TeiToPartition {
 
 	// Traitement des spanGrp pour ajout dans la structure Map
 	public void spanGrpCase(TreeMap<String, ArrayList<Annot>> tiers, Element spanGrp, String id, String name,
-			String timeref, String start, String end) {
+			String timeref, String start, String startStamp, String end, String endStamp) {
 		String typeSG = spanGrp.getAttribute("type");
 //		System.err.printf("Test2 spanGrpCase %s ID %s%n", typeSG, id);
 		if (optionsOutput != null) {
@@ -200,8 +198,21 @@ public class TeiToPartition {
 					Double refstart = ((double)nth) * timelength + Double.parseDouble(start);
 					Double refend = (((double)nth) + 1.0) * timelength + Double.parseDouble(start);
 					// System.out.printf("-- %d %f %f %n", nth, refstart, refend);
-					annot.start = Double.toString(refstart);
-					annot.end = Double.toString(refend);
+					if (nth != 0) {
+						annot.start = Double.toString(refstart);
+						annot.startStamp = Utils.createTimeStamp(annot.id, Utils.timestamp1000(annot.start));
+						annot.end = Double.toString(refend);
+						annot.endStamp = (annot.end.equals(end))
+								? endStamp
+								: Utils.createTimeStamp(annot.id, Utils.timestamp1000(Double.toString(refend)));
+					} else {
+						annot.start = start;
+						annot.startStamp = startStamp;
+						annot.end = Double.toString(refend);
+						annot.endStamp = (annot.end.equals(end))
+								? endStamp
+								: Utils.createTimeStamp(annot.id, Utils.timestamp1000(Double.toString(refend)));
+					}
 				}
 //				System.out.printf("ref %s (%s) %n", annot.link, annot.previous);
 			} else {
@@ -218,10 +229,24 @@ public class TeiToPartition {
 				String tend = span.getAttribute("to");
 				//System.err.printf("YY1: %s %s %n", tstart, tend);
 				if (Utils.isNotEmptyOrNull(tstart)) {
-					annot.start = timeline.getTimeValue(Utils.refID(tstart));
+					String ttstart = timeline.getTimeValue(Utils.refID(tstart));
+					if (ttstart.equals(start)) {
+						annot.start = start;
+						annot.startStamp = startStamp;
+					} else {
+						annot.start = ttstart;
+						annot.startStamp = Utils.createTimeStamp(annot.id, Utils.timestamp1000(ttstart));
+					}
 				}
 				if (Utils.isNotEmptyOrNull(tend)) {
-					annot.end = timeline.getTimeValue(Utils.refID(tend));
+					String ttend = timeline.getTimeValue(Utils.refID(tend));
+					if (ttend.equals(end)) {
+						annot.end = end;
+						annot.endStamp = endStamp;
+					} else {
+						annot.end = ttend;
+						annot.endStamp = Utils.createTimeStamp(annot.id, Utils.timestamp1000(ttend));
+					}
 				}
 			}
 			String lgqt = "";
@@ -238,7 +263,7 @@ public class TeiToPartition {
 				if (!nodeSpanGrp.getNodeName().equals("spanGrp"))
 					continue;
 				Element subSpanGrp = (Element) nodeSpanGrp;
-				spanGrpCase(tiers, subSpanGrp, annot.id, name, annot.timereftype, annot.start, annot.end);
+				spanGrpCase(tiers, subSpanGrp, annot.id, name, annot.timereftype, annot.start, annot.startStamp, annot.end, annot.endStamp);
 			}
 			nth++;
 		}

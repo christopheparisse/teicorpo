@@ -62,6 +62,22 @@ public class TeiToText extends TeiConverter {
 			}
 			String pathn = Utils.pathname(outputName);
 			String partname = tf.transInfo.getParticipantName(part);
+
+			// metadata values to be added
+			for (Map.Entry<String, SpkVal> entry : optionsOutput.mv.entrySet()) {
+				String key = entry.getKey();
+				SpkVal vs = entry.getValue();
+				System.out.printf("setTv:mv: %s %s %s%n", key, vs.genericspk, vs.genericvalue);
+				if (key.equals("corpus")) {
+					if (!vs.genericspk.isEmpty()) {
+						System.err.printf("The value of key %s for speaker %s is ignored%n", key, vs.genericspk);
+					}
+					partname = vs.genericvalue + "@" + partname;
+				} else {
+					System.err.printf("The value of key %s : %s is ignored%n", key, vs.genericvalue);
+				}
+			}
+
 			partage = tf.transInfo.getParticipantAge(part);
 			// String partrole = tf.transInfo.getParticipantRole(part);
 			partEducation = tf.transInfo.getParticipantEducation(part);

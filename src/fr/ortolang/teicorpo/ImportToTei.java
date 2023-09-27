@@ -112,31 +112,41 @@ public abstract class ImportToTei extends GenericMain {
 		return "";
 	}
 
-	public String addTimeToTimeline(String time) {
+	private String newTimeInTime(String time) {
+		Element when = docTEI.createElement("when");
+		when.setAttribute("interval", time);
+		whenId++;
+		String id = "T" + whenId;
+		when.setAttribute("xml:id", id);
+		when.setAttribute("since", "#T0");
+		// timeline.appendChild(when);
+		timeElements.add(when);
+		return id;
+	}
+	public String addTimeToTimelineForce(String time, boolean forcenew) {
 		if (time.equals("0")) {
+			if (forcenew == true) {
+				return "#" + newTimeInTime(time);
+			}
 			return "#T0";
 		} else if (Utils.isNotEmptyOrNull(time)) {
 			Double t = Double.parseDouble(time);
 			if (t > maxTime)
 				maxTime = t;
 			String id = "";
-			if (times.contains(time)) {
+			if (forcenew == false && times.contains(time)) {
 				id = "T" + times.indexOf(time);
 			} else {
 				times.add(time);
-				Element when = docTEI.createElement("when");
-				when.setAttribute("interval", time);
-				whenId++;
-				id = "T" + whenId;
-				when.setAttribute("xml:id", id);
-				when.setAttribute("since", "#T0");
-				// timeline.appendChild(when);
-				timeElements.add(when);
+				id = newTimeInTime(time);
 			}
 			return "#" + id;
 		} else {
 			return "";
 		}
+	}
+	public String addTimeToTimeline(String time) {
+		return addTimeToTimelineForce(time, false);
 	}
 
 	/**
@@ -403,7 +413,7 @@ public abstract class ImportToTei extends GenericMain {
 		if (tiersNames != null) {
 			for (String t : tiersNames) {
 				if (optionsTEI.target.equals("dinlang") && t.equals(Utils.languagingScript)) {
-					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "prod-audible");
+					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "script-aud");
 				} else if (optionsTEI.target.equals("dinlang") && t.equals("act")) {
 					insertTemplate(doc, t, "Time_Subdivision", "annotationBlock", "info");
 				} else {

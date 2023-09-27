@@ -27,6 +27,10 @@ public class AnnotatedUtterance {
 	public String start;
 	//// Temps de fin(chaîne de caractère, unité = secondes)
 	public String end;
+	// étiquette du temps de début
+	public String startStamp;
+	// étiquette du temps de fin
+	public String endStamp;
 
 	// working elements (copied and organized in speeches)
 	// Code utilisé pour le locuteur
@@ -73,7 +77,7 @@ public class AnnotatedUtterance {
 	 * Impression des utterances : liste des énoncés
 	 */
 	public String toString() {
-		String s = "Id[" + lastxmlid + "] Type[" + type + "] Start[" + start + "] End[" + end + "] SpkName[" + speakerName + "]\n";
+		String s = "Id[" + lastxmlid + "] Type[" + type + "] Start[" + start + "] End[" + end + "] StartStamp[" + startStamp + "] EndStamp[" + endStamp + "] SpkName[" + speakerName + "]\n";
 		s += "Speeches[" + speeches.size() + "]\n";
 		for (Annot utt : speeches) {
 			s += "{" + utt.getContent(false) + "} {" + utt.getContent(true) + "}\n";
@@ -85,8 +89,8 @@ public class AnnotatedUtterance {
 		return s;
 	}
 
-	private void addAnnot(String sync, String xmlid) {
-		Annot a = new Annot(speakerName, start, sync, speech, nomarkerSpeech);
+	private void addAnnot(String sync, String syncStamp, String xmlid) {
+		Annot a = new Annot(speakerName, start, startStamp, sync, syncStamp, speech, nomarkerSpeech);
 //		System.err.printf("addAnnot: %s %s (%s)%n", sync, xmlid, speech);
 		if (xmlid != null)
 			a.id = xmlid; // Utils.createNewId(); // id + "-" + nthid;
@@ -96,7 +100,7 @@ public class AnnotatedUtterance {
 	}
 
 	private void addAnnot() {
-		addAnnot(end, lastxmlid);
+		addAnnot(end, endStamp, lastxmlid);
 	}
 
 	public boolean processP(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
@@ -203,6 +207,10 @@ public class AnnotatedUtterance {
 			start = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
 			end = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
 		}
+		// create stamps
+		startStamp = Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(start));
+		endStamp = Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(end));
+
 		speakerCode = TeiDocument.getAttrAnnotationBloc(annotatedU, "who");
 		if (!fillU(transInfo, options)) return false;
 		NodeList annotUElements = annotatedU.getChildNodes();
@@ -442,11 +450,13 @@ public class AnnotatedUtterance {
 					} else {
 						sync = syncval;
 					}
+					String syncStamp = Utils.createTimeStamp(lastxmlid, sync);
 					// creer une ligne avec speech, nomarkerSpeech, addspeech
-					addAnnot(sync, xmlid);
+					addAnnot(sync, syncStamp, xmlid);
 					// System.out.printf("anchor: %s %s %s %s%n", speakerName,
 					// start, sync, speech);
 					start = sync;
+					startStamp = syncStamp;
 					speech = "";
 					nomarkerSpeech = "";
 				}

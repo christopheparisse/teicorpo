@@ -357,12 +357,6 @@ public class TeiToElan extends GenericMain {
 		}
 	}
 	*/
-	String createTimeStamp(String id, String time) {
-		String newid = id + time;
-		if (elanTimeline.get(newid) == null)
-			elanTimeline.put(newid, time);
-		return newid;
-	}
 
 	// Remplissage de la timeline à partir de la timeline au format TEI : copie
 	// exacte: mêmes identifiants et valeurs
@@ -370,25 +364,20 @@ public class TeiToElan extends GenericMain {
 		try {
 			// initializes all values in the timeline
 			for (Map.Entry<String, ArrayList<Annot>> entry : ttp.tiers.entrySet()) {
-				// System.out.printf("ENTRY: %s%n", entry.getKey());
+				System.out.printf("ENTRY: %s%n", entry.getKey());
 				for (Annot a : entry.getValue()) {
 					if (a.timereftype.equals("time")) {
 						// System.out.printf("ITEM: %s%n", a.toString());
 						if (!Utils.isNotEmptyOrNull(a.start)) continue;
 						if (!Utils.isNotEmptyOrNull(a.end)) continue;
-						Double start = Double.parseDouble(a.start) * 1000.0;
-						Double end = Double.parseDouble(a.end) * 1000.0;
-						String s = Integer.toString((int) Math.round(start));
-						String e = Integer.toString((int) Math.round(end));
-						a.start = s;
-						a.end = e;
-						a.startStamp = createTimeStamp(a.id, s);
-						a.endStamp = createTimeStamp(a.id, e);
+						elanTimeline.put(a.startStamp, Utils.timestamp1000(a.start));
+						elanTimeline.put(a.endStamp, Utils.timestamp1000(a.end));
 						// System.out.printf("ITEM2: %s%n", a.toString());
 					}
 					// else if (a.timereftype.equals("ref")){}
 				}
 			}
+
 			// write the timeline
 			// Get a set of the entries
 			Set set = elanTimeline.entrySet();
@@ -649,8 +638,10 @@ public class TeiToElan extends GenericMain {
 					// System.out.printf("TIME: (%s) %s%n", a.timereftype, a.toString());
 					Element align_annot = elanDoc.createElement("ALIGNABLE_ANNOTATION");
 					align_annot.setAttribute("ANNOTATION_ID", a.id);
-					align_annot.setAttribute("TIME_SLOT_REF1", createTimeStamp(a.id, a.start));
-					align_annot.setAttribute("TIME_SLOT_REF2", createTimeStamp(a.id, a.end));
+					align_annot.setAttribute("TIME_SLOT_REF1", a.startStamp);
+					align_annot.setAttribute("TIME_SLOT_REF2", a.endStamp);
+					// System.out.printf("ANNOT ID: (%s) TIME1 %s TIME2 %s%n", a.id, createTimeStamp(a.id, a.start), createTimeStamp(a.id, a.end));
+					// System.out.printf("STAMP ANNOT ID: (%s) TIME1 %s TIME2 %s%n", a.id, a.startStamp, a.endStamp);
 					annot.appendChild(align_annot);
 					Element annotationValue = elanDoc.createElement("ANNOTATION_VALUE");
 					String str = a.getContent(ttp.optionsOutput.rawLine);

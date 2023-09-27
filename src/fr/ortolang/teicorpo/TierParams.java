@@ -311,7 +311,7 @@ class TierParams {
 			System.err.println("         Parameters for export in Iramuteq\n");
 			System.err.println("         -raw : text is exported after removing all locutors or spoken language marking");
 			System.err.println("         -tv \"type:value\" : type:value is added to <u>, <w>, <div> tags for txm or lexico or le trameur");
-			System.err.println("         -mv \"type:field\": type: value of metadata 'field' added to <u>, <w>, and <div> tags (field is an xpath expression)");
+			System.err.println("         -mv \"type:field\" : type: value of metadata 'field' added to <u>, <w>, and <div> tags (field is an xpath expression)");
 			System.err.println("         -iramuteq : headers for iramuteq");
 			System.err.println("         -concat : concatenate result files for iramuteq");
 			System.err.println("         -append : do not erase destination file before processing - to be used with concat");

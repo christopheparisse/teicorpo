@@ -430,8 +430,8 @@ public class ClanToTei extends ImportToTei {
 			while (i < size) {
 				ChatLine cl = new ChatLine(cf.ml(i));
 				if (cl.head.length() == 0) cl.head = "UNK";
-				String start = Integer.toString(cf.startMl(i));
-				String end = Integer.toString(cf.endMl(i));
+				String startTime = Integer.toString(cf.startMl(i));
+				String endTime = Integer.toString(cf.endMl(i));
 				if (cl.head.startsWith("@")) {
 					if (cl.head.toLowerCase().startsWith("@g")) {
 						//System.out.printf("@G: %d inGem%d%n", nbBG, inGem);
@@ -530,7 +530,7 @@ public class ClanToTei extends ImportToTei {
 						// this should not happen
 						// this is not within the chat format
 						System.err.println("unknown format at " + cl.head + " " + cl.tail);
-						Element annotatedU = build_comment(start, end, cl);
+						Element annotatedU = build_comment(startTime, endTime, cl);
 						div.appendChild(annotatedU);
 						i++;
 					}
@@ -555,8 +555,16 @@ public class ClanToTei extends ImportToTei {
 					for (int j = 0; j < tierSize; j++) {
 						tiers[j] = cf.t(i, j);
 					}
-					Element annotatedU = build_u_element(start, end, cl, tiers, extension);
-					set_AnnotU_element(annotatedU, tiers, start, end);
+					String startId = "";
+					String endId = "";
+					if (!startTime.equals("-1")) {
+						startId = addTimeToTimelineForce(toSeconds(startTime), true);
+					}
+					if (!endTime.equals("-1")) {
+						endId = addTimeToTimelineForce(toSeconds(endTime), true);
+					}
+					Element annotatedU = build_u_element(cl, tiers, extension, startId, endId);
+					set_AnnotU_element(annotatedU, tiers, startId, endId);
 					div.appendChild(annotatedU);
 					i++;
 				}
@@ -595,7 +603,7 @@ public class ClanToTei extends ImportToTei {
 	 * Construction et mise à jour des élément <strong>u</strong> à partir d'une
 	 * ligne de ChatFile.
 	 */
-	public Element build_u_element(String startTime, String endTime, ChatLine cl, String[] tiers, String extension) {
+	public Element build_u_element(ChatLine cl, String[] tiers, String extension, String startId, String endId) {
 		Element annotatedU = TeiDocument.createAnnotationBloc(docTEI);
 		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "xml:id", Utils.createId("au", utteranceId));
 		utteranceId++;
@@ -605,14 +613,8 @@ public class ClanToTei extends ImportToTei {
 		else if (extension.equals("xmorext") || extension.equals("morext"))
 			splitWcontentWithRepetition(cl.tail.replaceAll("\\s+", " "), annotatedU, tiers, extension);
 		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "who", cl.head.substring(1));
-		if (!startTime.equals("-1")) {
-			String startId = addTimeToTimeline(toSeconds(startTime));
-			TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "start", startId);
-		}
-		if (!endTime.equals("-1")) {
-			String endId = addTimeToTimeline(toSeconds(endTime));
-			TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "end", endId);
-		}
+		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "start", startId);
+		TeiDocument.setAttrAnnotationBloc(docTEI, annotatedU, "end", endId);
 		splitUContent(cl.tail, annotatedU);
 		return annotatedU;
 	}
@@ -623,7 +625,7 @@ public class ClanToTei extends ImportToTei {
 	 * @param tiers
 	 * @param u
 	 */
-	public void set_AnnotU_element(Element u, String[] tiers, String startTime, String endTime) {
+	public void set_AnnotU_element(Element u, String[] tiers, String startId, String endId) {
 		if (tiers.length > 0) {
 			for (String tier : tiers) {
 				ChatLine cl = new ChatLine(tier);
@@ -650,14 +652,8 @@ public class ClanToTei extends ImportToTei {
 					spanGrp.appendChild(span);
 					spanGrp.setAttribute("type", spanType);
 					if (optionsTEI.target.equals("dinlang") && (spanType.equals(Utils.languagingScript) || spanType.equals("act"))) {
-						if (!startTime.equals("-1")) {
-							String startId = addTimeToTimeline(toSeconds(startTime));
-							TeiDocument.setAttrAnnotationBloc(docTEI, span, "from", startId);
-						}
-						if (!endTime.equals("-1")) {
-							String endId = addTimeToTimeline(toSeconds(endTime));
-							TeiDocument.setAttrAnnotationBloc(docTEI,span, "to", endId);
-						}
+						TeiDocument.setAttrAnnotationBloc(docTEI, span, "from", startId);
+						TeiDocument.setAttrAnnotationBloc(docTEI,span, "to", endId);
 					}
 					// Element seg = docTEI.createElement("seg");
 					// span.setAttribute("type", tierType);

@@ -710,10 +710,20 @@ public class Utils {
     	return au + Integer.toString(utteranceId);
 	}
 
+	public static String createTimeStamp(String id, String time) {
+		return id + time;
+	}
+
 	public static long timeStamp(String msg, long previous) {
     	long actual = System.currentTimeMillis();
     	System.err.printf("%s %dsec %dms%n", msg, (actual - previous) / 1000, actual - previous);
     	return actual;
+	}
+
+	public static String timestamp1000(String time) {
+		Double start = Double.parseDouble(time) * 1000.0;
+		String s = Integer.toString((int) Math.round(start));
+		return s;
 	}
 
 	public static <E> E getOnlyElement(Iterable<E> iterable) {

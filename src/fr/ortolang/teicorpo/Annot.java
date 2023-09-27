@@ -92,11 +92,13 @@ public class Annot {
 		timereftype = "time";
 	}
 
-	public Annot(String tierName, String pstart, String pend, String value, String cleanedValue) {
+	public Annot(String tierName, String pstart, String pstartStamp, String pend, String pendStamp, String value, String cleanedValue) {
 		id = "";
 		name = tierName;
 		start = pstart;
 		end = pend;
+		startStamp = pstartStamp;
+		endStamp = pendStamp;
 		dependantAnnotations = null;
 		content = value;
 		cleanedContent = cleanedValue;
