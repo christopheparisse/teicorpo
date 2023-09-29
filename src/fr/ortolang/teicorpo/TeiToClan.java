@@ -165,7 +165,7 @@ public class TeiToClan extends TeiConverter {
 		} catch (Exception e) {
 			writeProperty("Participants", participantsLine);
 		}
-		out.printf(participantsIDS);
+		out.printf("%s", participantsIDS);
 		// Ajouts lignes "birth of" et "birthplace of", doivent immédiatement
 		// suivre les lignes @ID
 		if (getTransInfo().birth != null && !getTransInfo().birth.isEmpty()) {

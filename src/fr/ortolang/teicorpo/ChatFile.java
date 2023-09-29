@@ -635,12 +635,12 @@ public class ChatFile {
 					Matcher matcher = pattern.matcher(cl.tail);
 					if (matcher.find()) {
 						// add the main line with the time in it
-						addML("*" + dinlangName + ":\t0 " + matcher.group(2));
+						addML("*" + dinlangName + ":\tfra " + matcher.group(2));
 						// add the secondary line
 						addT("%" + Utils.languagingScript + ":\t" + matcher.group(1) + " " + matcher.group(3));
 					} else {
 						// add the main line (without time)
-						addML("*" + dinlangName + ":\t0");
+						addML("*" + dinlangName + ":\tfra");
 						// add the secondary line
 						addT("%" + Utils.languagingScript + ":\t" + cl.tail);
 					}
