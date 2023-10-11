@@ -67,7 +67,7 @@ public class TeiToPartition {
 		try {
 			annotationGrps = TeiDocument.getAllAnnotationBloc(this.teiXPath, this.teiDoc);
 		} catch (XPathExpressionException e) {
-			System.out.println("Erreur de traitement de xpath annotationBlock");
+			System.out.println("xpath error on list of annotationBlock");
 			e.printStackTrace();
 			System.exit(1);
 		}
@@ -368,6 +368,26 @@ public class TeiToPartition {
 					tierInfos.add(ti);
 					// annot_doc.appendChild(lgqType);
 				}
+			}
+		}
+		// if no users, should do something
+		if (tierInfos.size() < 1) {
+			// Create a default participant.
+			TierInfo ti = new TierInfo();
+			ti.tier_id = "spk1";
+			tierInfos.add(ti);
+			// add this speaker to all annotations
+			NodeList annotationGrps = null;
+			try {
+				annotationGrps = TeiDocument.getAllAnnotationBloc(this.teiXPath, this.teiDoc);
+			} catch (XPathExpressionException e) {
+				System.out.println("xpath error on list of annotationBlock");
+				e.printStackTrace();
+				System.exit(1);
+			}
+			for (int i = 0; i < annotationGrps.getLength(); i++) {
+				Element annotGrp = (Element) annotationGrps.item(i);
+				annotGrp.setAttribute("who", "spk1");
 			}
 		}
 		getParticipantNames();

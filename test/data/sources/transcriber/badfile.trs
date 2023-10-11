@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="Author" audio_filename="bar" version="1" version_date="161228">
+<Episode>
+<Section type="report" startTime="0" endTime="82.5469387755">
+<Turn startTime="0" endTime="82.5469387755">
+<Sync time="0"/>
+
+<Sync time="1.58"/>
+Sentence #1
+<Sync time="3.457"/>
+Sentence #2
+</Turn>
+</Section>
+</Episode>
+</Trans>
