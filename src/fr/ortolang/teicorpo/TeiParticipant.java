@@ -75,6 +75,7 @@ public class TeiParticipant {
 				corpus = attValue;
 			} else if (attName.equals("age")) {
 				age = attValue;
+				System.out.printf("Age attribute: %s%n", age);
 			} else {
 				adds.put(attName, attValue);
 			}
@@ -108,7 +109,7 @@ public class TeiParticipant {
 					education = el.getTextContent();
 				} else if (el.getNodeName().equals("occupation")) {
 					adds.put("occupation", el.getAttribute("pos"));
-				} else if (el.getNodeName().equals("age")) {
+				} else if (el.getNodeName().equals("age") && (age == null || age.isEmpty())) { // age was already in the attributes of person
 					String agevalue = el.getAttribute("value");
 					if (!agevalue.isEmpty())
 						age = agevalue;
@@ -117,6 +118,7 @@ public class TeiParticipant {
 					agevalue = el.getTextContent();
 					if (!agevalue.isEmpty())
 						adds.put("ageinfo", agevalue);
+					System.out.printf("Age as node: %s%n", age);
 				} else {
 					adds.put(el.getNodeName(), el.getTextContent());
 				}
@@ -130,9 +132,9 @@ public class TeiParticipant {
 	public void print() {
 		System.out.print("XParticipant");
 		System.out.print(
-				"\tid " + id + "\tname " + name + "\trole " + role + "\tsex " + sex + "\tlang " + language + "\t");
+				"\tid " + id + "\tname " + name + "\trole " + role + "\tsex " + sex + "\tlang " + language + "\t" + age + "\n");
 		for (Map.Entry<String, String> e : adds.entrySet()) {
-			System.out.print(e.getKey() + " " + e.getValue() + "\t");
+			System.out.print(e.getKey() + " " + e.getValue() + "\n");
 		}
 		System.out.println();
 	}

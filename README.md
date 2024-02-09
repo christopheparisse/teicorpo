@@ -179,3 +179,6 @@ java -cp teicorpo.jar fr.ortolang.teicorpo.TeiCorpo -from chat -to elan \
   - 1.41.00 Jar includes main class. Automatic tests added to the software generation.
   - 1.41.05 Dinlang version
   - 1.41.06 Bug from CLAN to TEI to ELAN (bad ELAN REF)
+  - 1.41.14 Corrections supplémentaires de bugs diverses
+
+  Licence: GNU General Public License version 3

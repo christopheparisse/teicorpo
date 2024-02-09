@@ -208,8 +208,10 @@ public class AnnotatedUtterance {
 			end = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
 		}
 		// create stamps
-		startStamp = Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(start));
-		endStamp = Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(end));
+		startStamp = (start.isEmpty()) ? ""
+				: Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(start));
+		endStamp = (end.isEmpty()) ? ""
+				: Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(end));
 
 		speakerCode = TeiDocument.getAttrAnnotationBloc(annotatedU, "who");
 		if (!fillU(transInfo, options)) return false;

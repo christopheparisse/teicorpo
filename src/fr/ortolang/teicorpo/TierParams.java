@@ -117,6 +117,7 @@ class TierParams {
 	boolean tiernames;
 	boolean tierxmlid;
 	boolean partmetadataInFilename;
+	boolean partmetadataRole;
 	boolean csv;
 	int minlength;
 	int maxlength;
@@ -178,6 +179,7 @@ class TierParams {
 		tiernamescontent = false;
 		tierxmlid = false;
 		partmetadataInFilename = false;
+		partmetadataRole = false;
 		csv = false;
 		minlength = 0;
 		maxlength = 0;
@@ -854,6 +856,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-partmeta")) {
 						options.partmetadataInFilename = true;
+						continue;
+					} else if (argument.equals("-partmetarole")) {
+						options.partmetadataRole = true;
 						continue;
 					} else if (argument.equals("-csv")) {
 						options.csv = true;

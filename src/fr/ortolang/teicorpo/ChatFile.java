@@ -434,6 +434,7 @@ public class ChatFile {
 				mainLine = ml.replaceAll("\\x15\\d+_\\d+\\x15",""); // replaceFirst
 				mainLine = mainLine.replaceAll("\\t", " ");
 				mainLine = mainLine.replaceAll("\\p{C}", "");
+				mainLine = mainLine.replaceAll("\\x15", "");
 			} else {
 				patternStr = ".*\\x15(.*?)_(\\d+)_(\\d+)\\x15";
 				pattern = Pattern.compile(patternStr);
@@ -449,12 +450,14 @@ public class ChatFile {
 					mainLine = ml.replaceAll("\\x15.*?\\x15",""); // replaceFirst
 					mainLine = mainLine.replaceAll("\\t", " ");
 					mainLine = mainLine.replaceAll("\\p{C}", "");
+					mainLine = mainLine.replaceAll("\\x15", "");
 				} else {
 					startTime = -1;
 					endTime = -1;
 					mainLine = ml;
 					mainLine = mainLine.replaceAll("\\t", " ");
 					mainLine = mainLine.replaceAll("\\p{C}", "");
+					mainLine = mainLine.replaceAll("\\x15", "");
 				}
 			}
 			mainCleaned = ConventionsToChat.clean(mainLine);
@@ -492,7 +495,8 @@ public class ChatFile {
 		void addTier(String tier) {
 			if (tiers==null)
 				tiers = new LinkedList<Tier>();
-			tiers.add(new Tier(tier.replaceAll("\\x15\\d+_\\d+\\x15","")));//tier
+			tier = tier.replaceAll("\\x15\\d+_\\d+\\x15","");//tier
+			tiers.add(new Tier(tier.replaceAll("\\x15","")));//tier
 		}
 		void addTier(String tier, int n) {
 			if (tiers==null)
@@ -637,12 +641,12 @@ public class ChatFile {
 						// add the main line with the time in it
 						addML("*" + dinlangName + ":\tfra " + matcher.group(2));
 						// add the secondary line
-						addT("%" + Utils.languagingScript + ":\t" + matcher.group(1) + " " + matcher.group(3));
+						addT(("%" + Utils.languagingScript + ":\t" + matcher.group(1) + " " + matcher.group(3)).replaceAll("\\x15", ""));
 					} else {
 						// add the main line (without time)
 						addML("*" + dinlangName + ":\tfra");
 						// add the secondary line
-						addT("%" + Utils.languagingScript + ":\t" + cl.tail);
+						addT("%" + Utils.languagingScript + ":\t" + cl.tail.replaceAll("\\x15", ""));
 					}
 				} else {
 					addML(ml);

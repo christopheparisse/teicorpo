@@ -61,7 +61,27 @@ public class TeiToText extends TeiConverter {
 				System.exit(1);
 			}
 			String pathn = Utils.pathname(outputName);
-			String partname = tf.transInfo.getParticipantName(part);
+			String partname;
+
+			if (tf.optionsOutput.partmetadataRole == false) {
+				partname = tf.transInfo.getParticipantName(part);
+				if (partname.isEmpty()) {
+					System.out.printf("Warning: no participant name in file %s%n", outputName);
+					System.out.printf("Output name wont be changed. It would be better to edit the original file%n");
+					out = Utils.openOutputStream(newOutputName, tf.optionsOutput.concat, outputEncoding);
+					return true;
+				}
+			} else {
+				if (tf.transInfo.getParticipant(part) == null) {
+					System.out.printf("Warning: no participant %s in file %s%n", part, outputName);
+					return false;
+				}
+				System.out.printf("Warning: will use %s (code) in file %s%n", part, outputName);
+				partname = part;
+			}
+
+			// System.out.println(tf.transInfo.getParticipant(part).toString());
+			// tf.transInfo.getParticipant(part).print();
 
 			// metadata values to be added
 			for (Map.Entry<String, SpkVal> entry : optionsOutput.mv.entrySet()) {
@@ -83,37 +103,36 @@ public class TeiToText extends TeiConverter {
 			partEducation = tf.transInfo.getParticipantEducation(part);
 			// System.out.printf("PART: (%s) [%s] {%s}%n", part, partname, partage);
 			// tf.transInfo.print();
-			if (partname.isEmpty()) {
-				System.out.printf("Warning: no participant name in file %s%n", outputName);
-				System.out.printf("Output name wont be changed. It would be better to edit the original file%n");
+			if (partage.isEmpty()) {
+				partage = "XX.XX";
 			} else {
-				if (partage.isEmpty()) {
-					partage = "XX.XX";
-				} else {
+				try {
 					float age = Float.parseFloat(partage);
 					float age100 = age * 100;
 					Integer ageround100 = Math.round(age100);
 					float ageround = ageround100.floatValue() / 100;
 					// System.out.printf("%s %f %f %d %f%n", partage, age, age100, ageround100, ageround);
 					partage = Float.toString(ageround);
+				} catch (Exception e) {
+					partage = "XY.XY";
 				}
-				if (tf.optionsOutput.csv != true) {
-					newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + ".txt";
-					// test if file exists and if yes create a new name
-					int addnum = 1;
-					while (true) {
-						File f = new File(newOutputName);
-						if (f.exists()) {
-							newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + "-(" + addnum + ").txt";
-							addnum++;
-						} else {
-							break;
-						}
-					}
-					System.out.printf("export\t%s\t%s%n", outputName, newOutputName);
-				}
-				// else just keep partage for the tabular output
 			}
+			if (tf.optionsOutput.csv != true) {
+				newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + ".txt";
+				// test if file exists and if yes create a new name
+				int addnum = 1;
+				while (true) {
+					File f = new File(newOutputName);
+					if (f.exists()) {
+						newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + "-(" + addnum + ").txt";
+						addnum++;
+					} else {
+						break;
+					}
+				}
+				System.out.printf("export\t%s\t%s%n", outputName, newOutputName);
+			}
+			// else just keep partage for the tabular output
 		}
 		out = Utils.openOutputStream(newOutputName, tf.optionsOutput.concat, outputEncoding);
 		return true;
