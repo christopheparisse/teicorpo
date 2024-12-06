@@ -27,6 +27,7 @@ public class TeiToPartition {
 
 	void init(XPath xpath, Document tei, TierParams optionsTei) {
 		if (optionsTei == null) optionsTei = new TierParams();
+		System.err.println("teitopartition init");
 		optionsOutput = optionsTei;
 		teiDoc = tei;
 		teiXPath = xpath;

@@ -199,7 +199,8 @@ public class AnnotatedUtterance {
 		optionsTEI = options;
 		initU();
 		lastxmlid = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
-//		System.err.printf("pU: %s%n", lastxmlid);
+		// System.err.printf("timeline: %s%n", teiTimeline != null ? "yes" : "no");
+		// System.err.printf("timeline: %s%n", teiTimeline.toString());
 		if (teiTimeline != null) {
 			start = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start")));
 			end = teiTimeline.getTimeValue(Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end")));
@@ -207,11 +208,31 @@ public class AnnotatedUtterance {
 			start = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
 			end = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
 		}
+		// System.out.printf("start: %s%n", start);
+		// System.out.printf("end: %s%n", end);
 		// create stamps
-		startStamp = (start.isEmpty()) ? ""
-				: Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(start));
-		endStamp = (end.isEmpty()) ? ""
-				: Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(end));
+		if (start.isEmpty() || options.ignoreTimeline)
+			startStamp = "";
+		else {
+			try {
+				startStamp = Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(start));
+			} catch (Exception e) {
+				options.ignoreTimeline = true;
+				System.out.printf("now ignore timeline because start of %s %s%n", lastxmlid, start);
+				startStamp = "";
+			}
+		}
+		if (end.isEmpty() || options.ignoreTimeline)
+			endStamp = "";
+		else {
+			try {
+				endStamp = Utils.createTimeStamp(lastxmlid, Utils.timestamp1000(end));
+			} catch (Exception e) {
+				options.ignoreTimeline = true;
+				System.out.printf("now ignore timeline because end of %s %s%n", lastxmlid, end);
+				end = "";
+			}
+		}
 
 		speakerCode = TeiDocument.getAttrAnnotationBloc(annotatedU, "who");
 		if (!fillU(transInfo, options)) return false;

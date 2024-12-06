@@ -463,17 +463,24 @@ public class Utils {
     }
 
     public static Document convertStringToDocument(String xmlStr) {
-        try
-        {
+        try {
 
 			InputSource is = new InputSource();
 			is.setCharacterStream(new StringReader(xmlStr));
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
-
-			Document doc = db.parse(is);
-            return doc;
-        } catch (Exception e) {  
+			Document doc;
+			try {
+				doc = db.parse(is);
+			} catch (Exception e) {
+				String newXmlStr = xmlStr.replace('&', ' ');
+				is.setCharacterStream(new StringReader(newXmlStr));
+				Document newdoc = db.parse(is);
+				return newdoc;
+			}
+			return doc;
+		} catch (Exception e) {
+	    	System.out.printf("ERR: %s%n", xmlStr);
             e.printStackTrace();
 			System.exit(1);
         }

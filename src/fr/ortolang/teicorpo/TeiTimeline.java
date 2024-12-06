@@ -22,6 +22,7 @@ public class TeiTimeline {
 		xmaxTime = 0.0;
 	}
 	public void buildTimeline(Document teiDoc) {
+		System.err.println("build timeline");
 		timeline.put("T0", "0");
 		Element tl = (Element) teiDoc.getElementsByTagName("timeline").item(0);
 		if (tl == null) return; // No timeline in TEI

@@ -131,6 +131,8 @@ class TierParams {
 	boolean utterance;
 	String spknamerole; // choose output out of speakers, names, roles
 	boolean normlineending; // normalize line ending with .
+	boolean ignoreTimeline = false;
+
 
 	TierParams() {
 		noerror = false;
@@ -195,6 +197,7 @@ class TierParams {
 		utterance = false;
 		spknamerole = "spk";
 		normlineending = false;
+		ignoreTimeline = false;
 	}
 	void addCommand(String s) {
 		commands.add(s);

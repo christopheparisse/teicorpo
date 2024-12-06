@@ -118,7 +118,7 @@ Other commands to edit automatically TEI files
   * The parameter -program allows to give directly the address of the TreeTagger on your computer
   * The parameter -model allows to give directly the address of the TreeTagger language model on your computer
   * FOR EXAMPLE: **java -cp teicorpo.jar fr.ortolang.teicorpo.TeiTreeTagger  -program "tree-tagger.exe" -model english-bnc.par myfile.tei_corpo.xml -syntaxformat conll**
-  * The -syntaxformat conll parameter allows an efficient export to ELAN or PRAAT by creating a CONLL structure that do not modify the orginal main line
+  * The -syntaxformat conll parameter allows an efficient export to ELAN or PRAAT by creating a CONLL structure that do not modify the original main line
   * The optional parameter -rawline allows cleaning the orthographic line for specific codes (as best as possible)
 
   * Use example with TreeTagger module and PERCEO model installed in the directory /projets/syntax . The shell command analyse.sh contains:
