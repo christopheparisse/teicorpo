@@ -27,7 +27,7 @@ public class TeiToPartition {
 
 	void init(XPath xpath, Document tei, TierParams optionsTei) {
 		if (optionsTei == null) optionsTei = new TierParams();
-		System.err.println("teitopartition init");
+		//System.err.println("teitopartition init");
 		optionsOutput = optionsTei;
 		teiDoc = tei;
 		teiXPath = xpath;
@@ -75,9 +75,9 @@ public class TeiToPartition {
 		for (int i = 0; i < annotationGrps.getLength(); i++) {
 			Element annotGrp = (Element) annotationGrps.item(i);
 			AnnotatedUtterance au = new AnnotatedUtterance();
-			System.out.printf("tml=%s [%s]%n", this.timeline != null ? "on": "off", annotGrp.getTagName());
+			//System.out.printf("tml=%s [%s]%n", this.timeline != null ? "on": "off", annotGrp.getTagName());
 			au.processAnnotatedU(annotGrp, this.timeline, null, optionsOutput, false);
-			System.out.printf("processAU: %s%n", au.toString());
+			//System.out.printf("processAU: %s%n", au.toString());
 			NodeList annotGrpElmts = annotGrp.getChildNodes();
 			String choiceTag = au.speakerChoice(optionsOutput);
 			if (!Utils.isNotEmptyOrNull(choiceTag))

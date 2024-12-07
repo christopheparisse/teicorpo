@@ -195,13 +195,13 @@ public class AnnotatedUtterance {
 	}
 
 	public boolean processAnnotatedU(Element annotatedU, TeiTimeline pTeiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
-		System.err.printf("timeline(param): %s thisTimeline %s%n", pTeiTimeline != null ? "yes" : "no", this.teiTimeline != null ? "yes" : "no");
+		//System.err.printf("timeline(param): %s thisTimeline %s%n", pTeiTimeline != null ? "yes" : "no", this.teiTimeline != null ? "yes" : "no");
 		if (pTeiTimeline != null) this.teiTimeline = pTeiTimeline;
 		optionsTEI = options;
 		initU();
 		lastxmlid = TeiDocument.getAttrAnnotationBloc(annotatedU, "xml:id");
 		if (lastxmlid.isEmpty()) lastxmlid = Utils.createNewId(); // TeiDocument.getAttrAnnotationBloc(annotatedU, "id");
-		System.out.printf("ID: %s%n", lastxmlid);
+		//System.out.printf("ID: %s%n", lastxmlid);
 		// System.err.printf("timeline: %s%n", teiTimeline.toString());
 		if (this.teiTimeline != null) {
 			String sstart = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
@@ -214,8 +214,8 @@ public class AnnotatedUtterance {
 			start = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "start"));
 			end = Utils.refID(TeiDocument.getAttrAnnotationBloc(annotatedU, "end"));
 		}
-		System.out.printf("start: %s%n", start);
-		System.out.printf("end: %s%n", end);
+		//System.out.printf("start: %s%n", start);
+		//System.out.printf("end: %s%n", end);
 		// create stamps
 		if (start.isEmpty() || options.ignoreTimeline)
 			startStamp = "";
