@@ -290,7 +290,7 @@ public class TeiToText extends TeiConverter {
 				out.print("[" + spkChoice(au) + "] ");
 			}
 			if (tf.optionsOutput.tierxmlid) {
-				out.println("<" + au.lastxmlid + "> " + speechContentTarget);
+				out.println("<" + au.lastxmlid + "> ");
 			}
 			if (tf.optionsOutput.tiertimes) {
 				if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
