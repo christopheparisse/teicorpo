@@ -75,6 +75,7 @@ public class TeiToPartition {
 		for (int i = 0; i < annotationGrps.getLength(); i++) {
 			Element annotGrp = (Element) annotationGrps.item(i);
 			AnnotatedUtterance au = new AnnotatedUtterance();
+			System.out.printf("tml=%s [%s]%n", this.timeline != null ? "on": "off", annotGrp.toString());
 			au.processAnnotatedU(annotGrp, this.timeline, null, optionsOutput, false);
 			// System.out.printf("processAU: %s%n", au.toString());
 			NodeList annotGrpElmts = annotGrp.getChildNodes();
