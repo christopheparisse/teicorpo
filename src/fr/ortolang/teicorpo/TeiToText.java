@@ -287,15 +287,19 @@ public class TeiToText extends TeiConverter {
 			out.print(spkChoice(au) + "\t" + partage + "\t" + speechContentTarget +"\n");
 		} else if (tf.optionsOutput.raw == true) {
 			if (tf.optionsOutput.tiernames && tf.optionsOutput.partmetadataInFilename != true) {
-				out.print("[" + spkChoice(au) + "]");
-				if (tf.optionsOutput.tierxmlid) {
-					out.println(" <" + au.lastxmlid + "> " + speechContentTarget);
-				} else {
-					out.println(" " + speechContentTarget);
-				}
-			} else {
-				out.println(speechContentTarget);
+				out.print("[" + spkChoice(au) + "] ");
 			}
+			if (tf.optionsOutput.tierxmlid) {
+				out.println("<" + au.lastxmlid + "> " + speechContentTarget);
+			}
+			if (tf.optionsOutput.tiertimes) {
+				if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
+					float start = Float.parseFloat(startTime);
+					float end = Float.parseFloat(endTime);
+					out.printf("%f %f ", start, end);
+				}
+			}
+			out.println(speechContentTarget);
 		} else {
 			if (Utils.isNotEmptyOrNull(endTime) && Utils.isNotEmptyOrNull(startTime)) {
 				float start = Float.parseFloat(startTime);

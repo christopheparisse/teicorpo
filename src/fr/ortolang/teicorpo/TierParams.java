@@ -116,6 +116,7 @@ class TierParams {
 	boolean absolute;
 	boolean tiernames;
 	boolean tierxmlid;
+	boolean tiertimes;
 	boolean partmetadataInFilename;
 	boolean partmetadataRole;
 	boolean csv;
@@ -180,6 +181,7 @@ class TierParams {
 		tiernames = false;
 		tiernamescontent = false;
 		tierxmlid = false;
+		tiertimes = false;
 		partmetadataInFilename = false;
 		partmetadataRole = false;
 		csv = false;
@@ -532,6 +534,9 @@ class TierParams {
 					} else if (argument.equals("-tierxmlid")) {
 						i++;
 						continue;
+					} else if (argument.equals("-tiertimes")) {
+						i++;
+						continue;
 					} else if (argument.equals("-partmeta")) {
 						i++;
 						continue;
@@ -856,6 +861,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-tierxmlid")) {
 						options.tierxmlid = true;
+						continue;
+					} else if (argument.equals("-tiertimes")) {
+						options.tiertimes = true;
 						continue;
 					} else if (argument.equals("-partmeta")) {
 						options.partmetadataInFilename = true;
