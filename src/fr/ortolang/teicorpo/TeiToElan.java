@@ -44,6 +44,8 @@ public class TeiToElan extends GenericMain {
 	String inputName;
 	// Nom du fichier de sortie
 	String outputName;
+	// name of the media file
+	String url = "";
 
 	// Document elan
 	Document elanDoc;
@@ -84,6 +86,7 @@ public class TeiToElan extends GenericMain {
 	// sortie au format Elan
 	public boolean transform(String inputName, String outputName, TierParams optionsTei) throws Exception {
 		ttp = new TeiToPartition();
+		if (optionsTei != null && optionsTei.mediaName != null) url = optionsTei.mediaName;
 		if (optionsTei == null) optionsTei = new TierParams();
 		DocumentBuilderFactory factory = null;
 //		tstart = Utils.timeStamp("start", 0);
@@ -311,10 +314,14 @@ public class TeiToElan extends GenericMain {
 				header.setAttribute("TIME_UNITS", "milliseconds");
 				for (int i = 0; i < medias.getLength(); i++) {
 					Element elt = (Element) medias.item(i);
-					String url = elt.getAttribute("url");
+					if (url.isEmpty() == true) {
+						url = elt.getAttribute("url");
+					}
+					if (url.isEmpty()) url = "unknown";
 					String mimeType = elt.getAttribute("mimeType");
 					File mediaFile = new File(url);
 					String mediaName = mediaFile.getName();
+					if (mediaName.isEmpty()) mediaName = "unknown";
 					Element eafMedia = elanDoc.createElement("MEDIA_DESCRIPTOR");
 					eafMedia.setAttribute("MEDIA_URL", url);
 					eafMedia.setAttribute("MIME_TYPE", mimeType);
