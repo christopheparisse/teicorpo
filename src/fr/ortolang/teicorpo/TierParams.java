@@ -306,6 +306,7 @@ class TierParams {
 			System.err.println("         -section : add a section indication at the end of each utterance (for lexico/le trameur)");
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
+			System.err.println("         -tiertimes : insert the start and end time information");
 			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
 			System.err.println("         -csv : writes the output in tabular format. One line per utterance: participant, age, text (or more if partmeta is set)");
 			System.err.println("         -minlength value : minimum length of output utterance");

@@ -298,9 +298,9 @@ public class EOLUtils
         finally
         {
             // Clean up, temp should never exist
-            FileUtils.deleteQuietly( temp );
-            IOUtils.closeQuietly( bufferIn );
-            IOUtils.closeQuietly( bufferOut );
+            // FileUtils.deleteQuietly( temp );
+            // IOUtils.closeQuietly( bufferIn );
+            // IOUtils.closeQuietly( bufferOut );
         }
     }
 
