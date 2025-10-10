@@ -297,6 +297,8 @@ public class TeiToText extends TeiConverter {
 					float start = Float.parseFloat(startTime);
 					float end = Float.parseFloat(endTime);
 					out.printf("%f\t%f\t", start, end);
+				} else {
+					out.printf("-1\t-1\t");
 				}
 			}
 			out.println(speechContentTarget);
