@@ -171,7 +171,7 @@ class TierParams {
 		//syntax = "";
 		model = "";
 		program = "";
-		normalize ="";
+		normalize ="none";
 		target ="";
 		sandhi = false;
 		codes = new Codes();
