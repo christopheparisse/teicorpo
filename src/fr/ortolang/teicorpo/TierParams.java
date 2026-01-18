@@ -69,7 +69,7 @@ class SpkVal {
 	}
 }
 
-class TierParams {
+public class TierParams {
     public String baseName;
     String outputTEIName;
     boolean verbose;
@@ -135,7 +135,7 @@ class TierParams {
 	boolean ignoreTimeline = false;
 
 
-	TierParams() {
+	public TierParams() {
 		noerror = false;
 		verbose = false;
 		input = new ArrayList<String>();
@@ -200,6 +200,9 @@ class TierParams {
 		spknamerole = "spk";
 		normlineending = false;
 		ignoreTimeline = false;
+	}
+	public void setRaw(boolean raw) {
+		this.raw = raw;
 	}
 	void addCommand(String s) {
 		commands.add(s);
