@@ -85,6 +85,10 @@ public class TransInfo {
 	 *            Element fileDesc
 	 */
 	public void getFileDescInfo(Element fileDesc) {
+		if (fileDesc == null) {
+			System.out.println("no fileDesc element");
+			return;
+		}
 
 		try {
 			title = fileDesc.getElementsByTagName("title").item(0).getTextContent();
@@ -182,6 +186,10 @@ public class TransInfo {
 	 *            Element profileDesc
 	 */
 	public void getProfileDescInfo(Element profileDesc) {
+		if (profileDesc == null) {
+			System.out.println("no profileDesc element");
+			return;
+		}
 		try {
 			NodeList recordingPlace = profileDesc.getElementsByTagName("placeName");
 			if (recordingPlace.getLength() != 0) {

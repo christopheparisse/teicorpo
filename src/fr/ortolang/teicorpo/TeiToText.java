@@ -117,6 +117,7 @@ public class TeiToText extends TeiConverter {
 					partage = "XY.XY";
 				}
 			}
+			// System.err.printf("1 optionsOutput.csv %s .raw %s%n", (tf.optionsOutput.csv?"YES":"NO"), (tf.optionsOutput.raw));
 			if (tf.optionsOutput.csv != true) {
 				newOutputName = pathn + "/" + part + "_" + partname + "_" + partage + "{" + partEducation + "}" + ".txt";
 				// test if file exists and if yes create a new name
@@ -283,8 +284,13 @@ public class TeiToText extends TeiConverter {
 		//System.out.printf("(%s) [%s]%n", speechContent, speechContentTarget);
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin
+
+		// System.err.printf("2 optionsOutput.csv %s .raw %s%n", (tf.optionsOutput.csv?"YES":"NO"), (tf.optionsOutput.raw));
 		if (tf.optionsOutput.csv == true) {
-			out.print(spkChoice(au) + "\t" + partage + "\t" + speechContentTarget +"\n");
+			if (tf.optionsOutput.raw == true)
+				out.print(spkChoice(au) + "\t" + speechContentTarget +"\n");
+			else
+				out.print(spkChoice(au) + "\t" + partage + "\t" + speechContentTarget +"\n");
 		} else if (tf.optionsOutput.raw == true) {
 			if (tf.optionsOutput.tiernames && tf.optionsOutput.partmetadataInFilename != true) {
 				out.print("[" + spkChoice(au) + "] ");
