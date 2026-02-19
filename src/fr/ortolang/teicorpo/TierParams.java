@@ -117,6 +117,7 @@ class TierParams {
 	boolean tiernames;
 	boolean tierxmlid;
 	boolean tiertimes;
+	boolean ofc;
 	boolean partmetadataInFilename;
 	boolean partmetadataRole;
 	boolean csv;
@@ -182,6 +183,7 @@ class TierParams {
 		tiernamescontent = false;
 		tierxmlid = false;
 		tiertimes = false;
+		ofc = false;
 		partmetadataInFilename = false;
 		partmetadataRole = false;
 		csv = false;
@@ -307,6 +309,7 @@ class TierParams {
 			System.err.println("         -tiernames : print the value of the locutors and tiernames in the transcriptions");
 			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
 			System.err.println("         -tiertimes : insert the start and end time information");
+			System.err.println("         -ofc : text output to be used in OFC - Open French Corpus");
 			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
 			System.err.println("         -csv : writes the output in tabular format. One line per utterance: participant, age, text (or more if partmeta is set)");
 			System.err.println("         -minlength value : minimum length of output utterance");
@@ -428,8 +431,10 @@ class TierParams {
 			System.err.println("         -syntax nom : choix pour la syntaxe à exporter");
 			System.err.println("         -sandhi : information spécifique intégrées pour l'analyse des liaisons");
 			System.err.println("         -tiernames : affiche le nom des locuteurs et des noms de tiers dans la transcription");
-			System.err.println("         -tierxmlid : insert an xml id after the tiernames (can be used to find the tier in the xml file)");
-			System.err.println("         -partmeta : extract in raw text format for one participant and put the participant name and metadata info (age, name, code) in the outputfilename");
+			System.err.println("         -tierxmlid : insert un xml id après les tiernames (can be used to find the tier in the xml file)");
+			System.err.println("         -tiertimes : insert l'information temps de début et de fin");
+			System.err.println("         -ofc : sortie texte utilisée pour l'OFC - Open French Corpus");
+			System.err.println("         -partmeta : extrait le texte brut pour un participant et met le nom et les info meta de ce participant (age, name, code) dans le nom du fichier sortie");
 			System.err.println("         -csv : writes the output in tabular format. One line per utterance: participant, age, text (or more if partmeta is set)");
 			System.err.println("         -minlength value : minimum length of output utterance");
 			System.err.println("         -maxlength value : maximum length of output utterance");
@@ -536,6 +541,9 @@ class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-tiertimes")) {
+						i++;
+						continue;
+					} else if (argument.equals("-ofc")) {
 						i++;
 						continue;
 					} else if (argument.equals("-partmeta")) {
@@ -865,6 +873,9 @@ class TierParams {
 						continue;
 					} else if (argument.equals("-tiertimes")) {
 						options.tiertimes = true;
+						continue;
+					} else if (argument.equals("-ofc")) {
+						options.ofc = true;
 						continue;
 					} else if (argument.equals("-partmeta")) {
 						options.partmetadataInFilename = true;

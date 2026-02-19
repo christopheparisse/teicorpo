@@ -135,6 +135,17 @@ public class TeiToText extends TeiConverter {
 			}
 			// else just keep partage for the tabular output
 		}
+		// for text output
+		if (tf.optionsOutput.ofc) {
+			tf.optionsOutput.raw = true;
+			tf.optionsOutput.rawLine = true;
+			tf.optionsOutput.level = 1;
+			if (tf.transInfo.textRendition.equals("dialog")) {
+				tf.optionsOutput.tiernames = true;
+			} else {
+				tf.optionsOutput.tiernames = false;
+			}
+		}
 		out = Utils.openOutputStream(newOutputName, tf.optionsOutput.concat, outputEncoding);
 		return true;
 	}

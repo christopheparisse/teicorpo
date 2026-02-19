@@ -43,6 +43,8 @@ public class TransInfo {
 	public String timeDuration;
 	// Heure du début de la transcription
 	public String startTime;
+	// type d'afficahge texte
+	public String textRendition;
 
 	// Liste des situations ayant eu lieu lors de l'enregistrement
 	public Map<String, String> situations = new HashMap<String, String>();
@@ -191,6 +193,20 @@ public class TransInfo {
 			return;
 		}
 		try {
+			NodeList channelRendition = profileDesc.getElementsByTagName("channel");
+			if (channelRendition.getLength() != 0) {
+				for (int i = 0; i < channelRendition.getLength(); i++) {
+					Node pNode = channelRendition.item(i);
+					Element p = (Element) pNode;
+					String att = p.getAttribute("rend");
+					if (att != null) {
+						textRendition = att;
+						break;
+					}
+				}
+			} else {
+				textRendition = "";
+			}
 			NodeList recordingPlace = profileDesc.getElementsByTagName("placeName");
 			if (recordingPlace.getLength() != 0) {
 				place = recordingPlace.item(0).getTextContent();

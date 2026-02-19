@@ -507,10 +507,11 @@ public class Utils {
 			// Configuration du transformer
 			TransformerFactory fabrique2 = TransformerFactory.newInstance();
 			Transformer transformer = fabrique2.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			// fabrique2.newTransformer(new StreamSource(new File(PATH_TO_XSLT_FILE))); // xslt_no_new_lines.xsl
+			//transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
 			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
-			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+			//transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
 			// Transformation
 			Source source = new DOMSource(domDoc);

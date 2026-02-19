@@ -1,4 +1,4 @@
 git add . 
-git commit -m "version 1.41.18"
+git commit -m "version 1.41.19"
 git push origin master
 git push --mirror https://github.com/christopheparisse/teicorpo.git

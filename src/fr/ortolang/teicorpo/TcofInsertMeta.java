@@ -191,8 +191,11 @@ public class TcofInsertMeta {
             String canal = TeiDocument.childNodeContent(n,"canal");
             String genre = TeiDocument.childNodeContent(n,"genre");
             String degre = TeiDocument.childNodeContent(n,"degre");
+            String cadre = TeiDocument.childNodeContent(n,"cadre");
+            String typologie = TeiDocument.childNodeContent(n,"typologie");
+            // if above elements are not found, the string is ""
             String find = "//textDesc";
-            Element elt;
+                Element elt;
             try {
                 elt = (Element) teicorpo.path.evaluate(find, teicorpo.root, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
@@ -245,16 +248,34 @@ public class TcofInsertMeta {
                     p.setAttribute("ana", purpose);
                 }
             }
-            String cadre = TeiDocument.childNodeContent(n,"cadre");
-            find = "/TEI/teiHeader/profileDesc/settingDesc";
+            find = "/TEI/teiHeader/profileDesc/settingDesc/setting";
             try {
                 elt = (Element) teicorpo.path.evaluate(find, teicorpo.root, XPathConstants.NODE);
             } catch (XPathExpressionException e) {
                 e.printStackTrace();
                 return;
             }
+            if (elt == null) {
+                find = "/TEI/teiHeader/profileDesc/settingDesc";
+                try {
+                    elt = (Element) teicorpo.path.evaluate(find, teicorpo.root, XPathConstants.NODE);
+                } catch (XPathExpressionException e) {
+                    e.printStackTrace();
+                    return;
+                }
+                if (elt != null) {
+                    Element h = teicorpo.doc.createElement("setting");
+                    elt.appendChild(h);
+                    elt = h;
+                }
+            }
             if (elt != null) {
                 Element p = TeiDocument.setElement(teicorpo.doc, elt, "p", cadre);
+                p.setAttribute("type", "frame");
+                Element h = teicorpo.doc.createElement("p");
+                elt.appendChild(h);
+                h.setTextContent(typologie);
+                h.setAttribute("type", "typology");
             }
         }
 
