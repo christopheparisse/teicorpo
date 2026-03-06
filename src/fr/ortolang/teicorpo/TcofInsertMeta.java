@@ -15,6 +15,16 @@ public class TcofInsertMeta {
     /** file TEICORPO. */
     private TeiDocument teicorpo; // xml document
 
+    public static Element getNode(Element e, String nodeName) {
+        NodeList nl = e.getChildNodes();
+        for (int i = 0; i < nl.getLength(); i++) {
+            if (nl.item(i).getNodeName().equals(nodeName)) {
+                return (Element) nl.item(i);
+            }
+        }
+        return null;
+    }
+
     public void process(String tcofmetaName, String teicorpofileName, String teicorporesultName, String purpose) {
         System.out.printf("insert tcof meta from %s into %s and save as %s%n", tcofmetaName, teicorpofileName, teicorporesultName);
         tcof = new TeiDocument(tcofmetaName, false);
@@ -276,6 +286,33 @@ public class TcofInsertMeta {
                 elt.appendChild(h);
                 h.setTextContent(typologie);
                 h.setAttribute("type", "typology");
+            }
+            find = "/TEI/teiHeader/profileDesc";
+            try {
+                elt = (Element) teicorpo.path.evaluate(find, teicorpo.root, XPathConstants.NODE);
+            } catch (XPathExpressionException e) {
+                e.printStackTrace();
+                return;
+            }
+            if (elt != null) {
+                Element textClass = getNode(elt, "textClass");
+                if (textClass == null) {
+                    textClass = teicorpo.doc.createElement("textClass");
+                    elt.appendChild(textClass);
+                }
+                Element keywords = getNode(elt, "keywords");
+                if (keywords == null) {
+                    keywords = teicorpo.doc.createElement("keywords");
+                    elt.appendChild(keywords);
+                }
+                Element h = teicorpo.doc.createElement("term");
+                keywords.appendChild(h);
+                h.setAttribute("type", "sphere");
+                h.setTextContent(cadre);
+                h = teicorpo.doc.createElement("term");
+                keywords.appendChild(h);
+                h.setAttribute("type", "genre");
+                h.setTextContent(genre);
             }
         }
 
