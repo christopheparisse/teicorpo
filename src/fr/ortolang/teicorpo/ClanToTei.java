@@ -1257,11 +1257,11 @@ public class ClanToTei extends ImportToTei {
 					internal = s[current];
 				}
 				if (el.equals("[/]")) {
-					addRepair3(u, internal, "phono");
+					addRepair3(u, internal, "repetition");
 				} else if (el.equals("[//]")) {
-					addRepair3(u, internal, "syntax");
+					addRepair3(u, internal, "retracing");
 				} else if (el.equals("[///]")) {
-					addRepair3(u, internal, "semantic");
+					addRepair3(u, internal, "reformulation");
 				}
 			} else {
 				uContent += el + " ";
