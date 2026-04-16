@@ -1244,7 +1244,7 @@ public class ClanToTei extends ImportToTei {
 				if (current >= s.length) break;
 				String internal;
 				if (s[current].startsWith("<")) {
-					internal = s[current].substring(1);
+					internal = s[current].substring(1) + " ";
 					for (current++; current < s.length; current++) {
 						if (s[current].endsWith(">")) {
 							internal += s[current].substring(0, s[current].length()-1);
