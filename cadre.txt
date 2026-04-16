@@ -1,0 +1,6 @@
+      <cadre>Scolaire ou périscolaire</cadre>
+  <cadre></cadre>
+  <cadre>Privé</cadre>
+  <cadre>Professionnel</cadre>
+  <cadre>Public</cadre>
+  <cadre>Scolaire, périscolaire, apprentissage</cadre>

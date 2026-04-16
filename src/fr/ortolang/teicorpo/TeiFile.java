@@ -238,7 +238,9 @@ public class TeiFile {
 							Element note = getNote(el);
 							AnnotatedUtterance lastU = getLastAnnotU();
 							if (lastU != null) {
-								lastU.coms.add(note.getAttribute("type") + "\t" + note.getTextContent());
+								if (lastU.coms != null) {
+									lastU.coms.add(note.getAttribute("type") + "\t" + note.getTextContent());
+								}
 							}
 						} else {
 							AnnotatedUtterance utt = new AnnotatedUtterance();
@@ -256,12 +258,12 @@ public class TeiFile {
 								// process p
 								utt.processP(el, teiTimeline, transInfo, optionsOutput, true);
 							}
-							/*
 							// Case post
 							else if (el.getNodeName().equals("post")) {
 								// process post
 								utt.processPOST(el, teiTimeline, transInfo, optionsOutput, true);
 							}
+							/*
 							// Case prod
 							else if (el.getNodeName().equals("post")) {
 								// process post

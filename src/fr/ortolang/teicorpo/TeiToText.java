@@ -11,6 +11,8 @@ import java.util.Map;
 
 import fr.ortolang.teicorpo.TeiFile.Div;
 
+import javax.xml.xpath.XPathExpressionException;
+
 public class TeiToText extends TeiConverter {
 
 	// Permet d'écrire le fichier de sortie
@@ -23,6 +25,8 @@ public class TeiToText extends TeiConverter {
 	// for the tabular output or the metadata in the filename
 	String partage = "X";
 	String partEducation = "X";
+
+	int disp = 0;
 
 	/**
 	 * Convertit le fichier TEI donné en argument en un fichier texte.
@@ -137,13 +141,26 @@ public class TeiToText extends TeiConverter {
 		}
 		// for text output
 		if (tf.optionsOutput.ofc) {
+			System.out.println("Using CORLI OFC text output format.");
+			tf.transInfo.textRendition = "";
+			try {
+				tf.transInfo.textRendition = TeiDocument.getTextFormat(tf.xpath, tf.teiDoc);
+			} catch (XPathExpressionException e) {
+				throw new RuntimeException(e);
+			}
+			System.out.printf("Rendition info in the file is {%s}%n", tf.transInfo.textRendition);
 			tf.optionsOutput.raw = true;
 			tf.optionsOutput.rawLine = true;
 			tf.optionsOutput.level = 1;
-			if (tf.transInfo.textRendition.equals("dialog")) {
+			if (tf.transInfo.textRendition.startsWith("dialog")) {
 				tf.optionsOutput.tiernames = true;
 			} else {
 				tf.optionsOutput.tiernames = false;
+			}
+			if (tf.transInfo.textRendition.endsWith("ending")) {
+				tf.optionsOutput.addDot = true;
+			} else {
+				tf.optionsOutput.addDot = false;
 			}
 		}
 		out = Utils.openOutputStream(newOutputName, tf.optionsOutput.concat, outputEncoding);
@@ -241,6 +258,18 @@ public class TeiToText extends TeiConverter {
 		}
 		*/
 
+		// System.out.printf("speechContent: [%s]%n", speechContent);
+
+		if (speechContent.isEmpty()) {
+			// skip line
+			return;
+		}
+
+		disp = disp + 1;
+		if (disp % 1000 == 0) {
+			System.out.printf("%s%n", disp);
+		}
+
 		// test if length of line is limited to a certain length
 		if (tf.optionsOutput.minlength > 0 || tf.optionsOutput.maxlength > 0) {
 			// split speechContent
@@ -273,7 +302,7 @@ public class TeiToText extends TeiConverter {
 		}
 		String speechContentTarget;
 		if (optionsOutput.target.equals("stanza")) {
-			speechContent = speechContent.replace("  ", " ");
+			speechContent = speechContent.replaceAll("\\s+", " ");
 			if (speechContent.endsWith(" .")) {
 				speechContentTarget = speechContent.substring(0, speechContent.length()-2) + ".";
 			} else if (speechContent.endsWith(" ?")) {
@@ -292,6 +321,7 @@ public class TeiToText extends TeiConverter {
 		} else {
 			speechContentTarget = speechContent;
 		}
+		speechContentTarget = speechContentTarget.trim();
 		//System.out.printf("(%s) [%s]%n", speechContent, speechContentTarget);
 		// On ajoute les informations temporelles seulement si on a un temps de
 		// début et un temps de fin

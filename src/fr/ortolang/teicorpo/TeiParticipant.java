@@ -118,7 +118,7 @@ public class TeiParticipant {
 					agevalue = el.getTextContent();
 					if (!agevalue.isEmpty())
 						adds.put("ageinfo", agevalue);
-					System.out.printf("Age as node: %s%n", age);
+					// System.out.printf("Age as node: %s%n", age);
 				} else {
 					adds.put(el.getNodeName(), el.getTextContent());
 				}

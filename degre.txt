@@ -1,0 +1,11 @@
+         <degre>Non planifié</degre>
+      <degre>Très interactif</degre>
+   <degre></degre>
+   <degre>Non planifié</degre>
+   <degre>Planifié</degre>
+   <degre>Semi-planifié</degre>
+  <degre></degre>
+  <degre>Monologue</degre>
+  <degre>Moyennement interactif</degre>
+  <degre>Peu interactif</degre>
+  <degre>Très interactif</degre>

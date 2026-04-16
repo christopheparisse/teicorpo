@@ -193,20 +193,25 @@ public class TransInfo {
 			return;
 		}
 		try {
+/*
 			NodeList channelRendition = profileDesc.getElementsByTagName("channel");
+			System.out.printf("getProfileDescInfo %d%n", channelRendition.getLength());
 			if (channelRendition.getLength() != 0) {
 				for (int i = 0; i < channelRendition.getLength(); i++) {
 					Node pNode = channelRendition.item(i);
 					Element p = (Element) pNode;
 					String att = p.getAttribute("rend");
-					if (att != null) {
+					if (att != null && !att.isEmpty()) {
+						System.out.printf("RENDITION: {%s}%n", att);
 						textRendition = att;
-						break;
+						// break;
 					}
 				}
 			} else {
+				System.out.printf("RENDITION: NO VALUE%n");
 				textRendition = "";
 			}
+*/
 			NodeList recordingPlace = profileDesc.getElementsByTagName("placeName");
 			if (recordingPlace.getLength() != 0) {
 				place = recordingPlace.item(0).getTextContent();

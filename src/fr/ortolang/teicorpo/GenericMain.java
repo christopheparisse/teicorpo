@@ -3,6 +3,7 @@
  */
 package fr.ortolang.teicorpo;
 
+import javax.xml.xpath.XPathExpressionException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;

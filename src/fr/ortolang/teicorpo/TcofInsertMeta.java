@@ -25,6 +25,97 @@ public class TcofInsertMeta {
         return null;
     }
 
+    public static String ofcCanal(String tcof) {
+/*
+  <canal>Face à face</canal>
+  <canal></canal>
+  <canal>Face à face</canal>
+  <canal>Radio</canal>
+  <canal>Téléphone</canal>
+*/
+        switch (tcof) {
+            case "face à face": return "face_to_face";
+            case "radio": return "radio";
+            case "téléphone": return "phone";
+            default: return tcof;
+        }
+    }
+
+    public static String ofcCadre(String tcof) {
+/*
+  <cadre>Scolaire ou périscolaire</cadre>
+  <cadre></cadre>
+  <cadre>Privé</cadre>
+  <cadre>Professionnel</cadre>
+  <cadre>Public</cadre>
+  <cadre>Scolaire, périscolaire, apprentissage</cadre>
+*/
+        if (tcof.indexOf("scolaire") >= 0) return "scolaire";
+        switch (tcof) {
+            case "privé": return "privée";
+            case "professionnel": return "professionnelle";
+            case "public": return "publique";
+            default: return tcof;
+        }
+    }
+
+    public static String ofcGenre(String tcof) {
+/*
+  <genre>Conversation</genre>
+  <genre>Conférence</genre>
+  <genre>Consultation</genre>
+  <genre>Cours</genre>
+  <genre>Débat</genre>
+  <genre>Discussion à visée philosophique</genre>
+  <genre>Entretien</genre>
+  <genre>Narration dialoguée</genre>
+  <genre>Réunion</genre>
+*/
+        if (tcof.indexOf("discussion") >= 0) return "discussion";
+        if (tcof.indexOf("narration") >= 0) return "narration";
+        switch (tcof) {
+            case "conférence": return "conférence";
+            case "consultation": return "consultation";
+            case "conversation": return "discussion";
+            case "cours": return "cours";
+            case "débat": return "débat";
+            case "entretien": return "entretien";
+            case "réunion": return "réunion";
+            default: return tcof;
+        }
+    }
+
+    public static String ofcDegre(String tcof) {
+/*
+    <degre>Non planifié</degre>
+    <degre>Planifié</degre>
+    <degre>Semi-planifié</degre>
+    <degre>Monologue</degre>
+    <degre>Moyennement interactif</degre>
+    <degre>Peu interactif</degre>
+    <degre>Très interactif</degre>
+*/
+/*
+        if (tcof.indexOf("scolaire") >= 0) return "scolaire";
+        switch (tcof) {
+            case "privé": return "privée";
+            case "professionnel": return "professionnelle";
+            case "public": return "publique";
+            default: return tcof;
+        }
+*/
+        return tcof;
+    }
+
+    public static String ofcDate(String tcof) {
+        if (tcof.isEmpty()) return "2020";
+        int pos = tcof.lastIndexOf('/');
+        if (pos >= 0) {
+            return tcof.substring(pos+1);
+        }
+        return  tcof;
+    }
+
     public void process(String tcofmetaName, String teicorpofileName, String teicorporesultName, String purpose) {
         System.out.printf("insert tcof meta from %s into %s and save as %s%n", tcofmetaName, teicorpofileName, teicorporesultName);
         tcof = new TeiDocument(tcofmetaName, false);
@@ -108,7 +199,14 @@ public class TcofInsertMeta {
                         fage = "10.0";
                     }
                 } else {
-                    if (age.isEmpty() || Double.parseDouble(fage) >= 16.0) {
+                    Double dfage = 40.0;
+                    try {
+                        dfage = Double.parseDouble(fage);
+                    } catch (Exception e) {
+                        // ignore error
+                        dfage = 40.0;
+                    }
+                    if (age.isEmpty() || dfage >= 16.0) {
                         if (firstadufound == false) {
                             firstadufound = true;
                             tag = "ADU";
@@ -198,11 +296,12 @@ public class TcofInsertMeta {
         if (nodelist.getLength() > 0) {
             // should be only one element
             Element n = (Element)nodelist.item(0);
-            String canal = TeiDocument.childNodeContent(n,"canal");
-            String genre = TeiDocument.childNodeContent(n,"genre");
-            String degre = TeiDocument.childNodeContent(n,"degre");
-            String cadre = TeiDocument.childNodeContent(n,"cadre");
-            String typologie = TeiDocument.childNodeContent(n,"typologie");
+            String canal = ofcCanal(TeiDocument.childNodeContent(n,"canal").toLowerCase());
+            String genre = ofcGenre(TeiDocument.childNodeContent(n,"genre").toLowerCase());
+            String degre = ofcDegre(TeiDocument.childNodeContent(n,"degre").toLowerCase());
+            String cadre = ofcCadre(TeiDocument.childNodeContent(n,"cadre").toLowerCase());
+            String datevalue = ofcDate(TeiDocument.childNodeContent(n,"date"));
+            String typologie = TeiDocument.childNodeContent(n,"typologie").toLowerCase();
             // if above elements are not found, the string is ""
             String find = "//textDesc";
                 Element elt;
@@ -280,7 +379,7 @@ public class TcofInsertMeta {
                 }
             }
             if (elt != null) {
-                Element p = TeiDocument.setElement(teicorpo.doc, elt, "p", cadre);
+                Element p = TeiDocument.setElement(teicorpo.doc, elt, "p", cadre.toLowerCase());
                 p.setAttribute("type", "frame");
                 Element h = teicorpo.doc.createElement("p");
                 elt.appendChild(h);
@@ -313,6 +412,17 @@ public class TcofInsertMeta {
                 keywords.appendChild(h);
                 h.setAttribute("type", "genre");
                 h.setTextContent(genre);
+                Element creation = getNode(elt, "creation");
+                if (creation == null) {
+                    creation = teicorpo.doc.createElement("creation");
+                    elt.appendChild(creation);
+                }
+                Element date = getNode(elt, "date");
+                if (date == null) {
+                    date = teicorpo.doc.createElement("date");
+                    creation.appendChild(date);
+                }
+                date.setAttribute("when", datevalue);
             }
         }
 
@@ -349,18 +459,26 @@ public class TcofInsertMeta {
 
     public static void main(String args[]) {
         // parcours des arguments
-        String usageString = "Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta teicorpo_xml_file -metadata tcof_metadata_file -o teicorpo_result_file -p purpose\n"
-            + "Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.\n";
+        String usageString = "Usage: java -cp teicorpo.jar fr.ortolang.teicorpo.TcofInsertMeta teicorpo_xml_file -metadata tcof_metadata_file -o teicorpo_result_file -1 -p purpose\n"
+            + "Insert the content of 'tcof_metadata_file' into 'teicorpo_xml_file' and save it as 'teicorpo_result_file' - purpose is an optional addition to the metadata.\n"
+                + "-1 Inplace (output file replace input file - don't use -o!)";
         TierParams options = new TierParams();
         // Parcours des arguments
         if (!TierParams.processArgs(args, options, usageString, ".tei_corpo.xml", ".tei_corpo.xml", 10)) {
             if (!options.noerror) return;
         }
         if (options.input.size() != 1 || options.metadata == null || options.metadata.isEmpty()) {
-            System.err.println("No input file or more than one input file. One metadata file is also required.");
+            System.err.printf("No input file or more than one input file. One metadata file is also required. %d %s%n", options.input.size(), options.metadata);
             return;
         }
-        if (options.output == null) {
+        if (options.inplace == true) {
+            if (options.output != null) {
+                System.err.printf("if -1 is used, do not use -o. Stop.%n");
+                return;
+            }
+            options.output = options.input.get(0);
+        }
+        if (options.output == null && options.inplace != true) {
             options.output = options.input.get(0) + ".tei_corpo2.xml";
         }
         System.out.printf("Insertion of %s in %s := results in %s%n", options.metadata, options.input.get(0), options.output);

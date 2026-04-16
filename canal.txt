@@ -1,0 +1,5 @@
+      <canal>Face à face</canal>
+  <canal></canal>
+  <canal>Face à face</canal>
+  <canal>Radio</canal>
+  <canal>Téléphone</canal>

@@ -1,0 +1,11 @@
+      <genre>Conversation</genre>
+  <genre></genre>
+  <genre>Conférence</genre>
+  <genre>Consultation</genre>
+  <genre>Conversation</genre>
+  <genre>Cours</genre>
+  <genre>Débat</genre>
+  <genre>Discussion à visée philosophique</genre>
+  <genre>Entretien</genre>
+  <genre>Narration dialoguée</genre>
+  <genre>Réunion</genre>

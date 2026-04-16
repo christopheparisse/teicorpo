@@ -923,6 +923,10 @@ public class ClanToTei extends ImportToTei {
 														// la tier selon son
 														// extension
 
+		if (t == null || t.length < 1) {
+			System.err.printf("Cannot find %s tier.%n", extension);
+			return;
+		}
 		boolean triplx = false; // présence de mots non retranscrits
 		boolean repetMot = false; // présence de mots répétés
 		boolean repetu2 = false; // présence de u2ments répétés
@@ -1208,51 +1212,83 @@ public class ClanToTei extends ImportToTei {
 		String[] s = source.split(" ");
 		String uContent = "";
 		Element u = docTEI.createElement("u");
-		Element pause = docTEI.createElement("pause");
-		Element seg = docTEI.createElement("seg");
 
-		for (String el : s) {
-			boolean addPause = false;
+		for (int current= 0; current < s.length; current++) {
+			String el = s[current];
 			if (el.startsWith("(")) {
 				if (el.equals("(.)") || el.toLowerCase().startsWith("(pause)")) {
-					addPause = addPause(seg, pause, "short", "");
-				} else if (el.equals("(..)")) {
-					addPause = addPause(seg, pause, "long", "");
-				} else if (el.equals("(...)")) {
-					addPause = addPause(seg, pause, "verylong", "");
-				} else if (el.matches("\\(\\d+\\.\\d+\\)")) {
-					addPause = addPause(seg, pause, "chrono", el.substring(1, el.length() - 1));
-				}
-				if (addPause) {
-					// uContent = convTerm(uContent);// deleteControlChars(convTerm(uContent));
-					Node content = docTEI.createTextNode(uContent);
-					seg.appendChild(content);
-					annotatedU.appendChild(u);
-					u.appendChild(seg);
-					seg.appendChild(pause);
+					addSeg2(u, uContent);
 					uContent = "";
+					addPause3(u, "short", "");
+				} else if (el.equals("(..)")) {
+					addSeg2(u, uContent);
+					uContent = "";
+					addPause3(u, "long", "");
+				} else if (el.equals("(...)")) {
+					addSeg2(u, uContent);
+					uContent = "";
+					addPause3(u, "verylong", "");
+				} else if (el.matches("\\(\\d+\\.\\d+\\)")) {
+					addSeg2(u, uContent);
+					uContent = "";
+					addPause3(u, "chrono", el.substring(1, el.length() - 1));
+				} else {
+					uContent += el + " ";
 				}
-			}
-			if (addPause == false) {
-				uContent += el += " ";
+			} else if (el.startsWith("[//]")) {
+				// finish current seg
+				addSeg2(u, uContent);
+				uContent = "";
+				// find next element(s)
+				current++;
+				if (current >= s.length) break;
+				String internal;
+				if (s[current].startsWith("<")) {
+					internal = s[current].substring(1);
+					for (current++; current < s.length; current++) {
+						if (s[current].endsWith(">")) {
+							internal += s[current].substring(0, s[current].length()-1);
+							break;
+						} else {
+							internal += s[current] + " ";
+						}
+					}
+				} else {
+					internal = s[current];
+				}
+				addRepair3(u, internal, "syntax");
+				// uContent = convTerm(uContent);// deleteControlChars(convTerm(uContent));
+			} else {
+				uContent += el + " ";
 			}
 		}
-		// uContent = convTerm(uContent).replaceAll("\\s+", " ");// deleteControlChars(convTerm(uContent));
-		uContent = uContent.replaceAll("\\s+", " "); // deleteControlChars(convTerm(uContent));
-		Node content = docTEI.createTextNode(uContent);
-		seg.appendChild(content);
-		seg.appendChild(content);
-		u.appendChild(seg);
+		if (!uContent.isEmpty()) {
+			addSeg2(u, uContent);
+		}
 		annotatedU.appendChild(u);
 	}
 
-	public boolean addPause(Element u, Element pause, String pauseType, String pauseDur) {
+	public void addSeg2(Element u, String text) {
+		Element seg = docTEI.createElement("seg");
+		// deleteControlChars(convTerm(uContent));
+		seg.setTextContent(text.replaceAll("\\s+", " "));
+		u.appendChild(seg);
+	}
+
+	public void addPause3(Element u, String pauseType, String pauseDur) {
+		Element pause = docTEI.createElement("pause");
 		pause.setAttribute("type", pauseType);
 		if (pauseType.equals("chrono")) {
 			pause.setAttribute("dur", pauseDur);
 		}
 		u.appendChild(pause);
-		return true;
+	}
+
+	public void addRepair3(Element u, String text, String type) {
+		Element repair = docTEI.createElement("repair");
+		repair.setAttribute("type", type);
+		repair.setTextContent(text.replaceAll("\\s+", " "));
+		u.appendChild(repair);
 	}
 
 	public static void main(String[] args) throws Exception {

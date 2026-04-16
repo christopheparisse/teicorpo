@@ -78,6 +78,7 @@ public class TierParams {
 	boolean sectionDisplay;
 	List <String> input;
 	String output;
+	boolean inplace;
 	String mediaName;
 	String encoding;
 	String options;
@@ -118,6 +119,7 @@ public class TierParams {
 	boolean tierxmlid;
 	boolean tiertimes;
 	boolean ofc;
+	boolean addDot;
 	boolean partmetadataInFilename;
 	boolean partmetadataRole;
 	boolean csv;
@@ -141,6 +143,7 @@ public class TierParams {
 		verbose = false;
 		input = new ArrayList<String>();
 		output = null;
+		inplace = false;
 		mediaName = null;
 		encoding = null;
 		detectEncoding = true;
@@ -184,6 +187,7 @@ public class TierParams {
 		tierxmlid = false;
 		tiertimes = false;
 		ofc = false;
+		addDot = false;
 		partmetadataInFilename = false;
 		partmetadataRole = false;
 		csv = false;
@@ -496,6 +500,9 @@ public class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-o")) {
+						i++;
+						continue;
+					} else if (argument.equals("-1")) {
 						i++;
 						continue;
 					} else if (argument.equals("-metadata")) {
@@ -832,15 +839,16 @@ public class TierParams {
 							return false;
 						}
 						i++;
-						if (argument.equals("mor")) {
+						if (args[i].equals("mor")) {
 							options.options = "mor";
-						} else if (argument.equals("xmor")) {
+						} else if (args[i].equals("xmor")) {
 							options.options = "xmor";
-						} else if (argument.equals("morext")) {
+						} else if (args[i].equals("morext")) {
 							options.options = "morext";
-						} else if (argument.equals("xmorext")) {
+						} else if (args[i].equals("xmorext")) {
 							options.options = "xmorext";
 						} else {
+							System.err.println("the parameter -f is followed by a wrong parameter: " + args[i]);
 							printUsageMessage(usage, ext1, ext2, style);
 							return false;
 						}
@@ -855,6 +863,9 @@ public class TierParams {
 						continue;
 					} else if (argument.equals("-rawline")) {
 						options.rawLine = true;
+						continue;
+					} else if (argument.equals("-1")) {
+						options.inplace = true;
 						continue;
 					} else if (argument.equals("-normlineending")) {
 						options.normlineending = true;

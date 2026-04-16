@@ -115,7 +115,25 @@ public class AnnotatedUtterance {
 		tiers = new ArrayList<Annot>();
 		tierTypes = new HashSet<String>();
 		nomarkerSpeech = "";
-		speech = u.getTextContent();
+		speech = Utils.cleanBlanks(u.getTextContent());
+		nomarkerSpeech = speech;
+		addAnnot();
+		return true;
+	}
+
+	public boolean processPOST(Element u, TeiTimeline teiTimeline, TransInfo transInfo, TierParams options, boolean doSpan) {
+		optionsTEI = options;
+		morClan = "";
+		this.teiTimeline = teiTimeline;
+		lastxmlid = u.getAttribute("xml:id");
+		speakerName = u.getAttribute("who");
+		speakerCode = "post";
+		coms = new ArrayList<String>();
+		speeches = new ArrayList<Annot>();
+		tiers = new ArrayList<Annot>();
+		tierTypes = new HashSet<String>();
+		nomarkerSpeech = "";
+		speech = Utils.cleanBlanks(u.getTextContent());
 		nomarkerSpeech = speech;
 		addAnnot();
 		return true;
@@ -350,8 +368,10 @@ public class AnnotatedUtterance {
 	    StringBuilder textContent = new StringBuilder();
 	    for (int i = 0; i < list.getLength(); ++i) {
 	        Node child = list.item(i);
-	        if (child.getNodeType() == Node.TEXT_NODE)
-	            textContent.append(child.getTextContent().trim());
+			if (child.getNodeType() == Node.TEXT_NODE) {
+				String newstr = Utils.cleanBlanks(child.getTextContent());
+				textContent.append(newstr);
+			}
 	    }
 	    return textContent.toString();
 	}
@@ -511,25 +531,48 @@ public class AnnotatedUtterance {
 				else if (segChildName.equals("w")) {
 					String ana = segChildEl.getAttribute("pos");
 					String lemma = segChildEl.getAttribute("lemma");
-					String w = segChildEl.getTextContent();
+					String w = Utils.cleanBlanks(segChildEl.getTextContent());
 					speech += (lemma.isEmpty())
-							? w 
+							? w
 							: " " + w;
 					nomarkerSpeech += w + " ";
 					morClan += lemma + "|" + ana + " ";
 				}
+				// Splitted into <choice> "choice"
+				else if (segChildName.equals("choice")) {
+					NodeList cOrig = ((Element)segChild).getElementsByTagName("orig");
+					NodeList cReg = ((Element)segChild).getElementsByTagName("reg");
+					if (cReg.getLength() > 0) {
+						Node n = cReg.item(0);
+						String w = Utils.cleanBlanks(n.getTextContent());
+						speech += w + " ";
+						nomarkerSpeech += w + " ";
+					} else {
+						if (cOrig.getLength() > 0) {
+							Node n = cOrig.item(0);
+							String w = Utils.cleanBlanks(n.getTextContent());
+							speech += w + " ";
+							nomarkerSpeech += w + " ";
+						}
+					}
+				}
 				else {
-					String s = Utils.setEntities(segChildEl.getTextContent());
-					speech += s + " ";
-					nomarkerSpeech += s + " ";
+					processSeg(segChildEl.getChildNodes(), xmlid);
+/*
+					String s = Utils.setEntities(segChildEl.getTextContent().trim());
+					if (!s.isEmpty()) {
+						speech += "c{" + s + "}c ";
+						nomarkerSpeech += "c{" + s + "}c ";
+					}
+*/
 				}
 			} else if (segChild.getNodeName().equals("#text")) {
-				String content = segChild.getTextContent().trim();
+				String content = Utils.cleanBlanks(segChild.getTextContent());
 				if (Utils.isNotEmptyOrNull(content)) {
 					String xe = Utils.setEntities(content) + " ";
 //					System.out.printf("%s%n%s%n", content, xe);
-					speech += xe;
-					nomarkerSpeech += xe;
+					speech += xe + " ";
+					nomarkerSpeech += xe + " ";
 					// Dans speeches, pour chaque énoncé (seg), il peut y
 					// avoir des marques temporelles
 					// On ajoute donc chaque énoncé sous cette forme

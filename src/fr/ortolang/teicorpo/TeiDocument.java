@@ -364,6 +364,18 @@ public class TeiDocument {
         }
     }
 
+    public static String getTextFormat(XPath xpath, Document docTEI) throws XPathExpressionException {
+        XPathExpression expr = xpath.compile("//profileDesc/textDesc/channel[@rend]");
+        NodeList nl = (NodeList) expr.evaluate(docTEI, XPathConstants.NODESET);
+        if (nl.getLength() > 0) {
+            Node n = nl.item(0);
+            String val = ((Element)n).getAttribute("rend");
+            return val;
+        } else {
+            return "";
+        }
+    }
+
     public static NodeList getAllDivs(XPath xpath, Document docTEI) throws XPathExpressionException {
         NodeList nl;
         if (Utils.teiStylePure == true) {

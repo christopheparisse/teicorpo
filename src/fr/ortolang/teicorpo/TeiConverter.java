@@ -5,6 +5,7 @@
 
 package fr.ortolang.teicorpo;
 
+import javax.xml.xpath.XPathExpressionException;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -44,7 +45,7 @@ public abstract class TeiConverter extends GenericMain {
 	}
 
 	// Initialisation du fichier de sortie
-	public abstract boolean outputWriter();
+	public abstract boolean outputWriter() throws XPathExpressionException;
 
 	// Conversion des données
 	public abstract void conversion();

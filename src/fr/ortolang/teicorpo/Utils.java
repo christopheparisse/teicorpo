@@ -105,9 +105,14 @@ public class Utils {
 		return s
 				.replaceAll("&", "&amp;") // 38 26
 				.replaceAll("\"", "&quot;") // 34 22
-	//			.replaceAll("'", "&#39;") // 39 27
+				//			.replaceAll("'", "&#39;") // 39 27
 				.replaceAll("<", "&lt;") // 60 3C
 				.replaceAll(">", "&gt;"); // 62 3E
+	}
+
+	public static String cleanBlanks(String s) {
+		s = s.replaceAll("\\s+", " ");
+		return s.trim();
 	}
 
 	public static String join(String... args) {
