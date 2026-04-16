@@ -1235,7 +1235,7 @@ public class ClanToTei extends ImportToTei {
 				} else {
 					uContent += el + " ";
 				}
-			} else if (el.startsWith("[//]")) {
+			} else if (el.equals("[/]") || el.equals("[//]") || el.equals("[///]")) {
 				// finish current seg
 				addSeg2(u, uContent);
 				uContent = "";
@@ -1256,8 +1256,13 @@ public class ClanToTei extends ImportToTei {
 				} else {
 					internal = s[current];
 				}
-				addRepair3(u, internal, "syntax");
-				// uContent = convTerm(uContent);// deleteControlChars(convTerm(uContent));
+				if (el.equals("[/]")) {
+					addRepair3(u, internal, "phono");
+				} else if (el.equals("[//]")) {
+					addRepair3(u, internal, "syntax");
+				} else if (el.equals("[///]")) {
+					addRepair3(u, internal, "semantic");
+				}
 			} else {
 				uContent += el + " ";
 			}
