@@ -101,6 +101,8 @@ public class TierParams {
 	boolean eraseDone;
 	List<DescTier> ldt;
 	boolean shortextension;
+	String extensionIN;
+	// String extensionOUT;
 	String defaultAge;
 	String situation;
 	boolean ignorePraatNumbering;
@@ -168,6 +170,8 @@ public class TierParams {
 		outputFormat = "";
 		inputFormat = "";
 		shortextension = false;
+		extensionIN = "";
+		// extensionOUT = "";
 		defaultAge = "40.0";
 		situation = null;
 		ignorePraatNumbering = false;
@@ -297,6 +301,7 @@ public class TierParams {
 			System.err.println("         -stdevent ascci standard format for events in text mode");
 			System.err.println("         -advevent advanced unicode format for event in text mode");
 			System.err.println("         -absolute : syntax of included tools/ library in html (for subthtml)");
+			System.err.println("         -extensionIN : value of the extension for the input if different than default value");
 		}
 		if (style == 5 || style == -1) {
 			printImportPartitionMessage();
@@ -423,6 +428,7 @@ public class TierParams {
 			System.err.println("         -to format des fichiers output");
 			System.err.println("         -stdevent format ascci standard des événements en mode texte");
 			System.err.println("         -advevent format unicode avancé des événements en mode texte");
+			System.err.println("         -extensionIN : valeur de l'extension pour les fichiers entrée si different de valeur par défaut");
 		}
 		if (style == 3 || style == -1) {
 			System.err.println("         *** paramètre pour édition de fichier TEI***");
@@ -486,6 +492,8 @@ public class TierParams {
 	public static boolean processArgs(String[] args, TierParams options, String usage, String ext1, String ext2, int style) {
 //		options.inputFormat = ext1;
 		options.outputFormat = ext2.isEmpty() ? Utils.EXT : ext2;
+		options.extensionIN = ext1.isEmpty() ? Utils.EXT : ext1;
+//		System.out.printf("Setting extensionIN: %s%n", options.extensionIN);
 		if (args.length == 0) {
 			System.err.printf("No arguments were specified.%n%n");
 			printUsageMessage(usage, ext1, ext2, style);
@@ -560,6 +568,9 @@ public class TierParams {
 						i++;
 						continue;
 					} else if (argument.equals("-csv")) {
+						i++;
+						continue;
+					} else if (argument.equals("-extensionin")) {
 						i++;
 						continue;
 					} else if (argument.equals("-minlength")) {
@@ -774,6 +785,15 @@ public class TierParams {
 						}
 						i++;
 						options.purpose = args[i];
+					} else if (argument.equals("-extensionin")) {
+						if (i+1 >= args.length) {
+							System.err.println("the parameter -extensionIN is not followed by a value");
+							// Utils.printUsageMessage(usage, ext1, ext2, style);
+							return false;
+						}
+						i++;
+						options.extensionIN = args[i];
+						// System.out.printf("Adding extensionIN: %s%n", options.extensionIN);
 					} else if (argument.equals("-minlength")) {
 						if (i+1 >= args.length) {
 							System.err.println("the parameter -minlength is not followed by a value");

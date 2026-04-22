@@ -423,6 +423,10 @@ public class TeiToText extends TeiConverter {
 
 	@Override
 	public void mainProcess(String input, String output, TierParams options) {
+		if (! input.endsWith(options.extensionIN)) {
+			System.out.printf("Ignoring file: %s (not ending by %s)%n", input, options.extensionIN);
+			return;
+		}
 		if (options.partmetadataInFilename == true && options.raw != true) {
 			options.raw = true;
 			System.err.printf("Raw is set automatically to true when using option partmeta%n");
