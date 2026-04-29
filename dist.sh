@@ -1,4 +1,5 @@
 cp -v target/teicorpo-*-SNAPSHOT.jar teicorpo.jar
+cp -v teicorpo.jar /Users/cp/ofccleaner_resources/
 scp teicorpo.jar parisse@vheborto-ct3.inist.fr:/applis/download/
 scp teicorpo.jar parisse@vheborto-ct3.inist.fr:/applis/tools/
 scp teicorpo.jar parisse@vheborto-ct3.inist.fr:/applis/ct3/teicorpo-doc/

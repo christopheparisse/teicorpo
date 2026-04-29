@@ -149,6 +149,7 @@ public class TeiFile {
 		public Trans(Element text, TeiFile tf) {
 			// Liste d'éléments contenus dans la transcription (élément text)
 			Element body = (Element) text.getElementsByTagName("body").item(0);
+			if (body == null) return;
 
 			/*
 			// TEST if there is one div and nothing else
