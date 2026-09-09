@@ -192,7 +192,7 @@ public class TeiToElan extends GenericMain {
 					&& !ti.linguistType.lgq_type_id.equals("pho"))
 				ti.linguistType.lgq_type_id = "main";
 		}
-		
+
 		// Constructing controlled vocabularies from the TEI file
 		List<Element> cvList = buildControlledVocabularies();
 		// add controlled vocabularies

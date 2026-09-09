@@ -61,6 +61,7 @@ fr/ortolang/teicorpo/TaggedUtterance.class
 fr/ortolang/teicorpo/MetaInf.class
 fr/ortolang/teicorpo/TaggedWord.class
 org/mozilla/universalchardet/prober/statemachine/ISO2022CNSMModel.class
+fr/ortolang/teicorpo/ExtractTextXmlTei.class
 fr/ortolang/teicorpo/CompareTimeline.class
 fr/ortolang/teicorpo/TierParams.class
 fr/ortolang/teicorpo/StreamGobbler.class

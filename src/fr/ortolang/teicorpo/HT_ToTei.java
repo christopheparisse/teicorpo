@@ -327,9 +327,9 @@ public class HT_ToTei {
 
 	public void setEncodingDesc() {
 		Element encodingDesc = (Element) docTEI.getElementsByTagName("encodingDesc").item(0);
-		encodingDesc.setAttribute("style", Version.versionTEI);
 		Element appInfo = docTEI.createElement("appInfo");
 		encodingDesc.appendChild(appInfo);
+		appInfo.setAttribute("style", Version.versionTEI);
 		Element application = docTEI.createElement("application");
 		application.setAttribute("ident", "TeiCorpo");
 		application.setAttribute("version", Version.versionSoft(options.test));

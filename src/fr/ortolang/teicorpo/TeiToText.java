@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import fr.ortolang.teicorpo.TeiFile.Div;
-
 import javax.xml.xpath.XPathExpressionException;
 
 public class TeiToText extends TeiConverter {
@@ -428,6 +427,11 @@ public class TeiToText extends TeiConverter {
 			return;
 		}
 */
+
+		if (options.ofc == true) {
+			ExtractTextXmlTei.extractText(input, output);
+			return;
+		}
 		if (options.partmetadataInFilename == true && options.raw != true) {
 			options.raw = true;
 			System.err.printf("Raw is set automatically to true when using option partmeta%n");
