@@ -40,11 +40,12 @@ public class ExtractTextXmlTei {
             String valeurRend = (String) xPath.compile(expression).evaluate(doc, XPathConstants.STRING);
             String keyElement = "p"; // default key element
 
-            if (valeurRend != null && !valeurRend.isBlank()) {
-                System.out.println("Valeur de channel[@rend] : " + valeurRend);
-            } else {
-                System.out.println("L'attribut channel[@rend] n'a pas été trouvé ou est vide.");
-            }
+            System.out.println("File: " + cheminFichier);
+            // if (valeurRend != null && !valeurRend.isBlank()) {
+            //     System.out.println("Valeur de channel[@rend] : " + valeurRend);
+            // } else {
+            //     System.out.println("L'attribut channel[@rend] n'a pas été trouvé ou est vide.");
+            // }
 
             // System.out.println("--------------------------------------------------");
 
@@ -61,23 +62,23 @@ public class ExtractTextXmlTei {
             NodeList listeProd;
             listeProd = elemBody.getElementsByTagName("post");
             if (listeProd.getLength() > 0) {
-                System.out.println("File: " + cheminFichier);
-                System.out.println("Tag post found. Key element=post");
+                // System.out.println("File: " + cheminFichier);
+                System.out.println("CMC file");
                 keyElement = "post";
             } else {
                 listeProd = elemBody.getElementsByTagName("annotationBlock");
                 if (listeProd.getLength() > 0) {
-                    System.out.println("File: " + cheminFichier);
-                    System.out.println("Tag annotationBlock found. Key element=annotationBlock");
+                    // System.out.println("File: " + cheminFichier);
+                    System.out.println("Spoken file");
                     keyElement = "annotationBlock";
                 } else {
-                    System.out.println("File: " + cheminFichier);
-                    System.out.println("Tag by p. Key element=p");
+                    // System.out.println("File: " + cheminFichier);
+                    System.out.println("P file");
                     listeProd = elemBody.getElementsByTagName("p");
                     keyElement = "p";
                     if (valeurRend.equals("dialog") || valeurRend.equals("dialog_ending")) {
-                        System.out.println("File: " + cheminFichier);
-                        System.out.println("Incoherence between rend and keyElement (p). Key element=p. rend set to text");
+                        // System.out.println("File: " + cheminFichier);
+                        // System.out.println("Incoherence between rend and keyElement (p). Key element=p. rend set to text");
                         valeurRend = "text";
                     }
                     printTextNoDialog(listeProd, fileOut);
