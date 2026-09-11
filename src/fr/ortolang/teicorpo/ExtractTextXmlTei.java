@@ -41,11 +41,11 @@ public class ExtractTextXmlTei {
             String keyElement = "p"; // default key element
 
             System.out.println("File: " + cheminFichier);
-            // if (valeurRend != null && !valeurRend.isBlank()) {
-            //     System.out.println("Valeur de channel[@rend] : " + valeurRend);
-            // } else {
-            //     System.out.println("L'attribut channel[@rend] n'a pas été trouvé ou est vide.");
-            // }
+            if (valeurRend != null && !valeurRend.isBlank()) {
+                System.out.println("Valeur de channel[@rend] : " + valeurRend);
+            } else {
+                System.out.println("L'attribut channel[@rend] n'a pas été trouvé ou est vide.");
+            }
 
             // System.out.println("--------------------------------------------------");
 
@@ -122,9 +122,10 @@ public class ExtractTextXmlTei {
         for (int k = 0; k < listeP.getLength(); k++) {
             String contenuBrut = listeP.item(k).getTextContent();
             String contenuPropre = nettoyerTexte(contenuBrut, true);
+            String contenuPropre2 = ConventionsToChat.cleanFast(contenuPropre);
 
-            if (!contenuPropre.isEmpty()) {
-                outfile.println("[" + who + "] " + contenuPropre);
+            if (!contenuPropre2.isEmpty()) {
+                outfile.println("[" + who + "] " + contenuPropre2);
             }
         }
     }

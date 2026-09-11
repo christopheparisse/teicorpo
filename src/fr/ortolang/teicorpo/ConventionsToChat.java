@@ -166,10 +166,26 @@ public class ConventionsToChat {
 		l = l.replaceAll( "\\&.*?$", " " );
 		return l;
 	}
+
+	public static String cleanFast(String l) {
+		l = l.replaceAll( "\\&.*?\\s", " " );
+		l = l.replaceAll( "\\([.]*\\)", "" );
+		l = l.replaceAll( "\\([.\\d]\\)", "" );
+		l = l.replaceAll( "\\(", "" );
+		l = l.replaceAll( "\\)", "" );
+		l = l.replaceAll( "\\[.*\\]", "" );
+		l = l.replaceAll( "[\\x01-\\x08]", "" );
+		l = l.replaceAll("\\p{C}", "");
+		l = l.replaceAll( "\\+\\<", "" );
+		l = l.replaceAll( "[<>⟪⟫‹›⌊⌋⌈⌉]", "" );
+//		l = l.replaceAll( "\\&.*?$", " " );
+		return l;
+	}
 	
 	public static void main(String [] args){
-		String a = "OBS:	Anaé 0 [=! rit] . ";
+		String a = "OBS:	Anaé 0 [=! rit] .";
 		System.out.println(a);
 		System.out.println(a.replaceAll("\\p{C}", "XXXX"));
+		System.out.println(cleanFast(a));
 	}
 }
