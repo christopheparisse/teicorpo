@@ -178,12 +178,13 @@ public class ConventionsToChat {
 		l = l.replaceAll("\\p{C}", "");
 		l = l.replaceAll( "\\+\\<", "" );
 		l = l.replaceAll( "[<>⟪⟫‹›⌊⌋⌈⌉]", "" );
+		l = l.replaceAll( "\\s+", " " );
 //		l = l.replaceAll( "\\&.*?$", " " );
 		return l;
 	}
 	
 	public static void main(String [] args){
-		String a = "OBS:	Anaé 0 [=! rit] .";
+		String a = "OBS:        Anaé   0 [=!   rit] .";
 		System.out.println(a);
 		System.out.println(a.replaceAll("\\p{C}", "XXXX"));
 		System.out.println(cleanFast(a));
