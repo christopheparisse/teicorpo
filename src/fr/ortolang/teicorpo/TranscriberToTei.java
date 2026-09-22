@@ -21,6 +21,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class TranscriberToTei extends ImportToTei {
 
@@ -154,6 +156,27 @@ public class TranscriberToTei extends ImportToTei {
 		}
 	}
 
+
+	public static String ensureExtension(String filename, String extension) {
+		if (filename == null || filename.trim().isEmpty()) {
+			return filename;
+		}
+
+		// Format extension to always start with a dot
+		String extWithDot = extension.startsWith(".") ? extension : "." + extension;
+
+		Path path = Paths.get(filename);
+		String name = path.getFileName().toString();
+
+		// Check if the filename contains a dot (excluding hidden files like ".gitignore")
+		int lastDotIndex = name.lastIndexOf('.');
+		if (lastDotIndex <= 0) {
+			return filename + extWithDot;
+		}
+
+		return filename; // Extension already present
+	}
+
 	/**
 	 * Ajout d'informations dans l'élément <strong>sourceDesc.</strong><br>
 	 * Contient les informations sur le document source soit:<br>
@@ -181,13 +204,14 @@ public class TranscriberToTei extends ImportToTei {
 		Element recording = (Element) this.docTEI.getElementsByTagName("recording").item(0);
 		Element media = (Element) recording.getElementsByTagName("media").item(0);
 		if (attName.equals("audio_filename") && !attValue.isEmpty()) {
-			media.setAttribute("url", attValue + ".wav");
-			media.setAttribute("mimeType", Utils.findMimeType(attValue + ".wav"));
+			String mediaWithExt = ensureExtension(attValue, ".wav");
+			media.setAttribute("url", mediaWithExt);
+			media.setAttribute("mimeType", Utils.findMimeType(mediaWithExt));
 		} else if (attName.equals("elapsed_time")) {
 			recording.setAttribute("dur", attValue);
 		} else {
 			String sameMedia = this.inputTRS.getName();
-			sameMedia = sameMedia.substring(0, sameMedia.length() - 3) + "wav";
+			sameMedia = ensureExtension(sameMedia, "wav");
 			media.setAttribute("url", /* this.inputTRS.getParent() + "/" + */ sameMedia);
 			media.setAttribute("mimeType", Utils.findMimeType(sameMedia));
 		}
