@@ -180,7 +180,7 @@ public abstract class ImportToTei extends GenericMain {
 
 		Element profileDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "profileDesc");
 		Element encodingDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "encodingDesc");
-		encodingDesc.setAttribute("style", Version.versionTEI);
+		// encodingDesc.setAttribute("style", Version.versionTEI);
 		Element revisionDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "revisionDesc");
 		TeiDocument.setRevisionInfo(docTEI, revisionDesc, fname, null, optionsTEI.test);
 
