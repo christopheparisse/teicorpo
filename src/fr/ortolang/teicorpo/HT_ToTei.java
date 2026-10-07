@@ -15,10 +15,7 @@ import java.util.TreeMap;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
+import org.w3c.dom.*;
 
 public class HT_ToTei {
 
@@ -175,13 +172,16 @@ public class HT_ToTei {
 
 		// Ajout publicationStmt
 		Element publicationStmt = (Element) this.docTEI.getElementsByTagName("publicationStmt").item(0);
-		Element distributor = docTEI.createElement("distributor");
-		distributor.setTextContent("tei_corpo");
-		publicationStmt.appendChild(distributor);
+		NodeList nl = this.docTEI.getElementsByTagName("distributor");
+		if (nl == null || nl.getLength() < 1) {
+			Element distributor = docTEI.createElement("distributor");
+			distributor.setTextContent("tei_corpo");
+			publicationStmt.appendChild(distributor);
+		}
 
 		// Ajout titleStmt
 		Element titleStmt = (Element) this.docTEI.getElementsByTagName("titleStmt").item(0);
-		Element title = this.docTEI.createElement("title");
+		Element title = docTEI.createElement("title");
 		titleStmt.appendChild(title);
 		Element desc = docTEI.createElement("desc");
 		title.appendChild(desc);

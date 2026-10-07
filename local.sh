@@ -1,6 +1,9 @@
 # /bin/sh
 #jar cvfe teicorpo.jar fr.ortolang.teicorpo.TeiCorpo .
-cp -v target/teicorpo-*.jar teicorpo.jar 
+cp -v target/teicorpo-*-SNAPSHOT.jar teicorpo.jar
+cp -v teicorpo.jar ~/ofccleaner_resources/
+cp -v teicorpo.jar ~/conv2txt_resources/
+
 rsync -uv teicorpo.jar /mnt/c/devlopt/prod-trjs/tools/
 rsync -uv teicorpo.jar /mnt/c/devlopt/devl-trjs/tools/
 rsync -uv teicorpo.jar /mnt/c/devlopt/teiconvert/system/

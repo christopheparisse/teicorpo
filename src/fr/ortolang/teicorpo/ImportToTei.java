@@ -98,10 +98,10 @@ public abstract class ImportToTei extends GenericMain {
 		if (mediaList.getLength() > 0) {
 			Element media = (Element) recording.getElementsByTagName("media").item(0);
 			media.setAttribute("dur-iso", String.valueOf(maxTime));
-		} else {
-			Element media = docTEI.createElement("media");
-			recording.appendChild(media);
-			media.setAttribute("dur-iso", String.valueOf(maxTime));
+//		} else {
+//			Element media = docTEI.createElement("media");
+//			recording.appendChild(media);
+//			media.setAttribute("dur-iso", String.valueOf(maxTime));
 		}
 	}
 
@@ -169,7 +169,7 @@ public abstract class ImportToTei extends GenericMain {
 		Element teiHeader = TeiDocument.findOrCreate(docTEI, rootTEI, "teiHeader");
 		Element fileDesc = TeiDocument.findOrCreate(docTEI, teiHeader, "fileDesc");
 		Element titleStmt = TeiDocument.findOrCreate(docTEI, fileDesc, "titleStmt");
-		Element publicationStmt = TeiDocument.findOrCreate(docTEI, titleStmt, "publicationStmt");
+		Element publicationStmt = TeiDocument.findOrCreate(docTEI, fileDesc, "publicationStmt");
 
 		// Ajout publicationStmt
 		Element distributor = TeiDocument.findOrCreate(docTEI, publicationStmt, "distributor");
@@ -252,10 +252,10 @@ public abstract class ImportToTei extends GenericMain {
 		sourceDesc.appendChild(recordingStmt);
 		Element recording = docTEI.createElement("recording");
 		recordingStmt.appendChild(recording);
-		// Element media
-		Element media = docTEI.createElement("media");
-		recording.appendChild(media);
 		if (optionsTEI.mediaName != null) {
+			// Element media
+			Element media = docTEI.createElement("media");
+			recording.appendChild(media);
 			media.setAttribute("mimeType", Utils.findMimeType(optionsTEI.mediaName));
 			if (optionsTEI.test)
 				media.setAttribute("url", Utils.basename(optionsTEI.mediaName) + Utils.extname(optionsTEI.mediaName));

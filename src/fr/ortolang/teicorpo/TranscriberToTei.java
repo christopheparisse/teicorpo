@@ -224,11 +224,12 @@ public class TranscriberToTei extends ImportToTei {
 	 */
 	public void setPublicationStmtElement() {
 		Element publicationStmt = (Element) this.docTEI.getElementsByTagName("publicationStmt").item(0);
-
-		// Ajout publicationStmt
-		Element distributor = docTEI.createElement("distributor");
-		distributor.setTextContent("tei_corpo");
-		publicationStmt.appendChild(distributor);
+		NodeList nl = this.docTEI.getElementsByTagName("distributor");
+		if (nl == null || nl.getLength() < 1) {
+			Element distributor = docTEI.createElement("distributor");
+			distributor.setTextContent("tei_corpo");
+			publicationStmt.appendChild(distributor);
+		}
 	}
 
 	/**

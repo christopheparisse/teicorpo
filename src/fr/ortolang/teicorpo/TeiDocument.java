@@ -487,34 +487,27 @@ public class TeiDocument {
 
     public static Element setDocumentAccess(Document docTEI, String access, String name, TierParams options) {
         NodeList revDesc = docTEI.getElementsByTagName("revisionDesc");
-        NodeList llist = ((Element)revDesc.item(0)).getElementsByTagName("list");
-        // find (unique) list element or create it
+        Element revisionDesc;
+        if (revDesc == null || revDesc.getLength() < 1) {
+            System.err.println("Revision description element not found");
+            return null;
+        } else {
+            revisionDesc = ((Element)revDesc.item(0));
+        }
+
+        NodeList nlist = revisionDesc.getElementsByTagName("list");
         Element list;
-        if (llist.getLength() == 0) {
+        if (nlist == null || nlist.getLength() < 1) {
             list = docTEI.createElement("list");
-            ((Element)revDesc.item(0)).appendChild(list);
-        } else {
-            list = ((Element)llist.item(0));
-        }
-        // put name in head
-        NodeList lhead = list.getElementsByTagName("head");
-        if (lhead.getLength() == 0) {
-            Element head = docTEI.createElement("head");
-            addToHead(docTEI, head, access, name, options.test);
-            ((Element)list).appendChild(head);
-        } else {
-            Element head = (Element)lhead.item(0);
-            NodeList notes = head.getElementsByTagName("note");
-            for (int i=0; i < notes.getLength() ; i++) {
-                head.removeChild(notes.item(i));
-            }
-            addToHead(docTEI, head, access, name, options.test);
-            // removes all child nodes
-            /*
-            while (head.hasChildNodes())
-                head.removeChild(head.getFirstChild());
-            */
-        }
+            revisionDesc.appendChild(list);
+        } else
+            list = ((Element)nlist.item(0));
+
+        // put name and access in an item
+        Element item = docTEI.createElement("item");
+        item.setTextContent("creation:" + access + ":" + name);
+        list.appendChild(item);
+
         return list;
     }
 

@@ -228,6 +228,11 @@ public class ClanToTei extends ImportToTei {
 				language.setTextContent(cf.lang[i].trim());
 				langUsage.appendChild(language);
 			}
+		} else {
+			Element language = docTEI.createElement("language");
+			// here we should find the real name for language and the ISO code
+			language.setAttribute("ident", "undefined");
+			langUsage.appendChild(language);
 		}
 
 		if (cf.location != null) {
@@ -1290,8 +1295,9 @@ public class ClanToTei extends ImportToTei {
 	}
 
 	public void addRepair3(Element u, String text, String type) {
-		Element repair = docTEI.createElement("repair");
-		repair.setAttribute("type", type);
+		Element repair = docTEI.createElement("seg");
+		repair.setAttribute("type", "repair");
+		repair.setAttribute("subtype", type);
 		repair.setTextContent(text.replaceAll("\\s+", " "));
 		u.appendChild(repair);
 	}
