@@ -154,10 +154,11 @@ public class ClanToTei extends ImportToTei {
 	 * @throws DOMException
 	 */
 	public void setFileDescComplement() throws DOMException, IOException {
-		// Element media
-		Element media = (Element) this.docTEI.getElementsByTagName("media").item(0);
 		Element recording = (Element) this.docTEI.getElementsByTagName("recording").item(0);
 		if (optionsTEI.mediaName == null && cf.mediaFilename != null) {
+			// Element media
+			Element media = docTEI.createElement("media");
+			recording.appendChild(media);
 			String url = Utils.findClosestMedia(chatFile.getParent(), cf.mediaFilename, cf.mediaType); // removed (cf.mediaFilename).toUpperCase()
 			media.setAttribute("mimeType", Utils.findMimeType(url));
 			media.setAttribute("url", url);
