@@ -34,7 +34,6 @@ public class ClanToTei extends ImportToTei {
 	/** Fichier Chat. */
 	File chatFile;
 	String chatFN;
-	int nbBG = 0; // stores depth of BG/EG
 
 	/**
 	 * Identifiant des éléments <strong>desc</strong> de <strong>text</strong>.
@@ -403,7 +402,7 @@ public class ClanToTei extends ImportToTei {
 	 *            (information for tiers mor, etc.)
 	 */
 	public void buildText(String extension) {
-		Element div = setFirstDiv(); // initializes the initial div
+		Element firstdiv = setFirstDiv(); // initializes the initial div
 		int size = cf.nbMainLines(), i;
 		// skip initial header
 		for (i = 0; i < size; i++) {
@@ -411,178 +410,92 @@ public class ClanToTei extends ImportToTei {
 				break;
 			}
 		}
-		nbBG = 0;
-		buildTextDiv(div, i, extension, 0); // starts at first line
-		if (nbBG > 0) System.err.printf("missing @EG in the file%n");
+		buildTextDiv(firstdiv, extension, i); // starts at first line
+	}
+
+	public void buildTextUtterance(Element currentdiv, String extension, ChatLine cl, int nth, String startTime, String endTime) {
+		if (cl.head != null && optionsTEI != null) {
+			if (optionsTEI.isDontDisplay(cl.head.substring(1), 1)) {
+				return;
+			}
+			if (!optionsTEI.isDoDisplay(cl.head.substring(1), 1)) {
+				return;
+			}
+		}
+		// add to the current div
+		int tierSize = cf.nbTiers(nth);
+		String[] tiers = new String[tierSize];
+		for (int j = 0; j < tierSize; j++) {
+			tiers[j] = cf.t(nth, j);
+		}
+		String startId = "";
+		String endId = "";
+		if (!startTime.equals("-1")) {
+			startId = addTimeToTimelineForce(toSeconds(startTime), true);
+		}
+		if (!endTime.equals("-1")) {
+			endId = addTimeToTimelineForce(toSeconds(endTime), true);
+		}
+		Element annotatedU = build_u_element(cl, tiers, extension, startId, endId);
+		set_AnnotU_element(annotatedU, tiers, startId, endId);
+		currentdiv.appendChild(annotatedU);
 	}
 
 	/**
 	 * Construction de l'élément <strong>text</strong>: contient la
 	 * transcription.
 	 * 
-	 * @param div
-	 *            - the div currently growing
-	 * @param ptr
-	 *            - pointer to the original mainlines tab (cf.ml)
+	 * @param maindiv
+	 *            - the maindiv within the body
 	 * @param extension
 	 *            - (information for tiers mor, etc.)
-	 * @param inGem
-	 *            - 0 not gen active, 1 @g active, 2 @bg active (change the
-	 *            action when closing a gem)
 	 */
-	public int buildTextDiv(Element div, int ptr, String extension, int inGem) {
-		int size = cf.nbMainLines(), i = ptr;
+	public void buildTextDiv(Element maindiv, String extension, int currentline) {
 		try {
-			while (i < size) {
-				ChatLine cl = new ChatLine(cf.ml(i));
-				if (cl.head.length() == 0) cl.head = "UNK";
-				String startTime = Integer.toString(cf.startMl(i));
-				String endTime = Integer.toString(cf.endMl(i));
-				if (cl.head.startsWith("@")) {
-					if (cl.head.toLowerCase().startsWith("@g")) {
-						//System.out.printf("@G: %d inGem%d%n", nbBG, inGem);
-						if (inGem == 1) {
-							// was in @G
-							// close the current div and continue
-							// with inG true we are always with a sub call
-							// ends function
-							return i;
-							// this finishes the div and process again a
-							// beginning of div
-						} else if (inGem == 2) {
-							// was in @BG
-							// do not close the current div
-							// but creates a new one
-							// starts a div
-							Element newdiv = addNewDiv(div, "G", cl.tail);
-							i = buildTextDiv(newdiv, i + 1, extension, 1); // starts
-																			// a
-																			// new
-																			// process
-																			// in
-																			// a
-																			// gem
-						} else {
-							// starts a div
-							Element newdiv = addNewDiv(div, "G", cl.tail);
-							i = buildTextDiv(newdiv, i + 1, extension, 1); // starts
-																			// a
-																			// new
-																			// process
-																			// in
-																			// a
-																			// gem
-						}
-					} else if (cl.head.toLowerCase().startsWith("@bg")) {
-						//System.out.printf("@BG: %d inGem%d%n", nbBG, inGem);
-						if (inGem == 1) {
-							// was in @G
-							// close the current div and continue
-							// with inG true we are always with a sub call
-							// ends function
-							return i;
-							// this finishes the div and process again a
-							// beginning of div
-						} else if (inGem == 2) {
-							// was in @BG
-							// do not close the current div
-							// but creates a new one
-							// starts a div
-							nbBG++;
-							Element newdiv = addNewDiv(div, "BG", cl.tail);
-							i = buildTextDiv(newdiv, i + 1, extension, 2); // starts
-																			// a
-																			// new
-																			// process
-																			// in
-																			// a
-																			// gem
-						} else {
-							// starts a div
-							nbBG++;
-							Element newdiv = addNewDiv(div, "BG", cl.tail);
-							i = buildTextDiv(newdiv, i + 1, extension, 2); // starts
-																			// a
-																			// new
-																			// process
-																			// in
-																			// a
-																			// gem
-						}
-					} else if (cl.head.toLowerCase().startsWith("@eg")) {
-						// System.out.printf("@EG: %d inGem%d%n", nbBG, inGem);
-						if (inGem == 1) {
-							// close first the @G
-							return i;
-						} else {
-							nbBG--;
-							// close the current div and continue
-							// with inG true we are always with a sub call
-							// ends function
-							if (nbBG>=0)
-								return i + 1;
-							// else ignore @EG
-							else {
-								System.err.printf("too many @EG at line %d %s%n", i, cl.toString());
-								nbBG = 0;
-								i++;
-							}
-						}
-					} else if (cl.head.toLowerCase().startsWith("@end")) {
-						//System.out.printf("End: %d inGem%d%n", nbBG, inGem);
-						i++; // could stop process if we wanted to - normal end
-								// of file
-					} else {
-						// this should not happen
-						// this is not within the chat format
-						System.err.println("unknown format at " + cl.head + " " + cl.tail);
-						Element annotatedU = build_comment(startTime, endTime, cl);
-						div.appendChild(annotatedU);
-						i++;
+			int size = cf.nbMainLines();
+			Element currentdiv = null;
+			int inGem = 3; // will open a div if not @bg or @g is found before a normal utterance
+			for (; currentline < size; currentline++) {
+				ChatLine cl = new ChatLine(cf.ml(currentline));
+				if (cl.head.isEmpty()) cl.head = "UNK";
+				String startTime = Integer.toString(cf.startMl(currentline));
+				String endTime = Integer.toString(cf.endMl(currentline));
+
+				if (cl.head.toLowerCase().startsWith("@g")) {
+					//System.out.printf("@G: %d inGem%d%n", nbBG, inGem);
+					if (inGem == 2) {
+						// was in @BG
+						System.out.printf("Warning: a BG was closed by a G: line %d, utt: %s\n", currentline, cl.tail);
 					}
+					inGem = 1;
+					currentdiv = addNewDiv(maindiv, "G", cl.tail);
+				} else if (cl.head.toLowerCase().startsWith("@bg")) {
+					inGem = 2;
+					currentdiv = addNewDiv(maindiv, "BG", cl.tail);
+				} else if (cl.head.toLowerCase().startsWith("@eg")) {
+					inGem = 3;
+					// a div was just closed by a @eg
+					// a new one will be open by the next utterance if no @bg or @g in between
+				} else if (cl.head.toLowerCase().startsWith("@end")) {
+					inGem = 4;
+				} else if (cl.head.toLowerCase().startsWith("@")) {
+					// this should not happen
+					// this is not within the chat format
+					System.err.println("unknown format at " + cl.head + " " + cl.tail);
+					Element annotatedU = build_comment(startTime, endTime, cl);
+					if (currentdiv != null) currentdiv.appendChild(annotatedU);
 				} else {
-					//System.out.printf(">>%s %d %d%n", cl.head, nbBG, inGem);
-					if (cl.head != null && optionsTEI != null) {
-						if (optionsTEI.isDontDisplay(cl.head.substring(1), 1)) {
-							i++;
-							continue;
-						}
-						if (!optionsTEI.isDoDisplay(cl.head.substring(1), 1)) {
-							i++;
-							continue;
-						}
+					if (inGem == 3) {
+						currentdiv = addNewDiv(maindiv, "div", "div");
+						inGem = 0;
 					}
-					// System.out.printf("OK%n");
-					
-					
-					// add to the current div
-					int tierSize = cf.nbTiers(i);
-					String[] tiers = new String[tierSize];
-					for (int j = 0; j < tierSize; j++) {
-						tiers[j] = cf.t(i, j);
-					}
-					String startId = "";
-					String endId = "";
-					if (!startTime.equals("-1")) {
-						startId = addTimeToTimelineForce(toSeconds(startTime), true);
-					}
-					if (!endTime.equals("-1")) {
-						endId = addTimeToTimelineForce(toSeconds(endTime), true);
-					}
-					Element annotatedU = build_u_element(cl, tiers, extension, startId, endId);
-					set_AnnotU_element(annotatedU, tiers, startId, endId);
-					div.appendChild(annotatedU);
-					i++;
+					buildTextUtterance(currentdiv, extension, cl, currentline, startTime, endTime);
 				}
 			}
-			// end close all remaining @G and @BG
-			if (inGem != 0)
-				return i;
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.exit(1);
 		}
-		return i;
 	}
 
 	/**
