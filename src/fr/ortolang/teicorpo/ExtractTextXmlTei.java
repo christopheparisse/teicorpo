@@ -36,15 +36,16 @@ public class ExtractTextXmlTei {
 
             // --- 1. Récupération de l'attribut channel[@rend] ---
             XPath xPath = XPathFactory.newInstance().newXPath();
-            String expression = "//profileDesc/textDesc/channel/@rend";
+            String expression = "//profileDesc/textClass/keywords[@scheme='OFC']/term[@type='text_format']";
+            // String expression = "//profileDesc/textDesc/channel/@rend";
             String valeurRend = (String) xPath.compile(expression).evaluate(doc, XPathConstants.STRING);
             String keyElement = "p"; // default key element
 
             System.out.println("File: " + cheminFichier);
             if (valeurRend != null && !valeurRend.isBlank()) {
-                System.out.println("Valeur de channel[@rend] : " + valeurRend);
+                System.out.println("Valeur de scheme text_format : " + valeurRend);
             } else {
-                System.out.println("L'attribut channel[@rend] n'a pas été trouvé ou est vide.");
+                System.out.println("L'attribut scheme text_format n'a pas été trouvé ou est vide.");
             }
 
             // System.out.println("--------------------------------------------------");
